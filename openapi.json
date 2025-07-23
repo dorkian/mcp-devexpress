@@ -1,0 +1,57 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "DevExpress MCP API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/devexpress/{component}": {
+      "get": {
+        "summary": "Get all reference data for a component",
+        "parameters": [
+          {
+            "name": "component",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Component metadata"
+          }
+        }
+      }
+    },
+    "/api/devexpress/{component}/{property}": {
+      "get": {
+        "summary": "Get detail for a specific property",
+        "parameters": [
+          {
+            "name": "component",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "property",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Property detail"
+          }
+        }
+      }
+    }
+  }
+}
