@@ -1,0 +1,674 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure Sortable UI component content, behavior, and appearance."
+        },
+        {
+          "name": "allowDropInsideItem",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows a user to drop an item inside another item."
+        },
+        {
+          "name": "allowReordering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Allows a user to reorder sortable items."
+        },
+        {
+          "name": "dragComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dragTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dragRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dragTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dragTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies custom markup to be shown instead of the item being dragged."
+        },
+        {
+          "name": "dropFeedbackMode",
+          "type": "Enums.DragHighlight",
+          "default": "'push'",
+          "description": "Specifies how to highlight the item's drop position."
+        },
+        {
+          "name": "filter",
+          "type": "String",
+          "default": "'> *'",
+          "description": "Specifies a CSS selector for the items that can be dragged."
+        },
+        {
+          "name": "group",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemOrientation",
+          "type": "Enums.Orientation",
+          "default": "'vertical'",
+          "description": "Notifies the UI component of the items' orientation."
+        },
+        {
+          "name": "moveItemOnDrop",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Moves an element in the HTML markup when it is dropped."
+        }
+      ]
+    },
+    {
+      "name": "dxSortable",
+      "type": null,
+      "default": null,
+      "description": "Sortable is a user interface utility that allows a UI component's items to be reordered via drag and drop gestures."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "update()",
+      "type": null,
+      "default": null,
+      "description": "Updates Sortable's dimensions. Call this method after items are added or their dimensions are changed during dragging."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onAdd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when a new item is added."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDragChange",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when the dragged item's position in the list is changed."
+    },
+    {
+      "name": "onDragEnd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when the drag gesture is finished."
+    },
+    {
+      "name": "onDragMove",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called every time a draggable item is moved."
+    },
+    {
+      "name": "onDragStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when a drag gesture is initialized."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPlaceholderPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": null
+    },
+    {
+      "name": "onRemove",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when a draggable item is removed."
+    },
+    {
+      "name": "onReorder",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when the draggable items are reordered."
+    },
+    {
+      "name": "add",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a new item is added."
+    },
+    {
+      "name": "dragChange",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the dragged item's position in the list is changed."
+    },
+    {
+      "name": "dragEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when drag gesture is finished."
+    },
+    {
+      "name": "dragMove",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised every time a draggable item is moved."
+    },
+    {
+      "name": "dragStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when drag gesture is initialized."
+    },
+    {
+      "name": "placeholderPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "remove",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a draggable item is removed."
+    },
+    {
+      "name": "reorder",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the draggable items are reordered."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AddEvent",
+      "subMembers": [
+        {
+          "name": "AddEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [add] event handler's argument."
+        },
+        {
+          "name": "component",
+          "type": "dxSortable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dropInsideItem",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "event",
+          "type": "event",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "model",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DragChangeEvent",
+      "subMembers": [
+        {
+          "name": "DragChangeEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragChange] event handler's argument."
+        },
+        {
+          "name": "dropInsideItem",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DragEndEvent",
+      "subMembers": [
+        {
+          "name": "DragEndEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragEnd] event handler's argument."
+        },
+        {
+          "name": "dropInsideItem",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DragMoveEvent",
+      "subMembers": [
+        {
+          "name": "DragMoveEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragMove] event handler's argument."
+        },
+        {
+          "name": "dropInsideItem",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DragStartEvent",
+      "subMembers": [
+        {
+          "name": "DragStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragStart] event handler's argument."
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "RemoveEvent",
+      "subMembers": [
+        {
+          "name": "RemoveEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [remove] event handler's argument."
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ReorderEvent",
+      "subMembers": [
+        {
+          "name": "ReorderEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [reorder] event handler's argument."
+        },
+        {
+          "name": "dropInsideItem",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "promise",
+          "type": "Promise<void>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

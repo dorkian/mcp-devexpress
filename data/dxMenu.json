@@ -1,0 +1,404 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Menu UI component."
+        },
+        {
+          "name": "adaptivityEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether adaptive rendering is enabled. This property is in effect only if the [orientation] is *\"horizontal\"*."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxMenuItem> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "hideSubmenuOnMouseLeave",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the submenu is hidden when the mouse pointer leaves it."
+        },
+        {
+          "name": "items",
+          "type": "Array<dxMenuItem>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "orientation",
+          "type": "Enums.Orientation",
+          "default": "'horizontal'",
+          "description": "Specifies whether the menu has horizontal or vertical orientation."
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "showFirstSubmenuMode",
+          "subMembers": [
+            {
+              "name": "delay",
+              "subMembers": [
+                {
+                  "name": "delay",
+                  "type": "Object | Number",
+                  "default": "{ show: 50, hide: 300 }",
+                  "description": "Specifies the delay in submenu showing and hiding."
+                },
+                {
+                  "name": "hide",
+                  "type": "Number",
+                  "default": "300",
+                  "description": "The time span after which the submenu is hidden."
+                },
+                {
+                  "name": "show",
+                  "type": "Number",
+                  "default": "50",
+                  "description": "The time span after which the submenu is shown."
+                }
+              ]
+            },
+            {
+              "name": "name",
+              "type": "Enums.SubmenuShowMode",
+              "default": "'onClick'",
+              "description": "Specifies the mode name."
+            },
+            {
+              "name": "showFirstSubmenuMode",
+              "type": "Object | Enums.SubmenuShowMode",
+              "default": "{ name: 'onClick', delay: { show: 50, hide: 300 } }",
+              "description": "Specifies properties for showing and hiding the first level submenu."
+            }
+          ]
+        },
+        {
+          "name": "showSubmenuMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "submenuDirection",
+          "type": "Enums.SubmenuDirection",
+          "default": "'auto'",
+          "description": "Specifies the direction at which the submenus are displayed."
+        }
+      ]
+    },
+    {
+      "name": "dxMenu",
+      "type": null,
+      "default": null,
+      "description": "The Menu UI component is a panel with clickable items. A click on an item opens a drop-down menu, which can contain several submenus."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onItemReordered",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChange",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is selected or selection is canceled."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSubmenuHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a submenu is hidden."
+    },
+    {
+      "name": "onSubmenuHiding",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a submenu is hidden."
+    },
+    {
+      "name": "onSubmenuShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a submenu is displayed."
+    },
+    {
+      "name": "onSubmenuShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a submenu is displayed."
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "submenuHidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a submenu is hidden."
+    },
+    {
+      "name": "submenuHiding",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a submenu is hidden."
+    },
+    {
+      "name": "submenuShowing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a submenu is displayed."
+    },
+    {
+      "name": "submenuShown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a submenu is displayed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "SubmenuDirection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the direction at which the submenus are displayed."
+    },
+    {
+      "name": "SubmenuHiddenEvent",
+      "subMembers": [
+        {
+          "name": "SubmenuHiddenEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [submenuHidden] event handler's argument."
+        },
+        {
+          "name": "itemData",
+          "type": "dxMenuItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rootItem",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "submenuContainer",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SubmenuHidingEvent",
+      "subMembers": [
+        {
+          "name": "SubmenuHidingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [submenuHiding] event handler's argument."
+        },
+        {
+          "name": "itemData",
+          "type": "dxMenuItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rootItem",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "submenuContainer",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SubmenuShowingEvent",
+      "subMembers": [
+        {
+          "name": "SubmenuShowingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [submenuShowing] event handler's argument."
+        },
+        {
+          "name": "itemData",
+          "type": "dxMenuItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rootItem",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "submenuContainer",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SubmenuShownEvent",
+      "subMembers": [
+        {
+          "name": "SubmenuShownEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [submenuShown] event handler's argument."
+        },
+        {
+          "name": "itemData",
+          "type": "dxMenuItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rootItem",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "submenuContainer",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

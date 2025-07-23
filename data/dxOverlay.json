@@ -1,0 +1,265 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "animation",
+          "subMembers": [
+            {
+              "name": "animation",
+              "type": "ui/overlay:dxOverlayAnimation",
+              "default": null,
+              "description": "Configures UI component visibility animations. This object contains two fields: [show] and [hide]."
+            },
+            {
+              "name": "hide",
+              "type": null,
+              "default": null,
+              "description": "An object that defines the [animation properties] used when the UI component is being hidden."
+            },
+            {
+              "name": "show",
+              "type": null,
+              "default": null,
+              "description": "An object that defines the [animation properties] used when the UI component is being shown."
+            }
+          ]
+        },
+        {
+          "name": "contentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "contentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template",
+          "default": "'content'",
+          "description": "Specifies a custom template for the UI component content."
+        },
+        {
+          "name": "deferRendering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to render the UI component's content when it is displayed. If **false**, the content is rendered immediately."
+        },
+        {
+          "name": "elementAttr",
+          "type": "any",
+          "default": "{}",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "'80vh'",
+          "description": "Specifies the UI component's height."
+        },
+        {
+          "name": "hideOnOutsideClick",
+          "type": "Boolean | function(event)",
+          "default": "false",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "hideOnParentScroll",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to hide the {WidgetName} when users scroll one of its parent elements."
+        },
+        {
+          "name": "maxHeight",
+          "type": "Number | String",
+          "default": "null",
+          "description": "Specifies the maximum height the UI component can reach while resizing."
+        },
+        {
+          "name": "maxWidth",
+          "type": "Number | String",
+          "default": "null",
+          "description": "Specifies the maximum width the UI component can reach while resizing."
+        },
+        {
+          "name": "minHeight",
+          "type": "Number | String",
+          "default": "null",
+          "description": "Specifies the minimum height the UI component can reach while resizing."
+        },
+        {
+          "name": "minWidth",
+          "type": "Number | String",
+          "default": "null",
+          "description": "Specifies the minimum width the UI component can reach while resizing."
+        },
+        {
+          "name": "position",
+          "type": "any",
+          "default": "{ my: 'center', at: 'center', of: window }",
+          "description": "Positions the UI component."
+        },
+        {
+          "name": "shading",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to shade the background when the UI component is active."
+        },
+        {
+          "name": "shadingColor",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the shading color. Applies only if [shading] is enabled."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not the UI component is visible."
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "'80vw'",
+          "description": "Specifies the UI component's width."
+        },
+        {
+          "name": "wrapperAttr",
+          "type": "any",
+          "default": "{}",
+          "description": "Specifies the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes\" target=\"_blank\">global attributes</a> for the UI component's wrapper element."
+        }
+      ]
+    },
+    {
+      "name": "dxOverlay",
+      "type": null,
+      "default": null,
+      "description": "The **Overlay** UI component represents a window overlaying the current view. It displays data located within the HTML element representing the UI component."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "content()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's content."
+    },
+    {
+      "name": "hide()",
+      "type": null,
+      "default": null,
+      "description": "Hides the UI component."
+    },
+    {
+      "name": "repaint()",
+      "type": null,
+      "default": null,
+      "description": "Recalculates the UI component's size and position without rerendering."
+    },
+    {
+      "name": "show()",
+      "type": null,
+      "default": null,
+      "description": "Shows the UI component."
+    },
+    {
+      "name": "toggle(showing)",
+      "type": null,
+      "default": null,
+      "description": "Shows or hides the UI component depending on the argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component is hidden."
+    },
+    {
+      "name": "onHiding",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the UI component is hidden."
+    },
+    {
+      "name": "onShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the UI component is displayed."
+    },
+    {
+      "name": "onShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component is displayed."
+    },
+    {
+      "name": "hidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component is hidden."
+    },
+    {
+      "name": "hiding",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the UI component is hidden."
+    },
+    {
+      "name": "showing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the UI component is displayed."
+    },
+    {
+      "name": "shown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component is displayed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "dxOverlayAnimation",
+      "subMembers": [
+        {
+          "name": "dxOverlayAnimation",
+          "type": "module: ui/overlay",
+          "default": null,
+          "description": "Configures UI component visibility animations. This object contains two fields: [show] and [hide]."
+        },
+        {
+          "name": "hide",
+          "type": "AnimationConfig",
+          "default": "{ type: 'pop', duration: 300, to: { opacity: 0, scale: 0.55 }, from: { opacity: 1, scale: 1 } } }",
+          "description": "An object that defines the [animation properties] used when the UI component is being hidden."
+        },
+        {
+          "name": "show",
+          "type": "AnimationConfig",
+          "default": "{ type: 'pop', duration: 400, from: { scale: 0.55 } }",
+          "description": "An object that defines the [animation properties] used when the UI component is being shown."
+        }
+      ]
+    }
+  ]
+}

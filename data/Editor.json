@@ -1,0 +1,140 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties used to configure the UI component."
+        },
+        {
+          "name": "isDirty",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the component's current value differs from the initial value."
+        },
+        {
+          "name": "isValid",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies or indicates whether the editor's value is valid."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": "''",
+          "description": "The value to be assigned to the `name` attribute of the underlying HTML element."
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the editor is read-only."
+        },
+        {
+          "name": "stylingMode",
+          "type": "Enums.EditorStyle",
+          "default": "'outlined'",
+          "description": null
+        },
+        {
+          "name": "validationError",
+          "type": "any",
+          "default": "null",
+          "description": "Information on the broken [validation rule]. Contains the first item from the [validationErrors] array."
+        },
+        {
+          "name": "validationErrors",
+          "type": "Array<any>",
+          "default": "null",
+          "description": "An array of the [validation rules] that failed."
+        },
+        {
+          "name": "validationMessageMode",
+          "type": "Enums.ValidationMessageMode",
+          "default": "'auto'",
+          "description": "Specifies how the message about the [validation rules] that are not satisfied by this editor's value is displayed."
+        },
+        {
+          "name": "validationMessagePosition",
+          "type": "Enums.Position",
+          "default": "'bottom'",
+          "description": "Specifies the position of a validation message relative to the component. The validation message describes the [validation rules] that this component's value does not satisfy."
+        },
+        {
+          "name": "validationStatus",
+          "type": "Enums.ValidationStatus",
+          "default": "'valid'",
+          "description": "Indicates or specifies the current validation status."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": "null",
+          "description": "Specifies the UI component's value."
+        }
+      ]
+    },
+    {
+      "name": "Editor",
+      "type": null,
+      "default": null,
+      "description": "A base class for editors."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clear()",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the default value."
+    },
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ValueChangedInfo",
+      "subMembers": [
+        {
+          "name": "ValueChangedInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "previousValue",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

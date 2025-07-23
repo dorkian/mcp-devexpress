@@ -1,0 +1,197 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the UI component changes its visual state as a result of user interaction."
+        },
+        {
+          "name": "animation",
+          "subMembers": [
+            {
+              "name": "animation",
+              "type": "Object",
+              "default": "{ show: { type: 'fade', from: 0, to: 1, duration: 100 }, hide: { type: 'fade', from: 1, to: 0, duration: 100 } }",
+              "description": "Configures UI component visibility animations. This object contains two fields: [show] and [hide]."
+            },
+            {
+              "name": "hide",
+              "type": "AnimationConfig",
+              "default": "{ type: 'fade', from: 1, to: 0, duration: 100 }",
+              "description": "An object that defines the [animation properties] used when the UI component is being hidden."
+            },
+            {
+              "name": "show",
+              "type": "AnimationConfig",
+              "default": "{ type: 'fade', from: 0, to: 1, duration: 100 }",
+              "description": "An object that defines the [animation properties] used when the UI component is being shown."
+            }
+          ]
+        },
+        {
+          "name": "cssClass",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the name of the CSS class to be applied to the root menu level and all submenus."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<dxMenuBaseItem> | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "expandedExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemHoldTimeout",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxMenuBaseItem>",
+          "default": null,
+          "description": "Holds an array of menu items."
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "noDataText",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentIdExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectByClick",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether an item is selected if a user clicks it."
+        },
+        {
+          "name": "selectedIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleOrNone",
+          "default": "none",
+          "description": "Specifies the selection mode supported by the menu."
+        },
+        {
+          "name": "showSubmenuMode",
+          "subMembers": [
+            {
+              "name": "delay",
+              "subMembers": [
+                {
+                  "name": "delay",
+                  "type": "Object | Number",
+                  "default": "{ show: 50, hide: 300 }",
+                  "description": "Specifies the delay of submenu show and hiding."
+                },
+                {
+                  "name": "hide",
+                  "type": "Number",
+                  "default": "300",
+                  "description": "The time span after which the submenu is hidden."
+                },
+                {
+                  "name": "show",
+                  "type": "Number",
+                  "default": "50",
+                  "description": "The time span after which the submenu is shown."
+                }
+              ]
+            },
+            {
+              "name": "name",
+              "type": "Enums.SubmenuShowMode",
+              "default": "'onHover'",
+              "description": "Specifies the mode name."
+            },
+            {
+              "name": "showSubmenuMode",
+              "type": "Object | Enums.SubmenuShowMode",
+              "default": "{ name: 'onHover', delay: { show: 50, hide: 300 } }",
+              "description": "Specifies properties of submenu showing and hiding."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxMenuBase",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [
+    {
+      "name": "selectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Selects an item found using its DOM node."
+    },
+    {
+      "name": "unselectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of an item found using its DOM node."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onItemHold",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": []
+}

@@ -1,0 +1,1203 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the configuration properties of the PivotGrid UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "allowExpandAll",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to expand/collapse all header items within the same header level. Ignored if the [PivotGridDataSource]'s [paginate] property is **true**."
+        },
+        {
+          "name": "allowFiltering",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows a user to filter fields by selecting or deselecting values in the popup menu."
+        },
+        {
+          "name": "allowSorting",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows an end user to change sorting properties."
+        },
+        {
+          "name": "allowSortingBySummary",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to sort the pivot grid by summary values instead of field values. Ignored if the [PivotGridDataSource]'s [paginate] property is **true**."
+        },
+        {
+          "name": "dataFieldArea",
+          "type": "Enums.PivotGridDataFieldArea",
+          "default": "'column'",
+          "description": "Specifies the area to which data field headers must belong."
+        },
+        {
+          "name": "dataSource",
+          "type": "Array<any> | PivotGridDataSource | PivotGridDataSource_Options | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "encodeHtml",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether HTML tags are displayed as plain text or applied to cell values."
+        },
+        {
+          "name": "export",
+          "subMembers": [
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Enables client-side exporting."
+            },
+            {
+              "name": "export",
+              "type": "Object",
+              "default": null,
+              "description": "Configures client-side exporting."
+            }
+          ]
+        },
+        {
+          "name": "fieldChooser",
+          "subMembers": [
+            {
+              "name": "allowSearch",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether the field chooser allows search operations in the *\"All Fields\"* section."
+            },
+            {
+              "name": "applyChangesMode",
+              "type": "Enums.ApplyChangesMode",
+              "default": "'instantly'",
+              "description": "Specifies when to apply changes made in the field chooser to the PivotGrid."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Enables or disables the field chooser."
+            },
+            {
+              "name": "fieldChooser",
+              "type": "Object",
+              "default": null,
+              "description": "The **Field Chooser** configuration properties."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "600",
+              "description": "Specifies the field chooser height."
+            },
+            {
+              "name": "layout",
+              "type": "Enums.FieldChooserLayout",
+              "default": "0",
+              "description": "Specifies the field chooser layout."
+            },
+            {
+              "name": "searchTimeout",
+              "type": "Number",
+              "default": "500",
+              "description": "Specifies a delay in milliseconds between when a user finishes typing in the field chooser's search panel, and when the search is executed."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "allFields",
+                  "type": "String",
+                  "default": "'All Fields'",
+                  "description": "The string to display instead of **All Fields**."
+                },
+                {
+                  "name": "columnFields",
+                  "type": "String",
+                  "default": "'Column Fields'",
+                  "description": "The string to display instead of **Column Fields**."
+                },
+                {
+                  "name": "dataFields",
+                  "type": "String",
+                  "default": "'Data Fields'",
+                  "description": "The string to display instead of **Data Fields**."
+                },
+                {
+                  "name": "filterFields",
+                  "type": "String",
+                  "default": "'Filter Fields'",
+                  "description": "The string to display instead of **Filter Fields**."
+                },
+                {
+                  "name": "rowFields",
+                  "type": "String",
+                  "default": "'Row Fields'",
+                  "description": "The string to display instead of **Row Fields**."
+                },
+                {
+                  "name": "texts",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Strings that can be changed or localized in the pivot grid's integrated Field Chooser."
+                }
+              ]
+            },
+            {
+              "name": "title",
+              "type": "String",
+              "default": "'Field Chooser'",
+              "description": "Specifies the text to display as a title of the field chooser popup window."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "600",
+              "description": "Specifies the field chooser width."
+            }
+          ]
+        },
+        {
+          "name": "fieldPanel",
+          "subMembers": [
+            {
+              "name": "allowFieldDragging",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Makes fields on the [field panel] draggable."
+            },
+            {
+              "name": "fieldPanel",
+              "type": "Object",
+              "default": null,
+              "description": "Configures the [field panel]."
+            },
+            {
+              "name": "showColumnFields",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Shows/hides column fields on the [field panel]."
+            },
+            {
+              "name": "showDataFields",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Shows/hides data fields on the [field panel]."
+            },
+            {
+              "name": "showFilterFields",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Shows/hides filter fields on the [field panel]."
+            },
+            {
+              "name": "showRowFields",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Shows/hides row fields on the [field panel]."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "columnFieldArea",
+                  "type": "String",
+                  "default": "'Drop Column Fields Here'",
+                  "description": "Specifies the placeholder of the [column field area]."
+                },
+                {
+                  "name": "dataFieldArea",
+                  "type": "String",
+                  "default": "'Drop Data Fields Here'",
+                  "description": "Specifies the placeholder of the [data field area]."
+                },
+                {
+                  "name": "filterFieldArea",
+                  "type": "String",
+                  "default": "'Drop Filter Fields Here'",
+                  "description": "Specifies the placeholder of the [filter field area]."
+                },
+                {
+                  "name": "rowFieldArea",
+                  "type": "String",
+                  "default": "'Drop Row Fields Here'",
+                  "description": "Specifies the placeholder of the [row field area]."
+                },
+                {
+                  "name": "texts",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the placeholders of the field areas."
+                }
+              ]
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Shows/hides the [field panel]."
+            }
+          ]
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "headerFilter",
+          "subMembers": [
+            {
+              "name": "allowSearch",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether searching is enabled in the header filter."
+            },
+            {
+              "name": "allowSelectAll",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a \"Select All\" option is available to users."
+            },
+            {
+              "name": "headerFilter",
+              "type": "Object",
+              "default": null,
+              "description": "Configures the header filter feature."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "325",
+              "description": "Specifies the height of the popup menu containing filtering values."
+            },
+            {
+              "name": "search",
+              "subMembers": [
+                {
+                  "name": "editorOptions",
+                  "type": null,
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "search",
+                  "type": "HeaderFilterSearchConfig",
+                  "default": null,
+                  "description": "Configures the header filter's search functionality."
+                }
+              ]
+            },
+            {
+              "name": "searchTimeout",
+              "type": "Number",
+              "default": "500",
+              "description": "Specifies a delay in milliseconds between when a user finishes typing in the header filter's search panel, and when the search is executed."
+            },
+            {
+              "name": "showRelevantValues",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to show all field values or only those that satisfy the other applied filters."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "cancel",
+                  "type": "String",
+                  "default": "'Cancel'",
+                  "description": "Specifies the text of the button that closes the popup menu without applying a filter."
+                },
+                {
+                  "name": "emptyValue",
+                  "type": "String",
+                  "default": "'(Blanks)'",
+                  "description": "Specifies the name of the item that represents empty values in the popup menu."
+                },
+                {
+                  "name": "ok",
+                  "type": "String",
+                  "default": "'Ok'",
+                  "description": "Specifies the text of the button that applies a filter."
+                },
+                {
+                  "name": "texts",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the texts of the popup menu's elements."
+                }
+              ]
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "252",
+              "description": "Specifies the width of the popup menu containing filtering values."
+            }
+          ]
+        },
+        {
+          "name": "hideEmptySummaryCells",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to hide rows and columns with no data."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "loadPanel",
+          "subMembers": [
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Enables or disables the load panel."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "70",
+              "description": "Specifies the height of the load panel."
+            },
+            {
+              "name": "indicatorSrc",
+              "type": "String",
+              "default": "''",
+              "description": "Specifies the URL pointing to an image that will be used as a load indicator."
+            },
+            {
+              "name": "loadPanel",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies properties configuring the load panel."
+            },
+            {
+              "name": "shading",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to shade the UI component when the load panel appears."
+            },
+            {
+              "name": "shadingColor",
+              "type": "String",
+              "default": "''",
+              "description": "Specifies the shading color. Applies only if [shading] is **true**."
+            },
+            {
+              "name": "showIndicator",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to show a load indicator."
+            },
+            {
+              "name": "showPane",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to show load panel background."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": "'Loading...'",
+              "description": "Specifies the text to display inside a load panel."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "200",
+              "description": "Specifies the width of the load panel."
+            }
+          ]
+        },
+        {
+          "name": "rowHeaderLayout",
+          "type": "Enums.PivotGridRowHeaderLayout",
+          "default": "'standard'",
+          "description": "Specifies the layout of items in the [row header]."
+        },
+        {
+          "name": "scrolling",
+          "subMembers": [
+            {
+              "name": "mode",
+              "type": "Enums.ScrollMode",
+              "default": "'standard'",
+              "description": "Specifies the scrolling mode."
+            },
+            {
+              "name": "scrolling",
+              "type": "Object",
+              "default": null,
+              "description": "A configuration object specifying scrolling properties."
+            },
+            {
+              "name": "useNative",
+              "type": "Boolean | Enums.Mode",
+              "default": "'auto'",
+              "description": "Specifies whether or not the UI component uses native scrolling."
+            }
+          ]
+        },
+        {
+          "name": "showBorders",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the outer borders of the grid are visible or not."
+        },
+        {
+          "name": "showColumnGrandTotals",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display the Grand Total column."
+        },
+        {
+          "name": "showColumnTotals",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display the Total columns."
+        },
+        {
+          "name": "showRowGrandTotals",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display the Grand Total row."
+        },
+        {
+          "name": "showRowTotals",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display the Total rows. Applies only if [rowHeaderLayout] is *\"standard\"*."
+        },
+        {
+          "name": "showTotalsPrior",
+          "type": "Enums.PivotGridTotalDisplayMode",
+          "default": "'none'",
+          "description": "Specifies where to show the total rows or columns."
+        },
+        {
+          "name": "stateStoring",
+          "subMembers": [
+            {
+              "name": "customLoad",
+              "type": "function()",
+              "default": null,
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "customSave",
+              "type": "function(state)",
+              "default": null,
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not a grid saves its state."
+            },
+            {
+              "name": "savingTimeout",
+              "type": "Number",
+              "default": "2000",
+              "description": "Specifies the delay between the last change of a grid state and the operation of saving this state in milliseconds."
+            },
+            {
+              "name": "stateStoring",
+              "type": "Object",
+              "default": null,
+              "description": "A configuration object specifying properties related to state storing."
+            },
+            {
+              "name": "storageKey",
+              "type": "String",
+              "default": "null",
+              "description": "Specifies a unique key to be used for storing the grid state."
+            },
+            {
+              "name": "type",
+              "type": "Enums.StateStoreType",
+              "default": "'localStorage'",
+              "description": "Specifies the type of storage to be used for state storing."
+            }
+          ]
+        },
+        {
+          "name": "texts",
+          "subMembers": [
+            {
+              "name": "collapseAll",
+              "type": "String",
+              "default": "'Collapse All'",
+              "description": "The string to display as a **Collapse All** context menu item."
+            },
+            {
+              "name": "dataNotAvailable",
+              "type": "String",
+              "default": "'N/A'",
+              "description": "Specifies text displayed in a cell when its data is unavailable for some reason."
+            },
+            {
+              "name": "expandAll",
+              "type": "String",
+              "default": "'Expand All'",
+              "description": "The string to display as an **Expand All** context menu item."
+            },
+            {
+              "name": "exportToExcel",
+              "type": "String",
+              "default": "'Export to Excel file'",
+              "description": "The string to display as an **Export to Excel file** context menu item."
+            },
+            {
+              "name": "grandTotal",
+              "type": "String",
+              "default": "'Grand Total'",
+              "description": "The string to display as a header of the **Grand Total** row and column."
+            },
+            {
+              "name": "noData",
+              "type": "String",
+              "default": "'No data'",
+              "description": "Specifies the text displayed when a pivot grid does not contain any fields."
+            },
+            {
+              "name": "removeAllSorting",
+              "type": "String",
+              "default": "'Remove All Sorting'",
+              "description": "The string to display as a **Remove All Sorting** context menu item."
+            },
+            {
+              "name": "showFieldChooser",
+              "type": "String",
+              "default": "'Show Field Chooser'",
+              "description": "The string to display as a **Show Field Chooser** context menu item."
+            },
+            {
+              "name": "sortColumnBySummary",
+              "type": "String",
+              "default": "'Sort {0} by This Column'",
+              "description": "The string to display as a **Sort Column by Summary Value** context menu item."
+            },
+            {
+              "name": "sortRowBySummary",
+              "type": "String",
+              "default": "'Sort {0} by This Row'",
+              "description": "The string to display as a **Sort Row by Summary Value** context menu item."
+            },
+            {
+              "name": "texts",
+              "type": "Object",
+              "default": null,
+              "description": "Strings that can be changed or localized in the PivotGrid UI component."
+            },
+            {
+              "name": "total",
+              "type": "String",
+              "default": "'{0} Total'",
+              "description": "The string to display as a header of the **Total** row and column."
+            }
+          ]
+        },
+        {
+          "name": "wordWrapEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether long text in [header items] should be wrapped."
+        }
+      ]
+    },
+    {
+      "name": "Summary Cell",
+      "subMembers": [
+        {
+          "name": "Summary Cell",
+          "type": "Object",
+          "default": null,
+          "description": "An object exposing methods that manipulate a summary cell and provide access to its neighboring cells."
+        },
+        {
+          "name": "child(direction_fieldValue)",
+          "type": null,
+          "default": null,
+          "description": "Gets the child cell in a specified direction."
+        },
+        {
+          "name": "children(direction)",
+          "type": null,
+          "default": null,
+          "description": "Gets all child cells in a specified direction."
+        },
+        {
+          "name": "field(area)",
+          "type": null,
+          "default": null,
+          "description": "Gets a pivot grid field that corresponds to the summary cell."
+        },
+        {
+          "name": "grandTotal()",
+          "type": null,
+          "default": null,
+          "description": "Gets the **Grand Total** of the entire pivot grid."
+        },
+        {
+          "name": "grandTotal(direction)",
+          "type": null,
+          "default": null,
+          "description": "Gets a partial Grand Total cell of a row or column."
+        },
+        {
+          "name": "isPostProcessed(field)",
+          "type": null,
+          "default": null,
+          "description": "Indicates whether the [summaryDisplayMode] or [calculateSummaryValue] post-processed the summary value."
+        },
+        {
+          "name": "next(direction)",
+          "type": null,
+          "default": null,
+          "description": "Gets the cell next to the current one in a specified direction."
+        },
+        {
+          "name": "next(direction_allowCrossGroup)",
+          "type": null,
+          "default": null,
+          "description": "Gets the cell next to current in a specified direction."
+        },
+        {
+          "name": "parent(direction)",
+          "type": null,
+          "default": null,
+          "description": "Gets the parent cell in a specified direction."
+        },
+        {
+          "name": "prev(direction)",
+          "type": null,
+          "default": null,
+          "description": "Gets the cell prior to the current one in a specified direction."
+        },
+        {
+          "name": "prev(direction_allowCrossGroup)",
+          "type": null,
+          "default": null,
+          "description": "Gets the cell previous to current in a specified direction."
+        },
+        {
+          "name": "slice(field_value)",
+          "type": null,
+          "default": null,
+          "description": "Gets the cell located by the path of the source cell with one field value changed."
+        },
+        {
+          "name": "value()",
+          "type": null,
+          "default": null,
+          "description": "Gets the summary cell value."
+        },
+        {
+          "name": "value(field)",
+          "type": null,
+          "default": null,
+          "description": "Gets the value of any [field] associated with the summary cell."
+        },
+        {
+          "name": "value(field_postProcessed)",
+          "type": null,
+          "default": null,
+          "description": "Gets the value of any [field] associated with the summary cell."
+        },
+        {
+          "name": "value(postProcessed)",
+          "type": null,
+          "default": null,
+          "description": "Gets the summary cell value."
+        }
+      ]
+    },
+    {
+      "name": "Pivot Grid Cell",
+      "subMembers": [
+        {
+          "name": "Pivot Grid Cell",
+          "type": "Object",
+          "default": null,
+          "description": "An object containing information about the pivot grid cell."
+        },
+        {
+          "name": "columnPath",
+          "type": "Array<String, Number, Date>",
+          "default": null,
+          "description": "The cell's column path. Available for data area cells only."
+        },
+        {
+          "name": "columnType",
+          "type": "String",
+          "default": null,
+          "description": "The type of the column to which the cell belongs. Available for data area cells only."
+        },
+        {
+          "name": "dataIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The data field's index. Available for data area cells only."
+        },
+        {
+          "name": "expanded",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the cell is expanded. Available for row or column area cells only."
+        },
+        {
+          "name": "path",
+          "type": "Array<String, Number, Date>",
+          "default": null,
+          "description": "The path to the row/column cell. Available for row or column area cells only."
+        },
+        {
+          "name": "rowPath",
+          "type": "Array<String, Number, Date>",
+          "default": null,
+          "description": "The cell's row path. Available for data area cells only."
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": "The type of the row to which the cell belongs. Available for data area cells only."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The text displayed in the cell."
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "default": null,
+          "description": "The cell's type. Available for row or column area cells only."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": "The cell's value."
+        }
+      ]
+    },
+    {
+      "name": "dxPivotGrid",
+      "type": "\"xmla\",",
+      "default": null,
+      "description": "The PivotGrid is a UI component that allows you to display and analyze multi-dimensional data from a local storage or an OLAP cube."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "bindChart(chart_integrationOptions)",
+      "type": null,
+      "default": null,
+      "description": "Binds a [Chart] to the PivotGrid."
+    },
+    {
+      "name": "getDataSource()",
+      "type": null,
+      "default": null,
+      "description": "Gets the **PivotGridDataSource** instance."
+    },
+    {
+      "name": "getFieldChooserPopup()",
+      "type": null,
+      "default": null,
+      "description": "Gets the Popup instance of the field chooser window."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "updateDimensions()",
+      "type": null,
+      "default": null,
+      "description": "Updates the UI component to the size of its content."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onCellClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a pivot grid cell is clicked or tapped."
+    },
+    {
+      "name": "onCellPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a pivot grid cell is created."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onContextMenuPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the context menu is rendered."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before data is exported."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "cellClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a pivot grid cell is clicked or tapped."
+    },
+    {
+      "name": "cellPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a pivot grid cell is created."
+    },
+    {
+      "name": "contextMenuPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is rendered."
+    },
+    {
+      "name": "exporting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before data is exported."
+    }
+  ],
+  "Types": [
+    {
+      "name": "CellClickEvent",
+      "subMembers": [
+        {
+          "name": "CellClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellClick] event handler's argument."
+        },
+        {
+          "name": "area",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cell",
+          "type": "dxPivotGridPivotGridCell",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnFields",
+          "type": "Array<PivotGridDataSourceOptions_fields>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dataFields",
+          "type": "Array<PivotGridDataSourceOptions_fields>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowFields",
+          "type": "Array<PivotGridDataSourceOptions_fields>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellPreparedEvent",
+      "subMembers": [
+        {
+          "name": "CellPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellPrepared] event handler's argument."
+        },
+        {
+          "name": "area",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cell",
+          "type": "dxPivotGridPivotGridCell",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextMenuPreparingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuPreparing] event handler's argument."
+        },
+        {
+          "name": "area",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cell",
+          "type": "dxPivotGridPivotGridCell",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnFields",
+          "type": "Array<PivotGridDataSourceOptions_fields>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dataFields",
+          "type": "Array<PivotGridDataSourceOptions_fields>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "field",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowFields",
+          "type": "Array<PivotGridDataSourceOptions_fields>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "subMembers": [
+        {
+          "name": "ExportingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [exporting] event handler's argument."
+        },
+        {
+          "name": "fileName",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PivotGridArea",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the field's area."
+    },
+    {
+      "name": "PivotGridDataFieldArea",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the area to which data field headers must belong."
+    },
+    {
+      "name": "PivotGridDataType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies field values for a specific data type."
+    },
+    {
+      "name": "PivotGridGroupInterval",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the field's values are combined into groups for the [headers]."
+    },
+    {
+      "name": "PivotGridRowHeaderLayout",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the layout of items in the [row header]."
+    },
+    {
+      "name": "PivotGridRunningTotalMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether to calculate the running total by rows or by columns."
+    },
+    {
+      "name": "PivotGridSortBy",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how to sort the field's values in the [headers]."
+    },
+    {
+      "name": "PivotGridStoreType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the **PivotGridDataSource**'s storage type."
+    },
+    {
+      "name": "PivotGridSummaryDisplayMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a predefined post-processing function."
+    },
+    {
+      "name": "PivotGridTotalDisplayMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies where to show the total rows or columns."
+    }
+  ]
+}

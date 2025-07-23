@@ -1,0 +1,91 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the Pagination UI component."
+        },
+        {
+          "name": "allowedPageSizes",
+          "type": "Array<Number, String>",
+          "default": "[5, 10]",
+          "description": "Specifies page sizes available in the page size selector."
+        },
+        {
+          "name": "displayMode",
+          "type": "Enums.DisplayMode",
+          "default": "'adaptive'",
+          "description": "Specifies the UI component's display mode."
+        },
+        {
+          "name": "infoText",
+          "type": "String",
+          "default": "'Page {0} of {1} ({2} items)'",
+          "description": "Specifies the page information text."
+        },
+        {
+          "name": "itemCount",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the total number of items."
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "default": "'Page Navigation'",
+          "description": "Specifies an [aria-label] attribute for the pager."
+        },
+        {
+          "name": "pageIndex",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the page index."
+        },
+        {
+          "name": "pageSize",
+          "type": "Number",
+          "default": "5",
+          "description": "Specifies the page size."
+        },
+        {
+          "name": "showInfo",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to show the [page information]."
+        },
+        {
+          "name": "showNavigationButtons",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to show navigation buttons."
+        },
+        {
+          "name": "showPageSizeSelector",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to show the page size selector."
+        }
+      ]
+    },
+    {
+      "name": "dxPagination",
+      "type": null,
+      "default": null,
+      "description": "Pagination is a UI component that allows users to navigate through pages and change page size at runtime. Pagination UI includes a page navigator and several optional elements: a page size selector, navigation buttons, and page information."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getPageCount()",
+      "type": null,
+      "default": null,
+      "description": "Gets the number of pages."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

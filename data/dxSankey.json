@@ -1,0 +1,973 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the Sankey UI component's contents, behavior and appearance."
+        },
+        {
+          "name": "adaptiveLayout",
+          "subMembers": [
+            {
+              "name": "adaptiveLayout",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies adaptive layout properties."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "80",
+              "description": "Specifies the minimum container height at which the layout begins to adapt."
+            },
+            {
+              "name": "keepLabels",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether [node labels] should be kept when the UI component adapts the layout."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "80",
+              "description": "Specifies the minimum container width at which the layout begins to adapt."
+            }
+          ]
+        },
+        {
+          "name": "alignment",
+          "type": "Enums.VerticalAlignment | Array<Enums.VerticalAlignment>",
+          "default": "'center'",
+          "description": "Aligns node columns vertically."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+          "default": null,
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "hoverEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether nodes and links change their style when they are hovered over or pressed."
+        },
+        {
+          "name": "label",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the labels' borders."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "'#000000'",
+                  "description": "Colors the labels' borders."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean | undefined",
+                  "default": "false",
+                  "description": "Specifies whether the borders are visible."
+                },
+                {
+                  "name": "width",
+                  "type": "Number | undefined",
+                  "default": "2",
+                  "description": "Sets the borders' width in pixels."
+                }
+              ]
+            },
+            {
+              "name": "customizeText",
+              "type": "function(itemInfo)",
+              "default": null,
+              "description": "Customizes the labels' texts."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#FFFFFF'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the labels' font properties."
+                }
+              ]
+            },
+            {
+              "name": "horizontalOffset",
+              "type": "Number",
+              "default": "5",
+              "description": "Moves the labels horizontally from their initial positions."
+            },
+            {
+              "name": "label",
+              "type": "Object",
+              "default": null,
+              "description": "Configures sankey nodes' labels."
+            },
+            {
+              "name": "overlappingBehavior",
+              "type": "Enums.TextOverflow",
+              "default": "'ellipsis'",
+              "description": "Specifies how to arrange labels when there is insufficient space to display them all."
+            },
+            {
+              "name": "shadow",
+              "subMembers": [
+                {
+                  "name": "blur",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the shadows' blur distance. A larger value increases the blur distance."
+                },
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#000000'",
+                  "description": "Colors the labels' shadows."
+                },
+                {
+                  "name": "offsetX",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Moves the shadows horizontally from their initial positions."
+                },
+                {
+                  "name": "offsetY",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Moves the shadows vertically from their initial positions."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies the shadows' transparency."
+                },
+                {
+                  "name": "shadow",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the labels' shadows."
+                }
+              ]
+            },
+            {
+              "name": "useNodeColors",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to color labels in the nodes' colors."
+            },
+            {
+              "name": "verticalOffset",
+              "type": "Number",
+              "default": "0",
+              "description": "Moves the labels vertically from their initial positions."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the labels are visible."
+            }
+          ]
+        },
+        {
+          "name": "link",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the links' borders."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "'#000000'",
+                  "description": "Colors the links' borders."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean | undefined",
+                  "default": "false",
+                  "description": "Specifies whether the borders are visible."
+                },
+                {
+                  "name": "width",
+                  "type": "Number | undefined",
+                  "default": "2",
+                  "description": "Sets the borders' width in pixels."
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#000000'",
+              "description": "Colors the sankey links. Applies only if [colorMode] is *\"none\"*."
+            },
+            {
+              "name": "colorMode",
+              "type": "Enums.SankeyColorMode",
+              "default": "'none'",
+              "description": "Specifies how to color links."
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures the appearance a link's border changes to when the link is hovered over or pressed."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the color a link's border changes to when the link is hovered over or pressed."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean | undefined",
+                      "default": "undefined",
+                      "description": "Specifies whether a link's border is visible when the link is hovered over or pressed."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the width a link's border changes to when the link is hovered over or pressed."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the color a link changes to when it is hovered over or pressed."
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'right'",
+                      "description": "Specifies hatching lines' direction."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Applies hatching to a link when it is hovered over or pressed."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.75",
+                      "description": "Specifies hatching lines' transparency."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "6",
+                      "description": "Specifies the distance in pixels between two hatching lines."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "2",
+                      "description": "Specifies hatching lines' width."
+                    }
+                  ]
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the appearance a link changes to when it is hovered over or pressed."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number | undefined",
+                  "default": "0.5",
+                  "description": "Specifies the transparency a link changes to when it is hovered over or pressed."
+                }
+              ]
+            },
+            {
+              "name": "link",
+              "type": "Object",
+              "default": null,
+              "description": "Configures sankey links' appearance."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "0.3",
+              "description": "Specifies the links' transparency."
+            }
+          ]
+        },
+        {
+          "name": "node",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the nodes' borders."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "'#000000'",
+                  "description": "Colors the nodes' borders."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean | undefined",
+                  "default": "false",
+                  "description": "Specifies whether the borders are visible."
+                },
+                {
+                  "name": "width",
+                  "type": "Number | undefined",
+                  "default": "1",
+                  "description": "Sets the borders' width in pixels."
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Colors the sankey nodes."
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures the appearance a node's border changes to when the node is hovered over or pressed."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the color a node's border changes to when the node is hovered over or pressed."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean | undefined",
+                      "default": "undefined",
+                      "description": "Specifies whether a node's border is visible when the node is hovered over or pressed."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the width a node's border changes to when the node is hovered over or pressed."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the color a node changes to when it is hovered over or pressed."
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'right'",
+                      "description": "Specifies hatching lines' direction."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Applies hatching to a node when it is hovered over or pressed."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.75",
+                      "description": "Specifies hatching lines' transparency."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "6",
+                      "description": "Specifies the distance in pixels between two hatching lines."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "2",
+                      "description": "Specifies hatching lines' width."
+                    }
+                  ]
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the appearance a node changes to when it is hovered over or pressed."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the transparency a node changes to when it is hovered over or pressed."
+                }
+              ]
+            },
+            {
+              "name": "node",
+              "type": "Object",
+              "default": null,
+              "description": "Configures sankey nodes' appearance."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "1",
+              "description": "Specifies the nodes' transparency."
+            },
+            {
+              "name": "padding",
+              "type": "Number",
+              "default": "30",
+              "description": "Specifies the vertical distance, in pixels, between two nodes."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "15",
+              "description": "Specifies the nodes' width in pixels."
+            }
+          ]
+        },
+        {
+          "name": "palette",
+          "type": "Array<String> | Enums.Palette",
+          "default": "'Material'",
+          "description": "Sets the palette to be used to colorize sankey nodes."
+        },
+        {
+          "name": "paletteExtensionMode",
+          "type": "Enums.PaletteExtensionMode",
+          "default": "'blend'",
+          "description": "Specifies how to extend the [palette] when it contains less colors than the number of sankey nodes."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "400",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 400, width: 400}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "400",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "sortData",
+          "type": "any | undefined",
+          "default": "undefined",
+          "description": "Specifies nodes' sorting order in their columns."
+        },
+        {
+          "name": "sourceField",
+          "type": "String",
+          "default": "'source'",
+          "description": "Specifies which data source field provides links' source nodes."
+        },
+        {
+          "name": "targetField",
+          "type": "String",
+          "default": "'target'",
+          "description": "Specifies which data source field provides links' target nodes."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "customizeLinkTooltip",
+              "type": "function(info)",
+              "default": "undefined",
+              "description": "Customizes link tooltips' appearance."
+            },
+            {
+              "name": "customizeNodeTooltip",
+              "type": "function(info)",
+              "default": "undefined",
+              "description": "Customizes node tooltips' appearance."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": null
+            },
+            {
+              "name": "linkTooltipComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [linkTooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "linkTooltipRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [linkTooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "linkTooltipTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a [link]'s tooltip."
+            },
+            {
+              "name": "nodeTooltipComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [nodeTooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "nodeTooltipRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [nodeTooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "nodeTooltipTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a [node]'s tooltip."
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/sankey:Tooltip",
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "weightField",
+          "type": "String",
+          "default": "'weight'",
+          "description": "Specifies which data source field provides links' weights."
+        }
+      ]
+    },
+    {
+      "name": "Node",
+      "subMembers": [
+        {
+          "name": "Fields",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "type": null,
+              "default": null,
+              "description": "Fields that provide information about the sankey node."
+            },
+            {
+              "name": "label",
+              "type": "String",
+              "default": null,
+              "description": "The node's label."
+            },
+            {
+              "name": "linksIn",
+              "type": "Array<any>",
+              "default": null,
+              "description": "The node's incoming links."
+            },
+            {
+              "name": "linksOut",
+              "type": "Array<any>",
+              "default": null,
+              "description": "The node's outgoing links."
+            }
+          ]
+        },
+        {
+          "name": "Node",
+          "type": null,
+          "default": null,
+          "description": "A sankey node's structure."
+        }
+      ]
+    },
+    {
+      "name": "Link",
+      "subMembers": [
+        {
+          "name": "Fields",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "type": null,
+              "default": null,
+              "description": "Fields that provide information about the sankey link."
+            },
+            {
+              "name": "connection",
+              "type": "dxSankeyConnectionInfoObject",
+              "default": null,
+              "description": "An object that describes the connection."
+            }
+          ]
+        },
+        {
+          "name": "Link",
+          "type": null,
+          "default": null,
+          "description": "A sankey link's structure."
+        }
+      ]
+    },
+    {
+      "name": "dxSankey",
+      "type": null,
+      "default": null,
+      "description": "The Sankey is a UI component that visualizes the flow magnitude between value sets. The values being connected are called nodes; the connections - links. The higher the flow magnitude, the wider the link is."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getAllLinks()",
+      "type": null,
+      "default": null,
+      "description": "Gets all sankey links."
+    },
+    {
+      "name": "getAllNodes()",
+      "type": null,
+      "default": null,
+      "description": "Gets all sankey nodes."
+    },
+    {
+      "name": "hideTooltip()",
+      "type": null,
+      "default": null,
+      "description": "Hides all UI component tooltips."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onLinkClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a sankey link is clicked or tapped."
+    },
+    {
+      "name": "onLinkHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a sankey link."
+    },
+    {
+      "name": "onNodeClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a sankey node is clicked or tapped."
+    },
+    {
+      "name": "onNodeHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a sankey node."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "linkClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a sankey link is clicked or tapped."
+    },
+    {
+      "name": "linkHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a sankey link."
+    },
+    {
+      "name": "nodeClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a sankey node is clicked or tapped."
+    },
+    {
+      "name": "nodeHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a sankey node."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "LinkClickEvent",
+      "subMembers": [
+        {
+          "name": "LinkClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [linkClick] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "dxSankeyLink",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "LinkHoverEvent",
+      "subMembers": [
+        {
+          "name": "LinkHoverEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [linkHoverChanged] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "dxSankeyLink",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "NodeClickEvent",
+      "subMembers": [
+        {
+          "name": "NodeClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [nodeClick] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "dxSankeyNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "NodeHoverEvent",
+      "subMembers": [
+        {
+          "name": "NodeHoverEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [nodeHoverChanged] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "dxSankeyNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SankeyColorMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how to color links."
+    },
+    {
+      "name": "Tooltip",
+      "subMembers": [
+        {
+          "name": "Tooltip",
+          "type": "module: viz/sankey",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "customizeLinkTooltip",
+          "type": "function(info) | undefined",
+          "default": "undefined",
+          "description": "Customizes link tooltips' appearance."
+        },
+        {
+          "name": "customizeNodeTooltip",
+          "type": "function(info) | undefined",
+          "default": "undefined",
+          "description": "Customizes node tooltips' appearance."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the tooltip is enabled."
+        },
+        {
+          "name": "linkTooltipTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a [link]'s tooltip."
+        },
+        {
+          "name": "nodeTooltipTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a [node]'s tooltip."
+        }
+      ]
+    }
+  ]
+}

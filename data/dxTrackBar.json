@@ -1,0 +1,36 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "max",
+          "type": "Number",
+          "default": "100",
+          "description": "The maximum value the UI component can accept."
+        },
+        {
+          "name": "min",
+          "type": "Number",
+          "default": "0",
+          "description": "The minimum value the UI component can accept."
+        }
+      ]
+    },
+    {
+      "name": "dxTrackBar",
+      "type": null,
+      "default": null,
+      "description": "A base class for track bar UI components."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

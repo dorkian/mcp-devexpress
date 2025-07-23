@@ -1,0 +1,1230 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that specifies configuration properties for the  UI component."
+        },
+        {
+          "name": "annotations",
+          "subMembers": [
+            {
+              "name": "annotations",
+              "type": "Array<dxVectorMapAnnotationConfig, any>",
+              "default": null,
+              "description": "Specifies the annotation collection."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the annotation's name."
+            }
+          ]
+        },
+        {
+          "name": "background",
+          "subMembers": [
+            {
+              "name": "background",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the properties for the map background."
+            },
+            {
+              "name": "borderColor",
+              "type": "String",
+              "default": "'#cacaca'",
+              "description": "Specifies a color for the background border."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#ffffff'",
+              "description": "Specifies a color for the background."
+            }
+          ]
+        },
+        {
+          "name": "bounds",
+          "type": "Array<Number>",
+          "default": "undefined",
+          "description": "Specifies the positioning of a map in geographical coordinates."
+        },
+        {
+          "name": "center",
+          "type": "Array<Number>",
+          "default": "[0, 0]",
+          "description": "Specifies the geographical coordinates of the center for a map."
+        },
+        {
+          "name": "commonAnnotationSettings",
+          "type": "dxVectorMapCommonAnnotationConfig",
+          "default": null,
+          "description": "Specifies settings common for all annotations in the VectorMap."
+        },
+        {
+          "name": "controlBar",
+          "subMembers": [
+            {
+              "name": "borderColor",
+              "type": "String",
+              "default": "'#5d5d5d'",
+              "description": "Specifies a color for the outline of the control bar elements."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#ffffff'",
+              "description": "Specifies a color for the inner area of the control bar elements."
+            },
+            {
+              "name": "controlBar",
+              "type": "Object",
+              "default": null,
+              "description": "Configures the control bar."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to display the control bar."
+            },
+            {
+              "name": "horizontalAlignment",
+              "type": "Enums.HorizontalAlignment",
+              "default": "'left'",
+              "description": "Specifies the position of the control bar."
+            },
+            {
+              "name": "margin",
+              "type": "Number",
+              "default": "20",
+              "description": "Specifies the margin of the control bar in pixels."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "0.3",
+              "description": "Specifies the opacity of the [control bar]."
+            },
+            {
+              "name": "panVisible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the pan control is visible."
+            },
+            {
+              "name": "verticalAlignment",
+              "type": "Enums.VerticalEdge",
+              "default": "'top'",
+              "description": "Specifies the position of the control bar."
+            },
+            {
+              "name": "zoomVisible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the zoom bar is visible."
+            }
+          ]
+        },
+        {
+          "name": "customizeAnnotation",
+          "type": "function(annotation) | undefined",
+          "default": "undefined",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "layers",
+          "subMembers": [
+            {
+              "name": "borderColor",
+              "type": "String",
+              "default": "'#9d9d9d'",
+              "description": "Specifies a color for the border of the layer elements."
+            },
+            {
+              "name": "borderWidth",
+              "type": "Number",
+              "default": "1",
+              "description": "Specifies the line width (for layers of a **line** type) or width of the layer elements border in pixels."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#d2d2d2'",
+              "description": "Specifies a color for layer elements."
+            },
+            {
+              "name": "colorGroupingField",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the field that provides data to be used for coloring of layer elements."
+            },
+            {
+              "name": "colorGroups",
+              "type": "Array<Number>",
+              "default": "undefined",
+              "description": "Allows you to paint layer elements with similar attributes in the same color."
+            },
+            {
+              "name": "customize",
+              "type": "function(elements)",
+              "default": null,
+              "description": "A function that customizes each layer element individually."
+            },
+            {
+              "name": "dataField",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of the attribute containing marker data. Setting this property makes sense only if the [layer type] is *\"marker\"* and the [elementType] is *\"bubble\"*, *\"pie\"* or *\"image\"*."
+            },
+            {
+              "name": "dataSource",
+              "type": "Object | Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": null,
+              "description": "Specifies a data source for the layer."
+            },
+            {
+              "name": "elementType",
+              "type": "Enums.VectorMapMarkerType",
+              "default": null,
+              "description": "Specifies the type of a marker element. Setting this property makes sense only if the [layer type] is *\"marker\"*."
+            },
+            {
+              "name": "hoverEnabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to change the appearance of a layer element when it is hovered over."
+            },
+            {
+              "name": "hoveredBorderColor",
+              "type": "String",
+              "default": "'#303030'",
+              "description": "Specifies a color for the border of the layer element when it is hovered over."
+            },
+            {
+              "name": "hoveredBorderWidth",
+              "type": "Number",
+              "default": "1",
+              "description": "Specifies the pixel-measured line width (for layers of a **line** type) or width for the border of the layer element when it is [hovered over]."
+            },
+            {
+              "name": "hoveredColor",
+              "type": "String",
+              "default": "'#d2d2d2'",
+              "description": "Specifies a color for a layer element when it is hovered over."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "dataField",
+                  "type": "String",
+                  "default": null,
+                  "description": "The name of the [data source] attribute containing marker texts."
+                },
+                {
+                  "name": "enabled",
+                  "type": "Boolean",
+                  "default": "<i>true</i> for markers; <i>false</i> for areas",
+                  "description": "Enables marker labels."
+                },
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#2b2b2b'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for marker labels."
+                    }
+                  ]
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies marker label properties."
+                }
+              ]
+            },
+            {
+              "name": "layers",
+              "type": "Array<Object> | Object",
+              "default": "undefined",
+              "description": "Specifies properties for VectorMap UI component layers."
+            },
+            {
+              "name": "maxSize",
+              "type": "Number",
+              "default": "50",
+              "description": "Specifies the pixel-measured diameter of the marker that represents the biggest value. Setting this property makes sense only if the [layer type] is *\"marker\"*."
+            },
+            {
+              "name": "minSize",
+              "type": "Number",
+              "default": "20",
+              "description": "Specifies the pixel-measured diameter of the marker that represents the smallest value. Setting this property makes sense only if the [layer type] is *\"marker\"*."
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the layer name."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "1",
+              "description": "Specifies the layer opacity (from 0 to 1)."
+            },
+            {
+              "name": "palette",
+              "type": "Array<String> | Enums.Palette",
+              "default": "'Material'",
+              "description": "The name of a predefined palette or a custom range of colors to be used as a palette."
+            },
+            {
+              "name": "paletteIndex",
+              "type": "Number",
+              "default": null,
+              "description": "The position of a color in the **palette[]** array. Should not exceed the value of the [paletteSize] property."
+            },
+            {
+              "name": "paletteSize",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the number of colors in a palette."
+            },
+            {
+              "name": "selectedBorderColor",
+              "type": "String",
+              "default": "'#303030'",
+              "description": "Specifies a color for the border of the layer element when it is [selected]."
+            },
+            {
+              "name": "selectedBorderWidth",
+              "type": "Number",
+              "default": "2",
+              "description": "Specifies a pixel-measured line width (for layers of a **line** type) or width for the border of the layer element when it is [selected]."
+            },
+            {
+              "name": "selectedColor",
+              "type": "String",
+              "default": "'#d2d2d2'",
+              "description": "Specifies a color for the layer element when it is [selected]."
+            },
+            {
+              "name": "selectionMode",
+              "type": "Enums.SingleMultipleOrNone",
+              "default": "'single'",
+              "description": "Specifies whether single or multiple map elements can be selected on a vector map."
+            },
+            {
+              "name": "size",
+              "type": "Number",
+              "default": "8",
+              "description": "Specifies the size of markers. Setting this property makes sense only if the [layer type] is *\"marker\"* and the [elementType] is *\"dot\"*, *\"pie\"* or *\"image\"*."
+            },
+            {
+              "name": "sizeGroupingField",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the field that provides data to be used for sizing [bubble] markers. Setting this property makes sense only if the [layer type] is *\"marker\"* and the [elementType] is *\"bubble\"*."
+            },
+            {
+              "name": "sizeGroups",
+              "type": "Array<Number>",
+              "default": "undefined",
+              "description": "Allows you to display [bubbles] with similar attributes in the same size. Setting this property makes sense only if the [layer type] is *\"marker\"* and the [elementType] is *\"bubble\"*."
+            },
+            {
+              "name": "type",
+              "type": "Enums.VectorMapLayerType",
+              "default": null,
+              "description": "Specifies layer type."
+            }
+          ]
+        },
+        {
+          "name": "legends",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": null,
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "columnCount",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "customizeHint",
+              "type": "function(itemInfo)",
+              "default": null,
+              "description": "Specifies text for a hint that appears when a user hovers the mouse pointer over the text of a legend item."
+            },
+            {
+              "name": "customizeItems",
+              "type": "function(items)",
+              "default": null,
+              "description": "Allows you to change the order and visibility of legend items."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(itemInfo)",
+              "default": null,
+              "description": "Specifies text for legend items."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#2b2b2b'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "horizontalAlignment",
+              "type": null,
+              "default": null,
+              "description": "Along with [verticalAlignment], specifies the legend's position."
+            },
+            {
+              "name": "itemsAlignment",
+              "type": null,
+              "default": null,
+              "description": "Aligns items in the last column or row (depending on the legend's [orientation]). Applies when legend items are not divided into columns or rows equally."
+            },
+            {
+              "name": "legends",
+              "type": "Array<viz/vector_map:Legend>",
+              "default": "undefined",
+              "description": "Configures map legends."
+            },
+            {
+              "name": "markerColor",
+              "type": "String",
+              "default": "undefined",
+              "description": "Specifies the color of item markers in the legend. The specified color applied only when the legend uses *'size'* [source]."
+            },
+            {
+              "name": "markerComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "markerRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "markerShape",
+              "type": "Enums.VectorMapMarkerShape",
+              "default": "'square'",
+              "description": "Specifies the shape of item markers."
+            },
+            {
+              "name": "markerSize",
+              "type": "Number",
+              "default": "12",
+              "description": null
+            },
+            {
+              "name": "markerTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies an SVG element that serves as a custom legend item marker."
+            },
+            {
+              "name": "orientation",
+              "type": null,
+              "default": null,
+              "description": "Arranges legend items vertically (in a column) or horizontally (in a row). The default value is *\"horizontal\"* if the **legends[]**.[horizontalAlignment] is *\"center\"*. Otherwise, it is *\"vertical\"*."
+            },
+            {
+              "name": "rowCount",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "source",
+              "subMembers": [
+                {
+                  "name": "grouping",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies the type of the legend grouping."
+                },
+                {
+                  "name": "layer",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies a layer to which the legend belongs."
+                },
+                {
+                  "name": "source",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the source of data for the legend."
+                }
+              ]
+            },
+            {
+              "name": "verticalAlignment",
+              "type": null,
+              "default": null,
+              "description": "Along with [horizontalAlignment], specifies the legend's position."
+            }
+          ]
+        },
+        {
+          "name": "margin",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maxZoomFactor",
+          "type": "Number",
+          "default": "256",
+          "description": "Specifies a map's maximum zoom factor."
+        },
+        {
+          "name": "panningEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Disables the [panning] capability."
+        },
+        {
+          "name": "projection",
+          "type": "Enums.VectorMapProjection | VectorMapProjectionConfig | String | Object",
+          "default": "'mercator'",
+          "description": "Specifies the map projection."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "400",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 400, width: 800}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "800",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a tooltip."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": "function(info)",
+              "default": "undefined",
+              "description": "Specifies text and appearance of a set of tooltips."
+            },
+            {
+              "name": "format",
+              "type": "Format",
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/vector_map:Tooltip",
+              "default": null,
+              "description": "Configures tooltips."
+            }
+          ]
+        },
+        {
+          "name": "touchEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the map should respond to touch gestures."
+        },
+        {
+          "name": "wheelEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not the map should respond when a user rolls the mouse wheel."
+        },
+        {
+          "name": "zoomFactor",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies a number that is used to zoom a map initially."
+        },
+        {
+          "name": "zoomingEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Disables the [zooming] capability."
+        }
+      ]
+    },
+    {
+      "name": "Map Elements",
+      "subMembers": [
+        {
+          "name": "Layer Element",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information on the vector map layer element."
+                },
+                {
+                  "name": "layer",
+                  "type": "any",
+                  "default": null,
+                  "description": "The parent layer of the layer element."
+                }
+              ]
+            },
+            {
+              "name": "Layer Element",
+              "type": null,
+              "default": null,
+              "description": "This section describes the **Layer Element** object, which represents a vector map layer element."
+            }
+          ]
+        },
+        {
+          "name": "Layer",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information on the vector map layer."
+                },
+                {
+                  "name": "elementType",
+                  "type": "String",
+                  "default": null,
+                  "description": "The type of the layer elements."
+                },
+                {
+                  "name": "index",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The layer index in the [layers] array."
+                },
+                {
+                  "name": "name",
+                  "type": "String",
+                  "default": null,
+                  "description": "The name of the layer."
+                },
+                {
+                  "name": "type",
+                  "type": "String",
+                  "default": null,
+                  "description": "The layer type. Can be *\"area\"*, *\"line\"* or *\"marker\"*."
+                }
+              ]
+            },
+            {
+              "name": "Layer",
+              "type": null,
+              "default": null,
+              "description": "This section describes the **Layer** object, which represents a vector map layer."
+            }
+          ]
+        },
+        {
+          "name": "Map Elements",
+          "type": null,
+          "default": null,
+          "description": "This section describes vector map elements."
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "VectorMapLegendItem",
+          "subMembers": [
+            {
+              "name": "VectorMapLegendItem",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a legend item in the [VectorMap] UI component."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": null,
+              "description": "The color of the legend item's marker."
+            },
+            {
+              "name": "end",
+              "type": "Number",
+              "default": null,
+              "description": "The end value of the [group] that the legend item indicates."
+            },
+            {
+              "name": "marker",
+              "subMembers": [
+                {
+                  "name": "marker",
+                  "type": null,
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "size",
+                  "type": null,
+                  "default": null,
+                  "description": "The diameter of the legend item's marker in pixels."
+                }
+              ]
+            },
+            {
+              "name": "start",
+              "type": "Number",
+              "default": null,
+              "description": "The start value of the [group] that the legend item indicates."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxVectorMap",
+      "type": "'area',",
+      "default": null,
+      "description": "The VectorMap is a UI component that visualizes geographical locations. This UI component represents a geographical map that contains areas and markers. Areas embody continents and countries. Markers flag specific points on the map, for example, towns, cities or capitals."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "center()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current map center coordinates."
+    },
+    {
+      "name": "center(centerCoordinates)",
+      "type": null,
+      "default": null,
+      "description": "Sets the map center coordinates."
+    },
+    {
+      "name": "clearSelection()",
+      "type": null,
+      "default": null,
+      "description": "Deselects all the selected area and markers on a map at once. The areas and markers are displayed in their initial style after."
+    },
+    {
+      "name": "convertToGeo(x_y)",
+      "type": null,
+      "default": null,
+      "description": "Converts coordinates from pixels to the [dataSource] coordinate system."
+    },
+    {
+      "name": "convertToXY(longitude_latitude)",
+      "type": null,
+      "default": null,
+      "description": "Converts coordinates from the [dataSource] coordinate system to pixels."
+    },
+    {
+      "name": "getLayerByIndex(index)",
+      "type": null,
+      "default": null,
+      "description": "Gets a layer with a specific index."
+    },
+    {
+      "name": "getLayerByName(name)",
+      "type": null,
+      "default": null,
+      "description": "Gets a layer with a specific name."
+    },
+    {
+      "name": "getLayers()",
+      "type": null,
+      "default": null,
+      "description": "Gets all layers."
+    },
+    {
+      "name": "viewport()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current map viewport coordinates."
+    },
+    {
+      "name": "viewport(viewportCoordinates)",
+      "type": null,
+      "default": null,
+      "description": "Sets the map viewport coordinates."
+    },
+    {
+      "name": "zoomFactor()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current zoom factor value."
+    },
+    {
+      "name": "zoomFactor(zoomFactor)",
+      "type": null,
+      "default": null,
+      "description": "Sets the zoom factor value."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onCenterChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time the center coordinates are changed."
+    },
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when any location on the map is clicked or tapped."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a layer element is selected or selection is canceled."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "onZoomFactorChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time the zoom factor is changed."
+    },
+    {
+      "name": "centerChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time the center coordinates are changed."
+    },
+    {
+      "name": "click",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when any location on the map is clicked or tapped."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a layer element is selected or selection is canceled."
+    },
+    {
+      "name": "tooltipHidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip becomes hidden."
+    },
+    {
+      "name": "tooltipShown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip appears."
+    },
+    {
+      "name": "zoomFactorChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time the zoom factor is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "CenterChangedEvent",
+      "subMembers": [
+        {
+          "name": "CenterChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [centerChanged] event handler's argument."
+        },
+        {
+          "name": "center",
+          "type": "Array<Number>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ClickEvent",
+      "subMembers": [
+        {
+          "name": "ClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [click] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "MapLayerElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "Legend",
+      "subMembers": [
+        {
+          "name": "Legend",
+          "type": "uid: viz/vector_map:Legend",
+          "default": null,
+          "description": "Configures map legends."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(itemInfo)",
+          "default": null,
+          "description": "Specifies text for a hint that appears when a user hovers the mouse pointer over the text of a legend item."
+        },
+        {
+          "name": "customizeItems",
+          "type": "function(items)",
+          "default": null,
+          "description": "Allows you to change the order and visibility of legend items."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(itemInfo)",
+          "default": null,
+          "description": "Specifies text for legend items."
+        },
+        {
+          "name": "markerColor",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the color of item markers in the legend. The specified color applied only when the legend uses *'size'* [source]."
+        },
+        {
+          "name": "markerShape",
+          "type": "Enums.VectorMapMarkerShape",
+          "default": "'square'",
+          "description": "Specifies the shape of item markers."
+        },
+        {
+          "name": "markerSize",
+          "type": "Number",
+          "default": "12",
+          "description": "Specifies the marker's size in a legend item in pixels."
+        },
+        {
+          "name": "markerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies an SVG element that serves as a custom legend item marker."
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectionChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectionChanged] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "MapLayerElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "subMembers": [
+        {
+          "name": "Tooltip",
+          "type": "module: viz/vector_map",
+          "default": null,
+          "description": "Configures tooltips."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a tooltip."
+        },
+        {
+          "name": "customizeTooltip",
+          "type": "function(info) | undefined",
+          "default": "undefined",
+          "description": "Specifies text and appearance of a set of tooltips."
+        },
+        {
+          "name": "format",
+          "type": "Format",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipInfo",
+      "subMembers": [
+        {
+          "name": "TooltipInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "MapLayerElement | dxVectorMapAnnotationConfig",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    },
+    {
+      "name": "VectorMapLayerType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies layer type."
+    },
+    {
+      "name": "VectorMapMarkerShape",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the shape of item markers."
+    },
+    {
+      "name": "VectorMapMarkerType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of a marker element."
+    },
+    {
+      "name": "VectorMapProjection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the map projection."
+    },
+    {
+      "name": "ZoomFactorChangedEvent",
+      "subMembers": [
+        {
+          "name": "ZoomFactorChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [zoomFactorChanged] event handler's argument."
+        },
+        {
+          "name": "zoomFactor",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

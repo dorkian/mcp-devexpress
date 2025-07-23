@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "acceptedValues",
+      "type": "Array<String, Number, Boolean>",
+      "default": null,
+      "description": "Specifies values for a format with multiple choices. Should be used with the [name]."
+    },
+    {
+      "name": "dxHtmlEditorToolbarItem",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "location",
+      "type": "Enums.ToolbarItemLocation",
+      "default": "'before'",
+      "description": null
+    },
+    {
+      "name": "name",
+      "type": "Enums.HtmlEditorPredefinedToolbarItem | String",
+      "default": null,
+      "description": "Specifies the predefined item that this object customizes or a format with multiple choices."
+    },
+    {
+      "name": "options",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "template",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "widget",
+      "type": null,
+      "default": null,
+      "description": "The name of the UI component that should represent the toolbar item."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "dxGanttToolbar",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the toolbar."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxGanttToolbarItem, Enums.GanttPredefinedToolbarItem>",
+      "default": null,
+      "description": "Configures toolbar items' settings."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

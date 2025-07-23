@@ -1,0 +1,91 @@
+{
+  "properties": [
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "dataSource",
+      "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+      "default": "null",
+      "description": "Provides data for the suggestion list."
+    },
+    {
+      "name": "displayExpr",
+      "type": "String | function(item)",
+      "default": "'this'",
+      "description": "Specifies the data field whose values should be displayed in the suggestion list."
+    },
+    {
+      "name": "dxHtmlEditorMention",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [itemTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "itemRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [itemTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "itemTemplate",
+      "type": "template",
+      "default": "'item'",
+      "description": "Specifies a custom template for suggestion list items."
+    },
+    {
+      "name": "marker",
+      "type": "String",
+      "default": "'@'",
+      "description": "Specifies the prefix that a user enters to activate mentions. You can use different prefixes with different [dataSources]."
+    },
+    {
+      "name": "minSearchLength",
+      "type": "Number",
+      "default": "0",
+      "description": "Specifies the minimum number of characters that a user should type to trigger the search."
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "searchExpr",
+      "type": "getter | Array<getter>",
+      "default": "'this'",
+      "description": "Specifies one or several [data fields] to search."
+    },
+    {
+      "name": "searchTimeout",
+      "type": "Number",
+      "default": "500",
+      "description": "Specifies the delay between when a user stops typing and when the search is executed."
+    },
+    {
+      "name": "template",
+      "type": "template",
+      "default": "null",
+      "description": "Specifies a custom template for mentions."
+    },
+    {
+      "name": "valueExpr",
+      "type": "String | function()",
+      "default": "'this'",
+      "description": "Specifies which [data field] provides unique values to the [template]'s `id` parameter."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

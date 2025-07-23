@@ -1,0 +1,158 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the RangeSlider UI component."
+        },
+        {
+          "name": "end",
+          "type": "Number",
+          "default": "60",
+          "description": "The right edge of the interval currently selected using the range slider."
+        },
+        {
+          "name": "endName",
+          "type": "String",
+          "default": "''",
+          "description": "The value to be assigned to the <a href=\"http://www.w3schools.com/tags/att_input_name.asp\" target=\"_blank\">name</a> attribute of the underlying `<input>` element."
+        },
+        {
+          "name": "name",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "start",
+          "type": "Number",
+          "default": "40",
+          "description": "The left edge of the interval currently selected using the range slider."
+        },
+        {
+          "name": "startName",
+          "type": "String",
+          "default": "''",
+          "description": "The value to be assigned to the <a href=\"http://www.w3schools.com/tags/att_input_name.asp\" target=\"_blank\">name</a> attribute of the underlying `<input>` element."
+        },
+        {
+          "name": "value",
+          "type": "Array<Number>",
+          "default": "[40, 60]",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxRangeSlider",
+      "type": null,
+      "default": null,
+      "description": "The RangeSlider is a UI component that allows an end user to choose a range of numeric values."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "ValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [valueChanged] event handler's argument."
+        },
+        {
+          "name": "end",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "start",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Array<Number>",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

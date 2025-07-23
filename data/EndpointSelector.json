@@ -1,0 +1,26 @@
+{
+  "properties": [
+    {
+      "name": "EndpointSelector",
+      "type": null,
+      "default": null,
+      "description": "The **EndpointSelector** is an object for managing OData endpoints in your application."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "ctor(options)",
+      "type": null,
+      "default": null,
+      "description": "##### param(options): Object"
+    },
+    {
+      "name": "urlFor(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets an endpoint with a specific key."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

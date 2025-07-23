@@ -1,0 +1,600 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the LinearGauge UI component."
+        },
+        {
+          "name": "geometry",
+          "subMembers": [
+            {
+              "name": "geometry",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the properties required to set the geometry of the LinearGauge UI component."
+            },
+            {
+              "name": "orientation",
+              "type": "Enums.Orientation",
+              "default": "'horizontal'",
+              "description": "Indicates whether to display the LinearGauge UI component vertically or horizontally."
+            }
+          ]
+        },
+        {
+          "name": "rangeContainer",
+          "subMembers": [
+            {
+              "name": "horizontalOrientation",
+              "type": "Enums.HorizontalAlignment",
+              "default": "'right'",
+              "description": "Specifies the orientation of the range container. Applies only if the **geometry**.[orientation] property is *\"vertical\"*."
+            },
+            {
+              "name": "rangeContainer",
+              "type": "viz/linear_gauge:RangeContainer",
+              "default": null,
+              "description": "Specifies gauge range container properties."
+            },
+            {
+              "name": "verticalOrientation",
+              "type": "Enums.VerticalAlignment",
+              "default": "'bottom'",
+              "description": "Specifies the orientation of the range container. Applies only if the **geometry**.[orientation] property is *\"horizontal\"*."
+            },
+            {
+              "name": "width",
+              "subMembers": [
+                {
+                  "name": "end",
+                  "type": "Number",
+                  "default": "5",
+                  "description": "Specifies an end width of a range container."
+                },
+                {
+                  "name": "start",
+                  "type": "Number",
+                  "default": "5",
+                  "description": "Specifies a start width of a range container."
+                },
+                {
+                  "name": "width",
+                  "type": "Object | Number",
+                  "default": null,
+                  "description": "Specifies the width of the range container's start and end boundaries in the LinearGauge UI component."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "scale",
+          "subMembers": [
+            {
+              "name": "horizontalOrientation",
+              "type": "Enums.HorizontalAlignment",
+              "default": "'right'",
+              "description": "Specifies the orientation of scale ticks. Applies only if the **geometry**.[orientation] property is *\"vertical\"*."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "indentFromTick",
+                  "type": "Number",
+                  "default": "-10",
+                  "description": "Specifies the spacing between scale labels and ticks."
+                },
+                {
+                  "name": "label",
+                  "type": "viz/linear_gauge:ScaleLabel",
+                  "default": null,
+                  "description": "Specifies common properties for scale labels."
+                }
+              ]
+            },
+            {
+              "name": "scale",
+              "type": "viz/linear_gauge:Scale",
+              "default": null,
+              "description": "Specifies the gauge's scale properties."
+            },
+            {
+              "name": "scaleDivisionFactor",
+              "type": "Number",
+              "default": "25",
+              "description": null
+            },
+            {
+              "name": "verticalOrientation",
+              "type": "Enums.VerticalAlignment",
+              "default": "'bottom'",
+              "description": "Specifies the orientation of scale ticks. Applies only if the **geometry**.[orientation] property is *\"horizontal\"*."
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "100 | 300",
+              "description": "Specifies the height of the UI component in pixels. The default value depends on the component's orientation."
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 100, width: 300} | {height: 300, width: 100}",
+              "description": "Specifies the UI component's size in pixels. The default value depends on the component's orientation."
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "300 | 100",
+              "description": "Specifies the width of the UI component in pixels. The default value depends on the component's orientation."
+            }
+          ]
+        },
+        {
+          "name": "subvalueIndicator",
+          "subMembers": [
+            {
+              "name": "subvalueIndicator",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the appearance properties of subvalue indicators."
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "default": "'triangleMarker'",
+              "description": "Specifies the type of subvalue indicators."
+            }
+          ]
+        },
+        {
+          "name": "valueIndicator",
+          "subMembers": [
+            {
+              "name": "palette",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "default": "'rangeBar'",
+              "description": "Specifies the type of the value indicator."
+            },
+            {
+              "name": "valueIndicator",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the appearance properties of the value indicator."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Indicator Types",
+      "subMembers": [
+        {
+          "name": "Circle",
+          "subMembers": [
+            {
+              "name": "Circle",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **circle** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#C2C2C2'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "2.5",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Indicator Types",
+          "type": null,
+          "default": null,
+          "description": "This section lists objects that define properties used to configure value and subvalue indicators of specific types."
+        },
+        {
+          "name": "RangeBar",
+          "subMembers": [
+            {
+              "name": "RangeBar",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **rangeBar** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#CBC5CF'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "10",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Rectangle",
+          "subMembers": [
+            {
+              "name": "Rectangle",
+              "type": "Object",
+              "default": null,
+              "description": "An object defining a gauge indicator of the **rectangle** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#C2C2C2'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "2.5",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "15",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "Rhombus",
+          "subMembers": [
+            {
+              "name": "Rhombus",
+              "type": "Object",
+              "default": null,
+              "description": "An object defining a gauge indicator of the **rhombus** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#C2C2C2'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "2.5",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "15",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "TextCloud",
+          "subMembers": [
+            {
+              "name": "TextCloud",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **textCloud** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#679EC5'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "-1",
+              "description": null
+            },
+            {
+              "name": "text",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#FFFFFF'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": null,
+                      "default": null,
+                      "description": null
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "18",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "text",
+                  "type": null,
+                  "default": null,
+                  "description": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TriangleMarker",
+          "subMembers": [
+            {
+              "name": "TriangleMarker",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **triangleMarker** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#8798A5'",
+              "description": null
+            },
+            {
+              "name": "length",
+              "type": null,
+              "default": "14",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "10",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "13",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxLinearGauge",
+      "type": null,
+      "default": null,
+      "description": "The LinearGauge is a UI component that indicates values on a linear numeric scale."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip appears."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "RangeContainer",
+      "subMembers": [
+        {
+          "name": "RangeContainer",
+          "type": "module: viz/linear_gauge",
+          "default": null,
+          "description": "Specifies gauge range container properties."
+        },
+        {
+          "name": "horizontalOrientation",
+          "type": "Enums.HorizontalAlignment",
+          "default": "'right'",
+          "description": "Specifies the orientation of the range container. Applies only if the **geometry**.[orientation] property is *\"vertical\"*."
+        },
+        {
+          "name": "verticalOrientation",
+          "type": "Enums.VerticalAlignment",
+          "default": "'bottom'",
+          "description": "Specifies the orientation of the range container. Applies only if the **geometry**.[orientation] property is *\"horizontal\"*."
+        }
+      ]
+    },
+    {
+      "name": "Scale",
+      "subMembers": [
+        {
+          "name": "Scale",
+          "type": "module: viz/linear_gauge",
+          "default": null,
+          "description": "Specifies the gauge's scale properties."
+        },
+        {
+          "name": "horizontalOrientation",
+          "type": "Enums.HorizontalAlignment",
+          "default": "'right'",
+          "description": "Specifies the orientation of scale ticks. Applies only if the **geometry**.[orientation] property is *\"vertical\"*."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies common properties for scale labels."
+        },
+        {
+          "name": "scaleDivisionFactor",
+          "type": "Number",
+          "default": "25",
+          "description": "Specifies the minimum distance between two neighboring major ticks in pixels."
+        },
+        {
+          "name": "verticalOrientation",
+          "type": "Enums.VerticalAlignment",
+          "default": "'bottom'",
+          "description": "Specifies the orientation of scale ticks. Applies only if the **geometry**.[orientation] property is *\"horizontal\"*."
+        }
+      ]
+    },
+    {
+      "name": "ScaleLabel",
+      "subMembers": [
+        {
+          "name": "ScaleLabel",
+          "type": "module: viz/linear_gauge",
+          "default": null,
+          "description": "Specifies common properties for scale labels."
+        },
+        {
+          "name": "indentFromTick",
+          "type": "Number",
+          "default": "-10",
+          "description": "Specifies the spacing between scale labels and ticks."
+        }
+      ]
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    }
+  ]
+}

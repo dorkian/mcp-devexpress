@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "badge",
+      "type": "String",
+      "default": null,
+      "description": "Specifies a badge text for the tab."
+    },
+    {
+      "name": "dxTabPanelItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the icon to be displayed in the tab's title."
+    },
+    {
+      "name": "tabComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tabTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "tabRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tabTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "tabTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a template that should be used to render the tab for this item only."
+    },
+    {
+      "name": "title",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the item title text displayed on a corresponding tab."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

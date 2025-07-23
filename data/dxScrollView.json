@@ -1,0 +1,165 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the ScrollView UI component."
+        },
+        {
+          "name": "pulledDownText",
+          "type": "String",
+          "default": "'Release to refresh...', '' (Fluent, Material)",
+          "description": "Specifies the text shown in the pullDown panel when pulling the content down lowers the refresh threshold."
+        },
+        {
+          "name": "pullingDownText",
+          "type": "String",
+          "default": "'Pull down to refresh...', '' (Fluent, Material)",
+          "description": "Specifies the text shown in the pullDown panel while pulling the content down to the refresh threshold."
+        },
+        {
+          "name": "reachBottomText",
+          "type": "String",
+          "default": "'Loading...', '' (Fluent, Material)",
+          "description": "Specifies the text shown in the pullDown panel displayed when content is scrolled to the bottom."
+        },
+        {
+          "name": "refreshingText",
+          "type": "String",
+          "default": "'Refreshing...', '' (Fluent, Material)",
+          "description": "Specifies the text shown in the pullDown panel displayed when the content is being refreshed."
+        }
+      ]
+    },
+    {
+      "name": "dxScrollView",
+      "type": null,
+      "default": null,
+      "description": "The ScrollView is a UI component that enables a user to scroll its content."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "refresh()",
+      "type": null,
+      "default": null,
+      "description": "Locks the UI component until the **release(preventScrollBottom)** method is called and executes the function passed to the [onPullDown] property and the handler assigned to the [pullDown] event."
+    },
+    {
+      "name": "release(preventScrollBottom)",
+      "type": null,
+      "default": null,
+      "description": "Notifies the ScrollView that data loading is finished."
+    },
+    {
+      "name": "toggleLoading(showOrHide)",
+      "type": null,
+      "default": null,
+      "description": "Toggles the UI component's loading state."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPullDown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the \"pull to refresh\" gesture is performed. Supported on mobile devices only."
+    },
+    {
+      "name": "onReachBottom",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the content is scrolled down to the bottom."
+    },
+    {
+      "name": "onScroll",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed on each scroll gesture."
+    },
+    {
+      "name": "onUpdated",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed each time the UI component is updated."
+    },
+    {
+      "name": "pullDown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the \"pull to refresh\" gesture is performed."
+    },
+    {
+      "name": "reachBottom",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the content is scrolled down to the bottom."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PullDownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pullDown] event handler's argument."
+    },
+    {
+      "name": "ReachBottomEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [reachBottom] event handler's argument."
+    },
+    {
+      "name": "ScrollEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [scroll] event handler's argument."
+    },
+    {
+      "name": "UpdatedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [updated] event handler's argument."
+    }
+  ]
+}

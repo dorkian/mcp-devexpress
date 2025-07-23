@@ -1,0 +1,26 @@
+{
+  "properties": [
+    {
+      "name": "EdmLiteral",
+      "type": null,
+      "default": null,
+      "description": "The **EdmLiteral** is an object for working with primitive data types from the OData's <a href=\"http://www.odata.org/documentation/odata-version-2-0/overview/#AbstractTypeSystem\" target=\"_blank\">Abstract Type System</a> that are not supported in JavaScript."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "ctor(value)",
+      "type": null,
+      "default": null,
+      "description": "Creates an **EdmLiteral** instance with a new value."
+    },
+    {
+      "name": "valueOf()",
+      "type": null,
+      "default": null,
+      "description": "Gets the **EdmLiteral**'s value converted to a string."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,1830 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "adaptivityEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component adapts to small screens."
+        },
+        {
+          "name": "allDayExpr",
+          "type": "String",
+          "default": "'allDay'",
+          "description": "Specifies the name of the data source item field whose value defines whether or not the corresponding appointment is an all-day appointment."
+        },
+        {
+          "name": "allDayPanelMode",
+          "type": "Enums.AllDayPanelMode",
+          "default": "'all'",
+          "description": "Specifies the display mode for the **All day** panel."
+        },
+        {
+          "name": "appointmentCollectorComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentCollectorTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "appointmentCollectorRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentCollectorTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "appointmentCollectorTemplate",
+          "type": "template",
+          "default": "'appointmentCollector'",
+          "description": "Specifies a custom template for [cell overflow indicators]."
+        },
+        {
+          "name": "appointmentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "appointmentDragging",
+          "subMembers": [
+            {
+              "name": "appointmentDragging",
+              "type": "Object",
+              "default": null,
+              "description": "Configures appointment reordering using drag and drop gestures."
+            },
+            {
+              "name": "autoScroll",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Enables automatic scrolling while dragging an appointment beyond the viewport."
+            },
+            {
+              "name": "data",
+              "type": "any | undefined",
+              "default": "undefined",
+              "description": "A container for custom data."
+            },
+            {
+              "name": "group",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Allows you to group several UI components so that users can drag and drop appointments between them."
+            },
+            {
+              "name": "scrollSensitivity",
+              "type": "Number",
+              "default": "60",
+              "description": "Specifies the distance in pixels from the edge of viewport at which scrolling should start. Applies only if [autoScroll] is **true**."
+            },
+            {
+              "name": "scrollSpeed",
+              "type": "Number",
+              "default": "60",
+              "description": "Specifies the scrolling speed when dragging an appointment beyond the viewport. Applies only if [autoScroll] is **true**."
+            }
+          ]
+        },
+        {
+          "name": "appointmentPopupComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentPopupTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "appointmentPopupRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentPopupTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "appointmentPopupTemplate",
+          "type": "template",
+          "default": "'appointmentPopup'",
+          "description": "The template to be used for rendering an appointment details popup."
+        },
+        {
+          "name": "appointmentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "appointmentTemplate",
+          "type": "template",
+          "default": "'item'",
+          "description": "Specifies a custom template for appointments."
+        },
+        {
+          "name": "appointmentTooltipComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentTooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "appointmentTooltipRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [appointmentTooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "appointmentTooltipTemplate",
+          "type": "template",
+          "default": "'appointmentTooltip'",
+          "description": "Specifies a custom template for tooltips displayed when users click an appointment or [cell overflow indicator]."
+        },
+        {
+          "name": "cellDuration",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies cell duration in minutes. This property's value should divide the interval between [startDayHour] and [endDayHour] into even parts."
+        },
+        {
+          "name": "crossScrollingEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not an end user can scroll the view in both directions at the same time."
+        },
+        {
+          "name": "currentDate",
+          "type": "Date | Number | String",
+          "default": "new Date()",
+          "description": "Specifies the current date."
+        },
+        {
+          "name": "currentView",
+          "type": "Enums.ViewType | String",
+          "default": "'day'",
+          "description": "Specifies the displayed view. Accepts [name] or [type] of a view available in the [views] array."
+        },
+        {
+          "name": "customizeDateNavigatorText",
+          "type": "function(info) | undefined",
+          "default": "undefined",
+          "description": "Customizes the date navigator's text."
+        },
+        {
+          "name": "dataCellComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dataCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dataCellRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dataCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dataCellTemplate",
+          "type": "template",
+          "default": "null",
+          "description": "Specifies a custom template for table cells."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxSchedulerAppointment> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "dateCellComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dateCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dateCellRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dateCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dateCellTemplate",
+          "type": "template",
+          "default": "null",
+          "description": "Specifies a custom template for day scale items."
+        },
+        {
+          "name": "dateSerializationFormat",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "descriptionExpr",
+          "type": "String",
+          "default": "'description'",
+          "description": "Specifies the name of the data source item field whose value holds the description of the corresponding appointment."
+        },
+        {
+          "name": "dropDownAppointmentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownAppointmentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dropDownAppointmentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownAppointmentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dropDownAppointmentTemplate",
+          "type": "template",
+          "default": "'dropDownAppointment'",
+          "description": "Specifies a custom template for tooltips displayed when users click a [cell overflow indicator]."
+        },
+        {
+          "name": "editing",
+          "subMembers": [
+            {
+              "name": "allowAdding",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not an end user can add appointments."
+            },
+            {
+              "name": "allowDeleting",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not an end user can delete appointments."
+            },
+            {
+              "name": "allowDragging",
+              "type": "Boolean",
+              "default": "true, false (Android, iOS)",
+              "description": "Specifies whether users can drag and drop appointments."
+            },
+            {
+              "name": "allowResizing",
+              "type": "Boolean",
+              "default": "true, false (Android, iOS)",
+              "description": "Specifies whether or not an end user can change an appointment duration."
+            },
+            {
+              "name": "allowTimeZoneEditing",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether users can edit appointment time zones."
+            },
+            {
+              "name": "allowUpdating",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not an end user can change appointment properties."
+            },
+            {
+              "name": "editing",
+              "type": "Boolean | Object",
+              "default": "true",
+              "description": "Specifies which editing operations a user can perform on appointments."
+            }
+          ]
+        },
+        {
+          "name": "endDateExpr",
+          "type": "String",
+          "default": "'endDate'",
+          "description": "Specifies the name of the data source item field that defines the ending of an appointment."
+        },
+        {
+          "name": "endDateTimeZoneExpr",
+          "type": "String",
+          "default": "'endDateTimeZone'",
+          "description": "Specifies the name of the data source item field that defines the timezone of the appointment end date."
+        },
+        {
+          "name": "endDayHour",
+          "type": "Number",
+          "default": "24",
+          "description": "Specifies the last hour on the time scale. Accepts integer values from 0 to 24."
+        },
+        {
+          "name": "firstDayOfWeek",
+          "type": "Enums.FirstDayOfWeek | undefined",
+          "default": "undefined",
+          "description": "Specifies the first day of a week. Does not apply to the [agenda view]."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "groupByDate",
+          "type": "Boolean",
+          "default": "false",
+          "description": "If **true**, appointments are grouped by date first and then by resource; opposite if **false**. Applies only if appointments are [grouped] and [groupOrientation] is *\"horizontal\"*."
+        },
+        {
+          "name": "groups",
+          "type": "Array<String>",
+          "default": "[]",
+          "description": "Specifies the [resource kinds] by which the scheduler's appointments are grouped in a timetable."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "indicatorTime",
+          "type": "Date",
+          "default": "undefined",
+          "description": "-"
+        },
+        {
+          "name": "indicatorUpdateInterval",
+          "type": "Number",
+          "default": "300000",
+          "description": "Specifies the time interval between when the [date-time indicator] changes its position, in milliseconds."
+        },
+        {
+          "name": "max",
+          "type": "Date | Number | String | undefined",
+          "default": "undefined",
+          "description": "The latest date the UI component allows you to select."
+        },
+        {
+          "name": "maxAppointmentsPerCell",
+          "type": "Number | Enums.CellAppointmentsLimit",
+          "default": "'auto'",
+          "description": "Specifies the limit of full-sized appointments displayed per cell. Applies to all views except *\"agenda\"*."
+        },
+        {
+          "name": "min",
+          "type": "Date | Number | String | undefined",
+          "default": "undefined",
+          "description": "The earliest date the UI component allows you to select."
+        },
+        {
+          "name": "noDataText",
+          "type": "String",
+          "default": "'No data to display'",
+          "description": "Specifies the text or HTML markup displayed by the UI component if the item collection is empty. Available for the Agenda [view] only."
+        },
+        {
+          "name": "offset",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the minute offset within Scheduler indicating the starting point of a day."
+        },
+        {
+          "name": "recurrenceEditMode",
+          "type": "Enums.RecurrenceEditMode",
+          "default": "'dialog'",
+          "description": "Specifies the edit mode for recurring appointments."
+        },
+        {
+          "name": "recurrenceExceptionExpr",
+          "type": "String",
+          "default": "'recurrenceException'",
+          "description": "Specifies the name of the data source item field that defines exceptions for the current recurring appointment."
+        },
+        {
+          "name": "recurrenceRuleExpr",
+          "type": "String",
+          "default": "'recurrenceRule'",
+          "description": "Specifies the name of the data source item field that defines a recurrence rule for generating recurring appointments."
+        },
+        {
+          "name": "remoteFiltering",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether filtering is performed on the server or client side."
+        },
+        {
+          "name": "resourceCellComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [resourceCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "resourceCellRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [resourceCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "resourceCellTemplate",
+          "type": "template",
+          "default": "null",
+          "description": "Specifies a custom template for resource headers."
+        },
+        {
+          "name": "resources",
+          "subMembers": [
+            {
+              "name": "allowMultiple",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether you can assign several resources of this kind to an appointment."
+            },
+            {
+              "name": "colorExpr",
+              "type": "String",
+              "default": "'color'",
+              "description": "Specifies the [resource object] field that is used as a resource color."
+            },
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Specifies available resource instances."
+            },
+            {
+              "name": "displayExpr",
+              "type": "String | function(resource)",
+              "default": "'text'",
+              "description": "Specifies which field from the [resource data objects] provides values to be displayed in the resource editor."
+            },
+            {
+              "name": "fieldExpr",
+              "type": "String",
+              "default": "''",
+              "description": "The name of the appointment object field that specifies a resource of this kind."
+            },
+            {
+              "name": "label",
+              "type": "String",
+              "default": "''",
+              "description": "Specifies the label of the Appointment popup window field that allows end users to assign a resource of this kind."
+            },
+            {
+              "name": "resources",
+              "type": "Array<Object>",
+              "default": "[]",
+              "description": "Specifies an array of resources available in the scheduler."
+            },
+            {
+              "name": "useColorAsDefault",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether appointments are colored like this resource kind."
+            },
+            {
+              "name": "valueExpr",
+              "type": "String | function()",
+              "default": "'id'",
+              "description": "Specifies the [resource object] field that is used as a value of the Resource editor in the Appointment popup window."
+            }
+          ]
+        },
+        {
+          "name": "scrolling",
+          "type": "dxSchedulerScrolling",
+          "default": null,
+          "description": "Configures scrolling."
+        },
+        {
+          "name": "selectedCellData",
+          "type": "Array<any>",
+          "default": "[]",
+          "description": "The data of the currently selected cells."
+        },
+        {
+          "name": "shadeUntilCurrentTime",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to apply shading to cover the timetable up to the current time."
+        },
+        {
+          "name": "showAllDayPanel",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies the \"All-day\" panel's visibility. Setting this property to **false** hides the panel along with the all-day appointments."
+        },
+        {
+          "name": "showCurrentTimeIndicator",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies the current date-time indicator's visibility."
+        },
+        {
+          "name": "startDateExpr",
+          "type": "String",
+          "default": "'startDate'",
+          "description": "Specifies the name of the data source item field that defines the start of an appointment."
+        },
+        {
+          "name": "startDateTimeZoneExpr",
+          "type": "String",
+          "default": "'startDateTimeZone'",
+          "description": "Specifies the name of the data source item field that defines the timezone of the appointment start date."
+        },
+        {
+          "name": "startDayHour",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the first hour on the time scale. Accepts integer values from 0 to 24."
+        },
+        {
+          "name": "textExpr",
+          "type": "String",
+          "default": "'text'",
+          "description": "Specifies the name of the data source item field that holds the subject of an appointment."
+        },
+        {
+          "name": "timeCellComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [timeCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "timeCellRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [timeCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "timeCellTemplate",
+          "type": "template",
+          "default": "null",
+          "description": "Specifies a custom template for time scale items."
+        },
+        {
+          "name": "timeZone",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the time zone for the Scheduler's grid. Accepts values from the <a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" target=\"_blank\">IANA time zone database</a>."
+        },
+        {
+          "name": "toolbar",
+          "type": "dxSchedulerToolbar | undefined",
+          "default": "undefined",
+          "description": "Configures the toolbar."
+        },
+        {
+          "name": "useDropDownViewSwitcher",
+          "type": "Boolean",
+          "default": "false, true (Android, iOS, Fluent, Material)",
+          "description": "Specifies whether a user can switch views using tabs or a drop-down menu."
+        },
+        {
+          "name": "views",
+          "subMembers": [
+            {
+              "name": "agendaDuration",
+              "type": "Number",
+              "default": "7",
+              "description": "Specifies the number of dates that can be shown at a time in the [agenda view]."
+            },
+            {
+              "name": "allDayPanelMode",
+              "type": "Enums.AllDayPanelMode",
+              "default": "'all'",
+              "description": "Specifies the display mode for the **All day** panel."
+            },
+            {
+              "name": "appointmentCollectorComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [appointmentCollectorTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "appointmentCollectorRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [appointmentCollectorTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "appointmentCollectorTemplate",
+              "type": "template",
+              "default": "'appointmentCollector'",
+              "description": "Specifies a custom template for [cell overflow indicators] in this view."
+            },
+            {
+              "name": "appointmentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [appointmentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "appointmentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [appointmentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "appointmentTemplate",
+              "type": "template",
+              "default": "'item'",
+              "description": "Specifies a custom template for appointments."
+            },
+            {
+              "name": "appointmentTooltipComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [appointmentTooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "appointmentTooltipRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [appointmentTooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "appointmentTooltipTemplate",
+              "type": "template",
+              "default": "'appointmentTooltip'",
+              "description": "Specifies a custom template for tooltips displayed when users click an appointment or [cell overflow indicator] in this view."
+            },
+            {
+              "name": "cellDuration",
+              "type": "Number",
+              "default": "30",
+              "description": "The cell duration in minutes."
+            },
+            {
+              "name": "dataCellComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [dataCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "dataCellRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [dataCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "dataCellTemplate",
+              "type": "template",
+              "default": "null",
+              "description": "Specifies a custom template for table cells."
+            },
+            {
+              "name": "dateCellComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [dateCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "dateCellRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [dateCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "dateCellTemplate",
+              "type": "template",
+              "default": "null",
+              "description": "Specifies a custom template for date scale items."
+            },
+            {
+              "name": "dropDownAppointmentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [dropDownAppointmentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "dropDownAppointmentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [dropDownAppointmentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "dropDownAppointmentTemplate",
+              "type": "template",
+              "default": "'dropDownAppointment'",
+              "description": "Specifies a custom template for tooltips displayed when users click a [cell overflow indicator] in this view."
+            },
+            {
+              "name": "endDayHour",
+              "type": "Number",
+              "default": "24",
+              "description": "Specifies the last hour on the view's time scale. Accepts integer values from 0 to 24."
+            },
+            {
+              "name": "firstDayOfWeek",
+              "type": "Enums.FirstDayOfWeek | undefined",
+              "default": "undefined",
+              "description": "The first day of a week. Does not apply to the [agenda view]."
+            },
+            {
+              "name": "groupByDate",
+              "type": "Boolean",
+              "default": "false",
+              "description": "If **true**, appointments are grouped by date first and then by resource; opposite if **false**. Applies only if appointments are [grouped] and [groupOrientation] is *\"horizontal\"*."
+            },
+            {
+              "name": "groupOrientation",
+              "type": "Enums.Orientation",
+              "default": null,
+              "description": "Arranges resource headers vertically (in a column) or horizontally (in a row)."
+            },
+            {
+              "name": "groups",
+              "type": "Array<String>",
+              "default": "[]",
+              "description": "The resource kinds by which appointments are grouped."
+            },
+            {
+              "name": "intervalCount",
+              "type": "Number",
+              "default": "1",
+              "description": "Multiplies the default view interval. Applies to all [view types] except *\"agenda\"*."
+            },
+            {
+              "name": "maxAppointmentsPerCell",
+              "type": "Number | Enums.CellAppointmentsLimit",
+              "default": "'auto'",
+              "description": "Specifies the limit of full-sized appointments displayed per cell. Applies to all views except *\"agenda\"*."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "A custom view name displayed in the [view switcher]."
+            },
+            {
+              "name": "offset",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the minute offset within the view indicating the starting point of a day."
+            },
+            {
+              "name": "resourceCellComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [resourceCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "resourceCellRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [resourceCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "resourceCellTemplate",
+              "type": "template",
+              "default": "null",
+              "description": "Specifies a custom template for resource headers."
+            },
+            {
+              "name": "scrolling",
+              "type": "dxSchedulerScrolling",
+              "default": null,
+              "description": "Configures scrolling for a view."
+            },
+            {
+              "name": "startDate",
+              "type": "Date | Number | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the date from which to start counting the [view interval]. Applies to all [view types] except *\"agenda\"*."
+            },
+            {
+              "name": "startDayHour",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the first hour on the view's time scale. Accepts integer values from 0 to 24."
+            },
+            {
+              "name": "timeCellComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [timeCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "timeCellRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [timeCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "timeCellTemplate",
+              "type": "template",
+              "default": "null",
+              "description": "Specifies a custom template for time scale items."
+            },
+            {
+              "name": "type",
+              "type": "Enums.ViewType | undefined",
+              "default": "undefined",
+              "description": "The type of the view."
+            },
+            {
+              "name": "views",
+              "type": "Array<String, Object>",
+              "default": "['day', 'week']",
+              "description": "Specifies and configures the [views] to be available in the [view switcher]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "SchedulerTimeZone",
+          "subMembers": [
+            {
+              "name": "SchedulerTimeZone",
+              "type": "Object",
+              "default": null,
+              "description": "A time zone object."
+            },
+            {
+              "name": "id",
+              "type": "String",
+              "default": null,
+              "description": "A time zone text string from the <a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" target=\"_blank\">IANA database</a>."
+            },
+            {
+              "name": "offset",
+              "type": "Number",
+              "default": null,
+              "description": "A GMT offset."
+            },
+            {
+              "name": "title",
+              "type": "String",
+              "default": null,
+              "description": "A time zone in the following format: `(GMT ±[hh]:[mm]) [id]`."
+            }
+          ]
+        },
+        {
+          "name": "dxSchedulerAppointment",
+          "subMembers": [
+            {
+              "name": "allDay",
+              "type": "Boolean",
+              "default": null,
+              "description": "Specifies whether the appointment lasts all day."
+            },
+            {
+              "name": "component",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "description",
+              "type": "String",
+              "default": null,
+              "description": "Specifies a detail description of the appointment."
+            },
+            {
+              "name": "disabled",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether the appointment responds to user interaction."
+            },
+            {
+              "name": "dxSchedulerAppointment",
+              "type": "Object",
+              "default": null,
+              "description": "An object that describes an appointment in the [Scheduler] UI component."
+            },
+            {
+              "name": "endDate",
+              "type": "Date | String",
+              "default": null,
+              "description": "Specifies the ending of the appointment."
+            },
+            {
+              "name": "endDateTimeZone",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the time zone for an appointment's [endDate]. Accepts values from the <a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" target=\"_blank\">IANA time zone database</a>."
+            },
+            {
+              "name": "html",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the HTML markup to be inserted into the appointment element."
+            },
+            {
+              "name": "recurrenceException",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the start date and time of one or more appointments to exclude from a series. This property requires that you also set [recurrenceRule]."
+            },
+            {
+              "name": "recurrenceRule",
+              "type": "String",
+              "default": null,
+              "description": "Specifies a recurrence rule based on which the Scheduler generates an appointment series."
+            },
+            {
+              "name": "render",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "startDate",
+              "type": "Date | String",
+              "default": null,
+              "description": "Specifies the start of the appointment."
+            },
+            {
+              "name": "startDateTimeZone",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the time zone for an appointment's [startDate]. Accepts values from the <a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" target=\"_blank\">IANA time zone database</a>."
+            },
+            {
+              "name": "template",
+              "type": "template",
+              "default": null,
+              "description": "Specifies a template that should be used to render this appointment only."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the subject of the appointment."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not an appointment must be displayed."
+            }
+          ]
+        },
+        {
+          "name": "dxSchedulerToolbar",
+          "subMembers": [
+            {
+              "name": "disabled",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether the toolbar responds to user interaction."
+            },
+            {
+              "name": "dxSchedulerToolbar",
+              "type": "Object",
+              "default": null,
+              "description": "Configures the toolbar."
+            },
+            {
+              "name": "items",
+              "type": "Array<Enums.SchedulerPredefinedToolbarItem, dxSchedulerToolbarItem>",
+              "default": null,
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "multiline",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether the toolbar arranges items into multiple lines when their combined width exceeds the toolbar width."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean | undefined",
+              "default": "undefined",
+              "description": "Specifies whether the toolbar is visible."
+            }
+          ]
+        },
+        {
+          "name": "dxSchedulerToolbarItem",
+          "subMembers": [
+            {
+              "name": "dxSchedulerToolbarItem",
+              "type": "dxToolbarItem | Object",
+              "default": null,
+              "description": "Configures toolbar items."
+            },
+            {
+              "name": "location",
+              "type": "Enums.ToolbarItemLocation",
+              "default": null,
+              "description": "Specifies toolbar item location."
+            },
+            {
+              "name": "name",
+              "type": "Enums.SchedulerPredefinedToolbarItem",
+              "default": null,
+              "description": "Specifies the name of the predefined toolbar item."
+            },
+            {
+              "name": "options",
+              "type": "DateNavigatorItemProperties | Object",
+              "default": null,
+              "description": "Configures the DevExtreme UI component used as a toolbar item."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxScheduler",
+      "type": null,
+      "default": null,
+      "description": "The Scheduler is a UI component that represents scheduled data and allows a user to manage and edit it."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "addAppointment(appointment)",
+      "type": null,
+      "default": null,
+      "description": "Adds an appointment."
+    },
+    {
+      "name": "deleteAppointment(appointment)",
+      "type": null,
+      "default": null,
+      "description": "Deletes an appointment from the timetable and its object from the data source."
+    },
+    {
+      "name": "deleteRecurrence(appointment_date_recurrenceEditMode)",
+      "type": null,
+      "default": null,
+      "description": "Deletes a recurring appointment occurrence."
+    },
+    {
+      "name": "getEndViewDate()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current view's end date."
+    },
+    {
+      "name": "getStartViewDate()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current view's start date."
+    },
+    {
+      "name": "hideAppointmentPopup(saveChanges)",
+      "type": null,
+      "default": null,
+      "description": "Hides an appointment details form."
+    },
+    {
+      "name": "hideAppointmentTooltip()",
+      "type": null,
+      "default": null,
+      "description": "Hides an appointment's or [cell overflow indicator]'s tooltip."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "repaint()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "scrollTo(date_group_allDay)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the current view to a specified position. Available for all views except *\"agenda\"*. You should specify the [height] property to use this method."
+    },
+    {
+      "name": "scrollToTime(hours_minutes_date)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the current view to a specific day and time."
+    },
+    {
+      "name": "showAppointmentPopup(appointmentData_createNewAppointment_currentAppointmentData)",
+      "type": null,
+      "default": null,
+      "description": "Shows the appointment details form."
+    },
+    {
+      "name": "showAppointmentTooltip(appointmentData_target_currentAppointmentData)",
+      "type": null,
+      "default": null,
+      "description": "Shows a tooltip for a target element."
+    },
+    {
+      "name": "updateAppointment(target_appointment)",
+      "type": null,
+      "default": null,
+      "description": "Updates an appointment."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onAdd",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when a new appointment is added."
+    },
+    {
+      "name": "onDragEnd",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when the dragged appointment's position is changed."
+    },
+    {
+      "name": "onDragMove",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called every time a draggable appointment is moved."
+    },
+    {
+      "name": "onDragStart",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when the drag gesture is initialized."
+    },
+    {
+      "name": "onRemove",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when a draggable appointment is removed."
+    },
+    {
+      "name": "onAppointmentAdded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an appointment is added to the data source."
+    },
+    {
+      "name": "onAppointmentAdding",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before an appointment is added to the data source."
+    },
+    {
+      "name": "onAppointmentClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an appointment is clicked or tapped."
+    },
+    {
+      "name": "onAppointmentContextMenu",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user attempts to open the browser's context menu for an appointment. Allows you to replace this context menu with a custom context menu."
+    },
+    {
+      "name": "onAppointmentDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an appointment is double-clicked or double-tapped."
+    },
+    {
+      "name": "onAppointmentDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an appointment is deleted from the data source."
+    },
+    {
+      "name": "onAppointmentDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before an appointment is deleted from the data source."
+    },
+    {
+      "name": "onAppointmentFormOpening",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before an appointment details form appears. Use this function to customize the form."
+    },
+    {
+      "name": "onAppointmentRendered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an appointment is rendered."
+    },
+    {
+      "name": "onAppointmentTooltipShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "Occurs before showing an appointment's tooltip."
+    },
+    {
+      "name": "onAppointmentUpdated",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an appointment is updated in the data source."
+    },
+    {
+      "name": "onAppointmentUpdating",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before an appointment is updated in the data source."
+    },
+    {
+      "name": "onCellClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a view cell is clicked."
+    },
+    {
+      "name": "onCellContextMenu",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user attempts to open the browser's context menu for a cell. Allows you to replace this context menu with a custom context menu."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "appointmentAdded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an appointment is added to the data source."
+    },
+    {
+      "name": "appointmentAdding",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an appointment is added to the data source."
+    },
+    {
+      "name": "appointmentClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an appointment is clicked or tapped."
+    },
+    {
+      "name": "appointmentContextMenu",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user attempts to open the browser's context menu for an appointment."
+    },
+    {
+      "name": "appointmentDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an appointment is double-clicked or double-tapped."
+    },
+    {
+      "name": "appointmentDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an appointment is deleted from the data source."
+    },
+    {
+      "name": "appointmentDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an appointment is deleted from the data source."
+    },
+    {
+      "name": "appointmentFormOpening",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an appointment details form is opened."
+    },
+    {
+      "name": "appointmentRendered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an appointment is rendered."
+    },
+    {
+      "name": "appointmentTooltipShowing",
+      "type": "eventType",
+      "default": null,
+      "description": "Fires before showing an appointment's tooltip."
+    },
+    {
+      "name": "appointmentUpdated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an appointment is updated in the data source."
+    },
+    {
+      "name": "appointmentUpdating",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an appointment is updated in the data source."
+    },
+    {
+      "name": "cellClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a view cell is clicked."
+    },
+    {
+      "name": "cellContextMenu",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user attempts to open the browser's context menu for a cell."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AllDayPanelMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the display mode for the **All day** panel."
+    },
+    {
+      "name": "AppointmentAddedEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentAddedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentAdded] event handler's argument."
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentAddingEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentAddingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentAdding] event handler's argument."
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentClickEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentClick] event handler's argument."
+        },
+        {
+          "name": "appointmentElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentCollectorTemplateData",
+      "subMembers": [
+        {
+          "name": "AppointmentCollectorTemplateData",
+          "type": "Object",
+          "default": null,
+          "description": "Information about a cell overflow indicator."
+        },
+        {
+          "name": "appointmentCount",
+          "type": "Number",
+          "default": null,
+          "description": "The count of hidden appointments."
+        },
+        {
+          "name": "isCompact",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the overflow indicator is [compact]."
+        },
+        {
+          "name": "items",
+          "type": "Array<dxSchedulerAppointment>",
+          "default": null,
+          "description": "Initially hidden appointments that are displayed after a user clicks an overflow indicator."
+        }
+      ]
+    },
+    {
+      "name": "AppointmentContextMenuEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentContextMenuEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentContextMenu] event handler's argument."
+        },
+        {
+          "name": "appointmentElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentDblClickEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentDblClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentDblClick] event handler's argument."
+        },
+        {
+          "name": "appointmentElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentDeletedEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentDeletedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentDeleted] event handler's argument."
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentDeletingEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentDeleting] event handler's argument."
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentFormOpeningEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentFormOpeningEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentFormOpening] event handler's argument."
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "form",
+          "type": "dxForm",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "popup",
+          "type": "dxPopup",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentRenderedEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentRenderedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentRendered] event handler's argument."
+        },
+        {
+          "name": "appointmentElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentTemplateData",
+      "type": "TargetedAppointmentInfo",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "AppointmentTooltipShowingAppointmentInfo",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies appointments information in AppointmentTooltipShowingEvent."
+    },
+    {
+      "name": "AppointmentTooltipShowingEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentTooltipShowingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentTooltipShowing] event handler's argument."
+        },
+        {
+          "name": "appointments",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentTooltipTemplateData",
+      "subMembers": [
+        {
+          "name": "AppointmentTooltipTemplateData",
+          "type": "TargetedAppointmentInfo | Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isButtonClicked",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentUpdatedEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentUpdatedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentUpdated] event handler's argument."
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AppointmentUpdatingEvent",
+      "subMembers": [
+        {
+          "name": "AppointmentUpdatingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [appointmentUpdating] event handler's argument."
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "oldData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellAppointmentsLimit",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the limit of full-sized appointments displayed per cell. Applies to all views except *\"agenda\"*."
+    },
+    {
+      "name": "CellClickEvent",
+      "subMembers": [
+        {
+          "name": "CellClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellClick] event handler's argument."
+        },
+        {
+          "name": "cellData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellContextMenuEvent",
+      "subMembers": [
+        {
+          "name": "CellContextMenuEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellContextMenu] event handler's argument."
+        },
+        {
+          "name": "cellData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DateNavigatorItemProperties",
+      "subMembers": [
+        {
+          "name": "DateNavigatorItemProperties",
+          "type": "dxButtonGroup_Options | Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxButtonGroupItem, Enums.SchedulerPredefinedDateNavigatorItem>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "RecurrenceEditMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the edit mode for recurring appointments."
+    },
+    {
+      "name": "SchedulerPredefinedDateNavigatorItem",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies names for date navigator parts."
+    },
+    {
+      "name": "SchedulerPredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies predefined items for the Scheduler toolbar."
+    },
+    {
+      "name": "TargetedAppointmentInfo",
+      "subMembers": [
+        {
+          "name": "TargetedAppointmentInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "appointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetedAppointmentData",
+          "type": "dxSchedulerAppointment",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ViewType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of view"
+    },
+    {
+      "name": "dxButtonGroup_Options",
+      "type": null,
+      "default": null,
+      "description": "<!--"
+    }
+  ]
+}

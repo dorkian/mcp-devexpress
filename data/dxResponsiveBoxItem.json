@@ -1,0 +1,54 @@
+{
+  "properties": [
+    {
+      "name": "dxResponsiveBoxItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "location",
+      "subMembers": [
+        {
+          "name": "col",
+          "type": "Number",
+          "default": null,
+          "description": "Specifies which column the element should occupy. Accepts an index from the [cols] array."
+        },
+        {
+          "name": "colspan",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies how many columns the element should span."
+        },
+        {
+          "name": "location",
+          "type": "Object | Array<Object>",
+          "default": null,
+          "description": "Specifies the item location and size against the UI component grid."
+        },
+        {
+          "name": "row",
+          "type": "Number",
+          "default": null,
+          "description": "Specifies which row the element should occupy. Accepts an index from the [rows] array."
+        },
+        {
+          "name": "rowspan",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies how many rows the element should span."
+        },
+        {
+          "name": "screen",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Decides on which screens the current **location** settings should be applied to the element."
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

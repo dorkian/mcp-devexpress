@@ -1,0 +1,1061 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the RangeSelector UI component."
+        },
+        {
+          "name": "background",
+          "subMembers": [
+            {
+              "name": "background",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the properties for the range selector's background."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#C0BAE1'",
+              "description": "Specifies the background color for the RangeSelector."
+            },
+            {
+              "name": "image",
+              "subMembers": [
+                {
+                  "name": "image",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies image properties."
+                },
+                {
+                  "name": "location",
+                  "type": "Enums.BackgroundImageLocation",
+                  "default": "'full'",
+                  "description": "Specifies a location for the image in the background of a range selector."
+                },
+                {
+                  "name": "url",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the image's URL."
+                }
+              ]
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not the background (background color and/or image) is visible."
+            }
+          ]
+        },
+        {
+          "name": "behavior",
+          "subMembers": [
+            {
+              "name": "allowSlidersSwap",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not you can swap sliders."
+            },
+            {
+              "name": "animationEnabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not animation is enabled."
+            },
+            {
+              "name": "behavior",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the RangeSelector's behavior properties."
+            },
+            {
+              "name": "manualRangeSelectionEnabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not an end user can specify the range using a mouse, without the use of sliders."
+            },
+            {
+              "name": "moveSelectedRangeByClick",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not an end user can shift the selected range to the required location on a scale by clicking."
+            },
+            {
+              "name": "snapToTicks",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether to snap a slider to ticks."
+            },
+            {
+              "name": "valueChangeMode",
+              "type": "Enums.SliderValueChangeMode",
+              "default": "'onHandleRelease'",
+              "description": "Specifies when to change the component's [value]."
+            }
+          ]
+        },
+        {
+          "name": "chart",
+          "subMembers": [
+            {
+              "name": "barGroupPadding",
+              "type": "Number",
+              "default": "0.3",
+              "description": "Controls the padding and consequently the width of a group of bars with the same argument using relative units. Ignored if the [barGroupWidth] property is set."
+            },
+            {
+              "name": "barGroupWidth",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies a fixed width for groups of bars with the same argument, measured in pixels. Takes precedence over the [barGroupPadding] property."
+            },
+            {
+              "name": "bottomIndent",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies an indent from the background's bottom to the lowest chart point. Accepts values from 0 to 1."
+            },
+            {
+              "name": "chart",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the properties required to display a chart as the range selector's background."
+            },
+            {
+              "name": "commonSeriesSettings",
+              "type": "dxChart_Options_commonSeriesSettings",
+              "default": null,
+              "description": "An object defining the common configuration properties for the chart's series."
+            },
+            {
+              "name": "dataPrepareSettings",
+              "subMembers": [
+                {
+                  "name": "checkTypeForAllData",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether or not to validate values from a data source."
+                },
+                {
+                  "name": "convertToAxisDataType",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether or not to convert the values from a data source into the data type of an axis."
+                },
+                {
+                  "name": "dataPrepareSettings",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object providing properties for managing data from a data source."
+                },
+                {
+                  "name": "sortingMethod",
+                  "type": "Boolean | function(a, b)",
+                  "default": "true",
+                  "description": "Specifies how to sort series points."
+                }
+              ]
+            },
+            {
+              "name": "maxBubbleSize",
+              "type": "Number",
+              "default": "0.2",
+              "description": "Specifies a coefficient that determines the diameter of the largest bubble."
+            },
+            {
+              "name": "minBubbleSize",
+              "type": "Number",
+              "default": "12",
+              "description": "Specifies the diameter of the smallest bubble measured in pixels."
+            },
+            {
+              "name": "negativesAsZeroes",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Forces the UI component to treat negative values as zeroes. Applies to stacked-like series only."
+            },
+            {
+              "name": "palette",
+              "type": "Array<String> | Enums.Palette",
+              "default": "'Material'",
+              "description": "Sets the palette to be used to colorize series in the chart."
+            },
+            {
+              "name": "paletteExtensionMode",
+              "type": "Enums.PaletteExtensionMode",
+              "default": "'blend'",
+              "description": "Specifies what to do with colors in the [palette] when their number is less than the number of series in the chart."
+            },
+            {
+              "name": "series",
+              "type": "Object | Array<ChartSeries> | undefined",
+              "default": "undefined",
+              "description": "An object defining the chart's series."
+            },
+            {
+              "name": "seriesTemplate",
+              "subMembers": [
+                {
+                  "name": "customizeSeries",
+                  "type": "function(seriesName)",
+                  "default": null,
+                  "description": "Specifies a callback function that returns a [series] object with individual series settings."
+                },
+                {
+                  "name": "nameField",
+                  "type": "String",
+                  "default": "'series'",
+                  "description": "Specifies a data source field that represents the series name."
+                },
+                {
+                  "name": "seriesTemplate",
+                  "type": "Object",
+                  "default": "undefined",
+                  "description": "Defines properties for the series template."
+                }
+              ]
+            },
+            {
+              "name": "topIndent",
+              "type": "Number",
+              "default": "0.1",
+              "description": "Specifies an indent from the background's top to the topmost chart point. Accepts values from 0 to 1."
+            },
+            {
+              "name": "valueAxis",
+              "subMembers": [
+                {
+                  "name": "inverted",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Indicates whether or not the chart's value axis must be inverted."
+                },
+                {
+                  "name": "logarithmBase",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specifies the value to be raised to a power when generating ticks for a [logarithmic value axis]."
+                },
+                {
+                  "name": "max",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the maximum value of the chart's value axis."
+                },
+                {
+                  "name": "min",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the minimum value of the chart's value axis."
+                },
+                {
+                  "name": "type",
+                  "type": "Enums.ChartAxisScale | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the type of the value axis."
+                },
+                {
+                  "name": "valueAxis",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the chart value axis."
+                },
+                {
+                  "name": "valueType",
+                  "type": "Enums.ChartsDataType | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the desired type of axis values."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "containerBackgroundColor",
+          "type": "String",
+          "default": "'#FFFFFF'",
+          "description": "Specifies the color of the parent page element."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+          "default": null,
+          "description": "Specifies a data source for the scale values and for the [chart] at the background."
+        },
+        {
+          "name": "dataSourceField",
+          "type": "String",
+          "default": "'arg'",
+          "description": "Specifies the data source field that provides data for the scale."
+        },
+        {
+          "name": "indent",
+          "subMembers": [
+            {
+              "name": "indent",
+              "type": "Object",
+              "default": null,
+              "description": "Range selector's indent properties."
+            },
+            {
+              "name": "left",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies range selector's left indent."
+            },
+            {
+              "name": "right",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies range selector's right indent."
+            }
+          ]
+        },
+        {
+          "name": "scale",
+          "subMembers": [
+            {
+              "name": "aggregationGroupWidth",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the length of aggregation intervals in pixels. May be ignored in favor of the [aggregationInterval] property."
+            },
+            {
+              "name": "aggregationInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies the length of aggregation intervals in scale units. Applies only to the scale of the continuous or logarithmic [type]."
+            },
+            {
+              "name": "allowDecimals",
+              "type": "Boolean | undefined",
+              "default": "undefined",
+              "description": "Specifies whether to allow decimal values on the scale. When **false**, the scale contains integer values only."
+            },
+            {
+              "name": "breakStyle",
+              "subMembers": [
+                {
+                  "name": "breakStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the scale breaks' appearance."
+                },
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#ababab'",
+                  "description": "Specifies the scale breaks' color."
+                },
+                {
+                  "name": "line",
+                  "type": "Enums.ScaleBreakLineStyle",
+                  "default": "'waved'",
+                  "description": "Specifies the scale breaks' line style."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "5",
+                  "description": "Specifies the scale breaks' width in pixels."
+                }
+              ]
+            },
+            {
+              "name": "breaks",
+              "type": "Array<ScaleBreak>",
+              "default": "undefined",
+              "description": "Declares a scale break collection. Applies only if the scale's [type] is *\"continuous\"* or *\"logarithmic\"*."
+            },
+            {
+              "name": "categories",
+              "type": "Array<Number, String, Date>",
+              "default": null,
+              "description": "Specifies the order of arguments on a discrete scale."
+            },
+            {
+              "name": "discreteAxisDivisionMode",
+              "type": "Enums.DiscreteAxisDivisionMode",
+              "default": "'betweenLabels'",
+              "description": "Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels."
+            },
+            {
+              "name": "endOnTick",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to force the scale to start and end on ticks."
+            },
+            {
+              "name": "endValue",
+              "type": "Number | Date | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the scale's end value."
+            },
+            {
+              "name": "holidays",
+              "type": "Array<Date, String> | Array<Number>",
+              "default": "undefined",
+              "description": "Days to be excluded from the scale when [workdaysOnly] is **true**."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "customizeText",
+                  "type": "function(scaleValue)",
+                  "default": null,
+                  "description": "Specifies a callback function that returns the text to be displayed in scale labels."
+                },
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#767676'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for the text displayed in the range selector's scale labels."
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "11",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "format",
+                  "type": "Format | undefined",
+                  "default": "undefined",
+                  "description": "Formats a value before it is displayed in a scale label."
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies common properties for scale labels."
+                },
+                {
+                  "name": "overlappingBehavior",
+                  "type": "Enums.LabelOverlap",
+                  "default": "'hide'",
+                  "description": "Decides how to arrange scale labels when there is not enough space to keep all of them."
+                },
+                {
+                  "name": "topIndent",
+                  "type": "Number",
+                  "default": "7",
+                  "description": "Specifies a spacing between scale labels and the [background] bottom edge."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether or not the scale's labels are visible."
+                }
+              ]
+            },
+            {
+              "name": "linearThreshold",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies a value used to calculate the range on a [logarithmic scale] within which the scale should be linear. Applies only if the data source contains negative values or zeroes."
+            },
+            {
+              "name": "logarithmBase",
+              "type": "Number",
+              "default": "10",
+              "description": "Specifies the value to be raised to a power when generating ticks for a [logarithmic scale]."
+            },
+            {
+              "name": "marker",
+              "subMembers": [
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "customizeText",
+                      "type": "function(markerValue)",
+                      "default": null,
+                      "description": "Specifies a callback function that returns the text to be displayed in scale markers."
+                    },
+                    {
+                      "name": "format",
+                      "type": "Format | undefined",
+                      "default": "undefined",
+                      "description": "Formats a value before it is displayed in a scale marker."
+                    },
+                    {
+                      "name": "label",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Defines the properties that can be set for the text that is displayed by the scale markers."
+                    }
+                  ]
+                },
+                {
+                  "name": "marker",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies properties for the date-time scale's markers."
+                },
+                {
+                  "name": "separatorHeight",
+                  "type": "Number",
+                  "default": "33",
+                  "description": "Specifies the height of the marker's separator."
+                },
+                {
+                  "name": "textLeftIndent",
+                  "type": "Number",
+                  "default": "7",
+                  "description": "Specifies the space between the marker label and the marker separator."
+                },
+                {
+                  "name": "textTopIndent",
+                  "type": "Number",
+                  "default": "11",
+                  "description": "Specifies the space between the marker's label and the top edge of the marker's separator."
+                },
+                {
+                  "name": "topIndent",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specified the indent between the marker and the scale labels."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether scale markers are visible."
+                }
+              ]
+            },
+            {
+              "name": "maxRange",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies the maximum range that can be selected."
+            },
+            {
+              "name": "minRange",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies the minimum range that can be selected."
+            },
+            {
+              "name": "minorTick",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#000000'",
+                  "description": "Specifies the color of the scale's minor ticks."
+                },
+                {
+                  "name": "minorTick",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies properties of the range selector's minor ticks."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "0.06",
+                  "description": "Specifies the opacity of the scale's minor ticks."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether scale minor ticks are visible or not."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the width of the scale's minor ticks."
+                }
+              ]
+            },
+            {
+              "name": "minorTickCount",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the number of minor ticks between neighboring major ticks."
+            },
+            {
+              "name": "minorTickInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies an interval between minor ticks."
+            },
+            {
+              "name": "placeholderHeight",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the height of the space reserved for the scale in pixels."
+            },
+            {
+              "name": "scale",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies properties of the range selector's scale."
+            },
+            {
+              "name": "showCustomBoundaryTicks",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to show ticks for the boundary scale values, when neither major ticks nor minor ticks are created for these values."
+            },
+            {
+              "name": "singleWorkdays",
+              "type": "Array<Date, String> | Array<Number>",
+              "default": "undefined",
+              "description": "Days to be included in the scale when [workdaysOnly] is **true**."
+            },
+            {
+              "name": "startValue",
+              "type": "Number | Date | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the scale's start value."
+            },
+            {
+              "name": "tick",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#000000'",
+                  "description": "Specifies the color of scale ticks (major ticks only)."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "0.1",
+                  "description": "Specifies the opacity of scale ticks (major ticks only)."
+                },
+                {
+                  "name": "tick",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies properties defining the appearance of scale ticks."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the width of the scale's ticks (major ticks only)."
+                }
+              ]
+            },
+            {
+              "name": "tickInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies an interval between axis ticks."
+            },
+            {
+              "name": "type",
+              "type": "Enums.AxisScale | undefined",
+              "default": "undefined",
+              "description": "Specifies the type of the scale."
+            },
+            {
+              "name": "valueType",
+              "type": "Enums.ChartsDataType | undefined",
+              "default": "undefined",
+              "description": "Specifies the type of values on the scale."
+            },
+            {
+              "name": "workWeek",
+              "type": "Array<Number>",
+              "default": "[1, 2, 3, 4, 5]",
+              "description": "Specifies which days are workdays. The array can contain values from 0 (Sunday) to 6 (Saturday). Applies only if [workdaysOnly] is **true**."
+            },
+            {
+              "name": "workdaysOnly",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Leaves only workdays on the scale: the [work week] days plus [single workdays] minus [holidays]. Applies only if the scale's [valueType] is *\"datetime\"*."
+            }
+          ]
+        },
+        {
+          "name": "selectedRangeColor",
+          "type": "String",
+          "default": "'#606060'",
+          "description": "Specifies the color of the selected range."
+        },
+        {
+          "name": "selectedRangeUpdateMode",
+          "type": "Enums.VisualRangeUpdateMode",
+          "default": "'reset'",
+          "description": "Specifies how the selected range should behave when data is updated. Applies only when the RangeSelector is [bound to a data source]."
+        },
+        {
+          "name": "shutter",
+          "subMembers": [
+            {
+              "name": "color",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies shutter color."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "0.75",
+              "description": "Specifies the opacity of the **color** of shutters."
+            },
+            {
+              "name": "shutter",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies range selector shutter properties."
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "160",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 160, width: 400}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "400",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "sliderHandle",
+          "subMembers": [
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#000000'",
+              "description": "Specifies the color of the slider handles."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "0.2",
+              "description": "Specifies the opacity of the slider handles."
+            },
+            {
+              "name": "sliderHandle",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the appearance of the range selector's slider handles."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "1",
+              "description": "Specifies the width of the slider handles."
+            }
+          ]
+        },
+        {
+          "name": "sliderMarker",
+          "subMembers": [
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#9B9B9B'",
+              "description": "Specifies the color of the slider markers."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(scaleValue)",
+              "default": null,
+              "description": "Specifies a callback function that returns the text to be displayed by slider markers."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#FFFFFF'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies font properties for the text displayed by the range selector slider markers."
+                },
+                {
+                  "name": "size",
+                  "type": null,
+                  "default": "14",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "format",
+              "type": "Format | undefined",
+              "default": "undefined",
+              "description": "Formats a value before it is displayed in a slider marker."
+            },
+            {
+              "name": "invalidRangeColor",
+              "type": "String",
+              "default": "'red'",
+              "description": "Specifies the color used for the slider marker text when the currently selected range does not match the [minRange] and [maxRange] values."
+            },
+            {
+              "name": "paddingLeftRight",
+              "type": "Number",
+              "default": "4",
+              "description": "Specifies the empty space between the marker's left and right borders and the marker's text."
+            },
+            {
+              "name": "paddingTopBottom",
+              "type": "Number",
+              "default": "2",
+              "description": "Specifies the empty space between the marker's top and bottom borders and the marker's text."
+            },
+            {
+              "name": "placeholderHeight",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the placeholder height of the slider marker."
+            },
+            {
+              "name": "sliderMarker",
+              "type": "Object",
+              "default": null,
+              "description": "Defines the properties of the range selector slider markers."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not the slider markers are visible."
+            }
+          ]
+        },
+        {
+          "name": "tooltip",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Array<Number, String, Date> | Object",
+          "default": null,
+          "description": "The selected range (initial or current). Equals the entire [scale] when not set."
+        }
+      ]
+    },
+    {
+      "name": "dxRangeSelector",
+      "type": null,
+      "default": null,
+      "description": "The RangeSelector is a UI component that allows a user to select a range of values on a scale."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getValue()",
+      "type": null,
+      "default": null,
+      "description": "Gets the currently selected range."
+    },
+    {
+      "name": "render(skipChartAnimation)",
+      "type": null,
+      "default": null,
+      "description": "Redraws the UI component."
+    },
+    {
+      "name": "setValue(value)",
+      "type": null,
+      "default": null,
+      "description": "Sets the selected range."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AxisScale",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of the scale."
+    },
+    {
+      "name": "BackgroundImageLocation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a location for the image in the background of a range selector."
+    },
+    {
+      "name": "ChartAxisScale",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of the value axis."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "ValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [valueChanged] event handler's argument."
+        },
+        {
+          "name": "previousValue",
+          "type": "Array<Number, String, Date>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Array<Number, String, Date>",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

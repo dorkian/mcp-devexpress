@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxMenuItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "items",
+      "type": "Array<dxMenuItem>",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "linkAttr",
+      "type": "Object",
+      "default": "{}",
+      "description": "Specifies link attributes for the [url] option."
+    },
+    {
+      "name": "url",
+      "type": "String",
+      "default": null,
+      "description": "Specifies a web address to be opened when a user clicks on an item."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

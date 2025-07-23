@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "dxHtmlEditorImageUploadTabItem",
+      "type": null,
+      "default": null,
+      "description": "Configures the tab item in the upload image dialog."
+    },
+    {
+      "name": "name",
+      "type": "Enums.HtmlEditorImageUploadTab | undefined",
+      "default": "undefined",
+      "description": "Specifies the tab's name."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

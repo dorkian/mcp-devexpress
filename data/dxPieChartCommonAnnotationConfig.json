@@ -1,0 +1,73 @@
+{
+  "properties": [
+    {
+      "name": "argument",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "Positions the annotation relative to a specific argument."
+    },
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "customizeTooltip",
+      "type": "function(annotation) | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "dxPieChartCommonAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "location",
+      "type": "Enums.PieChartAnnotationLocation",
+      "default": "'center'",
+      "description": "Specifies an annotation's position on the surface of a specific [argument]."
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "series",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Anchors the annotation to a series point. Accepts the [name] of the point's series."
+    },
+    {
+      "name": "template",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "tooltipComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "tooltipRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "tooltipTemplate",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

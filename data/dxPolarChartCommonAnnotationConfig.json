@@ -1,0 +1,73 @@
+{
+  "properties": [
+    {
+      "name": "angle",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the angle between the [startAngle] and the [radius]."
+    },
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "customizeTooltip",
+      "type": "function(annotation) | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "dxPolarChartCommonAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "radius",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Places an annotation at the specified distance from the center of the UI component."
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "series",
+      "type": "\"text\",",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "template",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "tooltipComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "tooltipRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "tooltipTemplate",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

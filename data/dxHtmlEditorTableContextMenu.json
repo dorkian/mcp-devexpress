@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "dxHtmlEditorTableContextMenu",
+      "type": "Object",
+      "default": null,
+      "description": "Configures table context menu settings."
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to enable the table context menu."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxHtmlEditorTableContextMenuItem, Enums.HtmlEditorPredefinedContextMenuItem>",
+      "default": null,
+      "description": "Configures context menu items."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

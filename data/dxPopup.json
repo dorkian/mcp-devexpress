@@ -1,0 +1,265 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Popup UI component."
+        },
+        {
+          "name": "animation",
+          "subMembers": [
+            {
+              "name": "animation",
+              "type": "ui/popup:dxPopupAnimation",
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "hide",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "show",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "container",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies the container in which to render the UI component."
+        },
+        {
+          "name": "dragAndResizeArea",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies an element with boundaries within which users can drag and resize the Popup. Ignored if the [dragOutsideBoundary] property is set to **true**."
+        },
+        {
+          "name": "dragEnabled",
+          "type": "Boolean",
+          "default": "false, true (desktop)",
+          "description": "Specifies whether or not to allow a user to drag the popup window."
+        },
+        {
+          "name": "dragOutsideBoundary",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to drag the Popup within the browser window or beyond the window's borders."
+        },
+        {
+          "name": "enableBodyScroll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to enable page scrolling when the UI component is visible."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "fullScreen",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the Popup in full-screen mode."
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "position",
+          "type": "Enums.PositionAlignment | PositionConfig | function()",
+          "default": null,
+          "description": "Positions the UI component."
+        },
+        {
+          "name": "resizeEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not an end user can resize the UI component."
+        },
+        {
+          "name": "restorePosition",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display the {WidgetName} at the initial [position] when users reopen it."
+        },
+        {
+          "name": "showCloseButton",
+          "type": "Boolean",
+          "default": "false, false (Material), true (desktop)",
+          "description": "Specifies whether or not the UI component displays the Close button."
+        },
+        {
+          "name": "showTitle",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether or not to display the title in the popup window."
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "default": "''",
+          "description": "The title in the overlay window."
+        },
+        {
+          "name": "titleComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [titleTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "titleRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [titleTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "titleTemplate",
+          "type": "template",
+          "default": "'title'",
+          "description": "Specifies a custom template for the UI component title. Does not apply if the [title] is defined."
+        },
+        {
+          "name": "toolbarItems",
+          "type": "Array<dxPopupToolbarItem>",
+          "default": null,
+          "description": "Configures toolbar items."
+        },
+        {
+          "name": "visible",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "wrapperAttr",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxPopup",
+      "type": null,
+      "default": null,
+      "description": "The Popup UI component is a pop-up window overlaying the current view."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onResize",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time the UI component is resized by one pixel."
+    },
+    {
+      "name": "onResizeEnd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when resizing ends."
+    },
+    {
+      "name": "onResizeStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when resizing starts."
+    },
+    {
+      "name": "onTitleRendered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component's [title] is rendered."
+    },
+    {
+      "name": "resize",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time the UI component is resized by one pixel."
+    },
+    {
+      "name": "resizeEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when resizing ends."
+    },
+    {
+      "name": "resizeStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when resizing starts."
+    },
+    {
+      "name": "titleRendered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component's [title] is rendered."
+    }
+  ],
+  "Types": [
+    {
+      "name": "TitleRenderedInfo",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "ToolbarLocation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether the item is displayed on a top or bottom toolbar."
+    },
+    {
+      "name": "dxPopupAnimation",
+      "subMembers": [
+        {
+          "name": "dxPopupAnimation",
+          "type": "module: ui/popup",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hide",
+          "type": "AnimationConfig",
+          "default": "{ type: 'slide', duration: 400, from: { position: { my: 'center', at: 'center', of: window } }, to: { position: { my: 'top', at: 'bottom', of: window } }} (iOS)",
+          "description": "An object that defines the animation properties used when the UI component is being hidden."
+        },
+        {
+          "name": "show",
+          "type": "AnimationConfig",
+          "default": "{ type: 'slide', duration: 400, from: { position: { my: 'top', at: 'bottom', of: window } }, to: { position: { my: 'center', at: 'center', of: window } }} (iOS)",
+          "description": "An object that defines the animation properties used when the UI component is being shown."
+        }
+      ]
+    }
+  ]
+}

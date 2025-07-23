@@ -1,0 +1,73 @@
+{
+  "properties": [
+    {
+      "name": "beginGroup",
+      "type": "Boolean",
+      "default": null,
+      "description": "Specifies whether a group separator is displayed over the item."
+    },
+    {
+      "name": "closeMenuOnClick",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies if a menu is closed when a user clicks the item. Does not apply to the root items."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether the menu item responds to user interaction."
+    },
+    {
+      "name": "dxMenuBaseItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "html",
+      "type": "String",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the menu item's icon."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxMenuBaseItem>",
+      "default": null,
+      "description": "Specifies nested menu items."
+    },
+    {
+      "name": "selectable",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether or not a user can select a menu item."
+    },
+    {
+      "name": "selected",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether or not the item is selected."
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the text inserted into the item element."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether or not the menu item is visible."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

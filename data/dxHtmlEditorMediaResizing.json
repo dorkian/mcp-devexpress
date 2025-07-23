@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "allowedTargets",
+      "type": "Array<String>",
+      "default": "['image']",
+      "description": "Specifies media types that can be resized. Currently, only images are supported."
+    },
+    {
+      "name": "dxHtmlEditorMediaResizing",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Enables media resizing."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "container",
+      "type": "String | UserDefinedElement",
+      "default": null,
+      "description": "Specifies the container in which to place the toolbar."
+    },
+    {
+      "name": "dxHtmlEditorToolbar",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "items",
+      "type": "Array<dxHtmlEditorToolbarItem, AIToolbarItem, Enums.HtmlEditorPredefinedToolbarItem>",
+      "default": null,
+      "description": "Configures toolbar items. These items allow users to format text and execute commands."
+    },
+    {
+      "name": "multiline",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether or not items are arranged into multiple lines when their combined width exceeds the toolbar width."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

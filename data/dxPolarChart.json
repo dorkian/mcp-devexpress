@@ -1,0 +1,3589 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the PolarChart UI component."
+        },
+        {
+          "name": "adaptiveLayout",
+          "subMembers": [
+            {
+              "name": "adaptiveLayout",
+              "type": "viz/polar_chart:AdaptiveLayout",
+              "default": null,
+              "description": "Specifies adaptive layout properties."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "170",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "170",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "annotations",
+          "subMembers": [
+            {
+              "name": "annotations",
+              "type": "Array<dxPolarChartAnnotationConfig, any>",
+              "default": null,
+              "description": "Specifies the annotation collection."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the annotation's name."
+            }
+          ]
+        },
+        {
+          "name": "argumentAxis",
+          "subMembers": [
+            {
+              "name": "argumentAxis",
+              "type": "viz/polar_chart:ArgumentAxis",
+              "default": null,
+              "description": "Specifies [argument axis] properties for the PolarChart UI component."
+            },
+            {
+              "name": "argumentType",
+              "type": "Enums.ChartsDataType",
+              "default": "undefined",
+              "description": "Specifies the desired type of axis values."
+            },
+            {
+              "name": "axisDivisionFactor",
+              "type": "Number",
+              "default": "50",
+              "description": "Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the *\"continuous\"* and *\"logarithmic\"* [types]."
+            },
+            {
+              "name": "categories",
+              "type": "Array<Number, String, Date>",
+              "default": null,
+              "description": "Specifies the order of categories on an axis of the *\"discrete\"* [type]."
+            },
+            {
+              "name": "constantLines",
+              "subMembers": [
+                {
+                  "name": "constantLines",
+                  "type": "Array<viz/polar_chart:ArgumentAxisConstantLines>",
+                  "default": null,
+                  "description": "Defines an array of the argument axis constant lines."
+                },
+                {
+                  "name": "displayBehindSeries",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether to display the constant line behind or in front of the series."
+                },
+                {
+                  "name": "extendAxis",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether to extend the axis to display the constant line."
+                },
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "label",
+                      "type": "viz/polar_chart:ArgumentAxisConstantLinesLabel",
+                      "default": null,
+                      "description": "An object defining constant line label properties."
+                    },
+                    {
+                      "name": "text",
+                      "type": "String",
+                      "default": "undefined",
+                      "description": "Specifies the text to be displayed in a constant line label."
+                    }
+                  ]
+                },
+                {
+                  "name": "value",
+                  "type": "Number | Date | String",
+                  "default": "undefined",
+                  "description": "Specifies a value to be displayed by a constant line."
+                }
+              ]
+            },
+            {
+              "name": "firstPointOnStartAngle",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not to display the first point at the angle specified by the [startAngle] property."
+            },
+            {
+              "name": "hoverMode",
+              "type": "Enums.ArgumentAxisHoverMode",
+              "default": "'none'",
+              "description": "Specifies the elements that will be highlighted when the argument axis is hovered over."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "customizeHint",
+                  "type": "function(argument)",
+                  "default": null,
+                  "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a label on the argument axis."
+                },
+                {
+                  "name": "customizeText",
+                  "type": "function(argument)",
+                  "default": null,
+                  "description": "Specifies a callback function that returns the text to be displayed by argument axis labels."
+                },
+                {
+                  "name": "format",
+                  "type": "Format",
+                  "default": "undefined",
+                  "description": "Formats a value before it is displayed in an axis label."
+                },
+                {
+                  "name": "label",
+                  "type": "viz/polar_chart:ArgumentAxisLabel",
+                  "default": null,
+                  "description": "Specifies properties for argument axis labels."
+                }
+              ]
+            },
+            {
+              "name": "linearThreshold",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies a value used to calculate the range on a [logarithmic axis] within which the axis should be linear. Applies only if the data source contains negative values or zeroes."
+            },
+            {
+              "name": "logarithmBase",
+              "type": "Number",
+              "default": "10",
+              "description": "Specifies the value to be raised to a power when generating ticks for a [logarithmic axis]."
+            },
+            {
+              "name": "minorTick",
+              "subMembers": [
+                {
+                  "name": "minorTick",
+                  "type": "viz/polar_chart:ArgumentAxisMinorTick",
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "shift",
+                  "type": "Number",
+                  "default": "3",
+                  "description": "Shifts minor ticks from the reference position."
+                }
+              ]
+            },
+            {
+              "name": "minorTickCount",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the number of minor ticks between two neighboring major ticks."
+            },
+            {
+              "name": "minorTickInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies the interval between minor ticks."
+            },
+            {
+              "name": "originValue",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the value to be used as the origin for the argument axis."
+            },
+            {
+              "name": "period",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the period of the argument values in the data source."
+            },
+            {
+              "name": "startAngle",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the angle in arc degrees to which the argument axis should be rotated. The positive values rotate the axis clockwise."
+            },
+            {
+              "name": "strips",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "undefined",
+                  "description": "Specifies a color for a strip."
+                },
+                {
+                  "name": "endValue",
+                  "type": "Number | Date | String",
+                  "default": "undefined",
+                  "description": "Specifies an end value for a strip."
+                },
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "label",
+                      "type": "viz/polar_chart:ArgumentAxisStripsLabel",
+                      "default": null,
+                      "description": "An object that defines the label configuration properties of a strip."
+                    },
+                    {
+                      "name": "text",
+                      "type": "String",
+                      "default": "undefined",
+                      "description": "Specifies the text displayed in a strip."
+                    }
+                  ]
+                },
+                {
+                  "name": "startValue",
+                  "type": "Number | Date | String",
+                  "default": "undefined",
+                  "description": "Specifies a start value for a strip."
+                },
+                {
+                  "name": "strips",
+                  "type": "Array<viz/polar_chart:ArgumentAxisStrips>",
+                  "default": null,
+                  "description": "Specifies properties for argument axis strips."
+                }
+              ]
+            },
+            {
+              "name": "tick",
+              "subMembers": [
+                {
+                  "name": "shift",
+                  "type": "Number",
+                  "default": "3",
+                  "description": "Shifts ticks from the reference position."
+                },
+                {
+                  "name": "tick",
+                  "type": "viz/polar_chart:ArgumentAxisTick",
+                  "default": null,
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "tickInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies an interval between axis ticks/grid lines."
+            },
+            {
+              "name": "type",
+              "type": "Enums.AxisScaleType",
+              "default": "undefined",
+              "description": "Specifies the required type of the argument axis."
+            }
+          ]
+        },
+        {
+          "name": "barGroupPadding",
+          "type": "Number",
+          "default": "0.3",
+          "description": "Controls the padding and consequently the angular width of a group of bars with the same argument using relative units. Ignored if the [barGroupWidth] property is set."
+        },
+        {
+          "name": "barGroupWidth",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies a fixed angular width for groups of bars with the same argument, measured in degrees. Takes precedence over the [barGroupPadding] property."
+        },
+        {
+          "name": "commonAnnotationSettings",
+          "type": "dxPolarChartCommonAnnotationConfig",
+          "default": null,
+          "description": "Specifies settings common for all annotations in the PolarChart."
+        },
+        {
+          "name": "commonAxisSettings",
+          "subMembers": [
+            {
+              "name": "allowDecimals",
+              "type": "Boolean",
+              "default": "undefined",
+              "description": "Specifies whether to allow decimal values on the axis. When **false**, the axis contains integer values only."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#767676'",
+              "description": "Specifies the color of the line that represents an axis."
+            },
+            {
+              "name": "commonAxisSettings",
+              "type": "viz/polar_chart:CommonAxisSettings",
+              "default": null,
+              "description": "An object defining the configuration properties that are common for all [axes] of the PolarChart UI component."
+            },
+            {
+              "name": "constantLineStyle",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#000000'",
+                  "description": "Specifies a color for a constant line."
+                },
+                {
+                  "name": "constantLineStyle",
+                  "type": "viz/polar_chart:CommonAxisSettingsConstantLineStyle",
+                  "default": null,
+                  "description": "Specifies the appearance of all the UI component's constant lines."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle",
+                  "default": "'solid'",
+                  "description": "Specifies a dash style for a constant line."
+                },
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "font",
+                      "subMembers": [
+                        {
+                          "name": "color",
+                          "type": null,
+                          "default": "'#767676'",
+                          "description": null
+                        },
+                        {
+                          "name": "font",
+                          "type": "Object",
+                          "default": null,
+                          "description": "Specifies font properties for a constant line label."
+                        }
+                      ]
+                    },
+                    {
+                      "name": "label",
+                      "type": "viz/polar_chart:CommonAxisSettingsConstantLineStyleLabel",
+                      "default": null,
+                      "description": "An object defining constant line label properties."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "true",
+                      "description": "Indicates whether or not to display labels for the axis constant lines."
+                    }
+                  ]
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies a constant line width in pixels."
+                }
+              ]
+            },
+            {
+              "name": "discreteAxisDivisionMode",
+              "type": "Enums.DiscreteAxisDivisionMode",
+              "default": "'betweenLabels'",
+              "description": "Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels."
+            },
+            {
+              "name": "endOnTick",
+              "type": "Boolean",
+              "default": "undefined",
+              "description": "Specifies whether to force the axis to start and end on ticks."
+            },
+            {
+              "name": "grid",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#d3d3d3'",
+                  "description": "Specifies a color for grid lines."
+                },
+                {
+                  "name": "grid",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining the configuration properties for the [grid lines] of an [axis] in the PolarChart UI component."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies an opacity for grid lines."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether or not the grid lines of an axis are visible."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the width of grid lines."
+                }
+              ]
+            },
+            {
+              "name": "inverted",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Indicates whether or not an axis is inverted."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#767676'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for axis labels."
+                    }
+                  ]
+                },
+                {
+                  "name": "indentFromAxis",
+                  "type": "Number",
+                  "default": "5",
+                  "description": "Specifies the spacing between an axis and its labels in pixels."
+                },
+                {
+                  "name": "label",
+                  "type": "viz/polar_chart:CommonAxisSettingsLabel",
+                  "default": null,
+                  "description": "An object defining the [label] configuration properties that are common for all axes in the PolarChart UI component."
+                },
+                {
+                  "name": "overlappingBehavior",
+                  "type": "Enums.LabelOverlap",
+                  "default": "'hide'",
+                  "description": "Decides how to arrange axis labels when there is not enough space to keep all of them."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether or not axis labels are visible."
+                }
+              ]
+            },
+            {
+              "name": "minorGrid",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#d3d3d3'",
+                  "description": "Specifies a color for the lines of the minor grid."
+                },
+                {
+                  "name": "minorGrid",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the properties of the minor grid."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies an opacity for the lines of the minor grid."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether the minor grid is visible or not."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies a width for the lines of the minor grid."
+                }
+              ]
+            },
+            {
+              "name": "minorTick",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#767676'",
+                  "description": "Specifies a color for the minor ticks."
+                },
+                {
+                  "name": "length",
+                  "type": "Number",
+                  "default": "7",
+                  "description": "Specifies minor tick length."
+                },
+                {
+                  "name": "minorTick",
+                  "type": "viz/polar_chart:CommonAxisSettingsMinorTick",
+                  "default": null,
+                  "description": "Specifies the properties of the minor ticks."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "0.3",
+                  "description": "Specifies an opacity for the minor ticks."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Indicates whether or not the minor ticks are displayed on an axis."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies minor tick width."
+                }
+              ]
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the opacity of the line that represents an axis."
+            },
+            {
+              "name": "stripStyle",
+              "subMembers": [
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "font",
+                      "subMembers": [
+                        {
+                          "name": "color",
+                          "type": null,
+                          "default": "'#767676'",
+                          "description": null
+                        },
+                        {
+                          "name": "font",
+                          "type": "Object",
+                          "default": null,
+                          "description": "Specifies font properties for a strip label."
+                        }
+                      ]
+                    },
+                    {
+                      "name": "label",
+                      "type": "viz/polar_chart:CommonAxisSettingsStripStyleLabel",
+                      "default": null,
+                      "description": "An object defining the configuration properties for a strip label style."
+                    }
+                  ]
+                },
+                {
+                  "name": "stripStyle",
+                  "type": "viz/polar_chart:CommonAxisSettingsStripStyle",
+                  "default": null,
+                  "description": "An object defining configuration properties for [strip] style."
+                }
+              ]
+            },
+            {
+              "name": "tick",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#767676'",
+                  "description": "Specifies ticks color."
+                },
+                {
+                  "name": "length",
+                  "type": "Number",
+                  "default": "7",
+                  "description": "Specifies tick length."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "undefined",
+                  "description": "Specifies tick opacity."
+                },
+                {
+                  "name": "tick",
+                  "type": "viz/polar_chart:CommonAxisSettingsTick",
+                  "default": null,
+                  "description": "An object defining the configuration properties for [axis ticks]."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether or not ticks are visible on an axis."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies tick width."
+                }
+              ]
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether or not the line that represents an axis in a chart is visible."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "1",
+              "description": "Specifies the width of the line that represents an axis in the chart."
+            }
+          ]
+        },
+        {
+          "name": "commonSeriesSettings",
+          "subMembers": [
+            {
+              "name": "area",
+              "type": "any",
+              "default": null,
+              "description": "An object that specifies configuration properties for all series of the *area* type in the chart."
+            },
+            {
+              "name": "bar",
+              "type": "any",
+              "default": null,
+              "description": "An object that specifies configuration properties for all series of the _bar_ type in the chart."
+            },
+            {
+              "name": "commonSeriesSettings",
+              "type": "viz/polar_chart:CommonSeriesSettings",
+              "default": null,
+              "description": "An object defining the configuration properties that are common for all series of the PolarChart UI component."
+            },
+            {
+              "name": "line",
+              "type": "any",
+              "default": null,
+              "description": "An object that specifies configuration properties for all series of the _line_ type in the chart."
+            },
+            {
+              "name": "scatter",
+              "type": "any",
+              "default": null,
+              "description": "An object that specifies configuration properties for all series of the _scatter_ type in the chart."
+            },
+            {
+              "name": "stackedbar",
+              "type": "any",
+              "default": null,
+              "description": "An object that specifies configuration properties for all series of the _stackedBar_ type in the chart."
+            },
+            {
+              "name": "type",
+              "type": "Enums.PolarChartSeriesType",
+              "default": "'scatter'",
+              "description": "Sets a series type."
+            }
+          ]
+        },
+        {
+          "name": "containerBackgroundColor",
+          "type": "String",
+          "default": "'#FFFFFF'",
+          "description": "Specifies the color of the parent page element."
+        },
+        {
+          "name": "customizeAnnotation",
+          "type": "function(annotation) | undefined",
+          "default": "undefined",
+          "description": "Customizes an individual [annotation]."
+        },
+        {
+          "name": "customizePoint",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dataPrepareSettings",
+          "subMembers": [
+            {
+              "name": "checkTypeForAllData",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not to validate the values from a data source."
+            },
+            {
+              "name": "convertToAxisDataType",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to convert the values from a data source into the data type of an axis."
+            },
+            {
+              "name": "dataPrepareSettings",
+              "type": "Object",
+              "default": null,
+              "description": "An object providing properties for managing data from a data source."
+            },
+            {
+              "name": "sortingMethod",
+              "type": "Boolean | function(a, b)",
+              "default": "true",
+              "description": "Specifies how to sort the series points."
+            }
+          ]
+        },
+        {
+          "name": "legend",
+          "subMembers": [
+            {
+              "name": "customizeHint",
+              "type": "function(seriesInfo)",
+              "default": null,
+              "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(seriesInfo)",
+              "default": null,
+              "description": "<p>Specifies a callback function that returns the text to be displayed by legend items.</p>"
+            },
+            {
+              "name": "hoverMode",
+              "type": "Enums.LegendHoverMode",
+              "default": "'includePoints'",
+              "description": "Specifies what series elements to highlight when a corresponding item in the legend is hovered over."
+            },
+            {
+              "name": "legend",
+              "type": "viz/polar_chart:Legend",
+              "default": null,
+              "description": "Specifies the properties of a chart's legend."
+            }
+          ]
+        },
+        {
+          "name": "negativesAsZeroes",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Forces the UI component to treat negative values as zeroes. Applies to stacked-like series only."
+        },
+        {
+          "name": "resolveLabelOverlapping",
+          "type": "Enums.LabelOverlap",
+          "default": "'none'",
+          "description": "Specifies how the chart must behave when [series point labels] overlap."
+        },
+        {
+          "name": "series",
+          "type": "Object | Array<PolarChartSeries> | undefined",
+          "default": "undefined",
+          "description": "Specifies properties for PolarChart UI component [series]."
+        },
+        {
+          "name": "seriesSelectionMode",
+          "type": "Enums.SingleOrMultiple",
+          "default": "'single'",
+          "description": "Specifies whether a single series or multiple series can be selected in the chart."
+        },
+        {
+          "name": "seriesTemplate",
+          "subMembers": [
+            {
+              "name": "customizeSeries",
+              "type": "function(seriesName)",
+              "default": null,
+              "description": "Specifies a callback function that returns a [series] object with individual series settings."
+            },
+            {
+              "name": "nameField",
+              "type": "String",
+              "default": "'series'",
+              "description": "Specifies a data source field that represents the series name."
+            },
+            {
+              "name": "seriesTemplate",
+              "type": "Object",
+              "default": "undefined",
+              "description": "Defines properties for the series template."
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "400",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 400, width: 400}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "400",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentTemplate",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "customizeTooltip",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "shared",
+              "type": "Boolean",
+              "default": "false",
+              "description": null
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/polar_chart:Tooltip",
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "useSpiderWeb",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Indicates whether to display a \"spider web\"."
+        },
+        {
+          "name": "valueAxis",
+          "subMembers": [
+            {
+              "name": "axisDivisionFactor",
+              "type": "Number",
+              "default": "30",
+              "description": "Specifies a coefficient for dividing the value axis."
+            },
+            {
+              "name": "categories",
+              "type": "Array<Number, String, Date>",
+              "default": null,
+              "description": "Specifies the order of categories on an axis of the *\"discrete\"* [type]."
+            },
+            {
+              "name": "constantLines",
+              "subMembers": [
+                {
+                  "name": "constantLines",
+                  "type": "Array<viz/polar_chart:ValueAxisConstantLines>",
+                  "default": null,
+                  "description": "Defines an array of the value axis constant lines."
+                },
+                {
+                  "name": "displayBehindSeries",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether to display the constant line behind or in front of the series."
+                },
+                {
+                  "name": "extendAxis",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether to extend the axis to display the constant line."
+                },
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "label",
+                      "type": "viz/polar_chart:ValueAxisConstantLinesLabel",
+                      "default": null,
+                      "description": "An object defining constant line label properties."
+                    },
+                    {
+                      "name": "text",
+                      "type": "String",
+                      "default": "undefined",
+                      "description": "Specifies the text to be displayed in a constant line label."
+                    }
+                  ]
+                },
+                {
+                  "name": "value",
+                  "type": "Number | Date | String",
+                  "default": "undefined",
+                  "description": "Specifies a value to be displayed by a constant line."
+                }
+              ]
+            },
+            {
+              "name": "endOnTick",
+              "type": "Boolean",
+              "default": "false",
+              "description": null
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "customizeHint",
+                  "type": "function(axisValue)",
+                  "default": null,
+                  "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a label on the value axis."
+                },
+                {
+                  "name": "customizeText",
+                  "type": "function(axisValue)",
+                  "default": null,
+                  "description": "Specifies a callback function that returns the text to be displayed in value axis labels."
+                },
+                {
+                  "name": "format",
+                  "type": "Format",
+                  "default": "undefined",
+                  "description": "Formats a value before it is displayed in an axis label."
+                },
+                {
+                  "name": "label",
+                  "type": "viz/polar_chart:ValueAxisLabel",
+                  "default": null,
+                  "description": "Specifies properties for value axis labels."
+                }
+              ]
+            },
+            {
+              "name": "linearThreshold",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies a value used to calculate the range on a [logarithmic axis] within which the axis should be linear. Applies only if the data source contains negative values or zeroes."
+            },
+            {
+              "name": "logarithmBase",
+              "type": "Number",
+              "default": "10",
+              "description": "Specifies the value to be raised to a power when generating ticks for a logarithmic axis."
+            },
+            {
+              "name": "maxValueMargin",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies a coefficient that determines the spacing between the maximum series point and the axis."
+            },
+            {
+              "name": "minValueMargin",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies a coefficient that determines the spacing between the minimum series point and the axis."
+            },
+            {
+              "name": "minVisualRangeLength",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": "undefined",
+              "description": "Specifies the minimum length of the [visual range]."
+            },
+            {
+              "name": "minorTickCount",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the number of minor ticks between two neighboring major ticks."
+            },
+            {
+              "name": "minorTickInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies the interval between [minor ticks]."
+            },
+            {
+              "name": "showZero",
+              "type": "Boolean",
+              "default": "undefined",
+              "description": "Specifies whether or not to indicate a zero value on the value axis."
+            },
+            {
+              "name": "strips",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "undefined",
+                  "description": "Specifies a color for a strip."
+                },
+                {
+                  "name": "endValue",
+                  "type": "Number | Date | String",
+                  "default": "undefined",
+                  "description": "Specifies an end value for a strip."
+                },
+                {
+                  "name": "label",
+                  "subMembers": [
+                    {
+                      "name": "label",
+                      "type": "viz/polar_chart:ValueAxisStripsLabel",
+                      "default": null,
+                      "description": "An object that defines the label configuration properties of a strip."
+                    },
+                    {
+                      "name": "text",
+                      "type": "String",
+                      "default": "undefined",
+                      "description": "Specifies the text displayed in a strip."
+                    }
+                  ]
+                },
+                {
+                  "name": "startValue",
+                  "type": "Number | Date | String",
+                  "default": "undefined",
+                  "description": "Specifies a start value for a strip."
+                },
+                {
+                  "name": "strips",
+                  "type": "Array<viz/polar_chart:ValueAxisStrips>",
+                  "default": null,
+                  "description": "Specifies properties for value axis strips."
+                }
+              ]
+            },
+            {
+              "name": "tick",
+              "subMembers": [
+                {
+                  "name": "tick",
+                  "type": "viz/polar_chart:ValueAxisTick",
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "tickInterval",
+              "type": "Number | Object | Enums.TimeInterval",
+              "default": null,
+              "description": "Specifies an interval between axis ticks/grid lines."
+            },
+            {
+              "name": "type",
+              "type": "Enums.AxisScaleType",
+              "default": "undefined",
+              "description": "Specifies the required type of the value axis."
+            },
+            {
+              "name": "valueAxis",
+              "type": "viz/polar_chart:ValueAxis",
+              "default": null,
+              "description": "Specifies [value axis] properties for the PolarChart UI component."
+            },
+            {
+              "name": "valueMarginsEnabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Indicates whether to display series with indents from axis boundaries."
+            },
+            {
+              "name": "valueType",
+              "type": "Enums.ChartsDataType",
+              "default": "undefined",
+              "description": "Specifies the desired type of axis values."
+            },
+            {
+              "name": "visualRange",
+              "type": "Object | Array<Number, String, Date>",
+              "default": null,
+              "description": "Defines the axis' displayed range. Cannot be wider than the [wholeRange]."
+            },
+            {
+              "name": "visualRangeUpdateMode",
+              "type": "Enums.ValueAxisVisualRangeUpdateMode",
+              "default": "'auto'",
+              "description": "Specifies how the axis's [visual range] should behave when the PolarChart data is updated."
+            },
+            {
+              "name": "wholeRange",
+              "type": "Object | Array<Number, String, Date>",
+              "default": "undefined",
+              "description": "Defines the range where the axis can be zoomed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Series Types",
+      "subMembers": [
+        {
+          "name": "AreaSeries",
+          "subMembers": [
+            {
+              "name": "AreaSeries",
+              "type": "Object",
+              "default": null,
+              "description": "An object defining a series of the **area** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "hoverMode",
+              "type": "String",
+              "default": "'nearestPoint'",
+              "description": "Specifies series elements to be highlighted when a user points to the series."
+            },
+            {
+              "name": "point",
+              "subMembers": [
+                {
+                  "name": "point",
+                  "type": "Object",
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "selectionMode",
+              "type": "String",
+              "default": "'includePoints'",
+              "description": "Specifies series elements to be highlighted when a user selects the series."
+            }
+          ]
+        },
+        {
+          "name": "BarSeries",
+          "subMembers": [
+            {
+              "name": "BarSeries",
+              "type": "Object",
+              "default": null,
+              "description": "An object defining a series of the **bar** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "hoverMode",
+              "type": "String",
+              "default": "'onlyPoint'",
+              "description": "Specifies series elements to be highlighted when a user points to the series."
+            },
+            {
+              "name": "selectionMode",
+              "type": "String",
+              "default": "'onlyPoint'",
+              "description": "Specifies series elements to be highlighted when a user selects the series."
+            }
+          ]
+        },
+        {
+          "name": "CommonPolarChartSeries",
+          "subMembers": [
+            {
+              "name": "CommonPolarChartSeries",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines configuration properties for polar chart series."
+            },
+            {
+              "name": "argumentField",
+              "type": "String",
+              "default": "'arg'",
+              "description": "Specifies the data source field that provides arguments for series points."
+            },
+            {
+              "name": "axis",
+              "type": "String",
+              "default": "undefined",
+              "description": "-"
+            },
+            {
+              "name": "barPadding",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Controls the padding and consequently the angular width of all bars in a series using relative units. Ignored if the [barWidth] property is set."
+            },
+            {
+              "name": "barWidth",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies a fixed angular width for all bars in a series, measured in degrees. Takes precedence over the [barPadding] property."
+            },
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining the series border configuration properties."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Sets a border color for a series."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle | undefined",
+                  "default": "undefined",
+                  "description": "Specifies a dash style for the borders of series points."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Sets border visibility for a series."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "2",
+                  "description": "Sets a border width for a series in pixels."
+                }
+              ]
+            },
+            {
+              "name": "closed",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to close the chart by joining the end point with the first point."
+            },
+            {
+              "name": "color",
+              "type": "String | ChartsColor | undefined",
+              "default": "undefined",
+              "description": "Specifies a series color."
+            },
+            {
+              "name": "dashStyle",
+              "type": "Enums.DashStyle",
+              "default": "'solid'",
+              "description": "Specifies the dash style of the series' line."
+            },
+            {
+              "name": "hoverMode",
+              "type": "Enums.SeriesHoverMode",
+              "default": null,
+              "description": "Specifies the series elements to highlight when a series is hovered over."
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "An object defining the border properties for a hovered series."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "<p>Sets a border color for a hovered series.</p>"
+                    },
+                    {
+                      "name": "dashStyle",
+                      "type": "Enums.DashStyle | undefined",
+                      "default": "'solid'",
+                      "description": "Specifies a dash style for the borders of point labels."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Sets a border visibility for a hovered series."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "3",
+                      "description": "Sets a border width for a hovered series."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | ChartsColor | undefined",
+                  "default": "undefined",
+                  "description": "Sets a color for a series when it is hovered over."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle",
+                  "default": "'solid'",
+                  "description": "Specifies the dash style for the line in a hovered series."
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'none'",
+                      "description": "Specifies how to apply hatching to highlight the hovered series."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies the hatching properties to be applied when a series is hovered over."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.75",
+                      "description": "Specifies the opacity of hatching lines."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "6",
+                      "description": "Specifies the distance between hatching lines in pixels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "2",
+                      "description": "Specifies the width of hatching lines in pixels."
+                    }
+                  ]
+                },
+                {
+                  "name": "highlight",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether to lighten the series when a user points to it."
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining configuration properties for a hovered series."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "3",
+                  "description": "Specifies the width of a line in a hovered series."
+                }
+              ]
+            },
+            {
+              "name": "ignoreEmptyPoints",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether the series should ignore null data points."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "argumentFormat",
+                  "type": "Format | undefined",
+                  "default": "undefined",
+                  "description": "Formats the point argument before it is displayed in the point label. To format the point value, use the [format] property."
+                },
+                {
+                  "name": "backgroundColor",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors the point labels' background. The default color is inherited from the points."
+                },
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies border properties for point labels."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "'#d3d3d3'",
+                      "description": "<p>Specifies a border color for point labels.</p>"
+                    },
+                    {
+                      "name": "dashStyle",
+                      "type": "Enums.DashStyle | undefined",
+                      "default": "'solid'",
+                      "description": "Specifies a dash style for the borders of point labels."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Indicates whether borders are visible in point labels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "1",
+                      "description": "Specifies the border width for point labels."
+                    }
+                  ]
+                },
+                {
+                  "name": "connector",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the color of label connectors."
+                    },
+                    {
+                      "name": "connector",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies connector properties for series point labels."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Indicates whether or not label connectors are visible."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "1",
+                      "description": "Specifies the width of label connectors."
+                    }
+                  ]
+                },
+                {
+                  "name": "customizeText",
+                  "type": "function(pointInfo)",
+                  "default": null,
+                  "description": "Specifies a callback function that returns the text to be displayed by point labels."
+                },
+                {
+                  "name": "displayFormat",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the label's text."
+                },
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#FFFFFF'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for the text displayed in point labels."
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "14",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "format",
+                  "type": "Format | undefined",
+                  "default": "undefined",
+                  "description": "Formats a value before it is displayed in a point label."
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining the [label] configuration properties."
+                },
+                {
+                  "name": "position",
+                  "type": "Enums.RelativePosition",
+                  "default": "'outside'",
+                  "description": "Specifies a label position in bar-like series."
+                },
+                {
+                  "name": "rotationAngle",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies the angle used to rotate point labels from their initial position."
+                },
+                {
+                  "name": "showForZeroValues",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether or not to show a label when the point has a zero value."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies the visibility of point labels."
+                }
+              ]
+            },
+            {
+              "name": "maxLabelCount",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies how many points are acceptable to be in a series to display all labels for these points. Otherwise, the labels will not be displayed."
+            },
+            {
+              "name": "minBarSize",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the minimal length of a displayed bar in pixels."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "0.5",
+              "description": "Specifies opacity for a series."
+            },
+            {
+              "name": "point",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies border properties for points in the line and area series."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Sets a border color for points in the line and area series."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Sets border visibility for points in the line and area series."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "1",
+                      "description": "Sets a border width for points in the line or area series."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | ChartsColor | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the points color."
+                },
+                {
+                  "name": "hoverMode",
+                  "type": "Enums.PointInteractionMode",
+                  "default": "'onlyPoint'",
+                  "description": "Specifies what series points to highlight when a point is hovered over."
+                },
+                {
+                  "name": "hoverStyle",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "subMembers": [
+                        {
+                          "name": "border",
+                          "type": "Object",
+                          "default": null,
+                          "description": "An object defining the border properties for a hovered point."
+                        },
+                        {
+                          "name": "color",
+                          "type": "String | undefined",
+                          "default": "undefined",
+                          "description": "Sets a border color for a hovered point."
+                        },
+                        {
+                          "name": "visible",
+                          "type": "Boolean",
+                          "default": "true",
+                          "description": "Sets border visibility for a hovered point."
+                        },
+                        {
+                          "name": "width",
+                          "type": "Number",
+                          "default": "4",
+                          "description": "Sets a border width for a hovered point."
+                        }
+                      ]
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | ChartsColor | undefined",
+                      "default": "undefined",
+                      "description": "Sets a color for a point when it is hovered over."
+                    },
+                    {
+                      "name": "hoverStyle",
+                      "type": "Object",
+                      "default": null,
+                      "description": "An object defining configuration properties for a hovered point."
+                    },
+                    {
+                      "name": "size",
+                      "type": "Number",
+                      "default": "12",
+                      "description": "Specifies the diameter of a hovered point in the series that represents data points as symbols (not as bars for instance)."
+                    }
+                  ]
+                },
+                {
+                  "name": "image",
+                  "subMembers": [
+                    {
+                      "name": "height",
+                      "type": "Number",
+                      "default": "30",
+                      "description": "Specifies the height of an image that is used as a point marker."
+                    },
+                    {
+                      "name": "image",
+                      "type": "String | undefined | Object",
+                      "default": "undefined",
+                      "description": "An object specifying the parameters of an image that is used as a point marker."
+                    },
+                    {
+                      "name": "url",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Specifies a URL leading to the image to be used as a point marker."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "30",
+                      "description": "Specifies the width of an image that is used as a point marker."
+                    }
+                  ]
+                },
+                {
+                  "name": "point",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining configuration properties for [points] in line and area series."
+                },
+                {
+                  "name": "selectionMode",
+                  "type": "Enums.PointInteractionMode",
+                  "default": "'onlyPoint'",
+                  "description": "Specifies what series points to highlight when a point is selected."
+                },
+                {
+                  "name": "selectionStyle",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "subMembers": [
+                        {
+                          "name": "border",
+                          "type": "Object",
+                          "default": null,
+                          "description": "An object defining the border properties for a selected point."
+                        },
+                        {
+                          "name": "color",
+                          "type": "String | undefined",
+                          "default": "undefined",
+                          "description": "Sets a border color for a selected point."
+                        },
+                        {
+                          "name": "visible",
+                          "type": "Boolean",
+                          "default": "true",
+                          "description": "Sets border visibility for a selected point."
+                        },
+                        {
+                          "name": "width",
+                          "type": "Number",
+                          "default": "4",
+                          "description": "Sets a border width for a selected point."
+                        }
+                      ]
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | ChartsColor | undefined",
+                      "default": "undefined",
+                      "description": "Sets a color for a point when it is selected."
+                    },
+                    {
+                      "name": "selectionStyle",
+                      "type": "Object",
+                      "default": null,
+                      "description": "An object defining configuration properties for a selected point."
+                    },
+                    {
+                      "name": "size",
+                      "type": "Number",
+                      "default": "12",
+                      "description": "Specifies the diameter of a selected point in the series that represents data points as symbols (not as bars for instance)."
+                    }
+                  ]
+                },
+                {
+                  "name": "size",
+                  "type": "Number",
+                  "default": "12",
+                  "description": "Specifies the point diameter in pixels for those series that represent data points as symbols (not as bars for instance)."
+                },
+                {
+                  "name": "symbol",
+                  "type": "Enums.PointSymbol",
+                  "default": "'circle'",
+                  "description": "Specifies a symbol for presenting points of the line and area series."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies the points visibility for a line and area series."
+                }
+              ]
+            },
+            {
+              "name": "selectionMode",
+              "type": "Enums.SeriesSelectionMode",
+              "default": null,
+              "description": "Specifies the series elements to highlight when the series is selected."
+            },
+            {
+              "name": "selectionStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "An object defining the border properties for a selected series."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Sets a border color for a selected series."
+                    },
+                    {
+                      "name": "dashStyle",
+                      "type": "Enums.DashStyle | undefined",
+                      "default": "'solid'",
+                      "description": "Specifies a dash style for the borders of point labels."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Sets border visibility for a selected series."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "3",
+                      "description": "Sets a border width for a selected series."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | ChartsColor | undefined",
+                  "default": "undefined",
+                  "description": "Sets a color for a series when it is selected."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle",
+                  "default": "'solid'",
+                  "description": "Specifies the dash style for the line in a selected series."
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'none'",
+                      "description": "Specifies how to apply hatching to highlight a selected series."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies the hatching properties to be applied when a series is selected."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.5",
+                      "description": "Specifies the opacity of hatching lines."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "6",
+                      "description": "Specifies the distance between hatching lines in pixels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "2",
+                      "description": "Specifies the width of hatching lines in pixels."
+                    }
+                  ]
+                },
+                {
+                  "name": "highlight",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether to lighten the series when a user selects it."
+                },
+                {
+                  "name": "selectionStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining configuration properties for a selected series."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "3",
+                  "description": "Specifies the width of a line in a selected series."
+                }
+              ]
+            },
+            {
+              "name": "showInLegend",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not to show the series in the chart's legend."
+            },
+            {
+              "name": "stack",
+              "type": "String",
+              "default": "'default'",
+              "description": "Specifies the name of the stack where the values of the _stackedBar_ series must be located."
+            },
+            {
+              "name": "tagField",
+              "type": "String",
+              "default": "'tag'",
+              "description": "Specifies the name of the data source field that provides data about a point."
+            },
+            {
+              "name": "valueErrorBar",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "black",
+                  "description": "Specifies the color of error bars."
+                },
+                {
+                  "name": "displayMode",
+                  "type": "Enums.ValueErrorBarDisplayMode",
+                  "default": "'auto'",
+                  "description": "Specifies whether error bars must be displayed in full or partially."
+                },
+                {
+                  "name": "edgeLength",
+                  "type": "Number",
+                  "default": "8",
+                  "description": "Specifies the length of the lines that indicate error bar edges."
+                },
+                {
+                  "name": "highValueField",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the data field that provides data for high error values."
+                },
+                {
+                  "name": "lineWidth",
+                  "type": "Number",
+                  "default": "2",
+                  "description": "Specifies the width of the error bar line."
+                },
+                {
+                  "name": "lowValueField",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the data field that provides data for low error values."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the opacity of error bars."
+                },
+                {
+                  "name": "type",
+                  "type": "Enums.ValueErrorBarType | undefined",
+                  "default": "undefined",
+                  "description": "Specifies how error bar values must be calculated."
+                },
+                {
+                  "name": "value",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the value to be used for generating error bars."
+                },
+                {
+                  "name": "valueErrorBar",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures error bars."
+                }
+              ]
+            },
+            {
+              "name": "valueField",
+              "type": "String",
+              "default": "'val'",
+              "description": "Specifies the data source field that provides values for series points."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies the visibility of a series."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "2",
+              "description": "Specifies a line width."
+            }
+          ]
+        },
+        {
+          "name": "LineSeries",
+          "subMembers": [
+            {
+              "name": "LineSeries",
+              "type": "Object",
+              "default": null,
+              "description": "An object defining a series of the **line** type."
+            },
+            {
+              "name": "hoverMode",
+              "type": "String",
+              "default": "'excludePoints'",
+              "description": "Specifies series elements to be highlighted when a user points to the series."
+            },
+            {
+              "name": "selectionMode",
+              "type": "String",
+              "default": "'includePoints'",
+              "description": "Specifies series elements to be highlighted when a user selects the series."
+            }
+          ]
+        },
+        {
+          "name": "ScatterSeries",
+          "type": "any",
+          "default": null,
+          "description": "An object defining a series of the **scatter** type."
+        },
+        {
+          "name": "Series Types",
+          "type": "Object",
+          "default": null,
+          "description": "This section lists objects that define properties used to configure series of specific types."
+        },
+        {
+          "name": "StackedBarSeries",
+          "subMembers": [
+            {
+              "name": "StackedBarSeries",
+              "type": "Object",
+              "default": null,
+              "description": "An object defining a series of the **stackedBar** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "hoverMode",
+              "type": "String",
+              "default": "'onlyPoint'",
+              "description": "Specifies series elements to be highlighted when a user points to the series."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "position",
+                  "type": "Enums.RelativePosition",
+                  "default": "'inside'",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "selectionMode",
+              "type": "String",
+              "default": "'onlyPoint'",
+              "description": "Specifies series elements to be highlighted when a user selects the series."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chart Elements",
+      "subMembers": [
+        {
+          "name": "Point",
+          "type": "Object",
+          "default": null,
+          "description": "This section describes the **Point** object, which represents a series point."
+        },
+        {
+          "name": "Series",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information on the series."
+                },
+                {
+                  "name": "axis",
+                  "type": "String",
+                  "default": null,
+                  "description": "Returns the name of the value [axis] of the series."
+                }
+              ]
+            },
+            {
+              "name": "Series",
+              "type": "Object",
+              "default": null,
+              "description": "This section describes the **Series** object, which represents a series."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxPolarChart",
+      "type": "\"bar\"",
+      "default": null,
+      "description": "The PolarChart is a UI component that visualizes data in a polar coordinate system."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getValueAxis()",
+      "type": null,
+      "default": null,
+      "description": "Gets a [value axis]."
+    },
+    {
+      "name": "resetVisualRange()",
+      "type": null,
+      "default": null,
+      "description": "Resets the value axis' [visual range] to the data range or to the [whole range] if it is within the data range."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onArgumentAxisClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a [label] on the [argument axis] is clicked or tapped."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDone",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when all series are ready."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onLegendClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a [legend item] is clicked or tapped."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPointClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a series point is clicked or tapped."
+    },
+    {
+      "name": "onPointHoverChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the pointer enters or leaves a series point."
+    },
+    {
+      "name": "onPointSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a series point is selected or selection is canceled."
+    },
+    {
+      "name": "onSeriesClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a [series] is clicked or tapped."
+    },
+    {
+      "name": "onSeriesHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a series."
+    },
+    {
+      "name": "onSeriesSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a series is selected or selection is canceled."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "onZoomEnd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when zooming or panning ends."
+    },
+    {
+      "name": "onZoomStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when zooming or panning begins."
+    },
+    {
+      "name": "argumentAxisClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a [label] on the [argument axis] is clicked or tapped."
+    },
+    {
+      "name": "legendClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a [legend item] is clicked or tapped."
+    },
+    {
+      "name": "seriesClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a [series] is clicked or tapped."
+    },
+    {
+      "name": "seriesHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a series."
+    },
+    {
+      "name": "seriesSelectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a series is selected or selection is canceled."
+    },
+    {
+      "name": "zoomEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when zooming or panning ends."
+    },
+    {
+      "name": "zoomStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when zooming or panning begins."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AdaptiveLayout",
+      "subMembers": [
+        {
+          "name": "AdaptiveLayout",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "Specifies adaptive layout properties."
+        },
+        {
+          "name": "height",
+          "type": "Number",
+          "default": "170",
+          "description": "Specifies the minimum container height at which the layout begins to adapt."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "170",
+          "description": "Specifies the minimum container width at which the layout begins to adapt."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxis",
+      "subMembers": [
+        {
+          "name": "ArgumentAxis",
+          "type": "uid: viz/polar_chart:ArgumentAxis",
+          "default": null,
+          "description": "Specifies [argument axis] properties for the PolarChart UI component."
+        },
+        {
+          "name": "argumentType",
+          "type": "Enums.ChartsDataType | undefined",
+          "default": "undefined",
+          "description": "Specifies the desired type of axis values."
+        },
+        {
+          "name": "axisDivisionFactor",
+          "type": "Number",
+          "default": "50",
+          "description": "Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the *\"continuous\"* and *\"logarithmic\"* [types]."
+        },
+        {
+          "name": "categories",
+          "type": "Array<Number, String, Date>",
+          "default": null,
+          "description": "Specifies the order of categories on an axis of the *\"discrete\"* [type]."
+        },
+        {
+          "name": "constantLines",
+          "type": "Array<Object>",
+          "default": null,
+          "description": "Defines an array of the argument axis constant lines."
+        },
+        {
+          "name": "firstPointOnStartAngle",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not to display the first point at the angle specified by the [startAngle] property."
+        },
+        {
+          "name": "hoverMode",
+          "type": "Enums.ArgumentAxisHoverMode",
+          "default": "'none'",
+          "description": "Specifies the elements that will be highlighted when the argument axis is hovered over."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies properties for argument axis labels."
+        },
+        {
+          "name": "linearThreshold",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies a value used to calculate the range on a [logarithmic axis] within which the axis should be linear. Applies only if the data source contains negative values or zeroes."
+        },
+        {
+          "name": "logarithmBase",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the value to be raised to a power when generating ticks for a [logarithmic axis]."
+        },
+        {
+          "name": "minorTick",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the properties of the minor ticks."
+        },
+        {
+          "name": "minorTickCount",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the number of minor ticks between two neighboring major ticks."
+        },
+        {
+          "name": "minorTickInterval",
+          "type": "Number | Object | Enums.TimeInterval",
+          "default": null,
+          "description": "Specifies the interval between minor ticks."
+        },
+        {
+          "name": "originValue",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the value to be used as the origin for the argument axis."
+        },
+        {
+          "name": "period",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the period of the argument values in the data source."
+        },
+        {
+          "name": "startAngle",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the angle in arc degrees to which the argument axis should be rotated. The positive values rotate the axis clockwise."
+        },
+        {
+          "name": "strips",
+          "type": "Array<Object>",
+          "default": null,
+          "description": "Specifies properties for argument axis strips."
+        },
+        {
+          "name": "tick",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining the configuration properties for axis ticks."
+        },
+        {
+          "name": "tickInterval",
+          "type": "Number | Object | Enums.TimeInterval",
+          "default": null,
+          "description": "Specifies an interval between axis ticks/grid lines."
+        },
+        {
+          "name": "type",
+          "type": "Enums.AxisScaleType | undefined",
+          "default": "undefined",
+          "description": "Specifies the required type of the argument axis."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisClickEvent",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [argumentAxisClick] event handler's argument."
+        },
+        {
+          "name": "argument",
+          "type": "Date | Number | String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisConstantLines",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisConstantLines",
+          "type": "uid: viz/polar_chart:ArgumentAxisConstantLines",
+          "default": null,
+          "description": "Defines an array of the argument axis constant lines."
+        },
+        {
+          "name": "displayBehindSeries",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the constant line behind or in front of the series."
+        },
+        {
+          "name": "extendAxis",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to extend the axis to display the constant line."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining constant line label properties."
+        },
+        {
+          "name": "value",
+          "type": "Number | Date | String | undefined",
+          "default": "undefined",
+          "description": "Specifies a value to be displayed by a constant line."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisConstantLinesLabel",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisConstantLinesLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining constant line label properties."
+        },
+        {
+          "name": "text",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the text to be displayed in a constant line label."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisLabel",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "Specifies properties for argument axis labels."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(argument)",
+          "default": null,
+          "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a label on the argument axis."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(argument)",
+          "default": null,
+          "description": "Specifies a callback function that returns the text to be displayed by argument axis labels."
+        },
+        {
+          "name": "format",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Formats a value before it is displayed in an axis label."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisMinorTick",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisMinorTick",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "shift",
+          "type": "Number",
+          "default": "3",
+          "description": "Shifts minor ticks from the reference position."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisStrips",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisStrips",
+          "type": "uid: viz/polar_chart:ArgumentAxisStrips",
+          "default": null,
+          "description": "Specifies properties for argument axis strips."
+        },
+        {
+          "name": "color",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies a color for a strip."
+        },
+        {
+          "name": "endValue",
+          "type": "Number | Date | String | undefined",
+          "default": "undefined",
+          "description": "Specifies an end value for a strip."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object that defines the label configuration properties of a strip."
+        },
+        {
+          "name": "startValue",
+          "type": "Number | Date | String | undefined",
+          "default": "undefined",
+          "description": "Specifies a start value for a strip."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisStripsLabel",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisStripsLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object that defines the label configuration properties of a strip."
+        },
+        {
+          "name": "text",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the text displayed in a strip."
+        }
+      ]
+    },
+    {
+      "name": "ArgumentAxisTick",
+      "subMembers": [
+        {
+          "name": "ArgumentAxisTick",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "shift",
+          "type": "Number",
+          "default": "3",
+          "description": "Shifts ticks from the reference position."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettings",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettings",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining the configuration properties that are common for all [axes] of the PolarChart UI component."
+        },
+        {
+          "name": "allowDecimals",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether to allow decimal values on the axis. When **false**, the axis contains integer values only."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#767676'",
+          "description": "Specifies the color of the line that represents an axis."
+        },
+        {
+          "name": "constantLineStyle",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the appearance of all the UI component's constant lines."
+        },
+        {
+          "name": "discreteAxisDivisionMode",
+          "type": "Enums.DiscreteAxisDivisionMode",
+          "default": "'betweenLabels'",
+          "description": "Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels."
+        },
+        {
+          "name": "endOnTick",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether to force the axis to start and end on ticks."
+        },
+        {
+          "name": "inverted",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Indicates whether or not an axis is inverted."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining the [label] configuration properties that are common for all axes in the PolarChart UI component."
+        },
+        {
+          "name": "minorTick",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the properties of the minor ticks."
+        },
+        {
+          "name": "opacity",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the opacity of the line that represents an axis."
+        },
+        {
+          "name": "stripStyle",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining configuration properties for [strip] style."
+        },
+        {
+          "name": "tick",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining the configuration properties for [axis ticks]."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether or not the line that represents an axis in a chart is visible."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the width of the line that represents an axis in the chart."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettingsConstantLineStyle",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettingsConstantLineStyle",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "Specifies the appearance of all the UI component's constant lines."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#000000'",
+          "description": "Specifies a color for a constant line."
+        },
+        {
+          "name": "dashStyle",
+          "type": "Enums.DashStyle",
+          "default": "'solid'",
+          "description": "Specifies a dash style for a constant line."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining constant line label properties."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies a constant line width in pixels."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettingsConstantLineStyleLabel",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettingsConstantLineStyleLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining constant line label properties."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether or not to display labels for the axis constant lines."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettingsLabel",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettingsLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining the [label] configuration properties that are common for all axes in the PolarChart UI component."
+        },
+        {
+          "name": "indentFromAxis",
+          "type": "Number",
+          "default": "5",
+          "description": "Specifies the spacing between an axis and its labels in pixels."
+        },
+        {
+          "name": "overlappingBehavior",
+          "type": "Enums.LabelOverlap",
+          "default": "'hide'",
+          "description": "Decides how to arrange axis labels when there is not enough space to keep all of them."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether or not axis labels are visible."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettingsMinorTick",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettingsMinorTick",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "Specifies the properties of the minor ticks."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#767676'",
+          "description": "Specifies a color for the minor ticks."
+        },
+        {
+          "name": "length",
+          "type": "Number",
+          "default": "7",
+          "description": "Specifies minor tick length."
+        },
+        {
+          "name": "opacity",
+          "type": "Number",
+          "default": "0.3",
+          "description": "Specifies an opacity for the minor ticks."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Indicates whether or not the minor ticks are displayed on an axis."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies minor tick width."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettingsStripStyle",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettingsStripStyle",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining configuration properties for [strip] style."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining the configuration properties for a strip label style."
+        }
+      ]
+    },
+    {
+      "name": "CommonAxisSettingsStripStyleLabel",
+      "type": "module: viz/polar_chart",
+      "default": null,
+      "description": "An object defining the configuration properties for a strip label style."
+    },
+    {
+      "name": "CommonAxisSettingsTick",
+      "subMembers": [
+        {
+          "name": "CommonAxisSettingsTick",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining the configuration properties for [axis ticks]."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#767676'",
+          "description": "Specifies ticks color."
+        },
+        {
+          "name": "length",
+          "type": "Number",
+          "default": "7",
+          "description": "Specifies tick length."
+        },
+        {
+          "name": "opacity",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies tick opacity."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether or not ticks are visible on an axis."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies tick width."
+        }
+      ]
+    },
+    {
+      "name": "CommonSeriesSettings",
+      "subMembers": [
+        {
+          "name": "CommonSeriesSettings",
+          "type": "uid: viz/polar_chart:CommonSeriesSettings",
+          "default": null,
+          "description": "An object defining the configuration properties that are common for all series of the PolarChart UI component."
+        },
+        {
+          "name": "area",
+          "type": "any",
+          "default": null,
+          "description": "An object that specifies configuration properties for all series of the *area* type in the chart."
+        },
+        {
+          "name": "bar",
+          "type": "any",
+          "default": null,
+          "description": "An object that specifies configuration properties for all series of the _bar_ type in the chart."
+        },
+        {
+          "name": "line",
+          "type": "any",
+          "default": null,
+          "description": "An object that specifies configuration properties for all series of the _line_ type in the chart."
+        },
+        {
+          "name": "scatter",
+          "type": "any",
+          "default": null,
+          "description": "An object that specifies configuration properties for all series of the _scatter_ type in the chart."
+        },
+        {
+          "name": "stackedbar",
+          "type": "any",
+          "default": null,
+          "description": "An object that specifies configuration properties for all series of the _stackedBar_ type in the chart."
+        },
+        {
+          "name": "type",
+          "type": "Enums.PolarChartSeriesType",
+          "default": "'scatter'",
+          "description": "Sets a series type."
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DoneEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [done] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "Legend",
+      "subMembers": [
+        {
+          "name": "Legend",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "Specifies the properties of a chart's legend."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(seriesInfo)",
+          "default": null,
+          "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(seriesInfo)",
+          "default": null,
+          "description": "<p>Specifies a callback function that returns the text to be displayed by legend items.</p>"
+        },
+        {
+          "name": "hoverMode",
+          "type": "Enums.LegendHoverMode",
+          "default": "'includePoints'",
+          "description": "Specifies what series elements to highlight when a corresponding item in the legend is hovered over."
+        }
+      ]
+    },
+    {
+      "name": "LegendClickEvent",
+      "subMembers": [
+        {
+          "name": "LegendClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [legendClick] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "polarChartSeriesObject",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PointClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pointClick] event handler's argument."
+    },
+    {
+      "name": "PointHoverChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pointHoverChanged] event handler's argument."
+    },
+    {
+      "name": "PointSelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pointSelectionChanged] event handler's argument."
+    },
+    {
+      "name": "PolarChartSeriesType",
+      "type": "Union",
+      "default": null,
+      "description": "Sets a series type."
+    },
+    {
+      "name": "SeriesClickEvent",
+      "subMembers": [
+        {
+          "name": "SeriesClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [seriesClick] event handler's argument."
+        },
+        {
+          "name": "target",
+          "type": "polarChartSeriesObject",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SeriesHoverChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [seriesHoverChanged] event handler's argument."
+    },
+    {
+      "name": "SeriesInteractionInfo",
+      "subMembers": [
+        {
+          "name": "SeriesInteractionInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "polarChartSeriesObject",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SeriesSelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [seriesSelectionChanged] event handler's argument."
+    },
+    {
+      "name": "Tooltip",
+      "subMembers": [
+        {
+          "name": "Tooltip",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "shared",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the tooltip is shared across all series points with the same argument."
+        }
+      ]
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    },
+    {
+      "name": "ValueAxis",
+      "subMembers": [
+        {
+          "name": "ValueAxis",
+          "type": "uid: viz/polar_chart:ValueAxis",
+          "default": null,
+          "description": "Specifies [value axis] properties for the PolarChart UI component."
+        },
+        {
+          "name": "axisDivisionFactor",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies a coefficient for dividing the value axis."
+        },
+        {
+          "name": "categories",
+          "type": "Array<Number, String, Date>",
+          "default": null,
+          "description": "Specifies the order of categories on an axis of the *\"discrete\"* [type]."
+        },
+        {
+          "name": "constantLines",
+          "type": "Array<Object>",
+          "default": null,
+          "description": "Defines an array of the value axis constant lines."
+        },
+        {
+          "name": "endOnTick",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to force the axis to start and end on ticks."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies properties for value axis labels."
+        },
+        {
+          "name": "linearThreshold",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies a value used to calculate the range on a [logarithmic axis] within which the axis should be linear. Applies only if the data source contains negative values or zeroes."
+        },
+        {
+          "name": "logarithmBase",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the value to be raised to a power when generating ticks for a logarithmic axis."
+        },
+        {
+          "name": "maxValueMargin",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies a coefficient that determines the spacing between the maximum series point and the axis."
+        },
+        {
+          "name": "minValueMargin",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies a coefficient that determines the spacing between the minimum series point and the axis."
+        },
+        {
+          "name": "minVisualRangeLength",
+          "type": "Number | Object | Enums.TimeInterval | undefined",
+          "default": "undefined",
+          "description": "Specifies the minimum length of the [visual range]."
+        },
+        {
+          "name": "minorTickCount",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the number of minor ticks between two neighboring major ticks."
+        },
+        {
+          "name": "minorTickInterval",
+          "type": "Number | Object | Enums.TimeInterval",
+          "default": null,
+          "description": "Specifies the interval between [minor ticks]."
+        },
+        {
+          "name": "showZero",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether or not to indicate a zero value on the value axis."
+        },
+        {
+          "name": "strips",
+          "type": "Array<Object>",
+          "default": null,
+          "description": "Specifies properties for value axis strips."
+        },
+        {
+          "name": "tick",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining the configuration properties for axis ticks."
+        },
+        {
+          "name": "tickInterval",
+          "type": "Number | Object | Enums.TimeInterval",
+          "default": null,
+          "description": "Specifies an interval between axis ticks/grid lines."
+        },
+        {
+          "name": "type",
+          "type": "Enums.AxisScaleType | undefined",
+          "default": "undefined",
+          "description": "Specifies the required type of the value axis."
+        },
+        {
+          "name": "valueMarginsEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether to display series with indents from axis boundaries."
+        },
+        {
+          "name": "valueType",
+          "type": "Enums.ChartsDataType | undefined",
+          "default": "undefined",
+          "description": "Specifies the desired type of axis values."
+        },
+        {
+          "name": "visualRange",
+          "type": "Object | Array<Number, String, Date>",
+          "default": null,
+          "description": "Defines the axis' displayed range. Cannot be wider than the [wholeRange]."
+        },
+        {
+          "name": "visualRangeUpdateMode",
+          "type": "Enums.ValueAxisVisualRangeUpdateMode",
+          "default": "'auto'",
+          "description": "Specifies how the axis's [visual range] should behave when the PolarChart data is updated."
+        },
+        {
+          "name": "wholeRange",
+          "type": "Object | Array<Number, String, Date> | undefined",
+          "default": "undefined",
+          "description": "Defines the range where the axis can be zoomed."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisConstantLines",
+      "subMembers": [
+        {
+          "name": "ValueAxisConstantLines",
+          "type": "uid: viz/polar_chart:ValueAxisConstantLines",
+          "default": null,
+          "description": "Defines an array of the value axis constant lines."
+        },
+        {
+          "name": "displayBehindSeries",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the constant line behind or in front of the series."
+        },
+        {
+          "name": "extendAxis",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to extend the axis to display the constant line."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object defining constant line label properties."
+        },
+        {
+          "name": "value",
+          "type": "Number | Date | String | undefined",
+          "default": "undefined",
+          "description": "Specifies a value to be displayed by a constant line."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisConstantLinesLabel",
+      "subMembers": [
+        {
+          "name": "ValueAxisConstantLinesLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object defining constant line label properties."
+        },
+        {
+          "name": "text",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the text to be displayed in a constant line label."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisLabel",
+      "subMembers": [
+        {
+          "name": "ValueAxisLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "Specifies properties for value axis labels."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(axisValue)",
+          "default": null,
+          "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a label on the value axis."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(axisValue)",
+          "default": null,
+          "description": "Specifies a callback function that returns the text to be displayed in value axis labels."
+        },
+        {
+          "name": "format",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Formats a value before it is displayed in an axis label."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisStrips",
+      "subMembers": [
+        {
+          "name": "ValueAxisStrips",
+          "type": "uid: viz/polar_chart:ValueAxisStrips",
+          "default": null,
+          "description": "Specifies properties for value axis strips."
+        },
+        {
+          "name": "color",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies a color for a strip."
+        },
+        {
+          "name": "endValue",
+          "type": "Number | Date | String | undefined",
+          "default": "undefined",
+          "description": "Specifies an end value for a strip."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "An object that defines the label configuration properties of a strip."
+        },
+        {
+          "name": "startValue",
+          "type": "Number | Date | String | undefined",
+          "default": "undefined",
+          "description": "Specifies a start value for a strip."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisStripsLabel",
+      "subMembers": [
+        {
+          "name": "ValueAxisStripsLabel",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": "An object that defines the label configuration properties of a strip."
+        },
+        {
+          "name": "text",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the text displayed in a strip."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisTick",
+      "subMembers": [
+        {
+          "name": "ValueAxisTick",
+          "type": "module: viz/polar_chart",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Indicates whether or not ticks are visible on an axis."
+        }
+      ]
+    },
+    {
+      "name": "ValueAxisVisualRangeUpdateMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the axis's [visual range] should behave when the PolarChart data is updated."
+    },
+    {
+      "name": "ZoomEndEvent",
+      "subMembers": [
+        {
+          "name": "ZoomEndEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [zoomEnd] event handler's argument."
+        },
+        {
+          "name": "actionType",
+          "type": "Enums.ZoomPanAction",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "axis",
+          "type": "chartAxisObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "previousRange",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "range",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "shift",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "zoomFactor",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ZoomStartEvent",
+      "subMembers": [
+        {
+          "name": "ZoomStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [zoomStart] event handler's argument."
+        },
+        {
+          "name": "actionType",
+          "type": "Enums.ZoomPanAction",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "axis",
+          "type": "chartAxisObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "range",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

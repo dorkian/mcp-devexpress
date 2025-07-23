@@ -1,0 +1,337 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cols",
+          "subMembers": [
+            {
+              "name": "baseSize",
+              "type": "Number | String",
+              "default": "0",
+              "description": "The column's base width. Calculated automatically when the [singleColumnScreen] property arranges all elements in a single column."
+            },
+            {
+              "name": "cols",
+              "type": "Array<Object>",
+              "default": null,
+              "description": "Specifies the collection of columns for the grid used to position layout elements."
+            },
+            {
+              "name": "ratio",
+              "type": "Number",
+              "default": "1",
+              "description": "The column width ratio."
+            },
+            {
+              "name": "screen",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Decides on which screens the current column is rendered."
+            },
+            {
+              "name": "shrink",
+              "type": "Number",
+              "default": "1",
+              "description": "A factor that defines how much a column width shrinks relative to the rest of the columns in the container."
+            }
+          ]
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<String, dxResponsiveBoxItem, any> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "'100%'",
+          "description": null
+        },
+        {
+          "name": "hint",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<String, dxResponsiveBoxItem, any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "noDataText",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rows",
+          "subMembers": [
+            {
+              "name": "baseSize",
+              "type": "Number | String",
+              "default": "0",
+              "description": "The row's base height. Calculated automatically when the [singleColumnScreen] property arranges all elements in a single column."
+            },
+            {
+              "name": "ratio",
+              "type": "Number",
+              "default": "1",
+              "description": "The row height ratio."
+            },
+            {
+              "name": "rows",
+              "type": "Array<Object>",
+              "default": null,
+              "description": "Specifies the collection of rows for the grid used to position layout elements."
+            },
+            {
+              "name": "screen",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Decides on which screens the current row is rendered."
+            },
+            {
+              "name": "shrink",
+              "type": "Number",
+              "default": "1",
+              "description": "A factor that defines how much a row height shrinks relative to the rest of the rows in the container."
+            }
+          ]
+        },
+        {
+          "name": "screenByWidth",
+          "type": "function()",
+          "default": "null",
+          "description": "Specifies the function returning the [size qualifier] depending on the screen's width."
+        },
+        {
+          "name": "selectedIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "singleColumnScreen",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies on which screens all layout elements should be arranged in a single column. Accepts a single or several [size qualifiers] separated by a space."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "'100%'",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxResponsiveBox",
+      "type": null,
+      "default": null,
+      "description": "The ResponsiveBox UI component allows you to create an application or a website with a layout adapted to different screen sizes."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemHold] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

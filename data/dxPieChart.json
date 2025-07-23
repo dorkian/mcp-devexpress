@@ -1,0 +1,1216 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the PieChart UI component."
+        },
+        {
+          "name": "adaptiveLayout",
+          "subMembers": [
+            {
+              "name": "adaptiveLayout",
+              "type": "viz/pie_chart:AdaptiveLayout",
+              "default": null,
+              "description": "Specifies adaptive layout properties."
+            },
+            {
+              "name": "keepLabels",
+              "type": "Boolean",
+              "default": "false",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "annotations",
+          "subMembers": [
+            {
+              "name": "annotations",
+              "type": "Array<dxPieChartAnnotationConfig, any>",
+              "default": null,
+              "description": "Specifies the annotation collection."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the annotation's name."
+            }
+          ]
+        },
+        {
+          "name": "centerComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [centerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "centerRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [centerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "centerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for content in the pie's center."
+        },
+        {
+          "name": "commonAnnotationSettings",
+          "type": "dxPieChartCommonAnnotationConfig",
+          "default": null,
+          "description": "Specifies settings common for all annotations in the PieChart."
+        },
+        {
+          "name": "commonSeriesSettings",
+          "type": "any",
+          "default": null,
+          "description": "An object defining the configuration properties that are common for all series of the PieChart UI component."
+        },
+        {
+          "name": "customizeAnnotation",
+          "type": "function(annotation) | undefined",
+          "default": "undefined",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "customizePoint",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "diameter",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the diameter of the pie."
+        },
+        {
+          "name": "innerRadius",
+          "type": "Number",
+          "default": "0.5",
+          "description": "Specifies the fraction of the inner radius relative to the total radius in the series of the 'doughnut' type. The value should be between 0 and 1."
+        },
+        {
+          "name": "legend",
+          "subMembers": [
+            {
+              "name": "customizeHint",
+              "type": "function(pointInfo)",
+              "default": null,
+              "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item."
+            },
+            {
+              "name": "customizeItems",
+              "type": "function(items)",
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "customizeText",
+              "type": "function(pointInfo)",
+              "default": null,
+              "description": "Specifies a callback function that returns the text to be displayed by a legend item."
+            },
+            {
+              "name": "hoverMode",
+              "type": "Enums.PieChartLegendHoverMode",
+              "default": "'allArgumentPoints'",
+              "description": "Specifies what chart elements to highlight when a corresponding item in the legend is hovered over."
+            },
+            {
+              "name": "legend",
+              "type": "viz/pie_chart:Legend",
+              "default": null,
+              "description": "Specifies PieChart legend properties."
+            },
+            {
+              "name": "markerComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "markerRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "markerTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies an SVG element that serves as a custom legend item marker."
+            }
+          ]
+        },
+        {
+          "name": "minDiameter",
+          "type": "Number",
+          "default": "0.5",
+          "description": "Specifies the minimum diameter of the pie."
+        },
+        {
+          "name": "palette",
+          "type": "Array<String> | Enums.Palette",
+          "default": "'Material'",
+          "description": "Sets the palette to be used to colorize series and their elements."
+        },
+        {
+          "name": "pointSelectionMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "resolveLabelOverlapping",
+          "type": "Enums.ShiftLabelOverlap",
+          "default": "'none'",
+          "description": "Specifies how a chart must behave when [point labels] overlap."
+        },
+        {
+          "name": "segmentsDirection",
+          "type": "Enums.PieChartSegmentDirection",
+          "default": "'clockwise'",
+          "description": "Specifies the direction that the pie chart segments will occupy."
+        },
+        {
+          "name": "series",
+          "type": "Object | Array<PieChartSeries> | undefined",
+          "default": "undefined",
+          "description": "Specifies properties for the series of the PieChart UI component."
+        },
+        {
+          "name": "seriesTemplate",
+          "subMembers": [
+            {
+              "name": "customizeSeries",
+              "type": "function(seriesName)",
+              "default": null,
+              "description": "Specifies a callback function that returns a [series] object with individual series settings."
+            },
+            {
+              "name": "nameField",
+              "type": "String",
+              "default": "'series'",
+              "description": "Specifies a data source field that represents the series name."
+            },
+            {
+              "name": "seriesTemplate",
+              "type": "Object",
+              "default": "undefined",
+              "description": "Defines properties for the series template."
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "400",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 400, width: 400}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "400",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "sizeGroup",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Allows you to display several adjoining pies in the same size."
+        },
+        {
+          "name": "startAngle",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the angle in arc degrees from which the first segment of a pie chart should start."
+        },
+        {
+          "name": "title",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentTemplate",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "customizeTooltip",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "shared",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "type",
+          "type": "Enums.PieChartType",
+          "default": "'pie'",
+          "description": "Specifies the type of the pie chart series."
+        }
+      ]
+    },
+    {
+      "name": "Series Types",
+      "subMembers": [
+        {
+          "name": "CommonPieChartSeries",
+          "subMembers": [
+            {
+              "name": "CommonPieChartSeries",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines configuration properties for chart series."
+            },
+            {
+              "name": "argumentField",
+              "type": "String",
+              "default": "'arg'",
+              "description": "Specifies the data source field that provides arguments for series points."
+            },
+            {
+              "name": "argumentType",
+              "type": "Enums.ChartsDataType | undefined",
+              "default": "undefined",
+              "description": "Specifies the required type for series arguments."
+            },
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining the series border configuration properties."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Sets a border color for a series."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle | undefined",
+                  "default": "undefined",
+                  "description": "Specifies a dash style for the border of a series point."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Sets border visibility for a series."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "2",
+                  "description": "Sets a border width for a series in pixels."
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "type": "String | ChartsColor | undefined",
+              "default": "undefined",
+              "description": "Specifies a series color."
+            },
+            {
+              "name": "hoverMode",
+              "type": "Enums.PieChartSeriesInteractionMode",
+              "default": "'onlyPoint'",
+              "description": "Specifies the chart elements to highlight when a series is hovered over."
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "An object defining the border properties for a hovered series."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Sets a border color for the series when it is hovered over."
+                    },
+                    {
+                      "name": "dashStyle",
+                      "type": "Enums.DashStyle | undefined",
+                      "default": "undefined",
+                      "description": "Specifies a dash style for the border of a series point when this point is hovered over."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Sets border visibility for a hovered series."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "3",
+                      "description": "Sets a border width for a hovered series."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | ChartsColor | undefined",
+                  "default": "undefined",
+                  "description": "Sets the color for the series when it is hovered over."
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'right'",
+                      "description": "Specifies how to apply hatching to highlight the hovered point."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies the hatching properties to be applied when a point is hovered over."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.75",
+                      "description": "Specifies the opacity of hatching lines."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "10",
+                      "description": "Specifies the distance between two hatching lines in pixels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "4",
+                      "description": "Specifies the width of hatching lines in pixels."
+                    }
+                  ]
+                },
+                {
+                  "name": "highlight",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether to lighten the series when a user points to it."
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining configuration properties for a hovered series."
+                }
+              ]
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "argumentFormat",
+                  "type": "Format | undefined",
+                  "default": "undefined",
+                  "description": "Formats the point argument before it is displayed in the point label. To format the point value, use the [format] property."
+                },
+                {
+                  "name": "backgroundColor",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors the point labels' background. The default color is inherited from the points."
+                },
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies border properties for point labels."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "'#d3d3d3'",
+                      "description": "Specifies a border color for point labels."
+                    },
+                    {
+                      "name": "dashStyle",
+                      "type": "Enums.DashStyle | undefined",
+                      "default": "'solid'",
+                      "description": "Specifies a dash style for the borders of point labels."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Indicates whether or not borders are visible in point labels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "1",
+                      "description": "Specifies the border width for point labels."
+                    }
+                  ]
+                },
+                {
+                  "name": "connector",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the color of label connectors."
+                    },
+                    {
+                      "name": "connector",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies connector properties for series point labels."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Indicates whether or not label connectors are visible."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "1",
+                      "description": "Specifies the width of label connectors."
+                    }
+                  ]
+                },
+                {
+                  "name": "customizeText",
+                  "type": "function(pointInfo)",
+                  "default": null,
+                  "description": "Specifies a callback function that returns the text to be displayed by point labels."
+                },
+                {
+                  "name": "displayFormat",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the label's text."
+                },
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#FFFFFF'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for the text displayed in point labels."
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "14",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "format",
+                  "type": "Format | undefined",
+                  "default": "undefined",
+                  "description": "Formats a value before it is displayed in a point label."
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining the label configuration properties."
+                },
+                {
+                  "name": "position",
+                  "type": "Enums.LabelPosition",
+                  "default": "'outside'",
+                  "description": "Specifies a label position relative to the chart."
+                },
+                {
+                  "name": "radialOffset",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies how to shift labels from their initial position in a radial direction in pixels."
+                },
+                {
+                  "name": "rotationAngle",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies the angle used to rotate point labels from their initial position."
+                },
+                {
+                  "name": "textOverflow",
+                  "type": "Enums.TextOverflow",
+                  "default": "'ellipsis'",
+                  "description": "Specifies what to do with label texts that overflow the allocated space after applying [wordWrap]: hide, truncate them and display an ellipsis, or do nothing."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies the visibility of point labels."
+                },
+                {
+                  "name": "wordWrap",
+                  "type": "Enums.WordWrap",
+                  "default": "'normal'",
+                  "description": "Specifies how to wrap label texts if they do not fit into a single line."
+                }
+              ]
+            },
+            {
+              "name": "maxLabelCount",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies how many points are acceptable to be in a series to display all labels for these points. Otherwise, the labels will not be displayed."
+            },
+            {
+              "name": "minSegmentSize",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies a minimal size of a displayed pie segment."
+            },
+            {
+              "name": "selectionMode",
+              "type": "Enums.PieChartSeriesInteractionMode",
+              "default": "'onlyPoint'",
+              "description": "<p>Specifies the chart elements to highlight when the series is selected.</p>"
+            },
+            {
+              "name": "selectionStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "An object defining the border properties for a selected series."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Sets a border color for a selected series."
+                    },
+                    {
+                      "name": "dashStyle",
+                      "type": "Enums.DashStyle | undefined",
+                      "default": "undefined",
+                      "description": "Specifies a dash style for the border of a selected series point."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean",
+                      "default": "false",
+                      "description": "Sets a border visibility for a selected series."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "3",
+                      "description": "Sets a border width for a selected series."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | ChartsColor | undefined",
+                  "default": "undefined",
+                  "description": "Sets the color for a series when it is selected."
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'right'",
+                      "description": "Specifies how to apply hatching to highlight the selected point."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies the hatching properties to be applied when a point is selected."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.5",
+                      "description": "Specifies the opacity of hatching lines."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "10",
+                      "description": "Specifies the distance between two hatching lines in pixels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "4",
+                      "description": "Specifies the width of hatching lines in pixels."
+                    }
+                  ]
+                },
+                {
+                  "name": "highlight",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether to lighten the series when a user selects it."
+                },
+                {
+                  "name": "selectionStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "An object defining configuration properties for the series when it is selected."
+                }
+              ]
+            },
+            {
+              "name": "smallValuesGrouping",
+              "subMembers": [
+                {
+                  "name": "groupName",
+                  "type": "String",
+                  "default": "'others'",
+                  "description": "Specifies the name of the grouped chart segment. This name represents the segment in the chart legend."
+                },
+                {
+                  "name": "mode",
+                  "type": "Enums.SmallValuesGroupingMode",
+                  "default": "'none'",
+                  "description": "Specifies the segment grouping mode."
+                },
+                {
+                  "name": "smallValuesGrouping",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies chart segment grouping properties."
+                },
+                {
+                  "name": "threshold",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies a threshold for segment values."
+                },
+                {
+                  "name": "topCount",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies how many segments must not be grouped."
+                }
+              ]
+            },
+            {
+              "name": "tagField",
+              "type": "String",
+              "default": "'tag'",
+              "description": "<p>Specifies the name of the data source field that provides data about a point.</p>"
+            },
+            {
+              "name": "valueField",
+              "type": "String",
+              "default": "'val'",
+              "description": "Specifies the data source field that provides values for series points."
+            }
+          ]
+        },
+        {
+          "name": "DoughnutSeries",
+          "type": "any",
+          "default": null,
+          "description": "An object defining a series of the **doughnut** type."
+        },
+        {
+          "name": "PieChartSeries",
+          "subMembers": [
+            {
+              "name": "PieChartSeries",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies properties for the series of the PieChart UI component."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the name that identifies the series."
+            },
+            {
+              "name": "tag",
+              "type": "any | undefined",
+              "default": "undefined",
+              "description": "Specifies data about a series."
+            }
+          ]
+        },
+        {
+          "name": "PieSeries",
+          "type": "any",
+          "default": null,
+          "description": "An object defining a series of the **pie** type."
+        },
+        {
+          "name": "Series Types",
+          "type": "Object",
+          "default": null,
+          "description": "This section lists the objects that define properties to be used to configure series of particular types."
+        }
+      ]
+    },
+    {
+      "name": "Chart Elements",
+      "subMembers": [
+        {
+          "name": "Point",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information on the series point."
+                },
+                {
+                  "name": "percent",
+                  "type": "String | Number | Date",
+                  "default": null,
+                  "description": "Gets the percentage value of the specific point."
+                }
+              ]
+            },
+            {
+              "name": "Point",
+              "type": "Object",
+              "default": null,
+              "description": "This section describes the **Point** object, which represents a series point."
+            }
+          ]
+        },
+        {
+          "name": "Series",
+          "type": "Object",
+          "default": null,
+          "description": "This section describes the **Series** object, which represents a series."
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "PieChartLegendItem",
+          "subMembers": [
+            {
+              "name": "PieChartLegendItem",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a legend item in the [PieChart] UI component."
+            },
+            {
+              "name": "argument",
+              "type": "String | Date | Number",
+              "default": null,
+              "description": "The argument of the [point(s)] that the legend item represents."
+            },
+            {
+              "name": "argumentIndex",
+              "type": "Number",
+              "default": null,
+              "description": "The zero-based index of the legend item used to identify the item among other legend items with the same [argument]."
+            },
+            {
+              "name": "points",
+              "type": "Array<piePointObject>",
+              "default": null,
+              "description": "An array of points that the legend item represents. Can contain more than one point only in a [multi-series PieChart]."
+            },
+            {
+              "name": "text",
+              "type": "any",
+              "default": null,
+              "description": "The text that the legend item displays."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxPieChart",
+      "type": null,
+      "default": null,
+      "description": "The PieChart is a UI component that visualizes data as a circle divided into sectors that each represents a portion of the whole."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getInnerRadius()",
+      "type": null,
+      "default": null,
+      "description": "Gets the radius of the doughnut hole in pixels. Applies only when the [type] is *\"doughnut\"* or *\"donut\"*."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDone",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when all series are ready."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onLegendClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a [legend item] is clicked or tapped."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPointClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a series point is clicked or tapped."
+    },
+    {
+      "name": "onPointHoverChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the pointer enters or leaves a series point."
+    },
+    {
+      "name": "onPointSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a series point is selected or selection is canceled."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "legendClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a [legend item] is clicked or tapped."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AdaptiveLayout",
+      "subMembers": [
+        {
+          "name": "AdaptiveLayout",
+          "type": "module: viz/pie_chart",
+          "default": null,
+          "description": "Specifies adaptive layout properties."
+        },
+        {
+          "name": "keepLabels",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether point labels should be kept when the UI component adapts the layout."
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DoneEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [done] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "Legend",
+      "subMembers": [
+        {
+          "name": "Legend",
+          "type": "module: viz/pie_chart",
+          "default": null,
+          "description": "Specifies PieChart legend properties."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(pointInfo)",
+          "default": null,
+          "description": "Specifies the text for a hint that appears when a user hovers the mouse pointer over a legend item."
+        },
+        {
+          "name": "customizeItems",
+          "type": "function(items)",
+          "default": null,
+          "description": "Allows you to change the order, text, and visibility of legend items."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(pointInfo)",
+          "default": null,
+          "description": "Specifies a callback function that returns the text to be displayed by a legend item."
+        },
+        {
+          "name": "hoverMode",
+          "type": "Enums.PieChartLegendHoverMode",
+          "default": "'allArgumentPoints'",
+          "description": "Specifies what chart elements to highlight when a corresponding item in the legend is hovered over."
+        },
+        {
+          "name": "markerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies an SVG element that serves as a custom legend item marker."
+        }
+      ]
+    },
+    {
+      "name": "LegendClickEvent",
+      "subMembers": [
+        {
+          "name": "LegendClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [legendClick] event handler's argument."
+        },
+        {
+          "name": "points",
+          "type": "Array<piePointObject>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "String | Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PieChartAnnotationLocation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies an annotation's position on the surface of a specific [argument]."
+    },
+    {
+      "name": "PieChartLegendHoverMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies what chart elements to highlight when a corresponding item in the legend is hovered over."
+    },
+    {
+      "name": "PieChartSegmentDirection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the direction that the pie chart segments will occupy."
+    },
+    {
+      "name": "PieChartSeriesInteractionMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the chart elements to highlight when a series is hovered over."
+    },
+    {
+      "name": "PieChartType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of the pie chart series."
+    },
+    {
+      "name": "PointClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pointClick] event handler's argument."
+    },
+    {
+      "name": "PointHoverChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pointHoverChanged] event handler's argument."
+    },
+    {
+      "name": "PointSelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pointSelectionChanged] event handler's argument."
+    },
+    {
+      "name": "SmallValuesGroupingMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the segment grouping mode."
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    }
+  ]
+}

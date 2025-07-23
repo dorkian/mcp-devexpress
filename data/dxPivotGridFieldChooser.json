@@ -1,0 +1,328 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the configuration properties of the PivotGridFieldChooser UI component."
+        },
+        {
+          "name": "allowSearch",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the field chooser allows search operations in the *\"All Fields\"* section."
+        },
+        {
+          "name": "applyChangesMode",
+          "type": "Enums.ApplyChangesMode",
+          "default": "'instantly'",
+          "description": "Specifies when to apply changes made in the UI component to the PivotGrid."
+        },
+        {
+          "name": "dataSource",
+          "type": "PivotGridDataSource | null",
+          "default": "null",
+          "description": "The data source of a [PivotGrid] UI component."
+        },
+        {
+          "name": "encodeHtml",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether HTML tags are displayed as plain text or applied to the values of the [header filter]."
+        },
+        {
+          "name": "headerFilter",
+          "subMembers": [
+            {
+              "name": "allowSearch",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether searching is enabled in the header filter."
+            },
+            {
+              "name": "allowSelectAll",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a \"Select All\" option is available to users."
+            },
+            {
+              "name": "headerFilter",
+              "type": "Object",
+              "default": null,
+              "description": "Configures the header filter feature."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "325",
+              "description": "Specifies the height of the popup menu containing filtering values."
+            },
+            {
+              "name": "search",
+              "subMembers": [
+                {
+                  "name": "editorOptions",
+                  "type": null,
+                  "default": null,
+                  "description": null
+                },
+                {
+                  "name": "search",
+                  "type": "HeaderFilterSearchConfig",
+                  "default": null,
+                  "description": "Configures the header filter's search functionality."
+                }
+              ]
+            },
+            {
+              "name": "searchTimeout",
+              "type": "Number",
+              "default": "500",
+              "description": "Specifies a delay in milliseconds between when a user finishes typing in the header filter's search panel, and when the search is executed."
+            },
+            {
+              "name": "showRelevantValues",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to show all field values or only those that satisfy the other applied filters."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "cancel",
+                  "type": "String",
+                  "default": "'Cancel'",
+                  "description": "Specifies the text of the button that closes the popup menu without applying a filter."
+                },
+                {
+                  "name": "emptyValue",
+                  "type": "String",
+                  "default": "'(Blanks)'",
+                  "description": "Specifies the name of the item that represents empty values in the popup menu."
+                },
+                {
+                  "name": "ok",
+                  "type": "String",
+                  "default": "'Ok'",
+                  "description": "Specifies the text of the button that applies a filter."
+                },
+                {
+                  "name": "texts",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the texts of the popup menu's elements."
+                }
+              ]
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "252",
+              "description": "Specifies the width of the popup menu containing filtering values."
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "400",
+          "description": "Specifies the UI component's height."
+        },
+        {
+          "name": "layout",
+          "type": "Enums.FieldChooserLayout",
+          "default": "0",
+          "description": "Specifies the field chooser layout."
+        },
+        {
+          "name": "searchTimeout",
+          "type": "Number",
+          "default": "500",
+          "description": "Specifies a delay in milliseconds between when a user finishes typing in the field chooser's search panel, and when the search is executed."
+        },
+        {
+          "name": "state",
+          "type": "any",
+          "default": "null",
+          "description": "The UI component's state."
+        },
+        {
+          "name": "texts",
+          "subMembers": [
+            {
+              "name": "allFields",
+              "type": "String",
+              "default": "'All Fields'",
+              "description": "The string to display instead of **All Fields**."
+            },
+            {
+              "name": "columnFields",
+              "type": "String",
+              "default": "'Column Fields'",
+              "description": "The string to display instead of **Column Fields**."
+            },
+            {
+              "name": "dataFields",
+              "type": "String",
+              "default": "'Data Fields'",
+              "description": "The string to display instead of **Data Fields**."
+            },
+            {
+              "name": "filterFields",
+              "type": "String",
+              "default": "'Filter Fields'",
+              "description": "The string to display instead of **Filter Fields**."
+            },
+            {
+              "name": "rowFields",
+              "type": "String",
+              "default": "'Row Fields'",
+              "description": "The string to display instead of **Row Fields**."
+            },
+            {
+              "name": "texts",
+              "type": "Object",
+              "default": null,
+              "description": "Strings that can be changed or localized in the PivotGridFieldChooser UI component."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxPivotGridFieldChooser",
+      "type": null,
+      "default": null,
+      "description": "A complementary UI component for the [PivotGrid] that allows you to manage data displayed in the PivotGrid. The field chooser is already integrated in the PivotGrid and can be invoked using the context menu. If you need to continuously display the field chooser near the PivotGrid UI component, use the PivotGridFieldChooser UI component."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "applyChanges()",
+      "type": null,
+      "default": null,
+      "description": "Applies changes made in the UI component to the PivotGrid. Takes effect only if [applyChangesMode] is *\"onDemand\"*."
+    },
+    {
+      "name": "cancelChanges()",
+      "type": null,
+      "default": null,
+      "description": "Cancels changes made in the UI component without applying them to the PivotGrid. Takes effect only if [applyChangesMode] is *\"onDemand\"*."
+    },
+    {
+      "name": "getDataSource()",
+      "type": null,
+      "default": null,
+      "description": "Gets the **PivotGridDataSource** instance."
+    },
+    {
+      "name": "updateDimensions()",
+      "type": null,
+      "default": null,
+      "description": "Updates the UI component to the size of its content."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onContextMenuPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the context menu is rendered."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "contextMenuPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is rendered."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextMenuPreparingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuPreparing] event handler's argument."
+        },
+        {
+          "name": "area",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "event",
+          "type": "event",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "field",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

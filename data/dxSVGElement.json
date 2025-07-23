@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "dxSVGElement",
+      "type": "SVGElement | jQuery",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxSankeyConnectionInfoObject",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "source",
+      "type": "String",
+      "default": null,
+      "description": "The title of the link's source node."
+    },
+    {
+      "name": "target",
+      "type": "String",
+      "default": null,
+      "description": "The title of the link's target node."
+    },
+    {
+      "name": "weight",
+      "type": "Number",
+      "default": null,
+      "description": "The link's weight."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

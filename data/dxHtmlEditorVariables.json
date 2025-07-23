@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "dataSource",
+      "type": "Store | DataSource | DataSource_Options | String | Array<String> | null",
+      "default": "null",
+      "description": "Specifies a collection of variables available for a user."
+    },
+    {
+      "name": "dxHtmlEditorVariables",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "escapeChar",
+      "type": "String | Array<String>",
+      "default": "''",
+      "description": "Specifies the special character(s) that should surround the variables."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "dxPopupToolbarItem",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "options",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "showText",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "template",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "toolbar",
+      "type": "Enums.ToolbarLocation",
+      "default": "'top'",
+      "description": "Specifies whether the item is displayed on a top or bottom toolbar."
+    },
+    {
+      "name": "widget",
+      "type": null,
+      "default": null,
+      "description": "A UI component that presents a toolbar item. To configure it, use the [options] object."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,486 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the TagBox UI component."
+        },
+        {
+          "name": "applyValueMode",
+          "type": "Enums.ApplyValueMode",
+          "default": "'instantly'",
+          "description": "Specifies how the UI component applies values."
+        },
+        {
+          "name": "closeAction",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hiddenAction",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hideSelectedItems",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not to hide selected items."
+        },
+        {
+          "name": "inputAttr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maxDisplayedTags",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the limit on displayed tags. On exceeding it, the UI component replaces all tags with a single multi-tag that displays the number of selected items."
+        },
+        {
+          "name": "maxFilterQueryLength",
+          "type": "Number",
+          "default": "1500",
+          "description": "Specifies the maximum filter query length in characters."
+        },
+        {
+          "name": "multiline",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether or not the UI component is multiline."
+        },
+        {
+          "name": "openAction",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectAllMode",
+          "type": "Enums.SelectAllMode",
+          "default": "'page'",
+          "description": "Specifies the mode in which all items are selected."
+        },
+        {
+          "name": "selectAllText",
+          "type": "String",
+          "default": "'Select All'",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": "Array<String, Number, any>",
+          "default": null,
+          "description": "Gets the currently selected items."
+        },
+        {
+          "name": "showDropDownButton",
+          "type": "Boolean",
+          "default": "false",
+          "description": null
+        },
+        {
+          "name": "showMultiTagOnly",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the multi-tag is shown without ordinary tags."
+        },
+        {
+          "name": "shownAction",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "spellcheck",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "tagComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [tagTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "tagRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [tagTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "tagTemplate",
+          "type": "template",
+          "default": "'tag'",
+          "description": "Specifies a custom template for tags."
+        },
+        {
+          "name": "useSubmitBehavior",
+          "type": "Boolean",
+          "default": "true",
+          "description": "-"
+        },
+        {
+          "name": "value",
+          "type": "Array<String, Number, any>",
+          "default": "[]",
+          "description": "Specifies the selected items."
+        },
+        {
+          "name": "valueChangeEvent",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxTagBox",
+      "type": null,
+      "default": null,
+      "description": "The TagBox UI component is an editor that allows an end user to select multiple items from a drop-down list."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onChange",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard."
+    },
+    {
+      "name": "onClosed",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is closed."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onCopy",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onCustomItemCreating",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user adds a custom item. Requires [acceptCustomValue] to be set to **true**."
+    },
+    {
+      "name": "onCut",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEnterKey",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the Enter key has been pressed while the UI component is focused."
+    },
+    {
+      "name": "onFocusIn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component gets focus."
+    },
+    {
+      "name": "onFocusOut",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component loses focus."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onInput",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed each time the UI component's input is changed while the UI component is focused."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a list item is clicked or tapped."
+    },
+    {
+      "name": "onKeyDown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user is pressing a key on the keyboard."
+    },
+    {
+      "name": "onKeyUp",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user releases a key on the keyboard."
+    },
+    {
+      "name": "onMultiTagPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the multi-tag is rendered."
+    },
+    {
+      "name": "onOpened",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is opened."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPaste",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectAllValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the \"Select All\" check box value is changed. Applies only if [showSelectionControls] is **true**."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a list item is selected or selection is canceled."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "copy",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "cut",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "multiTagPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the multi-tag is rendered."
+    },
+    {
+      "name": "paste",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectAllValueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the \"Select All\" check box value is changed."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a list item is selected or selection is canceled."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ChangeEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [change] event handler's argument."
+    },
+    {
+      "name": "ClosedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [closed] event handler's argument."
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "CustomItemCreatingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [customItemCreating] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EnterKeyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [enterKey] event handler's argument."
+    },
+    {
+      "name": "FocusInEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusIn] event handler's argument."
+    },
+    {
+      "name": "FocusOutEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusOut] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "InputEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [input] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "KeyDownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyDown] event handler's argument."
+    },
+    {
+      "name": "KeyUpEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyUp] event handler's argument."
+    },
+    {
+      "name": "MultiTagPreparingEvent",
+      "subMembers": [
+        {
+          "name": "MultiTagPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [multiTagPreparing] event handler's argument."
+        },
+        {
+          "name": "multiTagElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": "Array<String, Number, Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OpenedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [opened] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectAllValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectAllValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectAllValueChanged] event handler's argument."
+        },
+        {
+          "name": "value",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    }
+  ]
+}

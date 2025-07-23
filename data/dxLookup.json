@@ -1,0 +1,573 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Lookup UI component."
+        },
+        {
+          "name": "acceptCustomValue",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "applyButtonText",
+          "type": "String",
+          "default": "'OK'",
+          "description": "The text displayed on the Apply button."
+        },
+        {
+          "name": "applyValueMode",
+          "type": "Enums.ApplyValueMode",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "buttons",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancelButtonText",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "The text displayed on the Cancel button."
+        },
+        {
+          "name": "cleanSearchOnOpening",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not the UI component cleans the search box when the popup window is displayed."
+        },
+        {
+          "name": "clearButtonText",
+          "type": "String",
+          "default": "'Clear'",
+          "description": "The text displayed on the Clear button."
+        },
+        {
+          "name": "dropDownButtonComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownButtonTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dropDownButtonRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownButtonTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dropDownButtonTemplate",
+          "type": "template",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dropDownCentered",
+          "type": "Boolean",
+          "default": "false, true (Material)",
+          "description": "Specifies whether to vertically align the drop-down menu so that the selected item is in its center. Applies only in [Material Design themes]."
+        },
+        {
+          "name": "dropDownOptions",
+          "type": "dxPopover_Options",
+          "default": null,
+          "description": "Configures the drop-down field."
+        },
+        {
+          "name": "fieldComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [fieldTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "fieldRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [fieldTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "fieldTemplate",
+          "type": "template",
+          "default": "null",
+          "description": "Specifies a custom template for the input field."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "false, true (desktop)",
+          "description": null
+        },
+        {
+          "name": "groupComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [groupTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "groupRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [groupTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "groupTemplate",
+          "type": "template",
+          "default": "'group'",
+          "description": "Specifies a custom template for group captions."
+        },
+        {
+          "name": "grouped",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether data items should be grouped."
+        },
+        {
+          "name": "inputAttr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maxLength",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "nextButtonText",
+          "type": "String",
+          "default": "'More'",
+          "description": "The text displayed on the button used to load the next page from the data source."
+        },
+        {
+          "name": "openOnFieldClick",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "pageLoadMode",
+          "type": "Enums.PageLoadMode",
+          "default": "'scrollBottom'",
+          "description": "Specifies whether the next page is loaded when a user scrolls the UI component to the bottom or when the \"next\" button is clicked."
+        },
+        {
+          "name": "pageLoadingText",
+          "type": "String",
+          "default": "'Loading...'",
+          "description": "Specifies the text shown in the pullDown panel, which is displayed when the UI component is scrolled to the bottom."
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "default": "'Select'",
+          "description": "The text displayed by the UI component when nothing is selected."
+        },
+        {
+          "name": "pullRefreshEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not the UI component supports the \"pull down to refresh\" gesture."
+        },
+        {
+          "name": "pulledDownText",
+          "type": "String",
+          "default": "'Release to refresh...'",
+          "description": "Specifies the text displayed in the pullDown panel when the UI component is pulled below the refresh threshold."
+        },
+        {
+          "name": "pullingDownText",
+          "type": "String",
+          "default": "'Pull down to refresh...'",
+          "description": "Specifies the text shown in the pullDown panel while the list is being pulled down to the refresh threshold."
+        },
+        {
+          "name": "readOnly",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "refreshingText",
+          "type": "String",
+          "default": "'Refreshing...'",
+          "description": "Specifies the text displayed in the pullDown panel while the UI component is being refreshed."
+        },
+        {
+          "name": "searchEnabled",
+          "type": "Boolean",
+          "default": "true, false (Material)",
+          "description": "Specifies whether the search box is visible."
+        },
+        {
+          "name": "searchPlaceholder",
+          "type": "String",
+          "default": "'Search'",
+          "description": "The text that is provided as a hint in the lookup's search bar."
+        },
+        {
+          "name": "searchStartEvent",
+          "type": "String",
+          "default": "'input change keyup'",
+          "description": "Specifies the <a href=\"https://en.wikipedia.org/wiki/DOM_events\" target=\"_blank\">DOM events</a> after which the UI component's search results should be updated."
+        },
+        {
+          "name": "showCancelButton",
+          "type": "Boolean",
+          "default": "true, false (Material)",
+          "description": "Specifies whether to display the **Cancel** button in the lookup window."
+        },
+        {
+          "name": "showClearButton",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the Clear button in the lookup window."
+        },
+        {
+          "name": "showDropDownButton",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "spellcheck",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "useNativeScrolling",
+          "type": "Boolean",
+          "default": "true, false (desktop except Mac)",
+          "description": "Specifies whether or not the UI component uses native scrolling."
+        },
+        {
+          "name": "usePopover",
+          "type": "Boolean",
+          "default": "false, false (Material), true (desktop, iOS)",
+          "description": "Specifies whether to show lookup contents in the [Popover] UI component."
+        }
+      ]
+    },
+    {
+      "name": "dxLookup",
+      "type": null,
+      "default": null,
+      "description": "The Lookup is a UI component that allows an end user to search for an item in a collection shown in a drop-down menu."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getButton(name)",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onChange",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onClosed",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is closed."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onCopy",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onCut",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEnterKey",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onFocusIn",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onFocusOut",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onInput",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a list item is clicked or tapped."
+    },
+    {
+      "name": "onKeyDown",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onKeyUp",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onOpened",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is opened."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPageLoading",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the next page is loaded."
+    },
+    {
+      "name": "onPaste",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onPullRefresh",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the \"pull to refresh\" gesture is performed on the drop-down item list. Supported on mobile devices only."
+    },
+    {
+      "name": "onScroll",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed on each scroll gesture performed on the drop-down item list."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a list item is selected or selection is canceled."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "change",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "copy",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "cut",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "enterKey",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "focusIn",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "focusOut",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "input",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "keyDown",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "keyUp",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "pageLoading",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the next page is loaded."
+    },
+    {
+      "name": "paste",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "pullRefresh",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the \"pull to refresh\" gesture is performed on the drop-down item list."
+    },
+    {
+      "name": "scroll",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised on each scroll gesture performed on the drop-down item list."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ClosedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [closed] event handler's argument."
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "OpenedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [opened] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PageLoadingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pageLoading] event handler's argument."
+    },
+    {
+      "name": "PullRefreshEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pullRefresh] event handler's argument."
+    },
+    {
+      "name": "ScrollEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [scroll] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    }
+  ]
+}

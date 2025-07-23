@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxHtmlEditorTableContextMenuItem",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "items",
+      "type": "Array<dxHtmlEditorTableContextMenuItem, Enums.HtmlEditorPredefinedContextMenuItem>",
+      "default": null,
+      "description": "Configures nested context menu items."
+    },
+    {
+      "name": "name",
+      "type": "Enums.HtmlEditorPredefinedContextMenuItem | undefined",
+      "default": "undefined",
+      "description": "A name used to identify the context menu item."
+    },
+    {
+      "name": "template",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

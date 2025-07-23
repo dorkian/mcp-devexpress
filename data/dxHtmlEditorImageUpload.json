@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "dxHtmlEditorImageUpload",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "fileUploadMode",
+      "type": "Enums.HtmlEditorImageUploadMode",
+      "default": "'base64'",
+      "description": "Specifies how the HTML Editor UI component uploads files."
+    },
+    {
+      "name": "fileUploaderOptions",
+      "type": "dxFileUploader_Options",
+      "default": "null",
+      "description": "Configures the file uploader options."
+    },
+    {
+      "name": "tabs",
+      "type": "Array<dxHtmlEditorImageUploadTabItem, Enums.HtmlEditorImageUploadTab>",
+      "default": "['url']",
+      "description": "Contains an array of tabs in the \"Add an Image\" dialog."
+    },
+    {
+      "name": "uploadDirectory",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies a target directory for uploaded images."
+    },
+    {
+      "name": "uploadUrl",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies a target Url for the upload request."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

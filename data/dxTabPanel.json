@@ -1,0 +1,325 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the TabPanel UI component."
+        },
+        {
+          "name": "animationEnabled",
+          "type": "Boolean",
+          "default": "false, true (Android, iOS)",
+          "description": null
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<String, dxTabPanelItem, any> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "iconPosition",
+          "type": "Enums.TabsIconPosition",
+          "default": "'start', 'top' (Fluent, Material)",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "itemTitleComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTitleTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "itemTitleRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTitleTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "itemTitleTemplate",
+          "type": "template",
+          "default": "'title'",
+          "description": "Specifies a custom template for item titles."
+        },
+        {
+          "name": "items",
+          "type": "Array<String, dxTabPanelItem, any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "repaintChangesOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to repaint only those elements whose data changed."
+        },
+        {
+          "name": "scrollByContent",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying if tabs in the title are scrolled by content."
+        },
+        {
+          "name": "scrollingEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean indicating whether or not to add scrolling support for tabs in the title."
+        },
+        {
+          "name": "showNavButtons",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether navigation buttons should be available when tabs exceed the UI component's width."
+        },
+        {
+          "name": "stylingMode",
+          "type": "Enums.TabsStyle",
+          "default": "'primary', 'secondary' (Fluent)",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "swipeEnabled",
+          "type": "Boolean",
+          "default": "false (non-touch_devices)",
+          "description": null
+        },
+        {
+          "name": "tabsPosition",
+          "type": "Enums.Position",
+          "default": "'top'",
+          "description": "Specifies tab position relative to the panel."
+        }
+      ]
+    },
+    {
+      "name": "dxTabPanel",
+      "type": null,
+      "default": null,
+      "description": "The TabPanel is a UI component consisting of the [Tabs] and [MultiView] UI components. It automatically synchronizes the selected tab with the currently displayed view, and vice versa."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called after selection changes."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called before selection changes."
+    },
+    {
+      "name": "onTitleClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tab is clicked or tapped."
+    },
+    {
+      "name": "onTitleHold",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tab has been held for a [specified period]."
+    },
+    {
+      "name": "onTitleRendered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a tab is rendered."
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before selection changes."
+    },
+    {
+      "name": "titleClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tab is clicked or tapped."
+    },
+    {
+      "name": "titleHold",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tab has been held for a [specified period]."
+    },
+    {
+      "name": "titleRendered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a tab is rendered."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemHold] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanging] event handler's argument."
+    },
+    {
+      "name": "TabPanelItemInfo",
+      "subMembers": [
+        {
+          "name": "TabPanelItemInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TitleClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [titleClick] event handler's argument."
+    },
+    {
+      "name": "TitleHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [titleHold] event handler's argument."
+    },
+    {
+      "name": "TitleRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [titleRendered] event handler's argument."
+    }
+  ]
+}

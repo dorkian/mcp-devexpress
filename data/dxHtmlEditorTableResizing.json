@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxHtmlEditorTableResizing",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Enables users to resize tables."
+    },
+    {
+      "name": "minColumnWidth",
+      "type": "Number",
+      "default": "40",
+      "description": "The minimum column width."
+    },
+    {
+      "name": "minRowHeight",
+      "type": "Number",
+      "default": "24",
+      "description": "The minimum row height."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

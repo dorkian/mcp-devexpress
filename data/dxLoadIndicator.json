@@ -1,0 +1,129 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the configuration properties of the LoadIndicator UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": null,
+          "default": "false",
+          "description": null
+        },
+        {
+          "name": "indicatorSrc",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the path to an image used as the indicator."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxLoadIndicator",
+      "type": null,
+      "default": null,
+      "description": "The LoadIndicator is a UI element notifying the viewer that a process is in progress."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

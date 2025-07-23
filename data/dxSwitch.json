@@ -1,0 +1,141 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Switch UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "switchedOffText",
+          "type": "String",
+          "default": "'OFF'",
+          "description": "Specifies the text displayed when the UI component is switched off."
+        },
+        {
+          "name": "switchedOnText",
+          "type": "String",
+          "default": "'ON'",
+          "description": "Specifies the text displayed when the UI component is switched on."
+        },
+        {
+          "name": "value",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether the current switch state is \"On\" or \"Off\"."
+        }
+      ]
+    },
+    {
+      "name": "dxSwitch",
+      "type": null,
+      "default": null,
+      "description": "The Switch is a UI component that can be in two states: \"On\" and \"Off\"."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    }
+  ]
+}

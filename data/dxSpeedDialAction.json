@@ -1,0 +1,162 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the SpeedDialAction UI component's contents, behavior, and appearance."
+        },
+        {
+          "name": "disabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "icon",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the icon the FAB or speed dial action button displays."
+        },
+        {
+          "name": "index",
+          "type": "Number",
+          "default": "0",
+          "description": "Allows you to reorder action buttons in the speed dial menu."
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the text label displayed inside the FAB or near the speed dial action button."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": null,
+          "description": "Allows you to hide the FAB from the view or the action from the speed dial menu."
+        },
+        {
+          "name": "width",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxSpeedDialAction",
+      "type": null,
+      "default": null,
+      "description": "The SpeedDialAction is a button that performs a custom action. It can be represented by a Floating Action Button (FAB) or a button in a speed dial menu opened with the FAB."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the FAB or speed dial action button is clicked or tapped."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "click",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the FAB or speed dial action button is clicked or tapped."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ClickEvent",
+      "subMembers": [
+        {
+          "name": "ClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [click] event handler's argument."
+        },
+        {
+          "name": "actionElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "subMembers": [
+        {
+          "name": "ContentReadyEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contentReady] event handler's argument."
+        },
+        {
+          "name": "actionElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

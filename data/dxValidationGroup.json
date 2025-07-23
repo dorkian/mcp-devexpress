@@ -1,0 +1,140 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the ValidationGroup UI component."
+        },
+        {
+          "name": "rtlEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Validation Result",
+      "subMembers": [
+        {
+          "name": "Validation Result",
+          "type": "Object",
+          "default": null,
+          "description": "A group validation result."
+        },
+        {
+          "name": "brokenRules",
+          "type": "Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>",
+          "default": null,
+          "description": "An array of the [validation rules] that failed."
+        },
+        {
+          "name": "complete",
+          "type": "Promise<dxValidationGroupResult>",
+          "default": null,
+          "description": "A promise that is fulfilled when all async rules are validated."
+        },
+        {
+          "name": "isValid",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether all the rules checked for the group are satisfied."
+        },
+        {
+          "name": "status",
+          "type": "Enums.ValidationStatus",
+          "default": null,
+          "description": "Indicates the validation status."
+        },
+        {
+          "name": "validators",
+          "type": "Array<any>",
+          "default": null,
+          "description": "[Validator] UI components included in the validated group."
+        }
+      ]
+    },
+    {
+      "name": "dxValidationGroup",
+      "type": null,
+      "default": null,
+      "description": "The ValidationGroup is a UI component that allows you to validate several editors simultaneously."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "beginUpdate()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "defaultOptions(rule)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "endUpdate()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "reset()",
+      "type": null,
+      "default": null,
+      "description": "Resets the value and validation result of the editors that are included to the current validation group."
+    },
+    {
+      "name": "validate()",
+      "type": null,
+      "default": null,
+      "description": "Validates rules of the [validators] that belong to the current validation group."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

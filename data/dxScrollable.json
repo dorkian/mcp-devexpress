@@ -1,0 +1,206 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the dxScrollable UI component."
+        },
+        {
+          "name": "bounceEnabled",
+          "type": "Boolean",
+          "default": "true, false (desktop)",
+          "description": "A Boolean value specifying whether to enable or disable the bounce-back effect."
+        },
+        {
+          "name": "direction",
+          "type": "Enums.ScrollDirection",
+          "default": "'vertical'",
+          "description": "A string value specifying the available scrolling directions."
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component responds to user interaction."
+        },
+        {
+          "name": "scrollByContent",
+          "type": "Boolean",
+          "default": "true, false (non-touch_devices)",
+          "description": "A Boolean value specifying whether or not an end user can scroll the UI component content swiping it up or down. Applies only if [useNative] is **false**"
+        },
+        {
+          "name": "scrollByThumb",
+          "type": "Boolean",
+          "default": "false, true (desktop)",
+          "description": "Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNative] is **false**."
+        },
+        {
+          "name": "showScrollbar",
+          "type": "String",
+          "default": "'onScroll', 'onHover' (desktop)",
+          "description": "Specifies when the UI component shows the scrollbar."
+        },
+        {
+          "name": "useNative",
+          "type": "Boolean",
+          "default": "true, false (desktop except Mac)",
+          "description": "Indicates whether to use native or simulated scrolling."
+        }
+      ]
+    },
+    {
+      "name": "dxScrollable",
+      "type": null,
+      "default": null,
+      "description": "A UI component used to display scrollable content."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clientHeight()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's height."
+    },
+    {
+      "name": "clientWidth()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's width."
+    },
+    {
+      "name": "content()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's content."
+    },
+    {
+      "name": "scrollBy(distance)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content by a specific distance."
+    },
+    {
+      "name": "scrollHeight()",
+      "type": null,
+      "default": null,
+      "description": "Gets the scrollable content's height in pixels."
+    },
+    {
+      "name": "scrollLeft()",
+      "type": null,
+      "default": null,
+      "description": "Gets the left scroll offset."
+    },
+    {
+      "name": "scrollOffset()",
+      "type": null,
+      "default": null,
+      "description": "Gets the scroll offset."
+    },
+    {
+      "name": "scrollTo(targetLocation)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to a specific position."
+    },
+    {
+      "name": "scrollToElement(element)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls content to an element."
+    },
+    {
+      "name": "scrollTop()",
+      "type": null,
+      "default": null,
+      "description": "Gets the top scroll offset."
+    },
+    {
+      "name": "scrollWidth()",
+      "type": null,
+      "default": null,
+      "description": "Gets the scrollable content's width in pixels."
+    },
+    {
+      "name": "update()",
+      "type": null,
+      "default": null,
+      "description": "Updates the scrollable contents' dimensions."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onScroll",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed on each scroll gesture."
+    },
+    {
+      "name": "onUpdated",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time the UI component is updated."
+    },
+    {
+      "name": "scroll",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised on each scroll gesture."
+    },
+    {
+      "name": "updated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time the UI component is updated."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ScrollEventInfo",
+      "subMembers": [
+        {
+          "name": "ScrollEventInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedBottom",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedLeft",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedRight",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedTop",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "scrollOffset",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

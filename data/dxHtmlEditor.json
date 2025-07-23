@@ -1,0 +1,569 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the HtmlEditor UI component's contents, behavior, and appearance."
+        },
+        {
+          "name": "aiIntegration",
+          "type": "AIIntegration | undefined",
+          "default": "undefined",
+          "description": "Binds the AI service to the HTML Editor."
+        },
+        {
+          "name": "allowSoftLineBreak",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to break content into multiple lines within a single block element. The Shift + Enter key combination generates the new line."
+        },
+        {
+          "name": "converter",
+          "type": "Converter | undefined",
+          "default": "undefined",
+          "description": "Allows you to convert an HTML Editor value between different markups."
+        },
+        {
+          "name": "customizeModules",
+          "type": "function(config)",
+          "default": null,
+          "description": "Allows you to customize the DevExtreme Quill and 3rd-party modules."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "imageUpload",
+          "type": "dxHtmlEditorImageUpload",
+          "default": "{ tabs: ['url'], fileUploadMode: 'base64', uploadUrl: undefined, uploadDirectory: undefined }",
+          "description": "Configures the image upload."
+        },
+        {
+          "name": "mediaResizing",
+          "type": "dxHtmlEditorMediaResizing",
+          "default": "null",
+          "description": "Configures media resizing."
+        },
+        {
+          "name": "mentions",
+          "type": "Array<dxHtmlEditorMention>",
+          "default": "null",
+          "description": "Configures mentions."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the text displayed when the input field is empty."
+        },
+        {
+          "name": "stylingMode",
+          "type": "Enums.EditorStyle",
+          "default": "'outlined'",
+          "description": "Specifies how the HTML Editor's [toolbar] and content field are styled."
+        },
+        {
+          "name": "tableContextMenu",
+          "type": "dxHtmlEditorTableContextMenu",
+          "default": "null",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "tableResizing",
+          "type": "dxHtmlEditorTableResizing",
+          "default": "null",
+          "description": "Configures table resize."
+        },
+        {
+          "name": "toolbar",
+          "type": "dxHtmlEditorToolbar",
+          "default": "null",
+          "description": "Configures the UI component's toolbar."
+        },
+        {
+          "name": "validationStatus",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "variables",
+          "type": "dxHtmlEditorVariables",
+          "default": "null",
+          "description": "Configures variables that are placeholders for values created once text is processed."
+        }
+      ]
+    },
+    {
+      "name": "dxHtmlEditor",
+      "type": null,
+      "default": null,
+      "description": "HTML Editor is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML. HTML Editor is built on top of and requires the <a href=\"https://github.com/DevExpress/devextreme-quill/\" target=\"_blank\">DevExtreme Quill</a>."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "blur()",
+      "type": null,
+      "default": null,
+      "description": "Removes focus from the content field of the editor."
+    },
+    {
+      "name": "clearHistory()",
+      "type": null,
+      "default": null,
+      "description": "Clears the history of changes."
+    },
+    {
+      "name": "delete(index_length)",
+      "type": null,
+      "default": null,
+      "description": "Deletes content from the given range."
+    },
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": "Sets focus on the content field of the editor."
+    },
+    {
+      "name": "format(formatName_formatValue)",
+      "type": null,
+      "default": null,
+      "description": "Applies a format to the selected content. Cannot be used with [embedded formats]."
+    },
+    {
+      "name": "formatLine(index_length_formatName_formatValue)",
+      "type": null,
+      "default": null,
+      "description": "Applies a single [block format] to all lines in the given range."
+    },
+    {
+      "name": "formatLine(index_length_formats)",
+      "type": null,
+      "default": null,
+      "description": "Applies several [block formats] to all lines in the given range."
+    },
+    {
+      "name": "formatText(index_length_formatName_formatValue)",
+      "type": null,
+      "default": null,
+      "description": "Applies a single [text format] to all characters in the given range."
+    },
+    {
+      "name": "formatText(index_length_formats)",
+      "type": null,
+      "default": null,
+      "description": "Applies several [text formats] to all characters in the given range."
+    },
+    {
+      "name": "get(componentPath)",
+      "type": null,
+      "default": null,
+      "description": "Gets a format, module, or <a href=\"https://github.com/quilljs/parchment/\" target=\"_blank\">Parchment</a>."
+    },
+    {
+      "name": "getBounds(index_length)",
+      "type": null,
+      "default": null,
+      "description": "Retrieves the pixel position and size of a selection at a specified location."
+    },
+    {
+      "name": "getFormat()",
+      "type": null,
+      "default": null,
+      "description": "Retrieves formatting of the text within the current selection range."
+    },
+    {
+      "name": "getFormat(index_length)",
+      "type": null,
+      "default": null,
+      "description": "Gets formats applied to the content in the specified range."
+    },
+    {
+      "name": "getLength()",
+      "type": null,
+      "default": null,
+      "description": "Gets the entire content's length."
+    },
+    {
+      "name": "getModule(moduleName)",
+      "type": null,
+      "default": null,
+      "description": "Gets the instance of a module."
+    },
+    {
+      "name": "getQuillInstance()",
+      "type": null,
+      "default": null,
+      "description": "Gets the <a href=\"https://github.com/DevExpress/devextreme-quill/\" target=\"_blank\">DevExtreme Quill</a>'s instance."
+    },
+    {
+      "name": "getSelection()",
+      "type": null,
+      "default": null,
+      "description": "Gets the selected content's position and length."
+    },
+    {
+      "name": "getText(index_length)",
+      "type": null,
+      "default": null,
+      "description": "Retrieves text content from the HTML Editor."
+    },
+    {
+      "name": "insertEmbed(index_type_config)",
+      "type": null,
+      "default": null,
+      "description": "Inserts an embedded content at the specified position."
+    },
+    {
+      "name": "insertText(index_text_formatName_formatValue)",
+      "type": null,
+      "default": null,
+      "description": "Inserts text into the HTML Editor."
+    },
+    {
+      "name": "insertText(index_text_formats)",
+      "type": null,
+      "default": null,
+      "description": "Inserts formatted text at the specified position. Used with all formats except [embedded]."
+    },
+    {
+      "name": "redo()",
+      "type": null,
+      "default": null,
+      "description": "Reapplies the most recent [undone].md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#undo') change. Repeated calls reapply preceding undone changes."
+    },
+    {
+      "name": "register(components)",
+      "type": null,
+      "default": null,
+      "description": "Registers custom formats and modules."
+    },
+    {
+      "name": "removeFormat(index_length)",
+      "type": null,
+      "default": null,
+      "description": "Removes all formatting and embedded content from the specified range."
+    },
+    {
+      "name": "repaint()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "setSelection(index_length)",
+      "type": null,
+      "default": null,
+      "description": "Selects and highlights content in the specified range."
+    },
+    {
+      "name": "undo()",
+      "type": null,
+      "default": null,
+      "description": "Reverses the most recent change. Repeated calls reverse preceding changes."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onFocusIn",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component gets focus."
+    },
+    {
+      "name": "onFocusOut",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component loses focus."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "focusIn",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component gets focus."
+    },
+    {
+      "name": "focusOut",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component loses focus."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AIChangeStyleCommand",
+      "type": "AICommandBase",
+      "default": null,
+      "description": "Specifies a \"change style\" command for the [\"ai\" toolbar item]."
+    },
+    {
+      "name": "AIChangeStyleOption",
+      "type": "Union",
+      "default": null,
+      "description": "Includes all predefined options for the [\"change style\"] command."
+    },
+    {
+      "name": "AIChangeToneCommand",
+      "type": "AICommandBase",
+      "default": null,
+      "description": "Specifies a \"change tone\" command for the [\"ai\" toolbar item]."
+    },
+    {
+      "name": "AIChangeToneOption",
+      "type": "Union",
+      "default": null,
+      "description": "Includes all predefined options for the [\"change tone\"] command."
+    },
+    {
+      "name": "AICommand",
+      "type": "AICommandBase | AIChangeStyleCommand | AIChangeToneCommand | AITranslateCommand | AICustomCommand",
+      "default": null,
+      "description": "The union of all command types."
+    },
+    {
+      "name": "AICommandBase",
+      "subMembers": [
+        {
+          "name": "AICommandBase",
+          "type": null,
+          "default": null,
+          "description": "Specifies basic options for the [\"ai\" toolbar item] commands."
+        },
+        {
+          "name": "name",
+          "type": "AICommandNameExtended",
+          "default": null,
+          "description": "The command name."
+        },
+        {
+          "name": "options",
+          "type": "any",
+          "default": null,
+          "description": "Command options."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The command title."
+        }
+      ]
+    },
+    {
+      "name": "AICommandName",
+      "type": "Union",
+      "default": null,
+      "description": "All predefined command names."
+    },
+    {
+      "name": "AICommandNameExtended",
+      "type": "Enums.AICommandName | String",
+      "default": null,
+      "description": "An extended type for command names. Includes [predefined] and custom command names."
+    },
+    {
+      "name": "AICustomCommand",
+      "subMembers": [
+        {
+          "name": "AICustomCommand",
+          "type": null,
+          "default": null,
+          "description": "Specifies a custom command for the [\"ai\" toolbar item]."
+        },
+        {
+          "name": "prompt",
+          "type": "function(param)",
+          "default": null,
+          "description": "A custom prompt."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The command title."
+        }
+      ]
+    },
+    {
+      "name": "AIToolbarItem",
+      "subMembers": [
+        {
+          "name": "AIToolbarItem",
+          "type": null,
+          "default": null,
+          "description": "The 'ai' toolbar item."
+        },
+        {
+          "name": "commands",
+          "type": "Array<Enums.AICommandName, AICommand>",
+          "default": null,
+          "description": "An array of AI commands."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": "The toolbar item name."
+        }
+      ]
+    },
+    {
+      "name": "AITranslateCommand",
+      "type": "AICommandBase",
+      "default": null,
+      "description": "Specifies a \"translate\" command for the [\"ai\" toolbar item]."
+    },
+    {
+      "name": "AITranslateOption",
+      "type": "Union",
+      "default": null,
+      "description": "Includes all predefined options for the [\"translate\"] command."
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "Converter",
+      "subMembers": [
+        {
+          "name": "Converter",
+          "type": "Object",
+          "default": null,
+          "description": "An object that configures converter settings."
+        },
+        {
+          "name": "fromHtml",
+          "type": "function(value)",
+          "default": null,
+          "description": "A function that converts an HTML Editor value from HTML to another markup language."
+        },
+        {
+          "name": "toHtml",
+          "type": "function(value)",
+          "default": null,
+          "description": "A function that converts an HTML Editor value from a markup language to HTML."
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "FocusInEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusIn] event handler's argument."
+    },
+    {
+      "name": "FocusOutEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusOut] event handler's argument."
+    },
+    {
+      "name": "HtmlEditorFormat",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a format of the selected content."
+    },
+    {
+      "name": "HtmlEditorImageUploadMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the HTML Editor UI component uploads files."
+    },
+    {
+      "name": "HtmlEditorImageUploadTab",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the tab's name."
+    },
+    {
+      "name": "HtmlEditorPredefinedContextMenuItem",
+      "type": "Union",
+      "default": null,
+      "description": "Configures context menu items."
+    },
+    {
+      "name": "HtmlEditorPredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "Configures toolbar items."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    }
+  ]
+}

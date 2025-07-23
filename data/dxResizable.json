@@ -1,0 +1,205 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Resizable UI component."
+        },
+        {
+          "name": "area",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies the area within which users can resize the UI component."
+        },
+        {
+          "name": "handles",
+          "type": "Enums.ResizeHandle | String",
+          "default": "'all'",
+          "description": "Specifies which borders of the UI component element are used as a handle."
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keepAspectRatio",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to resize the UI component's content proportionally when you use corner handles."
+        },
+        {
+          "name": "maxHeight",
+          "type": "Number",
+          "default": "Infinity",
+          "description": "Specifies the upper height boundary for resizing."
+        },
+        {
+          "name": "maxWidth",
+          "type": "Number",
+          "default": "Infinity",
+          "description": "Specifies the upper width boundary for resizing."
+        },
+        {
+          "name": "minHeight",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the lower height boundary for resizing."
+        },
+        {
+          "name": "minWidth",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the lower width boundary for resizing."
+        },
+        {
+          "name": "stepPrecision",
+          "type": "String",
+          "default": "'simple'",
+          "description": "-"
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxResizable",
+      "type": null,
+      "default": null,
+      "description": "The Resizable UI component enables its content to be resizable in the UI."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onResize",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time the UI component is resized by one pixel."
+    },
+    {
+      "name": "onResizeEnd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when resizing ends."
+    },
+    {
+      "name": "onResizeStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when resizing starts."
+    },
+    {
+      "name": "resize",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time the UI component is resized by one pixel."
+    },
+    {
+      "name": "resizeEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when resizing ends."
+    },
+    {
+      "name": "resizeStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when resizing starts."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ResizeEndEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [resizeEnd] event handler's argument."
+    },
+    {
+      "name": "ResizeEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [resize] event handler's argument."
+    },
+    {
+      "name": "ResizeHandle",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies which borders of the UI component element are used as a handle."
+    },
+    {
+      "name": "ResizeInfo",
+      "subMembers": [
+        {
+          "name": "ResizeInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResizeStartEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [resizeStart] event handler's argument."
+    }
+  ]
+}

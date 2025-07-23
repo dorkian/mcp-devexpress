@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxGanttToolbarItem",
+      "type": null,
+      "default": null,
+      "description": "Configures the toolbar item."
+    },
+    {
+      "name": "location",
+      "type": "Enums.ToolbarItemLocation",
+      "default": "'before'",
+      "description": "Specifies the toolbar item's location."
+    },
+    {
+      "name": "name",
+      "type": "Enums.GanttPredefinedToolbarItem | String",
+      "default": null,
+      "description": "Specifies the toolbar item's name."
+    },
+    {
+      "name": "template",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,296 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "buttons",
+          "type": "Array<String, Enums.TextBoxPredefinedButton, TextEditorButton>",
+          "default": "undefined",
+          "description": "Allows you to add custom buttons to the input text field."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "inputAttr",
+          "type": "any",
+          "default": "{}",
+          "description": "Specifies the attributes to be passed on to the underlying HTML element."
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a text string used to annotate the editor's [value]."
+        },
+        {
+          "name": "labelMode",
+          "type": "Enums.LabelMode",
+          "default": "'static', 'floating' (Material), 'outside' (Fluent)",
+          "description": "Specifies the [label]'s display mode."
+        },
+        {
+          "name": "mask",
+          "type": "String",
+          "default": "''",
+          "description": "The editor mask that specifies the custom format of the entered string."
+        },
+        {
+          "name": "maskChar",
+          "type": "String",
+          "default": "'_'",
+          "description": "Specifies a mask placeholder. A single character is recommended."
+        },
+        {
+          "name": "maskInvalidMessage",
+          "type": "String",
+          "default": "'Value is invalid'",
+          "description": "A message displayed when the entered text does not match the specified pattern."
+        },
+        {
+          "name": "maskRules",
+          "type": "any",
+          "default": "'{}'",
+          "description": "Specifies custom mask rules."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a text string displayed when the editor's [value] is empty."
+        },
+        {
+          "name": "readOnly",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "showClearButton",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the Clear button in the UI component."
+        },
+        {
+          "name": "showMaskMode",
+          "type": "Enums.MaskMode",
+          "default": "'always'",
+          "description": "Specifies when the UI component shows the [mask]. Applies only if [useMaskedValue] is **true**."
+        },
+        {
+          "name": "spellcheck",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the UI component checks the inner text for spelling mistakes."
+        },
+        {
+          "name": "stylingMode",
+          "type": "Enums.EditorStyle",
+          "default": "'outlined', 'filled' (Material)",
+          "description": "Specifies how the UI component's text field is styled."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The read-only property that holds the text displayed by the UI component **input** element."
+        },
+        {
+          "name": "useMaskedValue",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the [value] should contain mask characters or not."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": "''",
+          "description": "Specifies the editor's value."
+        },
+        {
+          "name": "valueChangeEvent",
+          "type": "String",
+          "default": "'change'",
+          "description": "Specifies the <a href=\"https://en.wikipedia.org/wiki/DOM_events\" target=\"_blank\">DOM events</a> after which the UI component's [value] should be updated."
+        }
+      ]
+    },
+    {
+      "name": "dxTextEditor",
+      "type": null,
+      "default": null,
+      "description": "A base class for text editing UI components."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "blur()",
+      "type": null,
+      "default": null,
+      "description": "Removes focus from the input element."
+    },
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": "Sets focus to the input element representing the UI component."
+    },
+    {
+      "name": "getButton(name)",
+      "type": null,
+      "default": null,
+      "description": "Gets an instance of a [custom action button]."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onChange",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard."
+    },
+    {
+      "name": "onCopy",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component's input has been copied."
+    },
+    {
+      "name": "onCut",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component's input has been cut."
+    },
+    {
+      "name": "onEnterKey",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the Enter key has been pressed while the UI component is focused."
+    },
+    {
+      "name": "onFocusIn",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component gets focus."
+    },
+    {
+      "name": "onFocusOut",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component loses focus."
+    },
+    {
+      "name": "onInput",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time the UI component's input is changed while the UI component is focused."
+    },
+    {
+      "name": "onKeyDown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user is pressing a key on the keyboard."
+    },
+    {
+      "name": "onKeyUp",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user releases a key on the keyboard."
+    },
+    {
+      "name": "onPaste",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component's input has been pasted."
+    },
+    {
+      "name": "onValueChanged",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "change",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component loses focus after the text field's content was changed using the keyboard."
+    },
+    {
+      "name": "copy",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component's input has been copied."
+    },
+    {
+      "name": "cut",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component's input has been cut."
+    },
+    {
+      "name": "enterKey",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the Enter key has been pressed while the UI component is focused."
+    },
+    {
+      "name": "focusIn",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component gets focus."
+    },
+    {
+      "name": "focusOut",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component loses focus."
+    },
+    {
+      "name": "input",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time the UI component's input is changed while the UI component is focused."
+    },
+    {
+      "name": "keyDown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user is pressing a key on the keyboard."
+    },
+    {
+      "name": "keyUp",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user releases a key on the keyboard."
+    },
+    {
+      "name": "paste",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component's input has been pasted."
+    }
+  ],
+  "Types": []
+}

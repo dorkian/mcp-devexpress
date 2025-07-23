@@ -1,0 +1,136 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining the UI component's configuration properties."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "keyStep",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the step by which a handle moves when a user presses **Page Up** or **Page Down**."
+        },
+        {
+          "name": "label",
+          "subMembers": [
+            {
+              "name": "format",
+              "type": "Format",
+              "default": "function(value) { return value }",
+              "description": "Formats a value before it is displayed in a label."
+            },
+            {
+              "name": "label",
+              "type": "Object",
+              "default": null,
+              "description": "Configures the labels displayed at the min and max values."
+            },
+            {
+              "name": "position",
+              "type": "Enums.VerticalEdge",
+              "default": "'bottom'",
+              "description": "Specifies whether labels are over or under the scale."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether slider labels are visible."
+            }
+          ]
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "showRange",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to highlight the selected range."
+        },
+        {
+          "name": "step",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the step by which the UI component's value changes when a user drags a handler."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a tooltip is enabled."
+            },
+            {
+              "name": "format",
+              "type": "Format",
+              "default": "function(value) { return value }",
+              "description": "Specifies a tooltip's display format."
+            },
+            {
+              "name": "position",
+              "type": "Enums.VerticalEdge",
+              "default": "'top'",
+              "description": "Specifies whether a tooltip is over or under the slider."
+            },
+            {
+              "name": "showMode",
+              "type": "Enums.TooltipShowMode",
+              "default": "'onHover'",
+              "description": "Specifies when the UI component shows a tooltip."
+            },
+            {
+              "name": "tooltip",
+              "type": "Object",
+              "default": null,
+              "description": "Configures a tooltip."
+            }
+          ]
+        },
+        {
+          "name": "valueChangeMode",
+          "type": "Enums.SliderValueChangeMode",
+          "default": "'onHandleMove'",
+          "description": "Specifies when to change the component's [value]."
+        }
+      ]
+    },
+    {
+      "name": "dxSliderBase",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

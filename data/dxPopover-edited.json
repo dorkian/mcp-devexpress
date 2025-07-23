@@ -1,0 +1,353 @@
+{
+  "members": [
+    {
+      "name": "accessKey",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "animation",
+      "type": "ui/popover:dxPopoverAnimation",
+      "default": null,
+      "description": "Configures UI component visibility animations. This object contains two fields: show and hide. Set this object to null or undefined to disable animations.",
+      "subMembers": [
+        {
+          "name": "show",
+          "type": null,
+          "default": null,
+          "description": "Animation properties used when the UI component is being shown."
+        },
+        {
+          "name": "hide",
+          "type": null,
+          "default": null,
+          "description": "Animation properties used when the UI component is being hidden."
+        }
+      ]
+    },
+    {
+      "name": "container",
+      "type": null,
+      "default": null,
+      "description": "The UI component defines the default container on its initialization. This default container can be one of the following: color swatch container, .dx-viewport, body."
+    },
+    {
+      "name": "dragAndResizeArea",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "dragEnabled",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "dragOutsideBoundary",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "focusStateEnabled",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "fullScreen",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "height",
+      "type": "Number | String",
+      "default": "auto",
+      "description": "Specifies the UI component's height. The {WidgetName} calculates its height relative to the window."
+    },
+    {
+      "name": "hideEvent",
+      "type": "Object | String | undefined",
+      "default": "undefined",
+      "description": "Specifies properties of popover hiding. Ignored if the shading property is set to true. The target property specifies a target element for the hideEvent. If you assign only a string that specifies event names on which the UI component is hidden, the UI component will not apply any delay.",
+      "subMembers": [
+        {
+          "name": "delay",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "The delay in milliseconds after which the UI component is hidden."
+        },
+        {
+          "name": "name",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the event names on which the UI component is hidden."
+        }
+      ]
+    },
+    {
+      "name": "hideOnOutsideClick",
+      "type": "Boolean | function(event)",
+      "default": "true",
+      "description": "Specifies whether to hide the UI component if a user clicks outside the popover window or outside the target element."
+    },
+    {
+      "name": "hideOnParentScroll",
+      "type": "Boolean",
+      "default": "true",
+      "description": null
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is disposed of."
+    },
+    {
+      "name": "onHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is hidden."
+    },
+    {
+      "name": "onHiding",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is hidden."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onResize",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onResizeEnd",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onResizeStart",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onShowing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is displayed."
+    },
+    {
+      "name": "onShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is displayed."
+    },
+    {
+      "name": "onTitleRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's title is rendered."
+    },
+    {
+      "name": "position",
+      "type": "Enums.Position | PositionConfig",
+      "default": "{ my: 'top center', at: 'bottom center', collision: 'fit flip' }",
+      "description": "An object defining UI component positioning properties."
+    },
+    {
+      "name": "resizeEnabled",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "restorePosition",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "shading",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Shading always applies to the window."
+    },
+    {
+      "name": "showEvent",
+      "type": "Object | String | undefined",
+      "default": "undefined",
+      "description": "Specifies properties for displaying the UI component. The target property specifies a target element for the showEvent. If you assign only a string that specifies event names on which the UI component is shown, the UI component will not apply any delay.",
+      "subMembers": [
+        {
+          "name": "delay",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "The delay in milliseconds after which the UI component is displayed."
+        },
+        {
+          "name": "name",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the event names on which the UI component is shown."
+        }
+      ]
+    },
+    {
+      "name": "showTitle",
+      "type": "Boolean",
+      "default": "false",
+      "description": "A Boolean value specifying whether or not to display the title in the overlay window."
+    },
+    {
+      "name": "tabIndex",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "target",
+      "type": "String | UserDefinedElement | undefined",
+      "default": "undefined",
+      "description": "Specifies the element against which to position the {WidgetName}."
+    },
+    {
+      "name": "width",
+      "type": "Number | String",
+      "default": "auto",
+      "description": "Specifies the UI component's width. The {WidgetName} calculates its width relative to the window."
+    },
+    {
+      "name": "wrapperAttr",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "methods": [
+    {
+      "name": "focus()",
+      "description": null
+    },
+    {
+      "name": "registerKeyHandler(key, handler)",
+      "description": null
+    },
+    {
+      "name": "show(target)",
+      "description": "Shows the UI component for a target element. Returns a Promise<Boolean>. The target parameter can be String, Element, or jQuery."
+    }
+  ],
+  "events": [
+    {
+      "name": "contentReady",
+      "description": "Fired when the UI component is rendered and each time the component is repainted.",
+      "type": "ContentReadyEvent"
+    },
+    {
+      "name": "disposing",
+      "description": "Fired before the UI component is disposed of.",
+      "type": "DisposingEvent"
+    },
+    {
+      "name": "hidden",
+      "description": "Fired after the UI component is hidden.",
+      "type": "HiddenEvent"
+    },
+    {
+      "name": "hiding",
+      "description": "Fired before the UI component is hidden.",
+      "type": "HidingEvent"
+    },
+    {
+      "name": "initialized",
+      "description": "Fired when the UI component is initialized.",
+      "type": "InitializedEvent"
+    },
+    {
+      "name": "optionChanged",
+      "description": "Fired after a UI component property is changed.",
+      "type": "OptionChangedEvent"
+    },
+    {
+      "name": "showing",
+      "description": "Fired before the UI component is displayed.",
+      "type": "ShowingEvent"
+    },
+    {
+      "name": "shown",
+      "description": "Fired after the UI component is displayed.",
+      "type": "ShownEvent"
+    },
+    {
+      "name": "titleRendered",
+      "description": "Fired when the UI component's title is rendered.",
+      "type": "TitleRenderedEvent"
+    }
+  ],
+  "types": [
+    {
+      "name": "ContentReadyEvent",
+      "description": "The type of the contentReady event handler's argument. Inherits: EventInfo."
+    },
+    {
+      "name": "DisposingEvent",
+      "description": "The type of the disposing event handler's argument. Inherits: EventInfo."
+    },
+    {
+      "name": "HiddenEvent",
+      "description": "The type of the hidden event handler's argument. Inherits: EventInfo."
+    },
+    {
+      "name": "HidingEvent",
+      "description": "The type of the hiding event handler's argument. Inherits: AsyncCancelable, EventInfo."
+    },
+    {
+      "name": "InitializedEvent",
+      "description": "The type of the initialized event handler's argument. Inherits: InitializedEventInfo."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "description": "The type of the optionChanged event handler's argument. Inherits: EventInfo, ChangedOptionInfo."
+    },
+    {
+      "name": "ShowingEvent",
+      "description": "The type of the showing event handler's argument. Inherits: Cancelable, EventInfo."
+    },
+    {
+      "name": "ShownEvent",
+      "description": "The type of the shown event handler's argument. Inherits: EventInfo."
+    },
+    {
+      "name": "TitleRenderedEvent",
+      "description": "The type of the titleRendered event handler's argument. Inherits: EventInfo, TitleRenderedInfo."
+    },
+    {
+      "name": "dxPopoverAnimation",
+      "description": "Configures UI component visibility animations. Contains two fields: show and hide."
+    }
+  ]
+}

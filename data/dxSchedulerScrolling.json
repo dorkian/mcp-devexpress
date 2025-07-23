@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "dxSchedulerScrolling",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "mode",
+      "type": "Enums.ScrollMode",
+      "default": "'standard'",
+      "description": "Specifies the scrolling mode."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

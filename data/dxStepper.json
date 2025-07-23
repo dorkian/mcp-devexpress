@@ -1,0 +1,294 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether Stepper changes its appearance when in the active state (when an end user interacts with it)."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxStepperItem> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": "Specifies whether the UI component can be focused using keyboard navigation."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the UI component changes its appearance when a user hovers over it."
+        },
+        {
+          "name": "itemHoldTimeout",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxStepperItem>",
+          "default": null,
+          "description": "An array of items (steps) displayed by the Stepper component."
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "linear",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies a navigation mode (linear/non-linear)."
+        },
+        {
+          "name": "noDataText",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "orientation",
+          "type": "Enums.Orientation",
+          "default": "'horizontal'",
+          "description": "Specifies the Stepper orientation."
+        },
+        {
+          "name": "selectOnFocus",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies if items are selected automatically when focused by keyboard."
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectionMode",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "dxStepperItem",
+          "subMembers": [
+            {
+              "name": "dxStepperItem",
+              "type": "Object",
+              "default": null,
+              "description": "A stepper item (step)."
+            },
+            {
+              "name": "hint",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the hint text that appears when an item (step) is hovered over or long-pressed."
+            },
+            {
+              "name": "html",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "icon",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the indicator icon."
+            },
+            {
+              "name": "isValid",
+              "type": "Boolean",
+              "default": null,
+              "description": "Specifies a visual indicator for validation."
+            },
+            {
+              "name": "label",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the caption displayed next to the step."
+            },
+            {
+              "name": "optional",
+              "type": "Boolean",
+              "default": null,
+              "description": "Marks the step as optional."
+            },
+            {
+              "name": "visible",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxStepper",
+      "type": null,
+      "default": null,
+      "description": "A Stepper is a UI component that displays progress as a user moves through a sequence of steps."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that fires when the component finishes its initialization."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an item (step) is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an item (step) is right-clicked or long-pressed."
+    },
+    {
+      "name": "onItemHold",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after an item (step) is rendered."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an item (step) is selected or the selection is canceled."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called before selection changes."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [disposing] event."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [initialized] event."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [itemClick] event."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [itemContextMenu] event."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [itemRendered] event."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [optionChanged] event."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [selectionChanged] event."
+    },
+    {
+      "name": "SelectionChangingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [selectionChanging] event."
+    }
+  ]
+}

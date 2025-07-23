@@ -1,0 +1,319 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the LoadPanel UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "animation",
+          "subMembers": [
+            {
+              "name": "animation",
+              "type": "ui/load_panel:dxLoadPanelAnimation",
+              "default": "null",
+              "description": "Configures UI component visibility animations. This object contains two fields: [show] and [hide]."
+            },
+            {
+              "name": "hide",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "show",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "container",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies the UI component's container."
+        },
+        {
+          "name": "contentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "contentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "delay",
+          "type": "Number",
+          "default": "0",
+          "description": "The delay in milliseconds after which the load panel is displayed."
+        },
+        {
+          "name": "disabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the UI component can be focused."
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "90, 'auto' (Fluent), 60 (Material)",
+          "description": null
+        },
+        {
+          "name": "indicatorSrc",
+          "type": "String",
+          "default": "''",
+          "description": "A URL pointing to an image to be used as a load indicator."
+        },
+        {
+          "name": "maxHeight",
+          "type": "Number | String",
+          "default": "60 (Material)",
+          "description": null
+        },
+        {
+          "name": "maxWidth",
+          "type": "Number | String",
+          "default": "60 (Material)",
+          "description": null
+        },
+        {
+          "name": "message",
+          "type": "String",
+          "default": "'Loading ...', '' (Material)",
+          "description": "Specifies the text displayed in the load panel. Ignored in the [Material Design] theme."
+        },
+        {
+          "name": "position",
+          "type": "Enums.PositionAlignment | PositionConfig | function()",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "shadingColor",
+          "type": "String",
+          "default": "'transparent', '' (Android, iOS)",
+          "description": null
+        },
+        {
+          "name": "showIndicator",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether or not to show a load indicator."
+        },
+        {
+          "name": "showPane",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether or not to show the pane behind the load indicator."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "visible",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "222, 'auto' (Fluent), 60 (Material)",
+          "description": null
+        },
+        {
+          "name": "wrapperAttr",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxLoadPanel",
+      "type": null,
+      "default": null,
+      "description": "The LoadPanel is an overlay UI component notifying the viewer that loading is in progress."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "show()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "toggle(showing)",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is hidden."
+    },
+    {
+      "name": "onHiding",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is hidden."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onShowing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is displayed."
+    },
+    {
+      "name": "onShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is displayed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "HiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [hidden] event handler's argument."
+    },
+    {
+      "name": "HidingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [hiding] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ShowingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [showing] event handler's argument."
+    },
+    {
+      "name": "ShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [shown] event handler's argument."
+    },
+    {
+      "name": "dxLoadPanelAnimation",
+      "subMembers": [
+        {
+          "name": "dxLoadPanelAnimation",
+          "type": "module: ui/load_panel",
+          "default": null,
+          "description": "Configures UI component visibility animations. This object contains two fields: [show] and [hide]."
+        },
+        {
+          "name": "hide",
+          "type": "AnimationConfig",
+          "default": "null",
+          "description": "An object that defines the animation properties used when the UI component is being hidden."
+        },
+        {
+          "name": "show",
+          "type": "AnimationConfig",
+          "default": "null",
+          "description": "An object that defines the animation properties used when the UI component is being shown."
+        }
+      ]
+    }
+  ]
+}

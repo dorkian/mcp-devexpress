@@ -1,0 +1,2003 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the TreeList UI component."
+        },
+        {
+          "name": "autoExpandAll",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether all rows are expanded initially."
+        },
+        {
+          "name": "cacheEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxTreeListColumn, String>",
+          "default": "undefined",
+          "description": "Configures columns."
+        },
+        {
+          "name": "customizeColumns",
+          "type": "function(columns)",
+          "default": null,
+          "description": "Customizes columns after they are created."
+        },
+        {
+          "name": "dataSource",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dataStructure",
+          "type": "Enums.DataStructure",
+          "default": "'plain'",
+          "description": "Notifies the UI component of the used data structure."
+        },
+        {
+          "name": "editing",
+          "subMembers": [
+            {
+              "name": "allowAdding",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether a user can add new rows. It is called for each data row when defined as a function."
+            },
+            {
+              "name": "allowDeleting",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether a user can delete rows. It is called for each data row when defined as a function."
+            },
+            {
+              "name": "allowUpdating",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether a user can update rows. It is called for each data row when defined as a function"
+            },
+            {
+              "name": "editing",
+              "type": "ui/tree_list:Editing",
+              "default": null,
+              "description": "Configures editing."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "addRowToNode",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies text for the button that adds a new nested row. Applies if the **editing**.[mode] is *\"batch\"* or *\"cell\"*."
+                },
+                {
+                  "name": "texts",
+                  "type": "ui/tree_list:EditingTexts",
+                  "default": null,
+                  "description": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "expandNodesOnFiltering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether nodes appear expanded or collapsed after filtering is applied."
+        },
+        {
+          "name": "expandedRowKeys",
+          "type": "Array<any>",
+          "default": "[]",
+          "description": "Specifies keys of the initially expanded rows."
+        },
+        {
+          "name": "filterMode",
+          "type": "Enums.TreeListFilterMode",
+          "default": "'withAncestors'",
+          "description": "Specifies whether filter and search results should include matching rows only, matching rows with ancestors, or matching rows with ancestors and descendants (full branch)."
+        },
+        {
+          "name": "hasItemsExpr",
+          "type": "String | function()",
+          "default": null,
+          "description": "Specifies which data field defines whether the node has children."
+        },
+        {
+          "name": "itemsExpr",
+          "type": "String | function()",
+          "default": "'items'",
+          "description": "Specifies which data field contains nested items. Set this property when your data has a [hierarchical structure]."
+        },
+        {
+          "name": "keyExpr",
+          "type": "String | function()",
+          "default": "'id'",
+          "description": "Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique."
+        },
+        {
+          "name": "paging",
+          "subMembers": [
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "paging",
+              "type": "ui/tree_list:Paging",
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "parentIdExpr",
+          "type": "String | function()",
+          "default": "'parentId'",
+          "description": "Specifies which data field provides parent keys."
+        },
+        {
+          "name": "remoteOperations",
+          "subMembers": [
+            {
+              "name": "filtering",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether filtering should be performed on the server."
+            },
+            {
+              "name": "grouping",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether grouping should be performed on the server."
+            },
+            {
+              "name": "remoteOperations",
+              "type": "Object | Enums.Mode",
+              "default": "'auto'",
+              "description": "Notifies the TreeList of the server's data processing operations. Applies only if data has a [plain structure]."
+            },
+            {
+              "name": "sorting",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether sorting should be performed on the server."
+            }
+          ]
+        },
+        {
+          "name": "rootValue",
+          "type": "any",
+          "default": "0",
+          "description": "Specifies the root node's identifier. Applies if [dataStructure] is *\"plain\"*."
+        },
+        {
+          "name": "scrolling",
+          "subMembers": [
+            {
+              "name": "mode",
+              "type": null,
+              "default": null,
+              "description": "Specifies the scrolling mode."
+            },
+            {
+              "name": "preloadEnabled",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether the UI component should load adjacent pages. Applies only if **scrolling**.[mode] is *\"virtual\"*."
+            },
+            {
+              "name": "rowRenderingMode",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "scrolling",
+              "type": "ui/tree_list:Scrolling",
+              "default": null,
+              "description": "Configures scrolling."
+            }
+          ]
+        },
+        {
+          "name": "selection",
+          "subMembers": [
+            {
+              "name": "allowSelectAll",
+              "type": null,
+              "default": null,
+              "description": "Allows users to simultaneously select all or current page rows."
+            },
+            {
+              "name": "recursive",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether selection is recursive."
+            },
+            {
+              "name": "selection",
+              "type": "ui/tree_list:Selection",
+              "default": null,
+              "description": "Configures runtime selection."
+            }
+          ]
+        },
+        {
+          "name": "sorting",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "stateStoring",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toolbar",
+          "type": "dxTreeListToolbar | undefined",
+          "default": "undefined",
+          "description": "<!-- %shortDescription% -->"
+        }
+      ]
+    },
+    {
+      "name": "Node",
+      "subMembers": [
+        {
+          "name": "Node",
+          "type": "Object",
+          "default": null,
+          "description": "A TreeList node's structure."
+        },
+        {
+          "name": "children",
+          "type": "Array<dxTreeListNode>",
+          "default": null,
+          "description": "Contains all child nodes."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The node's data object."
+        },
+        {
+          "name": "hasChildren",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the node has child nodes."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The node's key."
+        },
+        {
+          "name": "level",
+          "type": "Number",
+          "default": null,
+          "description": "The node's hierarchical level."
+        },
+        {
+          "name": "parent",
+          "type": "dxTreeListNode",
+          "default": null,
+          "description": "The parent node."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the node is visualized as a row."
+        }
+      ]
+    },
+    {
+      "name": "Row",
+      "subMembers": [
+        {
+          "name": "Row",
+          "type": "Object",
+          "default": null,
+          "description": "A grid row."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "A data object that the row visualizes."
+        },
+        {
+          "name": "isEditing",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the row is in the editing state."
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the row is expanded or collapsed. Available if [rowType] is *\"data\"*."
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates that the row is added, but not yet saved. Available if [rowType] is *\"data\"*."
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the row is selected. Available if [rowType] is *\"data\"* or *\"detail\"*."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The row's key. Available if [rowType] is *\"data\"*, *\"detail\"* or *\"detailAdaptive\"*."
+        },
+        {
+          "name": "level",
+          "type": "Number",
+          "default": null,
+          "description": "The row's hierarchical level. Available if [rowType] is *\"data\"* or *\"detail\"*."
+        },
+        {
+          "name": "node",
+          "type": "dxTreeListNode",
+          "default": null,
+          "description": "The row's node. Available if [rowType] is *\"data\"* or *\"detail\"*."
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The row's *visible* index. This index is zero-based and available if [rowType] is *\"data\"*, *\"detail\"* or *\"detailAdaptive\"*."
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": "The row's type."
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Values displayed in the row's cells."
+        }
+      ]
+    },
+    {
+      "name": "dxTreeList",
+      "type": null,
+      "default": null,
+      "description": "The TreeList is a UI component that represents data from a local or remote source in the form of a multi-column tree view. This UI component offers such features as sorting, filtering, editing, selection, etc."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "addColumn(columnOptions)",
+      "type": null,
+      "default": null,
+      "description": "Adds a new column."
+    },
+    {
+      "name": "addRow()",
+      "type": "\"insert\", data: data }",
+      "default": null,
+      "description": "Adds an empty data row to the highest hierarchical level and switches it to the editing state."
+    },
+    {
+      "name": "addRow(parentId)",
+      "type": null,
+      "default": null,
+      "description": "Adds an empty data row to a specified parent row."
+    },
+    {
+      "name": "collapseRow(key)",
+      "type": null,
+      "default": null,
+      "description": "Collapses a row with a specific key."
+    },
+    {
+      "name": "deselectAll()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "expandAdaptiveDetailRow(key)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "expandRow(key)",
+      "type": null,
+      "default": null,
+      "description": "Expands a row with a specific key."
+    },
+    {
+      "name": "forEachNode(callback)",
+      "type": null,
+      "default": null,
+      "description": "Performs a pre-order tree traversal, executing a function on each visited [node]. Starts traversing from the top level nodes."
+    },
+    {
+      "name": "forEachNode(nodes_callback)",
+      "type": null,
+      "default": null,
+      "description": "Performs a pre-order tree traversal, executing a function on each visited [node]. Starts traversing from the specified nodes."
+    },
+    {
+      "name": "getNodeByKey(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets a node with a specific key."
+    },
+    {
+      "name": "getRootNode()",
+      "type": null,
+      "default": null,
+      "description": "Gets the root node."
+    },
+    {
+      "name": "getSelectedRowKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the keys of the rows selected explicitly [via the API] or via a click or tap."
+    },
+    {
+      "name": "getSelectedRowKeys(mode)",
+      "type": null,
+      "default": null,
+      "description": "Gets selected row keys."
+    },
+    {
+      "name": "getSelectedRowsData()",
+      "type": null,
+      "default": null,
+      "description": "Gets the data objects of the rows selected explicitly [via the API] or via a click or tap."
+    },
+    {
+      "name": "getSelectedRowsData(mode)",
+      "type": null,
+      "default": null,
+      "description": "Gets selected row data objects."
+    },
+    {
+      "name": "getVisibleColumns()",
+      "type": null,
+      "default": null,
+      "description": "Gets all visible columns."
+    },
+    {
+      "name": "getVisibleColumns(headerLevel)",
+      "type": null,
+      "default": null,
+      "description": "Gets all visible columns at a specific hierarchical level of column headers. Use it to access [banded columns]."
+    },
+    {
+      "name": "getVisibleRows()",
+      "type": null,
+      "default": null,
+      "description": "Gets currently rendered rows."
+    },
+    {
+      "name": "isAdaptiveDetailRowExpanded(key)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "isRowExpanded(key)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether a row is expanded or collapsed."
+    },
+    {
+      "name": "loadDescendants()",
+      "type": null,
+      "default": null,
+      "description": "Loads all root node descendants (all data items). Takes effect only if data has the [plain structure] and  **remoteOperations**.[filtering] is **true**."
+    },
+    {
+      "name": "loadDescendants(keys)",
+      "type": null,
+      "default": null,
+      "description": "Loads a specific node's descendants. Takes effect only if data has the [plain structure] and  **remoteOperations**.[filtering] is **true**."
+    },
+    {
+      "name": "loadDescendants(keys_childrenOnly)",
+      "type": null,
+      "default": null,
+      "description": "Loads all or only direct descendants of specific nodes. Takes effect only if data has the [plain structure] and  **remoteOperations**.[filtering] is **true**."
+    },
+    {
+      "name": "navigateToRow(key)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "pageCount()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "pageIndex()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectAll()",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onAdaptiveDetailRowPreparing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before an adaptive detail row is rendered."
+    },
+    {
+      "name": "onCellClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a cell is clicked or tapped. Executed before [onRowClick]."
+    },
+    {
+      "name": "onCellDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a cell is double-clicked or double-tapped. Executed before [onRowDblClick]."
+    },
+    {
+      "name": "onCellHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a cell."
+    },
+    {
+      "name": "onCellPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onContextMenuPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the context menu is rendered."
+    },
+    {
+      "name": "onDataErrorOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error occurs in the data source."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEditCanceled",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after row changes are discarded."
+    },
+    {
+      "name": "onEditCanceling",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the edit operation is canceled, but row changes are not yet discarded."
+    },
+    {
+      "name": "onEditingStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a cell or row switches to the editing state."
+    },
+    {
+      "name": "onEditorPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an editor is created. Not executed for cells with an [editCellTemplate]."
+    },
+    {
+      "name": "onEditorPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "onFocusedCellChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the focused cell changes. Applies only to cells in data rows."
+    },
+    {
+      "name": "onFocusedCellChanging",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the focused cell changes. Applies only to cells in data rows."
+    },
+    {
+      "name": "onFocusedRowChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that executed when the focused row changes. Applies only to data rows. [focusedRowEnabled] should be **true**."
+    },
+    {
+      "name": "onFocusedRowChanging",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the focused row changes. Applies only to data rows. [focusedRowEnabled] should be **true**."
+    },
+    {
+      "name": "onInitNewRow",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a new row is added to the UI component."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onKeyDown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is in focus and a key has been pressed down."
+    },
+    {
+      "name": "onNodesInitialized",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the loaded nodes are initialized."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onRowClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a grid row is clicked or tapped."
+    },
+    {
+      "name": "onRowCollapsed",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row is collapsed."
+    },
+    {
+      "name": "onRowCollapsing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is collapsed."
+    },
+    {
+      "name": "onRowDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a row is double-clicked or double-tapped. Executed after [onCellDblClick]."
+    },
+    {
+      "name": "onRowExpanded",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row is expanded."
+    },
+    {
+      "name": "onRowExpanding",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is expanded."
+    },
+    {
+      "name": "onRowInserted",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a new row has been inserted into the data source."
+    },
+    {
+      "name": "onRowInserting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a new row is inserted into the data source."
+    },
+    {
+      "name": "onRowPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a row is created."
+    },
+    {
+      "name": "onRowRemoved",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row has been removed from the data source."
+    },
+    {
+      "name": "onRowRemoving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is removed from the data source."
+    },
+    {
+      "name": "onRowUpdated",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row has been updated in the data source."
+    },
+    {
+      "name": "onRowUpdating",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is updated in the data source."
+    },
+    {
+      "name": "onRowValidating",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after cells in a row are validated against [validation rules]."
+    },
+    {
+      "name": "onSaved",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after row changes are saved."
+    },
+    {
+      "name": "onSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before pending row changes are saved."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after selecting a row or clearing its selection."
+    },
+    {
+      "name": "onToolbarPreparing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the toolbar is created."
+    },
+    {
+      "name": "cellClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a cell is clicked or tapped."
+    },
+    {
+      "name": "cellDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a cell is double-clicked or double-tapped."
+    },
+    {
+      "name": "cellHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the pointer enters or leaves a cell."
+    },
+    {
+      "name": "cellPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a cell is created."
+    },
+    {
+      "name": "contextMenuPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is rendered."
+    },
+    {
+      "name": "editingStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a cell or row switches to the editing state."
+    },
+    {
+      "name": "editorPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an editor is created."
+    },
+    {
+      "name": "editorPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an editor is created."
+    },
+    {
+      "name": "focusedCellChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the focused cell changes."
+    },
+    {
+      "name": "focusedCellChanging",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the focused cell changes."
+    },
+    {
+      "name": "focusedRowChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the focused row changes. Applies only when [focusedRowEnabled] is **true**."
+    },
+    {
+      "name": "focusedRowChanging",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the focused row changes. Applies only when [focusedRowEnabled] is **true**."
+    },
+    {
+      "name": "nodesInitialized",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the loaded nodes are initialized."
+    },
+    {
+      "name": "rowClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a row is clicked or tapped."
+    },
+    {
+      "name": "rowDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a row is double-clicked or double-tapped."
+    },
+    {
+      "name": "rowPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a row is created."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AdaptiveDetailRowPreparingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [adaptiveDetailRowPreparing] event handler's argument."
+    },
+    {
+      "name": "CellClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [cellClick] event handler's argument."
+    },
+    {
+      "name": "CellDblClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [cellDblClick] event handler's argument."
+    },
+    {
+      "name": "CellHoverChangedEvent",
+      "subMembers": [
+        {
+          "name": "CellHoverChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellHoverChanged] event handler's argument."
+        },
+        {
+          "name": "eventType",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellInfo",
+      "subMembers": [
+        {
+          "name": "CellInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxTreeListColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxTreeListRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellPreparedEvent",
+      "subMembers": [
+        {
+          "name": "CellPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellPrepared] event handler's argument."
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "oldValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "watch",
+          "type": "function()",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextMenuPreparingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuPreparing] event handler's argument."
+        },
+        {
+          "name": "column",
+          "type": "dxTreeListColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxTreeListRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "Enums.GridsContextMenuTarget",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DataErrorOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [dataErrorOccurred] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EditCanceledEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [editCanceled] event handler's argument."
+    },
+    {
+      "name": "EditCancelingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [editCanceling] event handler's argument."
+    },
+    {
+      "name": "Editing",
+      "subMembers": [
+        {
+          "name": "Editing",
+          "type": "module: ui/tree_list",
+          "default": null,
+          "description": "Configures editing."
+        },
+        {
+          "name": "allowAdding",
+          "type": "Boolean | function(options)",
+          "default": "false",
+          "description": "Specifies whether a user can add new rows. It is called for each data row when defined as a function."
+        },
+        {
+          "name": "allowDeleting",
+          "type": "Boolean | function(options)",
+          "default": "false",
+          "description": "Specifies whether a user can delete rows. It is called for each data row when defined as a function."
+        },
+        {
+          "name": "allowUpdating",
+          "type": "Boolean | function(options)",
+          "default": "false",
+          "description": "Specifies whether a user can update rows. It is called for each data row when defined as a function"
+        },
+        {
+          "name": "texts",
+          "type": "Object",
+          "default": null,
+          "description": "Contains properties that specify texts for editing-related UI elements."
+        }
+      ]
+    },
+    {
+      "name": "EditingStartEvent",
+      "subMembers": [
+        {
+          "name": "EditingStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editingStart] event handler's argument."
+        },
+        {
+          "name": "column",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "EditingTexts",
+      "subMembers": [
+        {
+          "name": "EditingTexts",
+          "type": "module: ui/tree_list",
+          "default": null,
+          "description": "Contains properties that specify texts for editing-related UI elements."
+        },
+        {
+          "name": "addRowToNode",
+          "type": "String",
+          "default": "'Add'",
+          "description": "Specifies text for the button that adds a new nested row. Applies if the **editing**.[mode] is *\"batch\"* or *\"cell\"*."
+        }
+      ]
+    },
+    {
+      "name": "EditorPreparedEvent",
+      "subMembers": [
+        {
+          "name": "EditorPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorPrepared] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxTreeListRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "setValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "updateValueTimeout",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "EditorPreparingEvent",
+      "subMembers": [
+        {
+          "name": "EditorPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorPreparing] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorOptions",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxTreeListRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "setValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "updateValueTimeout",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedCellChangedEvent",
+      "subMembers": [
+        {
+          "name": "FocusedCellChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedCellChanged] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxTreeListColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxTreeListRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedCellChangingEvent",
+      "subMembers": [
+        {
+          "name": "FocusedCellChangingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedCellChanging] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxTreeListColumn>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isHighlighted",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newColumnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "prevColumnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "prevRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rows",
+          "type": "Array<dxTreeListRowObject>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedRowChangedEvent",
+      "subMembers": [
+        {
+          "name": "FocusedRowChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedRowChanged] event handler's argument."
+        },
+        {
+          "name": "row",
+          "type": "dxTreeListRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedRowChangingEvent",
+      "subMembers": [
+        {
+          "name": "FocusedRowChangingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedRowChanging] event handler's argument."
+        },
+        {
+          "name": "newRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "prevRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rows",
+          "type": "Array<dxTreeListRowObject>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InitNewRowEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initNewRow] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "KeyDownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyDown] event handler's argument."
+    },
+    {
+      "name": "NodesInitializedEvent",
+      "subMembers": [
+        {
+          "name": "NodesInitializedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [nodesInitialized] event handler's argument."
+        },
+        {
+          "name": "root",
+          "type": "dxTreeListNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "Paging",
+      "subMembers": [
+        {
+          "name": "Paging",
+          "type": "module: ui/tree_list",
+          "default": null,
+          "description": "An object that configures paging."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether paging is enabled."
+        }
+      ]
+    },
+    {
+      "name": "RowClickEvent",
+      "subMembers": [
+        {
+          "name": "RowClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [rowClick] event handler's argument."
+        },
+        {
+          "name": "columns",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "handled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "level",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "node",
+          "type": "dxTreeListNode",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowCollapsedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowCollapsed] event handler's argument."
+    },
+    {
+      "name": "RowCollapsingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowCollapsing] event handler's argument."
+    },
+    {
+      "name": "RowDblClickEvent",
+      "subMembers": [
+        {
+          "name": "RowDblClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [rowDblClick] event handler's argument."
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxTreeListColumn>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowExpandedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowExpanded] event handler's argument."
+    },
+    {
+      "name": "RowExpandingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowExpanding] event handler's argument."
+    },
+    {
+      "name": "RowInsertedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowInserted] event handler's argument."
+    },
+    {
+      "name": "RowInsertingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowInserting] event handler's argument."
+    },
+    {
+      "name": "RowPreparedEvent",
+      "subMembers": [
+        {
+          "name": "RowPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [rowPrepared] event handler's argument."
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxTreeListColumn>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "level",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "node",
+          "type": "dxTreeListNode",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowRemovedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowRemoved] event handler's argument."
+    },
+    {
+      "name": "RowRemovingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowRemoving] event handler's argument."
+    },
+    {
+      "name": "RowUpdatedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowUpdated] event handler's argument."
+    },
+    {
+      "name": "RowUpdatingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowUpdating] event handler's argument."
+    },
+    {
+      "name": "RowValidatingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowValidating] event handler's argument."
+    },
+    {
+      "name": "SavedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [saved] event handler's argument."
+    },
+    {
+      "name": "SavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [saving] event handler's argument."
+    },
+    {
+      "name": "Scrolling",
+      "subMembers": [
+        {
+          "name": "Scrolling",
+          "type": "module: ui/tree_list",
+          "default": null,
+          "description": "Configures scrolling."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.ScrollMode",
+          "default": "'virtual'",
+          "description": "Specifies the scrolling mode."
+        }
+      ]
+    },
+    {
+      "name": "Selection",
+      "subMembers": [
+        {
+          "name": "Selection",
+          "type": "module: ui/tree_list",
+          "default": null,
+          "description": "Configures runtime selection."
+        },
+        {
+          "name": "recursive",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether selection is recursive."
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "ToolbarPreparingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [toolbarPreparing] event handler's argument."
+    },
+    {
+      "name": "TreeListCommandColumnType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the [command column] that this object customizes."
+    },
+    {
+      "name": "TreeListFilterMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the filter and search parameters."
+    },
+    {
+      "name": "TreeListPredefinedColumnButton",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies buttons in the edit column or create a custom [command column]."
+    },
+    {
+      "name": "TreeListPredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies buttons in the toolbar."
+    }
+  ]
+}

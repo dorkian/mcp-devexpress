@@ -1,0 +1,696 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the TreeView UI component."
+        },
+        {
+          "name": "animationEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to animate item collapsing and expanding."
+        },
+        {
+          "name": "collapseIcon",
+          "type": "String | null",
+          "default": "null",
+          "description": "Specifies a custom collapse icon."
+        },
+        {
+          "name": "createChildren",
+          "type": "function(parentNode)",
+          "default": null,
+          "description": "Allows you to load nodes on demand."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxTreeViewItem> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "dataStructure",
+          "type": "Enums.DataStructure",
+          "default": "'tree'",
+          "description": "Notifies the UI component of the data structure in use."
+        },
+        {
+          "name": "displayExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "expandAllEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not a user can expand all tree view items by the \"*\" hot key."
+        },
+        {
+          "name": "expandEvent",
+          "type": "Enums.TreeViewExpandEvent",
+          "default": "'dblclick'",
+          "description": "Specifies the event on which to expand/collapse a node."
+        },
+        {
+          "name": "expandIcon",
+          "type": "String | null",
+          "default": "null",
+          "description": "Specifies a custom expand icon."
+        },
+        {
+          "name": "expandNodesRecursive",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not all parent nodes of an initially expanded node are displayed expanded."
+        },
+        {
+          "name": "expandedExpr",
+          "type": "String | function()",
+          "default": "'expanded'",
+          "description": "Specifies which data source field specifies whether an item is expanded."
+        },
+        {
+          "name": "hasItemsExpr",
+          "type": "String | function()",
+          "default": "'hasItems'",
+          "description": "Specifies the name of the data source item field whose value defines whether or not the corresponding [node] includes child nodes."
+        },
+        {
+          "name": "itemTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxTreeViewItem>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemsExpr",
+          "type": null,
+          "default": null,
+          "description": "Specifies which data field contains nested items. Applies only if the [dataStructure] property is *\"tree\"*."
+        },
+        {
+          "name": "parentIdExpr",
+          "type": "String | function()",
+          "default": "'parentId'",
+          "description": "Specifies the name of the data source item field for holding the parent key of the corresponding [node]."
+        },
+        {
+          "name": "rootValue",
+          "type": "any",
+          "default": "0",
+          "description": "Specifies the [parent ID] value of the root item."
+        },
+        {
+          "name": "scrollDirection",
+          "type": "Enums.ScrollDirection",
+          "default": "'vertical'",
+          "description": "A string value specifying available scrolling directions."
+        },
+        {
+          "name": "searchEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "searchValue",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectAllText",
+          "type": "String",
+          "default": "'Select All'",
+          "description": "Specifies the text displayed at the \"Select All\" check box."
+        },
+        {
+          "name": "selectByClick",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether an item is selected if a user clicks it."
+        },
+        {
+          "name": "selectNodesRecursive",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether all child nodes should be selected when their parent node is selected. Applies only if the [selectionMode] is *\"multiple\"*."
+        },
+        {
+          "name": "selectedIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleOrMultiple",
+          "default": "'multiple'",
+          "description": "Specifies item selection mode. Applies only if selection is enabled."
+        },
+        {
+          "name": "showCheckBoxesMode",
+          "type": "Enums.TreeViewCheckBoxMode",
+          "default": "'none'",
+          "description": "Specifies the checkbox display mode."
+        },
+        {
+          "name": "useNativeScrolling",
+          "type": "Boolean",
+          "default": "true, false (desktop except Mac)",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "virtualModeEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Enables the virtual mode in which nodes are loaded on demand. Use it to enhance the performance on large datasets."
+        }
+      ]
+    },
+    {
+      "name": "Node",
+      "subMembers": [
+        {
+          "name": "Node",
+          "type": "Object",
+          "default": null,
+          "description": "A TreeView node."
+        },
+        {
+          "name": "children",
+          "type": "Array<dxTreeViewNode>",
+          "default": null,
+          "description": "Contains all the child nodes of the current node."
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "Equals to **true** if the node is disabled; otherwise **false**."
+        },
+        {
+          "name": "expanded",
+          "type": "Boolean",
+          "default": null,
+          "description": "Equals **true** if the node is expanded; **false** if collapsed."
+        },
+        {
+          "name": "itemData",
+          "type": "dxTreeViewItem",
+          "default": null,
+          "description": "Contains the data source object corresponding to the node."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "Contains the key value of the node."
+        },
+        {
+          "name": "parent",
+          "type": "dxTreeViewNode",
+          "default": null,
+          "description": "Refers to the parent node of the current node."
+        },
+        {
+          "name": "selected",
+          "type": "Boolean",
+          "default": null,
+          "description": "Equals to **true** if the node is selected; **false** if not."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "Contains the text displayed by the node."
+        }
+      ]
+    },
+    {
+      "name": "dxTreeView",
+      "type": null,
+      "default": null,
+      "description": "The TreeView UI component is a tree-like representation of textual data."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "collapseAll()",
+      "type": null,
+      "default": null,
+      "description": "Collapses all items."
+    },
+    {
+      "name": "collapseItem(itemData)",
+      "type": null,
+      "default": null,
+      "description": "Collapses an item with a specific key."
+    },
+    {
+      "name": "collapseItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Collapses an item found using its DOM node."
+    },
+    {
+      "name": "collapseItem(key)",
+      "type": null,
+      "default": null,
+      "description": "Collapses an item with a specific key."
+    },
+    {
+      "name": "expandAll()",
+      "type": null,
+      "default": null,
+      "description": "Expands all items. If you [load items on demand], this method expands only the loaded items."
+    },
+    {
+      "name": "expandItem(itemData)",
+      "type": null,
+      "default": null,
+      "description": "Expands an item found using its data object."
+    },
+    {
+      "name": "expandItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Expands an item found using its DOM node."
+    },
+    {
+      "name": "expandItem(key)",
+      "type": null,
+      "default": null,
+      "description": "Expands an item with a specific key."
+    },
+    {
+      "name": "getNodes()",
+      "type": null,
+      "default": null,
+      "description": "Gets all nodes."
+    },
+    {
+      "name": "getScrollable()",
+      "type": null,
+      "default": null,
+      "description": "Gets the instance of the UI component's scrollable part."
+    },
+    {
+      "name": "getSelectedNodeKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the keys of selected nodes."
+    },
+    {
+      "name": "getSelectedNodes()",
+      "type": null,
+      "default": null,
+      "description": "Gets selected nodes."
+    },
+    {
+      "name": "scrollToItem(itemData)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to an item found using its data."
+    },
+    {
+      "name": "scrollToItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to an item found using its DOM node."
+    },
+    {
+      "name": "scrollToItem(key)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to an item found using its key."
+    },
+    {
+      "name": "selectAll()",
+      "type": null,
+      "default": null,
+      "description": "Selects all nodes."
+    },
+    {
+      "name": "selectItem(itemData)",
+      "type": null,
+      "default": null,
+      "description": "Selects a node found using its data object."
+    },
+    {
+      "name": "selectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Selects a TreeView node found using its DOM node."
+    },
+    {
+      "name": "selectItem(key)",
+      "type": null,
+      "default": null,
+      "description": "Selects a node with a specific key."
+    },
+    {
+      "name": "unselectAll()",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of all nodes."
+    },
+    {
+      "name": "unselectItem(itemData)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of a node found using its data object."
+    },
+    {
+      "name": "unselectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of a TreeView node found using its DOM node."
+    },
+    {
+      "name": "unselectItem(key)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of a node with a specific key."
+    },
+    {
+      "name": "updateDimensions()",
+      "type": null,
+      "default": null,
+      "description": "Updates the tree view scrollbars according to the current size of the UI component content."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemCollapsed",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tree view item is collapsed."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemExpanded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tree view item is expanded."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onItemSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a single TreeView item is selected or selection is canceled."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectAllValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the \"Select All\" check box value is changed. Applies only if [showCheckBoxesMode] is *\"selectAll\"* and [selectionMode] is *\"multiple\"*."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a TreeView item is selected or selection is canceled."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemCollapsed",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tree view item is collapsed."
+    },
+    {
+      "name": "itemContextMenu",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemExpanded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tree view item is expanded."
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemRendered",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemSelectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tree view item is selected or selection is canceled."
+    },
+    {
+      "name": "selectAllValueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the \"Select All\" check box value is changed."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tree view item is selected or selection is canceled."
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemCollapsedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemCollapsed] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemExpandedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemExpanded] event handler's argument."
+    },
+    {
+      "name": "ItemHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemHold] event handler's argument."
+    },
+    {
+      "name": "ItemInfo",
+      "subMembers": [
+        {
+          "name": "ItemInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "node",
+          "type": "dxTreeViewNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "ItemSelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemSelectionChanged] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectAllValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectAllValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectAllValueChanged] event handler's argument."
+        },
+        {
+          "name": "value",
+          "type": "Boolean | undefined",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "TreeViewCheckBoxMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the checkbox display mode."
+    },
+    {
+      "name": "TreeViewExpandEvent",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the event on which to expand/collapse a node."
+    }
+  ]
+}

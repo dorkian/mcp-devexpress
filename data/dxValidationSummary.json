@@ -1,0 +1,309 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dataSource",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hint",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemHoldTimeout",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "noDataText",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "validationGroup",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the validation group for which summary should be generated."
+        },
+        {
+          "name": "visible",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxValidationSummary",
+      "type": null,
+      "default": null,
+      "description": "A UI component for displaying the result of checking [validation rules] for editors."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "getDataSource()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "refreshValidationGroup()",
+      "type": "'required' }],",
+      "default": null,
+      "description": "Resubscribes the ValidationSummary to a target [ValidationGroup]."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemHold",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemRendered",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemSelect",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemContextMenu",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemRendered",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemSelect",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

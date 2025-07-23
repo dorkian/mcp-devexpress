@@ -1,0 +1,212 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the MultiView UI component."
+        },
+        {
+          "name": "animationEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to animate the displayed item change."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<String, dxMultiViewItem, any> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "deferRendering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to render the view's content when it is displayed. If **false**, the content is rendered immediately."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<String, dxMultiViewItem, any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "loop",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not to scroll back to the first item after the last item is swiped."
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Number",
+          "default": "0",
+          "description": "The index of the currently displayed item."
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "swipeEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether or not to allow users to change the selected index by swiping."
+        }
+      ]
+    },
+    {
+      "name": "dxMultiView",
+      "type": null,
+      "default": null,
+      "description": "The MultiView is a UI component that contains several views. An end user navigates through the views by swiping them in the horizontal direction."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is selected or selection is canceled."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemHold] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    }
+  ]
+}

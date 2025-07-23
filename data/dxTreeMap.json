@@ -1,0 +1,954 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the contents, behavior and appearance of the TreeMap UI component."
+        },
+        {
+          "name": "childrenField",
+          "type": "String",
+          "default": "'items'",
+          "description": "Specifies the name of the data source field that provides nested items for a group. Applies to hierarchical data sources only."
+        },
+        {
+          "name": "colorField",
+          "type": "String",
+          "default": "'color'",
+          "description": "Specifies the name of the [data source] field that provides colors for tiles."
+        },
+        {
+          "name": "colorizer",
+          "subMembers": [
+            {
+              "name": "colorCodeField",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of the data source field whose values define the color of a tile. Applies only if the [type] property is *\"gradient\"* or *\"range\"*."
+            },
+            {
+              "name": "colorizeGroups",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not all tiles in a group must be colored uniformly. Applies only if the [type] property is *\"discrete\"*."
+            },
+            {
+              "name": "colorizer",
+              "type": "Object",
+              "default": null,
+              "description": "Manages the color settings."
+            },
+            {
+              "name": "palette",
+              "type": "Array<String> | Enums.Palette",
+              "default": "'Material'",
+              "description": "Sets the palette to be used to colorize tiles."
+            },
+            {
+              "name": "paletteExtensionMode",
+              "type": "Enums.PaletteExtensionMode",
+              "default": "'blend'",
+              "description": "Specifies what to do with colors in the [palette] when their number is less than the number of treemap tiles."
+            },
+            {
+              "name": "range",
+              "type": "Array<Number>",
+              "default": "undefined",
+              "description": "Allows you to paint tiles with similar values uniformly. Applies only if the [type] property is *\"gradient\"* or *\"range\"*."
+            },
+            {
+              "name": "type",
+              "type": "Enums.TreeMapColorizerType | undefined",
+              "default": "undefined",
+              "description": "Specifies the colorizing algorithm."
+            }
+          ]
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+          "default": null,
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "group",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the group borders."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "'#d3d3d3'",
+                  "description": "Colors the group borders."
+                },
+                {
+                  "name": "width",
+                  "type": "Number | undefined",
+                  "default": "1",
+                  "description": "Specifies the width of the group borders in pixels."
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#eeeeee'",
+              "description": "Colors the group headers."
+            },
+            {
+              "name": "group",
+              "type": "Object",
+              "default": null,
+              "description": "Configures groups."
+            },
+            {
+              "name": "headerHeight",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the height of the group headers in pixels."
+            },
+            {
+              "name": "hoverEnabled",
+              "type": "Boolean | undefined",
+              "default": "undefined",
+              "description": "Specifies whether groups change their style when a user pauses on them."
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures the appearance of the group borders in the hover state."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Colors the group borders in the hover state."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the width of the group borders in pixels. Applies to a group in the hover state."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors the group headers in the hover state."
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the appearance of groups in the hover state."
+                }
+              ]
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#767676'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies the font settings of the group labels."
+                    },
+                    {
+                      "name": "weight",
+                      "type": null,
+                      "default": "600",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the group labels."
+                },
+                {
+                  "name": "textOverflow",
+                  "type": "Enums.TextOverflow",
+                  "default": "'ellipsis'",
+                  "description": "Specifies what to do with labels that overflow their group headers: hide, truncated them with ellipsis, or leave them as they are."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Changes the visibility of the group labels."
+                }
+              ]
+            },
+            {
+              "name": "padding",
+              "type": "Number",
+              "default": "4",
+              "description": "Specifies the distance in pixels between group borders and content."
+            },
+            {
+              "name": "selectionStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures the appearance of the group borders in the selected state."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "'#232323'",
+                      "description": "Colors the group borders in the selected state."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the width of the group borders in pixels. Applies to a group in the selected state."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors the group headers in the selected state."
+                },
+                {
+                  "name": "selectionStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the appearance of groups in the selected state."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hoverEnabled",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether tiles and groups change their style when a user pauses on them."
+        },
+        {
+          "name": "idField",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the name of the data source field that provides IDs for items. Applies to plain [data sources] only."
+        },
+        {
+          "name": "interactWithGroup",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the user will interact with a single tile or its group."
+        },
+        {
+          "name": "labelField",
+          "type": "String",
+          "default": "'name'",
+          "description": "Specifies the name of the [data source] field that provides texts for tile and group labels."
+        },
+        {
+          "name": "layoutAlgorithm",
+          "type": "Enums.TreeMapLayoutAlgorithm | function(e)",
+          "default": "'squarified'",
+          "description": "Specifies the layout algorithm."
+        },
+        {
+          "name": "layoutDirection",
+          "type": "Enums.TreeMapLayoutDirection",
+          "default": "'leftTopRightBottom'",
+          "description": "Specifies the direction in which the items will be laid out."
+        },
+        {
+          "name": "margin",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maxDepth",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies how many hierarchical levels must be visualized."
+        },
+        {
+          "name": "parentField",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the name of the data source field that provides parent IDs for items. Applies to plain [data sources] only."
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleMultipleOrNone | undefined",
+          "default": "undefined",
+          "description": "Specifies whether a single or multiple nodes can be in the selected state simultaneously."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "400",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 400, width: 400}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "400",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "tile",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the tile borders."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "'#000000'",
+                  "description": "Colors the tile borders."
+                },
+                {
+                  "name": "width",
+                  "type": "Number | undefined",
+                  "default": "1",
+                  "description": "Specifies the width of the tile borders in pixels."
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#$5f8b95'",
+              "description": "Specifies a single color for all tiles."
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures the appearance of the tile borders in the hover state."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Colors the tile borders in the hover state."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the width of the tile borders in pixels. Applies to a tile in the hover state."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors tiles in the hover state."
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the appearance of tiles in the hover state."
+                }
+              ]
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#FFFFFF'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies the font settings of the tile labels."
+                    },
+                    {
+                      "name": "weight",
+                      "type": null,
+                      "default": "300",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the tile labels."
+                },
+                {
+                  "name": "textOverflow",
+                  "type": "Enums.TextOverflow",
+                  "default": "'ellipsis'",
+                  "description": "Specifies what to do with labels that overflow their tiles after applying [wordWrap]: hide, truncate them and display an ellipsis, or do nothing."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": null,
+                  "description": "Changes the visibility of the tile labels."
+                },
+                {
+                  "name": "wordWrap",
+                  "type": "Enums.WordWrap",
+                  "default": "'normal'",
+                  "description": "Specifies how to wrap texts that do not fit into a single line."
+                }
+              ]
+            },
+            {
+              "name": "selectionStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures the appearance of the tile borders in the selected state."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "'#232323'",
+                      "description": "Colors the tile borders in the selected state."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Specifies the width of the tile borders in pixels. Applies to a tile in the selected state."
+                    }
+                  ]
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors tiles in the selected state."
+                },
+                {
+                  "name": "selectionStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the appearance of tiles in the selected state."
+                }
+              ]
+            },
+            {
+              "name": "tile",
+              "type": "Object",
+              "default": null,
+              "description": "Configures tiles."
+            }
+          ]
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a tooltip."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": "function(info)",
+              "default": "undefined",
+              "description": "Allows you to change tooltip appearance."
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/tree_map:Tooltip",
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "valueField",
+          "type": "String",
+          "default": "'value'",
+          "description": "Specifies the name of the [data source] field that provides values for tiles."
+        }
+      ]
+    },
+    {
+      "name": "Node",
+      "subMembers": [
+        {
+          "name": "Fields",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "type": null,
+              "default": null,
+              "description": "Fields that provide information on the treemap node."
+            },
+            {
+              "name": "data",
+              "type": "any",
+              "default": null,
+              "description": "The object from the [data source] visualized by the node."
+            },
+            {
+              "name": "index",
+              "type": "Number",
+              "default": null,
+              "description": "The index of the current node in the array of all nodes on the same level."
+            },
+            {
+              "name": "level",
+              "type": "Number",
+              "default": null,
+              "description": "The level that the current node occupies in the hierarchy of nodes."
+            }
+          ]
+        },
+        {
+          "name": "Node",
+          "type": null,
+          "default": null,
+          "description": "This section describes the **Node** object, which represents a treemap node."
+        }
+      ]
+    },
+    {
+      "name": "dxTreeMap",
+      "type": null,
+      "default": null,
+      "description": "The TreeMap is a UI component that displays hierarchical data by using nested rectangles."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clearSelection()",
+      "type": null,
+      "default": null,
+      "description": "Deselects all nodes in the UI component."
+    },
+    {
+      "name": "drillUp()",
+      "type": null,
+      "default": null,
+      "description": "Drills one level up."
+    },
+    {
+      "name": "getCurrentNode()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current node."
+    },
+    {
+      "name": "getRootNode()",
+      "type": null,
+      "default": null,
+      "description": "Gets the root node."
+    },
+    {
+      "name": "hideTooltip()",
+      "type": null,
+      "default": null,
+      "description": "Hides the [tooltip]."
+    },
+    {
+      "name": "resetDrillDown()",
+      "type": null,
+      "default": null,
+      "description": "Resets the drill down level."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a node is clicked or tapped."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onDrill",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user drills up or down."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a node."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onNodesInitialized",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed only once, after the nodes are initialized."
+    },
+    {
+      "name": "onNodesRendering",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the nodes are displayed and each time the collection of [active nodes].md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#isActive') is changed."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a node is selected or selection is canceled."
+    },
+    {
+      "name": "click",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a node is clicked or tapped."
+    },
+    {
+      "name": "drill",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user drills up or down."
+    },
+    {
+      "name": "hoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a node."
+    },
+    {
+      "name": "nodesInitialized",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised only once, after the nodes are initialized."
+    },
+    {
+      "name": "nodesRendering",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the nodes are displayed and each time the collection of [active nodes].md '/Documentation/ApiReference/UI_Components/dxTreeMap/Node/Methods/#isActive') is changed."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a node is selected or selection is canceled."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ClickEvent",
+      "subMembers": [
+        {
+          "name": "ClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [click] event handler's argument."
+        },
+        {
+          "name": "node",
+          "type": "dxTreeMapNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "DrillEvent",
+      "subMembers": [
+        {
+          "name": "DrillEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [drill] event handler's argument."
+        },
+        {
+          "name": "node",
+          "type": "dxTreeMapNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "HoverChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [hoverChanged] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "InteractionInfo",
+      "subMembers": [
+        {
+          "name": "InteractionInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "node",
+          "type": "dxTreeMapNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "NodesInitializedEvent",
+      "subMembers": [
+        {
+          "name": "NodesInitializedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [nodesInitialized] event handler's argument."
+        },
+        {
+          "name": "root",
+          "type": "dxTreeMapNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "NodesRenderingEvent",
+      "subMembers": [
+        {
+          "name": "NodesRenderingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [nodesRendering] event handler's argument."
+        },
+        {
+          "name": "node",
+          "type": "dxTreeMapNode",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "Tooltip",
+      "subMembers": [
+        {
+          "name": "Tooltip",
+          "type": "module: viz/tree_map",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a tooltip."
+        },
+        {
+          "name": "customizeTooltip",
+          "type": "function(info) | undefined",
+          "default": "undefined",
+          "description": "Allows you to change tooltip appearance."
+        }
+      ]
+    },
+    {
+      "name": "TreeMapColorizerType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the colorizing algorithm."
+    },
+    {
+      "name": "TreeMapLayoutAlgorithm",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the layout algorithm."
+    },
+    {
+      "name": "TreeMapLayoutDirection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the direction in which the items will be laid out."
+    }
+  ]
+}

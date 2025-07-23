@@ -1,0 +1,456 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the Splitter UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "allowKeyboardNavigation",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to allow the Splitter to take focus and allow keyboard navigation."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxSplitterItem> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hint",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemHoldTimeout",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxSplitterItem>",
+          "default": null,
+          "description": "An array of items (panes) displayed by the UI component."
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "noDataText",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "orientation",
+          "type": "Enums.Orientation",
+          "default": "'horizontal'",
+          "description": "Specifies item orientation (layout)."
+        },
+        {
+          "name": "selectedIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "separatorSize",
+          "type": "Number",
+          "default": "8",
+          "description": "Specifies the size of a separator bar in pixels."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "dxSplitterItem",
+          "subMembers": [
+            {
+              "name": "collapsed",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether an item (pane) is initially collapsed."
+            },
+            {
+              "name": "collapsedSize",
+              "type": "Number | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the size of a collapsible item (pane) when collapsed in pixels or as a percentage."
+            },
+            {
+              "name": "collapsible",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether an item (pane) is collapsible."
+            },
+            {
+              "name": "disabled",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "dxSplitterItem",
+              "type": "Object",
+              "default": null,
+              "description": "A splitter item (pane)."
+            },
+            {
+              "name": "html",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "maxSize",
+              "type": "Number | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the maximum size of an item (pane) in pixels or as a percentage."
+            },
+            {
+              "name": "minSize",
+              "type": "Number | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the minimum size of an item (pane) in pixels or as a percentage."
+            },
+            {
+              "name": "resizable",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether an item (pane) is resizable."
+            },
+            {
+              "name": "size",
+              "type": "Number | String | undefined",
+              "default": "undefined",
+              "description": "Specifies the initial size of an item (pane) in pixels or as a percentage. The size changes after any layout alteration."
+            },
+            {
+              "name": "splitter",
+              "type": "dxSplitter_Options | undefined",
+              "default": "undefined",
+              "description": "Specifies a [splitter] inside an item (pane)."
+            },
+            {
+              "name": "visible",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxSplitter",
+      "type": null,
+      "default": null,
+      "description": "Splitter is a UI component that allows you to divide a page or section into multiple adjustable [panes]."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an item (pane) is clicked or tapped."
+    },
+    {
+      "name": "onItemCollapsed",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an item (pane) is collapsed."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an item (pane) is right-clicked or pressed."
+    },
+    {
+      "name": "onItemExpanded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an item (pane) is expanded."
+    },
+    {
+      "name": "onItemHold",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after an item (pane) is rendered."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onResize",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed each time an item (pane) is resized by one pixel."
+    },
+    {
+      "name": "onResizeEnd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when resizing ends."
+    },
+    {
+      "name": "onResizeStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when resizing starts."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemCollapsed",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an item (pane) is collapsed."
+    },
+    {
+      "name": "itemExpanded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an item (pane) is expanded."
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "resize",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised each time an item (pane) is resized by one pixel."
+    },
+    {
+      "name": "resizeEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when resizing ends."
+    },
+    {
+      "name": "resizeStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when resizing starts."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemCollapsedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemCollapsed] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemExpandedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemExpanded] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ResizeEndEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [resizeEnd] event handler's argument."
+    },
+    {
+      "name": "ResizeEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [resize] event handler's argument."
+    },
+    {
+      "name": "ResizeInfo",
+      "subMembers": [
+        {
+          "name": "ResizeInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "handleElement",
+          "type": "DxElement",
+          "default": null,
+          "description": "A resize handle element."
+        }
+      ]
+    },
+    {
+      "name": "ResizeStartEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [resizeStart] event handler's argument."
+    }
+  ]
+}

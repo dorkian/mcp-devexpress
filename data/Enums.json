@@ -1,0 +1,55 @@
+{
+  "properties": [
+    {
+      "name": "DataSourceEventName",
+      "type": "Union",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "Enums",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "EventName",
+      "type": "Union",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "GroupingInterval",
+      "type": "Union",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "HttpMethod",
+      "type": "Union",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "PermutedUnionLength",
+      "type": "Union",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "StoreEventName",
+      "type": "Union",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "eventTypes",
+      "type": "Union",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}
