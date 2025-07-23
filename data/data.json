@@ -1,0 +1,189 @@
+{
+  "properties": [
+    {
+      "name": "10 data",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "FilterDescriptor",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "GroupDescriptor",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "LangParams",
+      "subMembers": [
+        {
+          "name": "LangParams",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies parameters for language-specific sorting and filtering."
+        },
+        {
+          "name": "collatorOptions",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#parameters\" target=\"_blank\">Intl.Collator</a> options."
+        },
+        {
+          "name": "locale",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the locale whose features affect sorting and filtering."
+        }
+      ]
+    },
+    {
+      "name": "ResolvedData",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies returned data of the `load()` method in CustomStore."
+    },
+    {
+      "name": "SearchOperation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the comparison operation used in searching."
+    },
+    {
+      "name": "SelectDescriptor",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "SortDescriptor",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "SummaryDescriptor",
+      "type": "Object",
+      "default": null,
+      "description": "A total summary expression for `loadOptions`."
+    },
+    {
+      "name": "custom-store",
+      "subMembers": [
+        {
+          "name": "GroupItem",
+          "subMembers": [
+            {
+              "name": "GroupItem",
+              "type": "Object",
+              "default": null,
+              "description": "An additional type for [LoadResult]."
+            },
+            {
+              "name": "count",
+              "type": "Number",
+              "default": null,
+              "description": "A total number of items."
+            },
+            {
+              "name": "items",
+              "type": "Array<any> | Array<GroupItem> | null",
+              "default": null,
+              "description": "Contains an array of items or [GroupItems], or nothing."
+            },
+            {
+              "name": "key",
+              "type": "any | String | Number",
+              "default": null,
+              "description": "A key to group items by."
+            },
+            {
+              "name": "summary",
+              "type": "Array<any>",
+              "default": null,
+              "description": "A summary array that contains the resulting values in the same order as the [summary definitions]."
+            }
+          ]
+        },
+        {
+          "name": "LoadResult",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies returned data of the `load()` method in CustomStore."
+        },
+        {
+          "name": "LoadResultObject",
+          "subMembers": [
+            {
+              "name": "LoadResultObject",
+              "type": "Object",
+              "default": null,
+              "description": "An additional type for [LoadResult]."
+            },
+            {
+              "name": "data",
+              "type": "Array<any> | Array<GroupItem>",
+              "default": null,
+              "description": "Contains an array of items or [GroupItems]."
+            },
+            {
+              "name": "groupCount",
+              "type": "Number",
+              "default": null,
+              "description": "A number of groups."
+            },
+            {
+              "name": "summary",
+              "type": "Array<any>",
+              "default": null,
+              "description": "A summary array that contains the resulting values in the same order as the [summary definitions]."
+            },
+            {
+              "name": "totalCount",
+              "type": "Number",
+              "default": null,
+              "description": "A total number of items."
+            }
+          ]
+        },
+        {
+          "name": "custom-store",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "isGroupItemsArray",
+          "type": null,
+          "default": null,
+          "description": "A <a href=\"https://www.typescriptlang.org/docs/handbook/advanced-types.html\">type guard</a> function that checks whether [LoadResult] is an array of [GroupItems]."
+        },
+        {
+          "name": "isItemsArray",
+          "type": null,
+          "default": null,
+          "description": "A <a href=\"https://www.typescriptlang.org/docs/handbook/advanced-types.html\">type guard</a> function that checks whether [LoadResult] is an array of items."
+        },
+        {
+          "name": "isLoadResultObject",
+          "type": null,
+          "default": null,
+          "description": "A <a href=\"https://www.typescriptlang.org/docs/handbook/advanced-types.html\">type guard</a> function that checks whether [LoadResult] is a [LoadResultObject]."
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

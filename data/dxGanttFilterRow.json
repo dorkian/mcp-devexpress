@@ -1,0 +1,55 @@
+{
+  "properties": [
+    {
+      "name": "betweenEndText",
+      "type": "String",
+      "default": "'End'",
+      "description": "Specifies the null text for the editor that sets the end of a range for the \"between\" filter operation."
+    },
+    {
+      "name": "betweenStartText",
+      "type": "String",
+      "default": "'Start'",
+      "description": "Specifies the null text for the editor that sets the start of a range for the \"between\" filter operation."
+    },
+    {
+      "name": "dxGanttFilterRow",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the filter row."
+    },
+    {
+      "name": "operationDescriptions",
+      "type": "dxGanttFilterRowOperationDescriptions",
+      "default": null,
+      "description": "Specifies descriptions for filter operations in the filter list."
+    },
+    {
+      "name": "resetOperationText",
+      "type": "String",
+      "default": "'Reset'",
+      "description": "Specifies text for the \"reset\" operation."
+    },
+    {
+      "name": "showAllText",
+      "type": "String",
+      "default": "'(All)'",
+      "description": "Specifies text for the \"All\" filter operation."
+    },
+    {
+      "name": "showOperationChooser",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether to display filter icons."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether the filter row is visible."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

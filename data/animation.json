@@ -1,0 +1,42 @@
+{
+  "properties": [
+    {
+      "name": "00 animation",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "AnimationType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the animation type."
+    },
+    {
+      "name": "position",
+      "subMembers": [
+        {
+          "name": "CollisionResolution",
+          "type": "Union",
+          "default": null,
+          "description": "Specifies how to resolve horizontal or vertical collisions."
+        },
+        {
+          "name": "CollisionResolutionCombination",
+          "type": "Union",
+          "default": null,
+          "description": "Specifies how to resolve collisions - when the overlay element exceeds the [boundary] element."
+        },
+        {
+          "name": "position",
+          "type": null,
+          "default": null,
+          "description": "-"
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,267 @@
+{
+  "properties": [
+    {
+      "name": "BaseWidgetAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "allowDragging",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether users can drag and drop the annotation."
+    },
+    {
+      "name": "arrowLength",
+      "type": "Number",
+      "default": "14",
+      "description": "Specifies the length of the annotation's arrow in pixels."
+    },
+    {
+      "name": "arrowWidth",
+      "type": "Number",
+      "default": "14",
+      "description": "Specifies the width of the annotation's arrow at its junction with the annotation rectangle."
+    },
+    {
+      "name": "border",
+      "subMembers": [
+        {
+          "name": "border",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the appearance of the annotation's border."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#dddddd'",
+          "description": "Colors the annotation's border."
+        },
+        {
+          "name": "cornerRadius",
+          "type": "Number",
+          "default": "0, 4 (Fluent, Material)",
+          "description": "Makes the annotation's corners rounded."
+        },
+        {
+          "name": "dashStyle",
+          "type": "Enums.DashStyle",
+          "default": "'solid'",
+          "description": "Specifies the dash style of the annotation's border."
+        },
+        {
+          "name": "opacity",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the opacity of the annotation's border."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies the visibility of the annotation's border."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the width of the annotation's border in pixels."
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "type": "String",
+      "default": "'#ffffff'",
+      "description": "Specifies the color that fills the annotation."
+    },
+    {
+      "name": "data",
+      "type": "any",
+      "default": null,
+      "description": "A container for custom data."
+    },
+    {
+      "name": "description",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the annotation's description in the [tooltip]."
+    },
+    {
+      "name": "font",
+      "subMembers": [
+        {
+          "name": "color",
+          "type": null,
+          "default": "'#333333'",
+          "description": null
+        },
+        {
+          "name": "font",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the annotation's font properties. Applies to [text annotations] only."
+        }
+      ]
+    },
+    {
+      "name": "height",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the annotation's height in pixels."
+    },
+    {
+      "name": "image",
+      "subMembers": [
+        {
+          "name": "height",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the image's height in pixels."
+        },
+        {
+          "name": "image",
+          "type": "String | Object",
+          "default": null,
+          "description": "Configures the image to be displayed in the annotation. Applies only if the [type] is *\"image\"*."
+        },
+        {
+          "name": "url",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the image's URL."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the image's width in pixels."
+        }
+      ]
+    },
+    {
+      "name": "offsetX",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Moves the annotation horizontally."
+    },
+    {
+      "name": "offsetY",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Moves the annotation vertically."
+    },
+    {
+      "name": "opacity",
+      "type": "Number",
+      "default": "0.9",
+      "description": "Specifies the annotation's opacity."
+    },
+    {
+      "name": "paddingLeftRight",
+      "type": "Number",
+      "default": "10",
+      "description": "Used with [paddingTopBottom] to generate an empty space around the annotation's text or image (specified in pixels)."
+    },
+    {
+      "name": "paddingTopBottom",
+      "type": "Number",
+      "default": "10",
+      "description": "Along with [paddingLeftRight], generates an empty space around the annotation's text or image; specified in pixels."
+    },
+    {
+      "name": "shadow",
+      "subMembers": [
+        {
+          "name": "blur",
+          "type": "Number",
+          "default": "4",
+          "description": "Specifies the blur distance of the shadows. A larger value increases the blur distance."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#000000'",
+          "description": "Colors the annotation's shadows."
+        },
+        {
+          "name": "offsetX",
+          "type": "Number",
+          "default": "0",
+          "description": "Moves the shadows horizontally."
+        },
+        {
+          "name": "offsetY",
+          "type": "Number",
+          "default": "1",
+          "description": "Moves the shadows vertically."
+        },
+        {
+          "name": "opacity",
+          "type": "Number",
+          "default": "0.15",
+          "description": "Specifies the opacity of the shadows."
+        },
+        {
+          "name": "shadow",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the annotation's shadows."
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the annotation's text. Applies only if the [type] is *\"text\"*."
+    },
+    {
+      "name": "textOverflow",
+      "type": "Enums.TextOverflow",
+      "default": "'ellipsis'",
+      "description": "Specifies what to do with the annotation's [text] when it overflows the allocated space after applying [wordWrap]: hide, truncate it and display an ellipsis, or do nothing."
+    },
+    {
+      "name": "tooltipEnabled",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the annotation tooltip is enabled."
+    },
+    {
+      "name": "type",
+      "type": "Enums.AnnotationType | undefined",
+      "default": "undefined",
+      "description": "Specifies whether the annotation displays [text], an [image], or a [template]. This is a required setting."
+    },
+    {
+      "name": "width",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the annotation's width in pixels."
+    },
+    {
+      "name": "wordWrap",
+      "type": "Enums.WordWrap",
+      "default": "'normal'",
+      "description": "Specifies how to wrap the annotation's [text] if it does not fit into a single line."
+    },
+    {
+      "name": "x",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Used with [y] to position the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the UI component."
+    },
+    {
+      "name": "y",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Used with [x] to position the annotation's center at a specific pixel coordinate. (0, 0) is the upper left corner of the UI component."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

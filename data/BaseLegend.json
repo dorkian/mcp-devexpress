@@ -1,0 +1,359 @@
+{
+  "properties": [
+    {
+      "name": "BaseLegend",
+      "type": "Object",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "backgroundColor",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Colors the legend's background."
+    },
+    {
+      "name": "border",
+      "subMembers": [
+        {
+          "name": "border",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the legend's border."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#d3d3d3'",
+          "description": "Colors the legend's border."
+        },
+        {
+          "name": "cornerRadius",
+          "type": "Number",
+          "default": "0",
+          "description": "Makes all the legend's corners rounded."
+        },
+        {
+          "name": "dashStyle",
+          "type": "Enums.DashStyle",
+          "default": "'solid'",
+          "description": "Sets a dash style for the legend's border."
+        },
+        {
+          "name": "opacity",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the transparency of the legend's border."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Shows the legend's border."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the width of the legend's border in pixels."
+        }
+      ]
+    },
+    {
+      "name": "columnCount",
+      "type": "Number",
+      "default": "0",
+      "description": "Arranges legend items into several columns."
+    },
+    {
+      "name": "columnItemSpacing",
+      "type": "Number",
+      "default": "20",
+      "description": "Specifies an empty space between item columns in pixels."
+    },
+    {
+      "name": "font",
+      "subMembers": [
+        {
+          "name": "color",
+          "type": null,
+          "default": "'#767676'",
+          "description": null
+        },
+        {
+          "name": "font",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the legend items' font properties."
+        }
+      ]
+    },
+    {
+      "name": "horizontalAlignment",
+      "type": "Enums.HorizontalAlignment",
+      "default": "'right'",
+      "description": "Along with [verticalAlignment], specifies the legend's position."
+    },
+    {
+      "name": "itemTextPosition",
+      "type": "Enums.Position | undefined",
+      "default": "undefined",
+      "description": "Specifies the text's position relative to the marker in a legend item."
+    },
+    {
+      "name": "itemsAlignment",
+      "type": "Enums.HorizontalAlignment | undefined",
+      "default": "undefined",
+      "description": "Aligns items in the last column or row (depending on the legend's [orientation]). Applies when legend items are not divided into columns or rows equally."
+    },
+    {
+      "name": "margin",
+      "subMembers": [
+        {
+          "name": "bottom",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the legend's bottom margin in pixels."
+        },
+        {
+          "name": "left",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the legend's left margin in pixels."
+        },
+        {
+          "name": "margin",
+          "type": "Number | Object",
+          "default": "10",
+          "description": "Generates an empty space, measured in pixels, around the legend."
+        },
+        {
+          "name": "right",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the legend's right margin in pixels."
+        },
+        {
+          "name": "top",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the legend's top margin in pixels."
+        }
+      ]
+    },
+    {
+      "name": "markerSize",
+      "type": "Number",
+      "default": "20",
+      "description": "Specifies the marker's size in a legend item in pixels."
+    },
+    {
+      "name": "orientation",
+      "type": "Enums.Orientation | undefined",
+      "default": "undefined",
+      "description": "Arranges legend items vertically (in a column) or horizontally (in a row). The default value is *\"horizontal\"* if the **legend**.[horizontalAlignment] is *\"center\"*. Otherwise, it is *\"vertical\"*."
+    },
+    {
+      "name": "paddingLeftRight",
+      "type": "Number",
+      "default": "10",
+      "description": "Generates an empty space, measured in pixels, between the legend's left/right border and its items."
+    },
+    {
+      "name": "paddingTopBottom",
+      "type": "Number",
+      "default": "10",
+      "description": "Generates an empty space, measured in pixels, between the legend's top/bottom border and its items."
+    },
+    {
+      "name": "rowCount",
+      "type": "Number",
+      "default": "0",
+      "description": "Arranges legend items in several rows."
+    },
+    {
+      "name": "rowItemSpacing",
+      "type": "Number",
+      "default": "8",
+      "description": "Specifies an empty space between item rows in pixels."
+    },
+    {
+      "name": "title",
+      "subMembers": [
+        {
+          "name": "font",
+          "subMembers": [
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#232323'",
+              "description": null
+            },
+            {
+              "name": "family",
+              "type": null,
+              "default": "'\"Segoe UI Light\", \"Helvetica Neue Light\", \"Segoe UI\", \"Helvetica Neue\", \"Trebuchet MS\", Verdana, sans-serif'",
+              "description": null
+            },
+            {
+              "name": "font",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the legend title's font properties."
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "18",
+              "description": null
+            },
+            {
+              "name": "weight",
+              "type": null,
+              "default": "200",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Enums.HorizontalAlignment | undefined",
+          "default": "undefined",
+          "description": "Along with [verticalAlignment], specifies the legend title's position."
+        },
+        {
+          "name": "margin",
+          "subMembers": [
+            {
+              "name": "bottom",
+              "type": "Number",
+              "default": "9",
+              "description": "Specifies the legend title's bottom margin."
+            },
+            {
+              "name": "left",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the legend title's left margin."
+            },
+            {
+              "name": "margin",
+              "type": "Object",
+              "default": null,
+              "description": "Generates space around the legend title."
+            },
+            {
+              "name": "right",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the legend title's right margin."
+            },
+            {
+              "name": "top",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the legend title's top margin."
+            }
+          ]
+        },
+        {
+          "name": "placeholderSize",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Reserves a pixel-measured space for the legend title."
+        },
+        {
+          "name": "subtitle",
+          "subMembers": [
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#232323'",
+                  "description": null
+                },
+                {
+                  "name": "family",
+                  "type": null,
+                  "default": "'\"Segoe UI Light\", \"Helvetica Neue Light\", \"Segoe UI\", \"Helvetica Neue\", \"Trebuchet MS\", Verdana, sans-serif'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the legend subtitle's font properties."
+                },
+                {
+                  "name": "size",
+                  "type": null,
+                  "default": "14",
+                  "description": null
+                },
+                {
+                  "name": "weight",
+                  "type": null,
+                  "default": "200",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "offset",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the distance between the legend's [title] and subtitle in pixels."
+            },
+            {
+              "name": "subtitle",
+              "type": "Object | String",
+              "default": null,
+              "description": "Configures the legend subtitle. The subtitle appears only if the [title] is specified."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": "null",
+              "description": "Specifies the subtitle's text."
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": "null",
+          "description": "Specifies the legend title's text."
+        },
+        {
+          "name": "title",
+          "type": "Object | String",
+          "default": null,
+          "description": "Configures the legend title."
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Enums.VerticalEdge",
+          "default": "'top'",
+          "description": "Specifies the legend title's vertical alignment."
+        }
+      ]
+    },
+    {
+      "name": "verticalAlignment",
+      "type": "Enums.VerticalEdge",
+      "default": "'top'",
+      "description": "Along with [horizontalAlignment], specifies the legend's position."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies the legend's visibility."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

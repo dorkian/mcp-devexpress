@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "DataChange",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "data",
+      "type": "any",
+      "default": null,
+      "description": "An object with updated row fields."
+    },
+    {
+      "name": "insertAfterKey",
+      "type": "any",
+      "default": null,
+      "description": "A key that identifies a record after which a new record should be inserted. Applies only if the [type] is *\"insert\"*."
+    },
+    {
+      "name": "insertBeforeKey",
+      "type": "any",
+      "default": null,
+      "description": "A key that identifies the record before which a new record should be inserted. Applies only if the [type] is *\"insert\"*."
+    },
+    {
+      "name": "key",
+      "type": "any",
+      "default": null,
+      "description": "The key of the row being created, updated, or removed."
+    },
+    {
+      "name": "type",
+      "type": "Enums.DataChangeType",
+      "default": null,
+      "description": "Data change type."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,1828 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines the Gantt UI component's configuration properties."
+        },
+        {
+          "name": "allowSelection",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether users can select tasks in the Gantt."
+        },
+        {
+          "name": "columns",
+          "subMembers": [
+            {
+              "name": "columns",
+              "type": "Array<dxGanttColumn, String>",
+              "default": "undefined",
+              "description": "An array of columns in the Gantt."
+            },
+            {
+              "name": "customizeText",
+              "type": null,
+              "default": null,
+              "description": "Customizes the text displayed in column cells."
+            },
+            {
+              "name": "filterOperations",
+              "type": null,
+              "default": null,
+              "description": "Specifies available filter operations. Applies if [allowFiltering] is **true** and the [filterRow] is visible."
+            },
+            {
+              "name": "filterType",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "filterValue",
+              "type": null,
+              "default": null,
+              "description": "Specifies the column's filter value displayed in the [filter row]."
+            }
+          ]
+        },
+        {
+          "name": "contextMenu",
+          "type": "dxGanttContextMenu",
+          "default": null,
+          "description": "Configures the context menu settings."
+        },
+        {
+          "name": "dependencies",
+          "subMembers": [
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Binds the UI component to the data source which contains dependencies."
+            },
+            {
+              "name": "dependencies",
+              "type": "Object",
+              "default": "null",
+              "description": "Configures dependencies."
+            },
+            {
+              "name": "keyExpr",
+              "type": "String | function()",
+              "default": "'id'",
+              "description": "Specifies the data field that provides keys for dependencies."
+            },
+            {
+              "name": "predecessorIdExpr",
+              "type": "String | function()",
+              "default": "'predecessorId'",
+              "description": "Specifies the data field that provides predecessor IDs."
+            },
+            {
+              "name": "successorIdExpr",
+              "type": "String | function()",
+              "default": "'successorId'",
+              "description": "Specifies the data field that provides successor IDs."
+            },
+            {
+              "name": "typeExpr",
+              "type": "String | function()",
+              "default": "'type'",
+              "description": "Specifies the data field that provides dependency types."
+            }
+          ]
+        },
+        {
+          "name": "editing",
+          "subMembers": [
+            {
+              "name": "allowDependencyAdding",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can add [dependencies]."
+            },
+            {
+              "name": "allowDependencyDeleting",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can delete [dependencies]."
+            },
+            {
+              "name": "allowResourceAdding",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can add [resources]."
+            },
+            {
+              "name": "allowResourceDeleting",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can delete [resources]."
+            },
+            {
+              "name": "allowResourceUpdating",
+              "type": "Boolean",
+              "default": "true",
+              "description": "For internal use only."
+            },
+            {
+              "name": "allowTaskAdding",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can add [tasks]."
+            },
+            {
+              "name": "allowTaskDeleting",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can delete [tasks]."
+            },
+            {
+              "name": "allowTaskResourceUpdating",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether users can update a [task's resources]."
+            },
+            {
+              "name": "allowTaskUpdating",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can update [tasks]."
+            },
+            {
+              "name": "editing",
+              "type": "Object",
+              "default": null,
+              "description": "Configures edit properties."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user can edit tasks, resources and dependencies."
+            }
+          ]
+        },
+        {
+          "name": "endDateRange",
+          "type": "Date",
+          "default": "null",
+          "description": "Specifies the end date of the date interval in the Gantt chart."
+        },
+        {
+          "name": "filterRow",
+          "type": "dxGanttFilterRow",
+          "default": null,
+          "description": "Configures filter row settings."
+        },
+        {
+          "name": "firstDayOfWeek",
+          "type": "Enums.FirstDayOfWeek | undefined",
+          "default": "undefined",
+          "description": "Specifies the first day of a week."
+        },
+        {
+          "name": "headerFilter",
+          "type": "dxGanttHeaderFilter",
+          "default": null,
+          "description": "Configures the header filter settings."
+        },
+        {
+          "name": "resourceAssignments",
+          "subMembers": [
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Binds the UI component to the data source, which contains resource assignments."
+            },
+            {
+              "name": "keyExpr",
+              "type": "String | function()",
+              "default": "'id'",
+              "description": "Specifies the data field that provides keys for resource assignments."
+            },
+            {
+              "name": "resourceAssignments",
+              "type": "Object",
+              "default": "null",
+              "description": "Configures resource assignments."
+            },
+            {
+              "name": "resourceIdExpr",
+              "type": "String | function()",
+              "default": "'resourceId'",
+              "description": "Specifies the data field that provides resource IDs."
+            },
+            {
+              "name": "taskIdExpr",
+              "type": "String | function()",
+              "default": "'taskId'",
+              "description": "Specifies the data field that provides task IDs."
+            }
+          ]
+        },
+        {
+          "name": "resources",
+          "subMembers": [
+            {
+              "name": "colorExpr",
+              "type": "String | function()",
+              "default": "'color'",
+              "description": "Specifies the data field that provides resources' color."
+            },
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Binds the UI component to the data source, which contains resources."
+            },
+            {
+              "name": "keyExpr",
+              "type": "String | function()",
+              "default": "'id'",
+              "description": "Specifies the data field that provides keys for resources."
+            },
+            {
+              "name": "resources",
+              "type": "Object",
+              "default": "null",
+              "description": "Configures task resources."
+            },
+            {
+              "name": "textExpr",
+              "type": "String | function()",
+              "default": "'text'",
+              "description": "Specifies the data field that provides resource texts."
+            }
+          ]
+        },
+        {
+          "name": "rootValue",
+          "type": "any",
+          "default": "0",
+          "description": "Specifies the root task's identifier."
+        },
+        {
+          "name": "rtlEnabled",
+          "type": null,
+          "default": null,
+          "description": "Switches the UI component to a right-to-left representation."
+        },
+        {
+          "name": "scaleType",
+          "type": "Enums.GanttScaleType",
+          "default": "'auto'",
+          "description": "Specifies the zoom level of tasks in the Gantt chart."
+        },
+        {
+          "name": "scaleTypeRange",
+          "subMembers": [
+            {
+              "name": "max",
+              "type": "Enums.GanttScaleType",
+              "default": "'years'",
+              "description": "Specifies the maximum zoom level of tasks in the Gantt chart."
+            },
+            {
+              "name": "min",
+              "type": "Enums.GanttScaleType",
+              "default": "'minutes'",
+              "description": "Specifies the minimum zoom level of tasks in the Gantt chart."
+            },
+            {
+              "name": "scaleTypeRange",
+              "type": "Object",
+              "default": null,
+              "description": "Configures zoom range settings."
+            }
+          ]
+        },
+        {
+          "name": "selectedRowKey",
+          "type": "any | undefined",
+          "default": "undefined",
+          "description": "Allows you to select a row or determine which row is selected."
+        },
+        {
+          "name": "showDependencies",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display [dependencies] between tasks."
+        },
+        {
+          "name": "showResources",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display [task resources]."
+        },
+        {
+          "name": "showRowLines",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show/hide horizontal faint lines that separate tasks."
+        },
+        {
+          "name": "sorting",
+          "type": "dxGanttSorting",
+          "default": null,
+          "description": "Configures sort settings."
+        },
+        {
+          "name": "startDateRange",
+          "type": "Date",
+          "default": "null",
+          "description": "Specifies the start date of the date interval in the Gantt chart."
+        },
+        {
+          "name": "stripLines",
+          "type": "Array<dxGanttStripLine>",
+          "default": "undefined",
+          "description": "Configures strip lines."
+        },
+        {
+          "name": "taskContentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskContentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "taskContentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskContentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "taskContentTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies custom content for the task."
+        },
+        {
+          "name": "taskListWidth",
+          "type": "Number",
+          "default": "300",
+          "description": "Specifies the width of the task list in pixels."
+        },
+        {
+          "name": "taskProgressTooltipContentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskProgressTooltipContentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "taskProgressTooltipContentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskProgressTooltipContentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "taskProgressTooltipContentTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies custom content for the tooltip that displays the task's progress while the progress handler is resized in the UI."
+        },
+        {
+          "name": "taskTimeTooltipContentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskTimeTooltipContentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "taskTimeTooltipContentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskTimeTooltipContentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "taskTimeTooltipContentTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies custom content for the tooltip that displays the task's start and end time while the task is resized in the UI."
+        },
+        {
+          "name": "taskTitlePosition",
+          "type": "Enums.GanttTaskTitlePosition",
+          "default": "'inside'",
+          "description": "Specifies a task's title position."
+        },
+        {
+          "name": "taskTooltipContentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskTooltipContentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "taskTooltipContentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [taskTooltipContentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "taskTooltipContentTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies custom content for the task tooltip."
+        },
+        {
+          "name": "tasks",
+          "subMembers": [
+            {
+              "name": "colorExpr",
+              "type": "String | function()",
+              "default": "'color'",
+              "description": "Specifies the data field that provides tasks' color."
+            },
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Binds the UI component to the data source which contains tasks."
+            },
+            {
+              "name": "endExpr",
+              "type": "String | function()",
+              "default": "'end'",
+              "description": "Specifies the data field that provides tasks' end dates."
+            },
+            {
+              "name": "keyExpr",
+              "type": "String | function()",
+              "default": "'id'",
+              "description": "Specifies the data field that provides keys for tasks."
+            },
+            {
+              "name": "parentIdExpr",
+              "type": "String | function()",
+              "default": "'parentId'",
+              "description": "Specifies the data field that provides tasks' parent IDs."
+            },
+            {
+              "name": "progressExpr",
+              "type": "String | function()",
+              "default": "'progress'",
+              "description": "Specifies the data field that provides tasks' progress."
+            },
+            {
+              "name": "startExpr",
+              "type": "String | function()",
+              "default": "'start'",
+              "description": "Specifies the data field that provides tasks' start dates."
+            },
+            {
+              "name": "tasks",
+              "type": "Object",
+              "default": "null",
+              "description": "Configures tasks."
+            },
+            {
+              "name": "titleExpr",
+              "type": "String | function()",
+              "default": "'title'",
+              "description": "Specifies the data field that provides task titles."
+            }
+          ]
+        },
+        {
+          "name": "toolbar",
+          "type": "dxGanttToolbar",
+          "default": "null",
+          "description": "Configures toolbar settings."
+        },
+        {
+          "name": "validation",
+          "subMembers": [
+            {
+              "name": "autoUpdateParentTasks",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to recalculate the parent task's duration and progress when its child tasks are modified."
+            },
+            {
+              "name": "enablePredecessorGap",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether users can move or resize a predecessor to change a gap before a successor according to the [dependency rules]."
+            },
+            {
+              "name": "validateDependencies",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Enables [task dependencies] validation."
+            },
+            {
+              "name": "validation",
+              "type": "Object",
+              "default": null,
+              "description": "Configures validation properties."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxGantt",
+      "type": null,
+      "default": null,
+      "description": "The Gantt is a UI component that displays the task flow and dependencies between tasks."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "assignResourceToTask(resourceKey_taskKey)",
+      "type": null,
+      "default": null,
+      "description": "Assigns a resource to a task."
+    },
+    {
+      "name": "collapseAll()",
+      "type": null,
+      "default": null,
+      "description": "Collapses all tasks."
+    },
+    {
+      "name": "collapseTask(key)",
+      "type": null,
+      "default": null,
+      "description": "Collapses a task."
+    },
+    {
+      "name": "deleteDependency(key)",
+      "type": null,
+      "default": null,
+      "description": "Deletes a dependency."
+    },
+    {
+      "name": "deleteResource(key)",
+      "type": null,
+      "default": null,
+      "description": "Deletes a resource."
+    },
+    {
+      "name": "deleteTask(key)",
+      "type": null,
+      "default": null,
+      "description": "Deletes a task."
+    },
+    {
+      "name": "expandAll()",
+      "type": null,
+      "default": null,
+      "description": "Expands all tasks."
+    },
+    {
+      "name": "expandAllToLevel(level)",
+      "type": null,
+      "default": null,
+      "description": "Expands all tasks down to the specified hierarchical level."
+    },
+    {
+      "name": "expandTask(key)",
+      "type": null,
+      "default": null,
+      "description": "Expands a task."
+    },
+    {
+      "name": "expandToTask(key)",
+      "type": null,
+      "default": null,
+      "description": "Expands a task's parent tasks."
+    },
+    {
+      "name": "getDependencyData(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets the dependency data."
+    },
+    {
+      "name": "getResourceAssignmentData(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets the resource assignment data."
+    },
+    {
+      "name": "getResourceData(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets the resource data."
+    },
+    {
+      "name": "getTaskData(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets the task data."
+    },
+    {
+      "name": "getTaskResources(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets resources assigned to a task."
+    },
+    {
+      "name": "getVisibleDependencyKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the keys of the visible dependencies."
+    },
+    {
+      "name": "getVisibleResourceAssignmentKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the keys of the visible resource assignments."
+    },
+    {
+      "name": "getVisibleResourceKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the keys of the visible resources."
+    },
+    {
+      "name": "getVisibleTaskKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the keys of the visible tasks."
+    },
+    {
+      "name": "insertDependency(data)",
+      "type": "3 });",
+      "default": null,
+      "description": "Inserts a new dependency."
+    },
+    {
+      "name": "insertResource(data_taskKeys)",
+      "type": null,
+      "default": null,
+      "description": "Inserts a new resource."
+    },
+    {
+      "name": "insertTask(data)",
+      "type": null,
+      "default": null,
+      "description": "Inserts a new task."
+    },
+    {
+      "name": "refresh()",
+      "type": null,
+      "default": null,
+      "description": "Reloads data and repaints the Gantt component."
+    },
+    {
+      "name": "scrollToDate(date)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the Gantt chart to the specified date."
+    },
+    {
+      "name": "showDependencies(value)",
+      "type": null,
+      "default": null,
+      "description": "Shows or hides [dependencies] between tasks."
+    },
+    {
+      "name": "showResourceManagerDialog()",
+      "type": null,
+      "default": null,
+      "description": "Invokes the \"Resource Manager\" dialog."
+    },
+    {
+      "name": "showResources(value)",
+      "type": null,
+      "default": null,
+      "description": "Shows or hides task [resources]."
+    },
+    {
+      "name": "showTaskDetailsDialog(taskKey)",
+      "type": null,
+      "default": null,
+      "description": "Invokes the \"Task Details\" dialog."
+    },
+    {
+      "name": "unassignAllResourcesFromTask(taskKey)",
+      "type": null,
+      "default": null,
+      "description": "Removes all resources from the task."
+    },
+    {
+      "name": "unassignResourceFromTask(resourceKey_taskKey)",
+      "type": null,
+      "default": null,
+      "description": "Removes a resource from the task."
+    },
+    {
+      "name": "updateDimensions()",
+      "type": null,
+      "default": null,
+      "description": "Updates the dimensions of the UI component contents."
+    },
+    {
+      "name": "updateTask(key_data)",
+      "type": null,
+      "default": null,
+      "description": "Updates the task data."
+    },
+    {
+      "name": "zoomIn()",
+      "type": null,
+      "default": null,
+      "description": "Zooms in the Gantt chart."
+    },
+    {
+      "name": "zoomOut()",
+      "type": null,
+      "default": null,
+      "description": "Zooms out the Gantt chart."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onContextMenuPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the context menu is rendered."
+    },
+    {
+      "name": "onCustomCommand",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a custom command item was clicked. Allows you to implement a custom command's functionality."
+    },
+    {
+      "name": "onDependencyDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a dependency is deleted."
+    },
+    {
+      "name": "onDependencyDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a dependency is deleted."
+    },
+    {
+      "name": "onDependencyInserted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a dependency is inserted."
+    },
+    {
+      "name": "onDependencyInserting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a dependency is inserted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onResourceAssigned",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a resource is assigned to a task."
+    },
+    {
+      "name": "onResourceAssigning",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a resource is assigned to a task."
+    },
+    {
+      "name": "onResourceDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a resource is deleted."
+    },
+    {
+      "name": "onResourceDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a resource is deleted."
+    },
+    {
+      "name": "onResourceInserted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a resource is inserted."
+    },
+    {
+      "name": "onResourceInserting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a resource is inserted."
+    },
+    {
+      "name": "onResourceManagerDialogShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the Resource Manager dialog is shown."
+    },
+    {
+      "name": "onResourceUnassigned",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a resource is unassigned from a task."
+    },
+    {
+      "name": "onResourceUnassigning",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a resource is unassigned from a task."
+    },
+    {
+      "name": "onScaleCellPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a scale cell is prepared."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after users select a task or clear its selection."
+    },
+    {
+      "name": "onTaskClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user clicks a task."
+    },
+    {
+      "name": "onTaskDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a user double-clicks a task."
+    },
+    {
+      "name": "onTaskDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a task is deleted."
+    },
+    {
+      "name": "onTaskDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a task is deleted."
+    },
+    {
+      "name": "onTaskEditDialogShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the edit dialog is shown."
+    },
+    {
+      "name": "onTaskInserted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a task is inserted."
+    },
+    {
+      "name": "onTaskInserting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a task is inserted."
+    },
+    {
+      "name": "onTaskMoving",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a task is moved."
+    },
+    {
+      "name": "onTaskUpdated",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a task is updated."
+    },
+    {
+      "name": "onTaskUpdating",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a task is updated."
+    },
+    {
+      "name": "contextMenuPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is rendered."
+    },
+    {
+      "name": "customCommand",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a custom command item was clicked."
+    },
+    {
+      "name": "dependencyDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a dependency is deleted."
+    },
+    {
+      "name": "dependencyDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a dependency is deleted."
+    },
+    {
+      "name": "dependencyInserted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a dependency is inserted."
+    },
+    {
+      "name": "dependencyInserting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a dependency is inserted."
+    },
+    {
+      "name": "resourceAssigned",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a resource is assigned to a task."
+    },
+    {
+      "name": "resourceAssigning",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a resource is assigned to a task."
+    },
+    {
+      "name": "resourceDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a resource is deleted."
+    },
+    {
+      "name": "resourceDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a resource is deleted."
+    },
+    {
+      "name": "resourceInserted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a resource is inserted."
+    },
+    {
+      "name": "resourceInserting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a resource is inserted."
+    },
+    {
+      "name": "resourceManagerDialogShowing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the Resource Manager dialog is shown."
+    },
+    {
+      "name": "resourceUnassigned",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a resource is unassigned from a task."
+    },
+    {
+      "name": "resourceUnassigning",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a resource is unassigned from a task."
+    },
+    {
+      "name": "scaleCellPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a scale cell is prepared."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after users select a task or clear its selection."
+    },
+    {
+      "name": "taskClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user clicks a task."
+    },
+    {
+      "name": "taskDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user double-clicks a task."
+    },
+    {
+      "name": "taskDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a task is deleted."
+    },
+    {
+      "name": "taskDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a task is deleted."
+    },
+    {
+      "name": "taskEditDialogShowing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the edit dialog is shown."
+    },
+    {
+      "name": "taskInserted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a task is inserted."
+    },
+    {
+      "name": "taskInserting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a task is inserted."
+    },
+    {
+      "name": "taskMoving",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a task is moved."
+    },
+    {
+      "name": "taskUpdated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a task is updated."
+    },
+    {
+      "name": "taskUpdating",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a task is updated."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextMenuPreparingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuPreparing] event handler's argument."
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "event",
+          "type": "event",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetKey",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetType",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CustomCommandEvent",
+      "subMembers": [
+        {
+          "name": "CustomCommandEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [customCommand] event handler's argument."
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DependencyDeletedEvent",
+      "subMembers": [
+        {
+          "name": "DependencyDeletedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dependencyDeleted] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DependencyDeletingEvent",
+      "subMembers": [
+        {
+          "name": "DependencyDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dependencyDeleting] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DependencyInsertedEvent",
+      "subMembers": [
+        {
+          "name": "DependencyInsertedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dependencyInserted] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DependencyInsertingEvent",
+      "subMembers": [
+        {
+          "name": "DependencyInsertingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dependencyInserting] event handler's argument."
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "GanttPdfExportDateRange",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the date range for which to export tasks."
+    },
+    {
+      "name": "GanttPdfExportMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies which part of the component to export (chart area, tree list area, or the entire component)."
+    },
+    {
+      "name": "GanttPredefinedContextMenuItem",
+      "type": "Union",
+      "default": null,
+      "description": "Configures context menu item settings."
+    },
+    {
+      "name": "GanttPredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "Configures toolbar items' settings."
+    },
+    {
+      "name": "GanttRenderScaleType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a scale type to render."
+    },
+    {
+      "name": "GanttScaleType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the zoom level of tasks in the Gantt chart."
+    },
+    {
+      "name": "GanttTaskTitlePosition",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a task's title position."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ResourceAssignedEvent",
+      "subMembers": [
+        {
+          "name": "ResourceAssignedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceAssigned] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceAssigningEvent",
+      "subMembers": [
+        {
+          "name": "ResourceAssigningEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceAssigning] event handler's argument."
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceDeletedEvent",
+      "subMembers": [
+        {
+          "name": "ResourceDeletedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceDeleted] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceDeletingEvent",
+      "subMembers": [
+        {
+          "name": "ResourceDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceDeleting] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceInsertedEvent",
+      "subMembers": [
+        {
+          "name": "ResourceInsertedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceInserted] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceInsertingEvent",
+      "subMembers": [
+        {
+          "name": "ResourceInsertingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceInserting] event handler's argument."
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceManagerDialogShowingEvent",
+      "subMembers": [
+        {
+          "name": "ResourceManagerDialogShowingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceManagerDialogShowing] event handler's argument."
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceUnassignedEvent",
+      "subMembers": [
+        {
+          "name": "ResourceUnassignedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceUnassigned] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ResourceUnassigningEvent",
+      "subMembers": [
+        {
+          "name": "ResourceUnassigningEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [resourceUnassigning] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ScaleCellPreparedEvent",
+      "subMembers": [
+        {
+          "name": "ScaleCellPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [scaleCellPrepared] event handler's argument."
+        },
+        {
+          "name": "endDate",
+          "type": "Date",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "scaleElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "scaleIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "scaleType",
+          "type": "Enums.GanttRenderScaleType",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "separatorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "startDate",
+          "type": "Date",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectionChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectionChanged] event handler's argument."
+        },
+        {
+          "name": "selectedRowKey",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskClickEvent",
+      "subMembers": [
+        {
+          "name": "TaskClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskClick] event handler's argument."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskDblClickEvent",
+      "subMembers": [
+        {
+          "name": "TaskDblClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskDblClick] event handler's argument."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskDeletedEvent",
+      "subMembers": [
+        {
+          "name": "TaskDeletedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskDeleted] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskDeletingEvent",
+      "subMembers": [
+        {
+          "name": "TaskDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskDeleting] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskEditDialogShowingEvent",
+      "subMembers": [
+        {
+          "name": "TaskEditDialogShowingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskEditDialogShowing] event handler's argument."
+        },
+        {
+          "name": "hiddenFields",
+          "type": "Array<String>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnlyFields",
+          "type": "Array<String>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskInsertedEvent",
+      "subMembers": [
+        {
+          "name": "TaskInsertedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskInserted] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskInsertingEvent",
+      "subMembers": [
+        {
+          "name": "TaskInsertingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskInserting] event handler's argument."
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskMovingEvent",
+      "subMembers": [
+        {
+          "name": "TaskMovingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskMoving] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newValues",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskUpdatedEvent",
+      "subMembers": [
+        {
+          "name": "TaskUpdatedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskUpdated] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TaskUpdatingEvent",
+      "subMembers": [
+        {
+          "name": "TaskUpdatingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [taskUpdating] event handler's argument."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newValues",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

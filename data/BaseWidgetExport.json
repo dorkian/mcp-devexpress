@@ -1,0 +1,55 @@
+{
+  "properties": [
+    {
+      "name": "BaseWidgetExport",
+      "type": "module: viz/core/base_widget",
+      "default": null,
+      "description": "Configures the exporting and printing features."
+    },
+    {
+      "name": "backgroundColor",
+      "type": "String",
+      "default": "'#ffffff'",
+      "description": "Specifies the color that will fill transparent regions in the resulting file or document."
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Enables the client-side exporting in the UI component."
+    },
+    {
+      "name": "fileName",
+      "type": "String",
+      "default": "'file'",
+      "description": "Specifies a default name for the file to which the UI component will be exported."
+    },
+    {
+      "name": "formats",
+      "type": "Array<Enums.ExportFormat>",
+      "default": "['PNG', 'PDF', 'JPEG', 'SVG', 'GIF']",
+      "description": "Specifies a set of export formats."
+    },
+    {
+      "name": "margin",
+      "type": "Number",
+      "default": "10",
+      "description": "Adds an empty space around the exported UI component; measured in pixels."
+    },
+    {
+      "name": "printingEnabled",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Enables the printing feature in the UI component. Applies only if the **export**.[enabled] property is **true**."
+    },
+    {
+      "name": "svgToCanvas",
+      "type": "function(svg, canvas) | undefined",
+      "default": "undefined",
+      "description": "A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, [markerTemplate])."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "cancel",
+      "type": "String",
+      "default": "'Cancel'",
+      "description": "Specifies text for the \"Cancel\" button in the popup window."
+    },
+    {
+      "name": "dxGanttHeaderFilterTexts",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "emptyValue",
+      "type": "String",
+      "default": "'(Blanks)'",
+      "description": "Specifies text for the \"(Blank)\" item in the popup window."
+    },
+    {
+      "name": "ok",
+      "type": "String",
+      "default": "'Ok'",
+      "description": "Specifies text for the \"OK\" button in the popup window."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

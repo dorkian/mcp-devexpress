@@ -1,0 +1,314 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the UI component."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<String, CollectionWidgetItem> | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "focusedElement",
+          "type": "DxElement",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "itemComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "itemHoldTimeout",
+          "type": "Number",
+          "default": "750",
+          "description": "The time period in milliseconds before the **onItemHold** event is raised."
+        },
+        {
+          "name": "itemRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "itemTemplate",
+          "type": "template",
+          "default": "'item'",
+          "description": "Specifies a custom template for items."
+        },
+        {
+          "name": "items",
+          "type": "Array<String, CollectionWidgetItem, any>",
+          "default": null,
+          "description": "An array of items displayed by the UI component."
+        },
+        {
+          "name": "keyExpr",
+          "type": "String | function()",
+          "default": "null",
+          "description": "Specifies the key property that provides key values to access data items. Each key value must be unique."
+        },
+        {
+          "name": "loopItemFocus",
+          "type": "Boolean",
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "noDataText",
+          "type": "String",
+          "default": "'No data to display'",
+          "description": "Specifies the text or HTML markup displayed by the UI component if the item collection is empty."
+        },
+        {
+          "name": "selectOnFocus",
+          "type": "Boolean",
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Number",
+          "default": "-1",
+          "description": "The index of the currently selected UI component item."
+        },
+        {
+          "name": "selectedItem",
+          "type": "any",
+          "default": "null",
+          "description": "The selected item object."
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Specifies an array of currently selected item keys."
+        },
+        {
+          "name": "selectedItems",
+          "type": "Array<any>",
+          "default": null,
+          "description": "An array of currently selected item objects."
+        },
+        {
+          "name": "selectionByClick",
+          "type": "Boolean",
+          "default": "true",
+          "description": "-"
+        },
+        {
+          "name": "selectionMode",
+          "type": "String",
+          "default": "'none'",
+          "description": "-"
+        },
+        {
+          "name": "selectionRequired",
+          "type": "Boolean",
+          "default": "false",
+          "description": "-"
+        }
+      ]
+    },
+    {
+      "name": "CollectionWidget",
+      "type": null,
+      "default": null,
+      "description": "The base class for UI components containing an item collection."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "deleteItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Promise<void>"
+    },
+    {
+      "name": "getFocusedItemId()",
+      "type": null,
+      "default": null,
+      "description": "##### return: String"
+    },
+    {
+      "name": "isItemSelected(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Boolean"
+    },
+    {
+      "name": "itemElements()",
+      "type": null,
+      "default": null,
+      "description": "##### return: Array<Element>"
+    },
+    {
+      "name": "itemsContainer()",
+      "type": null,
+      "default": null,
+      "description": "##### return: Element"
+    },
+    {
+      "name": "reorderItem(itemElement_toItemElement)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Promise<void>"
+    },
+    {
+      "name": "selectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "##### param(itemElement): Element"
+    },
+    {
+      "name": "unselectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "##### param(itemElement): Element"
+    }
+  ],
+  "Events": [
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a collection item is deleted from the data source."
+    },
+    {
+      "name": "onItemDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a collection item is deleted from the data source."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onItemReordered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a collection item is moved to another position."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called after selection changes."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called before selection changes."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a collection item is clicked or tapped."
+    },
+    {
+      "name": "itemContextMenu",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "itemDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a collection item is deleted from the data source."
+    },
+    {
+      "name": "itemDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a collection item is deleted from the data source."
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "itemRendered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a collection item is rendered."
+    },
+    {
+      "name": "itemReordered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a collection item is moved to another position."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after selection changes."
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before selection changes."
+    }
+  ],
+  "Types": [
+    {
+      "name": "SelectionChangeInfo",
+      "subMembers": [
+        {
+          "name": "SelectionChangeInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "addedItems",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "removedItems",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

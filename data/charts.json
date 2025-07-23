@@ -1,0 +1,391 @@
+{
+  "properties": [
+    {
+      "name": "05 charts",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "AnimationEaseMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the animation easing mode."
+    },
+    {
+      "name": "AnnotationType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether the annotation displays text, an image, or a template."
+    },
+    {
+      "name": "ArgumentAxisHoverMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies chart elements to be highlighted when a user points to an axis label."
+    },
+    {
+      "name": "AxisScaleType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of the axis."
+    },
+    {
+      "name": "BaseChartAdaptiveLayout",
+      "subMembers": [
+        {
+          "name": "BaseChartAdaptiveLayout",
+          "type": "module: viz/chart_components/base_chart",
+          "default": null,
+          "description": "Specifies adaptive layout properties."
+        },
+        {
+          "name": "height",
+          "type": "Number",
+          "default": "80",
+          "description": "Specifies the minimum container height at which the layout begins to adapt."
+        },
+        {
+          "name": "keepLabels",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether [point labels] should be kept when the UI component adapts the layout."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "80",
+          "description": "Specifies the minimum container width at which the layout begins to adapt."
+        }
+      ]
+    },
+    {
+      "name": "BaseChartLegend",
+      "subMembers": [
+        {
+          "name": "BaseChartLegend",
+          "type": "BaseLegend",
+          "default": null,
+          "description": "Specifies properties of the legend."
+        },
+        {
+          "name": "customizeItems",
+          "type": "function(items)",
+          "default": null,
+          "description": "Allows you to change the order, text, and visibility of legend items."
+        },
+        {
+          "name": "markerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies an SVG element that serves as a custom legend item marker."
+        }
+      ]
+    },
+    {
+      "name": "BaseChartTooltip",
+      "subMembers": [
+        {
+          "name": "BaseChartTooltip",
+          "type": "module: viz/chart_components/base_chart",
+          "default": null,
+          "description": "Configures tooltips."
+        },
+        {
+          "name": "argumentFormat",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Formats the point argument before it is displayed in the tooltip. To format the point value, use the [format] property."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a tooltip."
+        },
+        {
+          "name": "customizeTooltip",
+          "type": "function(pointInfo) | undefined",
+          "default": "undefined",
+          "description": "Allows you to change tooltip appearance."
+        },
+        {
+          "name": "interactive",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to interact with the tooltip content."
+        },
+        {
+          "name": "shared",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the tooltip is shared across all series points with the same argument."
+        }
+      ]
+    },
+    {
+      "name": "ChartsAxisLabelOverlap",
+      "type": "Union",
+      "default": null,
+      "description": "Decides how to arrange axis labels when there is not enough space to display all of them."
+    },
+    {
+      "name": "ChartsColor",
+      "subMembers": [
+        {
+          "name": "ChartsColor",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the chart's color."
+        },
+        {
+          "name": "base",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the base color for series, points and labels."
+        },
+        {
+          "name": "fillId",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the id of the gradient or pattern."
+        }
+      ]
+    },
+    {
+      "name": "ChartsDataType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of axis values."
+    },
+    {
+      "name": "ChartsLabelOverlap",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the chart must behave when [series point labels] overlap."
+    },
+    {
+      "name": "DashStyle",
+      "type": "Union",
+      "default": null,
+      "description": "Sets a dash style for the chart elements."
+    },
+    {
+      "name": "DiscreteAxisDivisionMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels."
+    },
+    {
+      "name": "Font",
+      "subMembers": [
+        {
+          "name": "Font",
+          "type": "Object",
+          "default": null,
+          "description": "Font properties."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": null,
+          "description": "Specifies font color."
+        },
+        {
+          "name": "family",
+          "type": "String",
+          "default": "'\"Segoe UI\", \"Helvetica Neue\", \"Trebuchet MS\", Verdana, sans-serif'",
+          "description": "Specifies font family."
+        },
+        {
+          "name": "opacity",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies font opacity."
+        },
+        {
+          "name": "size",
+          "type": "String | Number",
+          "default": "12",
+          "description": "Specifies font size."
+        },
+        {
+          "name": "weight",
+          "type": "Number",
+          "default": "400",
+          "description": "Specifies font weight. Accepts values from 100 to 900 in increments of 100. Higher values increase boldness."
+        }
+      ]
+    },
+    {
+      "name": "GradientColor",
+      "subMembers": [
+        {
+          "name": "GradientColor",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies colors on which gradient is based."
+        },
+        {
+          "name": "color",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies one of the gradient colors."
+        },
+        {
+          "name": "offset",
+          "type": "Number | String | undefined",
+          "default": "undefined",
+          "description": "Specifies the starting point of a color."
+        }
+      ]
+    },
+    {
+      "name": "HatchDirection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the direction of hatching lines."
+    },
+    {
+      "name": "LabelOverlap",
+      "type": "Union",
+      "default": null,
+      "description": "Decides how to arrange scale/axis labels when there is not enough space to keep all of them."
+    },
+    {
+      "name": "LabelPosition",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a label position relative to the chart."
+    },
+    {
+      "name": "LegendHoverMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies what series elements to highlight when a corresponding item in the legend is hovered over."
+    },
+    {
+      "name": "LegendMarkerState",
+      "type": "Union",
+      "default": null,
+      "description": "The marker's state."
+    },
+    {
+      "name": "Palette",
+      "type": "Union",
+      "default": null,
+      "description": "Sets the palette to be used for colorizing chart elements."
+    },
+    {
+      "name": "PaletteColorSet",
+      "type": "Union",
+      "default": null,
+      "description": "Returns a subset of palette colors."
+    },
+    {
+      "name": "PaletteExtensionMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how to extend the palette when it contains less colors than the number of chart points/series."
+    },
+    {
+      "name": "PointInteractionMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies series elements to be highlighted when a user interacts with a series point."
+    },
+    {
+      "name": "PointSymbol",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies which symbol should represent series points in scatter, line- and area-like series."
+    },
+    {
+      "name": "RelativePosition",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the position of a chart element on the plot."
+    },
+    {
+      "name": "ScaleBreakLineStyle",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the scale breaks' line style."
+    },
+    {
+      "name": "SeriesHoverMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies series elements to be highlighted when a user points to a series."
+    },
+    {
+      "name": "SeriesSelectionMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies series elements to be highlighted when a user selects a series."
+    },
+    {
+      "name": "SeriesType",
+      "type": "Union",
+      "default": null,
+      "description": "Sets the series type."
+    },
+    {
+      "name": "ShiftLabelOverlap",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how a chart should behave when point/bar/item labels overlap."
+    },
+    {
+      "name": "TextOverflow",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how to arrange chart text elements that overflow their containers: hide, truncated them with ellipsis, or leave them as they are."
+    },
+    {
+      "name": "Theme",
+      "type": "Union",
+      "default": null,
+      "description": "Sets the name of the theme the UI component uses."
+    },
+    {
+      "name": "TimeInterval",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies various time intervals."
+    },
+    {
+      "name": "ValueErrorBarDisplayMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether error bars must be displayed in full or partially."
+    },
+    {
+      "name": "ValueErrorBarType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how error bar values must be calculated."
+    },
+    {
+      "name": "VisualRangeUpdateMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the selected or visual range should behave when data is updated."
+    },
+    {
+      "name": "WordWrap",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how to wrap texts that do not fit into a single line."
+    },
+    {
+      "name": "ZoomPanAction",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies zoom or pan mode."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

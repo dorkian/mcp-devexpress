@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "ascendingText",
+      "type": "String",
+      "default": "'Sort Ascending'",
+      "description": "Specifies text for the context menu item that sets an ascending sort order in a column."
+    },
+    {
+      "name": "clearText",
+      "type": "String",
+      "default": "'Clear Sorting'",
+      "description": "Specifies text for the context menu item that clears sorting settings for a column."
+    },
+    {
+      "name": "descendingText",
+      "type": "String",
+      "default": "'Sort Descending'",
+      "description": "Specifies text for the context menu item that sets a descending sort order in a column."
+    },
+    {
+      "name": "dxGanttSorting",
+      "type": "Object",
+      "default": null,
+      "description": "Configures sorting."
+    },
+    {
+      "name": "mode",
+      "type": "Enums.SingleMultipleOrNone | String",
+      "default": "'single'",
+      "description": "Specifies sort mode."
+    },
+    {
+      "name": "showSortIndexes",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to display sort indexes in column headers. Applies only when **sorting**.[mode] is \"multiple\" and data is sorted by two or more columns."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

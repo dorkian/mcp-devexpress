@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "dxFileManagerContextMenu",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the context menu."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxFileManagerContextMenuItem, Enums.FileManagerPredefinedContextMenuItem>",
+      "default": "[ 'create', 'upload', 'rename', 'move', 'copy', 'delete', 'refresh', 'download' ]",
+      "description": "Configures context menu items' settings."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

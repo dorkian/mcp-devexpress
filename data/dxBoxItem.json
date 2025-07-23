@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "baseSize",
+      "type": "Number | String",
+      "default": "0",
+      "description": "Specifies the base size of an item element along the main direction."
+    },
+    {
+      "name": "box",
+      "type": "dxBox_Options | undefined",
+      "default": "undefined",
+      "description": "Holds a [Box configuration object] for the item."
+    },
+    {
+      "name": "dxBoxItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "ratio",
+      "type": "Number",
+      "default": "0",
+      "description": "Specifies the ratio value used to count the item element size along the main direction."
+    },
+    {
+      "name": "shrink",
+      "type": "Number",
+      "default": "1",
+      "description": "A factor that defines how much an item shrinks relative to the rest of the items in the container."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

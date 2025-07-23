@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "devices",
+      "type": "DevicesObject",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

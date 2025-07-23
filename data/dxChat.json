@@ -1,0 +1,684 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "A configuration object for the Chat UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "alerts",
+          "type": "Array<Alert>",
+          "default": "[]",
+          "description": "A list of available alerts."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<Message> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "dayHeaderFormat",
+          "type": "Format",
+          "default": "'shortdate'",
+          "description": "Specifies the day header format."
+        },
+        {
+          "name": "editing",
+          "subMembers": [
+            {
+              "name": "allowDeleting",
+              "type": "Boolean | function(options)",
+              "default": "false",
+              "description": "Specifies whether a user can delete messages. Called for each message when defined as a function."
+            },
+            {
+              "name": "allowUpdating",
+              "type": "Boolean | function(options)",
+              "default": "false",
+              "description": "Specifies whether a user can update messages. Called for each message when defined as a function."
+            },
+            {
+              "name": "editing",
+              "type": "Object",
+              "default": null,
+              "description": "Configures editing."
+            }
+          ]
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the Chat's input element can be focused using keyboard navigation."
+        },
+        {
+          "name": "hint",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<Message>",
+          "default": null,
+          "description": "Specifies an array of chat messages."
+        },
+        {
+          "name": "messageComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [messageTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "messageRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [messageTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "messageTemplate",
+          "type": "template | null",
+          "default": "null",
+          "description": "Specifies a custom template for a chat message."
+        },
+        {
+          "name": "messageTimestampFormat",
+          "type": "Format",
+          "default": "'shorttime'",
+          "description": "Specifies the message timestamp format."
+        },
+        {
+          "name": "registerKeyHandler",
+          "type": "function()",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reloadOnChange",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the Chat UI component displays newly entered messages immediately. This property only applies if [dataSource] is used."
+        },
+        {
+          "name": "showAvatar",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show avatars."
+        },
+        {
+          "name": "showDayHeaders",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show day headers."
+        },
+        {
+          "name": "showMessageTimestamp",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show message time stamps."
+        },
+        {
+          "name": "showUserName",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show user names."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "typingUsers",
+          "type": "Array<User>",
+          "default": "[]",
+          "description": "An array of users who are currently typing."
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "default": "{ id: new Guid().toString() }",
+          "description": "Specifies the current chat user (messages displayed on the right side)."
+        }
+      ]
+    },
+    {
+      "name": "dxChat",
+      "type": null,
+      "default": null,
+      "description": "The Chat UI component is an interactive interface that allows users to send and receive messages in real time."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": "Sets focus to the Chat's input element."
+    },
+    {
+      "name": "renderMessage(message)",
+      "type": null,
+      "default": null,
+      "description": "Renders a new message."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onMessageDeleted",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed after a message was removed from the UI."
+    },
+    {
+      "name": "onMessageDeleting",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed before a message is removed from the UI."
+    },
+    {
+      "name": "onMessageEditCanceled",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed after message changes are discarded."
+    },
+    {
+      "name": "onMessageEditingStart",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed before a message switches to the editing state."
+    },
+    {
+      "name": "onMessageEntered",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed after a message is entered into the chat."
+    },
+    {
+      "name": "onMessageUpdated",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed after a message was edited in the UI."
+    },
+    {
+      "name": "onMessageUpdating",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is executed before a message is edited in the UI."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onTypingEnd",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is called 2 seconds after a user stops typing or after a message is entered."
+    },
+    {
+      "name": "onTypingStart",
+      "type": "function(e) | undefined",
+      "default": "undefined",
+      "description": "A function that is called after a user starts typing."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "messageDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a message is deleted."
+    },
+    {
+      "name": "messageDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a message is deleted."
+    },
+    {
+      "name": "messageEditCanceled",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after message changes are discarded."
+    },
+    {
+      "name": "messageEditingStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a message switches to the editing state."
+    },
+    {
+      "name": "messageEntered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a message is entered."
+    },
+    {
+      "name": "messageUpdated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a message was updated."
+    },
+    {
+      "name": "messageUpdating",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a message is updated."
+    },
+    {
+      "name": "typingEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised 2 seconds after a user stopped typing or after a message is entered."
+    },
+    {
+      "name": "typingStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user starts typing."
+    }
+  ],
+  "Types": [
+    {
+      "name": "Alert",
+      "subMembers": [
+        {
+          "name": "Alert",
+          "type": "Object",
+          "default": null,
+          "description": "A configuration object for an alert."
+        },
+        {
+          "name": "id",
+          "type": "Number | String",
+          "default": null,
+          "description": "Alert's identification number or string."
+        },
+        {
+          "name": "message",
+          "type": "String",
+          "default": null,
+          "description": "The alert's message."
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "ImageMessage",
+      "subMembers": [
+        {
+          "name": "ImageMessage",
+          "type": "MessageBase | Object",
+          "default": null,
+          "description": "Configures image message."
+        },
+        {
+          "name": "alt",
+          "type": "String",
+          "default": null,
+          "description": "Image alternative text. Specifies the value of the image `alt` attributes. Screen readers utilize this property when image messages are focused. Only applies to `image` type messages."
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the image source. Accepts URLs and Base64 strings. Only applies to `image` type messages."
+        }
+      ]
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "Message",
+      "type": "TextMessage | ImageMessage",
+      "default": null,
+      "description": "A configuration object for a message."
+    },
+    {
+      "name": "MessageBase",
+      "subMembers": [
+        {
+          "name": "MessageBase",
+          "type": "Object",
+          "default": null,
+          "description": "A configuration object for a message."
+        },
+        {
+          "name": "author",
+          "type": "User",
+          "default": null,
+          "description": "A user who is the author of the message."
+        },
+        {
+          "name": "id",
+          "type": "Number | String",
+          "default": null,
+          "description": "Message's identification number or string."
+        },
+        {
+          "name": "isDeleted",
+          "type": "Boolean",
+          "default": null,
+          "description": "Marks a message as deleted in the UI."
+        },
+        {
+          "name": "timestamp",
+          "type": "Date | Number | String",
+          "default": null,
+          "description": "A timestamp of when the message was sent."
+        },
+        {
+          "name": "type",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "The message type."
+        }
+      ]
+    },
+    {
+      "name": "MessageDeletedEvent",
+      "subMembers": [
+        {
+          "name": "MessageDeletedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageDeleted] event."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message that was deleted."
+        }
+      ]
+    },
+    {
+      "name": "MessageDeletingEvent",
+      "subMembers": [
+        {
+          "name": "MessageDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageDeleting] event."
+        },
+        {
+          "name": "cancel",
+          "type": null,
+          "default": null,
+          "description": "Allows you to cancel message deleting."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message that is being deleted."
+        }
+      ]
+    },
+    {
+      "name": "MessageEditCanceledEvent",
+      "subMembers": [
+        {
+          "name": "MessageEditCanceledEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageEditCanceled] event."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message which editing was canceled."
+        }
+      ]
+    },
+    {
+      "name": "MessageEditingStartEvent",
+      "subMembers": [
+        {
+          "name": "MessageEditingStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageEditingStart] event."
+        },
+        {
+          "name": "cancel",
+          "type": null,
+          "default": null,
+          "description": "Allows you to cancel message editing."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message which editing started."
+        }
+      ]
+    },
+    {
+      "name": "MessageEnteredEvent",
+      "subMembers": [
+        {
+          "name": "MessageEnteredEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageEntered] event."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message that was entered into the chat."
+        }
+      ]
+    },
+    {
+      "name": "MessageUpdatedEvent",
+      "subMembers": [
+        {
+          "name": "MessageUpdatedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageUpdated] event."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message that was updated."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The updated text from the input field."
+        }
+      ]
+    },
+    {
+      "name": "MessageUpdatingEvent",
+      "subMembers": [
+        {
+          "name": "MessageUpdatingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [messageUpdating] event."
+        },
+        {
+          "name": "cancel",
+          "type": null,
+          "default": null,
+          "description": "Allows you to cancel message updating."
+        },
+        {
+          "name": "message",
+          "type": "Message",
+          "default": null,
+          "description": "The message to be updated."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The updated text from the input field."
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [optionChanged] event."
+    },
+    {
+      "name": "TextMessage",
+      "subMembers": [
+        {
+          "name": "TextMessage",
+          "type": "MessageBase | Object",
+          "default": null,
+          "description": "Configures a text message."
+        },
+        {
+          "name": "isEdited",
+          "type": "Boolean",
+          "default": null,
+          "description": "Marks a message as edited in the UI."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The message text. Only applies to `text` type messages."
+        }
+      ]
+    },
+    {
+      "name": "TypingEndEvent",
+      "subMembers": [
+        {
+          "name": "TypingEndEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [typingEnd] event."
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "default": null,
+          "description": "The user who stopped typing."
+        }
+      ]
+    },
+    {
+      "name": "TypingStartEvent",
+      "subMembers": [
+        {
+          "name": "TypingStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [typingStart]."
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "default": null,
+          "description": "The user who started typing."
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "subMembers": [
+        {
+          "name": "User",
+          "type": "Object",
+          "default": null,
+          "description": "A configuration object for a user."
+        },
+        {
+          "name": "avatarAlt",
+          "type": "String",
+          "default": null,
+          "description": "`alt` attribute for avatar image."
+        },
+        {
+          "name": "avatarUrl",
+          "type": "String",
+          "default": null,
+          "description": "An avatar URL."
+        },
+        {
+          "name": "id",
+          "type": "Number | String",
+          "default": null,
+          "description": "User's identification number or string."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": "A user's name displayed in the chat."
+        }
+      ]
+    }
+  ]
+}

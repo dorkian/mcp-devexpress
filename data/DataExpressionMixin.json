@@ -1,0 +1,72 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<CollectionWidgetItem, any> | null",
+          "default": "null",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "displayExpr",
+          "type": "String | function(item) | undefined",
+          "default": "undefined",
+          "description": "Specifies the data field whose values should be displayed."
+        },
+        {
+          "name": "itemComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "itemRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "itemTemplate",
+          "type": "template",
+          "default": "'item'",
+          "description": "Specifies a custom template for items."
+        },
+        {
+          "name": "items",
+          "type": "Array<CollectionWidgetItem, any>",
+          "default": null,
+          "description": "An array of items displayed by the UI component."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": "null",
+          "description": "Specifies the currently selected value. May be an object if [dataSource] contains objects, the store [key] is specified, and [valueExpr] is not set."
+        },
+        {
+          "name": "valueExpr",
+          "type": "String | function(item)",
+          "default": "'this'",
+          "description": "Specifies which data field provides unique values to the UI component's [value]."
+        }
+      ]
+    },
+    {
+      "name": "DataExpressionMixin",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

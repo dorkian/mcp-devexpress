@@ -1,0 +1,85 @@
+{
+  "properties": [
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "dxFileManagerToolbarItem",
+      "type": null,
+      "default": null,
+      "description": "Configures the toolbar item."
+    },
+    {
+      "name": "html",
+      "type": "String",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": "''",
+      "description": "Specifies the icon to be displayed on the toolbar item."
+    },
+    {
+      "name": "location",
+      "type": "Enums.ToolbarItemLocation",
+      "default": "'before'",
+      "description": "Specifies the toolbar item's location."
+    },
+    {
+      "name": "menuItemComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [menuItemTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "menuItemRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [menuItemTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "menuItemTemplate",
+      "type": "template",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "name",
+      "type": "Enums.FileManagerPredefinedToolbarItem | String",
+      "default": null,
+      "description": "Specifies the toolbar item's name."
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "template",
+      "type": "template",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "visible",
+      "type": "Boolean | undefined",
+      "default": "undefined",
+      "description": "Specifies the toolbar item's visibility."
+    },
+    {
+      "name": "widget",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

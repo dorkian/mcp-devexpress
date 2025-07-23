@@ -1,0 +1,309 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the ActionSheet UI component."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancelText",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "The text displayed in the button that closes the action sheet."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<String, dxActionSheetItem, any> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "-"
+        },
+        {
+          "name": "items",
+          "type": "Array<String, dxActionSheetItem, any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "noDataText",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "showCancelButton",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to display the **Cancel** button in action sheet."
+        },
+        {
+          "name": "showTitle",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether or not the title of the action sheet is visible."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "String | UserDefinedElement",
+          "default": null,
+          "description": "Specifies the element the action sheet popover points at. Applies only if [usePopover] is **true**."
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "default": "''",
+          "description": "The title of the action sheet."
+        },
+        {
+          "name": "usePopover",
+          "type": "Boolean",
+          "default": "false, true (iPad)",
+          "description": "Specifies whether or not to show the action sheet within a [Popover] UI component."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not the ActionSheet UI component is visible."
+        }
+      ]
+    },
+    {
+      "name": "dxActionSheet",
+      "type": null,
+      "default": null,
+      "description": "The ActionSheet UI component is a sheet containing a set of buttons located one under the other. These buttons usually represent several choices relating to a single task."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "hide()",
+      "type": null,
+      "default": null,
+      "description": "Hides the UI component."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "show()",
+      "type": null,
+      "default": null,
+      "description": "Shows the UI component."
+    },
+    {
+      "name": "toggle(showing)",
+      "type": null,
+      "default": null,
+      "description": "Shows or hides the UI component depending on the argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onCancelClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the **Cancel** button is clicked or tapped."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "cancelClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the **Cancel** button is clicked or tapped."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "CancelClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [cancelClick] event handler's argument."
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemHold] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

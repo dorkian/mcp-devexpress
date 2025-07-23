@@ -1,0 +1,240 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that specifies configuration properties for the Bullet UI component."
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "default": "'#e8c267'",
+          "description": "Specifies a color for the bullet bar."
+        },
+        {
+          "name": "endScaleValue",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies an end value for the invisible scale."
+        },
+        {
+          "name": "showTarget",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to show the target line."
+        },
+        {
+          "name": "showZeroLevel",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to show the line indicating zero on the invisible scale."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "30",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 30, width: 300}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "300",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "startScaleValue",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies a start value for the invisible scale."
+        },
+        {
+          "name": "target",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the value indicated by the target line."
+        },
+        {
+          "name": "targetColor",
+          "type": "String",
+          "default": "'#666666'",
+          "description": "Specifies a color for both the target and zero level lines."
+        },
+        {
+          "name": "targetWidth",
+          "type": "Number",
+          "default": "4",
+          "description": "Specifies the width of the target line."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentTemplate",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "customizeTooltip",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the primary value indicated by the bullet bar."
+        }
+      ]
+    },
+    {
+      "name": "dxBullet",
+      "type": null,
+      "default": null,
+      "description": "The Bullet UI component is useful when you need to compare a single measure to a target value. The UI component comprises a horizontal bar indicating the measure and a vertical line indicating the target value."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip appears."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    }
+  ]
+}

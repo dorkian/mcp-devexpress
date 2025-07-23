@@ -1,0 +1,263 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the Draggable UI component's contents, behavior, and appearance."
+        },
+        {
+          "name": "clone",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows a user to drag clones of items instead of actual items."
+        },
+        {
+          "name": "dragComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dragTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dragRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dragTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dragTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies custom markup to be shown instead of the item being dragged."
+        },
+        {
+          "name": "filter",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a CSS selector for the items that need to be dragged."
+        }
+      ]
+    },
+    {
+      "name": "dxDraggable",
+      "type": null,
+      "default": null,
+      "description": "Draggable is a user interface utility that allows UI component elements to be dragged and dropped."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDragEnd",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when a drag gesture is finished."
+    },
+    {
+      "name": "onDragMove",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called every time a draggable item is moved."
+    },
+    {
+      "name": "onDragStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is called when a drag gesture is initialized."
+    },
+    {
+      "name": "onDrop",
+      "type": "function(e)",
+      "default": "null",
+      "description": null
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "dragEnd",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when drag gesture is finished."
+    },
+    {
+      "name": "dragMove",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised every time a draggable item is moved."
+    },
+    {
+      "name": "dragStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when drag gesture is initialized."
+    },
+    {
+      "name": "drop",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DragEndEvent",
+      "subMembers": [
+        {
+          "name": "DragEndEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragEnd] event handler's argument."
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DragMoveEvent",
+      "subMembers": [
+        {
+          "name": "DragMoveEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragMove] event handler's argument."
+        },
+        {
+          "name": "fromComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toComponent",
+          "type": "dxSortable | dxDraggable",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toData",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DragStartEvent",
+      "subMembers": [
+        {
+          "name": "DragStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dragStart] event handler's argument."
+        },
+        {
+          "name": "fromData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "autoScroll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Enables automatic scrolling while dragging an item beyond the viewport."
+        },
+        {
+          "name": "boundary",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies a DOM element that limits the dragging area."
+        },
+        {
+          "name": "container",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom container in which the draggable item should be rendered."
+        },
+        {
+          "name": "contentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "contentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template",
+          "default": "'content'",
+          "description": null
+        },
+        {
+          "name": "cursorOffset",
+          "subMembers": [
+            {
+              "name": "cursorOffset",
+              "type": "String | Object",
+              "default": null,
+              "description": "Specifies the cursor offset from the dragged item."
+            },
+            {
+              "name": "x",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the horizontal cursor offset from the dragged item in pixels."
+            },
+            {
+              "name": "y",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the vertical cursor offset from the dragged item in pixels."
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "type": "any | undefined",
+          "default": "undefined",
+          "description": "A container for custom data."
+        },
+        {
+          "name": "dragDirection",
+          "type": "Enums.DragDirection",
+          "default": "'both'",
+          "description": "Specifies the directions in which an item can be dragged."
+        },
+        {
+          "name": "group",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Allows you to group several UI components, so that users can drag and drop items between them."
+        },
+        {
+          "name": "handle",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a CSS selector (ID or class) that should act as the drag handle(s) for the item(s)."
+        },
+        {
+          "name": "scrollSensitivity",
+          "type": "Number",
+          "default": "60",
+          "description": "Specifies the distance in pixels from the edge of viewport at which scrolling should start. Applies only if [autoScroll] is **true**."
+        },
+        {
+          "name": "scrollSpeed",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the scrolling speed when dragging an item beyond the viewport. Applies only if [autoScroll] is **true**."
+        }
+      ]
+    },
+    {
+      "name": "DraggableBase",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

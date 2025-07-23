@@ -1,0 +1,169 @@
+{
+  "properties": [
+    {
+      "name": "allowEditing",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "allowFixing",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "allowHiding",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "allowReordering",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "allowResizing",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "allowSearch",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "buttons",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "columns",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "dxGanttColumn",
+      "type": null,
+      "default": null,
+      "description": "Configures the column."
+    },
+    {
+      "name": "editCellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "editCellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "editCellTemplate",
+      "type": "template",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "editorOptions",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "fixed",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "fixedPosition",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "formItem",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "hidingPriority",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "isBand",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "lookup",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "name",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "ownerBand",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "renderAsync",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "setCellValue",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "showEditorAlways",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "showInColumnChooser",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "type",
+      "type": "any",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "validationRules",
+      "type": "any",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

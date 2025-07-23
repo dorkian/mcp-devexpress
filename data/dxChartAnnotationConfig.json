@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "dxChartAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

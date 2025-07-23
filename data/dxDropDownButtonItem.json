@@ -1,0 +1,32 @@
+{
+  "properties": [
+    {
+      "name": "dxDropDownButtonItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "key",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "showChevron",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A handler for the [click] event raised for a certain item in the drop-down field."
+    }
+  ],
+  "Types": []
+}

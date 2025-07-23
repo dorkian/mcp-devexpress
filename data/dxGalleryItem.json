@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxGalleryItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "imageAlt",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the text passed to the **alt** attribute of the image markup element."
+    },
+    {
+      "name": "imageSrc",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the URL of the image displayed by the item."
+    },
+    {
+      "name": "visible",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

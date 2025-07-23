@@ -1,0 +1,20 @@
+{
+  "properties": [
+    {
+      "name": "DataHelperMixin",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getDataSource()",
+      "type": null,
+      "default": null,
+      "description": "Gets the [DataSource] instance."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

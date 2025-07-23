@@ -1,0 +1,138 @@
+{
+  "properties": [
+    {
+      "name": "calculateFilterExpression",
+      "type": "function(filterValue, selectedFilterOperation)",
+      "default": null,
+      "description": "Specifies the field's custom rules to filter data."
+    },
+    {
+      "name": "caption",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the data field's caption."
+    },
+    {
+      "name": "customizeText",
+      "type": "function(fieldInfo)",
+      "default": null,
+      "description": "Customizes the input value's display text."
+    },
+    {
+      "name": "dataField",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the name of a field to be filtered."
+    },
+    {
+      "name": "dataType",
+      "type": "Enums.DataType",
+      "default": "'string'",
+      "description": "Casts field values to a specific data type."
+    },
+    {
+      "name": "defaultFilterOperation",
+      "type": "Enums.FilterBuilderOperation | String",
+      "default": null,
+      "description": "A default filter operation."
+    },
+    {
+      "name": "dxFilterBuilderField",
+      "type": "Object",
+      "default": null,
+      "description": "The FilterBuilder's field structure."
+    },
+    {
+      "name": "editorComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editorTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "editorOptions",
+      "type": "any",
+      "default": null,
+      "description": "Configures the UI component used to edit the field value."
+    },
+    {
+      "name": "editorRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editorTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "editorTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies the editor's custom template."
+    },
+    {
+      "name": "falseText",
+      "type": "String",
+      "default": "'false'",
+      "description": "Specifies the **false** value text. Applies only if [dataType] is *\"boolean\"*."
+    },
+    {
+      "name": "filterOperations",
+      "type": "Array<Enums.FilterBuilderOperation, String>",
+      "default": "undefined",
+      "description": "Specifies a set of available filter operations."
+    },
+    {
+      "name": "format",
+      "type": "Format",
+      "default": "''",
+      "description": "Formats a value before it is displayed."
+    },
+    {
+      "name": "lookup",
+      "subMembers": [
+        {
+          "name": "allowClearing",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the Clear button in the lookup field while it is being edited."
+        },
+        {
+          "name": "dataSource",
+          "type": "Array<any> | Store | DataSource_Options | undefined",
+          "default": "undefined",
+          "description": "Specifies the lookup data source."
+        },
+        {
+          "name": "displayExpr",
+          "type": "String | function(data) | undefined",
+          "default": "undefined",
+          "description": "Specifies the data field whose values should be displayed."
+        },
+        {
+          "name": "lookup",
+          "type": "Object",
+          "default": "undefined",
+          "description": "Configures the lookup field."
+        },
+        {
+          "name": "valueExpr",
+          "type": "String | function(data) | undefined",
+          "default": "undefined",
+          "description": "Specifies the data field whose values should be replaced with values from the [displayExpr] field."
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the field's name. Use it to distinguish the field from other fields when they have identical [dataField] values."
+    },
+    {
+      "name": "trueText",
+      "type": "String",
+      "default": "'true'",
+      "description": "Specifies the **true** value text. Applies only if [dataType] is *\"boolean\"*."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

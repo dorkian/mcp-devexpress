@@ -1,0 +1,261 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Calendar UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "cellComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "cellRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "cellTemplate",
+          "type": "template",
+          "default": "'cell'",
+          "description": "Specifies a custom template for calendar cells."
+        },
+        {
+          "name": "currentDate",
+          "type": "Date",
+          "default": "new Date()",
+          "description": "Specifies a date displayed on the current calendar page."
+        },
+        {
+          "name": "dateSerializationFormat",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the date-time value serialization format."
+        },
+        {
+          "name": "disabledDates",
+          "type": "Array<Date> | function(data)",
+          "default": "null",
+          "description": "Specifies dates that users cannot select."
+        },
+        {
+          "name": "firstDayOfWeek",
+          "type": "Enums.FirstDayOfWeek | undefined",
+          "default": "undefined",
+          "description": "Specifies the first day of a week."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "max",
+          "type": "Date | Number | String | null",
+          "default": "new Date(3000, 0)",
+          "description": "The latest date the UI component allows to select."
+        },
+        {
+          "name": "maxZoomLevel",
+          "type": "Enums.CalendarZoomLevel",
+          "default": "'month'",
+          "description": "Specifies the maximum [zoom level] of the calendar."
+        },
+        {
+          "name": "min",
+          "type": "Date | Number | String | null",
+          "default": "new Date(1000, 0)",
+          "description": "The earliest date the UI component allows to select."
+        },
+        {
+          "name": "minZoomLevel",
+          "type": "Enums.CalendarZoomLevel",
+          "default": "'century'",
+          "description": "Specifies the minimum [zoom level] of the calendar."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectWeekOnClick",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether a user can select a week by clicking on a week number."
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.CalendarSelectionMode",
+          "default": "'single'",
+          "description": "Specifies one of three selection modes: single, multiple, or range."
+        },
+        {
+          "name": "showTodayButton",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the UI component displays a button that selects the current date."
+        },
+        {
+          "name": "showWeekNumbers",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display a column with week numbers."
+        },
+        {
+          "name": "value",
+          "type": "Date | Number | String | null | Array<Date, Number, String, null>",
+          "default": "null",
+          "description": "An object or a value that specifies the date and time selected in the calendar."
+        },
+        {
+          "name": "weekNumberRule",
+          "type": "Enums.WeekNumberRule",
+          "default": "'auto'",
+          "description": "Specifies a [week number] calculation rule."
+        },
+        {
+          "name": "width",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "zoomLevel",
+          "type": "Enums.CalendarZoomLevel",
+          "default": "'month'",
+          "description": "Specifies the current calendar zoom level."
+        }
+      ]
+    },
+    {
+      "name": "dxCalendar",
+      "type": null,
+      "default": null,
+      "description": "The Calendar is a UI component that displays a calendar and allows an end user to select the required date within a specified date range."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Types": [
+    {
+      "name": "CalendarSelectionMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies one of three selection modes: single, multiple, or range."
+    },
+    {
+      "name": "CalendarZoomLevel",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the current calendar zoom level."
+    },
+    {
+      "name": "DisabledDate",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies dates that users cannot select."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    },
+    {
+      "name": "WeekNumberRule",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a [week number] calculation rule."
+    }
+  ]
+}

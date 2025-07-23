@@ -1,0 +1,917 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Form UI component."
+        },
+        {
+          "name": "alignItemLabels",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether all item labels are aligned. Applies only to labels outside their editors (see [labelMode])."
+        },
+        {
+          "name": "alignItemLabelsInAllGroups",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether item labels in all groups are aligned. Applies only to labels outside their editors (see [labelMode])."
+        },
+        {
+          "name": "colCount",
+          "type": "Number | Enums.Mode",
+          "default": "1",
+          "description": "The count of columns in the form layout."
+        },
+        {
+          "name": "colCountByScreen",
+          "type": "Object",
+          "default": "undefined",
+          "description": "Specifies dependency between the screen factor and the count of columns in the form layout."
+        },
+        {
+          "name": "customizeItem",
+          "type": "function(item)",
+          "default": null,
+          "description": "Specifies a function that customizes a form item after it has been created."
+        },
+        {
+          "name": "formData",
+          "type": "any",
+          "default": "{}",
+          "description": "Provides the Form's data. Gets updated every time form fields change."
+        },
+        {
+          "name": "isDirty",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether current editor values differ from initial values."
+        },
+        {
+          "name": "items",
+          "type": "Array<dxFormSimpleItem, dxFormGroupItem, dxFormTabbedItem, dxFormEmptyItem, dxFormButtonItem>",
+          "default": "undefined",
+          "description": "Holds an array of form items."
+        },
+        {
+          "name": "labelLocation",
+          "type": "Enums.LabelLocation",
+          "default": "'left', 'top' (Fluent, Material)",
+          "description": "Specifies the location of a label against the editor. Applies only to labels outside their editors (see [labelMode])."
+        },
+        {
+          "name": "labelMode",
+          "type": "Enums.FormLabelMode",
+          "default": "'outside'",
+          "description": "Specifies a display mode for [item labels]."
+        },
+        {
+          "name": "minColWidth",
+          "type": "Number",
+          "default": "200",
+          "description": "The minimum column width used for calculating column count in the form layout. Applies only if [colCount] property is *\"auto\"*."
+        },
+        {
+          "name": "optionalMark",
+          "type": "String",
+          "default": "'optional'",
+          "description": "The text displayed for optional fields. Applies only if [showOptionalMark] is **true**."
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether all editors on the form are read-only. Applies only to non-[templated] items."
+        },
+        {
+          "name": "requiredMark",
+          "type": "String",
+          "default": "'*'",
+          "description": "The text displayed for required fields."
+        },
+        {
+          "name": "requiredMessage",
+          "type": "String",
+          "default": "'{0} is required'",
+          "description": "Specifies the message that is shown for end-users if a required field value is not specified."
+        },
+        {
+          "name": "screenByWidth",
+          "type": "function()",
+          "default": "null",
+          "description": "Specifies a function that categorizes screens by their width."
+        },
+        {
+          "name": "scrollingEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether to enable or disable form scrolling."
+        },
+        {
+          "name": "showColonAfterLabel",
+          "type": "Boolean",
+          "default": "true, false (Material)",
+          "description": "Specifies whether a colon is displayed at the end of form labels. Applies only to labels outside their editors (see [labelMode])."
+        },
+        {
+          "name": "showOptionalMark",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the [optional mark] is displayed for optional fields."
+        },
+        {
+          "name": "showRequiredMark",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not the [required mark] is displayed for required fields."
+        },
+        {
+          "name": "showValidationSummary",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the total validation summary is displayed on the form."
+        },
+        {
+          "name": "validationGroup",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Gives a name to the internal validation group."
+        },
+        {
+          "name": "width",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Item Types",
+      "subMembers": [
+        {
+          "name": "ButtonItem",
+          "subMembers": [
+            {
+              "name": "ButtonItem",
+              "type": "Object",
+              "default": null,
+              "description": "Configures a button form item."
+            },
+            {
+              "name": "buttonOptions",
+              "type": "dxButton_Options | undefined",
+              "default": "undefined",
+              "description": "Configures the button."
+            },
+            {
+              "name": "colSpan",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies how many columns the item spans."
+            },
+            {
+              "name": "cssClass",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a CSS class to be applied to the item."
+            },
+            {
+              "name": "horizontalAlignment",
+              "type": "Enums.HorizontalAlignment",
+              "default": "'right'",
+              "description": "Specifies the button's horizontal alignment."
+            },
+            {
+              "name": "itemType",
+              "type": "Enums.FormItemType",
+              "default": "'simple'",
+              "description": "Specifies the item's type. Set it to *\"button\"* to create a button item."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the item's identifier."
+            },
+            {
+              "name": "verticalAlignment",
+              "type": "Enums.VerticalAlignment",
+              "default": "'top'",
+              "description": "Specifies the button's vertical alignment."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the item is visible."
+            },
+            {
+              "name": "visibleIndex",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the item's position regarding other items in a group, tab, or the whole UI component."
+            }
+          ]
+        },
+        {
+          "name": "EmptyItem",
+          "subMembers": [
+            {
+              "name": "EmptyItem",
+              "type": "Object",
+              "default": null,
+              "description": "This article describes configuration properties of an empty form item."
+            },
+            {
+              "name": "colSpan",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the number of columns spanned by the item."
+            },
+            {
+              "name": "cssClass",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a CSS class to be applied to the form item."
+            },
+            {
+              "name": "itemType",
+              "type": "Enums.FormItemType",
+              "default": "'simple'",
+              "description": "Specifies the item's type. Set it to *\"empty\"* to create an empty item."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a name that identifies the form item."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not the current form item is visible."
+            },
+            {
+              "name": "visibleIndex",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the sequence number of the item in a form, group or tab."
+            }
+          ]
+        },
+        {
+          "name": "GroupItem",
+          "subMembers": [
+            {
+              "name": "GroupItem",
+              "type": "Object",
+              "default": null,
+              "description": "This article describes configuration properties of a group form item."
+            },
+            {
+              "name": "alignItemLabels",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not all group item labels are aligned."
+            },
+            {
+              "name": "caption",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the group caption."
+            },
+            {
+              "name": "captionComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [captionTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "captionRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [captionTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "captionTemplate",
+              "type": "template",
+              "default": null,
+              "description": "Specifies a template that can be used to replace group captions with custom content."
+            },
+            {
+              "name": "colCount",
+              "type": "Number",
+              "default": "1",
+              "description": "The count of columns in the group layout."
+            },
+            {
+              "name": "colCountByScreen",
+              "type": "Object",
+              "default": "undefined",
+              "description": "Specifies the relation between the [screen size qualifier] and the number of columns in the grouped layout."
+            },
+            {
+              "name": "colSpan",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the number of columns spanned by the item."
+            },
+            {
+              "name": "component",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "cssClass",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a CSS class to be applied to the form item."
+            },
+            {
+              "name": "itemType",
+              "type": "Enums.FormItemType",
+              "default": "'simple'",
+              "description": "Specifies the item's type. Set it to *\"group\"* to create a group item."
+            },
+            {
+              "name": "items",
+              "type": "Array<dxFormSimpleItem, dxFormGroupItem, dxFormTabbedItem, dxFormEmptyItem, dxFormButtonItem>",
+              "default": "undefined",
+              "description": "Holds an array of form items displayed within the group."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a name that identifies the form item."
+            },
+            {
+              "name": "render",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "template",
+              "type": "template",
+              "default": null,
+              "description": "A template to be used for rendering a group item."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not the current form item is visible."
+            },
+            {
+              "name": "visibleIndex",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the sequence number of the item in a form, group or tab."
+            }
+          ]
+        },
+        {
+          "name": "Item Types",
+          "type": null,
+          "default": null,
+          "description": "This section describes item types available in the Form UI component."
+        },
+        {
+          "name": "SimpleItem",
+          "subMembers": [
+            {
+              "name": "SimpleItem",
+              "type": "Object",
+              "default": null,
+              "description": "This article describes configuration properties of a simple form item."
+            },
+            {
+              "name": "colSpan",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the number of columns spanned by the item."
+            },
+            {
+              "name": "component",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "cssClass",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a CSS class to be applied to the form item."
+            },
+            {
+              "name": "dataField",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the path to the [formData] object field bound to the current form item."
+            },
+            {
+              "name": "editorOptions",
+              "type": "any | undefined",
+              "default": "undefined",
+              "description": "Configures the form item's editor."
+            },
+            {
+              "name": "editorType",
+              "type": "Enums.FormItemComponent",
+              "default": null,
+              "description": "Specifies which editor UI component is used to display and edit the form item value."
+            },
+            {
+              "name": "helpText",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the help text displayed for the current form item."
+            },
+            {
+              "name": "isRequired",
+              "type": "Boolean | undefined",
+              "default": "undefined",
+              "description": "Specifies whether the current form item is required."
+            },
+            {
+              "name": "itemType",
+              "type": "Enums.FormItemType",
+              "default": "'simple'",
+              "description": "Specifies the item's type. Set it to *\"simple\"* to create a simple item."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "alignment",
+                  "type": "Enums.HorizontalAlignment",
+                  "default": "'left'",
+                  "description": "Specifies the label's horizontal alignment. Applies only to labels outside their editors (see [labelMode])."
+                },
+                {
+                  "name": "component",
+                  "type": null,
+                  "default": null,
+                  "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+                },
+                {
+                  "name": "label",
+                  "type": "Object",
+                  "default": "undefined",
+                  "description": "Specifies properties for the form item label."
+                },
+                {
+                  "name": "location",
+                  "type": "Enums.LabelLocation",
+                  "default": "'left'",
+                  "description": "Specifies the location of a label against the editor. Applies only to labels outside their editors (see [labelMode])."
+                },
+                {
+                  "name": "render",
+                  "type": null,
+                  "default": null,
+                  "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+                },
+                {
+                  "name": "showColon",
+                  "type": "Boolean",
+                  "default": "from showColonAfterLabel",
+                  "description": "Specifies whether a colon is displayed at the end of the current label. Applies only to labels outside their editors (see [labelMode])."
+                },
+                {
+                  "name": "template",
+                  "type": "template",
+                  "default": null,
+                  "description": "A template that can be used to replace the label with custom content. Applies only to labels outside their editors (see [labelMode])."
+                },
+                {
+                  "name": "text",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the label text."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Controls the visibility of the label outside the editor."
+                }
+              ]
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a name that identifies the form item."
+            },
+            {
+              "name": "render",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "template",
+              "type": "template",
+              "default": null,
+              "description": "A template that can be used to replace the default editor with custom content."
+            },
+            {
+              "name": "validationRules",
+              "type": "Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>",
+              "default": "undefined",
+              "description": "An array of validation rules to be checked for the form item editor."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not the current form item is visible."
+            },
+            {
+              "name": "visibleIndex",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the sequence number of the item in a form, group or tab."
+            }
+          ]
+        },
+        {
+          "name": "TabbedItem",
+          "subMembers": [
+            {
+              "name": "TabbedItem",
+              "type": "Object",
+              "default": null,
+              "description": "This article describes configuration properties of a tabbed form item. You can specify its options in the [tabPanelOptions] object."
+            },
+            {
+              "name": "colSpan",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the number of columns spanned by the item."
+            },
+            {
+              "name": "cssClass",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a CSS class to be applied to the form item."
+            },
+            {
+              "name": "itemType",
+              "type": "Enums.FormItemType",
+              "default": "'simple'",
+              "description": "Specifies the item's type. Set it to *\"tabbed\"* to create a tabbed item."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a name that identifies the form item."
+            },
+            {
+              "name": "tabPanelOptions",
+              "type": "dxTabPanel_Options | undefined",
+              "default": "undefined",
+              "description": "Holds a [configuration object] for the [TabPanel] UI component used to display the current form item."
+            },
+            {
+              "name": "tabs",
+              "subMembers": [
+                {
+                  "name": "alignItemLabels",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether or not labels of items displayed within the current tab are aligned."
+                },
+                {
+                  "name": "badge",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies a badge text for the tab."
+                },
+                {
+                  "name": "colCount",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "The count of columns in the tab layout."
+                },
+                {
+                  "name": "colCountByScreen",
+                  "type": "Object",
+                  "default": "undefined",
+                  "description": "Specifies the relation between the [screen size qualifier] and the number of columns in the tabbed layout."
+                },
+                {
+                  "name": "component",
+                  "type": null,
+                  "default": null,
+                  "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+                },
+                {
+                  "name": "disabled",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether the tab responds to user interaction."
+                },
+                {
+                  "name": "icon",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the icon to be displayed on the tab."
+                },
+                {
+                  "name": "items",
+                  "type": "Array<dxFormSimpleItem, dxFormGroupItem, dxFormTabbedItem, dxFormEmptyItem, dxFormButtonItem>",
+                  "default": "undefined",
+                  "description": "Holds an array of form items displayed within the tab."
+                },
+                {
+                  "name": "render",
+                  "type": null,
+                  "default": null,
+                  "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+                },
+                {
+                  "name": "tabComponent",
+                  "type": null,
+                  "default": null,
+                  "description": "An alias for the [tabTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+                },
+                {
+                  "name": "tabRender",
+                  "type": null,
+                  "default": null,
+                  "description": "An alias for the [tabTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+                },
+                {
+                  "name": "tabTemplate",
+                  "type": "template | undefined",
+                  "default": "undefined",
+                  "description": "The template to be used for rendering the tab."
+                },
+                {
+                  "name": "tabs",
+                  "type": "Array<Object>",
+                  "default": "undefined",
+                  "description": "An array of tab configuration objects."
+                },
+                {
+                  "name": "template",
+                  "type": "template | undefined",
+                  "default": "undefined",
+                  "description": "The template to be used for rendering the tab content."
+                },
+                {
+                  "name": "title",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the tab title."
+                }
+              ]
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not the current form item is visible."
+            },
+            {
+              "name": "visibleIndex",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the sequence number of the item in a form, group or tab."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxForm",
+      "type": null,
+      "default": null,
+      "description": "The Form UI component represents fields of a data object as a collection of label-editor pairs. These pairs can be arranged in several groups, tabs and columns."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clear()",
+      "type": null,
+      "default": null,
+      "description": "Resets editor values to their default values."
+    },
+    {
+      "name": "getButton(name)",
+      "type": null,
+      "default": null,
+      "description": "Gets a button's instance."
+    },
+    {
+      "name": "getEditor(dataField)",
+      "type": "\"group\",",
+      "default": null,
+      "description": "Gets an editor instance. Takes effect only if the form item is visible."
+    },
+    {
+      "name": "itemOption(id)",
+      "type": null,
+      "default": null,
+      "description": "Gets a form item's configuration."
+    },
+    {
+      "name": "itemOption(id_option_value)",
+      "type": "\"group\",",
+      "default": null,
+      "description": "Updates the value of a single item option."
+    },
+    {
+      "name": "itemOption(id_options)",
+      "type": null,
+      "default": null,
+      "description": "Updates the values of several item properties."
+    },
+    {
+      "name": "reset(editorsData)",
+      "type": "'button',",
+      "default": null,
+      "description": "Resets editor values. Every editor attempts to obtain its new value from the argument list. If an editor is not included in the list, that editor resets to its initial value."
+    },
+    {
+      "name": "resetValues()",
+      "type": null,
+      "default": null,
+      "description": "Resets the editor's value to **undefined**."
+    },
+    {
+      "name": "updateData(data)",
+      "type": null,
+      "default": null,
+      "description": "Merges the passed `data` object with [formData]. Matching properties in **formData** are overwritten and new properties added."
+    },
+    {
+      "name": "updateData(dataField_value)",
+      "type": null,
+      "default": null,
+      "description": "Updates a [formData] field and the corresponding editor."
+    },
+    {
+      "name": "updateDimensions()",
+      "type": null,
+      "default": null,
+      "description": "Updates the dimensions of the UI component contents."
+    },
+    {
+      "name": "validate()",
+      "type": null,
+      "default": null,
+      "description": "Validates the values of all editors on the form against the list of the [validation rules] specified for each form item."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEditorEnterKey",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the Enter key has been pressed while an editor is focused."
+    },
+    {
+      "name": "onFieldDataChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the value of a [formData] object field is changed."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "editorEnterKey",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the Enter key has been pressed while an editor is focused."
+    },
+    {
+      "name": "fieldDataChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the value of a [formData] object field is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EditorEnterKeyEvent",
+      "subMembers": [
+        {
+          "name": "EditorEnterKeyEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorEnterKey] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FieldDataChangedEvent",
+      "subMembers": [
+        {
+          "name": "FieldDataChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [fieldDataChanged] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FormItemComponent",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies which editor UI component is used to display and edit the form item value."
+    },
+    {
+      "name": "FormItemType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the item's type."
+    },
+    {
+      "name": "FormLabelMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a display mode for [item labels]."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "LabelLocation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the location of a label against the editor."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    }
+  ]
+}

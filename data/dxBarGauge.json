@@ -1,0 +1,655 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the BarGauge UI component."
+        },
+        {
+          "name": "animation",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "backgroundColor",
+          "type": "String",
+          "default": "'#e0e0e0'",
+          "description": "Specifies a color for the remaining segment of the bar's track."
+        },
+        {
+          "name": "barSpacing",
+          "type": "Number",
+          "default": "4",
+          "description": "Specifies a distance between bars in pixels."
+        },
+        {
+          "name": "baseValue",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies a base value for bars."
+        },
+        {
+          "name": "centerComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [centerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "centerRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [centerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "centerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for content in the component's center."
+        },
+        {
+          "name": "endValue",
+          "type": "Number",
+          "default": "100",
+          "description": "Specifies an end value for the gauge's invisible scale."
+        },
+        {
+          "name": "geometry",
+          "subMembers": [
+            {
+              "name": "endAngle",
+              "type": "Number",
+              "default": "315",
+              "description": "Specifies the end angle of the bar gauge's arc."
+            },
+            {
+              "name": "geometry",
+              "type": "Object",
+              "default": null,
+              "description": "Defines the shape of the gauge's arc."
+            },
+            {
+              "name": "startAngle",
+              "type": "Number",
+              "default": "225",
+              "description": "Specifies the start angle of the bar gauge's arc."
+            }
+          ]
+        },
+        {
+          "name": "label",
+          "subMembers": [
+            {
+              "name": "connectorColor",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies a color for the label connector text."
+            },
+            {
+              "name": "connectorWidth",
+              "type": "Number",
+              "default": "2",
+              "description": "Specifies the width of the label connector in pixels."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(barValue)",
+              "default": null,
+              "description": "Specifies a callback function that returns a text for labels."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies font properties for bar labels."
+                },
+                {
+                  "name": "size",
+                  "type": null,
+                  "default": "16",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "format",
+              "type": "Format | undefined",
+              "default": "undefined",
+              "description": "Formats a value before it is displayed in a label. Accepts only numeric formats."
+            },
+            {
+              "name": "indent",
+              "type": "Number",
+              "default": "20",
+              "description": "Specifies the distance between the upper bar and bar labels in pixels."
+            },
+            {
+              "name": "label",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the properties of the labels that accompany gauge bars."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether bar labels appear on a gauge or not."
+            }
+          ]
+        },
+        {
+          "name": "legend",
+          "subMembers": [
+            {
+              "name": "customizeHint",
+              "type": "function(arg)",
+              "default": null,
+              "description": "Specifies the hint that appears when a user hovers the mouse pointer over a legend item."
+            },
+            {
+              "name": "customizeItems",
+              "type": "function(items)",
+              "default": null,
+              "description": "Allows you to change the order, text, and visibility of legend items."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(arg)",
+              "default": null,
+              "description": "Customizes the text displayed by legend items."
+            },
+            {
+              "name": "itemTextFormat",
+              "type": "Format",
+              "default": "undefined",
+              "description": "Formats the item text before it is displayed. Accepts only numeric formats. When unspecified, it inherits the [label's format]."
+            },
+            {
+              "name": "legend",
+              "type": "viz/bar_gauge:Legend",
+              "default": null,
+              "description": "Configures the legend."
+            },
+            {
+              "name": "markerComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "markerRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "markerTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies an SVG element that serves as a custom legend item marker."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "false",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "loadingIndicator",
+          "subMembers": [
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": null,
+              "description": "-"
+            },
+            {
+              "name": "loadingIndicator",
+              "type": "viz/bar_gauge:LoadingIndicator",
+              "default": null,
+              "description": "Configures the loading indicator."
+            }
+          ]
+        },
+        {
+          "name": "palette",
+          "type": "Array<String> | Enums.Palette",
+          "default": "'Material'",
+          "description": "Sets the palette to be used for colorizing bars in the gauge."
+        },
+        {
+          "name": "paletteExtensionMode",
+          "type": "Enums.PaletteExtensionMode",
+          "default": "'blend'",
+          "description": "Specifies what to do with colors in the [palette] when their number is less than the number of bars in the gauge."
+        },
+        {
+          "name": "relativeInnerRadius",
+          "type": "Number",
+          "default": "0.3",
+          "description": "Defines the radius of the bar that is closest to the center relatively to the radius of the topmost bar."
+        },
+        {
+          "name": "resolveLabelOverlapping",
+          "type": "Enums.ShiftLabelOverlap",
+          "default": "'hide'",
+          "description": "Specifies how the UI component should behave when [bar labels] overlap."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "300",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 300, width: 300}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "300",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "startValue",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies a start value for the gauge's invisible scale."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a tooltip."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": "function(scaleValue)",
+              "default": "undefined",
+              "description": "Allows you to change tooltip appearance."
+            },
+            {
+              "name": "interactive",
+              "type": "Boolean",
+              "default": "false",
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/bar_gauge:Tooltip",
+              "default": null,
+              "description": "Configures tooltips."
+            }
+          ]
+        },
+        {
+          "name": "values",
+          "type": "Array<Number>",
+          "default": "[]",
+          "description": "Specifies the array of values to be indicated on a bar gauge."
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "BarGaugeBarInfo",
+          "subMembers": [
+            {
+              "name": "BarGaugeBarInfo",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a bar in the [BarGauge] UI component."
+            },
+            {
+              "name": "color",
+              "type": "String",
+              "default": null,
+              "description": "The bar's hexadecimal color code."
+            },
+            {
+              "name": "index",
+              "type": "Number",
+              "default": null,
+              "description": "The bar's zero-based index. Bars closest to the gauge's center have higher indexes."
+            },
+            {
+              "name": "value",
+              "type": "Number",
+              "default": null,
+              "description": "The bar's [value]."
+            }
+          ]
+        },
+        {
+          "name": "BarGaugeLegendItem",
+          "subMembers": [
+            {
+              "name": "BarGaugeLegendItem",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a legend item in the [BarGauge] UI component."
+            },
+            {
+              "name": "item",
+              "type": "BarGaugeBarInfo",
+              "default": null,
+              "description": "The bar that the legend item represents."
+            }
+          ]
+        },
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        }
+      ]
+    },
+    {
+      "name": "dxBarGauge",
+      "type": null,
+      "default": null,
+      "description": "The BarGauge UI component contains several circular bars that each indicates a single value."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "values()",
+      "type": null,
+      "default": null,
+      "description": "Gets all the [values]."
+    },
+    {
+      "name": "values(newValues)",
+      "type": null,
+      "default": null,
+      "description": "Updates all the [values]."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "tooltipHidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip becomes hidden."
+    },
+    {
+      "name": "tooltipShown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip appears."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "GaugeIndicatorType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the gauge indicator type."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "Legend",
+      "subMembers": [
+        {
+          "name": "Legend",
+          "type": "uid: viz/bar_gauge:Legend",
+          "default": null,
+          "description": "Configures the legend."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(arg)",
+          "default": null,
+          "description": "Specifies the hint that appears when a user hovers the mouse pointer over a legend item."
+        },
+        {
+          "name": "customizeItems",
+          "type": "function(items)",
+          "default": null,
+          "description": "Allows you to change the order, text, and visibility of legend items."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(arg)",
+          "default": null,
+          "description": "Customizes the text displayed by legend items."
+        },
+        {
+          "name": "itemTextFormat",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Formats the item text before it is displayed. Accepts only numeric formats. When unspecified, it inherits the [label's format]."
+        },
+        {
+          "name": "markerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies an SVG element that serves as a custom legend item marker."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the legend is visible."
+        }
+      ]
+    },
+    {
+      "name": "LoadingIndicator",
+      "subMembers": [
+        {
+          "name": "LoadingIndicator",
+          "type": "module: viz/bar_gauge",
+          "default": null,
+          "description": "Configures the loading indicator."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "-"
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "Tooltip",
+      "subMembers": [
+        {
+          "name": "Tooltip",
+          "type": "module: viz/bar_gauge",
+          "default": null,
+          "description": "Configures tooltips."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a tooltip."
+        },
+        {
+          "name": "customizeTooltip",
+          "type": "function(scaleValue) | undefined",
+          "default": "undefined",
+          "description": "Allows you to change tooltip appearance."
+        },
+        {
+          "name": "interactive",
+          "type": "Boolean",
+          "default": "false",
+          "description": "<!-- %shortDescription% -->"
+        }
+      ]
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipInfo",
+      "subMembers": [
+        {
+          "name": "TooltipInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    }
+  ]
+}

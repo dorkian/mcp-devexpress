@@ -1,0 +1,241 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the **CustomStore**."
+        },
+        {
+          "name": "byKey",
+          "type": "function(key, extraOptions)",
+          "default": null,
+          "description": "Specifies a custom implementation of the [byKey(key)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#byKeykey_extraOptions') method."
+        },
+        {
+          "name": "cacheRawData",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether raw data should be saved in the cache. Applies only if [loadMode] is *\"raw\"*."
+        },
+        {
+          "name": "insert",
+          "type": "function(values)",
+          "default": null,
+          "description": "Specifies a custom implementation of the [insert(values)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#insertvalues') method."
+        },
+        {
+          "name": "load",
+          "type": "function(options)",
+          "default": null,
+          "description": "Specifies a custom implementation of the [load(options)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#loadoptions') method."
+        },
+        {
+          "name": "loadMode",
+          "type": "String",
+          "default": "'processed'",
+          "description": "Specifies how data returned by the [load] function is treated."
+        },
+        {
+          "name": "remove",
+          "type": "function(key)",
+          "default": null,
+          "description": "Specifies a custom implementation of the [remove(key)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#removekey') method."
+        },
+        {
+          "name": "totalCount",
+          "type": "function(loadOptions)",
+          "default": null,
+          "description": "Specifies a custom implementation of the [totalCount(options)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#totalCountoptions') method."
+        },
+        {
+          "name": "update",
+          "type": "function(key, values)",
+          "default": null,
+          "description": "Specifies a custom implementation of the [update(key, values)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#updatekey_values') method."
+        },
+        {
+          "name": "useDefaultSearch",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether the store combines the search and filter expressions. Defaults to **true** if the [loadMode] is *\"raw\"* and **false** if it is *\"processed\"*."
+        }
+      ]
+    },
+    {
+      "name": "CustomStore",
+      "type": null,
+      "default": null,
+      "description": "The **CustomStore** enables you to implement custom data access logic for consuming data from any source."
+    },
+    {
+      "name": "LoadOptions",
+      "subMembers": [
+        {
+          "name": "LoadOptions",
+          "type": "Object",
+          "default": null,
+          "description": "This section describes the **loadOptions** object's fields."
+        },
+        {
+          "name": "customQueryParams",
+          "type": "any",
+          "default": null,
+          "description": "An object for storing additional settings that should be sent to the server. Relevant to the [ODataStore] only."
+        },
+        {
+          "name": "endDate",
+          "type": "Date",
+          "default": null,
+          "description": "Specifies the end date of the [date navigator] range. Relevant to the [Scheduler] only."
+        },
+        {
+          "name": "expand",
+          "type": "Array<String>",
+          "default": null,
+          "description": "An array of strings that represent the names of navigation properties to be loaded simultaneously with the [ODataStore]."
+        },
+        {
+          "name": "filter",
+          "type": "Object",
+          "default": null,
+          "description": "A filter expression."
+        },
+        {
+          "name": "group",
+          "type": "Object",
+          "default": null,
+          "description": "A group expression."
+        },
+        {
+          "name": "groupSummary",
+          "type": "SummaryDescriptor | Array<SummaryDescriptor>",
+          "default": null,
+          "description": "A group summary expression. Used with the [group] setting."
+        },
+        {
+          "name": "parentIds",
+          "type": "Array<any>",
+          "default": null,
+          "description": "The IDs of the rows being expanded. Relevant only when the **CustomStore** is used in the [TreeList] UI component."
+        },
+        {
+          "name": "requireGroupCount",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether a top-level group count is required. Used in conjunction with the [filter], [take], [skip], [requireTotalCount], and [group] settings."
+        },
+        {
+          "name": "requireTotalCount",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the total count of data objects is needed."
+        },
+        {
+          "name": "searchExpr",
+          "type": "getter | Array<getter>",
+          "default": null,
+          "description": "A data field or expression whose value is compared to the search value."
+        },
+        {
+          "name": "searchOperation",
+          "type": "Enums.SearchOperation",
+          "default": null,
+          "description": "A comparison operation."
+        },
+        {
+          "name": "searchValue",
+          "type": "any",
+          "default": null,
+          "description": "The current search value."
+        },
+        {
+          "name": "select",
+          "type": "Object",
+          "default": null,
+          "description": "A [select expression]."
+        },
+        {
+          "name": "skip",
+          "type": "Number",
+          "default": null,
+          "description": "The number of data objects to be skipped from the result set's start. In conjunction with [take], used to implement paging."
+        },
+        {
+          "name": "sort",
+          "type": "Object",
+          "default": null,
+          "description": "A sort expression."
+        },
+        {
+          "name": "startDate",
+          "type": "Date",
+          "default": null,
+          "description": "Specifies the start date of the [date navigator] range. Relevant to the [Scheduler] only."
+        },
+        {
+          "name": "take",
+          "type": "Number",
+          "default": null,
+          "description": "The number of data objects to be loaded. In conjunction with [skip], used to implement paging."
+        },
+        {
+          "name": "totalSummary",
+          "type": "SummaryDescriptor | Array<SummaryDescriptor>",
+          "default": null,
+          "description": "A total summary expression."
+        },
+        {
+          "name": "userData",
+          "type": "any",
+          "default": null,
+          "description": "An object for storing additional settings that should be sent to the server."
+        }
+      ]
+    }
+  ],
+  "Methods": [
+    {
+      "name": "byKey(key_extraOptions)",
+      "type": null,
+      "default": null,
+      "description": "Gets a data item with a specific key."
+    },
+    {
+      "name": "clearRawDataCache()",
+      "type": null,
+      "default": null,
+      "description": "Deletes data from the cache. Takes effect only if the [cacheRawData] property is **true**."
+    },
+    {
+      "name": "load()",
+      "type": null,
+      "default": null,
+      "description": "Starts loading data."
+    },
+    {
+      "name": "load(options)",
+      "type": null,
+      "default": null,
+      "description": "Starts loading data."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onLoaded",
+      "type": "function(result, loadOptions)",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "loaded",
+      "type": "eventType",
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    }
+  ],
+  "Types": []
+}

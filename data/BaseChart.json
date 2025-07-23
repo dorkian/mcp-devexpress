@@ -1,0 +1,518 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "The **BaseChart** properties."
+        },
+        {
+          "name": "adaptiveLayout",
+          "subMembers": [
+            {
+              "name": "adaptiveLayout",
+              "type": "viz/chart_components/base_chart:BaseChartAdaptiveLayout",
+              "default": null,
+              "description": "Specifies adaptive layout properties."
+            },
+            {
+              "name": "height",
+              "type": null,
+              "default": null,
+              "description": "Specifies the minimum container height at which the layout begins to adapt."
+            },
+            {
+              "name": "keepLabels",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether [point labels] should be kept when the UI component adapts the layout."
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": null,
+              "description": "Specifies the minimum container width at which the layout begins to adapt."
+            }
+          ]
+        },
+        {
+          "name": "animation",
+          "subMembers": [
+            {
+              "name": "animation",
+              "type": "Object | Boolean",
+              "default": null,
+              "description": "Specifies animation properties."
+            },
+            {
+              "name": "duration",
+              "type": "Number",
+              "default": "1000",
+              "description": "Specifies how long the animation runs in milliseconds."
+            },
+            {
+              "name": "easing",
+              "type": "Enums.AnimationEaseMode",
+              "default": "'easeOutCubic'",
+              "description": "Specifies the easing function of the animation."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Enables the animation in the UI component."
+            },
+            {
+              "name": "maxPointCountSupported",
+              "type": "Number",
+              "default": "300",
+              "description": "Specifies how many series points the UI component should have before the animation will be disabled."
+            }
+          ]
+        },
+        {
+          "name": "customizeLabel",
+          "type": "function(pointInfo)",
+          "default": null,
+          "description": "Customizes the appearance of an individual point label."
+        },
+        {
+          "name": "customizePoint",
+          "type": "function(pointInfo)",
+          "default": null,
+          "description": "Customizes the appearance of an individual series point."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+          "default": null,
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "legend",
+          "subMembers": [
+            {
+              "name": "customizeItems",
+              "type": null,
+              "default": null,
+              "description": "Allows you to change the order, text, and visibility of legend items."
+            },
+            {
+              "name": "legend",
+              "type": "viz/chart_components/base_chart:BaseChartLegend",
+              "default": null,
+              "description": "Specifies properties of the legend."
+            },
+            {
+              "name": "markerComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "markerRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "markerTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies an SVG element that serves as a custom legend item marker."
+            }
+          ]
+        },
+        {
+          "name": "palette",
+          "type": "Array<String> | Enums.Palette",
+          "default": "'Material'",
+          "description": "Sets the palette to be used for colorizing series and their elements."
+        },
+        {
+          "name": "paletteExtensionMode",
+          "type": "Enums.PaletteExtensionMode",
+          "default": "'blend'",
+          "description": "Specifies what to do with colors in the [palette] when their number is less than the number of series (in the Chart UI component) or points in a series (in the PieChart UI component)."
+        },
+        {
+          "name": "pointSelectionMode",
+          "type": "Enums.SingleOrMultiple",
+          "default": "'single'",
+          "description": "Specifies whether a single point or multiple points can be selected in the chart."
+        },
+        {
+          "name": "series",
+          "type": "any | Array<any> | undefined",
+          "default": "undefined",
+          "description": "Specifies properties for series."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "argumentFormat",
+              "type": null,
+              "default": null,
+              "description": "Formats the point argument before it is displayed in the tooltip. To format the point value, use the [format] property."
+            },
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a tooltip."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": null,
+              "default": null,
+              "description": "Allows you to change tooltip appearance."
+            },
+            {
+              "name": "interactive",
+              "type": null,
+              "default": null,
+              "description": "Allows users to interact with the tooltip content."
+            },
+            {
+              "name": "shared",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether the tooltip is shared across all series points with the same argument."
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/chart_components/base_chart:BaseChartTooltip",
+              "default": null,
+              "description": "Configures tooltips."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chart Elements",
+      "subMembers": [
+        {
+          "name": "Chart Elements",
+          "type": null,
+          "default": null,
+          "description": "This section describes chart elements."
+        },
+        {
+          "name": "Label",
+          "type": "Object",
+          "default": null,
+          "description": "This section describes the **Label** object, which represents a point label."
+        },
+        {
+          "name": "Point",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information on the series point."
+                },
+                {
+                  "name": "data",
+                  "type": "any",
+                  "default": null,
+                  "description": "Contains the data object that the series point represents."
+                },
+                {
+                  "name": "fullState",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Provides information about the state of the **point** object."
+                },
+                {
+                  "name": "originalArgument",
+                  "type": "String | Number | Date",
+                  "default": null,
+                  "description": "Returns the point's argument value that was set in the data source."
+                },
+                {
+                  "name": "originalValue",
+                  "type": "String | Number | Date",
+                  "default": null,
+                  "description": "Returns the point's value that was set in the data source."
+                },
+                {
+                  "name": "series",
+                  "type": "any",
+                  "default": null,
+                  "description": "Returns the series object to which the point belongs."
+                },
+                {
+                  "name": "tag",
+                  "type": "any",
+                  "default": null,
+                  "description": "Returns the tag of the point."
+                }
+              ]
+            },
+            {
+              "name": "Point",
+              "type": "Object",
+              "default": null,
+              "description": "This section describes the **Point** object, which represents a series point."
+            }
+          ]
+        },
+        {
+          "name": "Series",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information on the series."
+                },
+                {
+                  "name": "fullState",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Provides information about the state of the **series** object."
+                },
+                {
+                  "name": "name",
+                  "type": "any",
+                  "default": null,
+                  "description": "Returns the name of the series."
+                },
+                {
+                  "name": "tag",
+                  "type": "any",
+                  "default": null,
+                  "description": "Returns the [tag] of the series."
+                },
+                {
+                  "name": "type",
+                  "type": "String",
+                  "default": null,
+                  "description": "Returns the [type] of the series."
+                }
+              ]
+            },
+            {
+              "name": "Series",
+              "type": "Object",
+              "default": null,
+              "description": "This section describes the **Series** object, which represents a series."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "LegendItem",
+          "subMembers": [
+            {
+              "name": "LegendItem",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a legend item."
+            },
+            {
+              "name": "series",
+              "type": "baseSeriesObject",
+              "default": null,
+              "description": "The series that the item represents on the legend."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BaseChart",
+      "type": null,
+      "default": null,
+      "description": "A base class for all chart UI components included in the ChartJS library."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clearSelection()",
+      "type": null,
+      "default": null,
+      "description": "Deselects the chart's selected series. The series is displayed in an initial style."
+    },
+    {
+      "name": "getAllSeries()",
+      "type": null,
+      "default": null,
+      "description": "Gets all the series."
+    },
+    {
+      "name": "getSeriesByName(seriesName)",
+      "type": null,
+      "default": null,
+      "description": "Gets a series with a specific name."
+    },
+    {
+      "name": "getSeriesByPos(seriesIndex)",
+      "type": null,
+      "default": null,
+      "description": "Gets a series with a specific index."
+    },
+    {
+      "name": "hideTooltip()",
+      "type": null,
+      "default": null,
+      "description": "Hides all UI component tooltips."
+    },
+    {
+      "name": "refresh()",
+      "type": null,
+      "default": null,
+      "description": "Reloads data and repaints the UI component."
+    },
+    {
+      "name": "render(renderOptions)",
+      "type": null,
+      "default": null,
+      "description": "Redraws the UI component."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDone",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when all series are ready."
+    },
+    {
+      "name": "onPointClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a series point is clicked or tapped."
+    },
+    {
+      "name": "onPointHoverChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the pointer enters or leaves a series point."
+    },
+    {
+      "name": "onPointSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a series point is selected or selection is canceled."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "done",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when all series are ready."
+    },
+    {
+      "name": "pointClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a series point is clicked or tapped."
+    },
+    {
+      "name": "pointHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a series point."
+    },
+    {
+      "name": "pointSelectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a series point is selected or selection is canceled."
+    },
+    {
+      "name": "tooltipHidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip becomes hidden."
+    },
+    {
+      "name": "tooltipShown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip appears."
+    }
+  ],
+  "Types": [
+    {
+      "name": "PointInteractionInfo",
+      "subMembers": [
+        {
+          "name": "PointInteractionInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "basePointObject",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TooltipInfo",
+      "subMembers": [
+        {
+          "name": "TooltipInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "basePointObject | dxChartAnnotationConfig | any",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

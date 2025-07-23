@@ -1,0 +1,199 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the dxDropDownList UI component."
+        },
+        {
+          "name": "applyValueMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Returns the value currently displayed by the UI component."
+        },
+        {
+          "name": "fieldTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "groupComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [groupTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "groupRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [groupTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "groupTemplate",
+          "type": "template",
+          "default": "'group'",
+          "description": "Specifies a custom template for group captions."
+        },
+        {
+          "name": "grouped",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether data items should be grouped."
+        },
+        {
+          "name": "minSearchLength",
+          "type": "Number",
+          "default": "0",
+          "description": "The minimum number of characters that must be entered into the text box to begin a search. Applies only if [searchEnabled] is **true**."
+        },
+        {
+          "name": "noDataText",
+          "type": "String",
+          "default": "'No data to display'",
+          "description": "Specifies the text or HTML markup displayed by the UI component if the item collection is empty."
+        },
+        {
+          "name": "searchEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to allow search operations."
+        },
+        {
+          "name": "searchExpr",
+          "type": "getter | Array<getter>",
+          "default": "null",
+          "description": "Specifies the name of a data source item field or an expression whose value is compared to the search criterion."
+        },
+        {
+          "name": "searchMode",
+          "type": "Enums.SimplifiedSearchMode",
+          "default": "'contains'",
+          "description": "Specifies a comparison operation used to search UI component items."
+        },
+        {
+          "name": "searchTimeout",
+          "type": "Number",
+          "default": "500",
+          "description": "Specifies the time delay, in milliseconds, after the last character has been typed in, before a search is executed."
+        },
+        {
+          "name": "selectedItem",
+          "type": "any",
+          "default": "null",
+          "description": "Gets the currently selected item."
+        },
+        {
+          "name": "showDataBeforeSearch",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the UI component displays unfiltered values until a user types a number of characters exceeding the [minSearchLength] property value."
+        },
+        {
+          "name": "useItemTextAsTitle",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the {WidgetName} uses item's text a <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title\" target=\"_blank\">title</a> attribute."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "valueChangeEvent",
+          "type": "String",
+          "default": "'input change keyup'",
+          "description": "Specifies the <a href=\"https://en.wikipedia.org/wiki/DOM_events\" target=\"_blank\">DOM events</a> after which the UI component's [value] should be updated."
+        },
+        {
+          "name": "wrapItemText",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether text that exceeds the drop-down list [width] should be wrapped."
+        }
+      ]
+    },
+    {
+      "name": "dxDropDownList",
+      "type": null,
+      "default": null,
+      "description": "A base class for drop-down list UI components."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a list item is clicked or tapped."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a list item is selected or selection is canceled."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a list item is clicked or tapped."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a list item is selected or selection is canceled."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "SelectionChangedInfo",
+      "subMembers": [
+        {
+          "name": "SelectionChangedInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItem",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

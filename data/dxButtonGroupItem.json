@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "dxButtonGroupItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "elementAttr",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes\" target=\"_blank\">global attributes</a> to be attached to the button group item's container element."
+    },
+    {
+      "name": "hint",
+      "type": "String",
+      "default": null,
+      "description": "Specifies a text for the hint that appears when the button is hovered over or long-pressed."
+    },
+    {
+      "name": "html",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the icon to be displayed on the button."
+    },
+    {
+      "name": "type",
+      "type": "Enums.ButtonType | String",
+      "default": "'normal'",
+      "description": "Specifies the button type."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

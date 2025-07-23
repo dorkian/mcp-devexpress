@@ -1,0 +1,73 @@
+{
+  "properties": [
+    {
+      "name": "calculateFilterExpression",
+      "type": "function(filterValue, field)",
+      "default": null,
+      "description": "Specifies a function that returns a filter expression for this custom operation."
+    },
+    {
+      "name": "caption",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the operation's caption."
+    },
+    {
+      "name": "customizeText",
+      "type": "function(fieldInfo)",
+      "default": null,
+      "description": "Customizes the field value's text representation."
+    },
+    {
+      "name": "dataTypes",
+      "type": "Array<Enums.DataType> | undefined",
+      "default": "undefined",
+      "description": "Specifies for which data types the operation is available by default."
+    },
+    {
+      "name": "dxFilterBuilderCustomOperation",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "editorComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editorTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "editorRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editorTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "editorTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for the UI component used to edit the field value."
+    },
+    {
+      "name": "hasValue",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the operation can have a value. If it can, the editor is displayed."
+    },
+    {
+      "name": "icon",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the icon that should represent the filter operation."
+    },
+    {
+      "name": "name",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the operation's identifier."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,501 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining the FilterBuilder UI component's configuration properties."
+        },
+        {
+          "name": "allowHierarchicalFields",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component can display hierarchical data fields."
+        },
+        {
+          "name": "customOperations",
+          "type": "Array<dxFilterBuilderCustomOperation>",
+          "default": "[]",
+          "description": "Configures custom filter operations."
+        },
+        {
+          "name": "fields",
+          "type": "Array<dxFilterBuilderField>",
+          "default": "[]",
+          "description": "Configures fields."
+        },
+        {
+          "name": "filterOperationDescriptions",
+          "subMembers": [
+            {
+              "name": "between",
+              "type": "String",
+              "default": "'Between'",
+              "description": "The *\"between\"* operation's description."
+            },
+            {
+              "name": "contains",
+              "type": "String",
+              "default": "'Contains'",
+              "description": "The *\"contains\"* operation's description."
+            },
+            {
+              "name": "endsWith",
+              "type": "String",
+              "default": "'Ends with'",
+              "description": "The *\"endswith\"* operation's description."
+            },
+            {
+              "name": "equal",
+              "type": "String",
+              "default": "'Equals'",
+              "description": "The *\"=\"* operation's description."
+            },
+            {
+              "name": "filterOperationDescriptions",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies filter operation descriptions."
+            },
+            {
+              "name": "greaterThan",
+              "type": "String",
+              "default": "'Greater than'",
+              "description": "The *\">\"* operation's description."
+            },
+            {
+              "name": "greaterThanOrEqual",
+              "type": "String",
+              "default": "'Greater than or equal to'",
+              "description": "The *\">=\"* operation's description."
+            },
+            {
+              "name": "isBlank",
+              "type": "String",
+              "default": "'Is blank'",
+              "description": "The *\"isblank\"* operation's description."
+            },
+            {
+              "name": "isNotBlank",
+              "type": "String",
+              "default": "'Is not blank'",
+              "description": "The *\"isnotblank\"* operation's description."
+            },
+            {
+              "name": "lessThan",
+              "type": "String",
+              "default": "'Less than'",
+              "description": "The *\"<\"* operation's description."
+            },
+            {
+              "name": "lessThanOrEqual",
+              "type": "String",
+              "default": "'Less than or equal to'",
+              "description": "The *\"<=\"* operation's description."
+            },
+            {
+              "name": "notContains",
+              "type": "String",
+              "default": "'Does not contain'",
+              "description": "The *\"notcontains\"* operation's description."
+            },
+            {
+              "name": "notEqual",
+              "type": "String",
+              "default": "'Does not equal'",
+              "description": "The *\"<>\"* operation's description."
+            },
+            {
+              "name": "startsWith",
+              "type": "String",
+              "default": "'Starts with'",
+              "description": "The *\"startswith\"* operation's description."
+            }
+          ]
+        },
+        {
+          "name": "groupOperationDescriptions",
+          "subMembers": [
+            {
+              "name": "and",
+              "type": "String",
+              "default": "'And'",
+              "description": "The *\"and\"* operation's description."
+            },
+            {
+              "name": "groupOperationDescriptions",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies group operation descriptions."
+            },
+            {
+              "name": "notAnd",
+              "type": "String",
+              "default": "'Not And'",
+              "description": "The *\"notand\"* operation's description."
+            },
+            {
+              "name": "notOr",
+              "type": "String",
+              "default": "'Not Or'",
+              "description": "The *\"notor\"* operation's description."
+            },
+            {
+              "name": "or",
+              "type": "String",
+              "default": "'Or'",
+              "description": "The *\"or\"* operation's description."
+            }
+          ]
+        },
+        {
+          "name": "groupOperations",
+          "type": "Array<Enums.GroupOperation>",
+          "default": "['and', 'or', 'notAnd', 'notOr']",
+          "description": "Specifies a set of available group operations."
+        },
+        {
+          "name": "maxGroupLevel",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies groups' maximum nesting level."
+        },
+        {
+          "name": "value",
+          "type": "Filter expression",
+          "default": "null",
+          "description": "Allows you to specify a filter."
+        }
+      ]
+    },
+    {
+      "name": "dxFilterBuilder",
+      "type": "\"number\"",
+      "default": null,
+      "description": "The FilterBuilder UI component allows a user to build complex filter expressions with an unlimited number of filter conditions, combined by logical operations using the UI."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getFilterExpression()",
+      "type": null,
+      "default": null,
+      "description": "Gets a filter expression that contains only operations supported by the **DataSource**."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEditorPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an editor is created."
+    },
+    {
+      "name": "onEditorPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before an editor is created."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "editorPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an editor is created."
+    },
+    {
+      "name": "editorPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an editor is created."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EditorPreparedEvent",
+      "subMembers": [
+        {
+          "name": "EditorPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorPrepared] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "filterOperation",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "setValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "updateValueTimeout",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "EditorPreparingEvent",
+      "subMembers": [
+        {
+          "name": "EditorPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorPreparing] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorOptions",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "filterOperation",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "setValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "updateValueTimeout",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FieldInfo",
+      "subMembers": [
+        {
+          "name": "FieldInfo",
+          "type": "Object",
+          "default": null,
+          "description": "Information about a FilterBuilder field."
+        },
+        {
+          "name": "field",
+          "type": "dxFilterBuilderField",
+          "default": null,
+          "description": "Field configuration."
+        },
+        {
+          "name": "value",
+          "type": "String | Number | Date",
+          "default": null,
+          "description": "Unformatted field value (set in the editor)."
+        },
+        {
+          "name": "valueText",
+          "type": "String",
+          "default": null,
+          "description": "The value with the [format] applied."
+        }
+      ]
+    },
+    {
+      "name": "FilterBuilderOperation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a set of available filter operations."
+    },
+    {
+      "name": "GroupOperation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a set of available group operations."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "ValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [valueChanged] event handler's argument."
+        },
+        {
+          "name": "previousValue",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

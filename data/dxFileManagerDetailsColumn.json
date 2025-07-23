@@ -1,0 +1,79 @@
+{
+  "properties": [
+    {
+      "name": "alignment",
+      "type": "Enums.HorizontalAlignment | undefined",
+      "default": "undefined",
+      "description": "Specifies the column alignment."
+    },
+    {
+      "name": "caption",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the column caption."
+    },
+    {
+      "name": "cssClass",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies a <a href=\"http://www.w3schools.com/cssref/sel_class.asp\" target=\"_blank\">CSS class</a> to be applied to the column."
+    },
+    {
+      "name": "dataField",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies which data field provides data for the column."
+    },
+    {
+      "name": "dataType",
+      "type": "Enums.DataType | undefined",
+      "default": "undefined",
+      "description": "Casts column values to a specific data type."
+    },
+    {
+      "name": "dxFileManagerDetailsColumn",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the column."
+    },
+    {
+      "name": "hidingPriority",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the order in which columns are hidden when the UI component adapts to the screen or container size."
+    },
+    {
+      "name": "sortIndex",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the order in which the column is sorted."
+    },
+    {
+      "name": "sortOrder",
+      "type": "Enums.SortOrder | undefined",
+      "default": "undefined",
+      "description": "Specifies the sort order of column values."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies the column visibility."
+    },
+    {
+      "name": "visibleIndex",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the position of the column in the resulting UI component."
+    },
+    {
+      "name": "width",
+      "type": "Number | String | undefined",
+      "default": "undefined",
+      "description": "Specifies the column width."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

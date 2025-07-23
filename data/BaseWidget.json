@@ -1,0 +1,784 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that are common for all UI components."
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component responds to user interaction."
+        },
+        {
+          "name": "export",
+          "subMembers": [
+            {
+              "name": "backgroundColor",
+              "type": null,
+              "default": null,
+              "description": "Specifies the color that will fill transparent regions in the resulting file or document."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "Enables the client-side exporting in the UI component."
+            },
+            {
+              "name": "export",
+              "type": "viz/core/base_widget:BaseWidgetExport",
+              "default": null,
+              "description": "Configures the exporting and printing features."
+            },
+            {
+              "name": "fileName",
+              "type": null,
+              "default": null,
+              "description": "Specifies a default name for the file to which the UI component will be exported."
+            },
+            {
+              "name": "formats",
+              "type": null,
+              "default": null,
+              "description": "Specifies a set of export formats."
+            },
+            {
+              "name": "margin",
+              "type": null,
+              "default": null,
+              "description": "Adds an empty space around the exported UI component; measured in pixels."
+            },
+            {
+              "name": "printingEnabled",
+              "type": null,
+              "default": null,
+              "description": "Enables the printing feature in the UI component. Applies only if the **export**.[enabled] property is **true**."
+            },
+            {
+              "name": "svgToCanvas",
+              "type": null,
+              "default": null,
+              "description": "A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, [markerTemplate])."
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "loadingIndicator",
+          "subMembers": [
+            {
+              "name": "backgroundColor",
+              "type": null,
+              "default": null,
+              "description": "Colors the background of the loading indicator."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether the loading indicator should be displayed and hidden automatically."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#767676'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies font properties for the loading indicator."
+                }
+              ]
+            },
+            {
+              "name": "loadingIndicator",
+              "type": "viz/core/base_widget:BaseWidgetLoadingIndicator",
+              "default": null,
+              "description": "Configures the loading indicator."
+            },
+            {
+              "name": "show",
+              "type": null,
+              "default": null,
+              "description": "Allows you to change the loading indicator's visibility."
+            },
+            {
+              "name": "text",
+              "type": null,
+              "default": null,
+              "description": "Specifies the text to be displayed by the loading indicator."
+            }
+          ]
+        },
+        {
+          "name": "margin",
+          "subMembers": [
+            {
+              "name": "bottom",
+              "type": null,
+              "default": null,
+              "description": "Specifies the bottom margin of the UI component in pixels."
+            },
+            {
+              "name": "left",
+              "type": null,
+              "default": null,
+              "description": "Specifies the left margin of the UI component in pixels."
+            },
+            {
+              "name": "margin",
+              "type": "viz/core/base_widget:BaseWidgetMargin",
+              "default": null,
+              "description": "Generates space around the UI component."
+            },
+            {
+              "name": "right",
+              "type": null,
+              "default": null,
+              "description": "Specifies the right margin of the UI component in pixels."
+            },
+            {
+              "name": "top",
+              "type": null,
+              "default": null,
+              "description": "Specifies the top margin of the UI component in pixels."
+            }
+          ]
+        },
+        {
+          "name": "pathModified",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Notifies the UI component that it is embedded into an HTML page that uses a tag modifying the path."
+        },
+        {
+          "name": "redrawOnResize",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to redraw the UI component when the size of the container changes or a mobile device rotates."
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Switches the UI component to a right-to-left representation."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": null,
+              "description": "Specifies the height of the UI component in pixels."
+            },
+            {
+              "name": "size",
+              "type": "viz/core/base_widget:BaseWidgetSize",
+              "default": "undefined",
+              "description": "Specifies the UI component's size in pixels."
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": null,
+              "description": "Specifies the width of the UI component in pixels."
+            }
+          ]
+        },
+        {
+          "name": "theme",
+          "type": "Enums.Theme",
+          "default": "'generic.light'",
+          "description": "Sets the name of the theme the UI component uses."
+        },
+        {
+          "name": "title",
+          "subMembers": [
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#232323'",
+                  "description": null
+                },
+                {
+                  "name": "family",
+                  "type": null,
+                  "default": "'\"Segoe UI Light\", \"Helvetica Neue Light\", \"Segoe UI\", \"Helvetica Neue\", \"Trebuchet MS\", Verdana, sans-serif'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies font properties for the title."
+                },
+                {
+                  "name": "size",
+                  "type": null,
+                  "default": "28",
+                  "description": null
+                },
+                {
+                  "name": "weight",
+                  "type": null,
+                  "default": "200",
+                  "description": null
+                }
+              ]
+            },
+            {
+              "name": "horizontalAlignment",
+              "type": null,
+              "default": null,
+              "description": "Specifies the title's alignment in a horizontal direction."
+            },
+            {
+              "name": "margin",
+              "subMembers": [
+                {
+                  "name": "bottom",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specifies the bottom margin of the title."
+                },
+                {
+                  "name": "left",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specifies the left margin of the title."
+                },
+                {
+                  "name": "margin",
+                  "type": "Number | Object",
+                  "default": "10",
+                  "description": "Generates space around the title."
+                },
+                {
+                  "name": "right",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specifies the right margin of the title."
+                },
+                {
+                  "name": "top",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specifies the top margin of the title."
+                }
+              ]
+            },
+            {
+              "name": "placeholderSize",
+              "type": null,
+              "default": null,
+              "description": "Reserves a pixel-measured space for the title."
+            },
+            {
+              "name": "subtitle",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#232323'",
+                      "description": null
+                    },
+                    {
+                      "name": "family",
+                      "type": null,
+                      "default": "'\"Segoe UI Light\", \"Helvetica Neue Light\", \"Segoe UI\", \"Helvetica Neue\", \"Trebuchet MS\", Verdana, sans-serif'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for the subtitle."
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "16",
+                      "description": null
+                    },
+                    {
+                      "name": "weight",
+                      "type": null,
+                      "default": "200",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "offset",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies the distance between the [title] and subtitle in pixels."
+                },
+                {
+                  "name": "subtitle",
+                  "type": "Object | String",
+                  "default": null,
+                  "description": "Configures the UI component's subtitle."
+                },
+                {
+                  "name": "text",
+                  "type": "String",
+                  "default": "null",
+                  "description": "Specifies text for the subtitle."
+                },
+                {
+                  "name": "textOverflow",
+                  "type": "Enums.TextOverflow",
+                  "default": "'ellipsis'",
+                  "description": "Specifies what to do with the subtitle when it overflows the allocated space after applying [wordWrap]: hide, truncate it and display an ellipsis, or do nothing."
+                },
+                {
+                  "name": "wordWrap",
+                  "type": "Enums.WordWrap",
+                  "default": "'normal'",
+                  "description": "Specifies how to wrap the subtitle if it does not fit into a single line."
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "type": null,
+              "default": null,
+              "description": "Specifies the title's text."
+            },
+            {
+              "name": "textOverflow",
+              "type": null,
+              "default": null,
+              "description": "Specifies what to do with the title when it overflows the allocated space after applying [wordWrap]: hide, truncate it and display an ellipsis, or do nothing."
+            },
+            {
+              "name": "title",
+              "type": "viz/core/base_widget:BaseWidgetTitle",
+              "default": null,
+              "description": "Configures the UI component's title."
+            },
+            {
+              "name": "verticalAlignment",
+              "type": null,
+              "default": null,
+              "description": "Specifies the title's alignment in a vertical direction."
+            },
+            {
+              "name": "wordWrap",
+              "type": null,
+              "default": null,
+              "description": "Specifies how to wrap the title if it does not fit into a single line."
+            }
+          ]
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "arrowLength",
+              "type": null,
+              "default": null,
+              "description": "Specifies the length of a tooltip's arrow in pixels."
+            },
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures a tooltip's border."
+                },
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#d3d3d3'",
+                  "description": "Colors a tooltip's border."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle",
+                  "default": "'solid'",
+                  "description": "Specifies the dash style of a tooltip's border."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number | undefined",
+                  "default": "undefined",
+                  "description": "Specifies the transparency of a tooltip's border."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether a tooltip's border is visible."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the width of a tooltip's border in pixels."
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": null,
+              "description": "Colors all tooltips."
+            },
+            {
+              "name": "container",
+              "type": null,
+              "default": null,
+              "description": "Specifies the container in which to draw tooltips. The default container is the HTML DOM `<body>` element."
+            },
+            {
+              "name": "cornerRadius",
+              "type": null,
+              "default": null,
+              "description": "Makes all the tooltip's corners rounded."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "Enables tooltips."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#232323'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies tooltips' font properties."
+                }
+              ]
+            },
+            {
+              "name": "format",
+              "type": null,
+              "default": null,
+              "description": "Formats a value before it is displayed it in a tooltip."
+            },
+            {
+              "name": "opacity",
+              "type": null,
+              "default": null,
+              "description": "Specifies tooltips' transparency."
+            },
+            {
+              "name": "paddingLeftRight",
+              "type": null,
+              "default": null,
+              "description": "Generates an empty space, measured in pixels, between a tooltip's left/right border and its text."
+            },
+            {
+              "name": "paddingTopBottom",
+              "type": null,
+              "default": null,
+              "description": "Generates an empty space, measured in pixels, between a tooltip's top/bottom border and its text."
+            },
+            {
+              "name": "shadow",
+              "subMembers": [
+                {
+                  "name": "blur",
+                  "type": "Number",
+                  "default": "2",
+                  "description": "Specifies the blur distance of a tooltip's shadow. The larger the value, the blurrier the shadow's edge."
+                },
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "#000000",
+                  "description": "Colors a tooltip's shadow."
+                },
+                {
+                  "name": "offsetX",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies the horizontal offset of a tooltip's shadow relative to the tooltip itself. Measured in pixels."
+                },
+                {
+                  "name": "offsetY",
+                  "type": "Number",
+                  "default": "4",
+                  "description": "Specifies the vertical offset of a tooltip's shadow relative to the tooltip itself. Measured in pixels."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "0.4",
+                  "description": "Specifies the transparency of a tooltip's shadow."
+                },
+                {
+                  "name": "shadow",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures a tooltip's shadow."
+                }
+              ]
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/core/base_widget:BaseWidgetTooltip",
+              "default": null,
+              "description": "Configures tooltips - small pop-up rectangles that display information about a data-visualizing UI component element being pressed or hovered over with the mouse pointer."
+            },
+            {
+              "name": "zIndex",
+              "type": null,
+              "default": null,
+              "description": "Specifies a tooltip's z-index."
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": null,
+          "description": "-"
+        }
+      ]
+    },
+    {
+      "name": "BaseWidget",
+      "type": null,
+      "default": null,
+      "description": "This section describes properties and methods that are common to all UI components."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "defaultOptions(rule)",
+      "type": null,
+      "default": null,
+      "description": "##### param(rule): Object"
+    },
+    {
+      "name": "exportTo(fileName_format)",
+      "type": null,
+      "default": null,
+      "description": "Exports the UI component."
+    },
+    {
+      "name": "getInstance(element)",
+      "type": null,
+      "default": null,
+      "description": "Gets the instance of a UI component found using its DOM node."
+    },
+    {
+      "name": "getSize()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current UI component size."
+    },
+    {
+      "name": "hideLoadingIndicator()",
+      "type": null,
+      "default": null,
+      "description": "Hides the loading indicator."
+    },
+    {
+      "name": "print()",
+      "type": null,
+      "default": null,
+      "description": "Opens the browser's print window."
+    },
+    {
+      "name": "render()",
+      "type": null,
+      "default": null,
+      "description": "Redraws the UI component."
+    },
+    {
+      "name": "showLoadingIndicator()",
+      "type": null,
+      "default": null,
+      "description": "Shows the loading indicator."
+    },
+    {
+      "name": "svg()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's SVG markup."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "drawn",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component's rendering has finished."
+    },
+    {
+      "name": "exported",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the UI component is exported."
+    },
+    {
+      "name": "exporting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the UI component is exported."
+    },
+    {
+      "name": "fileSaving",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "incidentOccurred",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an error or warning occurs."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ExportInfo",
+      "subMembers": [
+        {
+          "name": "ExportInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fileName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "format",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FileSavingEventInfo",
+      "subMembers": [
+        {
+          "name": "FileSavingEventInfo",
+          "type": "Cancelable | Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Blob",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fileName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "format",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "IncidentInfo",
+      "subMembers": [
+        {
+          "name": "IncidentInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

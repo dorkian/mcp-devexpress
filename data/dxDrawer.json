@@ -1,0 +1,267 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the Drawer UI component's contents, behavior and appearance."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "animationDuration",
+          "type": "Number",
+          "default": "400",
+          "description": "Specifies the duration of the drawer's opening and closing animation (in milliseconds). Applies only if [animationEnabled] is **true**."
+        },
+        {
+          "name": "animationEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to use an opening and closing animation."
+        },
+        {
+          "name": "closeOnOutsideClick",
+          "type": "Boolean | function(event)",
+          "default": "false",
+          "description": "Specifies whether to close the drawer if a user clicks or taps the view area."
+        },
+        {
+          "name": "component",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "contentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "contentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template",
+          "default": "'content'",
+          "description": "##### param(contentElement): DxElement"
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": null,
+          "default": null,
+          "description": "Specifies the view's height."
+        },
+        {
+          "name": "maxSize",
+          "type": "Number",
+          "default": "null",
+          "description": "Specifies the drawer's width or height (depending on the drawer's [position]) in the opened state."
+        },
+        {
+          "name": "minSize",
+          "type": "Number",
+          "default": "null",
+          "description": "Specifies the drawer's width or height (depending on the drawer's [position]) in the closed state."
+        },
+        {
+          "name": "opened",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the drawer is opened."
+        },
+        {
+          "name": "openedStateMode",
+          "type": "Enums.OpenedStateMode",
+          "default": "'shrink'",
+          "description": "Specifies how the drawer interacts with the view in the opened state."
+        },
+        {
+          "name": "position",
+          "type": "Enums.PanelLocation",
+          "default": "'left'",
+          "description": "Specifies the drawer's position in relation to the view."
+        },
+        {
+          "name": "render",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "revealMode",
+          "type": "Enums.RevealMode",
+          "default": "'slide'",
+          "description": "Specifies the drawer's reveal mode."
+        },
+        {
+          "name": "shading",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to shade the view when the drawer is opened."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "template",
+          "type": "template",
+          "default": "'panel'",
+          "description": "Specifies the drawer's content."
+        },
+        {
+          "name": "visible",
+          "type": null,
+          "default": null,
+          "description": "Specifies whether the Drawer UI component (including the view) is visible."
+        },
+        {
+          "name": "width",
+          "type": null,
+          "default": null,
+          "description": "Specifies the view's width."
+        }
+      ]
+    },
+    {
+      "name": "dxDrawer",
+      "type": null,
+      "default": null,
+      "description": "The Drawer is a dismissible or permanently visible panel used for navigation in responsive web application layouts."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "content()",
+      "type": null,
+      "default": null,
+      "description": "Gets the drawer's content."
+    },
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "hide()",
+      "type": null,
+      "default": null,
+      "description": "Closes the drawer."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "show()",
+      "type": null,
+      "default": null,
+      "description": "Opens the drawer."
+    },
+    {
+      "name": "toggle()",
+      "type": null,
+      "default": null,
+      "description": "Opens or closes the drawer, reversing the current state."
+    },
+    {
+      "name": "viewContent()",
+      "type": null,
+      "default": null,
+      "description": "##### return: DxElement"
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OpenedStateMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the drawer interacts with the view in the opened state."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PanelLocation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the drawer's position in relation to the view."
+    },
+    {
+      "name": "RevealMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the drawer's reveal mode."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "dxGanttContextMenu",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the context menu."
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the context menu is enabled in the UI component."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxGanttContextMenuItem, Enums.GanttPredefinedContextMenuItem>",
+      "default": null,
+      "description": "Configures context menu item settings."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

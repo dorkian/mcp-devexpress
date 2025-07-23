@@ -1,0 +1,135 @@
+{
+  "properties": [
+    {
+      "name": "Configuration",
+      "type": null,
+      "default": null,
+      "description": "This section describes properties used to configure the component."
+    },
+    {
+      "name": "Component",
+      "type": null,
+      "default": null,
+      "description": "A base class for all components and UI components."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "beginUpdate()",
+      "type": null,
+      "default": null,
+      "description": "Postpones rendering that can negatively affect performance until the [endUpdate()].md '{basewidgetpath}/Methods/#endUpdate') method is called."
+    },
+    {
+      "name": "ctor(options)",
+      "type": null,
+      "default": null,
+      "description": "##### param(options): Component_Options | undefined"
+    },
+    {
+      "name": "endUpdate()",
+      "type": null,
+      "default": null,
+      "description": "Refreshes the UI component after a call of the [beginUpdate()].md '{basewidgetpath}/Methods/#beginUpdate') method."
+    },
+    {
+      "name": "instance()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's instance. Use it to access other methods of the UI component."
+    },
+    {
+      "name": "off(eventName)",
+      "type": null,
+      "default": null,
+      "description": "Detaches all event handlers from a single event."
+    },
+    {
+      "name": "off(eventName_eventHandler)",
+      "type": null,
+      "default": null,
+      "description": "Detaches a particular event handler from a single event."
+    },
+    {
+      "name": "on(eventName_eventHandler)",
+      "type": null,
+      "default": null,
+      "description": "Subscribes to an event."
+    },
+    {
+      "name": "on(events)",
+      "type": null,
+      "default": null,
+      "description": "Subscribes to events."
+    },
+    {
+      "name": "option()",
+      "type": null,
+      "default": null,
+      "description": "Gets all [UI component properties]."
+    },
+    {
+      "name": "option(optionName)",
+      "type": null,
+      "default": null,
+      "description": "Gets the value of a single property."
+    },
+    {
+      "name": "option(optionName_optionValue)",
+      "type": null,
+      "default": null,
+      "description": "Updates the value of a single property."
+    },
+    {
+      "name": "option(options)",
+      "type": null,
+      "default": null,
+      "description": "Updates the values of several properties."
+    },
+    {
+      "name": "resetOption(optionName)",
+      "type": null,
+      "default": null,
+      "description": "Resets a property to its default value."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "disposing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "initialized",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised only once, after the UI component is initialized."
+    },
+    {
+      "name": "optionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a UI component property is changed."
+    }
+  ],
+  "Types": []
+}

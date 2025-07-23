@@ -1,0 +1,97 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the {WidgetName} UI component."
+        },
+        {
+          "name": "applyButtonText",
+          "type": "String",
+          "default": "'OK'",
+          "description": "Specifies the Apply button's text."
+        },
+        {
+          "name": "calendarOptions",
+          "type": "dxCalendar_Options",
+          "default": "{}",
+          "description": "Configures the calendar's value picker."
+        },
+        {
+          "name": "cancelButtonText",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "Specifies the Cancel button's text."
+        },
+        {
+          "name": "dateSerializationFormat",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the date value serialization format."
+        },
+        {
+          "name": "displayFormat",
+          "type": "Format",
+          "default": "null",
+          "description": "Specifies the date's display format."
+        },
+        {
+          "name": "dropDownOptions",
+          "type": "dxPopup_Options",
+          "default": null,
+          "description": "Configures the drop-down that holds the [content]."
+        },
+        {
+          "name": "max",
+          "type": "Date | Number | String | null | undefined",
+          "default": "undefined",
+          "description": "The latest date that can be selected in the UI component."
+        },
+        {
+          "name": "min",
+          "type": "Date | Number | String | null | undefined",
+          "default": "undefined",
+          "description": "The earliest date that can be selected in the UI component."
+        },
+        {
+          "name": "todayButtonText",
+          "type": "String",
+          "default": "'Today'",
+          "description": "Specified the Today button's text."
+        },
+        {
+          "name": "useMaskBehavior",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to use an input mask based on the [displayFormat] property."
+        }
+      ]
+    },
+    {
+      "name": "DateBoxBase",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [
+    {
+      "name": "close()",
+      "type": null,
+      "default": null,
+      "description": "Closes the drop-down editor."
+    },
+    {
+      "name": "open()",
+      "type": null,
+      "default": null,
+      "description": "Opens the drop-down editor."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,72 @@
+{
+  "properties": [
+    {
+      "name": "allowSearch",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to enable searching in the header filter."
+    },
+    {
+      "name": "allowSelectAll",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether a \"Select All\" option is available to users."
+    },
+    {
+      "name": "dxGanttHeaderFilter",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the header filter."
+    },
+    {
+      "name": "height",
+      "type": "Number",
+      "default": "325, 315 (Fluent, Material)",
+      "description": "Specifies the height of the popup window that contains values for filtering."
+    },
+    {
+      "name": "search",
+      "subMembers": [
+        {
+          "name": "editorOptions",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "search",
+          "type": "HeaderFilterSearchConfig",
+          "default": null,
+          "description": "Configures the header filter's search functionality."
+        }
+      ]
+    },
+    {
+      "name": "searchTimeout",
+      "type": "Number",
+      "default": "500",
+      "description": "Specifies a delay in milliseconds between typing a search string and the search execution."
+    },
+    {
+      "name": "texts",
+      "type": "dxGanttHeaderFilterTexts",
+      "default": null,
+      "description": "Contains properties that specify text for various elements of the popup window."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to show header filter icons."
+    },
+    {
+      "name": "width",
+      "type": "Number",
+      "default": "252",
+      "description": "Specifies the width of the popup window that contains values for filtering."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

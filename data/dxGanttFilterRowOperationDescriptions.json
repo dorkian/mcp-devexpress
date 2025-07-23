@@ -1,0 +1,79 @@
+{
+  "properties": [
+    {
+      "name": "between",
+      "type": "String",
+      "default": "'Between'",
+      "description": "Text for the \"Between\" operation."
+    },
+    {
+      "name": "contains",
+      "type": "String",
+      "default": "'Contains'",
+      "description": "Text for the \"Contains\" operation."
+    },
+    {
+      "name": "dxGanttFilterRowOperationDescriptions",
+      "type": "Object",
+      "default": null,
+      "description": "Contains descriptions for filter operations in the filter list."
+    },
+    {
+      "name": "endsWith",
+      "type": "String",
+      "default": "'Ends with'",
+      "description": "Text for the \"Ends with\" operation."
+    },
+    {
+      "name": "equal",
+      "type": "String",
+      "default": "'Equals'",
+      "description": "Text for the \"Equals\" operation."
+    },
+    {
+      "name": "greaterThan",
+      "type": "String",
+      "default": "'Greater than'",
+      "description": "Text for the \"Greater than\" operation."
+    },
+    {
+      "name": "greaterThanOrEqual",
+      "type": "String",
+      "default": "'Greater than or equal to'",
+      "description": "Text for the \"Greater than or equal to\" operation."
+    },
+    {
+      "name": "lessThan",
+      "type": "String",
+      "default": "'Less than'",
+      "description": "Text for the \"Less than\" operation."
+    },
+    {
+      "name": "lessThanOrEqual",
+      "type": "String",
+      "default": "'Less than or equal to'",
+      "description": "Text for the \"Less than or equal to\" operation."
+    },
+    {
+      "name": "notContains",
+      "type": "String",
+      "default": "'Does not contain'",
+      "description": "Text for the \"Does not contain\" operation."
+    },
+    {
+      "name": "notEqual",
+      "type": "String",
+      "default": "'Does not equal'",
+      "description": "Text for the \"Does not equal\" operation."
+    },
+    {
+      "name": "startsWith",
+      "type": "String",
+      "default": "'Starts with'",
+      "description": "Text for the \"Starts with\" operation."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

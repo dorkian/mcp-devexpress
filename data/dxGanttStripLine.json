@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "cssClass",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the name of the cascading style sheet (CSS) class associated with the strip line."
+    },
+    {
+      "name": "dxGanttStripLine",
+      "type": "Object",
+      "default": null,
+      "description": "Configures a strip line."
+    },
+    {
+      "name": "end",
+      "type": "Date | Number | String | function() | undefined",
+      "default": "undefined",
+      "description": "Specifies the end point of the strip line."
+    },
+    {
+      "name": "start",
+      "type": "Date | Number | String | function() | undefined",
+      "default": "undefined",
+      "description": "Specifies the start point of the strip line."
+    },
+    {
+      "name": "title",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the strip line's title."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

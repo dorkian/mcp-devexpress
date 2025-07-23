@@ -1,0 +1,378 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the DropDownButton UI component's contents, behavior, and appearance."
+        },
+        {
+          "name": "component",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxDropDownButtonItem, any> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": "Provides data for the drop-down menu."
+        },
+        {
+          "name": "deferRendering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to wait until the drop-down menu is opened the first time to render its content."
+        },
+        {
+          "name": "displayExpr",
+          "type": "String | function(itemData) | undefined",
+          "default": "undefined",
+          "description": "Specifies the data field whose values should be displayed in the drop-down menu."
+        },
+        {
+          "name": "dropDownContentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownContentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dropDownContentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownContentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dropDownContentTemplate",
+          "type": "template",
+          "default": "'content'",
+          "description": "Specifies custom content for the drop-down field."
+        },
+        {
+          "name": "dropDownOptions",
+          "type": "dxPopup_Options",
+          "default": "{}",
+          "description": "Configures the drop-down field."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether users can use keyboard to focus the UI component."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the UI component changes its state when a user hovers the mouse pointer over it."
+        },
+        {
+          "name": "icon",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the button's icon."
+        },
+        {
+          "name": "itemComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "itemRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [itemTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "itemTemplate",
+          "type": "template",
+          "default": "'item'",
+          "description": "Specifies a custom template for drop-down menu items."
+        },
+        {
+          "name": "items",
+          "type": "Array<dxDropDownButtonItem, any>",
+          "default": "null",
+          "description": "Provides drop-down menu items."
+        },
+        {
+          "name": "keyExpr",
+          "type": "String",
+          "default": "'this'",
+          "description": "Specifies which data field provides keys used to distinguish between the selected drop-down menu items."
+        },
+        {
+          "name": "noDataText",
+          "type": "String",
+          "default": "'No data to display'",
+          "description": "Specifies the text or HTML markup displayed in the drop-down menu when it does not contain any items."
+        },
+        {
+          "name": "opened",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the drop-down menu is opened."
+        },
+        {
+          "name": "render",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "selectedItem",
+          "type": "String | Number | any",
+          "default": "null",
+          "description": "Contains the selected item's data. Available when [useSelectMode] is **true**."
+        },
+        {
+          "name": "selectedItemKey",
+          "type": "String | Number",
+          "default": "null",
+          "description": "Contains the selected item's key and allows you to specify the initially selected item. Applies when [useSelectMode] is **true**."
+        },
+        {
+          "name": "showArrowIcon",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the arrow icon should be displayed."
+        },
+        {
+          "name": "splitButton",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to split the button in two: one [executes an action], the other opens and closes the drop-down menu."
+        },
+        {
+          "name": "stylingMode",
+          "type": "Enums.ButtonStyle",
+          "default": "'outlined'",
+          "description": "Specifies how the button is styled."
+        },
+        {
+          "name": "template",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the base button in DropDownButton."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the button's text. Applies only if [useSelectMode] is **false**."
+        },
+        {
+          "name": "type",
+          "type": "Enums.ButtonType | String",
+          "default": "'normal'",
+          "description": "Specifies the drop-down button type."
+        },
+        {
+          "name": "useItemTextAsTitle",
+          "type": "Boolean",
+          "default": "true",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "useSelectMode",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component stores the selected drop-down menu item."
+        },
+        {
+          "name": "wrapItemText",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether text that exceeds the drop-down list [width] should be wrapped."
+        }
+      ]
+    },
+    {
+      "name": "dxDropDownButton",
+      "type": null,
+      "default": null,
+      "description": "The DropDownButton is a button that opens a drop-down menu."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "close()",
+      "type": null,
+      "default": null,
+      "description": "Closes the drop-down menu."
+    },
+    {
+      "name": "open()",
+      "type": null,
+      "default": null,
+      "description": "Opens the drop-down menu."
+    },
+    {
+      "name": "toggle()",
+      "type": null,
+      "default": null,
+      "description": "Opens or closes the drop-down menu, reversing the current state."
+    },
+    {
+      "name": "toggle(visibility)",
+      "type": null,
+      "default": null,
+      "description": "Opens or closes the drop-down menu, depending on the argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onButtonClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the button is clicked or tapped. If [splitButton] is **true**, this function is executed for the action button only."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a drop-down menu item is clicked."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an item is selected or selection is canceled. In effect when [useSelectMode] is **true**."
+    },
+    {
+      "name": "buttonClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the button is clicked."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an item in the drop-down filed is clicked."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an item is selected or selection is canceled."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ButtonClickEvent",
+      "subMembers": [
+        {
+          "name": "ButtonClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [buttonClick] event handler's argument."
+        },
+        {
+          "name": "selectedItem",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "subMembers": [
+        {
+          "name": "ItemClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemClick] event handler's argument."
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectionChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectionChanged] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "previousItem",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

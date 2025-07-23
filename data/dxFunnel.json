@@ -1,0 +1,946 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the Funnel UI component's contents, behavior and appearance."
+        },
+        {
+          "name": "adaptiveLayout",
+          "subMembers": [
+            {
+              "name": "adaptiveLayout",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies adaptive layout properties."
+            },
+            {
+              "name": "height",
+              "type": "Number",
+              "default": "80",
+              "description": "Specifies the minimum container height at which the layout begins to adapt."
+            },
+            {
+              "name": "keepLabels",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether [item labels] should be kept when the UI component adapts the layout."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "80",
+              "description": "Specifies the minimum container width at which the layout begins to adapt."
+            }
+          ]
+        },
+        {
+          "name": "algorithm",
+          "type": "Enums.FunnelAlgorithm",
+          "default": "'dynamicSlope'",
+          "description": "Specifies the algorithm for building the funnel."
+        },
+        {
+          "name": "argumentField",
+          "type": "String",
+          "default": "'arg'",
+          "description": "Specifies which data source field provides arguments for funnel items. The argument identifies a funnel item and represents it on the [legend]."
+        },
+        {
+          "name": "colorField",
+          "type": "String",
+          "default": "'color'",
+          "description": "Specifies which data source field provides colors for funnel items. If this field is absent, the [palette] provides the colors."
+        },
+        {
+          "name": "dataSource",
+          "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+          "default": null,
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "hoverEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether funnel items change their style when a user pauses on them."
+        },
+        {
+          "name": "inverted",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Turns the funnel upside down."
+        },
+        {
+          "name": "item",
+          "subMembers": [
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures a funnel item's border."
+                },
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "#ffffff",
+                  "description": "Colors a funnel item's border."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean | undefined",
+                  "default": "false",
+                  "description": "Makes a funnel item's border visible."
+                },
+                {
+                  "name": "width",
+                  "type": "Number | undefined",
+                  "default": "2",
+                  "description": "Sets the width of a funnel item's border in pixels."
+                }
+              ]
+            },
+            {
+              "name": "hoverStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures a funnel item's border appearance when a user presses the item or hovers the mouse pointer over it."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Colors a funnel item's border when a user presses the item or hovers the mouse pointer over it."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean | undefined",
+                      "default": "undefined",
+                      "description": "Shows a funnel item's border when a user presses the item or hovers the mouse pointer over it."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Thickens a funnel item's border when a user presses the item or hovers the mouse pointer over it."
+                    }
+                  ]
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'right'",
+                      "description": "Specifies hatching line direction."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Applies hatching to a funnel item when a user presses the item or hovers the mouse pointer over it."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.75",
+                      "description": "Specifies the transparency of hatching lines."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "6",
+                      "description": "Specifies the distance between two side-by-side hatching lines in pixels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "2",
+                      "description": "Specifies hatching lines' width in pixels."
+                    }
+                  ]
+                },
+                {
+                  "name": "hoverStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures a funnel item's appearance when a user presses the item or hovers the mouse pointer over it."
+                }
+              ]
+            },
+            {
+              "name": "item",
+              "type": "Object",
+              "default": null,
+              "description": "Configures funnel items' appearance."
+            },
+            {
+              "name": "selectionStyle",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "subMembers": [
+                    {
+                      "name": "border",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Configures a funnel item's border appearance when a user selects this item."
+                    },
+                    {
+                      "name": "color",
+                      "type": "String | undefined",
+                      "default": "undefined",
+                      "description": "Colors the selected funnel item's border."
+                    },
+                    {
+                      "name": "visible",
+                      "type": "Boolean | undefined",
+                      "default": "undefined",
+                      "description": "Shows the selected funnel item's border."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number | undefined",
+                      "default": "undefined",
+                      "description": "Thickens the selected funnel item's border."
+                    }
+                  ]
+                },
+                {
+                  "name": "hatching",
+                  "subMembers": [
+                    {
+                      "name": "direction",
+                      "type": "Enums.HatchDirection",
+                      "default": "'right'",
+                      "description": "Specifies hatching line direction."
+                    },
+                    {
+                      "name": "hatching",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Applies hatching to a selected funnel item."
+                    },
+                    {
+                      "name": "opacity",
+                      "type": "Number",
+                      "default": "0.5",
+                      "description": "Specifies hatching line transparency."
+                    },
+                    {
+                      "name": "step",
+                      "type": "Number",
+                      "default": "6",
+                      "description": "Specifies the distance between two side-by-side hatching lines in pixels."
+                    },
+                    {
+                      "name": "width",
+                      "type": "Number",
+                      "default": "2",
+                      "description": "Specifies hatching line width in pixels."
+                    }
+                  ]
+                },
+                {
+                  "name": "selectionStyle",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures a funnel item's appearance when a user selects it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "label",
+          "subMembers": [
+            {
+              "name": "backgroundColor",
+              "type": "String",
+              "default": null,
+              "description": "Colors the labels' background. The default color is inherited from the funnel items."
+            },
+            {
+              "name": "border",
+              "subMembers": [
+                {
+                  "name": "border",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the label borders."
+                },
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#d3d3d3'",
+                  "description": "Colors the label borders."
+                },
+                {
+                  "name": "dashStyle",
+                  "type": "Enums.DashStyle",
+                  "default": "'solid'",
+                  "description": "Sets the label border dash style."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Shows the label borders."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the label border width."
+                }
+              ]
+            },
+            {
+              "name": "connector",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String | undefined",
+                  "default": "undefined",
+                  "description": "Colors label connectors."
+                },
+                {
+                  "name": "connector",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures label connectors."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "0.5",
+                  "description": "Specifies the transparency of label connectors."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Shows label connectors."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the label connector width in pixels."
+                }
+              ]
+            },
+            {
+              "name": "customizeText",
+              "type": "function(itemInfo)",
+              "default": null,
+              "description": "Customizes labels' text."
+            },
+            {
+              "name": "font",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": null,
+                  "default": "'#767676'",
+                  "description": null
+                },
+                {
+                  "name": "font",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies labels' font properties."
+                }
+              ]
+            },
+            {
+              "name": "format",
+              "type": "Format | undefined",
+              "default": "undefined",
+              "description": "Formats the item value before displaying it in the label."
+            },
+            {
+              "name": "horizontalAlignment",
+              "type": "Enums.HorizontalEdge",
+              "default": "'right'",
+              "description": "Specifies labels' position in relation to the funnel items."
+            },
+            {
+              "name": "horizontalOffset",
+              "type": "Number",
+              "default": "0",
+              "description": "Moves labels from their initial positions."
+            },
+            {
+              "name": "label",
+              "type": "Object",
+              "default": null,
+              "description": "Configures funnel item labels."
+            },
+            {
+              "name": "position",
+              "type": "Enums.LabelPosition",
+              "default": "'columns'",
+              "description": "Specifies whether to display labels inside or outside funnel items or arrange them in columns."
+            },
+            {
+              "name": "showForZeroValues",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to show labels for items with zero value."
+            },
+            {
+              "name": "textOverflow",
+              "type": "Enums.TextOverflow",
+              "default": "'ellipsis'",
+              "description": "Specifies what to do with label texts that overflow the allocated space after applying [wordWrap]: hide, truncate them and display an ellipsis, or do nothing."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Controls the labels' visibility."
+            },
+            {
+              "name": "wordWrap",
+              "type": "Enums.WordWrap",
+              "default": "'normal'",
+              "description": "Specifies how to wrap label texts if they do not fit into a single line."
+            }
+          ]
+        },
+        {
+          "name": "legend",
+          "subMembers": [
+            {
+              "name": "customizeHint",
+              "type": "function(itemInfo)",
+              "default": null,
+              "description": "Specifies the hint that appears when a user hovers the mouse pointer over a legend item."
+            },
+            {
+              "name": "customizeItems",
+              "type": "function(items)",
+              "default": null,
+              "description": "Allows you to change the order, text, and visibility of legend items."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(itemInfo)",
+              "default": null,
+              "description": "Customizes the text displayed by legend items."
+            },
+            {
+              "name": "legend",
+              "type": "viz/funnel:Legend",
+              "default": null,
+              "description": "Configures the legend."
+            },
+            {
+              "name": "markerComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "markerRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [markerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "markerTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies an SVG element that serves as a custom legend item marker."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "false",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "neckHeight",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the ratio between the height of the neck and that of the whole funnel. Accepts values from 0 to 1. Applies only if the [algorithm] is *\"dynamicHeight\"*."
+        },
+        {
+          "name": "neckWidth",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the ratio between the width of the neck and that of the whole funnel. Accepts values from 0 to 1. Applies only if the [algorithm] is *\"dynamicHeight\"*."
+        },
+        {
+          "name": "palette",
+          "type": "Array<String> | Enums.Palette",
+          "default": "'Material'",
+          "description": "Sets the palette to be used to colorize funnel items."
+        },
+        {
+          "name": "paletteExtensionMode",
+          "type": "Enums.PaletteExtensionMode",
+          "default": "'blend'",
+          "description": "Specifies what to do with colors in the [palette] when their number is less than the number of funnel items."
+        },
+        {
+          "name": "resolveLabelOverlapping",
+          "type": "Enums.ShiftLabelOverlap",
+          "default": "'shift'",
+          "description": "Specifies how [item labels] should behave when they overlap."
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleMultipleOrNone",
+          "default": "'single'",
+          "description": "Specifies whether a single or multiple funnel items can be in the selected state at a time. Assigning *\"none\"* disables the selection feature."
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "400",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 400, width: 400}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "400",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "sortData",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to sort funnel items."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a tooltip."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": "function(info)",
+              "default": "undefined",
+              "description": "Customizes a specific tooltip's appearance."
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/funnel:Tooltip",
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "valueField",
+          "type": "String",
+          "default": "'val'",
+          "description": "Specifies which data source field provides values for funnel items. The value defines a funnel item's area."
+        }
+      ]
+    },
+    {
+      "name": "Item",
+      "subMembers": [
+        {
+          "name": "Fields",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "type": null,
+              "default": null,
+              "description": "Fields that provide information on the funnel item."
+            },
+            {
+              "name": "argument",
+              "type": "String | Date | Number",
+              "default": null,
+              "description": "The item's argument."
+            },
+            {
+              "name": "data",
+              "type": "any",
+              "default": null,
+              "description": "The item's original data object."
+            },
+            {
+              "name": "percent",
+              "type": "Number",
+              "default": null,
+              "description": "The item's calculated percentage value."
+            },
+            {
+              "name": "value",
+              "type": "Number",
+              "default": null,
+              "description": "The item's value."
+            }
+          ]
+        },
+        {
+          "name": "Item",
+          "type": null,
+          "default": null,
+          "description": "This section describes the **Item** object, which represents a funnel item."
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "FunnelLegendItem",
+          "subMembers": [
+            {
+              "name": "FunnelLegendItem",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a legend item in the [Funnel] UI component."
+            },
+            {
+              "name": "item",
+              "type": "dxFunnelItem",
+              "default": null,
+              "description": "The funnel item that the legend item represents."
+            }
+          ]
+        },
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        }
+      ]
+    },
+    {
+      "name": "dxFunnel",
+      "type": null,
+      "default": null,
+      "description": "The Funnel is a UI component that visualizes a value at different stages. It helps assess value changes throughout these stages and identify potential issues. The Funnel UI component conveys information using different interactive elements ([tooltips], [labels], [legend]) and enables you to create not only a [funnel], but also a [pyramid chart]."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clearSelection()",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of all funnel items."
+    },
+    {
+      "name": "getAllItems()",
+      "type": null,
+      "default": null,
+      "description": "Provides access to all funnel items."
+    },
+    {
+      "name": "hideTooltip()",
+      "type": null,
+      "default": null,
+      "description": "Hides all UI component tooltips."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a [funnel item]."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a [funnel item] is clicked or tapped."
+    },
+    {
+      "name": "onLegendClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a [legend item] is clicked or tapped."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a funnel item is selected or selection is canceled."
+    },
+    {
+      "name": "hoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a [funnel item]."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a [funnel item] is clicked or tapped."
+    },
+    {
+      "name": "legendClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a [legend item] is clicked or tapped."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a funnel item is selected or selection is canceled."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "FunnelAlgorithm",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the algorithm for building the funnel."
+    },
+    {
+      "name": "FunnelItemInfo",
+      "subMembers": [
+        {
+          "name": "FunnelItemInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "item",
+          "type": "dxFunnelItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "HoverChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [hoverChanged] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "Legend",
+      "subMembers": [
+        {
+          "name": "Legend",
+          "type": "uid: viz/funnel:Legend",
+          "default": null,
+          "description": "Configures the legend."
+        },
+        {
+          "name": "customizeHint",
+          "type": "function(itemInfo)",
+          "default": null,
+          "description": "Specifies the hint that appears when a user hovers the mouse pointer over a legend item."
+        },
+        {
+          "name": "customizeItems",
+          "type": "function(items)",
+          "default": null,
+          "description": "Allows you to change the order, text, and visibility of legend items."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(itemInfo)",
+          "default": null,
+          "description": "Customizes the text displayed by legend items."
+        },
+        {
+          "name": "markerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies an SVG element that serves as a custom legend item marker."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the legend is visible."
+        }
+      ]
+    },
+    {
+      "name": "LegendClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [legendClick] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "Tooltip",
+      "subMembers": [
+        {
+          "name": "Tooltip",
+          "type": "module: viz/funnel",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a tooltip."
+        },
+        {
+          "name": "customizeTooltip",
+          "type": "function(info) | undefined",
+          "default": "undefined",
+          "description": "Customizes a specific tooltip's appearance."
+        }
+      ]
+    }
+  ]
+}

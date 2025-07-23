@@ -1,0 +1,3059 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the configuration properties of the DataGrid UI component."
+        },
+        {
+          "name": "autoNavigateToFocusedRow",
+          "type": null,
+          "default": null,
+          "description": "Automatically scrolls the component to the focused row when the [focusedRowKey] is changed. Incompatible with infinite [scrolling mode]."
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxDataGridColumn, String>",
+          "default": "undefined",
+          "description": "An array of grid columns."
+        },
+        {
+          "name": "customizeColumns",
+          "type": "function(columns)",
+          "default": null,
+          "description": "Customizes columns after they are created."
+        },
+        {
+          "name": "dataRowComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dataRowTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dataRowRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dataRowTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dataRowTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for data rows."
+        },
+        {
+          "name": "editing",
+          "subMembers": [
+            {
+              "name": "allowAdding",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether a user can add new rows."
+            },
+            {
+              "name": "allowDeleting",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether a user can delete rows. It is called for each data row when defined as a function."
+            },
+            {
+              "name": "allowUpdating",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether a user can update rows. It is called for each data row when defined as a function."
+            },
+            {
+              "name": "key",
+              "type": "'update',",
+              "default": null,
+              "description": "The key of the row being created, updated, or removed."
+            },
+            {
+              "name": "editing",
+              "type": "ui/data_grid:Editing",
+              "default": null,
+              "description": "Configures editing."
+            },
+            {
+              "name": "mode",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "newRowPosition",
+              "type": null,
+              "default": null,
+              "description": "Specifies a position for a new row."
+            },
+            {
+              "name": "texts",
+              "type": null,
+              "default": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "export",
+          "subMembers": [
+            {
+              "name": "allowExportSelectedData",
+              "type": null,
+              "default": null,
+              "description": "Allows users to export selected rows only."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "Adds the Export button to the DataGrid's toolbar."
+            },
+            {
+              "name": "export",
+              "type": "ui/data_grid:Export",
+              "default": null,
+              "description": "Configures client-side exporting."
+            },
+            {
+              "name": "formats",
+              "type": "'application/octet-stream' }), 'Companies.xlsx');",
+              "default": null,
+              "description": "Specifies the availability and captions of data export buttons."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "exportAll",
+                  "type": null,
+                  "default": null,
+                  "description": "The text or hint of the command that exports all data."
+                },
+                {
+                  "name": "exportSelectedRows",
+                  "type": null,
+                  "default": null,
+                  "description": "The text of the command that exports selected rows. Applies when the [allowExportSelectedData] property is **true**."
+                },
+                {
+                  "name": "exportTo",
+                  "type": null,
+                  "default": null,
+                  "description": "The hint of the **Export** button when the [allowExportSelectedData] property is **true**."
+                },
+                {
+                  "name": "texts",
+                  "type": "ui/data_grid:ExportTexts",
+                  "default": null,
+                  "description": "Configures the texts of export commands, buttons, and hints."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "groupPanel",
+          "subMembers": [
+            {
+              "name": "allowColumnDragging",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether columns can be dragged onto or from the group panel."
+            },
+            {
+              "name": "emptyPanelText",
+              "type": null,
+              "default": null,
+              "description": "Specifies text displayed by the group panel when it does not contain any columns."
+            },
+            {
+              "name": "groupPanel",
+              "type": "ui/data_grid:GroupPanel",
+              "default": null,
+              "description": "Configures the [group panel]."
+            },
+            {
+              "name": "visible",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether the [group panel] is visible or not."
+            }
+          ]
+        },
+        {
+          "name": "grouping",
+          "subMembers": [
+            {
+              "name": "allowCollapsing",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether the user can collapse grouped records in a grid or not."
+            },
+            {
+              "name": "autoExpandAll",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether groups appear expanded or not."
+            },
+            {
+              "name": "contextMenuEnabled",
+              "type": null,
+              "default": null,
+              "description": "Enables the user to group data using the context menu."
+            },
+            {
+              "name": "expandMode",
+              "type": null,
+              "default": null,
+              "description": "Specifies the event on which a group will be expanded/collapsed."
+            },
+            {
+              "name": "grouping",
+              "type": "ui/data_grid:Grouping",
+              "default": null,
+              "description": "Configures grouping."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "groupByThisColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the text of the context menu item that groups data by a specific column."
+                },
+                {
+                  "name": "groupContinuedMessage",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the message displayed in a group row when the corresponding group is continued from the previous page."
+                },
+                {
+                  "name": "groupContinuesMessage",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the message displayed in a group row when the corresponding group continues on the next page."
+                },
+                {
+                  "name": "texts",
+                  "type": "ui/data_grid:GroupingTexts",
+                  "default": null,
+                  "description": "Defines the texts of grouping-related visual elements."
+                },
+                {
+                  "name": "ungroup",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the text of the context menu item that clears grouping settings of a specific column."
+                },
+                {
+                  "name": "ungroupAll",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the text of the context menu item that clears grouping settings of all columns."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyExpr",
+          "type": "String | Array<String> | undefined",
+          "default": "undefined",
+          "description": "Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique. This property applies only if data is a [simple array]."
+        },
+        {
+          "name": "masterDetail",
+          "subMembers": [
+            {
+              "name": "autoExpandAll",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether detail sections appear expanded or collapsed."
+            },
+            {
+              "name": "component",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "Enables an end user to expand/collapse detail sections."
+            },
+            {
+              "name": "masterDetail",
+              "type": "ui/data_grid:MasterDetail",
+              "default": null,
+              "description": "Allows you to build a [master-detail interface] in the grid."
+            },
+            {
+              "name": "render",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "template",
+              "type": "template",
+              "default": null,
+              "description": "Specifies a custom template for detail sections."
+            }
+          ]
+        },
+        {
+          "name": "regenerateColumnsByVisibleItems",
+          "type": "Boolean",
+          "default": "false",
+          "description": "-"
+        },
+        {
+          "name": "remoteOperations",
+          "subMembers": [
+            {
+              "name": "filtering",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not [filtering] must be performed on the server side."
+            },
+            {
+              "name": "groupPaging",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether paging by groups should be performed on the server side."
+            },
+            {
+              "name": "grouping",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not [grouping] must be performed on the server side."
+            },
+            {
+              "name": "paging",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not [paging] must be performed on the server side."
+            },
+            {
+              "name": "remoteOperations",
+              "type": "Boolean | Object | Enums.Mode",
+              "default": "'auto'",
+              "description": "Notifies the DataGrid of the server's data processing operations."
+            },
+            {
+              "name": "sorting",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not [sorting] must be performed on the server side."
+            },
+            {
+              "name": "summary",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether or not [summaries] summaries are calculated on the server-side."
+            }
+          ]
+        },
+        {
+          "name": "rowAlternationEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [rowTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "rowRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [rowTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "rowTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for rows."
+        },
+        {
+          "name": "scrolling",
+          "subMembers": [
+            {
+              "name": "mode",
+              "type": null,
+              "default": null,
+              "description": "Specifies the scrolling mode."
+            },
+            {
+              "name": "scrolling",
+              "type": "ui/data_grid:Scrolling",
+              "default": null,
+              "description": "Configures scrolling."
+            }
+          ]
+        },
+        {
+          "name": "selectedRowKeys",
+          "type": null,
+          "default": null,
+          "description": "Allows you to select rows or determine which rows are selected. Applies only if **selection**.[deferred] is **false**."
+        },
+        {
+          "name": "selection",
+          "subMembers": [
+            {
+              "name": "deferred",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Makes selection deferred."
+            },
+            {
+              "name": "maxFilterLengthInRequest",
+              "type": "Number",
+              "default": "1500",
+              "description": "-"
+            },
+            {
+              "name": "selectAllMode",
+              "type": "Enums.SelectAllMode",
+              "default": "'allPages'",
+              "description": "Specifies the mode in which all the records are selected. Applies only if **selection**.[allowSelectAll] is **true**."
+            },
+            {
+              "name": "selection",
+              "type": "Object",
+              "default": null,
+              "description": "Configures runtime selection."
+            },
+            {
+              "name": "sensitivity",
+              "type": "Enums.SelectionSensitivity",
+              "default": "'base'",
+              "description": "Specifies how to filter selected DataGrid rows based on sensitivity."
+            },
+            {
+              "name": "showCheckBoxesMode",
+              "type": "Enums.SelectionColumnDisplayMode",
+              "default": "'onClick', 'always' (Fluent, Material)",
+              "description": "Specifies when to display the selection column and row selection checkboxes. Applies only if **selection**.[mode] is *\"multiple\"*."
+            }
+          ]
+        },
+        {
+          "name": "selectionFilter",
+          "type": "Filter expression",
+          "default": "[]",
+          "description": "Specifies [filters] for the rows that must be selected initially. Applies only if **selection**.[deferred] is **true**."
+        },
+        {
+          "name": "sortByGroupSummaryInfo",
+          "subMembers": [
+            {
+              "name": "groupColumn",
+              "type": null,
+              "default": null,
+              "description": "Specifies the identifier of the column that must be used in [grouping] so that sorting by [group summary item values] be applied."
+            },
+            {
+              "name": "sortByGroupSummaryInfo",
+              "type": "Array<ui/data_grid:SortByGroupSummaryInfoItem>",
+              "default": "undefined",
+              "description": "Allows you to sort [groups] according to the values of group summary items."
+            },
+            {
+              "name": "sortOrder",
+              "type": null,
+              "default": null,
+              "description": "Specifies the sort order of group summary item values."
+            },
+            {
+              "name": "summaryItem",
+              "type": "\"avg\",",
+              "default": null,
+              "description": "Specifies the group summary item whose values must be used to sort groups."
+            }
+          ]
+        },
+        {
+          "name": "summary",
+          "subMembers": [
+            {
+              "name": "calculateCustomSummary",
+              "type": "\"custom\" },",
+              "default": null,
+              "description": "Specifies a custom aggregate function. This function is called for summary items whose [summaryType] is *\"custom\"*."
+            },
+            {
+              "name": "groupItems",
+              "subMembers": [
+                {
+                  "name": "alignByColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Indicates whether to display group summary items in parentheses after the group row header or to align them by the corresponding columns within the group row."
+                },
+                {
+                  "name": "column",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the column that provides data for a group summary item."
+                },
+                {
+                  "name": "customizeText",
+                  "type": null,
+                  "default": null,
+                  "description": "Customizes the text to be displayed in the summary item."
+                },
+                {
+                  "name": "displayFormat",
+                  "type": "\"sum\",",
+                  "default": null,
+                  "description": "Specifies the summary item's text."
+                },
+                {
+                  "name": "groupItems",
+                  "type": "Array<ui/data_grid:SummaryGroupItem>",
+                  "default": "undefined",
+                  "description": "Specifies items of the group summary."
+                },
+                {
+                  "name": "name",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the group summary item's identifier."
+                },
+                {
+                  "name": "showInColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the column that must hold the summary item when this item is [displayed in the group footer] or [aligned by a column in the group row]."
+                },
+                {
+                  "name": "showInGroupFooter",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies whether or not a summary item must be displayed in the group footer."
+                },
+                {
+                  "name": "skipEmptyValues",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies whether to skip *empty strings*, **null**, and **undefined** values when calculating a summary. Does not apply when you use a remote data source."
+                },
+                {
+                  "name": "summaryType",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies how to aggregate data for the group summary item."
+                },
+                {
+                  "name": "valueFormat",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a summary item value's display format."
+                }
+              ]
+            },
+            {
+              "name": "recalculateWhileEditing",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether to recalculate summaries while a user edits data."
+            },
+            {
+              "name": "skipEmptyValues",
+              "type": "\"custom\"",
+              "default": null,
+              "description": "Specifies whether to skip *empty strings*, **null** and **undefined** values when calculating a summary. Does not apply when you use a remote data source."
+            },
+            {
+              "name": "summary",
+              "type": "ui/data_grid:Summary",
+              "default": null,
+              "description": "Specifies the properties of the grid summary."
+            },
+            {
+              "name": "texts",
+              "subMembers": [
+                {
+                  "name": "avg",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"avg\"* summary items when they are displayed in the parent column."
+                },
+                {
+                  "name": "avgOtherColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"avg\"* summary items displayed in a group row or in any other column rather than the parent one."
+                },
+                {
+                  "name": "count",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"count\"* summary items."
+                },
+                {
+                  "name": "max",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"max\"* summary items when they are displayed in the parent column."
+                },
+                {
+                  "name": "maxOtherColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"max\"* summary items displayed in a group row or in any other column rather than the parent one."
+                },
+                {
+                  "name": "min",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"min\"* summary items when they are displayed in the parent column."
+                },
+                {
+                  "name": "minOtherColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"min\"* summary items displayed in a group row or in any other column rather than the parent one."
+                },
+                {
+                  "name": "sum",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"sum\"* summary items when they are displayed in the parent column."
+                },
+                {
+                  "name": "sumOtherColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a pattern for the *\"sum\"* summary items displayed in a group row or in any other column rather than the parent one."
+                },
+                {
+                  "name": "texts",
+                  "type": "ui/data_grid:SummaryTexts",
+                  "default": null,
+                  "description": "Contains properties that specify text patterns for summary items."
+                }
+              ]
+            },
+            {
+              "name": "totalItems",
+              "subMembers": [
+                {
+                  "name": "alignment",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the alignment of a summary item."
+                },
+                {
+                  "name": "column",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the column that provides data for a summary item."
+                },
+                {
+                  "name": "cssClass",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a CSS class to be applied to a summary item."
+                },
+                {
+                  "name": "customizeText",
+                  "type": null,
+                  "default": null,
+                  "description": "Customizes the text to be displayed in the summary item."
+                },
+                {
+                  "name": "displayFormat",
+                  "type": "\"sum\",",
+                  "default": null,
+                  "description": "Specifies the summary item's text."
+                },
+                {
+                  "name": "name",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the total summary item's identifier."
+                },
+                {
+                  "name": "showInColumn",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies the column that must hold the summary item."
+                },
+                {
+                  "name": "skipEmptyValues",
+                  "type": null,
+                  "default": null,
+                  "description": "<!-- %shortDescription% -->"
+                },
+                {
+                  "name": "summaryType",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies how to aggregate data for the total summary item."
+                },
+                {
+                  "name": "totalItems",
+                  "type": "Array<ui/data_grid:SummaryTotalItem>",
+                  "default": "undefined",
+                  "description": "Specifies items of the total summary."
+                },
+                {
+                  "name": "valueFormat",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a summary item value's display format."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "toolbar",
+          "type": "dxDataGridToolbar | undefined",
+          "default": "undefined",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "width",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Row",
+      "subMembers": [
+        {
+          "name": "Row",
+          "type": "Object",
+          "default": null,
+          "description": "A grid row."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The [data object] represented by the row."
+        },
+        {
+          "name": "groupIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The [group index] of the row. Available when the [rowType] is *\"group\"*."
+        },
+        {
+          "name": "isEditing",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the row is in the editing state."
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the row is expanded or collapsed. Available if [rowType] is *\"data\"* or *\"group\"*."
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates that the row is added, but not yet saved. Available if [rowType] is *\"data\"*."
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether the row is [selected]. Available if [rowType] is *\"data\"*."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The key of the data object represented by the row."
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The *visible* index of the row."
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": "The row's type."
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Values of the row as they exist in the data source."
+        }
+      ]
+    },
+    {
+      "name": "dxDataGrid",
+      "type": null,
+      "default": null,
+      "description": "The DataGrid is a UI component that represents data from a local or remote source in the form of a grid. This UI component offers such basic features as [sorting], [grouping], [filtering], as well as more advanced capabilities, like [state storing], [client-side exporting], [master-detail interface], and many others."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "addColumn(columnOptions)",
+      "type": null,
+      "default": null,
+      "description": "Adds a new column."
+    },
+    {
+      "name": "addRow()",
+      "type": "\"insert\", data: data }",
+      "default": null,
+      "description": "Adds an empty data row and switches it to the editing state."
+    },
+    {
+      "name": "clearGrouping()",
+      "type": null,
+      "default": null,
+      "description": "Ungroups grid records."
+    },
+    {
+      "name": "collapseAll(groupIndex)",
+      "type": null,
+      "default": null,
+      "description": "Collapses master rows or groups of a specific level."
+    },
+    {
+      "name": "collapseRow(key)",
+      "type": null,
+      "default": null,
+      "description": "Collapses a group or a master row with a specific key."
+    },
+    {
+      "name": "expandAll(groupIndex)",
+      "type": null,
+      "default": null,
+      "description": "Expands master rows or groups of a specific level. Does not apply if data is remote."
+    },
+    {
+      "name": "expandRow(key)",
+      "type": null,
+      "default": null,
+      "description": "Expands a group or a master row with a specific key."
+    },
+    {
+      "name": "getSelectedRowKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the currently selected rows' keys."
+    },
+    {
+      "name": "getSelectedRowsData()",
+      "type": null,
+      "default": null,
+      "description": "Gets the selected rows' data objects."
+    },
+    {
+      "name": "getTotalSummaryValue(summaryItemName)",
+      "type": null,
+      "default": null,
+      "description": "Gets the value of a [total summary item]."
+    },
+    {
+      "name": "getVisibleColumns()",
+      "type": null,
+      "default": null,
+      "description": "Gets all visible columns."
+    },
+    {
+      "name": "getVisibleColumns(headerLevel)",
+      "type": null,
+      "default": null,
+      "description": "Gets all visible columns at a specific hierarchical level of column headers. Use it to access [banded columns]."
+    },
+    {
+      "name": "getVisibleRows()",
+      "type": null,
+      "default": null,
+      "description": "Gets currently rendered rows."
+    },
+    {
+      "name": "isRowExpanded(key)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether a specific group or master row is expanded or collapsed."
+    },
+    {
+      "name": "isRowSelected(data)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether a row found using its data object is selected. Takes effect only if **selection**.[deferred] is **true**."
+    },
+    {
+      "name": "isRowSelected(key)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether a row with a specific key is selected. Takes effect only if **selection**.[deferred] is **false**."
+    },
+    {
+      "name": "totalCount()",
+      "type": null,
+      "default": null,
+      "description": "Gets the total row count."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onAdaptiveDetailRowPreparing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before an adaptive detail row is rendered."
+    },
+    {
+      "name": "onCellClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a cell is clicked or tapped. Executed before [onRowClick]."
+    },
+    {
+      "name": "onCellDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a cell is double-clicked or double-tapped. Executed before [onRowDblClick]."
+    },
+    {
+      "name": "onCellHoverChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the pointer enters or leaves a cell."
+    },
+    {
+      "name": "onCellPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a grid cell is created."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onContextMenuPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the context menu is rendered."
+    },
+    {
+      "name": "onDataErrorOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error occurs in the data source."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEditCanceled",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after row changes are discarded."
+    },
+    {
+      "name": "onEditCanceling",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the edit operation is canceled, but row changes are not yet discarded."
+    },
+    {
+      "name": "onEditingStart",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a cell or row switches to the editing state."
+    },
+    {
+      "name": "onEditorPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after an editor is created. Not executed for cells with an [editCellTemplate]."
+    },
+    {
+      "name": "onEditorPreparing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function used to customize cell [editors]. Not executed for cells with an [editCellTemplate]."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before data is exported."
+    },
+    {
+      "name": "onFocusedCellChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the focused cell changes. Applies only to cells in data or group rows."
+    },
+    {
+      "name": "onFocusedCellChanging",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the focused cell changes. Applies only to cells in data or group rows."
+    },
+    {
+      "name": "onFocusedRowChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the focused row changes. Applies only to data or group rows. [focusedRowEnabled] should be **true**."
+    },
+    {
+      "name": "onFocusedRowChanging",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the focused row changes. Applies only to data or group rows. [focusedRowEnabled] should be **true**."
+    },
+    {
+      "name": "onInitNewRow",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a new row is added to the UI component."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onKeyDown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is in focus and a key has been pressed down."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onRowClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a row is clicked or tapped."
+    },
+    {
+      "name": "onRowCollapsed",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row is collapsed."
+    },
+    {
+      "name": "onRowCollapsing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is collapsed."
+    },
+    {
+      "name": "onRowDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a row is double-clicked or double-tapped. Executed after [onCellDblClick]."
+    },
+    {
+      "name": "onRowExpanded",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row is expanded."
+    },
+    {
+      "name": "onRowExpanding",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is expanded."
+    },
+    {
+      "name": "onRowInserted",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a new row has been inserted into the data source."
+    },
+    {
+      "name": "onRowInserting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a new row is inserted into the data source."
+    },
+    {
+      "name": "onRowPrepared",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a row is created."
+    },
+    {
+      "name": "onRowRemoved",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row has been removed from the data source."
+    },
+    {
+      "name": "onRowRemoving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is removed from the data source."
+    },
+    {
+      "name": "onRowUpdated",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a row has been updated in the data source."
+    },
+    {
+      "name": "onRowUpdating",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a row is updated in the data source."
+    },
+    {
+      "name": "onRowValidating",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after cells in a row are validated against [validation rules]."
+    },
+    {
+      "name": "onSaved",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after row changes are saved."
+    },
+    {
+      "name": "onSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before pending row changes are saved."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after selecting a row or clearing its selection."
+    },
+    {
+      "name": "onToolbarPreparing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the toolbar is created."
+    },
+    {
+      "name": "cellClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a cell is clicked or tapped."
+    },
+    {
+      "name": "cellDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a cell is double-clicked or double-tapped."
+    },
+    {
+      "name": "cellHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a cell."
+    },
+    {
+      "name": "cellPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a cell is created."
+    },
+    {
+      "name": "contextMenuPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is rendered."
+    },
+    {
+      "name": "editingStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a cell or row switches to the editing state."
+    },
+    {
+      "name": "editorPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after an editor is created."
+    },
+    {
+      "name": "editorPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before an editor is created."
+    },
+    {
+      "name": "exporting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before data is exported."
+    },
+    {
+      "name": "focusedCellChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the focused cell changes."
+    },
+    {
+      "name": "focusedCellChanging",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the focused cell changes."
+    },
+    {
+      "name": "focusedRowChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the focused row changes. Applies only when [focusedRowEnabled] is **true**."
+    },
+    {
+      "name": "focusedRowChanging",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the focused row changes. Applies only when [focusedRowEnabled] is **true**."
+    },
+    {
+      "name": "rowClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a row is clicked or tapped."
+    },
+    {
+      "name": "rowDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a row is double-clicked or double-tapped."
+    },
+    {
+      "name": "rowPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a row is created."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AdaptiveDetailRowPreparingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [adaptiveDetailRowPreparing] event handler's argument."
+    },
+    {
+      "name": "CellClickEvent",
+      "subMembers": [
+        {
+          "name": "CellClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellClick] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellDblClickEvent",
+      "subMembers": [
+        {
+          "name": "CellDblClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellDblClick] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellHoverChangedEvent",
+      "subMembers": [
+        {
+          "name": "CellHoverChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellHoverChanged] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "eventType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CellPreparedEvent",
+      "subMembers": [
+        {
+          "name": "CellPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [cellPrepared] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "displayValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "oldValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "watch",
+          "type": "function()",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ColumnButtonClickEvent",
+      "subMembers": [
+        {
+          "name": "ColumnButtonClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextMenuPreparingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuPreparing] event handler's argument."
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "Enums.GridsContextMenuTarget",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DataErrorOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [dataErrorOccurred] event handler's argument."
+    },
+    {
+      "name": "DataGridCommandColumnType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the [command column] that this object customizes."
+    },
+    {
+      "name": "DataGridExportFormat",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the availability and captions of data export buttons."
+    },
+    {
+      "name": "DataGridPredefinedColumnButton",
+      "type": "Union",
+      "default": null,
+      "description": "The name used to identify a built-in button."
+    },
+    {
+      "name": "DataGridPredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "A name used to identify the toolbar item."
+    },
+    {
+      "name": "DataGridScrollMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the scrolling mode."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EditCanceledEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [editCanceled] event handler's argument."
+    },
+    {
+      "name": "EditCancelingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [editCanceling] event handler's argument."
+    },
+    {
+      "name": "Editing",
+      "subMembers": [
+        {
+          "name": "Editing",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Configures editing."
+        },
+        {
+          "name": "allowAdding",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can add new rows."
+        },
+        {
+          "name": "allowDeleting",
+          "type": "Boolean | function(options)",
+          "default": "false",
+          "description": "Specifies whether a user can delete rows. It is called for each data row when defined as a function."
+        },
+        {
+          "name": "allowUpdating",
+          "type": "Boolean | function(options)",
+          "default": "false",
+          "description": "Specifies whether a user can update rows. It is called for each data row when defined as a function."
+        },
+        {
+          "name": "newRowPosition",
+          "type": "Enums.NewRowPosition",
+          "default": "'viewportTop'",
+          "description": "Specifies a position for a new row."
+        },
+        {
+          "name": "texts",
+          "type": "any",
+          "default": null,
+          "description": "Contains properties that specify texts for editing-related UI elements."
+        }
+      ]
+    },
+    {
+      "name": "EditingStartEvent",
+      "subMembers": [
+        {
+          "name": "EditingStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editingStart] event handler's argument."
+        },
+        {
+          "name": "column",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "EditorPreparedEvent",
+      "subMembers": [
+        {
+          "name": "EditorPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorPrepared] event handler's argument."
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "setValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "updateValueTimeout",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "EditorPreparingEvent",
+      "subMembers": [
+        {
+          "name": "EditorPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [editorPreparing] event handler's argument."
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "dataField",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "editorOptions",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "setValue",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "updateValueTimeout",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "subMembers": [
+        {
+          "name": "Export",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Configures client-side exporting."
+        },
+        {
+          "name": "allowExportSelectedData",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to export selected rows only."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Adds the Export button to the DataGrid's toolbar."
+        },
+        {
+          "name": "formats",
+          "type": "Array<Enums.DataGridExportFormat, String>",
+          "default": "'DataGrid'",
+          "description": "Specifies the availability and captions of data export buttons."
+        },
+        {
+          "name": "texts",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the texts of export commands, buttons, and hints."
+        }
+      ]
+    },
+    {
+      "name": "ExportTexts",
+      "subMembers": [
+        {
+          "name": "ExportTexts",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Configures the texts of export commands, buttons, and hints."
+        },
+        {
+          "name": "exportAll",
+          "type": "String",
+          "default": "'Export all data to {0}'",
+          "description": "The text or hint of the command that exports all data."
+        },
+        {
+          "name": "exportSelectedRows",
+          "type": "String",
+          "default": "'Export selected rows to {0}'",
+          "description": "The text of the command that exports selected rows. Applies when the [allowExportSelectedData] property is **true**."
+        },
+        {
+          "name": "exportTo",
+          "type": "String",
+          "default": "'Export'",
+          "description": "The hint of the **Export** button when the [allowExportSelectedData] property is **true**."
+        }
+      ]
+    },
+    {
+      "name": "ExportingEvent",
+      "subMembers": [
+        {
+          "name": "ExportingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [exporting] event handler's argument."
+        },
+        {
+          "name": "fileName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "format",
+          "type": "Enums.DataGridExportFormat | String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedRowsOnly",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedCellChangedEvent",
+      "subMembers": [
+        {
+          "name": "FocusedCellChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedCellChanged] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedCellChangingEvent",
+      "subMembers": [
+        {
+          "name": "FocusedCellChangingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedCellChanging] event handler's argument."
+        },
+        {
+          "name": "cellElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxDataGridColumn>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isHighlighted",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newColumnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "prevColumnIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "prevRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rows",
+          "type": "Array<dxDataGridRowObject>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedRowChangedEvent",
+      "subMembers": [
+        {
+          "name": "FocusedRowChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedRowChanged] event handler's argument."
+        },
+        {
+          "name": "row",
+          "type": "dxDataGridRowObject",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedRowChangingEvent",
+      "subMembers": [
+        {
+          "name": "FocusedRowChangingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedRowChanging] event handler's argument."
+        },
+        {
+          "name": "newRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "prevRowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rows",
+          "type": "Array<dxDataGridRowObject>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "GroupData",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies a group of elements in a template."
+    },
+    {
+      "name": "GroupPanel",
+      "subMembers": [
+        {
+          "name": "GroupPanel",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Configures the [group panel]."
+        },
+        {
+          "name": "allowColumnDragging",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether columns can be dragged onto or from the group panel."
+        },
+        {
+          "name": "emptyPanelText",
+          "type": "String",
+          "default": "'Drag a column header here to group by that column'",
+          "description": "Specifies text displayed by the group panel when it does not contain any columns."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean | Enums.Mode",
+          "default": "false",
+          "description": "Specifies whether the [group panel] is visible or not."
+        }
+      ]
+    },
+    {
+      "name": "Grouping",
+      "subMembers": [
+        {
+          "name": "Grouping",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Configures grouping."
+        },
+        {
+          "name": "allowCollapsing",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the user can collapse grouped records in a grid or not."
+        },
+        {
+          "name": "autoExpandAll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether groups appear expanded or not."
+        },
+        {
+          "name": "contextMenuEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Enables the user to group data using the context menu."
+        },
+        {
+          "name": "expandMode",
+          "type": "Enums.GroupExpandMode",
+          "default": "'buttonClick', 'rowClick' (mobile_devices)",
+          "description": "Specifies the event on which a group will be expanded/collapsed."
+        },
+        {
+          "name": "texts",
+          "type": "Object",
+          "default": null,
+          "description": "Defines the texts of grouping-related visual elements."
+        }
+      ]
+    },
+    {
+      "name": "GroupingTexts",
+      "subMembers": [
+        {
+          "name": "GroupingTexts",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Defines the texts of grouping-related visual elements."
+        },
+        {
+          "name": "groupByThisColumn",
+          "type": "String",
+          "default": "'Group by This Column'",
+          "description": "Specifies the text of the context menu item that groups data by a specific column."
+        },
+        {
+          "name": "groupContinuedMessage",
+          "type": "String",
+          "default": "'Continued from the previous page'",
+          "description": "Specifies the message displayed in a group row when the corresponding group is continued from the previous page."
+        },
+        {
+          "name": "groupContinuesMessage",
+          "type": "String",
+          "default": "'Continues on the next page'",
+          "description": "Specifies the message displayed in a group row when the corresponding group continues on the next page."
+        },
+        {
+          "name": "ungroup",
+          "type": "String",
+          "default": "'Ungroup'",
+          "description": "Specifies the text of the context menu item that clears grouping settings of a specific column."
+        },
+        {
+          "name": "ungroupAll",
+          "type": "String",
+          "default": "'Ungroup All'",
+          "description": "Specifies the text of the context menu item that clears grouping settings of all columns."
+        }
+      ]
+    },
+    {
+      "name": "InitNewRowEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initNewRow] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "KeyDownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyDown] event handler's argument."
+    },
+    {
+      "name": "MasterDetail",
+      "subMembers": [
+        {
+          "name": "MasterDetail",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Allows you to build a [master-detail interface] in the grid."
+        },
+        {
+          "name": "autoExpandAll",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether detail sections appear expanded or collapsed."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Enables an end-user to expand/collapse detail sections."
+        },
+        {
+          "name": "template",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for detail sections."
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "RowClickEvent",
+      "subMembers": [
+        {
+          "name": "RowClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [rowClick] event handler's argument."
+        },
+        {
+          "name": "columns",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "groupIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "handled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowCollapsedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowCollapsed] event handler's argument."
+    },
+    {
+      "name": "RowCollapsingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowCollapsing] event handler's argument."
+    },
+    {
+      "name": "RowDblClickEvent",
+      "subMembers": [
+        {
+          "name": "RowDblClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [rowDblClick] event handler's argument."
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxDataGridColumn>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "groupIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowExpandedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowExpanded] event handler's argument."
+    },
+    {
+      "name": "RowExpandingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowExpanding] event handler's argument."
+    },
+    {
+      "name": "RowInsertedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowInserted] event handler's argument."
+    },
+    {
+      "name": "RowInsertingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowInserting] event handler's argument."
+    },
+    {
+      "name": "RowPreparedEvent",
+      "subMembers": [
+        {
+          "name": "RowPreparedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [rowPrepared] event handler's argument."
+        },
+        {
+          "name": "columns",
+          "type": "Array<dxDataGridColumn>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "groupIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isNewRow",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowRemovedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowRemoved] event handler's argument."
+    },
+    {
+      "name": "RowRemovingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowRemoving] event handler's argument."
+    },
+    {
+      "name": "RowUpdatedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowUpdated] event handler's argument."
+    },
+    {
+      "name": "RowUpdatingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowUpdating] event handler's argument."
+    },
+    {
+      "name": "RowValidatingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [rowValidating] event handler's argument."
+    },
+    {
+      "name": "SavedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [saved] event handler's argument."
+    },
+    {
+      "name": "SavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [saving] event handler's argument."
+    },
+    {
+      "name": "Scrolling",
+      "subMembers": [
+        {
+          "name": "Scrolling",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Configures scrolling."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.DataGridScrollMode",
+          "default": "'standard'",
+          "description": "Specifies the scrolling mode."
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionSensitivity",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies sensitivity modes."
+    },
+    {
+      "name": "SortByGroupSummaryInfoItem",
+      "subMembers": [
+        {
+          "name": "SortByGroupSummaryInfoItem",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Allows you to sort [groups] according to the values of group summary items."
+        },
+        {
+          "name": "groupColumn",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the identifier of the column that must be used in [grouping] so that sorting by [group summary item values] be applied."
+        },
+        {
+          "name": "sortOrder",
+          "type": "Enums.SortOrder | undefined",
+          "default": "undefined",
+          "description": "Specifies the sort order of group summary item values."
+        },
+        {
+          "name": "summaryItem",
+          "type": "String | Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the group summary item whose values must be used to sort groups."
+        }
+      ]
+    },
+    {
+      "name": "Summary",
+      "subMembers": [
+        {
+          "name": "Summary",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Specifies the properties of the grid summary."
+        },
+        {
+          "name": "calculateCustomSummary",
+          "type": "function(options)",
+          "default": null,
+          "description": "Specifies a custom aggregate function. This function is called for summary items whose [summaryType] is *\"custom\"*."
+        },
+        {
+          "name": "groupItems",
+          "type": "Array<Object>",
+          "default": "undefined",
+          "description": "Specifies items of the group summary."
+        },
+        {
+          "name": "recalculateWhileEditing",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to recalculate summaries while a user edits data."
+        },
+        {
+          "name": "skipEmptyValues",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to skip *empty strings*, **null** and **undefined** values when calculating a summary. Does not apply when you use a remote data source."
+        },
+        {
+          "name": "texts",
+          "type": "Object",
+          "default": null,
+          "description": "Contains properties that specify text patterns for summary items."
+        },
+        {
+          "name": "totalItems",
+          "type": "Array<Object>",
+          "default": "undefined",
+          "description": "Specifies items of the total summary."
+        }
+      ]
+    },
+    {
+      "name": "SummaryGroupItem",
+      "subMembers": [
+        {
+          "name": "SummaryGroupItem",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Specifies items of the group summary."
+        },
+        {
+          "name": "alignByColumn",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Indicates whether to display group summary items in parentheses after the group row header or to align them by the corresponding columns within the group row."
+        },
+        {
+          "name": "column",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the column that provides data for a group summary item."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(itemInfo)",
+          "default": null,
+          "description": "Customizes the text to be displayed in the summary item."
+        },
+        {
+          "name": "displayFormat",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the summary item's text."
+        },
+        {
+          "name": "name",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the group summary item's identifier."
+        },
+        {
+          "name": "showInColumn",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the column that must hold the summary item when this item is [displayed in the group footer] or [aligned by a column in the group row]."
+        },
+        {
+          "name": "showInGroupFooter",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not a summary item must be displayed in the group footer."
+        },
+        {
+          "name": "skipEmptyValues",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to skip *empty strings*, **null**, and **undefined** values when calculating a summary. Does not apply when you use a remote data source."
+        },
+        {
+          "name": "summaryType",
+          "type": "Enums.SummaryType | String | undefined",
+          "default": "undefined",
+          "description": "Specifies how to aggregate data for the group summary item."
+        },
+        {
+          "name": "valueFormat",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Specifies a summary item value's display format."
+        }
+      ]
+    },
+    {
+      "name": "SummaryTexts",
+      "subMembers": [
+        {
+          "name": "SummaryTexts",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Contains properties that specify text patterns for summary items."
+        },
+        {
+          "name": "avg",
+          "type": "String",
+          "default": "'Avg={0}'",
+          "description": "Specifies a pattern for the *\"avg\"* summary items when they are displayed in the parent column."
+        },
+        {
+          "name": "avgOtherColumn",
+          "type": "String",
+          "default": "'Avg of {1} is {0}'",
+          "description": "Specifies a pattern for the *\"avg\"* summary items displayed in a group row or in any other column rather than the parent one."
+        },
+        {
+          "name": "count",
+          "type": "String",
+          "default": "'Count={0}'",
+          "description": "Specifies a pattern for the *\"count\"* summary items."
+        },
+        {
+          "name": "max",
+          "type": "String",
+          "default": "'Max={0}'",
+          "description": "Specifies a pattern for the *\"max\"* summary items when they are displayed in the parent column."
+        },
+        {
+          "name": "maxOtherColumn",
+          "type": "String",
+          "default": "'Max of {1} is {0}'",
+          "description": "Specifies a pattern for the *\"max\"* summary items displayed in a group row or in any other column rather than the parent one."
+        },
+        {
+          "name": "min",
+          "type": "String",
+          "default": "'Min={0}'",
+          "description": "Specifies a pattern for the *\"min\"* summary items when they are displayed in the parent column."
+        },
+        {
+          "name": "minOtherColumn",
+          "type": "String",
+          "default": "'Min of {1} is {0}'",
+          "description": "Specifies a pattern for the *\"min\"* summary items displayed in a group row or in any other column rather than the parent one."
+        },
+        {
+          "name": "sum",
+          "type": "String",
+          "default": "'Sum={0}'",
+          "description": "Specifies a pattern for the *\"sum\"* summary items when they are displayed in the parent column."
+        },
+        {
+          "name": "sumOtherColumn",
+          "type": "String",
+          "default": "'Sum of {1} is {0}'",
+          "description": "Specifies a pattern for the *\"sum\"* summary items displayed in a group row or in any other column rather than the parent one."
+        }
+      ]
+    },
+    {
+      "name": "SummaryTotalItem",
+      "subMembers": [
+        {
+          "name": "SummaryTotalItem",
+          "type": "module: ui/data_grid",
+          "default": null,
+          "description": "Specifies items of the total summary."
+        },
+        {
+          "name": "alignment",
+          "type": "Enums.HorizontalAlignment | undefined",
+          "default": "undefined",
+          "description": "Specifies the alignment of a summary item."
+        },
+        {
+          "name": "column",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the column that provides data for a summary item."
+        },
+        {
+          "name": "cssClass",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies a CSS class to be applied to a summary item."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(itemInfo)",
+          "default": null,
+          "description": "Customizes the text to be displayed in the summary item."
+        },
+        {
+          "name": "displayFormat",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the summary item's text."
+        },
+        {
+          "name": "name",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the total summary item's identifier."
+        },
+        {
+          "name": "showInColumn",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the column that must hold the summary item."
+        },
+        {
+          "name": "skipEmptyValues",
+          "type": "Boolean",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "summaryType",
+          "type": "Enums.SummaryType | String | undefined",
+          "default": "undefined",
+          "description": "Specifies how to aggregate data for the total summary item."
+        },
+        {
+          "name": "valueFormat",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Specifies a summary item value's display format."
+        }
+      ]
+    },
+    {
+      "name": "ToolbarPreparingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [toolbarPreparing] event handler's argument."
+    }
+  ]
+}

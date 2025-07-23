@@ -1,0 +1,104 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties used to configure the component."
+        },
+        {
+          "name": "elementAttr",
+          "type": "Object",
+          "default": "{}",
+          "description": "Specifies the <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes\" target=\"_blank\">global attributes</a> to be attached to the UI component's container element."
+        },
+        {
+          "name": "height",
+          "type": "Number | String | undefined",
+          "default": "undefined",
+          "description": "Specifies the UI component's height."
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Switches the UI component to a right-to-left representation."
+        },
+        {
+          "name": "width",
+          "type": "Number | String | undefined",
+          "default": "undefined",
+          "description": "Specifies the UI component's width."
+        }
+      ]
+    },
+    {
+      "name": "DOMComponent",
+      "type": null,
+      "default": null,
+      "description": "A base class for all components."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "ctor(element_options)",
+      "type": null,
+      "default": null,
+      "description": "##### param(element): Element | jQuery"
+    },
+    {
+      "name": "defaultOptions(rule)",
+      "type": "\"desktop\" },",
+      "default": null,
+      "description": "Specifies the device-dependent default configuration properties for this component."
+    },
+    {
+      "name": "dispose()",
+      "type": null,
+      "default": null,
+      "description": "Disposes of all the resources allocated to the {WidgetName} instance."
+    },
+    {
+      "name": "element()",
+      "type": null,
+      "default": null,
+      "description": "Gets the root UI component element."
+    },
+    {
+      "name": "getInstance(element)",
+      "type": null,
+      "default": null,
+      "description": "Gets the instance of a UI component found using its DOM node."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": "null",
+      "description": null
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": null
+    },
+    {
+      "name": "disposing",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "optionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Types": []
+}

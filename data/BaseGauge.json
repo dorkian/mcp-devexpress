@@ -1,0 +1,647 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for gauge UI components."
+        },
+        {
+          "name": "animation",
+          "subMembers": [
+            {
+              "name": "animation",
+              "type": "viz/gauges/base_gauge:BaseGaugeAnimation",
+              "default": null,
+              "description": "Specifies animation properties."
+            },
+            {
+              "name": "duration",
+              "type": null,
+              "default": null,
+              "description": "Determines how long animation runs."
+            },
+            {
+              "name": "easing",
+              "type": null,
+              "default": null,
+              "description": "Specifies the animation easing mode."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "Indicates whether or not animation is enabled."
+            }
+          ]
+        },
+        {
+          "name": "containerBackgroundColor",
+          "type": "String",
+          "default": "'none'",
+          "description": "Specifies the color of the parent page element."
+        },
+        {
+          "name": "loadingIndicator",
+          "subMembers": [
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": "-"
+            },
+            {
+              "name": "loadingIndicator",
+              "type": "viz/gauges/base_gauge:BaseGaugeLoadingIndicator",
+              "default": null,
+              "description": "Configures the loading indicator."
+            }
+          ]
+        },
+        {
+          "name": "rangeContainer",
+          "subMembers": [
+            {
+              "name": "backgroundColor",
+              "type": null,
+              "default": null,
+              "description": "Specifies a range container's background color."
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": null,
+              "description": "Specifies the offset of the range container from an invisible scale line in pixels."
+            },
+            {
+              "name": "palette",
+              "type": null,
+              "default": null,
+              "description": "Specifies the palette to be used for colorizing ranges in the range container."
+            },
+            {
+              "name": "paletteExtensionMode",
+              "type": null,
+              "default": null,
+              "description": "Specifies what to do with colors in the [palette] when their number is less than the number of ranges in the range container."
+            },
+            {
+              "name": "rangeContainer",
+              "type": "viz/gauges/base_gauge:BaseGaugeRangeContainer",
+              "default": null,
+              "description": "Specifies properties of the gauge's range container."
+            },
+            {
+              "name": "ranges",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String | ChartsColor",
+                  "default": null,
+                  "description": "Specifies the color of a range."
+                },
+                {
+                  "name": "endValue",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Specifies an end value of a range."
+                },
+                {
+                  "name": "ranges",
+                  "type": "Array<Object>",
+                  "default": "[]",
+                  "description": "An array of objects representing ranges contained in the range container."
+                },
+                {
+                  "name": "startValue",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Specifies a start value of a range."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "scale",
+          "subMembers": [
+            {
+              "name": "allowDecimals",
+              "type": null,
+              "default": null,
+              "description": "Specifies whether to allow decimal values on the scale. When **false**, the scale contains integer values only."
+            },
+            {
+              "name": "customMinorTicks",
+              "type": null,
+              "default": null,
+              "description": "Specifies an array of custom minor ticks."
+            },
+            {
+              "name": "customTicks",
+              "type": null,
+              "default": null,
+              "description": "Specifies an array of custom major ticks."
+            },
+            {
+              "name": "endValue",
+              "type": null,
+              "default": null,
+              "description": "Specifies the end value for the scale of the gauge."
+            },
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "customizeText",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies a callback function that returns the text to be displayed in scale labels."
+                },
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#767676'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for the text displayed in the scale labels of the gauge."
+                    }
+                  ]
+                },
+                {
+                  "name": "format",
+                  "type": null,
+                  "default": null,
+                  "description": "Formats a value before it is displayed in a scale label. Accepts only numeric formats."
+                },
+                {
+                  "name": "label",
+                  "type": "viz/gauges/base_gauge:BaseGaugeScaleLabel",
+                  "default": null,
+                  "description": "Specifies common properties for scale labels."
+                },
+                {
+                  "name": "overlappingBehavior",
+                  "type": null,
+                  "default": null,
+                  "description": "Decides how to arrange scale labels when there is not enough space to keep all of them."
+                },
+                {
+                  "name": "useRangeColors",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies whether or not scale labels should be colored similarly to their corresponding ranges in the [range container]."
+                },
+                {
+                  "name": "visible",
+                  "type": null,
+                  "default": null,
+                  "description": "Specifies whether or not scale labels are visible on the gauge."
+                }
+              ]
+            },
+            {
+              "name": "minorTick",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#FFFFFF'",
+                  "description": "Specifies the color of the scale's minor ticks."
+                },
+                {
+                  "name": "length",
+                  "type": "Number",
+                  "default": "3",
+                  "description": "Specifies the length of the scale's minor ticks."
+                },
+                {
+                  "name": "minorTick",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies properties of the gauge's minor ticks."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the opacity of the scale's minor ticks."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Indicates whether scale minor ticks are visible or not."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the width of the scale's minor ticks."
+                }
+              ]
+            },
+            {
+              "name": "minorTickInterval",
+              "type": null,
+              "default": null,
+              "description": "Specifies an interval between minor ticks."
+            },
+            {
+              "name": "scale",
+              "type": "viz/gauges/base_gauge:BaseGaugeScale",
+              "default": null,
+              "description": "Specifies properties of the gauge's scale."
+            },
+            {
+              "name": "scaleDivisionFactor",
+              "type": null,
+              "default": null,
+              "description": "Specifies the minimum distance between two neighboring [major ticks] in pixels."
+            },
+            {
+              "name": "startValue",
+              "type": null,
+              "default": null,
+              "description": "Specifies the start value for the scale of the gauge."
+            },
+            {
+              "name": "tick",
+              "subMembers": [
+                {
+                  "name": "color",
+                  "type": "String",
+                  "default": "'#FFFFFF'",
+                  "description": "Specifies the color of the scale's major ticks."
+                },
+                {
+                  "name": "length",
+                  "type": "Number",
+                  "default": "5",
+                  "description": "Specifies the length of the scale's major ticks."
+                },
+                {
+                  "name": "opacity",
+                  "type": "Number",
+                  "default": "1",
+                  "description": "Specifies the opacity of the scale's major ticks."
+                },
+                {
+                  "name": "tick",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies properties of the gauge's major ticks."
+                },
+                {
+                  "name": "visible",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Indicates whether scale major ticks are visible or not."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "2",
+                  "description": "Specifies the width of the scale's major ticks."
+                }
+              ]
+            },
+            {
+              "name": "tickInterval",
+              "type": null,
+              "default": null,
+              "description": "Specifies an interval between major ticks."
+            }
+          ]
+        },
+        {
+          "name": "subvalues",
+          "type": "Array<Number>",
+          "default": "undefined",
+          "description": "Specifies a set of subvalues to be designated by the subvalue indicators."
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for a tooltip."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": null,
+              "default": null,
+              "description": "Allows you to change the appearance of specified tooltips."
+            },
+            {
+              "name": "interactive",
+              "type": null,
+              "default": null,
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/gauges/base_gauge:BaseGaugeTooltip",
+              "default": null,
+              "description": "Configures tooltips."
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies the main value on a gauge."
+        }
+      ]
+    },
+    {
+      "name": "Indicator Types",
+      "subMembers": [
+        {
+          "name": "CommonIndicator",
+          "subMembers": [
+            {
+              "name": "CommonIndicator",
+              "type": "Object",
+              "default": null,
+              "description": "A base object for gauge value and subvalue indicators. Includes the properties of indicators of all types."
+            },
+            {
+              "name": "arrowLength",
+              "type": "Number",
+              "default": "5",
+              "description": "Specifies the length of an arrow for the indicator of the *textCloud* type in pixels."
+            },
+            {
+              "name": "backgroundColor",
+              "type": "String",
+              "default": "'none'",
+              "description": "Specifies the background color for the indicator of the *rangeBar* type."
+            },
+            {
+              "name": "baseValue",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the base value for the indicator of the *rangeBar* type."
+            },
+            {
+              "name": "beginAdaptingAtRadius",
+              "type": "Number",
+              "default": "50",
+              "description": "Specifies a radius small enough for the indicator to begin adapting."
+            },
+            {
+              "name": "color",
+              "type": "String | ChartsColor",
+              "default": null,
+              "description": "Specifies the color of the indicator."
+            },
+            {
+              "name": "horizontalOrientation",
+              "type": "Enums.HorizontalEdge",
+              "default": "'left' (subvalue_indicators), 'right' (value_indicators)",
+              "description": "Specifies the orientation of the *rangeBar* indicator. Applies only if the **geometry**.[orientation] property is *\"vertical\"*."
+            },
+            {
+              "name": "indentFromCenter",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the distance between the needle and the center of a gauge for the indicator of a needle-like type."
+            },
+            {
+              "name": "length",
+              "type": "Number",
+              "default": "15",
+              "description": "Specifies the indicator length."
+            },
+            {
+              "name": "offset",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the distance between the indicator and the invisible scale line."
+            },
+            {
+              "name": "palette",
+              "type": "Array<String> | Enums.Palette",
+              "default": "'Material'",
+              "description": "Sets the palette to be used to colorize indicators differently."
+            },
+            {
+              "name": "secondColor",
+              "type": "String",
+              "default": "'#E18E92'",
+              "description": "Specifies the second color for the indicator of the *twoColorNeedle* type."
+            },
+            {
+              "name": "secondFraction",
+              "type": "Number",
+              "default": "0.4",
+              "description": "Specifies the length of a *twoNeedleColor* type indicator tip as a percentage."
+            },
+            {
+              "name": "size",
+              "type": "Number",
+              "default": "10",
+              "description": "Specifies the range bar size for an indicator of the *rangeBar* type."
+            },
+            {
+              "name": "spindleGapSize",
+              "type": "Number",
+              "default": "10",
+              "description": "Specifies the inner diameter in pixels, so that the spindle has the shape of a ring."
+            },
+            {
+              "name": "spindleSize",
+              "type": "Number",
+              "default": "14",
+              "description": "Specifies the spindle's diameter in pixels for the indicator of a needle-like type."
+            },
+            {
+              "name": "text",
+              "subMembers": [
+                {
+                  "name": "customizeText",
+                  "type": "function(indicatedValue) | undefined",
+                  "default": "undefined",
+                  "description": "Specifies a callback function that returns the text to be displayed in an indicator."
+                },
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "font",
+                      "type": "Object",
+                      "default": null,
+                      "description": "Specifies font properties for the text displayed by the indicator."
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "14",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "format",
+                  "type": "Format | undefined",
+                  "default": "undefined",
+                  "description": "Formats a value before it is displayed in an indicator. Accepts only numeric formats."
+                },
+                {
+                  "name": "indent",
+                  "type": "Number",
+                  "default": "0",
+                  "description": "Specifies the range bar's label indent in pixels."
+                },
+                {
+                  "name": "text",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the appearance of the text displayed in an indicator of the *rangeBar* type."
+                }
+              ]
+            },
+            {
+              "name": "verticalOrientation",
+              "type": "Enums.VerticalEdge",
+              "default": "'bottom' (value_indicators), 'top' (subvalue_indicators)",
+              "description": "Specifies the orientation of the *rangeBar* indicator. Applies only if the **geometry**.[orientation] property is *\"horizontal\"*."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "2",
+              "description": "Specifies the width of an indicator in pixels."
+            }
+          ]
+        },
+        {
+          "name": "GaugeIndicator",
+          "subMembers": [
+            {
+              "name": "GaugeIndicator",
+              "type": "module: viz/gauges/base_gauge",
+              "default": null,
+              "description": "-"
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the type of gauge indicators."
+            }
+          ]
+        },
+        {
+          "name": "Indicator Types",
+          "type": null,
+          "default": null,
+          "description": "This section lists objects that define properties used to configure value and subvalue indicators of specific types."
+        }
+      ]
+    },
+    {
+      "name": "BaseGauge",
+      "type": "Object",
+      "default": null,
+      "description": "A gauge UI component."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "subvalues()",
+      "type": null,
+      "default": null,
+      "description": "Gets subvalues."
+    },
+    {
+      "name": "subvalues(subvalues)",
+      "type": null,
+      "default": null,
+      "description": "Updates subvalues."
+    },
+    {
+      "name": "value()",
+      "type": null,
+      "default": null,
+      "description": "Gets the [main value]."
+    },
+    {
+      "name": "value(value)",
+      "type": null,
+      "default": null,
+      "description": "Updates the [main value]."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "tooltipHidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip becomes hidden."
+    },
+    {
+      "name": "tooltipShown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip appears."
+    }
+  ],
+  "Types": [
+    {
+      "name": "TooltipInfo",
+      "subMembers": [
+        {
+          "name": "TooltipInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "target",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

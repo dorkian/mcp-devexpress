@@ -1,0 +1,2152 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "A configuration object for the CardView UI component."
+        },
+        {
+          "name": "allowColumnReordering",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can reorder columns."
+        },
+        {
+          "name": "cardComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cardTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "cardContentComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cardContentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "cardContentRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cardContentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "cardContentTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for card content."
+        },
+        {
+          "name": "cardCover",
+          "type": "CardCover",
+          "default": null,
+          "description": "Configures the card cover."
+        },
+        {
+          "name": "cardFooterComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cardFooterTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "cardFooterRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cardFooterTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "cardFooterTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for a card footer."
+        },
+        {
+          "name": "cardHeader",
+          "type": "CardHeader",
+          "default": null,
+          "description": "Configures the card header."
+        },
+        {
+          "name": "cardMaxWidth",
+          "type": "Number",
+          "default": null,
+          "description": "Specifies the maximum width of the card."
+        },
+        {
+          "name": "cardMinWidth",
+          "type": "Number",
+          "default": null,
+          "description": "Specifies the minimum width of the card."
+        },
+        {
+          "name": "cardRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [cardTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "cardTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the card."
+        },
+        {
+          "name": "cardsPerRow",
+          "type": "Number | Enums.Mode",
+          "default": null,
+          "description": "Specifies the number of cards per row."
+        },
+        {
+          "name": "columnChooser",
+          "type": "ColumnChooser",
+          "default": null,
+          "description": "Configures the column chooser."
+        },
+        {
+          "name": "columns",
+          "type": "Array<ColumnProperties, String>",
+          "default": null,
+          "description": "An array of CardView columns."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<any> | Store | DataSource | DataSource_Options",
+          "default": "undefined",
+          "description": "Binds the UI component to data."
+        },
+        {
+          "name": "editing",
+          "type": "dxCardViewEditing",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "errorRowEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether to show the error row."
+        },
+        {
+          "name": "fieldHintEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "Displays a hint when the mouse hovers over truncated field content."
+        },
+        {
+          "name": "filterBuilder",
+          "type": "dxFilterBuilder_Options",
+          "default": null,
+          "description": "Configures the filter builder."
+        },
+        {
+          "name": "filterBuilderPopup",
+          "type": "dxPopup_Options",
+          "default": null,
+          "description": "Configures the integrated [filter builder] popup."
+        },
+        {
+          "name": "filterPanel",
+          "type": "FilterPanel",
+          "default": null,
+          "description": "Configures the filter panel."
+        },
+        {
+          "name": "filterValue",
+          "type": "Filter expression",
+          "default": "null",
+          "description": "Specifies a filter expression."
+        },
+        {
+          "name": "headerFilter",
+          "type": "HeaderFilter",
+          "default": null,
+          "description": "Configures the header filter."
+        },
+        {
+          "name": "headerPanel",
+          "type": "HeaderPanel",
+          "default": null,
+          "description": "Configures the header panel."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether the UI component changes its appearance when a user hovers over it."
+        },
+        {
+          "name": "keyExpr",
+          "type": "String | Array<String>",
+          "default": "undefined",
+          "description": "Specifies the key property (or properties) that supply key values to access data items. Each key value must be unique. This property applies only if data is a [simple array]."
+        },
+        {
+          "name": "loadPanel",
+          "type": "dxLoadPanel_Options",
+          "default": null,
+          "description": "Configures the load panel."
+        },
+        {
+          "name": "noDataComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [noDataTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "noDataRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [noDataTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "noDataTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template to be displayed when no data appears in CardView."
+        },
+        {
+          "name": "noDataText",
+          "type": "String",
+          "default": "'No data'",
+          "description": "Specifies a text string to display when no data appears in CardView."
+        },
+        {
+          "name": "pager",
+          "type": "Pager",
+          "default": null,
+          "description": "Configures the pager."
+        },
+        {
+          "name": "paging",
+          "type": "Paging",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "remoteOperations",
+          "type": "RemoteOperations | Boolean | Enums.Mode",
+          "default": "'auto'",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "scrolling",
+          "subMembers": [
+            {
+              "name": "scrollByContent",
+              "type": "Boolean",
+              "default": "true, false (non-touch_devices)",
+              "description": "Specifies whether a user can scroll the content with a swipe gesture. Applies only if [useNative] is `false`."
+            },
+            {
+              "name": "scrollByThumb",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNative] is `false`."
+            },
+            {
+              "name": "scrolling",
+              "type": "Object",
+              "default": null,
+              "description": "Configures scrolling."
+            },
+            {
+              "name": "showScrollbar",
+              "type": "Enums.ScrollbarMode",
+              "default": "'onScroll', 'onHover' (desktop)",
+              "description": "Specifies when to display scroll bars. Applies only if [useNative] is `false`."
+            },
+            {
+              "name": "useNative",
+              "type": "Boolean | Enums.Mode",
+              "default": "'auto'",
+              "description": "Specifies whether CardView should use native or simulated scrolling."
+            }
+          ]
+        },
+        {
+          "name": "searchPanel",
+          "type": "SearchPanel",
+          "default": null,
+          "description": "Configures the search panel."
+        },
+        {
+          "name": "selectedCardKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Allows you to select cards or determine which cards are selected."
+        },
+        {
+          "name": "selection",
+          "type": "SelectionConfiguration",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "sorting",
+          "type": "Sorting",
+          "default": null,
+          "description": "Configures sorting."
+        },
+        {
+          "name": "toolbar",
+          "type": "dxCardViewToolbar",
+          "default": null,
+          "description": "Configures the toolbar."
+        },
+        {
+          "name": "wordWrapEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether text that does not fit into a field should be wrapped."
+        }
+      ]
+    },
+    {
+      "name": "dxCardView",
+      "type": null,
+      "default": null,
+      "description": "CardView is a UI component that uses a \"card\" layout to present information."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "addCard()",
+      "type": null,
+      "default": null,
+      "description": "Adds an empty card and switches it to the editing state."
+    },
+    {
+      "name": "beginCustomLoading(text)",
+      "type": null,
+      "default": null,
+      "description": "Displays the [load panel]."
+    },
+    {
+      "name": "byKey()",
+      "type": null,
+      "default": null,
+      "description": "Gets a data object with a specific key."
+    },
+    {
+      "name": "cancelEditData()",
+      "type": null,
+      "default": null,
+      "description": "Discards changes that a user made to data."
+    },
+    {
+      "name": "clearFilter()",
+      "type": null,
+      "default": null,
+      "description": "Clears all filters applied to UI component cards."
+    },
+    {
+      "name": "clearSelection()",
+      "type": null,
+      "default": null,
+      "description": "Clears selection of all cards on all pages."
+    },
+    {
+      "name": "clearSorting()",
+      "type": null,
+      "default": null,
+      "description": "Clears sorting settings of all columns."
+    },
+    {
+      "name": "deleteCard(cardIndex)",
+      "type": null,
+      "default": null,
+      "description": "Removes a card with a specific index."
+    },
+    {
+      "name": "deselectAll()",
+      "type": null,
+      "default": null,
+      "description": "Clears the selection of all cards on all pages or the currently rendered page only."
+    },
+    {
+      "name": "deselectCards(keys)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of cards with specific keys."
+    },
+    {
+      "name": "editCard(cardIndex)",
+      "type": null,
+      "default": null,
+      "description": "Switches a card with a specific index to the editing state."
+    },
+    {
+      "name": "endCustomLoading()",
+      "type": null,
+      "default": null,
+      "description": "Hides the [load panel]."
+    },
+    {
+      "name": "getCardElement(cardIndex)",
+      "type": null,
+      "default": null,
+      "description": "Gets the container of a card with a specific index."
+    },
+    {
+      "name": "getCardIndexByKey(key)",
+      "type": null,
+      "default": null,
+      "description": "Gets the index of a card with a specific key."
+    },
+    {
+      "name": "getCombinedFilter()",
+      "type": null,
+      "default": null,
+      "description": "Gets the total filter that combines all the filters applied."
+    },
+    {
+      "name": "getDataSource()",
+      "type": null,
+      "default": null,
+      "description": "Gets the [DataSource] instance."
+    },
+    {
+      "name": "getKeyByCardIndex(cardIndex)",
+      "type": null,
+      "default": null,
+      "description": "Gets the key of a card with a specific index."
+    },
+    {
+      "name": "getScrollable()",
+      "type": null,
+      "default": null,
+      "description": "Gets the instance of the UI component's scrollable part."
+    },
+    {
+      "name": "getSelectedCardKeys()",
+      "type": null,
+      "default": null,
+      "description": "Gets the selected card keys."
+    },
+    {
+      "name": "getSelectedCardsData()",
+      "type": null,
+      "default": null,
+      "description": "Gets the selected cards' data objects."
+    },
+    {
+      "name": "getVisibleCards()",
+      "type": null,
+      "default": null,
+      "description": "Gets currently rendered cards."
+    },
+    {
+      "name": "hasEditData()",
+      "type": null,
+      "default": null,
+      "description": "Checks whether the UI component has unsaved changes."
+    },
+    {
+      "name": "hideColumnChooser()",
+      "type": null,
+      "default": null,
+      "description": "Hides the [column chooser]."
+    },
+    {
+      "name": "isCardSelected(key)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether a card with a specific key is selected."
+    },
+    {
+      "name": "keyOf(obj)",
+      "type": null,
+      "default": null,
+      "description": "Gets a data item's key value."
+    },
+    {
+      "name": "pageCount()",
+      "type": null,
+      "default": null,
+      "description": "Gets the total page count."
+    },
+    {
+      "name": "pageIndex()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current page index."
+    },
+    {
+      "name": "pageIndex(value)",
+      "type": null,
+      "default": null,
+      "description": "Switches the UI component to a specific page using a zero-based index."
+    },
+    {
+      "name": "pageSize()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current [page size]."
+    },
+    {
+      "name": "pageSize(value)",
+      "type": null,
+      "default": null,
+      "description": "Sets the [page size]."
+    },
+    {
+      "name": "saveEditData()",
+      "type": null,
+      "default": null,
+      "description": "Saves changes that a user made to data."
+    },
+    {
+      "name": "searchByText(text)",
+      "type": null,
+      "default": null,
+      "description": "Searches for a string in columns whose [allowSearch] property is `true`."
+    },
+    {
+      "name": "selectAll()",
+      "type": null,
+      "default": null,
+      "description": "Selects all cards."
+    },
+    {
+      "name": "selectCards(keys_preserve)",
+      "type": null,
+      "default": null,
+      "description": "Selects cards with specific keys."
+    },
+    {
+      "name": "showColumnChooser()",
+      "type": null,
+      "default": null,
+      "description": "Shows the [column chooser]."
+    },
+    {
+      "name": "totalCount()",
+      "type": null,
+      "default": null,
+      "description": "Gets the total card count."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onCardClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a card is clicked or tapped."
+    },
+    {
+      "name": "onCardDblClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a card is double-clicked or double-tapped."
+    },
+    {
+      "name": "onCardHoverChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the pointer enters or leaves a card."
+    },
+    {
+      "name": "onCardInserted",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a new card is inserted into the data source."
+    },
+    {
+      "name": "onCardInserting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a new card is inserted into the data source."
+    },
+    {
+      "name": "onCardPrepared",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a card is created."
+    },
+    {
+      "name": "onCardRemoved",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a card was removed from the data source."
+    },
+    {
+      "name": "onCardRemoving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a card is removed from the data source."
+    },
+    {
+      "name": "onCardSaved",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after card changes are saved."
+    },
+    {
+      "name": "onCardSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before pending card changes are saved."
+    },
+    {
+      "name": "onCardUpdated",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a card is updated in the data source."
+    },
+    {
+      "name": "onCardUpdating",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a card is updated in the data source."
+    },
+    {
+      "name": "onContextMenuPreparing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the context menu is rendered."
+    },
+    {
+      "name": "onDataErrorOccurred",
+      "type": "function(e)",
+      "default": "undefined",
+      "description": "A function that is executed when an error occurs in the data source."
+    },
+    {
+      "name": "onEditCanceled",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after card changes are discarded."
+    },
+    {
+      "name": "onEditCanceling",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the edit operation is canceled, but card changes are not yet discarded."
+    },
+    {
+      "name": "onEditingStart",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a card switches to the editing state."
+    },
+    {
+      "name": "onFieldCaptionClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a field caption is clicked or tapped."
+    },
+    {
+      "name": "onFieldCaptionDblClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a field caption is double-clicked or double-tapped."
+    },
+    {
+      "name": "onFieldCaptionPrepared",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a field caption is created."
+    },
+    {
+      "name": "onFieldValueClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a field value is clicked or tapped."
+    },
+    {
+      "name": "onFieldValueDblClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a field value is double-clicked or double-tapped."
+    },
+    {
+      "name": "onFieldValuePrepared",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a field value is created."
+    },
+    {
+      "name": "onFocusedCardChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the focused card changes."
+    },
+    {
+      "name": "onInitNewCard",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a new card is added to the UI component."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a card is selected or its selection is cleared."
+    },
+    {
+      "name": "cardClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a card is clicked or tapped."
+    },
+    {
+      "name": "cardDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a card is double-clicked or double-tapped."
+    },
+    {
+      "name": "cardHoverChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the pointer enters or leaves a card."
+    },
+    {
+      "name": "cardInserted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a new card is inserted into the data source."
+    },
+    {
+      "name": "cardInserting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a new card is inserted into the data source."
+    },
+    {
+      "name": "cardPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a card is created."
+    },
+    {
+      "name": "cardRemoved",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a card was removed from the data source."
+    },
+    {
+      "name": "cardRemoving",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a card is removed from the data source."
+    },
+    {
+      "name": "cardSaved",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after card changes are saved."
+    },
+    {
+      "name": "cardSaving",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before pending card changes are saved."
+    },
+    {
+      "name": "cardUpdated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a card was updated in the data source."
+    },
+    {
+      "name": "cardUpdating",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a card is updated in the data source."
+    },
+    {
+      "name": "contextMenuPreparing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is rendered."
+    },
+    {
+      "name": "dataErrorOccurred",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an error occurs in the data source."
+    },
+    {
+      "name": "editCanceled",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after card changes are discarded."
+    },
+    {
+      "name": "editCanceling",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the edit operation is canceled, but card changes are not yet discarded."
+    },
+    {
+      "name": "editingStart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a card switches to the editing state."
+    },
+    {
+      "name": "fieldCaptionClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a field caption is clicked or tapped."
+    },
+    {
+      "name": "fieldCaptionDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a field caption is double-clicked or double-tapped."
+    },
+    {
+      "name": "fieldCaptionPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a field caption is created."
+    },
+    {
+      "name": "fieldValueClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a field value is clicked or tapped."
+    },
+    {
+      "name": "fieldValueDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a field value is double-clicked or double-tapped."
+    },
+    {
+      "name": "fieldValuePrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a field value is created."
+    },
+    {
+      "name": "focusedCardChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before after the focused card changes."
+    },
+    {
+      "name": "initNewCard",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a new card is added to the component."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a card is selected or its selection is cleared."
+    }
+  ],
+  "Types": [
+    {
+      "name": "CardClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [cardClick] event."
+    },
+    {
+      "name": "CardCover",
+      "subMembers": [
+        {
+          "name": "CardCover",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the card cover."
+        },
+        {
+          "name": "altExpr",
+          "type": "String | function(data)",
+          "default": null,
+          "description": "Specifies which data field to use as the `alt` argument of the cover image."
+        },
+        {
+          "name": "aspectRatio",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the aspect ratio of the image container."
+        },
+        {
+          "name": "imageExpr",
+          "type": "String | function(data)",
+          "default": null,
+          "description": "Specifies which data field to use as the `src` argument of the cover image."
+        },
+        {
+          "name": "maxHeight",
+          "type": "Number",
+          "default": null,
+          "description": "Specifies the maximum height for the card cover."
+        },
+        {
+          "name": "template",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the card cover."
+        }
+      ]
+    },
+    {
+      "name": "CardDblClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [cardDblClick] event."
+    },
+    {
+      "name": "CardHeader",
+      "subMembers": [
+        {
+          "name": "CardHeader",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the card header."
+        },
+        {
+          "name": "items",
+          "type": "Array<Enums.CardHeaderPredefinedItem, CardHeaderItem>",
+          "default": null,
+          "description": "Configures card header items."
+        },
+        {
+          "name": "template",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the card header."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to display the card header."
+        }
+      ]
+    },
+    {
+      "name": "CardHeaderItem",
+      "subMembers": [
+        {
+          "name": "CardHeaderItem",
+          "type": "dxToolbarItem | Object",
+          "default": null,
+          "description": "Configures card header items."
+        },
+        {
+          "name": "location",
+          "type": "Enums.ToolbarItemLocation",
+          "default": "'after'",
+          "description": "Specifies the item's location in the card header."
+        },
+        {
+          "name": "name",
+          "type": "Enums.CardHeaderPredefinedItem | String",
+          "default": null,
+          "description": "A name used to identify the card header item."
+        }
+      ]
+    },
+    {
+      "name": "CardHeaderPredefinedItem",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies predefined items for the CardView card headers."
+    },
+    {
+      "name": "CardHoverChangedEvent",
+      "subMembers": [
+        {
+          "name": "CardHoverChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardHoverChanged] event."
+        },
+        {
+          "name": "eventType",
+          "type": "String",
+          "default": null,
+          "description": "Indicates whether the pointer entered or left the card. Can be either *\"mouseover\"* or *\"mouseout\"*."
+        }
+      ]
+    },
+    {
+      "name": "CardInfo",
+      "subMembers": [
+        {
+          "name": "CardInfo",
+          "type": "Object",
+          "default": null,
+          "description": "The information about the card."
+        },
+        {
+          "name": "columns",
+          "type": "Array<Column>",
+          "default": null,
+          "description": "Specifies columns associated with the card."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The card's data."
+        },
+        {
+          "name": "fields",
+          "type": "Array<dxCardViewFieldInfo>",
+          "default": null,
+          "description": "The card fields."
+        },
+        {
+          "name": "index",
+          "type": "Number",
+          "default": null,
+          "description": "The card's index."
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether the card is selected."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The card's key."
+        },
+        {
+          "name": "values",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Values of the card as they exist in the data source."
+        }
+      ]
+    },
+    {
+      "name": "CardInsertedEvent",
+      "subMembers": [
+        {
+          "name": "CardInsertedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardInserted] event."
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": "The data of the card."
+        }
+      ]
+    },
+    {
+      "name": "CardInsertingEvent",
+      "subMembers": [
+        {
+          "name": "CardInsertingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardInserting] event."
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": "The data of the card."
+        }
+      ]
+    },
+    {
+      "name": "CardPreparedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [cardPrepared] event."
+    },
+    {
+      "name": "CardRemovedEvent",
+      "subMembers": [
+        {
+          "name": "CardRemovedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardRemoved] event."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The data of the card."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The card's key."
+        }
+      ]
+    },
+    {
+      "name": "CardRemovingEvent",
+      "subMembers": [
+        {
+          "name": "CardRemovingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardRemoving] event."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The data of the card."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The card's key."
+        }
+      ]
+    },
+    {
+      "name": "CardSavedEvent",
+      "subMembers": [
+        {
+          "name": "CardSavedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardSaved] event."
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": null,
+          "description": "All card data (including changes). Differs from [onCardSaving], which only consists of pending changes."
+        }
+      ]
+    },
+    {
+      "name": "CardSavingEvent",
+      "subMembers": [
+        {
+          "name": "CardSavingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardSaving] event."
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": null,
+          "description": "Pending row changes; a copy of the **editing**.[changes] array. Includes only card changes, unlike [onCardSaved], which contains all card data (including changes)."
+        },
+        {
+          "name": "promise",
+          "type": "Promise<void>",
+          "default": null,
+          "description": "Assign a Promise to this field to perform an asynchronous operation, such as a request to a server."
+        }
+      ]
+    },
+    {
+      "name": "CardTemplateData",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies card template data."
+    },
+    {
+      "name": "CardUpdatedEvent",
+      "subMembers": [
+        {
+          "name": "CardUpdatedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardUpdated] event."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The updated data of the card."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The card's key."
+        }
+      ]
+    },
+    {
+      "name": "CardUpdatingEvent",
+      "subMembers": [
+        {
+          "name": "CardUpdatingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [cardUpdating] event."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The card's key."
+        },
+        {
+          "name": "newData",
+          "type": "Object",
+          "default": null,
+          "description": "The card's updated data."
+        },
+        {
+          "name": "oldData",
+          "type": "any",
+          "default": null,
+          "description": "The card's old data."
+        }
+      ]
+    },
+    {
+      "name": "Column",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the column."
+    },
+    {
+      "name": "ColumnProperties",
+      "subMembers": [
+        {
+          "name": "ColumnProperties",
+          "type": "Object",
+          "default": null,
+          "description": "Configures column properties."
+        },
+        {
+          "name": "alignment",
+          "type": "Enums.HorizontalAlignment | undefined",
+          "default": null,
+          "description": "Aligns the content of the entire column."
+        },
+        {
+          "name": "allowEditing",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether a user can edit cards in this column at runtime. Inherits the value of the **editing**.[allowUpdating] property."
+        },
+        {
+          "name": "allowFiltering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether data can be filtered by this column."
+        },
+        {
+          "name": "allowHeaderFiltering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether data of this column can be filtered in [header filter]. Inherits the value of the [allowFiltering] property."
+        },
+        {
+          "name": "allowHiding",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether a user can hide the column using the column chooser at runtime. Applies only if **columnChooser**.enabled is `true`."
+        },
+        {
+          "name": "allowReordering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether users can reorder this column. Overrides the [allowColumnReordering] property value."
+        },
+        {
+          "name": "allowSearch",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether this column can be searched. Applies only if [searchPanel].**visible** is `true`. Inherits the value of the [allowFiltering] property."
+        },
+        {
+          "name": "allowSorting",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether a user can sort rows by this column at runtime. Applies only if **sorting**.mode differs from *\"none\"*."
+        },
+        {
+          "name": "calculateDisplayValue",
+          "type": "function(cardData)",
+          "default": null,
+          "description": "Calculates custom display values for column fields. Requires specifying the [dataField] or [calculateFieldValue] property."
+        },
+        {
+          "name": "calculateFieldValue",
+          "type": "function(cardData)",
+          "default": null,
+          "description": "Calculates custom field values."
+        },
+        {
+          "name": "calculateFilterExpression",
+          "type": "function(filterValue, selectedFilterOperation, target)",
+          "default": null,
+          "description": "Specifies the column's custom rules to filter data."
+        },
+        {
+          "name": "calculateSortValue",
+          "type": "String | function(cardData)",
+          "default": null,
+          "description": "Calculates custom values used to sort this column."
+        },
+        {
+          "name": "caption",
+          "type": "String | undefined",
+          "default": null,
+          "description": "Specifies a caption for the column."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(fieldInfo)",
+          "default": null,
+          "description": "Customizes text displayed in field values."
+        },
+        {
+          "name": "dataField",
+          "type": "String | undefined",
+          "default": null,
+          "description": "Binds the column to a field of the [dataSource]."
+        },
+        {
+          "name": "dataType",
+          "type": "Enums.DataType | undefined",
+          "default": null,
+          "description": "Converts column values to a different data type."
+        },
+        {
+          "name": "editorOptions",
+          "type": "any",
+          "default": null,
+          "description": "Configures the default UI component used for [editing]."
+        },
+        {
+          "name": "falseText",
+          "type": "String",
+          "default": "'false'",
+          "description": "In a [boolean] column, replaces all **false** items with a specified text."
+        },
+        {
+          "name": "fieldCaptionTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the field caption."
+        },
+        {
+          "name": "fieldTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the field."
+        },
+        {
+          "name": "fieldValueTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the field value."
+        },
+        {
+          "name": "filterType",
+          "type": "Enums.FilterType",
+          "default": "'include'",
+          "description": "Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values. Applies only if [headerFilter].**visible** and [allowHeaderFiltering] are `true`."
+        },
+        {
+          "name": "filterValue",
+          "type": "any | undefined",
+          "default": "undefined",
+          "description": "Specifies the filter value."
+        },
+        {
+          "name": "filterValues",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Specifies the values in the header filter."
+        },
+        {
+          "name": "formItem",
+          "type": "dxFormSimpleItem",
+          "default": null,
+          "description": "Configures the form item that the field produces in the editing state."
+        },
+        {
+          "name": "format",
+          "type": "Format",
+          "default": "''",
+          "description": "Formats a value before it is displayed in a field."
+        },
+        {
+          "name": "headerFilter",
+          "type": "ColumnHeaderFilter | undefined",
+          "default": null,
+          "description": "Specifies data settings for the header filter."
+        },
+        {
+          "name": "headerItemCssClass",
+          "type": "String",
+          "default": null,
+          "description": "CSS class name applied to header item elements."
+        },
+        {
+          "name": "headerItemTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for the header item."
+        },
+        {
+          "name": "name",
+          "type": "String | undefined",
+          "default": null,
+          "description": "Specifies the column's unique identifier. If not set in code, this value is inherited from the [dataField]."
+        },
+        {
+          "name": "setFieldValue",
+          "type": "function(newData, value, currentCardData)",
+          "default": null,
+          "description": "Specifies a function to be invoked after the user has edited a field value, but before it is saved in the data source."
+        },
+        {
+          "name": "showInColumnChooser",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the [column chooser] can contain the column header."
+        },
+        {
+          "name": "sortIndex",
+          "type": "Number | undefined",
+          "default": null,
+          "description": "Specifies the index according to which columns participate in sorting."
+        },
+        {
+          "name": "sortOrder",
+          "type": "Enums.SortOrder | undefined",
+          "default": null,
+          "description": "Specifies the sort order of column values."
+        },
+        {
+          "name": "sortingMethod",
+          "type": "function(value1, value2) | undefined",
+          "default": null,
+          "description": "Specifies a custom comparison function for sorting. Applies only when sorting is performed on the client."
+        },
+        {
+          "name": "trueText",
+          "type": "String",
+          "default": "'true'",
+          "description": "In a [boolean] column, replaces all **true** items with the specified text."
+        },
+        {
+          "name": "validationRules",
+          "type": "Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>",
+          "default": null,
+          "description": "Specifies [validation rules] to be checked when field values are updated."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the column is visible."
+        },
+        {
+          "name": "visibleIndex",
+          "type": "Number | undefined",
+          "default": null,
+          "description": "Specifies the position of the column among other columns in the resulting UI component."
+        }
+      ]
+    },
+    {
+      "name": "ColumnTemplateData",
+      "type": "Object",
+      "default": null,
+      "description": "The data of column template."
+    },
+    {
+      "name": "ContextMenuPreparingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuPreparingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [contextMenuPreparing] event."
+        },
+        {
+          "name": "card",
+          "type": "any",
+          "default": null,
+          "description": "The card properties."
+        },
+        {
+          "name": "cardIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The index of the card on which the context menu is invoked."
+        },
+        {
+          "name": "column",
+          "type": "Column",
+          "default": null,
+          "description": "The column's [configuration]."
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The index of the column on which the context menu is invoked."
+        },
+        {
+          "name": "items",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Items to be displayed in the context menu."
+        },
+        {
+          "name": "target",
+          "type": "Enums.ContextMenuTarget",
+          "default": null,
+          "description": "The name of the element on which the context menu is invoked: *\"headerPanel\"*, *\"content\"*, or *\"toolbar\"*."
+        },
+        {
+          "name": "targetElement",
+          "type": "DxElement",
+          "default": null,
+          "description": "The target element's container."
+        }
+      ]
+    },
+    {
+      "name": "ContextMenuTarget",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the element that should be clicked to invoke the context menu."
+    },
+    {
+      "name": "EditCanceledEvent",
+      "subMembers": [
+        {
+          "name": "EditCanceledEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [editCanceled] event."
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": null,
+          "description": "Discarded card changes."
+        }
+      ]
+    },
+    {
+      "name": "EditCancelingEvent",
+      "subMembers": [
+        {
+          "name": "EditCancelingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [editCanceling] event."
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": null,
+          "description": "Card changes to be discarded."
+        }
+      ]
+    },
+    {
+      "name": "EditingStartEvent",
+      "subMembers": [
+        {
+          "name": "EditingStartEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [editingStart] event."
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": "The data of a card to be edited."
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": "The card's key."
+        }
+      ]
+    },
+    {
+      "name": "EditingTexts",
+      "subMembers": [
+        {
+          "name": "EditingTexts",
+          "type": "Object",
+          "default": null,
+          "description": "The texts displayed when editing a card."
+        },
+        {
+          "name": "addCard",
+          "type": "String",
+          "default": "'Add a card'",
+          "description": "Specifies the text of the button that adds a card."
+        },
+        {
+          "name": "confirmDeleteMessage",
+          "type": "String",
+          "default": "'Are you sure you want to delete this record?'",
+          "description": "Specifies the text of the deletion confirmation message."
+        },
+        {
+          "name": "confirmDeleteTitle",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the title text of the pop-up deletion confirmation."
+        },
+        {
+          "name": "deleteCard",
+          "type": "String",
+          "default": "'Delete'",
+          "description": "Specifies the text of the button that invokes card deletion."
+        },
+        {
+          "name": "editCard",
+          "type": "String",
+          "default": "'Edit'",
+          "description": "Specifies the text of the button that invokes card editing."
+        },
+        {
+          "name": "saveCard",
+          "type": "String",
+          "default": "'Save'",
+          "description": "Specifies the text of the button that saves the edited card."
+        }
+      ]
+    },
+    {
+      "name": "FieldCaptionClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [fieldCaptionClick] event."
+    },
+    {
+      "name": "FieldCaptionDblClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [fieldCaptionDblClick] event."
+    },
+    {
+      "name": "FieldCaptionPreparedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [fieldCaptionPrepared] event."
+    },
+    {
+      "name": "FieldTemplateData",
+      "subMembers": [
+        {
+          "name": "FieldTemplateData",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies a custom template for the field."
+        },
+        {
+          "name": "field",
+          "type": "dxCardViewFieldInfo",
+          "default": null,
+          "description": "Information about the field."
+        }
+      ]
+    },
+    {
+      "name": "FieldValueClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [fieldValueClick] event."
+    },
+    {
+      "name": "FieldValueDblClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [fieldValueDblClick] event."
+    },
+    {
+      "name": "FieldValuePreparedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [fieldValuePrepared] event."
+    },
+    {
+      "name": "FocusedCardChanged",
+      "type": "Object",
+      "default": null,
+      "description": "The argument type in the [focusedCardChanged] event."
+    },
+    {
+      "name": "HeaderPanel",
+      "subMembers": [
+        {
+          "name": "HeaderPanel",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the header panel."
+        },
+        {
+          "name": "dragging",
+          "subMembers": [
+            {
+              "name": "dragging",
+              "type": "Object",
+              "default": null,
+              "description": "Configures item dragging."
+            },
+            {
+              "name": "dropFeedbackMode",
+              "type": "Enums.DragHighlight",
+              "default": "'push'",
+              "description": "Specifies how to highlight the header item's drop position."
+            },
+            {
+              "name": "scrollSensitivity",
+              "type": "Number",
+              "default": "60",
+              "description": "Specifies the distance in pixels from the edge of viewport at which scrolling should start."
+            },
+            {
+              "name": "scrollSpeed",
+              "type": "Number",
+              "default": "30",
+              "description": "Specifies the scrolling speed when dragging an item beyond the viewport."
+            }
+          ]
+        },
+        {
+          "name": "itemCssClass",
+          "type": "String",
+          "default": null,
+          "description": "CSS class name applied to item root elements."
+        },
+        {
+          "name": "itemTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for header panel items."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the header panel is visible."
+        }
+      ]
+    },
+    {
+      "name": "InitNewCardEvent",
+      "subMembers": [
+        {
+          "name": "InitNewCardEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [initNewCard] event."
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": "The data of the inserted card; initially empty."
+        },
+        {
+          "name": "promise",
+          "type": "Promise<void>",
+          "default": null,
+          "description": "Assign a Promise to this field to perform an asynchronous operation, such as a request to the server."
+        }
+      ]
+    },
+    {
+      "name": "Paging",
+      "subMembers": [
+        {
+          "name": "Paging",
+          "type": "Object",
+          "default": null,
+          "description": "Configures paging."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Enables paging."
+        },
+        {
+          "name": "pageIndex",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the page to be displayed using a zero-based index."
+        },
+        {
+          "name": "pageSize",
+          "type": "Number",
+          "default": "6",
+          "description": "Specifies the page size."
+        }
+      ]
+    },
+    {
+      "name": "PredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies predefined items for the CardView toolbar."
+    },
+    {
+      "name": "RemoteOperations",
+      "subMembers": [
+        {
+          "name": "RemoteOperations",
+          "type": "Object",
+          "default": null,
+          "description": "Notifies CardView of the server's data processing operations."
+        },
+        {
+          "name": "filtering",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether filtering must be performed on the server."
+        },
+        {
+          "name": "grouping",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether grouping must be performed on the server."
+        },
+        {
+          "name": "paging",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether paging must be performed on the server."
+        },
+        {
+          "name": "sorting",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether sorting must be performed on the server."
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectionChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The argument type in the [selectionChanged] event."
+        },
+        {
+          "name": "currentDeselectedCardKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": "The keys of the cards whose selection was cleared."
+        },
+        {
+          "name": "currentSelectedCardKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": "The keys of the cards that were selected."
+        },
+        {
+          "name": "selectedCardKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": "The keys of all selected cards."
+        },
+        {
+          "name": "selectedCardsData",
+          "type": "Array<any>",
+          "default": null,
+          "description": "The data of all selected cards."
+        }
+      ]
+    },
+    {
+      "name": "SelectionConfiguration",
+      "subMembers": [
+        {
+          "name": "SelectionConfiguration",
+          "type": "Object",
+          "default": null,
+          "description": "Configures runtime selection."
+        },
+        {
+          "name": "allowSelectAll",
+          "type": "Boolean",
+          "default": null,
+          "description": "Allows users to simultaneously select all or current page cards (depending on [selectAllMode])."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.SingleMultipleOrNone",
+          "default": null,
+          "description": "Specifies the selection mode."
+        },
+        {
+          "name": "selectAllMode",
+          "type": "Enums.SelectAllMode",
+          "default": null,
+          "description": "Specifies the mode for selecting cards. Applies only if **selection**.[allowSelectAll] is `true`."
+        },
+        {
+          "name": "showCheckBoxesMode",
+          "type": "Enums.SelectionColumnDisplayMode",
+          "default": null,
+          "description": "Specifies when to display card selection checkboxes."
+        }
+      ]
+    },
+    {
+      "name": "Toolbar",
+      "subMembers": [
+        {
+          "name": "Toolbar",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the toolbar."
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the toolbar responds to user interaction."
+        },
+        {
+          "name": "items",
+          "type": "Array<Enums.PredefinedToolbarItem, dxCardViewToolbarItem>",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "multiline",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the toolbar arranges items into multiple lines when their combined width exceeds the toolbar width."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether the toolbar is visible."
+        }
+      ]
+    },
+    {
+      "name": "ToolbarItem",
+      "subMembers": [
+        {
+          "name": "ToolbarItem",
+          "type": "dxToolbarItem | Object",
+          "default": null,
+          "description": "Configures toolbar items."
+        },
+        {
+          "name": "location",
+          "type": "Enums.ToolbarItemLocation",
+          "default": "'after'",
+          "description": "Specifies toolbar item location."
+        },
+        {
+          "name": "name",
+          "type": "Enums.PredefinedToolbarItem | String",
+          "default": null,
+          "description": "Specifies the name of the predefined toolbar item."
+        }
+      ]
+    },
+    {
+      "name": "WithCardInfo",
+      "subMembers": [
+        {
+          "name": "WithCardInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "card",
+          "type": "CardInfo",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cardElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "WithFieldCaptionInfo",
+      "subMembers": [
+        {
+          "name": "WithFieldCaptionInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "field",
+          "type": "dxCardViewFieldInfo",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fieldCaptionElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "WithFieldValueInfo",
+      "subMembers": [
+        {
+          "name": "WithFieldValueInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "field",
+          "type": "dxCardViewFieldInfo",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fieldValueElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxCardViewEditing",
+      "subMembers": [
+        {
+          "name": "allowAdding",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can add new cards."
+        },
+        {
+          "name": "allowDeleting",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can delete cards."
+        },
+        {
+          "name": "allowUpdating",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can update cards."
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": "[]",
+          "description": "An array of pending row changes."
+        },
+        {
+          "name": "confirmDelete",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies if confirmation is required when a user deletes a row."
+        },
+        {
+          "name": "dxCardViewEditing",
+          "type": "Object",
+          "default": null,
+          "description": "Configures editing."
+        },
+        {
+          "name": "editCardKey",
+          "type": "any",
+          "default": "null",
+          "description": "The key(s) of a card being edited."
+        },
+        {
+          "name": "form",
+          "type": "dxForm_Options",
+          "default": null,
+          "description": "Configures the form inside the editing popup."
+        },
+        {
+          "name": "popup",
+          "type": "dxPopup_Options",
+          "default": null,
+          "description": "Configures the editing popup."
+        },
+        {
+          "name": "texts",
+          "type": "EditingTexts",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxCardViewFieldInfo",
+      "subMembers": [
+        {
+          "name": "card",
+          "type": "CardInfo",
+          "default": null,
+          "description": "Specifies which card the field belongs to."
+        },
+        {
+          "name": "column",
+          "type": "Column",
+          "default": null,
+          "description": "The column associated with the field."
+        },
+        {
+          "name": "displayValue",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies the display value."
+        },
+        {
+          "name": "dxCardViewFieldInfo",
+          "type": "Object",
+          "default": null,
+          "description": "Information about the field."
+        },
+        {
+          "name": "index",
+          "type": "Number",
+          "default": null,
+          "description": "The field index."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The field text."
+        },
+        {
+          "name": "value",
+          "type": "Object",
+          "default": null,
+          "description": "The field value."
+        }
+      ]
+    }
+  ]
+}

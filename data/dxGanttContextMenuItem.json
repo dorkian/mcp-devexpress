@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "dxGanttContextMenuItem",
+      "type": null,
+      "default": null,
+      "description": "Configures the context menu item."
+    },
+    {
+      "name": "name",
+      "type": "Enums.GanttPredefinedContextMenuItem | String",
+      "default": null,
+      "description": "Specifies the context menu item name."
+    },
+    {
+      "name": "template",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

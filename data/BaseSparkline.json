@@ -1,0 +1,151 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "Overridden by descriptions for particular UI components."
+        },
+        {
+          "name": "export",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "loadingIndicator",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "redrawOnResize",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "title",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "tooltip",
+          "subMembers": [
+            {
+              "name": "contentComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "contentRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [contentTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "contentTemplate",
+              "type": "template",
+              "default": "undefined",
+              "description": "Specifies a custom template for tooltips."
+            },
+            {
+              "name": "customizeTooltip",
+              "type": null,
+              "default": null,
+              "description": "Allows you to change tooltip appearance."
+            },
+            {
+              "name": "enabled",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "interactive",
+              "type": null,
+              "default": null,
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "tooltip",
+              "type": "viz/sparklines/base_sparkline:BaseSparklineTooltip",
+              "default": null,
+              "description": "Configures the tooltip."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BaseSparkline",
+      "type": null,
+      "default": null,
+      "description": "Overridden by descriptions for particular UI components."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "exportTo(fileName_format)",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "hideLoadingIndicator()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "render()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "showLoadingIndicator()",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Events": [
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a tooltip appears."
+    },
+    {
+      "name": "tooltipHidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip becomes hidden."
+    },
+    {
+      "name": "tooltipShown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a tooltip appears."
+    }
+  ],
+  "Types": []
+}
