@@ -1,0 +1,22 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "DevExpress Component API",
+  "name_for_model": "devexpress_api",
+  "description_for_human": "Get details about DevExpress components, their properties, methods, and events.",
+  "description_for_model": "Use this API to get DevExpress component reference data, including properties, methods, events, and types.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3000/openapi.json",
+    "has_user_authentication": false
+  },
+  "context": {
+    "url": "http://localhost:3000/api/devexpress/{component}",
+    "method": "GET"
+  },
+  "logo_url": "https://avatars.githubusercontent.com/u/4243232?s=48&v=4",
+  "contact_email": "ashkandorkian@akeron.com",
+  "legal_info_url": "http://localhost:3000/legal"
+}
