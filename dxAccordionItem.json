@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "dxAccordionItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the icon to be displayed in the panel's title."
+    },
+    {
+      "name": "title",
+      "type": "String",
+      "default": null,
+      "description": "Specifies text displayed for the UI component item title."
+    },
+    {
+      "name": "titleComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [titleTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "titleRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [titleTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "titleTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a template that should be used to render the title for this item only."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

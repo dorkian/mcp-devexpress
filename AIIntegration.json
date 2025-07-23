@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "AIIntegration",
+      "type": null,
+      "default": null,
+      "description": "A class that activates AI services in DevExpress UI components."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

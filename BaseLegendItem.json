@@ -1,0 +1,60 @@
+{
+  "properties": [
+    {
+      "name": "BaseLegendItem",
+      "type": "Object",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "marker",
+      "subMembers": [
+        {
+          "name": "fill",
+          "type": "String",
+          "default": null,
+          "description": "The marker's color."
+        },
+        {
+          "name": "marker",
+          "type": "Object",
+          "default": null,
+          "description": "A legend item marker."
+        },
+        {
+          "name": "opacity",
+          "type": "Number",
+          "default": null,
+          "description": "The marker's opacity."
+        },
+        {
+          "name": "size",
+          "type": "Number",
+          "default": null,
+          "description": "The [markerSize] in pixels."
+        },
+        {
+          "name": "state",
+          "type": "Enums.LegendMarkerState",
+          "default": null,
+          "description": "The marker's state."
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": null,
+      "description": "The text that the legend item displays."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": null,
+      "description": "Indicates and specifies whether the legend item is visible."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

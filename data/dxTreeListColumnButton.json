@@ -1,0 +1,56 @@
+{
+  "properties": [
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean | function(options)",
+      "default": "false",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "dxTreeListColumnButton",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "name",
+      "type": "Enums.TreeListPredefinedColumnButton | String",
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "template",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom button template."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean | function(options)",
+      "default": "true",
+      "description": "<!-- %shortDescription% -->"
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    }
+  ],
+  "Types": []
+}

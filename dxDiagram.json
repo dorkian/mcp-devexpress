@@ -1,0 +1,2348 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines the Diagram UI component's configuration properties."
+        },
+        {
+          "name": "accessKey",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "autoZoomMode",
+          "type": "Enums.AutoZoomMode",
+          "default": "'disabled'",
+          "description": "Specifies how the Diagram UI component automatically zooms the work area."
+        },
+        {
+          "name": "contextMenu",
+          "subMembers": [
+            {
+              "name": "commands",
+              "type": "Array<CustomCommand, Enums.Command>",
+              "default": "undefined",
+              "description": "Lists commands in the context menu."
+            },
+            {
+              "name": "contextMenu",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the context menu's settings."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the context menu is enabled."
+            }
+          ]
+        },
+        {
+          "name": "contextToolbox",
+          "subMembers": [
+            {
+              "name": "category",
+              "type": "Enums.ShapeCategory | String",
+              "default": null,
+              "description": "Specifies the category of shapes that are displayed in the context toolbox."
+            },
+            {
+              "name": "contextToolbox",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the context toolbox's settings."
+            },
+            {
+              "name": "displayMode",
+              "type": "Enums.ToolboxDisplayMode",
+              "default": null,
+              "description": "Specifies how shapes are displayed in the context toolbox."
+            },
+            {
+              "name": "enabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies the context toolbox's availability."
+            },
+            {
+              "name": "shapeIconsPerRow",
+              "type": "Number",
+              "default": "4",
+              "description": "Specifies the number of shape icons in a row."
+            },
+            {
+              "name": "shapes",
+              "type": "Array<Enums.ShapeType> | Array<String>",
+              "default": null,
+              "description": "Lists the shapes that are displayed in the context toolbox. The built-in shape types are shown in the [Shape Types] section."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "152",
+              "description": "Specifies the context toolbox's width in pixels."
+            }
+          ]
+        },
+        {
+          "name": "customShapeComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [customShapeTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "customShapeRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [customShapeTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "customShapeTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for shapes."
+        },
+        {
+          "name": "customShapeToolboxComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [customShapeToolboxTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "customShapeToolboxRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [customShapeToolboxTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "customShapeToolboxTemplate",
+          "type": "template",
+          "default": null,
+          "description": "Specifies a custom template for shapes in the toolbox."
+        },
+        {
+          "name": "customShapes",
+          "subMembers": [
+            {
+              "name": "allowEditImage",
+              "type": "Boolean",
+              "default": null,
+              "description": "Specifies whether a card shape's image can be edited."
+            },
+            {
+              "name": "allowEditText",
+              "type": "Boolean",
+              "default": null,
+              "description": "Specifies whether the shape's text can be edited."
+            },
+            {
+              "name": "allowResize",
+              "type": "Boolean",
+              "default": null,
+              "description": "Specifies whether the shape can be resized."
+            },
+            {
+              "name": "backgroundImageHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape background image's fractional height."
+            },
+            {
+              "name": "backgroundImageLeft",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape background image's left offset."
+            },
+            {
+              "name": "backgroundImageToolboxUrl",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the shape image displayed in the toolbox."
+            },
+            {
+              "name": "backgroundImageTop",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape background image's top offset."
+            },
+            {
+              "name": "backgroundImageUrl",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the shape background image's URL."
+            },
+            {
+              "name": "backgroundImageWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape background image's fractional width."
+            },
+            {
+              "name": "baseType",
+              "type": "Enums.ShapeType | String",
+              "default": null,
+              "description": "Specifies the base shape type for the custom shape. The built-in shape types are shown in the [Shape Types] section."
+            },
+            {
+              "name": "category",
+              "type": "String",
+              "default": null,
+              "description": "Specifies a category to which the custom shape belongs."
+            },
+            {
+              "name": "component",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "connectionPoints",
+              "subMembers": [
+                {
+                  "name": "connectionPoints",
+                  "type": "Array<Object>",
+                  "default": null,
+                  "description": "An array of the shape's connection points."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Specifies the horizontal offset."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Specifies the vertical offset."
+                }
+              ]
+            },
+            {
+              "name": "customShapes",
+              "type": "Array<Object>",
+              "default": "[]",
+              "description": "Provide access to an array of custom shapes."
+            },
+            {
+              "name": "defaultHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the initial height of the shape."
+            },
+            {
+              "name": "defaultImageUrl",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the URL of an image displayed in a card shape."
+            },
+            {
+              "name": "defaultText",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the initial text of the shape."
+            },
+            {
+              "name": "defaultWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the initial width of the shape."
+            },
+            {
+              "name": "imageHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape image's fractional height."
+            },
+            {
+              "name": "imageLeft",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape image's left offset."
+            },
+            {
+              "name": "imageTop",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape image's top offset."
+            },
+            {
+              "name": "imageWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape image's fractional width."
+            },
+            {
+              "name": "keepRatioOnAutoSize",
+              "type": "Boolean",
+              "default": null,
+              "description": "Specifies whether the shape maintains its width-to-height ratio on [auto resize]."
+            },
+            {
+              "name": "maxHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the maximum height of the shape."
+            },
+            {
+              "name": "maxWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the maximum width of the shape."
+            },
+            {
+              "name": "minHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the maximum height of the shape."
+            },
+            {
+              "name": "minWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the minimum width of the shape."
+            },
+            {
+              "name": "render",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "template",
+              "type": "template",
+              "default": null,
+              "description": "Specifies a custom template for the shape."
+            },
+            {
+              "name": "templateHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape template's fractional height."
+            },
+            {
+              "name": "templateLeft",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape template's left offset."
+            },
+            {
+              "name": "templateTop",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape template's top offset."
+            },
+            {
+              "name": "templateWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape template's fractional width."
+            },
+            {
+              "name": "textHeight",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape text container's height."
+            },
+            {
+              "name": "textLeft",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape text's left offset."
+            },
+            {
+              "name": "textTop",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape text's top offset."
+            },
+            {
+              "name": "textWidth",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the shape text container's width."
+            },
+            {
+              "name": "title",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the shape's tooltip in the toolbox panel."
+            },
+            {
+              "name": "toolboxComponent",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [toolboxTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+            },
+            {
+              "name": "toolboxRender",
+              "type": null,
+              "default": null,
+              "description": "An alias for the [toolboxTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+            },
+            {
+              "name": "toolboxTemplate",
+              "type": "template",
+              "default": null,
+              "description": "Specifies a custom template for the shape in the toolbox."
+            },
+            {
+              "name": "toolboxWidthToHeightRatio",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the aspect ratio of the shape in the toolbox."
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the custom shape's identifier."
+            }
+          ]
+        },
+        {
+          "name": "defaultItemProperties",
+          "subMembers": [
+            {
+              "name": "connectorLineEnd",
+              "type": "Enums.ConnectorLineEnd",
+              "default": "'arrow'",
+              "description": "Specifies the default tip of a connector's end point."
+            },
+            {
+              "name": "connectorLineStart",
+              "type": "Enums.ConnectorLineEnd",
+              "default": "'none'",
+              "description": "Specifies the default tip of a connector's start point."
+            },
+            {
+              "name": "connectorLineType",
+              "type": "Enums.ConnectorLineType",
+              "default": "'orthogonal'",
+              "description": "Specifies the default type of a connector."
+            },
+            {
+              "name": "defaultItemProperties",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures default item properties."
+            },
+            {
+              "name": "shapeMaxHeight",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the default maximum height of a shape."
+            },
+            {
+              "name": "shapeMaxWidth",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the default maximum width of a shape."
+            },
+            {
+              "name": "shapeMinHeight",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the default minimum height of a shape."
+            },
+            {
+              "name": "shapeMinWidth",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the default minimum width of a shape."
+            },
+            {
+              "name": "style",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies a default item style."
+            },
+            {
+              "name": "textStyle",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies an item's default text style."
+            }
+          ]
+        },
+        {
+          "name": "edges",
+          "subMembers": [
+            {
+              "name": "customDataExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's custom data."
+            },
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Binds the **edges** collection to the specified data. Specify this property if you use [node and edge] data sources."
+            },
+            {
+              "name": "edges",
+              "type": "Object",
+              "default": "null",
+              "description": "Allows you to bind the collection of diagram edges to a data source. For more information, see the [Data Binding] section."
+            },
+            {
+              "name": "fromExpr",
+              "type": "String | function(data, value)",
+              "default": "'from'",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's start node key."
+            },
+            {
+              "name": "fromLineEndExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's line start tip."
+            },
+            {
+              "name": "fromPointIndexExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an index of a shape connection point where an edge starts."
+            },
+            {
+              "name": "keyExpr",
+              "type": "String | function(data, value)",
+              "default": "'id'",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's key."
+            },
+            {
+              "name": "lineTypeExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's line type."
+            },
+            {
+              "name": "lockedExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression whose Boolean value indicates whether an edge is locked."
+            },
+            {
+              "name": "pointsExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's key points."
+            },
+            {
+              "name": "styleExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge style."
+            },
+            {
+              "name": "textExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns edge text."
+            },
+            {
+              "name": "textStyleExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's text style."
+            },
+            {
+              "name": "toExpr",
+              "type": "String | function(data, value)",
+              "default": "'to'",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's end node key."
+            },
+            {
+              "name": "toLineEndExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's line end tip."
+            },
+            {
+              "name": "toPointIndexExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an index of a shape connection point where an edge ends."
+            },
+            {
+              "name": "zIndexExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an edge's z-index."
+            }
+          ]
+        },
+        {
+          "name": "editing",
+          "subMembers": [
+            {
+              "name": "allowAddShape",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can add a shape."
+            },
+            {
+              "name": "allowChangeConnection",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can change a connection."
+            },
+            {
+              "name": "allowChangeConnectorPoints",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can change connector points."
+            },
+            {
+              "name": "allowChangeConnectorText",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can change a connector's text."
+            },
+            {
+              "name": "allowChangeShapeText",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can change a shape's text."
+            },
+            {
+              "name": "allowDeleteConnector",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can delete a connector."
+            },
+            {
+              "name": "allowDeleteShape",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can delete a shape."
+            },
+            {
+              "name": "allowMoveShape",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can move a shape."
+            },
+            {
+              "name": "allowResizeShape",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether a user can resize a shape."
+            },
+            {
+              "name": "editing",
+              "type": "Object",
+              "default": "{}",
+              "description": "Specifies which editing operations a user can perform."
+            }
+          ]
+        },
+        {
+          "name": "export",
+          "subMembers": [
+            {
+              "name": "export",
+              "type": "Object",
+              "default": null,
+              "description": "Configures export settings."
+            },
+            {
+              "name": "fileName",
+              "type": "String",
+              "default": "'Diagram'",
+              "description": "Specifies the name of the file to which the diagram is exported."
+            }
+          ]
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "fullScreen",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not to display the UI component in full-screen mode."
+        },
+        {
+          "name": "gridSize",
+          "subMembers": [
+            {
+              "name": "gridSize",
+              "type": "Number | Object",
+              "default": null,
+              "description": "Specifies the grid pitch."
+            },
+            {
+              "name": "items",
+              "type": "Array<Number>",
+              "default": null,
+              "description": "An array that specifies the _Grid Size_ combobox items on _Properties_ panel."
+            },
+            {
+              "name": "value",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the grid's pitch."
+            }
+          ]
+        },
+        {
+          "name": "hasChanges",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Indicates whether diagram content has unsaved changes."
+        },
+        {
+          "name": "hint",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "historyToolbar",
+          "subMembers": [
+            {
+              "name": "commands",
+              "type": "Array<CustomCommand, Enums.Command>",
+              "default": "undefined",
+              "description": "Lists commands in the history toolbar."
+            },
+            {
+              "name": "historyToolbar",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the history toolbar's settings."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies the history toolbar's visibility."
+            }
+          ]
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "mainToolbar",
+          "subMembers": [
+            {
+              "name": "commands",
+              "type": "Array<CustomCommand, Enums.Command>",
+              "default": "undefined",
+              "description": "Lists commands in the toolbar."
+            },
+            {
+              "name": "mainToolbar",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the main toolbar settings."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies the toolbar's visibility."
+            }
+          ]
+        },
+        {
+          "name": "nodes",
+          "subMembers": [
+            {
+              "name": "autoLayout",
+              "subMembers": [
+                {
+                  "name": "autoLayout",
+                  "type": "Enums.DataLayoutType | Object",
+                  "default": "'auto'",
+                  "description": "Specifies an auto-layout algorithm that the UI component uses to build a diagram."
+                },
+                {
+                  "name": "orientation",
+                  "type": "Enums.Orientation",
+                  "default": null,
+                  "description": "Specifies the diagram layout orientation."
+                },
+                {
+                  "name": "type",
+                  "type": "Enums.DataLayoutType",
+                  "default": null,
+                  "description": "Specifies an auto-layout algorithm that is used to automatically arrange shapes."
+                }
+              ]
+            },
+            {
+              "name": "autoSizeEnabled",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether or not a shape size is automatically changed to fit the text when the UI component is bound to a data source."
+            },
+            {
+              "name": "containerChildrenExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a container's nested items."
+            },
+            {
+              "name": "containerKeyExpr",
+              "type": "String | function(data, value)",
+              "default": "'containerKey'",
+              "description": "Specifies the name of a data source field or an expression that returns a key of a node's parent container node."
+            },
+            {
+              "name": "customDataExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node's custom data."
+            },
+            {
+              "name": "dataSource",
+              "type": "Store | DataSource | DataSource_Options | String | Array<any> | null",
+              "default": "null",
+              "description": "Binds the **nodes** collection to the specified data. For more information, see the [Data Binding] section."
+            },
+            {
+              "name": "heightExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node's height."
+            },
+            {
+              "name": "imageUrlExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns an image URL or Base64 encoded image for a node."
+            },
+            {
+              "name": "itemsExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node's child items."
+            },
+            {
+              "name": "keyExpr",
+              "type": "String | function(data, value)",
+              "default": "'id'",
+              "description": "Specifies the name of a data source field or an expression that returns node keys."
+            },
+            {
+              "name": "leftExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns the x-coordinate of a node's left border."
+            },
+            {
+              "name": "lockedExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression whose Boolean value indicates whether a node is locked."
+            },
+            {
+              "name": "nodes",
+              "type": "Object",
+              "default": "null",
+              "description": "Allows you to bind the collection of diagram nodes to a data source. For more information, see the [Data Binding] section."
+            },
+            {
+              "name": "parentKeyExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a parent node key for a node."
+            },
+            {
+              "name": "styleExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node style."
+            },
+            {
+              "name": "textExpr",
+              "type": "String | function(data, value)",
+              "default": "'text'",
+              "description": "Specifies the name of a data source field or an expression that returns node texts."
+            },
+            {
+              "name": "textStyleExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node's text style."
+            },
+            {
+              "name": "topExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns the y-coordinate of a node's top border."
+            },
+            {
+              "name": "typeExpr",
+              "type": "String | function(data, value)",
+              "default": "'type'",
+              "description": "Specifies the name of a data source field or an expression that returns the shape type for a node."
+            },
+            {
+              "name": "widthExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node's width."
+            },
+            {
+              "name": "zIndexExpr",
+              "type": "String | function(data, value) | undefined",
+              "default": "undefined",
+              "description": "Specifies the name of a data source field or an expression that returns a node's z-index."
+            }
+          ]
+        },
+        {
+          "name": "pageColor",
+          "type": "String",
+          "default": "'white'",
+          "description": "Specifies the color of a diagram page."
+        },
+        {
+          "name": "pageOrientation",
+          "type": "Enums.PageOrientation",
+          "default": "'portrait'",
+          "description": "Specifies the page orientation."
+        },
+        {
+          "name": "pageSize",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the page height."
+            },
+            {
+              "name": "items",
+              "subMembers": [
+                {
+                  "name": "height",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Specifies the page height."
+                },
+                {
+                  "name": "items",
+                  "type": "Array<Object>",
+                  "default": null,
+                  "description": "An array that specifies the page size items in the _Page Size_ combobox on _Properties Panel_."
+                },
+                {
+                  "name": "text",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies the display text."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": null,
+                  "description": "Specifies the page width."
+                }
+              ]
+            },
+            {
+              "name": "pageSize",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies a size of pages."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the page width."
+            }
+          ]
+        },
+        {
+          "name": "propertiesPanel",
+          "subMembers": [
+            {
+              "name": "propertiesPanel",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the Properties panel settings."
+            },
+            {
+              "name": "tabs",
+              "subMembers": [
+                {
+                  "name": "commands",
+                  "type": "Array<CustomCommand, Enums.Command>",
+                  "default": null,
+                  "description": "Lists commands in a tab."
+                },
+                {
+                  "name": "groups",
+                  "subMembers": [
+                    {
+                      "name": "commands",
+                      "type": "Array<CustomCommand, Enums.Command>",
+                      "default": null,
+                      "description": "Lists commands in a group."
+                    },
+                    {
+                      "name": "groups",
+                      "type": "Array<Object>",
+                      "default": null,
+                      "description": "Contains an array of command groups in the tab."
+                    },
+                    {
+                      "name": "title",
+                      "type": "String",
+                      "default": null,
+                      "description": "Specifies a title of the group."
+                    }
+                  ]
+                },
+                {
+                  "name": "tabs",
+                  "type": "Array<Object>",
+                  "default": "undefined",
+                  "description": "Contains an array of tabs in the Properties panel."
+                },
+                {
+                  "name": "title",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies the tab's title."
+                }
+              ]
+            },
+            {
+              "name": "visibility",
+              "type": "Enums.PanelVisibility",
+              "default": "'auto'",
+              "description": "Specifies the panel's visibility."
+            }
+          ]
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the diagram is read-only."
+        },
+        {
+          "name": "showGrid",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether grid lines are visible."
+        },
+        {
+          "name": "simpleView",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Switch the Diagram UI component to simple view mode."
+        },
+        {
+          "name": "snapToGrid",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether diagram elements should snap to grid lines."
+        },
+        {
+          "name": "tabIndex",
+          "type": null,
+          "default": null,
+          "description": "-"
+        },
+        {
+          "name": "toolbox",
+          "subMembers": [
+            {
+              "name": "groups",
+              "subMembers": [
+                {
+                  "name": "category",
+                  "type": "Enums.ShapeCategory | String",
+                  "default": null,
+                  "description": "Specifies the category of shapes that are displayed in the group."
+                },
+                {
+                  "name": "displayMode",
+                  "type": "Enums.ToolboxDisplayMode",
+                  "default": null,
+                  "description": "Specifies how shapes are displayed in the toolbox."
+                },
+                {
+                  "name": "expanded",
+                  "type": "Boolean",
+                  "default": null,
+                  "description": "Specifies whether the group is expanded."
+                },
+                {
+                  "name": "groups",
+                  "type": "Array<Object> | Array<Enums.ShapeCategory>",
+                  "default": "undefined",
+                  "description": "Lists toolbox groups."
+                },
+                {
+                  "name": "shapes",
+                  "type": "Array<Enums.ShapeType> | Array<String>",
+                  "default": null,
+                  "description": "Lists the shapes in the group. The built-in shape types are shown in the [Shape Types] section."
+                },
+                {
+                  "name": "title",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies the group title in the toolbox."
+                }
+              ]
+            },
+            {
+              "name": "shapeIconsPerRow",
+              "type": "Number",
+              "default": "3",
+              "description": "Specifies the number of shape icons in a row."
+            },
+            {
+              "name": "showSearch",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the search box is visible."
+            },
+            {
+              "name": "toolbox",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the toolbox settings."
+            },
+            {
+              "name": "visibility",
+              "type": "Enums.PanelVisibility",
+              "default": "'auto'",
+              "description": "Specifies the toolbar's visibility."
+            },
+            {
+              "name": "width",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the toolbox's width in pixels."
+            }
+          ]
+        },
+        {
+          "name": "units",
+          "type": "Enums.Units",
+          "default": "'in'",
+          "description": "Specifies the measurement unit for size properties."
+        },
+        {
+          "name": "useNativeScrolling",
+          "type": "Boolean",
+          "default": "true, false (desktop except Mac)",
+          "description": "Specifies whether or not the UI component uses native scrolling."
+        },
+        {
+          "name": "viewToolbar",
+          "subMembers": [
+            {
+              "name": "commands",
+              "type": "Array<CustomCommand, Enums.Command>",
+              "default": "undefined",
+              "description": "Lists commands in the toolbar."
+            },
+            {
+              "name": "viewToolbar",
+              "type": "Object",
+              "default": "{}",
+              "description": "Configures the view toolbar settings."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies the view toolbar's visibility."
+            }
+          ]
+        },
+        {
+          "name": "viewUnits",
+          "type": "Enums.Units",
+          "default": "'in'",
+          "description": "Specifies the measurement unit that is displayed in user interface elements."
+        },
+        {
+          "name": "zoomLevel",
+          "subMembers": [
+            {
+              "name": "items",
+              "type": "Array<Number>",
+              "default": "undefined",
+              "description": "An array that specifies the zoom level items in the _Zoom Level_ combobox on _Properties_ panel."
+            },
+            {
+              "name": "value",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "Specifies the zoom level."
+            },
+            {
+              "name": "zoomLevel",
+              "type": "Number | Object",
+              "default": "1",
+              "description": "Specifies the zoom level."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "CustomCommand",
+          "subMembers": [
+            {
+              "name": "CustomCommand",
+              "type": "Object",
+              "default": null,
+              "description": "An object that provides information about a custom command in the [Diagram] UI component."
+            },
+            {
+              "name": "icon",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the custom command's icon."
+            },
+            {
+              "name": "items",
+              "type": "Array<CustomCommand, Enums.Command>",
+              "default": null,
+              "description": "Lists command sub items."
+            },
+            {
+              "name": "location",
+              "type": "Enums.ToolbarItemLocation",
+              "default": "'before'",
+              "description": "Specifies a location for the command or separator on the main toolbar."
+            },
+            {
+              "name": "name",
+              "type": "String | Enums.Command",
+              "default": null,
+              "description": "Specifies the custom command's identifier."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the custom command's text and tooltip text."
+            }
+          ]
+        },
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "dxDiagramAddShapeArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramAddShapeArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "position",
+              "subMembers": [
+                {
+                  "name": "position",
+                  "type": "Object",
+                  "default": null,
+                  "description": "A position where the shape is being added."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A horizontal position where the shape is being added."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A vertical position where the shape is being added."
+                }
+              ]
+            },
+            {
+              "name": "shape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The processed shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramAddShapeFromToolboxArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramAddShapeFromToolboxArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "shapeType",
+              "type": "Enums.ShapeType | String",
+              "default": null,
+              "description": "The type of the processed shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramBeforeChangeConnectorTextArgs",
+          "subMembers": [
+            {
+              "name": "connector",
+              "type": "dxDiagramConnector",
+              "default": null,
+              "description": "The processed connector."
+            },
+            {
+              "name": "dxDiagramBeforeChangeConnectorTextArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed connector."
+            },
+            {
+              "name": "index",
+              "type": "Number",
+              "default": null,
+              "description": "The index of the processed text in the connector's [texts] collection."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramBeforeChangeShapeTextArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramBeforeChangeShapeTextArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "shape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The processed shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramChangeConnectionArgs",
+          "subMembers": [
+            {
+              "name": "connectionPointIndex",
+              "type": "Number",
+              "default": null,
+              "description": "The index of the processed point in the shape's connection point collection."
+            },
+            {
+              "name": "connector",
+              "type": "dxDiagramConnector",
+              "default": null,
+              "description": "The processed connector."
+            },
+            {
+              "name": "connectorPosition",
+              "type": "Enums.ConnectorPosition",
+              "default": null,
+              "description": "The position of the connector in the processed point."
+            },
+            {
+              "name": "dxDiagramChangeConnectionArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed connection."
+            },
+            {
+              "name": "newShape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The new connected shape."
+            },
+            {
+              "name": "oldShape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The previous connected shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramChangeConnectorPointsArgs",
+          "subMembers": [
+            {
+              "name": "connector",
+              "type": "dxDiagramConnector",
+              "default": null,
+              "description": "The processed connector."
+            },
+            {
+              "name": "dxDiagramChangeConnectorPointsArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed connector."
+            },
+            {
+              "name": "newPoints",
+              "subMembers": [
+                {
+                  "name": "newPoints",
+                  "type": "Array<Object>",
+                  "default": null,
+                  "description": "The array of new connection points."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A horizontal position of the point."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A vertical position of the point."
+                }
+              ]
+            },
+            {
+              "name": "oldPoints",
+              "subMembers": [
+                {
+                  "name": "oldPoints",
+                  "type": "Array<Object>",
+                  "default": null,
+                  "description": "The array of previous connection points."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A horizontal position of the point."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A vertical position of the point."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramChangeConnectorTextArgs",
+          "subMembers": [
+            {
+              "name": "connector",
+              "type": "dxDiagramConnector",
+              "default": null,
+              "description": "The processed connector."
+            },
+            {
+              "name": "dxDiagramChangeConnectorTextArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed connector."
+            },
+            {
+              "name": "index",
+              "type": "Number",
+              "default": null,
+              "description": "The index of the processed text in the connector's [texts] collection."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": null,
+              "description": "The new connector text."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramChangeShapeTextArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramChangeShapeTextArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "shape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The processed shape."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": null,
+              "description": "The new shape text."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramConnector",
+          "subMembers": [
+            {
+              "name": "dxDiagramConnector",
+              "type": null,
+              "default": null,
+              "description": "An object that provides information about a connector in the [Diagram] UI component."
+            },
+            {
+              "name": "fromId",
+              "type": "String",
+              "default": null,
+              "description": "Gets the connector's start node identifier."
+            },
+            {
+              "name": "fromKey",
+              "type": "any",
+              "default": null,
+              "description": "Specifies the connector's start node key."
+            },
+            {
+              "name": "fromPointIndex",
+              "type": "Number",
+              "default": null,
+              "description": "The index of a shape connection point where the connector starts."
+            },
+            {
+              "name": "points",
+              "subMembers": [
+                {
+                  "name": "points",
+                  "type": "Array<Object>",
+                  "default": null,
+                  "description": "Gets the connector's key points."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A horizontal position of the point."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "A vertical position of the point."
+                }
+              ]
+            },
+            {
+              "name": "texts",
+              "type": "Array<String>",
+              "default": null,
+              "description": "Specifies the connector's text."
+            },
+            {
+              "name": "toId",
+              "type": "String",
+              "default": null,
+              "description": "Gets the connector's end node identifier."
+            },
+            {
+              "name": "toKey",
+              "type": "any",
+              "default": null,
+              "description": "Specifies the connector's end node key."
+            },
+            {
+              "name": "toPointIndex",
+              "type": "Number",
+              "default": null,
+              "description": "The index of the shape connection point where the connector ends."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramDeleteConnectorArgs",
+          "subMembers": [
+            {
+              "name": "connector",
+              "type": "dxDiagramConnector",
+              "default": null,
+              "description": "The processed connector."
+            },
+            {
+              "name": "dxDiagramDeleteConnectorArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed connector."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramDeleteShapeArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramDeleteShapeArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "shape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The processed shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramItem",
+          "subMembers": [
+            {
+              "name": "dataItem",
+              "type": "any",
+              "default": null,
+              "description": "Returns the data item that is bound to the diagram item."
+            },
+            {
+              "name": "dxDiagramItem",
+              "type": "dxDiagramItem",
+              "default": null,
+              "description": "An object that provides information about an item (shape or connector) in the [Diagram] UI component."
+            },
+            {
+              "name": "id",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the item's internal identifier."
+            },
+            {
+              "name": "itemType",
+              "type": "Enums.ItemType",
+              "default": null,
+              "description": "Returns the type of the item."
+            },
+            {
+              "name": "key",
+              "type": "Object",
+              "default": null,
+              "description": "Gets the item's key from a data source."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramMoveShapeArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramMoveShapeArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "newPosition",
+              "subMembers": [
+                {
+                  "name": "newPosition",
+                  "type": "Object",
+                  "default": null,
+                  "description": "The new shape position."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The new horizontal shape position specified in [units]."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The new vertical shape position specified in [units]."
+                }
+              ]
+            },
+            {
+              "name": "oldPosition",
+              "subMembers": [
+                {
+                  "name": "oldPosition",
+                  "type": "Object",
+                  "default": null,
+                  "description": "The previous shape position."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The previous horizontal shape position specified in [units]."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The previous vertical shape position specified in [units]."
+                }
+              ]
+            },
+            {
+              "name": "shape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The processed shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramResizeShapeArgs",
+          "subMembers": [
+            {
+              "name": "dxDiagramResizeShapeArgs",
+              "type": null,
+              "default": null,
+              "description": "Contains information about the processed shape."
+            },
+            {
+              "name": "newSize",
+              "subMembers": [
+                {
+                  "name": "height",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The new shape height."
+                },
+                {
+                  "name": "newSize",
+                  "type": "Object",
+                  "default": null,
+                  "description": "The new shape size."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The new shape width."
+                }
+              ]
+            },
+            {
+              "name": "oldSize",
+              "subMembers": [
+                {
+                  "name": "height",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The previous shape height."
+                },
+                {
+                  "name": "oldSize",
+                  "type": "Object",
+                  "default": null,
+                  "description": "The previous shape size."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The previous shape width."
+                }
+              ]
+            },
+            {
+              "name": "shape",
+              "type": "dxDiagramShape",
+              "default": null,
+              "description": "The processed shape."
+            }
+          ]
+        },
+        {
+          "name": "dxDiagramShape",
+          "subMembers": [
+            {
+              "name": "attachedConnectorIds",
+              "type": "Array<String>",
+              "default": null,
+              "description": "Gets an array of attached connector identifiers."
+            },
+            {
+              "name": "containerChildItemIds",
+              "type": "Array<String>",
+              "default": null,
+              "description": "Gets identifiers of shapes stored in the container."
+            },
+            {
+              "name": "containerExpanded",
+              "type": "Boolean",
+              "default": null,
+              "description": "Gets whether the container is expanded."
+            },
+            {
+              "name": "containerId",
+              "type": "String",
+              "default": null,
+              "description": "Gets the identifier of the container that stores the shape."
+            },
+            {
+              "name": "dataItem",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "dxDiagramShape",
+              "type": null,
+              "default": null,
+              "description": "An object that provides information about a shape in the [Diagram] UI component."
+            },
+            {
+              "name": "position",
+              "subMembers": [
+                {
+                  "name": "position",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the position of the top left shape corner relative to the top left corner of the diagram work area."
+                },
+                {
+                  "name": "x",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The horizontal shape position specified in [units]."
+                },
+                {
+                  "name": "y",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The vertical shape position specified in [units]."
+                }
+              ]
+            },
+            {
+              "name": "size",
+              "subMembers": [
+                {
+                  "name": "height",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The shape height specified in [units]."
+                },
+                {
+                  "name": "size",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Specifies the shape size."
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The shape width specified in [units]."
+                }
+              ]
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the shape's text."
+            },
+            {
+              "name": "type",
+              "type": "Enums.ShapeType | String",
+              "default": null,
+              "description": "Specifies the shape type. The built-in shape types are shown in the [Shape Types] section."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxDiagram",
+      "type": null,
+      "default": null,
+      "description": "The Diagram UI component provides a visual interface to help you design new and modify existing diagrams."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "export()",
+      "type": null,
+      "default": null,
+      "description": "Exports the diagram data to a JSON object."
+    },
+    {
+      "name": "exportTo(format_callback)",
+      "type": null,
+      "default": null,
+      "description": "Exports the diagram to an image format."
+    },
+    {
+      "name": "fitToContent()",
+      "type": null,
+      "default": null,
+      "description": "Fits the diagram content into the work area. The maximum scale is 100%."
+    },
+    {
+      "name": "fitToWidth()",
+      "type": null,
+      "default": null,
+      "description": "Fits the diagram content's width into the work area width. The maximum scale is 100%."
+    },
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "getEdgeDataSource()",
+      "type": null,
+      "default": null,
+      "description": "Returns the [DataSource] instance."
+    },
+    {
+      "name": "getItemById(id)",
+      "type": null,
+      "default": null,
+      "description": "Returns a [shape] or [connector] object specified by its internal identifier."
+    },
+    {
+      "name": "getItemByKey(key)",
+      "type": null,
+      "default": null,
+      "description": "Returns a [shape] or [connector] object specified by its key."
+    },
+    {
+      "name": "getItems()",
+      "type": null,
+      "default": null,
+      "description": "Returns an array of diagram items."
+    },
+    {
+      "name": "getNodeDataSource()",
+      "type": null,
+      "default": null,
+      "description": "Gets the [DataSource] instance."
+    },
+    {
+      "name": "getSelectedItems()",
+      "type": null,
+      "default": null,
+      "description": "Returns an array of selected diagram items."
+    },
+    {
+      "name": "import(data_updateExistingItemsOnly)",
+      "type": null,
+      "default": null,
+      "description": "Imports the diagram data."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "scrollToItem(item)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the view area to the specified item."
+    },
+    {
+      "name": "setSelectedItems(items)",
+      "type": null,
+      "default": null,
+      "description": "Selects the specified items."
+    },
+    {
+      "name": "updateToolbox()",
+      "type": null,
+      "default": null,
+      "description": "Updates the diagram toolboxes."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onCustomCommand",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a custom command item was clicked and allows you to implement the custom command's logic."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a shape or connector is clicked."
+    },
+    {
+      "name": "onItemDblClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a shape or connector is double-clicked."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onRequestEditOperation",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that allows you to prohibit an edit operation at run time."
+    },
+    {
+      "name": "onRequestLayoutUpdate",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that allows you to specify whether or not the UI component should reapply its auto layout after diagram data is reloaded."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the selection is changed in the Diagram."
+    },
+    {
+      "name": "customCommand",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a custom command item was clicked and allows you to implement custom command logic."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a shape or connector is clicked."
+    },
+    {
+      "name": "itemDblClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a shape or connector is double-clicked."
+    },
+    {
+      "name": "requestEditOperation",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a user edits a diagram and before the UI related to an edit operation is updated. Requests clarification about edit operation availability."
+    },
+    {
+      "name": "requestLayoutUpdate",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after diagram data has been changed."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the selection is changed in the Diagram."
+    }
+  ],
+  "Types": [
+    {
+      "name": "AutoZoomMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the Diagram UI component automatically zooms the work area."
+    },
+    {
+      "name": "Command",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the Diagram command's identifier."
+    },
+    {
+      "name": "ConnectorLineEnd",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the default tip of a connector's start/end point."
+    },
+    {
+      "name": "ConnectorLineType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the default type of a connector."
+    },
+    {
+      "name": "ConnectorPosition",
+      "type": "Union",
+      "default": null,
+      "description": "The position of the connector in the processed point."
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "CustomCommandEvent",
+      "subMembers": [
+        {
+          "name": "CustomCommandEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [customCommand] event handler's argument."
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DataLayoutType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies an auto-layout algorithm that the UI component uses to build a diagram."
+    },
+    {
+      "name": "DiagramExportFormat",
+      "type": "Union",
+      "default": null,
+      "description": "Exports the diagram to an image format."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "subMembers": [
+        {
+          "name": "ItemClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemClick] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "dxDiagramItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemDblClickEvent",
+      "subMembers": [
+        {
+          "name": "ItemDblClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemDblClick] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "dxDiagramItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemType",
+      "type": "Union",
+      "default": null,
+      "description": "Returns the type of the item."
+    },
+    {
+      "name": "ModelOperation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the edit operation."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PanelVisibility",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the panel's visibility."
+    },
+    {
+      "name": "RequestEditOperationEvent",
+      "subMembers": [
+        {
+          "name": "RequestEditOperationEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [requestEditOperation] event handler's argument."
+        },
+        {
+          "name": "allowed",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "args",
+          "type": "dxDiagramAddShapeArgs | dxDiagramAddShapeFromToolboxArgs | dxDiagramDeleteShapeArgs | dxDiagramDeleteConnectorArgs | dxDiagramChangeConnectionArgs | dxDiagramChangeConnectorPointsArgs | dxDiagramBeforeChangeShapeTextArgs | dxDiagramChangeShapeTextArgs | dxDiagramBeforeChangeConnectorTextArgs | dxDiagramChangeConnectorTextArgs | dxDiagramResizeShapeArgs | dxDiagramMoveShapeArgs",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "operation",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reason",
+          "type": "Enums.RequestEditOperationReason",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RequestEditOperationReason",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the reason to request edit operation."
+    },
+    {
+      "name": "RequestLayoutUpdateEvent",
+      "subMembers": [
+        {
+          "name": "RequestLayoutUpdateEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [requestLayoutUpdate] event handler's argument."
+        },
+        {
+          "name": "allowed",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "changes",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectionChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectionChanged] event handler's argument."
+        },
+        {
+          "name": "items",
+          "type": "Array<dxDiagramItem>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ShapeCategory",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the category of shapes."
+    },
+    {
+      "name": "ShapeType",
+      "type": "Union",
+      "default": null,
+      "description": "The type of the processed shape."
+    },
+    {
+      "name": "ToolboxDisplayMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how shapes are displayed in the toolbox."
+    },
+    {
+      "name": "Units",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the measurement unit for size properties."
+    }
+  ]
+}

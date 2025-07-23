@@ -1,0 +1,1552 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the FileManager UI component's contents, behavior, and appearance."
+        },
+        {
+          "name": "allowedFileExtensions",
+          "type": "Array<String>",
+          "default": "[]",
+          "description": "Specifies the allowed upload file extensions."
+        },
+        {
+          "name": "contextMenu",
+          "type": "dxFileManagerContextMenu",
+          "default": null,
+          "description": "Configures the context menu settings."
+        },
+        {
+          "name": "currentPath",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the path that is used when the FileManager is initialized."
+        },
+        {
+          "name": "currentPathKeys",
+          "type": "Array<String>",
+          "default": "[]",
+          "description": "Specifies an array of path keys to the current location."
+        },
+        {
+          "name": "customizeDetailColumns",
+          "type": "function(columns)",
+          "default": null,
+          "description": "Customizes columns in [details view]. Applies only if **itemView**.[mode] is *\"details\"*."
+        },
+        {
+          "name": "customizeThumbnail",
+          "type": "function(fileSystemItem)",
+          "default": null,
+          "description": "Allows you to provide custom icons to be used as thumbnails."
+        },
+        {
+          "name": "fileSystemProvider",
+          "type": "any",
+          "default": "null",
+          "description": "Specifies the file system provider."
+        },
+        {
+          "name": "focusedItemKey",
+          "type": "String",
+          "default": "null",
+          "description": "Specifies a key of the initially or currently focused item."
+        },
+        {
+          "name": "itemView",
+          "subMembers": [
+            {
+              "name": "details",
+              "subMembers": [
+                {
+                  "name": "columns",
+                  "type": "Array<dxFileManagerDetailsColumn, String>",
+                  "default": "['thumbnail', 'name', 'dateModified', 'size']",
+                  "description": "Configures the columns."
+                },
+                {
+                  "name": "details",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the \"Details\" file system representation mode."
+                }
+              ]
+            },
+            {
+              "name": "itemView",
+              "type": "Object",
+              "default": "null",
+              "description": "Configures the file and directory view."
+            },
+            {
+              "name": "mode",
+              "type": "Enums.FileManagerItemViewMode",
+              "default": "'details'",
+              "description": "Specifies the file system representation mode."
+            },
+            {
+              "name": "showFolders",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to display folders in the view. When this property is **false**, folders are displayed in the navigation pane only."
+            },
+            {
+              "name": "showParentFolder",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to display the parent directory in the view."
+            }
+          ]
+        },
+        {
+          "name": "notifications",
+          "subMembers": [
+            {
+              "name": "notifications",
+              "type": "Object",
+              "default": null,
+              "description": "Configures notification settings."
+            },
+            {
+              "name": "showPanel",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to show the progress panel."
+            },
+            {
+              "name": "showPopup",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to show the pop-up notification window."
+            }
+          ]
+        },
+        {
+          "name": "permissions",
+          "subMembers": [
+            {
+              "name": "copy",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to copy files and directories."
+            },
+            {
+              "name": "create",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to create files and directories."
+            },
+            {
+              "name": "delete",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to delete files and directories."
+            },
+            {
+              "name": "download",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to download files."
+            },
+            {
+              "name": "move",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to move files and directories."
+            },
+            {
+              "name": "permissions",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies actions that a user is allowed to perform on files and directories."
+            },
+            {
+              "name": "rename",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to rename files and directories."
+            },
+            {
+              "name": "upload",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user is allowed to upload files."
+            }
+          ]
+        },
+        {
+          "name": "rootFolderName",
+          "type": "String",
+          "default": "'Files'",
+          "description": "Specifies the root directory display name."
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": "Array<String>",
+          "default": "[]",
+          "description": "Contains an array of initially or currently selected files and directories' keys."
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleOrMultiple",
+          "default": "'multiple'",
+          "description": "Specifies whether a user can select a single or multiple files and directories in the [item view] simultaneously."
+        },
+        {
+          "name": "toolbar",
+          "type": "dxFileManagerToolbar",
+          "default": null,
+          "description": "Configures toolbar settings."
+        },
+        {
+          "name": "upload",
+          "subMembers": [
+            {
+              "name": "chunkSize",
+              "type": "Number",
+              "default": "200000",
+              "description": "Specifies a chunk size, in bytes."
+            },
+            {
+              "name": "maxFileSize",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the maximum upload file size, in bytes."
+            },
+            {
+              "name": "upload",
+              "type": "Object",
+              "default": null,
+              "description": "Configures upload settings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "File System Providers",
+      "subMembers": [
+        {
+          "name": "Custom",
+          "subMembers": [
+            {
+              "name": "Properties",
+              "subMembers": [
+                {
+                  "name": "Configuration",
+                  "type": null,
+                  "default": null,
+                  "description": "This section describes properties that configure a custom file system provider."
+                },
+                {
+                  "name": "abortFileUpload",
+                  "type": "function(file, uploadInfo, destinationDirectory)",
+                  "default": null,
+                  "description": "A function that cancels the file upload."
+                },
+                {
+                  "name": "copyItem",
+                  "type": "function(item, destinationDirectory)",
+                  "default": null,
+                  "description": "A function that copies files or directories."
+                },
+                {
+                  "name": "createDirectory",
+                  "type": "function(parentDirectory, name)",
+                  "default": null,
+                  "description": "A function that creates a directory."
+                },
+                {
+                  "name": "deleteItem",
+                  "type": "function(item)",
+                  "default": null,
+                  "description": "A function that deletes a file or directory."
+                },
+                {
+                  "name": "downloadItems",
+                  "type": "function(items)",
+                  "default": null,
+                  "description": "A function that downloads files."
+                },
+                {
+                  "name": "getItems",
+                  "type": "function(parentDirectory)",
+                  "default": null,
+                  "description": "A function that gets file system items."
+                },
+                {
+                  "name": "getItemsContent",
+                  "type": "function(items)",
+                  "default": null,
+                  "description": "A function that get items content."
+                },
+                {
+                  "name": "hasSubDirectoriesExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "A function or the name of a data source field that provides information on whether a file or directory contains sub directories."
+                },
+                {
+                  "name": "moveItem",
+                  "type": "function(item, destinationDirectory)",
+                  "default": null,
+                  "description": "A function that moves files and directories."
+                },
+                {
+                  "name": "renameItem",
+                  "type": "function(item, newName)",
+                  "default": null,
+                  "description": "A function that renames files and directories."
+                },
+                {
+                  "name": "uploadFileChunk",
+                  "type": "function(file, uploadInfo, destinationDirectory)",
+                  "default": null,
+                  "description": "A function that uploads a file in chunks."
+                }
+              ]
+            },
+            {
+              "name": "Custom",
+              "type": null,
+              "default": null,
+              "description": "A custom file system provider allows you to implement custom APIs to access and use file systems."
+            }
+          ]
+        },
+        {
+          "name": "File System Providers",
+          "type": null,
+          "default": null,
+          "description": "File system providers are components that provide APIs used to access and modify virtual file systems. This section describes file system providers supported by the FileManager."
+        },
+        {
+          "name": "FileSystemProviderBase",
+          "subMembers": [
+            {
+              "name": "Properties",
+              "subMembers": [
+                {
+                  "name": "Configuration",
+                  "type": null,
+                  "default": null,
+                  "description": "This section describes the file system provider's properties."
+                },
+                {
+                  "name": "dateModifiedExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides timestamps that indicate when a file was last modified."
+                },
+                {
+                  "name": "isDirectoryExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides information about whether a file system item is a directory."
+                },
+                {
+                  "name": "keyExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies the data field that provides keys."
+                },
+                {
+                  "name": "nameExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides file and directory names."
+                },
+                {
+                  "name": "sizeExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides file sizes."
+                },
+                {
+                  "name": "thumbnailExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides icons to be used as thumbnails."
+                }
+              ]
+            },
+            {
+              "name": "FileSystemProviderBase",
+              "type": null,
+              "default": null,
+              "description": "Contains base provider settings."
+            }
+          ]
+        },
+        {
+          "name": "Object",
+          "subMembers": [
+            {
+              "name": "Properties",
+              "subMembers": [
+                {
+                  "name": "Configuration",
+                  "type": null,
+                  "default": null,
+                  "description": "This section describes properties that configure the **Object** file system provider."
+                },
+                {
+                  "name": "contentExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides information about files content."
+                },
+                {
+                  "name": "data",
+                  "type": "Array<any>",
+                  "default": null,
+                  "description": "Specifies an array of data objects that represent files and directories."
+                },
+                {
+                  "name": "itemsExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides information about nested files and directories."
+                }
+              ]
+            },
+            {
+              "name": "Object",
+              "type": null,
+              "default": null,
+              "description": "The **Object** file system provider works with a file system represented by an in-memory array of JSON objects."
+            }
+          ]
+        },
+        {
+          "name": "Remote",
+          "subMembers": [
+            {
+              "name": "Properties",
+              "subMembers": [
+                {
+                  "name": "Configuration",
+                  "type": null,
+                  "default": null,
+                  "description": "This section describes properties that configure the **Remote** file system provider."
+                },
+                {
+                  "name": "beforeAjaxSend",
+                  "type": "function(options)",
+                  "default": null,
+                  "description": "Specifies a function that customizes an Ajax request before it is sent to the server."
+                },
+                {
+                  "name": "beforeSubmit",
+                  "type": "function(options)",
+                  "default": null,
+                  "description": "Specifies a function that customizes a form submit request before it is sent to the server."
+                },
+                {
+                  "name": "endpointUrl",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies the URL of an endpoint used to access and modify a file system located on the server."
+                },
+                {
+                  "name": "hasSubDirectoriesExpr",
+                  "type": "String | function()",
+                  "default": null,
+                  "description": "Specifies which data field provides information about whether a directory has subdirectories."
+                },
+                {
+                  "name": "requestHeaders",
+                  "type": "any",
+                  "default": "{}",
+                  "description": "Specifies the request headers."
+                }
+              ]
+            },
+            {
+              "name": "Remote",
+              "type": null,
+              "default": null,
+              "description": "The **Remote** file system provider works with a file system located on the server."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "FileSystemError",
+          "subMembers": [
+            {
+              "name": "FileSystemError",
+              "type": null,
+              "default": null,
+              "description": "An object that contains information about the error."
+            },
+            {
+              "name": "errorCode",
+              "type": "Number",
+              "default": null,
+              "description": "The error code."
+            },
+            {
+              "name": "errorText",
+              "type": "String",
+              "default": null,
+              "description": "The error message."
+            },
+            {
+              "name": "fileSystemItem",
+              "type": "FileSystemItem",
+              "default": null,
+              "description": "The processed file or directory."
+            }
+          ]
+        },
+        {
+          "name": "FileSystemItem",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "subMembers": [
+                {
+                  "name": "Fields",
+                  "type": null,
+                  "default": null,
+                  "description": "Fields that provide information about a file system item."
+                },
+                {
+                  "name": "dataItem",
+                  "type": "any",
+                  "default": null,
+                  "description": "The file system data object that stores information about the file system item (name, size, modification date, etc.)."
+                },
+                {
+                  "name": "dateModified",
+                  "type": "Date",
+                  "default": null,
+                  "description": "A timestamp that indicates when the file system item was last modified."
+                },
+                {
+                  "name": "hasSubDirectories",
+                  "type": "Boolean",
+                  "default": null,
+                  "description": "Specifies whether a directory has subdirectories."
+                },
+                {
+                  "name": "isDirectory",
+                  "type": "Boolean",
+                  "default": null,
+                  "description": "Specifies whether the file system item is a directory."
+                },
+                {
+                  "name": "key",
+                  "type": "String",
+                  "default": null,
+                  "description": "The file system item's key."
+                },
+                {
+                  "name": "name",
+                  "type": "String",
+                  "default": null,
+                  "description": "The file system item's name."
+                },
+                {
+                  "name": "path",
+                  "type": "String",
+                  "default": null,
+                  "description": "The file system item's path."
+                },
+                {
+                  "name": "pathKeys",
+                  "type": "Array<String>",
+                  "default": null,
+                  "description": "The file system item's path specified in keys."
+                },
+                {
+                  "name": "size",
+                  "type": "Number",
+                  "default": null,
+                  "description": "The file system item's size (in bytes)."
+                },
+                {
+                  "name": "thumbnail",
+                  "type": "String",
+                  "default": null,
+                  "description": "An icon (URL) to be used as the file system item's thumbnail."
+                }
+              ]
+            },
+            {
+              "name": "FileSystemItem",
+              "type": null,
+              "default": null,
+              "description": "An object that provides information about a file system item (file or directory) in the [FileManager] UI component."
+            }
+          ]
+        },
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "UploadInfo",
+          "subMembers": [
+            {
+              "name": "UploadInfo",
+              "type": null,
+              "default": null,
+              "description": "An object that provides information about the file upload session."
+            },
+            {
+              "name": "bytesUploaded",
+              "type": "Number",
+              "default": null,
+              "description": "The number of bytes that is uploaded to the server."
+            },
+            {
+              "name": "chunkBlob",
+              "type": "Blob",
+              "default": null,
+              "description": "The binary content of the uploading chunk."
+            },
+            {
+              "name": "chunkCount",
+              "type": "Number",
+              "default": null,
+              "description": "The number of uploaded chunks and chunks that are to be uploaded."
+            },
+            {
+              "name": "chunkIndex",
+              "type": "Number",
+              "default": null,
+              "description": "The index of the uploading chunk."
+            },
+            {
+              "name": "customData",
+              "type": "any",
+              "default": null,
+              "description": "Custom information that you can pass during file upload. For instance, you can specify a custom file ID when the first part of a file is being uploaded."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxFileManager",
+      "type": null,
+      "default": null,
+      "description": "The FileManager is a UI component that allows users to upload, select, and manage files and directories in different file storages."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "getCurrentDirectory()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current directory object."
+    },
+    {
+      "name": "getSelectedItems()",
+      "type": null,
+      "default": null,
+      "description": "Gets the selected items."
+    },
+    {
+      "name": "refresh()",
+      "type": null,
+      "default": null,
+      "description": "Reloads data and repaints the UI component."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onContextMenuItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a context menu item is clicked."
+    },
+    {
+      "name": "onContextMenuShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a context menu is displayed."
+    },
+    {
+      "name": "onCurrentDirectoryChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the current directory is changed."
+    },
+    {
+      "name": "onDirectoryCreated",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a directory is created."
+    },
+    {
+      "name": "onDirectoryCreating",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a directory is created."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onErrorOccurred",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an error occurs."
+    },
+    {
+      "name": "onFileUploaded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file is successfully uploaded."
+    },
+    {
+      "name": "onFileUploading",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the file is uploaded."
+    },
+    {
+      "name": "onFocusedItemChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the focused item is changed."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemCopied",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file or directory is copied."
+    },
+    {
+      "name": "onItemCopying",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a file or directory is copied."
+    },
+    {
+      "name": "onItemDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file or directory is deleted."
+    },
+    {
+      "name": "onItemDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a file or directory is deleted."
+    },
+    {
+      "name": "onItemDownloading",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a file is downloaded."
+    },
+    {
+      "name": "onItemMoved",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file or directory is moved."
+    },
+    {
+      "name": "onItemMoving",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a file or directory is moved."
+    },
+    {
+      "name": "onItemRenamed",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file or directory is renamed."
+    },
+    {
+      "name": "onItemRenaming",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a file or directory is renamed."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectedFileOpened",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the selected file is opened."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file system item is selected or selection is canceled."
+    },
+    {
+      "name": "onToolbarItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a toolbar item is clicked."
+    },
+    {
+      "name": "contextMenuItemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a context menu item is clicked."
+    },
+    {
+      "name": "contextMenuShowing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the context menu is displayed."
+    },
+    {
+      "name": "currentDirectoryChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the current directory is changed."
+    },
+    {
+      "name": "directoryCreated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a directory is created."
+    },
+    {
+      "name": "directoryCreating",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a directory is created."
+    },
+    {
+      "name": "errorOccurred",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an error occurs during file processing."
+    },
+    {
+      "name": "fileUploaded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file is uploaded."
+    },
+    {
+      "name": "fileUploading",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file is uploaded."
+    },
+    {
+      "name": "focusedItemChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the focused item is changed."
+    },
+    {
+      "name": "itemCopied",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file or directory is copied."
+    },
+    {
+      "name": "itemCopying",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file or directory is copied."
+    },
+    {
+      "name": "itemDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file or directory is deleted."
+    },
+    {
+      "name": "itemDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file or directory is deleted."
+    },
+    {
+      "name": "itemDownloading",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file is downloaded."
+    },
+    {
+      "name": "itemMoved",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file or directory is moved."
+    },
+    {
+      "name": "itemMoving",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file or directory is moved."
+    },
+    {
+      "name": "itemRenamed",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file or directory is renamed."
+    },
+    {
+      "name": "itemRenaming",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a file or directory is renamed."
+    },
+    {
+      "name": "selectedFileOpened",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the selected file is opened."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file system item is selected or selection is canceled."
+    },
+    {
+      "name": "toolbarItemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a toolbar item is clicked."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ActionEventInfo",
+      "subMembers": [
+        {
+          "name": "ActionEventInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<void>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "errorCode",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "errorText",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextMenuItemClickEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuItemClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuItemClick] event handler's argument."
+        },
+        {
+          "name": "fileSystemItem",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "viewArea",
+          "type": "Enums.FileManagerViewArea",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContextMenuShowingEvent",
+      "subMembers": [
+        {
+          "name": "ContextMenuShowingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [contextMenuShowing] event handler's argument."
+        },
+        {
+          "name": "fileSystemItem",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "targetElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "viewArea",
+          "type": "Enums.FileManagerViewArea",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "CurrentDirectoryChangedEvent",
+      "subMembers": [
+        {
+          "name": "CurrentDirectoryChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [currentDirectoryChanged] event handler's argument."
+        },
+        {
+          "name": "directory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DirectoryCreatedEvent",
+      "subMembers": [
+        {
+          "name": "DirectoryCreatedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [directoryCreated] event handler's argument."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DirectoryCreatingEvent",
+      "subMembers": [
+        {
+          "name": "DirectoryCreatingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [directoryCreating] event handler's argument."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "ErrorOccurredEvent",
+      "subMembers": [
+        {
+          "name": "ErrorOccurredEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [errorOccurred] event handler's argument."
+        },
+        {
+          "name": "errorCode",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "errorText",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fileSystemItem",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FileManagerItemViewMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the file system representation mode."
+    },
+    {
+      "name": "FileManagerPredefinedContextMenuItem",
+      "type": "Union",
+      "default": null,
+      "description": "Configures context menu items' settings."
+    },
+    {
+      "name": "FileManagerPredefinedToolbarItem",
+      "type": "Union",
+      "default": null,
+      "description": "Configures toolbar items' settings."
+    },
+    {
+      "name": "FileManagerViewArea",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the view area."
+    },
+    {
+      "name": "FileUploadedEvent",
+      "subMembers": [
+        {
+          "name": "FileUploadedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [fileUploaded] event handler's argument."
+        },
+        {
+          "name": "fileData",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FileUploadingEvent",
+      "subMembers": [
+        {
+          "name": "FileUploadingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [fileUploading] event handler's argument."
+        },
+        {
+          "name": "destinationDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "fileData",
+          "type": "File",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FocusedItemChangedEvent",
+      "subMembers": [
+        {
+          "name": "FocusedItemChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [focusedItemChanged] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemCopiedEvent",
+      "subMembers": [
+        {
+          "name": "ItemCopiedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemCopied] event handler's argument."
+        },
+        {
+          "name": "itemName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemPath",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "sourceItem",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemCopyingEvent",
+      "subMembers": [
+        {
+          "name": "ItemCopyingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemCopying] event handler's argument."
+        },
+        {
+          "name": "destinationDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemDeletedEvent",
+      "subMembers": [
+        {
+          "name": "ItemDeletedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemDeleted] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemDeletingEvent",
+      "subMembers": [
+        {
+          "name": "ItemDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemDeleting] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemDownloadingEvent",
+      "subMembers": [
+        {
+          "name": "ItemDownloadingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemDownloading] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemMovedEvent",
+      "subMembers": [
+        {
+          "name": "ItemMovedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemMoved] event handler's argument."
+        },
+        {
+          "name": "itemName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemPath",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "parentDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "sourceItem",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemMovingEvent",
+      "subMembers": [
+        {
+          "name": "ItemMovingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemMoving] event handler's argument."
+        },
+        {
+          "name": "destinationDirectory",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemRenamedEvent",
+      "subMembers": [
+        {
+          "name": "ItemRenamedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemRenamed] event handler's argument."
+        },
+        {
+          "name": "itemName",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "sourceItem",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemRenamingEvent",
+      "subMembers": [
+        {
+          "name": "ItemRenamingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemRenaming] event handler's argument."
+        },
+        {
+          "name": "item",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newName",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectedFileOpenedEvent",
+      "subMembers": [
+        {
+          "name": "SelectedFileOpenedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectedFileOpened] event handler's argument."
+        },
+        {
+          "name": "file",
+          "type": "FileSystemItem",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectionChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectionChanged] event handler's argument."
+        },
+        {
+          "name": "currentDeselectedItemKeys",
+          "type": "Array<String>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "currentSelectedItemKeys",
+          "type": "Array<String>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": "Array<String>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItems",
+          "type": "Array<FileSystemItem>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ToolbarItemClickEvent",
+      "subMembers": [
+        {
+          "name": "ToolbarItemClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [toolbarItemClick] event handler's argument."
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

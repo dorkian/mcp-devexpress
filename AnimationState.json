@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "AnimationState",
+      "type": "Object",
+      "default": null,
+      "description": "Describes an animation state."
+    },
+    {
+      "name": "left",
+      "type": "Number",
+      "default": null,
+      "description": "A shortcut that positions the element's left side relative to the parent element."
+    },
+    {
+      "name": "opacity",
+      "type": "Number",
+      "default": null,
+      "description": "Element opacity."
+    },
+    {
+      "name": "position",
+      "type": "PositionConfig",
+      "default": null,
+      "description": "Element position."
+    },
+    {
+      "name": "scale",
+      "type": "Number",
+      "default": null,
+      "description": "A value that controls element size."
+    },
+    {
+      "name": "top",
+      "type": "Number",
+      "default": null,
+      "description": "A shortcut that positions the element's top side relative to the parent element."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

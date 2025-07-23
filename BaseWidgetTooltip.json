@@ -1,0 +1,73 @@
+{
+  "properties": [
+    {
+      "name": "BaseWidgetTooltip",
+      "type": "module: viz/core/base_widget",
+      "default": null,
+      "description": "Configures tooltips - small pop-up rectangles that display information about a data-visualizing UI component element being pressed or hovered over with the mouse pointer."
+    },
+    {
+      "name": "arrowLength",
+      "type": "Number",
+      "default": "10",
+      "description": "Specifies the length of a tooltip's arrow in pixels."
+    },
+    {
+      "name": "color",
+      "type": "String",
+      "default": "'#ffffff'",
+      "description": "Colors all tooltips."
+    },
+    {
+      "name": "container",
+      "type": "String | UserDefinedElement | undefined",
+      "default": "undefined",
+      "description": "Specifies the container in which to draw tooltips. The default container is the HTML DOM `<body>` element."
+    },
+    {
+      "name": "cornerRadius",
+      "type": "Number",
+      "default": "0, 4 (Fluent, Material)",
+      "description": "Makes all the tooltip's corners rounded."
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Enables tooltips."
+    },
+    {
+      "name": "format",
+      "type": "Format | undefined",
+      "default": "undefined",
+      "description": "Formats a value before it is displayed it in a tooltip."
+    },
+    {
+      "name": "opacity",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies tooltips' transparency."
+    },
+    {
+      "name": "paddingLeftRight",
+      "type": "Number",
+      "default": "18",
+      "description": "Generates an empty space, measured in pixels, between a tooltip's left/right border and its text."
+    },
+    {
+      "name": "paddingTopBottom",
+      "type": "Number",
+      "default": "15",
+      "description": "Generates an empty space, measured in pixels, between a tooltip's top/bottom border and its text."
+    },
+    {
+      "name": "zIndex",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies a tooltip's z-index."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,47 @@
+{
+  "properties": [
+    {
+      "name": "dxFileManagerToolbar",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the toolbar."
+    },
+    {
+      "name": "fileSelectionItems",
+      "subMembers": [
+        {
+          "name": "fileSelectionItems",
+          "type": "Array<dxFileManagerToolbarItem, Enums.FileManagerPredefinedToolbarItem>",
+          "default": "[ 'download', 'separator', 'move', 'copy', 'rename', 'separator', 'delete', 'clearSelection', { name: 'separator', location: 'after' }, 'refresh' ]",
+          "description": "Configures settings of the toolbar items that are visible when users select files."
+        },
+        {
+          "name": "options",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "items",
+      "subMembers": [
+        {
+          "name": "items",
+          "type": "Array<dxFileManagerToolbarItem, Enums.FileManagerPredefinedToolbarItem>",
+          "default": "[ 'showNavPane', 'create', 'upload', 'switchView', { name: 'separator', location: 'after' }, 'refresh' ]",
+          "description": "Configures toolbar items' settings."
+        },
+        {
+          "name": "options",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

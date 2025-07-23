@@ -1,0 +1,919 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the List UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "allowItemDeleting",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not an end user can delete list items."
+        },
+        {
+          "name": "bounceEnabled",
+          "type": "Boolean",
+          "default": "true, false (desktop)",
+          "description": "A Boolean value specifying whether to enable or disable the bounce-back effect."
+        },
+        {
+          "name": "collapsibleGroups",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not an end user can collapse groups."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<String, dxListItem, any> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "displayExpr",
+          "type": "String | function(item) | undefined",
+          "default": "undefined",
+          "description": "Specifies the data field whose values should be displayed. Defaults to *\"text\"* when the data source contains objects."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "groupComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [groupTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "groupRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [groupTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "groupTemplate",
+          "type": "template",
+          "default": "'group'",
+          "description": "Specifies a custom template for group captions."
+        },
+        {
+          "name": "grouped",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether data items should be grouped."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "indicateLoading",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not to show the loading panel when the [DataSource] bound to the UI component is loading data."
+        },
+        {
+          "name": "itemDeleteMode",
+          "type": "Enums.ItemDeleteMode",
+          "default": "'static', 'slideItem' (iOS), 'swipe' (Android)",
+          "description": "Specifies the way a user can delete items from the list."
+        },
+        {
+          "name": "itemDragging",
+          "type": "dxSortable_Options",
+          "default": null,
+          "description": "Configures item reordering using drag and drop gestures."
+        },
+        {
+          "name": "itemTemplate",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<String, dxListItem, any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "menuItems",
+          "subMembers": [
+            {
+              "name": "action",
+              "type": "function(itemElement, itemData)",
+              "default": null,
+              "description": "Holds on a function called when the item is clicked."
+            },
+            {
+              "name": "menuItems",
+              "type": "Array<Object>",
+              "default": "[]",
+              "description": "Specifies the array of items for a context menu called for a list item."
+            },
+            {
+              "name": "text",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the menu item text."
+            }
+          ]
+        },
+        {
+          "name": "menuMode",
+          "type": "Enums.ListMenuMode",
+          "default": "'context', 'slide' (iOS)",
+          "description": "Specifies whether an item context menu is shown when a user holds or swipes an item."
+        },
+        {
+          "name": "nextButtonText",
+          "type": "String",
+          "default": "'More'",
+          "description": "The text displayed on the button used to load the next page from the data source."
+        },
+        {
+          "name": "pageLoadMode",
+          "type": "Enums.PageLoadMode",
+          "default": "'scrollBottom', 'nextButton' (desktop except Mac)",
+          "description": "Specifies whether the next page is loaded when a user scrolls the UI component to the bottom or when the \"next\" button is clicked."
+        },
+        {
+          "name": "pageLoadingText",
+          "type": "String",
+          "default": "'Loading...', '' (Fluent, Material)",
+          "description": "Specifies the text shown in the pullDown panel, which is displayed when the list is scrolled to the bottom."
+        },
+        {
+          "name": "pullRefreshEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not the UI component supports the \"pull down to refresh\" gesture."
+        },
+        {
+          "name": "pulledDownText",
+          "type": "String",
+          "default": "'Release to refresh...', '' (Fluent, Material)",
+          "description": "Specifies the text displayed in the pullDown panel when the list is pulled below the refresh threshold."
+        },
+        {
+          "name": "pullingDownText",
+          "type": "String",
+          "default": "'Pull down to refresh...', '' (Fluent, Material)",
+          "description": "Specifies the text shown in the pullDown panel while the list is being pulled down to the refresh threshold."
+        },
+        {
+          "name": "refreshingText",
+          "type": "String",
+          "default": "'Refreshing...', '' (Fluent, Material)",
+          "description": "Specifies the text displayed in the pullDown panel while the list is being refreshed."
+        },
+        {
+          "name": "repaintChangesOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to repaint only those elements whose data changed."
+        },
+        {
+          "name": "scrollByContent",
+          "type": "Boolean",
+          "default": "true, false (non-touch_devices)",
+          "description": "A Boolean value specifying if the list is scrolled by content."
+        },
+        {
+          "name": "scrollByThumb",
+          "type": "Boolean",
+          "default": "false, true (desktop)",
+          "description": "Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNativeScrolling] is **false**."
+        },
+        {
+          "name": "scrollingEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "A Boolean value specifying whether to enable or disable list scrolling."
+        },
+        {
+          "name": "searchEnabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "searchExpr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "searchMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectAllMode",
+          "type": "Enums.SelectAllMode",
+          "default": "'page'",
+          "description": "Specifies the mode in which all items are selected."
+        },
+        {
+          "name": "selectAllText",
+          "type": "String",
+          "default": "'Select All'",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "selectByClick",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether an item is selected if a user clicks it."
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Number",
+          "default": "-1",
+          "description": "The index of the currently selected list item."
+        },
+        {
+          "name": "selectedItem",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleMultipleAllOrNone",
+          "default": "'none'",
+          "description": "Specifies item selection mode."
+        },
+        {
+          "name": "showScrollbar",
+          "type": "Enums.ScrollbarMode",
+          "default": "'onScroll', 'onHover' (desktop)",
+          "description": "Specifies when the UI component shows the scrollbar."
+        },
+        {
+          "name": "showSelectionControls",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not to display controls used to select list items. Not available if [selectionMode] is set to *'none'*."
+        },
+        {
+          "name": "useNativeScrolling",
+          "type": "Boolean",
+          "default": "true, false (desktop except Mac)",
+          "description": "Specifies whether or not the UI component uses native scrolling."
+        }
+      ]
+    },
+    {
+      "name": "dxList",
+      "type": null,
+      "default": null,
+      "description": "The List is a UI component that represents a collection of items in a scrollable list."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clientHeight()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's height in pixels."
+    },
+    {
+      "name": "collapseGroup(groupIndex)",
+      "type": null,
+      "default": null,
+      "description": "Collapses a group with a specific index."
+    },
+    {
+      "name": "deleteItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Removes an item found using its DOM node."
+    },
+    {
+      "name": "deleteItem(itemIndex)",
+      "type": null,
+      "default": null,
+      "description": "Removes an item with a specific index."
+    },
+    {
+      "name": "expandGroup(groupIndex)",
+      "type": null,
+      "default": null,
+      "description": "Expands a group with a specific index."
+    },
+    {
+      "name": "getFlatIndexByItemElement(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Object"
+    },
+    {
+      "name": "getItemByIndex(index)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Object"
+    },
+    {
+      "name": "getItemElementByFlatIndex(flatIndex)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Element"
+    },
+    {
+      "name": "isItemSelected(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether an item found using its DOM node is selected."
+    },
+    {
+      "name": "isItemSelected(itemIndex)",
+      "type": null,
+      "default": null,
+      "description": "Checks whether an item with a specific index is selected."
+    },
+    {
+      "name": "reload()",
+      "type": null,
+      "default": null,
+      "description": "Reloads list data."
+    },
+    {
+      "name": "reorderItem(itemElement_toItemElement)",
+      "type": null,
+      "default": null,
+      "description": "Reorders items found using their DOM nodes."
+    },
+    {
+      "name": "reorderItem(itemIndex_toItemIndex)",
+      "type": null,
+      "default": null,
+      "description": "Reorders items with specific indexes."
+    },
+    {
+      "name": "scrollBy(distance)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content by a specified distance."
+    },
+    {
+      "name": "scrollHeight()",
+      "type": null,
+      "default": null,
+      "description": "Gets the content's height in pixels."
+    },
+    {
+      "name": "scrollTo(location)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to a specific position."
+    },
+    {
+      "name": "scrollToItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to an item found using its DOM node."
+    },
+    {
+      "name": "scrollToItem(itemIndex)",
+      "type": null,
+      "default": null,
+      "description": "Scrolls the content to an item with a specific index."
+    },
+    {
+      "name": "scrollTop()",
+      "type": null,
+      "default": null,
+      "description": "Gets the top scroll offset."
+    },
+    {
+      "name": "selectAll()",
+      "type": null,
+      "default": null,
+      "description": "Selects all items."
+    },
+    {
+      "name": "selectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Selects an item found using its DOM node."
+    },
+    {
+      "name": "selectItem(itemIndex)",
+      "type": null,
+      "default": null,
+      "description": "Selects an item with a specific index."
+    },
+    {
+      "name": "unselectAll()",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of all items."
+    },
+    {
+      "name": "unselectItem(itemElement)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of an item found using its DOM node."
+    },
+    {
+      "name": "unselectItem(itemIndex)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the selection of an item with a specific index."
+    },
+    {
+      "name": "updateDimensions()",
+      "type": null,
+      "default": null,
+      "description": "Updates the UI component scrollbar according to UI component content size."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onGroupRendered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a group element is rendered."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemDeleted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a list item is deleted from the data source."
+    },
+    {
+      "name": "onItemDeleting",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before a collection item is deleted from the data source."
+    },
+    {
+      "name": "onItemHold",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a collection item has been held for a [specified period]."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onItemReordered",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after a list item is moved to another position."
+    },
+    {
+      "name": "onItemSwipe",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a list item is swiped."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPageLoading",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the next page is loaded."
+    },
+    {
+      "name": "onPullRefresh",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the \"pull to refresh\" gesture is performed. Supported on mobile devices only."
+    },
+    {
+      "name": "onScroll",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed on each scroll gesture."
+    },
+    {
+      "name": "onSelectAllValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the \"Select All\" check box value is changed. Applies only if the [selectionMode] is *\"all\"*."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called after selection changes."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called before selection changes."
+    },
+    {
+      "name": "groupRendered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a group element is rendered."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemContextMenu",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemDeleted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a list item is deleted from the data source."
+    },
+    {
+      "name": "itemDeleting",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemHold",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "itemReordered",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a list item is moved to another position."
+    },
+    {
+      "name": "itemSwipe",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a list item is swiped."
+    },
+    {
+      "name": "pageLoading",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the next page is loaded."
+    },
+    {
+      "name": "pullRefresh",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the \"pull to refresh\" gesture is performed."
+    },
+    {
+      "name": "scroll",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised on each scroll gesture."
+    },
+    {
+      "name": "selectAllValueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the \"Select All\" check box value is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "GroupRenderedEvent",
+      "subMembers": [
+        {
+          "name": "GroupRenderedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [groupRendered] event handler's argument."
+        },
+        {
+          "name": "groupData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "groupElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "groupIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemDeleteMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the way a user can delete items from the list."
+    },
+    {
+      "name": "ItemDeletedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemDeleted] event handler's argument."
+    },
+    {
+      "name": "ItemDeletingEvent",
+      "subMembers": [
+        {
+          "name": "ItemDeletingEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemDeleting] event handler's argument."
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemHoldEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemHold] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "ItemReorderedEvent",
+      "subMembers": [
+        {
+          "name": "ItemReorderedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemReordered] event handler's argument."
+        },
+        {
+          "name": "fromIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toIndex",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ItemSwipeEvent",
+      "subMembers": [
+        {
+          "name": "ItemSwipeEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [itemSwipe] event handler's argument."
+        },
+        {
+          "name": "direction",
+          "type": "String",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ListItemInfo",
+      "subMembers": [
+        {
+          "name": "ListItemInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "itemIndex",
+          "type": "Number | Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ListMenuMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether an item context menu is shown when a user holds or swipes an item."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PageLoadingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pageLoading] event handler's argument."
+    },
+    {
+      "name": "PullRefreshEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [pullRefresh] event handler's argument."
+    },
+    {
+      "name": "ScrollEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [scroll] event handler's argument."
+    },
+    {
+      "name": "ScrollInfo",
+      "subMembers": [
+        {
+          "name": "ScrollInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedBottom",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedLeft",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedRight",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "reachedTop",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "scrollOffset",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectAllValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "SelectAllValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [selectAllValueChanged] event handler's argument."
+        },
+        {
+          "name": "value",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanging] event handler's argument."
+    }
+  ]
+}

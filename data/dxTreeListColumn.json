@@ -1,0 +1,85 @@
+{
+  "properties": [
+    {
+      "name": "buttons",
+      "type": "Array<Enums.TreeListPredefinedColumnButton, dxTreeListColumnButton>",
+      "default": null,
+      "description": "Allows you to customize buttons in the edit column or create a custom [command column]. Applies only if the column's [type] is *\"buttons\"*."
+    },
+    {
+      "name": "cellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [cellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "cellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [cellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "cellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for data cells."
+    },
+    {
+      "name": "columns",
+      "type": "Array<dxTreeListColumn, String>",
+      "default": "undefined",
+      "description": "Configures columns."
+    },
+    {
+      "name": "dxTreeListColumn",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "editCellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "editCellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "editCellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "headerCellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [headerCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "headerCellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [headerCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "headerCellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for column headers."
+    },
+    {
+      "name": "type",
+      "type": "Enums.TreeListCommandColumnType",
+      "default": null,
+      "description": "Specifies the [command column] that this object customizes."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

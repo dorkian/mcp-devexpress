@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "BaseWidgetSize",
+      "type": "module: viz/core/base_widget",
+      "default": null,
+      "description": "Specifies the UI component's size in pixels."
+    },
+    {
+      "name": "height",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the height of the UI component in pixels."
+    },
+    {
+      "name": "width",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the width of the UI component in pixels."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

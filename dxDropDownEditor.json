@@ -1,0 +1,207 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "acceptCustomValue",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not the UI component allows an end user to enter a custom value."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "applyValueMode",
+          "type": "Enums.ApplyValueMode",
+          "default": "'instantly'",
+          "description": "Specifies the way an end user applies the selected value."
+        },
+        {
+          "name": "buttons",
+          "type": "Array<Enums.DropDownPredefinedButton, TextEditorButton>",
+          "default": "undefined",
+          "description": null
+        },
+        {
+          "name": "deferRendering",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to render the drop-down field's content when it is displayed. If **false**, the content is rendered immediately."
+        },
+        {
+          "name": "dropDownButtonComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownButtonTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "dropDownButtonRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [dropDownButtonTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "dropDownButtonTemplate",
+          "type": "template",
+          "default": "'dropDownButton'",
+          "description": "Specifies a custom template for the drop-down button."
+        },
+        {
+          "name": "dropDownOptions",
+          "type": "dxPopup_Options | dxPopover_Options",
+          "default": "{}",
+          "description": "Configures the drop-down field which holds the [content]."
+        },
+        {
+          "name": "mask",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maskChar",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maskInvalidMessage",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "maskRules",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "mode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "openOnFieldClick",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can open the drop-down list by clicking a text field."
+        },
+        {
+          "name": "opened",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the drop-down editor is displayed."
+        },
+        {
+          "name": "showDropDownButton",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the drop-down button is visible."
+        },
+        {
+          "name": "showMaskMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "useMaskedValue",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "validationMessagePosition",
+          "type": "Enums.Position | Enums.Mode",
+          "default": "'auto'",
+          "description": "Specifies the position of a validation message relative to the component. The validation message describes the [validation rules] that this component's value does not satisfy."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": "null",
+          "description": "Specifies the currently selected value."
+        }
+      ]
+    },
+    {
+      "name": "dxDropDownEditor",
+      "type": null,
+      "default": null,
+      "description": "A drop-down editor UI component."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "close()",
+      "type": null,
+      "default": null,
+      "description": "Closes the drop-down editor."
+    },
+    {
+      "name": "content()",
+      "type": null,
+      "default": null,
+      "description": "Gets the popup window's content."
+    },
+    {
+      "name": "field()",
+      "type": null,
+      "default": null,
+      "description": "Gets the UI component's `<input>` element."
+    },
+    {
+      "name": "open()",
+      "type": null,
+      "default": null,
+      "description": "Opens the drop-down editor."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onClosed",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed once the drop-down editor is closed."
+    },
+    {
+      "name": "onOpened",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed once the drop-down editor is opened."
+    },
+    {
+      "name": "closed",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised once the drop-down editor is closed."
+    },
+    {
+      "name": "opened",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised once the drop-down editor is opened."
+    }
+  ],
+  "Types": [
+    {
+      "name": "DropDownPredefinedButton",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a custom button for an input text field."
+    }
+  ]
+}

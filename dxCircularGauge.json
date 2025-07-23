@@ -1,0 +1,571 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object that defines configuration properties for the CircularGauge UI component."
+        },
+        {
+          "name": "centerComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [centerTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "centerRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [centerTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "centerTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for content in the component's center."
+        },
+        {
+          "name": "geometry",
+          "subMembers": [
+            {
+              "name": "endAngle",
+              "type": "Number",
+              "default": "315",
+              "description": "Specifies the end angle of the circular gauge's arc."
+            },
+            {
+              "name": "geometry",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the properties required to set the geometry of the CircularGauge UI component."
+            },
+            {
+              "name": "startAngle",
+              "type": "Number",
+              "default": "225",
+              "description": "Specifies the start angle of the circular gauge's arc."
+            }
+          ]
+        },
+        {
+          "name": "rangeContainer",
+          "subMembers": [
+            {
+              "name": "orientation",
+              "type": "Enums.CircularGaugeElementOrientation",
+              "default": "'outside'",
+              "description": "Specifies the orientation of the range container in the CircularGauge UI component."
+            },
+            {
+              "name": "rangeContainer",
+              "type": "viz/circular_gauge:RangeContainer",
+              "default": null,
+              "description": "Specifies gauge range container properties."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "5",
+              "description": "Specifies the range container's width in pixels."
+            }
+          ]
+        },
+        {
+          "name": "scale",
+          "subMembers": [
+            {
+              "name": "label",
+              "subMembers": [
+                {
+                  "name": "hideFirstOrLast",
+                  "type": "Enums.CircularGaugeLabelOverlap",
+                  "default": "'last'",
+                  "description": "Specifies which label to hide in case of overlapping."
+                },
+                {
+                  "name": "indentFromTick",
+                  "type": "Number",
+                  "default": "10",
+                  "description": "Specifies the spacing between scale labels and ticks."
+                },
+                {
+                  "name": "label",
+                  "type": "viz/circular_gauge:ScaleLabel",
+                  "default": null,
+                  "description": "Specifies common properties for scale labels."
+                }
+              ]
+            },
+            {
+              "name": "orientation",
+              "type": "Enums.CircularGaugeElementOrientation",
+              "default": "'outside'",
+              "description": "Specifies the orientation of scale ticks."
+            },
+            {
+              "name": "scale",
+              "type": "viz/circular_gauge:Scale",
+              "default": null,
+              "description": "Specifies a gauge's scale properties."
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "subMembers": [
+            {
+              "name": "height",
+              "type": null,
+              "default": "300",
+              "description": null
+            },
+            {
+              "name": "size",
+              "type": null,
+              "default": "{height: 300, width: 300}",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "300",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "subvalueIndicator",
+          "subMembers": [
+            {
+              "name": "subvalueIndicator",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the appearance properties of subvalue indicators."
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "default": "'triangleMarker'",
+              "description": "Specifies the type of subvalue indicators."
+            }
+          ]
+        },
+        {
+          "name": "valueIndicator",
+          "subMembers": [
+            {
+              "name": "palette",
+              "type": null,
+              "default": null,
+              "description": null
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "default": "'rectangleNeedle'",
+              "description": "Specifies the value indicator type."
+            },
+            {
+              "name": "valueIndicator",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the appearance properties of the value indicator."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Indicator Types",
+      "subMembers": [
+        {
+          "name": "Indicator Types",
+          "type": null,
+          "default": null,
+          "description": "This section lists objects that define properties used to configure value and subvalue indicators of specific types."
+        },
+        {
+          "name": "RangeBar",
+          "subMembers": [
+            {
+              "name": "RangeBar",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **rangeBar** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#CBC5CF'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "30",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "RectangleNeedle",
+          "subMembers": [
+            {
+              "name": "RectangleNeedle",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **rectangleNeedle** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#C2C2C2'",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "TextCloud",
+          "subMembers": [
+            {
+              "name": "TextCloud",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **textCloud** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#679EC5'",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "-6",
+              "description": null
+            },
+            {
+              "name": "text",
+              "subMembers": [
+                {
+                  "name": "font",
+                  "subMembers": [
+                    {
+                      "name": "color",
+                      "type": null,
+                      "default": "'#FFFFFF'",
+                      "description": null
+                    },
+                    {
+                      "name": "font",
+                      "type": null,
+                      "default": null,
+                      "description": null
+                    },
+                    {
+                      "name": "size",
+                      "type": null,
+                      "default": "18",
+                      "description": null
+                    }
+                  ]
+                },
+                {
+                  "name": "text",
+                  "type": null,
+                  "default": null,
+                  "description": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TriangleMarker",
+          "subMembers": [
+            {
+              "name": "TriangleMarker",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **triangleMarker** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#8798A5'",
+              "description": null
+            },
+            {
+              "name": "length",
+              "type": null,
+              "default": "14",
+              "description": null
+            },
+            {
+              "name": "offset",
+              "type": null,
+              "default": "6",
+              "description": null
+            },
+            {
+              "name": "width",
+              "type": null,
+              "default": "13",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "TriangleNeedle",
+          "subMembers": [
+            {
+              "name": "TriangleNeedle",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **triangleNeedle** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#C2C2C2'",
+              "description": null
+            }
+          ]
+        },
+        {
+          "name": "TwoColorNeedle",
+          "subMembers": [
+            {
+              "name": "TwoColorNeedle",
+              "type": "Object",
+              "default": null,
+              "description": "An object that defines a gauge indicator of the **twoColorNeedle** type."
+            },
+            {
+              "name": "color",
+              "type": null,
+              "default": "'#C2C2C2'",
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dxCircularGauge",
+      "type": null,
+      "default": null,
+      "description": "The CircularGauge is a UI component that indicates values on a circular numeric scale."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDrawn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's rendering has finished."
+    },
+    {
+      "name": "onExported",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component is exported."
+    },
+    {
+      "name": "onExporting",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is exported."
+    },
+    {
+      "name": "onFileSaving",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before a file with exported UI component is saved to the user's local storage."
+    },
+    {
+      "name": "onIncidentOccurred",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when an error or warning occurs."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onTooltipHidden",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip becomes hidden."
+    },
+    {
+      "name": "onTooltipShown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a tooltip appears."
+    }
+  ],
+  "Types": [
+    {
+      "name": "CircularGaugeElementOrientation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the orientation of scale ticks."
+    },
+    {
+      "name": "CircularGaugeLabelOverlap",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies which label to hide in case of overlapping."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DrawnEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [drawn] event handler's argument."
+    },
+    {
+      "name": "ExportedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exported] event handler's argument."
+    },
+    {
+      "name": "ExportingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [exporting] event handler's argument."
+    },
+    {
+      "name": "FileSavingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [fileSaving] event handler's argument."
+    },
+    {
+      "name": "IncidentOccurredEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [incidentOccurred] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "RangeContainer",
+      "subMembers": [
+        {
+          "name": "RangeContainer",
+          "type": "module: viz/circular_gauge",
+          "default": null,
+          "description": "Specifies gauge range container properties."
+        },
+        {
+          "name": "orientation",
+          "type": "Enums.CircularGaugeElementOrientation",
+          "default": "'outside'",
+          "description": "Specifies the orientation of the range container in the CircularGauge UI component."
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "default": "5",
+          "description": "Specifies the range container's width in pixels."
+        }
+      ]
+    },
+    {
+      "name": "Scale",
+      "subMembers": [
+        {
+          "name": "Scale",
+          "type": "module: viz/circular_gauge",
+          "default": null,
+          "description": "Specifies a gauge's scale properties."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies common properties for scale labels."
+        },
+        {
+          "name": "orientation",
+          "type": "Enums.CircularGaugeElementOrientation",
+          "default": "'outside'",
+          "description": "Specifies the orientation of scale ticks."
+        }
+      ]
+    },
+    {
+      "name": "ScaleLabel",
+      "subMembers": [
+        {
+          "name": "ScaleLabel",
+          "type": "module: viz/circular_gauge",
+          "default": null,
+          "description": "Specifies common properties for scale labels."
+        },
+        {
+          "name": "hideFirstOrLast",
+          "type": "Enums.CircularGaugeLabelOverlap",
+          "default": "'last'",
+          "description": "Specifies which label to hide in case of overlapping."
+        },
+        {
+          "name": "indentFromTick",
+          "type": "Number",
+          "default": "10",
+          "description": "Specifies the spacing between scale labels and ticks."
+        }
+      ]
+    },
+    {
+      "name": "TooltipHiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipHidden] event handler's argument."
+    },
+    {
+      "name": "TooltipShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [tooltipShown] event handler's argument."
+    }
+  ]
+}

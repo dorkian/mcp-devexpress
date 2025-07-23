@@ -1,0 +1,594 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the Map UI component."
+        },
+        {
+          "name": "apiKey",
+          "subMembers": [
+            {
+              "name": "apiKey",
+              "type": "String | Object",
+              "default": "{ azure: '', bing: '', google: '', googleStatic: '' }",
+              "description": "Keys to authenticate the component within map providers."
+            },
+            {
+              "name": "azure",
+              "type": "String",
+              "default": "''",
+              "description": "A key used to authenticate the component within Azure Maps."
+            },
+            {
+              "name": "bing",
+              "type": "String",
+              "default": "''",
+              "description": "A key used to authenticate the component within Bing Maps."
+            },
+            {
+              "name": "google",
+              "type": "String",
+              "default": "''",
+              "description": "A key used to authenticate the component within Google Maps."
+            },
+            {
+              "name": "googleStatic",
+              "type": "String",
+              "default": "''",
+              "description": "A key used to authenticate the component within Google Maps Static."
+            }
+          ]
+        },
+        {
+          "name": "autoAdjust",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the UI component automatically adjusts [center] and [zoom] property values when adding a new marker or route, or if a new UI component contains markers or routes by default."
+        },
+        {
+          "name": "bounds",
+          "subMembers": [
+            {
+              "name": "bounds",
+              "type": "Object",
+              "default": null,
+              "description": "-"
+            },
+            {
+              "name": "northEast",
+              "subMembers": [
+                {
+                  "name": "lat",
+                  "type": "Number",
+                  "default": null,
+                  "description": "-"
+                },
+                {
+                  "name": "lng",
+                  "type": "Number",
+                  "default": null,
+                  "description": "-"
+                },
+                {
+                  "name": "northEast",
+                  "type": "Object | String | Array<Object>",
+                  "default": "null",
+                  "description": "-"
+                }
+              ]
+            },
+            {
+              "name": "southWest",
+              "subMembers": [
+                {
+                  "name": "lat",
+                  "type": "Number",
+                  "default": null,
+                  "description": "-"
+                },
+                {
+                  "name": "lng",
+                  "type": "Number",
+                  "default": null,
+                  "description": "-"
+                },
+                {
+                  "name": "southWest",
+                  "type": "Object | String | Array<Object>",
+                  "default": "null",
+                  "description": "-"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "center",
+          "type": "Object | String | Array<Number>",
+          "default": null,
+          "description": "An object, a string, or an array specifying which part of the map is displayed at the UI component's center using coordinates. The UI component can change this value if [autoAdjust] is enabled."
+        },
+        {
+          "name": "controls",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not map UI component controls are available."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "300",
+          "description": null
+        },
+        {
+          "name": "markerIconSrc",
+          "type": "String",
+          "default": null,
+          "description": "A URL pointing to the custom icon to be used for map markers."
+        },
+        {
+          "name": "markers",
+          "subMembers": [
+            {
+              "name": "iconSrc",
+              "type": "String",
+              "default": null,
+              "description": "A URL pointing to the custom icon to be used for the marker."
+            },
+            {
+              "name": "location",
+              "type": "Object | String | Array<Number>",
+              "default": null,
+              "description": "Specifies the marker location."
+            },
+            {
+              "name": "markers",
+              "type": "Array<Object>",
+              "default": null,
+              "description": "An array of markers displayed on a map."
+            },
+            {
+              "name": "tooltip",
+              "subMembers": [
+                {
+                  "name": "isShown",
+                  "type": "Boolean",
+                  "default": "false",
+                  "description": "Specifies whether a tooltip is visible by default or not."
+                },
+                {
+                  "name": "text",
+                  "type": "String",
+                  "default": null,
+                  "description": "Specifies the text or HTML markup displayed in the tooltip."
+                },
+                {
+                  "name": "tooltip",
+                  "type": "String | Object",
+                  "default": null,
+                  "description": "A tooltip to be used for the marker."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "provider",
+          "type": "Enums.MapProvider",
+          "default": "'google'",
+          "description": "The name of the current map data provider."
+        },
+        {
+          "name": "providerConfig",
+          "subMembers": [
+            {
+              "name": "mapId",
+              "type": "String",
+              "default": "''",
+              "description": "Specifies a [map ID] for the `google` and `googleStatic` [providers]."
+            },
+            {
+              "name": "providerConfig",
+              "type": "Object",
+              "default": "{ mapId: '', useAdvancedMarkers: true }",
+              "description": "A [provider] configuration object."
+            },
+            {
+              "name": "useAdvancedMarkers",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to use [advanced markers] with the `google` and `googleStatic` [providers]."
+            }
+          ]
+        },
+        {
+          "name": "routes",
+          "subMembers": [
+            {
+              "name": "color",
+              "type": "String",
+              "default": "'#0000FF'",
+              "description": "Specifies the color of the line displaying the route."
+            },
+            {
+              "name": "locations",
+              "type": "Array<Object>",
+              "default": null,
+              "description": "Contains an array of objects making up the route."
+            },
+            {
+              "name": "mode",
+              "type": "Enums.RouteMode | String",
+              "default": "'driving'",
+              "description": "Specifies a transportation mode to be used in the displayed route."
+            },
+            {
+              "name": "opacity",
+              "type": "Number",
+              "default": "0.5",
+              "description": "Specifies the opacity of the line displaying the route."
+            },
+            {
+              "name": "routes",
+              "type": "Array<Object>",
+              "default": null,
+              "description": "An array of routes shown on the map."
+            },
+            {
+              "name": "weight",
+              "type": "Number",
+              "default": "5",
+              "description": "Specifies the thickness of the line displaying the route in pixels."
+            }
+          ]
+        },
+        {
+          "name": "type",
+          "type": "Enums.MapType",
+          "default": "'roadmap'",
+          "description": "The type of a map to display."
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "300",
+          "description": null
+        },
+        {
+          "name": "zoom",
+          "type": "Number",
+          "default": "1",
+          "description": "The map's zoom level. The UI component can change this value if [autoAdjust] is enabled."
+        }
+      ]
+    },
+    {
+      "name": "dxMap",
+      "type": null,
+      "default": null,
+      "description": "The Map is an interactive UI component that displays a geographic map with markers and routes."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "addMarker(markerOptions)",
+      "type": null,
+      "default": null,
+      "description": "Adds a marker to the map."
+    },
+    {
+      "name": "addRoute(routeOptions)",
+      "type": null,
+      "default": null,
+      "description": "Adds a route to the map."
+    },
+    {
+      "name": "removeMarker(marker)",
+      "type": null,
+      "default": null,
+      "description": "Removes a marker from the map."
+    },
+    {
+      "name": "removeRoute(route)",
+      "type": null,
+      "default": null,
+      "description": "Removes a route from the map."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onClick",
+      "type": "function()",
+      "default": null,
+      "description": "A callback function performed when the marker is clicked."
+    },
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when any location on the map is clicked or tapped."
+    },
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onMarkerAdded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a marker is created on the map."
+    },
+    {
+      "name": "onMarkerRemoved",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a marker is removed from the map."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onReady",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the map is ready."
+    },
+    {
+      "name": "onRouteAdded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a route is created on the map."
+    },
+    {
+      "name": "onRouteRemoved",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a route is removed from the map."
+    },
+    {
+      "name": "click",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when any location on the map is clicked."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "markerAdded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a marker is created on the map."
+    },
+    {
+      "name": "markerRemoved",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a marker is removed from the map."
+    },
+    {
+      "name": "ready",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the map is ready."
+    },
+    {
+      "name": "routeAdded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a route is created on the map."
+    },
+    {
+      "name": "routeRemoved",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a route is removed from the map."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ClickEvent",
+      "subMembers": [
+        {
+          "name": "ClickEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [click] event handler's argument."
+        },
+        {
+          "name": "location",
+          "type": "MapLocation",
+          "default": null,
+          "description": "The clicked location."
+        }
+      ]
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "MapLocation",
+      "subMembers": [
+        {
+          "name": "MapLocation",
+          "type": null,
+          "default": null,
+          "description": "The selected Map location."
+        },
+        {
+          "name": "lat",
+          "type": "Number",
+          "default": "0",
+          "description": "The latitude location of the UI component."
+        },
+        {
+          "name": "lng",
+          "type": "Number",
+          "default": "0",
+          "description": "The longitude location of the UI component."
+        }
+      ]
+    },
+    {
+      "name": "MapProvider",
+      "type": "Union",
+      "default": null,
+      "description": "The name of the current map data provider."
+    },
+    {
+      "name": "MapType",
+      "type": "Union",
+      "default": null,
+      "description": "The type of a map to display."
+    },
+    {
+      "name": "MarkerAddedEvent",
+      "subMembers": [
+        {
+          "name": "MarkerAddedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [markerAdded] event handler's argument."
+        },
+        {
+          "name": "options",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "originalMarker",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "MarkerRemovedEvent",
+      "subMembers": [
+        {
+          "name": "MarkerRemovedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [markerRemoved] event handler's argument."
+        },
+        {
+          "name": "options",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ReadyEvent",
+      "subMembers": [
+        {
+          "name": "ReadyEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [ready] event handler's argument."
+        },
+        {
+          "name": "originalMap",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RouteAddedEvent",
+      "subMembers": [
+        {
+          "name": "RouteAddedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [routeAdded] event handler's argument."
+        },
+        {
+          "name": "options",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "originalRoute",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RouteMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a transportation mode to be used in the displayed route."
+    },
+    {
+      "name": "RouteRemovedEvent",
+      "subMembers": [
+        {
+          "name": "RouteRemovedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [routeRemoved] event handler's argument."
+        },
+        {
+          "name": "options",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

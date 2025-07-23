@@ -1,0 +1,321 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the ColorBox UI component."
+        },
+        {
+          "name": "applyButtonText",
+          "type": "String",
+          "default": "'OK'",
+          "description": "Specifies the text displayed on the button that applies changes and closes the drop-down editor."
+        },
+        {
+          "name": "applyValueMode",
+          "type": "Enums.ApplyValueMode",
+          "default": "'useButtons'",
+          "description": null
+        },
+        {
+          "name": "cancelButtonText",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "Specifies the text displayed on the button that cancels changes and closes the drop-down editor."
+        },
+        {
+          "name": "dropDownOptions",
+          "type": "dxPopup_Options",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "editAlphaChannel",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not the UI component value includes the alpha channel component."
+        },
+        {
+          "name": "fieldComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [fieldTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "fieldRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [fieldTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "fieldTemplate",
+          "type": "template",
+          "default": "null",
+          "description": "Specifies a custom template for the input field. Must contain the [TextBox] UI component."
+        },
+        {
+          "name": "inputAttr",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "keyStep",
+          "type": "Number",
+          "default": "1",
+          "description": "Specifies the size of a step by which a handle is moved using a keyboard shortcut."
+        },
+        {
+          "name": "maxLength",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "spellcheck",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "valueChangeEvent",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxColorBox",
+      "type": null,
+      "default": null,
+      "description": "The ColorBox is a UI component that allows an end user to enter a color or pick it out from the drop-down editor."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onChange",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard."
+    },
+    {
+      "name": "onClosed",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is closed."
+    },
+    {
+      "name": "onContentReady",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "onCopy",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's input has been copied."
+    },
+    {
+      "name": "onCut",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's input has been cut."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEnterKey",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the Enter key has been pressed while the UI component is focused."
+    },
+    {
+      "name": "onFocusIn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component gets focus."
+    },
+    {
+      "name": "onFocusOut",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component loses focus."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onInput",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed each time the UI component's input is changed while the UI component is focused."
+    },
+    {
+      "name": "onKeyDown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user is pressing a key on the keyboard."
+    },
+    {
+      "name": "onKeyUp",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user releases a key on the keyboard."
+    },
+    {
+      "name": "onOpened",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is opened."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPaste",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's input has been pasted."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component's [value] is changed."
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Types": [
+    {
+      "name": "ChangeEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [change] event handler's argument."
+    },
+    {
+      "name": "ClosedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [closed] event handler's argument."
+    },
+    {
+      "name": "CopyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [copy] event handler's argument."
+    },
+    {
+      "name": "CutEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [cut] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EnterKeyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [enterKey] event handler's argument."
+    },
+    {
+      "name": "FocusInEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusIn] event handler's argument."
+    },
+    {
+      "name": "FocusOutEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusOut] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "InputEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [input] event handler's argument."
+    },
+    {
+      "name": "KeyDownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyDown] event handler's argument."
+    },
+    {
+      "name": "KeyUpEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyUp] event handler's argument."
+    },
+    {
+      "name": "OpenedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [opened] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PasteEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [paste] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    }
+  ]
+}

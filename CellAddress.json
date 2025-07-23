@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "CellAddress",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "column",
+      "type": "Number",
+      "default": null,
+      "description": "The index of a column that contains the cell."
+    },
+    {
+      "name": "row",
+      "type": "Number",
+      "default": null,
+      "description": "The index of a row that contains the cell."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

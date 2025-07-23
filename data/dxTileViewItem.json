@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "dxTileViewItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "heightRatio",
+      "type": "Number",
+      "default": "1",
+      "description": "Specifies a multiplier for the [baseItemHeight] property value (for the purpose of obtaining the actual item height)."
+    },
+    {
+      "name": "widthRatio",
+      "type": "Number",
+      "default": "1",
+      "description": "Specifies a multiplier for the [baseItemWidth] property value (for the purpose of obtaining the actual item width)."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,73 @@
+{
+  "properties": [
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "coordinates",
+      "type": "Array<Number>",
+      "default": "undefined",
+      "description": "Positions the annotation's center at specified geographic coordinates: [longitude, latitude]."
+    },
+    {
+      "name": "customizeTooltip",
+      "type": "function(annotation) | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "dxVectorMapCommonAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "template",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "tooltipComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "tooltipRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "tooltipTemplate",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "x",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "y",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

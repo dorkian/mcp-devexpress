@@ -1,0 +1,157 @@
+{
+  "properties": [
+    {
+      "name": "allowExporting",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether data from this column should be exported. Applies only if the column is [visible]."
+    },
+    {
+      "name": "allowFiltering",
+      "type": null,
+      "default": null,
+      "description": "Specifies whether data can be filtered by this column."
+    },
+    {
+      "name": "allowGrouping",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the user can group data by values of this column. Applies only when grouping is enabled."
+    },
+    {
+      "name": "autoExpandGroup",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether groups appear expanded or not when records are grouped by a specific column. Setting this property makes sense only when grouping is [allowed] for this column."
+    },
+    {
+      "name": "buttons",
+      "type": "Array<Enums.DataGridPredefinedColumnButton, dxDataGridColumnButton>",
+      "default": null,
+      "description": "Allows you to customize buttons in the edit column or create a custom [command column]. Applies only if the column's [type] is *\"buttons\"*."
+    },
+    {
+      "name": "calculateGroupValue",
+      "type": "String | function(rowData)",
+      "default": "return \"Earlier\";",
+      "description": "Sets custom column values used to group grid records."
+    },
+    {
+      "name": "cellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [cellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "cellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [cellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "cellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for data cells."
+    },
+    {
+      "name": "columns",
+      "type": "Array<dxDataGridColumn, String>",
+      "default": "undefined",
+      "description": "An array of grid columns."
+    },
+    {
+      "name": "dxDataGridColumn",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "editCellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "editCellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [editCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "editCellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for data cells in an editing state."
+    },
+    {
+      "name": "encodeHtml",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "format",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "groupCellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [groupCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "groupCellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [groupCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "groupCellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for group cells (group rows)."
+    },
+    {
+      "name": "groupIndex",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the index of a column when grid records are [grouped] by the values of this column."
+    },
+    {
+      "name": "headerCellComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [headerCellTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "headerCellRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [headerCellTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "headerCellTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a custom template for column headers."
+    },
+    {
+      "name": "showWhenGrouped",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether or not to display the column when grid records are grouped by it."
+    },
+    {
+      "name": "type",
+      "type": "Enums.DataGridCommandColumnType",
+      "default": null,
+      "description": "Specifies the [command column] that this object customizes."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

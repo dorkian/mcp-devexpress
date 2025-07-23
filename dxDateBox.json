@@ -1,0 +1,435 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the DateBox UI component."
+        },
+        {
+          "name": "adaptivityEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not adaptive UI component rendering is enabled on a small screen."
+        },
+        {
+          "name": "applyButtonText",
+          "type": "String",
+          "default": "'OK'",
+          "description": "The text displayed on the Apply button."
+        },
+        {
+          "name": "applyValueMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "calendarOptions",
+          "type": "dxCalendar_Options",
+          "default": "{}",
+          "description": "Configures the calendar's value picker. Applies only if the [pickerType] is *\"calendar\"*."
+        },
+        {
+          "name": "cancelButtonText",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "The text displayed on the Cancel button."
+        },
+        {
+          "name": "dateOutOfRangeMessage",
+          "type": "String",
+          "default": "'Value is out of range'",
+          "description": "Specifies the message displayed if the specified date is later than the [max] value or earlier than the [min] value."
+        },
+        {
+          "name": "dateSerializationFormat",
+          "type": "String",
+          "default": "undefined",
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "disabled",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "disabledDates",
+          "type": "Array<Date> | function(data)",
+          "default": "null",
+          "description": "Specifies dates that users cannot select. Applies only if [pickerType] is *\"calendar\"*."
+        },
+        {
+          "name": "displayFormat",
+          "type": "Format",
+          "default": "null",
+          "description": "Specifies the date display format. Ignored if the [pickerType] property is *\"native\"*"
+        },
+        {
+          "name": "dropDownOptions",
+          "type": "dxPopup_Options",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "inputAttr",
+          "type": "any",
+          "default": "{}",
+          "description": null
+        },
+        {
+          "name": "interval",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the interval between neighboring values in the popup list in minutes."
+        },
+        {
+          "name": "invalidDateMessage",
+          "type": "String",
+          "default": "'Value must be a date or time'",
+          "description": "Specifies the message displayed if the typed value is not a valid date or time."
+        },
+        {
+          "name": "isDirty",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a text string used to annotate the editor's [value]."
+        },
+        {
+          "name": "max",
+          "type": "Date | Number | String",
+          "default": "undefined",
+          "description": "The last date that can be selected within the UI component."
+        },
+        {
+          "name": "maxLength",
+          "type": "String | Number",
+          "default": "null",
+          "description": "Specifies the maximum number of characters you can enter into the textbox."
+        },
+        {
+          "name": "min",
+          "type": "Date | Number | String",
+          "default": "undefined",
+          "description": "The minimum date that can be selected within the UI component."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": "''",
+          "description": "The value to be assigned to the `name` attribute of the underlying HTML element."
+        },
+        {
+          "name": "pickerType",
+          "type": "Enums.DatePickerType",
+          "default": "'calendar', 'native' (Android, iOS)",
+          "description": "Specifies the type of the date/time picker."
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a placeholder for the input field."
+        },
+        {
+          "name": "showAnalogClock",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show the analog clock in the value picker. Applies only if [type] is *\"datetime\"* and [pickerType] is *\"calendar\"*."
+        },
+        {
+          "name": "showClearButton",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The read-only property that stores the text displayed by the UI component **input** element."
+        },
+        {
+          "name": "todayButtonText",
+          "type": "String",
+          "default": "'Today'",
+          "description": "The text displayed on the Today button."
+        },
+        {
+          "name": "type",
+          "type": "Enums.DateType",
+          "default": "'date'",
+          "description": "A format used to display date/time information."
+        },
+        {
+          "name": "useMaskBehavior",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to control user input using a mask created based on the [displayFormat]."
+        },
+        {
+          "name": "validationMessagePosition",
+          "type": "'required',",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "validationStatus",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Date | Number | String | null",
+          "default": "null",
+          "description": "Specifies the currently selected date and time."
+        }
+      ]
+    },
+    {
+      "name": "dxDateBox",
+      "type": null,
+      "default": null,
+      "description": "The DateBox is a UI component that displays date and time in a specified format, and enables a user to pick or type in the required date/time value."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onChange",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component loses focus after the text field's content was changed using the keyboard."
+    },
+    {
+      "name": "onClosed",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is closed."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onCopy",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's input has been copied."
+    },
+    {
+      "name": "onCut",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's input has been cut."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onEnterKey",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the Enter key has been pressed while the UI component is focused."
+    },
+    {
+      "name": "onFocusIn",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component gets focus."
+    },
+    {
+      "name": "onFocusOut",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component loses focus."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onInput",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed each time the UI component's input is changed while the UI component is focused."
+    },
+    {
+      "name": "onKeyDown",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user is pressing a key on the keyboard."
+    },
+    {
+      "name": "onKeyUp",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a user releases a key on the keyboard."
+    },
+    {
+      "name": "onOpened",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed once the drop-down editor is opened."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPaste",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component's input has been pasted."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after the UI component's [value] is changed."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ChangeEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [change] event handler's argument."
+    },
+    {
+      "name": "ClosedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [closed] event handler's argument."
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "CopyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [copy] event handler's argument."
+    },
+    {
+      "name": "CutEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [cut] event handler's argument."
+    },
+    {
+      "name": "DatePickerType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of the date/time picker."
+    },
+    {
+      "name": "DateType",
+      "type": "Union",
+      "default": null,
+      "description": "A format used to display date/time information."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "EnterKeyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [enterKey] event handler's argument."
+    },
+    {
+      "name": "FocusInEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusIn] event handler's argument."
+    },
+    {
+      "name": "FocusOutEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [focusOut] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "InputEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [input] event handler's argument."
+    },
+    {
+      "name": "KeyDownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyDown] event handler's argument."
+    },
+    {
+      "name": "KeyUpEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [keyUp] event handler's argument."
+    },
+    {
+      "name": "OpenedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [opened] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PasteEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [paste] event handler's argument."
+    },
+    {
+      "name": "ValueChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [valueChanged] event handler's argument."
+    }
+  ]
+}

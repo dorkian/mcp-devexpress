@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "badge",
+      "type": "String",
+      "default": null,
+      "description": "Specifies a badge text for the tab."
+    },
+    {
+      "name": "dxTabsItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the icon to be displayed on the tab."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

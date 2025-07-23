@@ -1,0 +1,761 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the FileUploader UI component."
+        },
+        {
+          "name": "abortUpload",
+          "type": "function(file, uploadInfo?)",
+          "default": null,
+          "description": "A function that cancels the file upload."
+        },
+        {
+          "name": "accept",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies file types users can select in the Open File dialog. The default value accepts all file types."
+        },
+        {
+          "name": "allowCanceling",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies if an end user can remove a file from the selection and interrupt uploading."
+        },
+        {
+          "name": "allowedFileExtensions",
+          "type": "Array<String>",
+          "default": "[]",
+          "description": "Restricts file extensions that can be uploaded to the server."
+        },
+        {
+          "name": "chunkSize",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the chunk size in bytes. Applies only if [uploadMode] is *\"instantly*\" or *\"useButtons\"*. Requires a server that can process file chunks."
+        },
+        {
+          "name": "dialogTrigger",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies the HTML element which invokes the file upload dialog."
+        },
+        {
+          "name": "dropZone",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies the HTML element in which users can drag and drop files for upload."
+        },
+        {
+          "name": "extendSelection",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not an end user is allowed to add files to the current file's uploading list."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the **FileUploader** component changes the state of all its buttons when users hover over them."
+        },
+        {
+          "name": "inputAttr",
+          "type": "any",
+          "default": "{}",
+          "description": "Specifies the attributes to be passed on to the underlying `<input>` element of the `file` type."
+        },
+        {
+          "name": "invalidFileExtensionMessage",
+          "type": "String",
+          "default": "'File type is not allowed'",
+          "description": "The text displayed when the extension of the file being uploaded is not an [allowed file extension]."
+        },
+        {
+          "name": "invalidMaxFileSizeMessage",
+          "type": "String",
+          "default": "'File is too large'",
+          "description": "The text displayed when the size of the file being uploaded is greater than the [maxFileSize]."
+        },
+        {
+          "name": "invalidMinFileSizeMessage",
+          "type": "String",
+          "default": "'File is too small'",
+          "description": "The text displayed when the size of the file being uploaded is less than the [minFileSize]."
+        },
+        {
+          "name": "isValid",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "labelText",
+          "type": "String",
+          "default": "'or Drop file here', '' (mobile_devices)",
+          "description": "Specifies the text displayed on the area to which an end user can drop a file."
+        },
+        {
+          "name": "maxFileSize",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the maximum file size (in bytes) allowed for uploading. Applies only if [uploadMode] is *\"instantly*\" or *\"useButtons\"*."
+        },
+        {
+          "name": "minFileSize",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the minimum file size (in bytes) allowed for uploading. Applies only if [uploadMode] is *\"instantly*\" or *\"useButtons\"*."
+        },
+        {
+          "name": "multiple",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component enables an end user to select a single file or multiple files."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": "'files[]'",
+          "description": "Specifies the value passed to the **name** attribute of the underlying **input** element. Required to access uploaded files on the server."
+        },
+        {
+          "name": "progress",
+          "type": "Number",
+          "default": "0",
+          "description": "Gets the current progress in percentages."
+        },
+        {
+          "name": "readOnly",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "readyToUploadMessage",
+          "type": "String",
+          "default": "'Ready to upload'",
+          "description": "The message displayed by the UI component when it is ready to upload the specified files."
+        },
+        {
+          "name": "selectButtonText",
+          "type": "String",
+          "default": "'Select File'",
+          "description": "The text displayed on the button that opens the file browser."
+        },
+        {
+          "name": "showFileList",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not the UI component displays the list of selected files."
+        },
+        {
+          "name": "uploadAbortedMessage",
+          "type": "String",
+          "default": "'Upload cancelled'",
+          "description": "The message displayed by the UI component when the file upload is cancelled."
+        },
+        {
+          "name": "uploadButtonText",
+          "type": "String",
+          "default": "'Upload'",
+          "description": "The text displayed on the button that starts uploading."
+        },
+        {
+          "name": "uploadChunk",
+          "type": "function(file, uploadInfo)",
+          "default": null,
+          "description": "A function that uploads a file in chunks."
+        },
+        {
+          "name": "uploadCustomData",
+          "type": "any",
+          "default": "{}",
+          "description": "Specifies custom data for the upload request."
+        },
+        {
+          "name": "uploadFailedMessage",
+          "type": "String",
+          "default": "'Upload failed'",
+          "description": "The message displayed by the UI component on uploading failure."
+        },
+        {
+          "name": "uploadFile",
+          "type": "function(file, progressCallback)",
+          "default": null,
+          "description": "A function that uploads a file."
+        },
+        {
+          "name": "uploadHeaders",
+          "type": "any",
+          "default": "{}",
+          "description": "Specifies headers for the upload request."
+        },
+        {
+          "name": "uploadMethod",
+          "type": "Enums.UploadHttpMethod",
+          "default": "'POST'",
+          "description": "Specifies the method for the upload request."
+        },
+        {
+          "name": "uploadMode",
+          "type": "Enums.FileUploadMode",
+          "default": "'instantly'",
+          "description": "Specifies how the UI component uploads files."
+        },
+        {
+          "name": "uploadUrl",
+          "type": "String",
+          "default": "'/'",
+          "description": "Specifies a target Url for the upload request."
+        },
+        {
+          "name": "uploadedMessage",
+          "type": "String",
+          "default": "'Uploaded'",
+          "description": "The message displayed by the UI component when uploading is finished."
+        },
+        {
+          "name": "validationMessageMode",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "validationMessagePosition",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Array<File>",
+          "default": "[]",
+          "description": "Specifies a <a href=\"http://www.w3.org/TR/FileAPI/#dfn-file\" target=\"_blank\">File</a> instance representing the selected file. Read-only when [uploadMode] is *\"useForm\"*."
+        }
+      ]
+    },
+    {
+      "name": "Interfaces",
+      "subMembers": [
+        {
+          "name": "Interfaces",
+          "type": null,
+          "default": null,
+          "description": "This section describes interfaces that the {WidgetName} component uses."
+        },
+        {
+          "name": "UploadInfo",
+          "type": "UploadInfo",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "dxFileUploader",
+      "type": null,
+      "default": null,
+      "description": "The FileUploader UI component enables an end user to upload files to the server. An end user can select files in the file explorer or drag and drop files to the FileUploader area on the page."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "abortUpload()",
+      "type": null,
+      "default": null,
+      "description": "Cancels the file upload."
+    },
+    {
+      "name": "abortUpload(file)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the file upload."
+    },
+    {
+      "name": "abortUpload(fileIndex)",
+      "type": null,
+      "default": null,
+      "description": "Cancels the file upload."
+    },
+    {
+      "name": "removeFile(file)",
+      "type": null,
+      "default": null,
+      "description": "Removes a file."
+    },
+    {
+      "name": "removeFile(fileIndex)",
+      "type": null,
+      "default": null,
+      "description": "Removes a file with the specified index."
+    },
+    {
+      "name": "reset(value)",
+      "type": null,
+      "default": null,
+      "description": "Resets the [value] property to the value passed as an argument."
+    },
+    {
+      "name": "upload()",
+      "type": null,
+      "default": null,
+      "description": "Uploads all the selected files."
+    },
+    {
+      "name": "upload(file)",
+      "type": null,
+      "default": null,
+      "description": "Uploads the specified file."
+    },
+    {
+      "name": "upload(fileIndex)",
+      "type": null,
+      "default": null,
+      "description": "Uploads a file with the specified index."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onBeforeSend",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that allows you to customize the request before it is sent to the server."
+    },
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onDropZoneEnter",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the mouse enters a drop zone while dragging a file."
+    },
+    {
+      "name": "onDropZoneLeave",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the mouse leaves a drop zone as it drags a file."
+    },
+    {
+      "name": "onFilesUploaded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the file upload process is complete."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onProgress",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file segment is uploaded."
+    },
+    {
+      "name": "onUploadAborted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the file upload is aborted."
+    },
+    {
+      "name": "onUploadError",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when an error occurs during the file upload."
+    },
+    {
+      "name": "onUploadStarted",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the file upload is started."
+    },
+    {
+      "name": "onUploaded",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a file is successfully uploaded."
+    },
+    {
+      "name": "onValueChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when one or several files are added to or removed from the selection."
+    },
+    {
+      "name": "beforeSend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the request is sent to the server and allows you to customize this request."
+    },
+    {
+      "name": "dropZoneEnter",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the mouse enters a drop zone as it drags a file."
+    },
+    {
+      "name": "dropZoneLeave",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the mouse leaves a drop zone as it drags a file."
+    },
+    {
+      "name": "filesUploaded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the file upload process is complete."
+    },
+    {
+      "name": "progress",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file segment is uploaded."
+    },
+    {
+      "name": "uploadAborted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the file upload is aborted."
+    },
+    {
+      "name": "uploadError",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when an error occurs during the file upload."
+    },
+    {
+      "name": "uploadStarted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the file upload is started."
+    },
+    {
+      "name": "uploaded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a file is successfully uploaded."
+    },
+    {
+      "name": "valueChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when one or several files are added to or removed from the selection."
+    }
+  ],
+  "Types": [
+    {
+      "name": "BeforeSendEvent",
+      "subMembers": [
+        {
+          "name": "BeforeSendEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [beforeSend] event handler's argument."
+        },
+        {
+          "name": "file",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "request",
+          "type": "XMLHttpRequest",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "uploadInfo",
+          "type": "UploadInfo",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "DropZoneEnterEvent",
+      "subMembers": [
+        {
+          "name": "DropZoneEnterEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dropZoneEnter] event handler's argument."
+        },
+        {
+          "name": "dropZoneElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DropZoneLeaveEvent",
+      "subMembers": [
+        {
+          "name": "DropZoneLeaveEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [dropZoneLeave] event handler's argument."
+        },
+        {
+          "name": "dropZoneElement",
+          "type": "DxElement",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "FileUploadMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the UI component uploads files."
+    },
+    {
+      "name": "FilesUploadedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [filesUploaded] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "ProgressEvent",
+      "subMembers": [
+        {
+          "name": "ProgressEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [progress] event handler's argument."
+        },
+        {
+          "name": "bytesLoaded",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "bytesTotal",
+          "type": "Number",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "file",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "request",
+          "type": "XMLHttpRequest",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "segmentSize",
+          "type": "Number",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "UploadAbortedEvent",
+      "subMembers": [
+        {
+          "name": "UploadAbortedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [uploadAborted] event handler's argument."
+        },
+        {
+          "name": "file",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "message",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "request",
+          "type": "XMLHttpRequest",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "UploadErrorEvent",
+      "subMembers": [
+        {
+          "name": "UploadErrorEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [uploadError] event handler's argument."
+        },
+        {
+          "name": "error",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "file",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "message",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "request",
+          "type": "XMLHttpRequest",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "UploadHttpMethod",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the method for the upload request."
+    },
+    {
+      "name": "UploadStartedEvent",
+      "subMembers": [
+        {
+          "name": "UploadStartedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [uploadStarted] event handler's argument."
+        },
+        {
+          "name": "file",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "request",
+          "type": "XMLHttpRequest",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "UploadedEvent",
+      "subMembers": [
+        {
+          "name": "UploadedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [uploaded] event handler's argument."
+        },
+        {
+          "name": "file",
+          "type": "File",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "message",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "request",
+          "type": "XMLHttpRequest",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ValueChangedEvent",
+      "subMembers": [
+        {
+          "name": "ValueChangedEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [valueChanged] event handler's argument."
+        },
+        {
+          "name": "previousValue",
+          "type": "Array<File>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Array<File>",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

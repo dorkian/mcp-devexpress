@@ -1,0 +1,55 @@
+{
+  "properties": [
+    {
+      "name": "CollectionWidgetItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether the UI component item responds to user interaction."
+    },
+    {
+      "name": "html",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the HTML markup to be inserted into the item element."
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "template",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a template that should be used to render this item only."
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": null,
+      "description": "Specifies text displayed for the UI component item."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether or not a UI component item must be displayed."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

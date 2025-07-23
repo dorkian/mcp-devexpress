@@ -1,0 +1,61 @@
+{
+  "properties": [
+    {
+      "name": "axis",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the [name] of the [value axis] on which the [value] is specified. Useful for a [multi-axis chart]."
+    },
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "customizeTooltip",
+      "type": "function(annotation) | undefined",
+      "default": "undefined",
+      "description": "Customizes the text and appearance of the annotation's tooltip."
+    },
+    {
+      "name": "dxChartCommonAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "template",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "Specifies a custom template for the annotation. Applies only if the [type] is *\"custom\"*."
+    },
+    {
+      "name": "tooltipComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "tooltipRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [tooltipTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "tooltipTemplate",
+      "type": "template | undefined",
+      "default": "undefined",
+      "description": "Specifies a custom template for an annotation's tooltip."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

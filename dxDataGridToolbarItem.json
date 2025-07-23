@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "dxDataGridToolbarItem",
+      "type": "dxToolbarItem | Object",
+      "default": null,
+      "description": "Configures toolbar items."
+    },
+    {
+      "name": "location",
+      "type": "Enums.ToolbarItemLocation",
+      "default": "'after'",
+      "description": null
+    },
+    {
+      "name": "name",
+      "type": "Enums.DataGridPredefinedToolbarItem | String",
+      "default": null,
+      "description": "A name used to identify the toolbar item."
+    },
+    {
+      "name": "template",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

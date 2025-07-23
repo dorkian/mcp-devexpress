@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "ColCountResponsible",
+      "type": null,
+      "default": null,
+      "description": "Specifies dependency between the screen factor and the count of columns."
+    },
+    {
+      "name": "lg",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "The count of columns for a large screen size."
+    },
+    {
+      "name": "md",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "The count of columns for a middle-sized screen."
+    },
+    {
+      "name": "sm",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "The count of columns for a small-sized screen."
+    },
+    {
+      "name": "xs",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "The count of columns for an extra small-sized screen."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

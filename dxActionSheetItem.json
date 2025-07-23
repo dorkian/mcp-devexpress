@@ -1,0 +1,50 @@
+{
+  "properties": [
+    {
+      "name": "dxActionSheetItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "html",
+      "type": "String",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the icon to be displayed on the action sheet button."
+    },
+    {
+      "name": "stylingMode",
+      "type": "Enums.ButtonStyle",
+      "default": "'outlined'",
+      "description": "Specifies which style to apply to the button that is an action sheet item."
+    },
+    {
+      "name": "type",
+      "type": "Enums.ButtonType | String",
+      "default": "'normal'",
+      "description": "Specifies the [type] of the button that is an action sheet item."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "true",
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A handler for the [click] event raised for the button representing the given action sheet button."
+    }
+  ],
+  "Types": []
+}

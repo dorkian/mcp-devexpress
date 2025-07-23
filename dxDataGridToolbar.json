@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether the toolbar responds to user interaction."
+    },
+    {
+      "name": "dxDataGridToolbar",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the toolbar."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxDataGridToolbarItem, Enums.DataGridPredefinedToolbarItem>",
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "visible",
+      "type": "Boolean | undefined",
+      "default": "undefined",
+      "description": "Specifies whether the toolbar is visible."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

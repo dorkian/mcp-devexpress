@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "BaseChartAnnotationConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "argument",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "Positions the annotation relative to a specific argument."
+    },
+    {
+      "name": "series",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Anchors the annotation to a series point. Accepts the [name] of the point's series."
+    },
+    {
+      "name": "value",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "Positions the annotation relative to a value on the specified [value axis]."
+    },
+    {
+      "name": "x",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "y",
+      "type": null,
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

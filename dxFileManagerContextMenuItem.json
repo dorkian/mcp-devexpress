@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "component",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "dxFileManagerContextMenuItem",
+      "type": null,
+      "default": null,
+      "description": "Configures the context menu item."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxFileManagerContextMenuItem>",
+      "default": null,
+      "description": "Configures settings of a context menu item's subitems."
+    },
+    {
+      "name": "name",
+      "type": "Enums.FileManagerPredefinedContextMenuItem | String",
+      "default": null,
+      "description": "Specifies the context menu item's name."
+    },
+    {
+      "name": "render",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [template] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "template",
+      "type": "template",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "visible",
+      "type": "Boolean | undefined",
+      "default": "undefined",
+      "description": "Specifies the context menu item's visibility."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

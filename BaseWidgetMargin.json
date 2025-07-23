@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "BaseWidgetMargin",
+      "type": "module: viz/core/base_widget",
+      "default": null,
+      "description": "Generates space around the UI component."
+    },
+    {
+      "name": "bottom",
+      "type": "Number",
+      "default": "0",
+      "description": "Specifies the bottom margin of the UI component in pixels."
+    },
+    {
+      "name": "left",
+      "type": "Number",
+      "default": "0",
+      "description": "Specifies the left margin of the UI component in pixels."
+    },
+    {
+      "name": "right",
+      "type": "Number",
+      "default": "0",
+      "description": "Specifies the right margin of the UI component in pixels."
+    },
+    {
+      "name": "top",
+      "type": "Number",
+      "default": "0",
+      "description": "Specifies the top margin of the UI component in pixels."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

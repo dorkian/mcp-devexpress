@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "badge",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the text of a badge displayed for the list item."
+    },
+    {
+      "name": "dxListItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the list item's icon."
+    },
+    {
+      "name": "key",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the name of the list items group in a grouped list."
+    },
+    {
+      "name": "showChevron",
+      "type": "Boolean",
+      "default": null,
+      "description": "Specifies whether or not to display a chevron for the list item."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

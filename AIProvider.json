@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "AIProvider",
+      "type": "Object",
+      "default": null,
+      "description": "An object responsible for sending requests to an AI service."
+    },
+    {
+      "name": "sendRequest",
+      "type": "function(params)",
+      "default": null,
+      "description": "A function that sends a request to an AI service."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

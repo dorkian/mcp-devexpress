@@ -1,0 +1,343 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the ContextMenu UI component."
+        },
+        {
+          "name": "dataSource",
+          "type": "String | Array<dxContextMenuItem> | Store | DataSource | DataSource_Options | null",
+          "default": "null",
+          "description": null
+        },
+        {
+          "name": "hideOnOutsideClick",
+          "type": "Boolean | function(event)",
+          "default": "true",
+          "description": "Specifies whether to hide the UI component if a user clicks outside it."
+        },
+        {
+          "name": "itemHoldAction",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxContextMenuItem>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "position",
+          "type": "PositionConfig",
+          "default": "{ my: 'top left', at: 'top left' }",
+          "description": "An object defining UI component [positioning properties]."
+        },
+        {
+          "name": "selectedItems",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "showEvent",
+          "subMembers": [
+            {
+              "name": "delay",
+              "type": "Number | undefined",
+              "default": "undefined",
+              "description": "The delay in milliseconds after which the UI component is displayed."
+            },
+            {
+              "name": "name",
+              "type": "String | undefined",
+              "default": "undefined",
+              "description": "Specifies the event names on which the UI component is shown."
+            },
+            {
+              "name": "showEvent",
+              "type": "Object | String",
+              "default": "'dxcontextmenu'",
+              "description": "Specifies properties for displaying the UI component."
+            }
+          ]
+        },
+        {
+          "name": "submenuDirection",
+          "type": "Enums.ContextSubmenuDirection",
+          "default": "'auto'",
+          "description": "Specifies the direction at which submenus are displayed."
+        },
+        {
+          "name": "target",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "The target element associated with the context menu."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "A Boolean value specifying whether or not the UI component is visible."
+        }
+      ]
+    },
+    {
+      "name": "dxContextMenu",
+      "type": null,
+      "default": null,
+      "description": "The ContextMenu UI component displays a single- or multi-level context menu. An end user invokes this menu by a right click or a long press."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "hide()",
+      "type": null,
+      "default": null,
+      "description": "Hides the UI component."
+    },
+    {
+      "name": "show()",
+      "type": null,
+      "default": null,
+      "description": "Shows the UI component."
+    },
+    {
+      "name": "toggle(showing)",
+      "type": null,
+      "default": null,
+      "description": "Shows or hides the UI component depending on the argument."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onHidden",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the ContextMenu is hidden."
+    },
+    {
+      "name": "onHiding",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the ContextMenu is hidden."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is clicked or tapped."
+    },
+    {
+      "name": "onItemContextMenu",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is right-clicked or pressed."
+    },
+    {
+      "name": "onItemRendered",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a collection item is rendered."
+    },
+    {
+      "name": "onItemReordered",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onPositioning",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the ContextMenu is positioned."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when a collection item is selected or selection is canceled."
+    },
+    {
+      "name": "onSelectionChanging",
+      "type": null,
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "onShowing",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed before the ContextMenu is shown."
+    },
+    {
+      "name": "onShown",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed after the ContextMenu is shown."
+    },
+    {
+      "name": "hidden",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the ContextMenu is hidden."
+    },
+    {
+      "name": "hiding",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the ContextMenu is hidden."
+    },
+    {
+      "name": "positioning",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the ContextMenu is positioned."
+    },
+    {
+      "name": "selectionChanging",
+      "type": "eventType",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "showing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before the ContextMenu is shown."
+    },
+    {
+      "name": "shown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after the ContextMenu is shown."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "ContextSubmenuDirection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the submenu direction."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "HiddenEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [hidden] event handler's argument."
+    },
+    {
+      "name": "HidingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [hiding] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "ItemContextMenuEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemContextMenu] event handler's argument."
+    },
+    {
+      "name": "ItemRenderedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemRendered] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "PositioningEvent",
+      "subMembers": [
+        {
+          "name": "PositioningEvent",
+          "type": "Object",
+          "default": null,
+          "description": "The type of the [positioning] event handler's argument."
+        },
+        {
+          "name": "position",
+          "type": "PositionConfig",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    },
+    {
+      "name": "ShowingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [showing] event handler's argument."
+    },
+    {
+      "name": "ShownEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [shown] event handler's argument."
+    }
+  ]
+}

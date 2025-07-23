@@ -1,0 +1,55 @@
+{
+  "properties": [
+    {
+      "name": "dxTreeViewItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "expanded",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether or not the tree view item is displayed expanded."
+    },
+    {
+      "name": "hasItems",
+      "type": "Boolean | undefined",
+      "default": "undefined",
+      "description": "Specifies whether or not the tree view item has children."
+    },
+    {
+      "name": "icon",
+      "type": "String",
+      "default": null,
+      "description": "Specifies the tree view item's icon."
+    },
+    {
+      "name": "id",
+      "type": "Number | String | undefined",
+      "default": "undefined",
+      "description": "Holds the unique key of an item."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxTreeViewItem>",
+      "default": null,
+      "description": "Specifies nested tree view items."
+    },
+    {
+      "name": "parentId",
+      "type": "Number | String | undefined",
+      "default": "undefined",
+      "description": "Holds the key of the parent item."
+    },
+    {
+      "name": "selected",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether the TreeView item should be displayed as selected."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,67 @@
+{
+  "properties": [
+    {
+      "name": "cssClass",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies a CSS class to be applied to the item."
+    },
+    {
+      "name": "dxToolbarItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "locateInMenu",
+      "type": "Enums.LocateInMenuMode",
+      "default": "'never'",
+      "description": "Specifies when to display an item in the toolbar's overflow menu."
+    },
+    {
+      "name": "location",
+      "type": "Enums.ToolbarItemLocation",
+      "default": "'center'",
+      "description": "Specifies a location for the item on the toolbar."
+    },
+    {
+      "name": "menuItemComponent",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [menuItemTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+    },
+    {
+      "name": "menuItemRender",
+      "type": null,
+      "default": null,
+      "description": "An alias for the [menuItemTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+    },
+    {
+      "name": "menuItemTemplate",
+      "type": "template",
+      "default": null,
+      "description": "Specifies a template that should be used to render a menu item."
+    },
+    {
+      "name": "options",
+      "type": "any",
+      "default": null,
+      "description": "Configures the DevExtreme UI component used as a toolbar item."
+    },
+    {
+      "name": "showText",
+      "type": "Enums.ShowTextMode",
+      "default": "'always'",
+      "description": "Specifies when to display the text for the UI component item."
+    },
+    {
+      "name": "widget",
+      "type": "Enums.ToolbarItemComponent",
+      "default": null,
+      "description": "A UI component that presents a toolbar item. To configure it, use the [options] object."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

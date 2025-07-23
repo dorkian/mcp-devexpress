@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "default": "false",
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "dxTreeListToolbar",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the toolbar."
+    },
+    {
+      "name": "items",
+      "type": "Array<dxTreeListToolbarItem, Enums.TreeListPredefinedToolbarItem>",
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "visible",
+      "type": "Boolean | undefined",
+      "default": "undefined",
+      "description": "<!-- %shortDescription% -->"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

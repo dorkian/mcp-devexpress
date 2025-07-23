@@ -1,0 +1,176 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the ButtonGroup UI component's contents, behavior and appearance."
+        },
+        {
+          "name": "buttonComponent",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [buttonTemplate] property specified in React. Accepts a custom component. Refer to [Using a Custom Component] for more information."
+        },
+        {
+          "name": "buttonRender",
+          "type": null,
+          "default": null,
+          "description": "An alias for the [buttonTemplate] property specified in React. Accepts a rendering function. Refer to [Using a Rendering Function] for more information."
+        },
+        {
+          "name": "buttonTemplate",
+          "type": "template",
+          "default": "'content'",
+          "description": "Specifies a template for all the buttons in the group."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "items",
+          "type": "Array<dxButtonGroupItem>",
+          "default": null,
+          "description": "Configures buttons in the group."
+        },
+        {
+          "name": "keyExpr",
+          "type": "String | function()",
+          "default": "'text'",
+          "description": "Specifies which data field provides keys used to distinguish between the selected buttons."
+        },
+        {
+          "name": "selectedItemKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Contains keys of selected buttons and allows you to specify initial button selection state."
+        },
+        {
+          "name": "selectedItems",
+          "type": "Array<any>",
+          "default": null,
+          "description": "Contains the data objects that correspond to the selected buttons. The data objects are taken from the [items] array."
+        },
+        {
+          "name": "selectionMode",
+          "type": "Enums.SingleMultipleOrNone",
+          "default": "'single'",
+          "description": "Specifies the button selection mode."
+        },
+        {
+          "name": "stylingMode",
+          "type": "Enums.ButtonStyle",
+          "default": "'contained'",
+          "description": "Specifies how buttons in the group are styled."
+        }
+      ]
+    },
+    {
+      "name": "dxButtonGroup",
+      "type": null,
+      "default": null,
+      "description": "The ButtonGroup is a UI component that contains a set of toggle buttons and can be used as a mode switcher."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onDisposing",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed before the UI component is [disposed of].md '{basewidgetpath}/Methods/#dispose')."
+    },
+    {
+      "name": "onInitialized",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function used in JavaScript frameworks to save the UI component instance."
+    },
+    {
+      "name": "onItemClick",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a button is clicked or tapped."
+    },
+    {
+      "name": "onOptionChanged",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is executed after a UI component property is changed."
+    },
+    {
+      "name": "onSelectionChanged",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when a button is selected or selection is canceled."
+    },
+    {
+      "name": "itemClick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a button is clicked or tapped."
+    },
+    {
+      "name": "selectionChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a button is selected or selection is canceled."
+    }
+  ],
+  "Types": [
+    {
+      "name": "ContentReadyEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [contentReady] event handler's argument."
+    },
+    {
+      "name": "DisposingEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [disposing] event handler's argument."
+    },
+    {
+      "name": "InitializedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [initialized] event handler's argument."
+    },
+    {
+      "name": "ItemClickEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [itemClick] event handler's argument."
+    },
+    {
+      "name": "OptionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [optionChanged] event handler's argument."
+    },
+    {
+      "name": "SelectionChangedEvent",
+      "type": "Object",
+      "default": null,
+      "description": "The type of the [selectionChanged] event handler's argument."
+    }
+  ]
+}

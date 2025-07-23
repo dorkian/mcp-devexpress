@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "dxContextMenuItem",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "items",
+      "type": "Array<dxContextMenuItem>",
+      "default": null,
+      "description": null
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}
