@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "Response",
+      "type": "Object",
+      "default": null,
+      "description": "An object returned by the [sendRequest] function."
+    },
+    {
+      "name": "abort",
+      "type": "function()",
+      "default": null,
+      "description": "A function that cancels the request."
+    },
+    {
+      "name": "promise",
+      "type": "Promise<String>",
+      "default": null,
+      "description": "A promise that resolves with the final AI-generated text."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

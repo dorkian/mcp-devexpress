@@ -1,0 +1,38 @@
+{
+  "properties": [
+    {
+      "name": "Guid",
+      "type": null,
+      "default": null,
+      "description": "The **Guid** is an object used to generate and contain a GUID."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "ctor()",
+      "type": null,
+      "default": null,
+      "description": "Creates a new **Guid** instance that contains a generated GUID."
+    },
+    {
+      "name": "ctor(value)",
+      "type": null,
+      "default": null,
+      "description": "Creates a new **Guid** instance that contains the specified GUID."
+    },
+    {
+      "name": "toString()",
+      "type": null,
+      "default": null,
+      "description": "Gets the GUID. Works identically to the [valueOf()].md '/Documentation/ApiReference/Data_Layer/Guid/Methods/#valueOf') method."
+    },
+    {
+      "name": "valueOf()",
+      "type": null,
+      "default": null,
+      "description": "Gets the GUID. Works identically to the [toString()].md '/Documentation/ApiReference/Data_Layer/Guid/Methods/#toString') method."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

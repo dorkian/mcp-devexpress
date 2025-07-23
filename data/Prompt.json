@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "Prompt",
+      "type": "Object",
+      "default": null,
+      "description": "A prompt for the AI model."
+    },
+    {
+      "name": "system",
+      "type": "String",
+      "default": null,
+      "description": "Direct instructions for the AI model."
+    },
+    {
+      "name": "user",
+      "type": "String",
+      "default": null,
+      "description": "A user message to the AI model."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

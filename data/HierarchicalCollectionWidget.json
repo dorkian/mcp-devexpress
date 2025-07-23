@@ -1,0 +1,66 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining configuration properties for the UI component."
+        },
+        {
+          "name": "disabledExpr",
+          "type": "String | function()",
+          "default": "'disabled'",
+          "description": "Specifies the name of the data source item field whose value defines whether or not the corresponding UI component item is disabled."
+        },
+        {
+          "name": "displayExpr",
+          "type": "String | function(item)",
+          "default": "'text'",
+          "description": "Specifies the data field whose values should be displayed."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "true (desktop)",
+          "description": null
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": null
+        },
+        {
+          "name": "itemsExpr",
+          "type": "String | function()",
+          "default": "'items'",
+          "description": "Specifies which data field contains nested items."
+        },
+        {
+          "name": "keyExpr",
+          "type": "String | function()",
+          "default": "'id'",
+          "description": "Specifies which data field provides keys for TreeView items."
+        },
+        {
+          "name": "selectedExpr",
+          "type": "String | function()",
+          "default": "'selected'",
+          "description": "Specifies the name of the data source item field whose value defines whether or not the corresponding UI component items is selected."
+        }
+      ]
+    },
+    {
+      "name": "HierarchicalCollectionWidget",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

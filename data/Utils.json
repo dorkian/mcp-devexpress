@@ -1,0 +1,1126 @@
+{
+  "properties": [
+    {
+      "name": "TransitionExecutor",
+      "subMembers": [
+        {
+          "name": "TransitionExecutor",
+          "type": null,
+          "default": null,
+          "description": "The manager that performs several specified animations at a time."
+        },
+        {
+          "name": "enter(elements_animation)",
+          "type": null,
+          "default": null,
+          "description": "Registers the set of elements that should be animated as \"entering\" using the specified animation configuration."
+        },
+        {
+          "name": "leave(elements_animation)",
+          "type": null,
+          "default": null,
+          "description": "Registers a set of elements that should be animated as \"leaving\" using the specified animation configuration."
+        },
+        {
+          "name": "reset()",
+          "type": null,
+          "default": null,
+          "description": "Deletes all the animations registered in the Transition Executor by using the [enter(elements, animation)].md '/Documentation/ApiReference/Common/utils/TransitionExecutor/#enterelements_animation') and [leave(elements, animation)].md '/Documentation/ApiReference/Common/utils/TransitionExecutor/#leaveelements_animation') methods."
+        },
+        {
+          "name": "start()",
+          "type": null,
+          "default": null,
+          "description": "Starts all the animations registered using the [enter(elements, animation)].md '/Documentation/ApiReference/Common/utils/TransitionExecutor/#enterelements_animation') and [leave(elements, animation)].md '/Documentation/ApiReference/Common/utils/TransitionExecutor/#leaveelements_animation') methods beforehand."
+        },
+        {
+          "name": "stop()",
+          "type": null,
+          "default": null,
+          "description": "Stops all started animations."
+        }
+      ]
+    },
+    {
+      "name": "Utils",
+      "type": null,
+      "default": null,
+      "description": "This section describes an API that can be used in different application parts such as UI components, data and the application framework."
+    },
+    {
+      "name": "animationPresets",
+      "subMembers": [
+        {
+          "name": "animationPresets",
+          "type": "Object",
+          "default": null,
+          "description": "A repository of animations."
+        },
+        {
+          "name": "applyChanges()",
+          "type": null,
+          "default": null,
+          "description": "Applies the changes made in the animation repository."
+        },
+        {
+          "name": "clear()",
+          "type": null,
+          "default": null,
+          "description": "Removes all animations from the repository."
+        },
+        {
+          "name": "clear(name)",
+          "type": null,
+          "default": null,
+          "description": "Deletes an animation with a specific name."
+        },
+        {
+          "name": "getPreset(name)",
+          "type": null,
+          "default": null,
+          "description": "Gets the configuration of an animation with a specific name."
+        },
+        {
+          "name": "registerDefaultPresets()",
+          "type": null,
+          "default": null,
+          "description": "Registers [predefined animations] in the animation repository."
+        },
+        {
+          "name": "registerPreset(name_config)",
+          "type": "'desktop', platform: 'generic' } } );",
+          "default": null,
+          "description": "Adds an animation with a specific name to the animation repository."
+        },
+        {
+          "name": "resetToDefaults()",
+          "type": null,
+          "default": null,
+          "description": "Deletes all custom animations."
+        }
+      ]
+    },
+    {
+      "name": "config()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current global configuration."
+    },
+    {
+      "name": "config(config)",
+      "type": null,
+      "default": null,
+      "description": "Configures your application before its launch."
+    },
+    {
+      "name": "devices",
+      "type": null,
+      "default": null,
+      "description": "An object that serves as a namespace for the methods and events specifying information on the current device."
+    },
+    {
+      "name": "event",
+      "type": "EventObject | jQuery.Event",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "excelExporter",
+      "subMembers": [
+        {
+          "name": "excelExporter",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for the methods that export DevExtreme UI components to Excel."
+        },
+        {
+          "name": "exportDataGrid(options)",
+          "type": "'application/octet-stream' }), 'DataGrid.xlsx');",
+          "default": null,
+          "description": "Exports grid data to Excel."
+        },
+        {
+          "name": "exportPivotGrid(options)",
+          "type": "'application/octet-stream' }), 'PivotGrid.xlsx');",
+          "default": null,
+          "description": "Exports pivot grid data to Excel."
+        }
+      ]
+    },
+    {
+      "name": "fx",
+      "subMembers": [
+        {
+          "name": "animate(element_config)",
+          "type": null,
+          "default": null,
+          "description": "Animates an element."
+        },
+        {
+          "name": "fx",
+          "type": "Object",
+          "default": null,
+          "description": "An object that serves as a namespace for the methods that are used to animate UI elements."
+        },
+        {
+          "name": "isAnimating(element)",
+          "type": null,
+          "default": null,
+          "description": "Checks whether an element is being animated."
+        },
+        {
+          "name": "stop(element_jumpToEnd)",
+          "type": null,
+          "default": null,
+          "description": "Stops an element's animation."
+        }
+      ]
+    },
+    {
+      "name": "handler(event_extraParameters)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Boolean"
+    },
+    {
+      "name": "hideTopOverlay()",
+      "type": null,
+      "default": null,
+      "description": "Hides the last displayed overlay UI component."
+    },
+    {
+      "name": "localization",
+      "subMembers": [
+        {
+          "name": "formatDate(value_format)",
+          "type": null,
+          "default": null,
+          "description": "Converts a Date object to a string using the specified format."
+        },
+        {
+          "name": "formatMessage(key_value)",
+          "type": null,
+          "default": null,
+          "description": "Substitutes the provided value(s) for placeholders in a message that the key specifies."
+        },
+        {
+          "name": "formatNumber(value_format)",
+          "type": null,
+          "default": null,
+          "description": "Converts a numeric value to a string using the specified format."
+        },
+        {
+          "name": "loadMessages(messages)",
+          "type": null,
+          "default": null,
+          "description": "Loads localized messages."
+        },
+        {
+          "name": "locale()",
+          "type": null,
+          "default": null,
+          "description": "Gets the current locale identifier."
+        },
+        {
+          "name": "locale(locale)",
+          "type": null,
+          "default": null,
+          "description": "Sets the current locale identifier."
+        },
+        {
+          "name": "localization",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for the methods that are used to localize an application."
+        },
+        {
+          "name": "parseDate(text_format)",
+          "type": null,
+          "default": null,
+          "description": "Parses a string into a Date object."
+        },
+        {
+          "name": "parseNumber(text_format)",
+          "type": null,
+          "default": null,
+          "description": "Parses a string into a numeric value."
+        }
+      ]
+    },
+    {
+      "name": "pdfExporter",
+      "subMembers": [
+        {
+          "name": "exportDataGrid(options)",
+          "type": null,
+          "default": null,
+          "description": "Exports grid data to a PDF file."
+        },
+        {
+          "name": "exportGantt(options)",
+          "type": null,
+          "default": null,
+          "description": "Exports Gantt data to a PDF file."
+        },
+        {
+          "name": "pdfExporter",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for the methods that export DevExtreme UI components to PDF."
+        }
+      ]
+    },
+    {
+      "name": "registerComponent(name_componentClass)",
+      "type": null,
+      "default": null,
+      "description": "Registers a new component in the [DevExpress.ui] namespace."
+    },
+    {
+      "name": "registerComponent(name_namespace_componentClass)",
+      "type": null,
+      "default": null,
+      "description": "Registers a new component in the specified namespace."
+    },
+    {
+      "name": "setTemplateEngine(options)",
+      "type": null,
+      "default": null,
+      "description": "Sets custom functions that compile and render templates."
+    },
+    {
+      "name": "ui",
+      "subMembers": [
+        {
+          "name": "dialog",
+          "subMembers": [
+            {
+              "name": "alert(messageHtml_title)",
+              "type": null,
+              "default": null,
+              "description": "Displays an alert dialog with a message and **OK** button."
+            },
+            {
+              "name": "confirm(messageHtml_title)",
+              "type": null,
+              "default": null,
+              "description": "Creates a confirmation dialog with a message and **Yes** and **No** buttons."
+            },
+            {
+              "name": "custom(options)",
+              "type": null,
+              "default": null,
+              "description": "Creates a dialog with custom buttons."
+            },
+            {
+              "name": "dialog",
+              "type": null,
+              "default": null,
+              "description": "An object that serves as a namespace for methods displaying a message in an application/site."
+            }
+          ]
+        },
+        {
+          "name": "dxOverlay",
+          "subMembers": [
+            {
+              "name": "baseZIndex(zIndex)",
+              "type": null,
+              "default": null,
+              "description": "Specifies the base z-index for all overlay UI components."
+            },
+            {
+              "name": "dxOverlay",
+              "type": null,
+              "default": null,
+              "description": "An object that serves as a namespace for static methods that affect overlay UI components."
+            }
+          ]
+        },
+        {
+          "name": "notify(message_stack)",
+          "type": null,
+          "default": null,
+          "description": "Creates a stackable toast message."
+        },
+        {
+          "name": "notify(message_type_displayTime)",
+          "type": "*\"info\"*, *\"warning\"*, *\"error\"* or *\"success\"*.",
+          "default": null,
+          "description": "Creates a toast message."
+        },
+        {
+          "name": "notify(options_stack)",
+          "type": null,
+          "default": null,
+          "description": "Creates a stackable toast message."
+        },
+        {
+          "name": "notify(options_type_displayTime)",
+          "type": "*\"info\"*, *\"warning\"*, *\"error\"* or *\"success\"*.",
+          "default": null,
+          "description": "Creates a toast message."
+        },
+        {
+          "name": "repaintFloatingActionButton()",
+          "type": null,
+          "default": null,
+          "description": "Repaints the [Floating Action Button]."
+        },
+        {
+          "name": "themes",
+          "subMembers": [
+            {
+              "name": "current()",
+              "type": null,
+              "default": null,
+              "description": "Gets the current theme's name."
+            },
+            {
+              "name": "current(themeName)",
+              "type": null,
+              "default": null,
+              "description": "Sets a theme with a specific name."
+            },
+            {
+              "name": "initialized(callback)",
+              "type": null,
+              "default": null,
+              "description": "Specifies a function to be executed after a theme is loaded."
+            },
+            {
+              "name": "ready(callback)",
+              "type": null,
+              "default": null,
+              "description": "Specifies a function to be executed each time a theme is switched."
+            },
+            {
+              "name": "themes",
+              "type": null,
+              "default": null,
+              "description": "An object that serves as a namespace for the methods that work with DevExtreme [CSS Themes]."
+            }
+          ]
+        },
+        {
+          "name": "ui",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for [DevExtreme UI components] as well as for methods implementing UI logic in DevExtreme sites/applications."
+        }
+      ]
+    },
+    {
+      "name": "utils",
+      "subMembers": [
+        {
+          "name": "cancelAnimationFrame(requestID)",
+          "type": null,
+          "default": null,
+          "description": "Cancels an animation frame request scheduled with the [requestAnimationFrame].md '/Documentation/ApiReference/Common/Utils/utils/#requestAnimationFramecallback') method."
+        },
+        {
+          "name": "getTimeZones(date_timeZones)",
+          "type": null,
+          "default": null,
+          "description": "Gets a list of time zone objects from the <a href=\"https://en.wikipedia.org/wiki/List_of_tz_database_time_zones\" target=\"_blank\">IANA time zone database</a>."
+        },
+        {
+          "name": "initMobileViewport(options)",
+          "type": null,
+          "default": null,
+          "description": "Sets parameters for the **viewport** meta tag. Takes effect for mobile applications only."
+        },
+        {
+          "name": "requestAnimationFrame(callback)",
+          "type": null,
+          "default": null,
+          "description": "Makes the browser call a function to update animation before the next repaint."
+        },
+        {
+          "name": "utils",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for utility methods that can be helpful when working with DevExtreme components."
+        }
+      ]
+    },
+    {
+      "name": "validationEngine",
+      "subMembers": [
+        {
+          "name": "getGroupConfig()",
+          "type": null,
+          "default": null,
+          "description": "Gets the default validation group."
+        },
+        {
+          "name": "getGroupConfig(group)",
+          "type": null,
+          "default": null,
+          "description": "Gets a validation group with a specific key."
+        },
+        {
+          "name": "registerModelForValidation(model)",
+          "type": "'required', message: 'We need your credentials' }]",
+          "default": null,
+          "description": "Registers all the [Validator] objects extending fields of the specified ViewModel."
+        },
+        {
+          "name": "resetGroup()",
+          "type": null,
+          "default": null,
+          "description": "Resets the values and validation result of the editors that belong to the default validation group."
+        },
+        {
+          "name": "resetGroup(group)",
+          "type": null,
+          "default": null,
+          "description": "Resets the values and validation result of the editors that belong to the specified validation group."
+        },
+        {
+          "name": "unregisterModelForValidation(model)",
+          "type": null,
+          "default": null,
+          "description": "Unregisters all the [Validator] objects extending fields of the specified ViewModel."
+        },
+        {
+          "name": "validateGroup()",
+          "type": null,
+          "default": null,
+          "description": "Validates editors from the default validation group."
+        },
+        {
+          "name": "validateGroup(group)",
+          "type": null,
+          "default": null,
+          "description": "Validates editors from a specific validation group."
+        },
+        {
+          "name": "validateModel(model)",
+          "type": "'required', message: 'We need your credentials' }]",
+          "default": null,
+          "description": "Validates a view model."
+        },
+        {
+          "name": "validationEngine",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for the methods required to perform validation."
+        }
+      ]
+    },
+    {
+      "name": "viz",
+      "subMembers": [
+        {
+          "name": "currentPalette()",
+          "type": null,
+          "default": null,
+          "description": "Gets the current [palette]'s name."
+        },
+        {
+          "name": "currentPalette(paletteName)",
+          "type": null,
+          "default": null,
+          "description": "Changes the current palette for all data visualization UI components on the page."
+        },
+        {
+          "name": "currentTheme()",
+          "type": null,
+          "default": null,
+          "description": "Gets the current [theme]'s name."
+        },
+        {
+          "name": "currentTheme(platform_colorScheme)",
+          "type": null,
+          "default": null,
+          "description": "Changes the current theme for all data visualization UI components on the page. The color scheme is defined separately."
+        },
+        {
+          "name": "currentTheme(theme)",
+          "type": null,
+          "default": null,
+          "description": "Changes the current theme for all data visualization UI components on the page."
+        },
+        {
+          "name": "exportFromMarkup(markup_options)",
+          "type": null,
+          "default": null,
+          "description": "Allows you to export UI components using their SVG markup."
+        },
+        {
+          "name": "exportWidgets(widgetInstances)",
+          "type": null,
+          "default": null,
+          "description": "Exports one or several UI components to PNG."
+        },
+        {
+          "name": "exportWidgets(widgetInstances_options)",
+          "type": null,
+          "default": null,
+          "description": "Exports one or several UI components."
+        },
+        {
+          "name": "generateColors(palette_count_options)",
+          "type": null,
+          "default": null,
+          "description": "Returns a subset of palette colors."
+        },
+        {
+          "name": "getMarkup(widgetInstances)",
+          "type": null,
+          "default": null,
+          "description": "Gets the SVG markup of specific UI components for their subsequent export."
+        },
+        {
+          "name": "getPalette(paletteName)",
+          "type": null,
+          "default": null,
+          "description": "Gets the color sets of a predefined or registered palette."
+        },
+        {
+          "name": "getTheme(theme)",
+          "type": null,
+          "default": null,
+          "description": "Gets a predefined or registered [theme]'s settings."
+        },
+        {
+          "name": "map",
+          "subMembers": [
+            {
+              "name": "map",
+              "type": null,
+              "default": null,
+              "description": "An object that serves as a namespace for the [VectorMap] UI component."
+            },
+            {
+              "name": "projection(data)",
+              "type": null,
+              "default": null,
+              "description": "Creates a new projection."
+            },
+            {
+              "name": "projection",
+              "subMembers": [
+                {
+                  "name": "add(name_projectionConfig)",
+                  "type": null,
+                  "default": null,
+                  "description": "Adds a new projection to the internal projection storage."
+                },
+                {
+                  "name": "get(name)",
+                  "type": null,
+                  "default": null,
+                  "description": "Gets a predefined or custom projection from the projection storage."
+                },
+                {
+                  "name": "projection",
+                  "type": null,
+                  "default": null,
+                  "description": "A namespace with methods that manipulate map projections."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "refreshPaths()",
+          "type": null,
+          "default": null,
+          "description": "The method to be called every time the active entry in the browser history is modified without reloading the current page."
+        },
+        {
+          "name": "refreshTheme()",
+          "type": null,
+          "default": null,
+          "description": "Refreshes the current theme and palette in all data visualization UI components on the page."
+        },
+        {
+          "name": "registerGradient(type_options)",
+          "type": "'linear' or 'radial'.",
+          "default": null,
+          "description": "Registers a new gradient."
+        },
+        {
+          "name": "registerPalette(paletteName_palette)",
+          "type": null,
+          "default": null,
+          "description": "Registers a new palette."
+        },
+        {
+          "name": "registerPattern(options)",
+          "type": null,
+          "default": null,
+          "description": "Registers a new pattern."
+        },
+        {
+          "name": "registerTheme(customTheme_baseTheme)",
+          "type": null,
+          "default": null,
+          "description": "Registers a new theme based on the existing one."
+        },
+        {
+          "name": "viz",
+          "type": null,
+          "default": null,
+          "description": "An object that serves as a namespace for [DevExtreme Data Visualization Components]."
+        }
+      ]
+    },
+    {
+      "name": "zz Errors and Warnings",
+      "subMembers": [
+        {
+          "name": "E0001",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when a method has no implementation."
+        },
+        {
+          "name": "E0002",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when a member name collision is detected."
+        },
+        {
+          "name": "E0003",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when you instantiate a class without using the \"new\" keyword."
+        },
+        {
+          "name": "E0004",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when a component's NAME property is not specified."
+        },
+        {
+          "name": "E0005",
+          "type": null,
+          "default": null,
+          "description": "Occurs when the device on which the current application is running is not in the list of known devices."
+        },
+        {
+          "name": "E0006",
+          "type": null,
+          "default": null,
+          "description": "Occurs when requesting a Url by the key that is not defined within the [EndpointSelector]'s configuration object."
+        },
+        {
+          "name": "E0007",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when the \"invalidate\" method is called outside the update transaction."
+        },
+        {
+          "name": "E0008",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when an action cannot be created because the type of the passed property name is not `string`."
+        },
+        {
+          "name": "E0009",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when a component is not initialized for this element."
+        },
+        {
+          "name": "E0010",
+          "type": null,
+          "default": null,
+          "description": "Occurs when the \"from\"/\"to\" configuration property of a slide animation is not a plain object."
+        },
+        {
+          "name": "E0011",
+          "type": null,
+          "default": null,
+          "description": "Occurs when an unknown animation type is requested."
+        },
+        {
+          "name": "E0012",
+          "type": null,
+          "default": null,
+          "description": "Occurs when using an old version of the jQuery library."
+        },
+        {
+          "name": "E0013",
+          "type": null,
+          "default": null,
+          "description": "Occurs when using an old version of the Knockout library."
+        },
+        {
+          "name": "E0014",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when the 'release' method is called for an unlocked Lock object."
+        },
+        {
+          "name": "E0015",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when a queued task returns an unexpected result."
+        },
+        {
+          "name": "E0017",
+          "type": null,
+          "default": null,
+          "description": "An internal error that occurs when a namespace for an event is not defined."
+        },
+        {
+          "name": "E0018",
+          "type": null,
+          "default": null,
+          "description": "Occurs when a module with the [Popup] UI component is not linked."
+        },
+        {
+          "name": "E0020",
+          "type": null,
+          "default": null,
+          "description": "Occurs when an unsupported template engine is set."
+        },
+        {
+          "name": "E0021",
+          "type": null,
+          "default": null,
+          "description": "Occurs when an unknown theme is set."
+        },
+        {
+          "name": "E0022",
+          "type": null,
+          "default": null,
+          "description": "Occurs when the LINK[rel=dx-theme] tags go before DevExtreme scripts."
+        },
+        {
+          "name": "E0023",
+          "type": null,
+          "default": null,
+          "description": "Occurs when a name is not specified for a [dxTemplate] markup component."
+        },
+        {
+          "name": "E0024",
+          "type": null,
+          "default": null,
+          "description": "Occurs if a DevExtreme bundle is linked more than once on a single page."
+        },
+        {
+          "name": "E0025",
+          "type": null,
+          "default": null,
+          "description": "Occurs when an invalid argument is passed to a method."
+        },
+        {
+          "name": "E0100",
+          "type": null,
+          "default": null,
+          "description": "Occurs when an unknown validation rule type is used."
+        },
+        {
+          "name": "E0101",
+          "type": null,
+          "default": null,
+          "description": "Occurs when either the **min** or **max** property is not specified for the ['range'] rule."
+        },
+        {
+          "name": "E0102",
+          "type": null,
+          "default": null,
+          "description": "Occurs when the **comparisonTarget** property is not specified for the ['compare'] rule."
+        },
+        {
+          "name": "E0103",
+          "type": null,
+          "default": null,
+          "description": "Occurs if an [AsyncRule]'s [validationCallback] does not return a promise."
+        },
+        {
+          "name": "E0110",
+          "type": null,
+          "default": null,
+          "description": "Occurs when an unknown or unregistered validation group is validated using the [DevExtreme.validationEngine.validateGroup(group)].md '/Documentation/ApiReference/Common/utils/validationEngine/#validateGroupgroup') method."
+        },
+        {
+          "name": "E0120",
+          "type": null,
+          "default": null,
+          "description": "Occurs when a default adapter cannot be initialized for the target editor."
+        },
+        {
+          "name": "E0121",
+          "type": null,
+          "default": null,
+          "description": "Occurs in drop-down lists when the **customItem** field of the **onCustomItemCreating** function's parameter is not set."
+        },
+        {
+          "name": "E0122",
+          "type": null,
+          "default": null,
+          "description": "Occurs when [AIIntegration] is initialized, but no [sendRequest] method is implemented."
+        },
+        {
+          "name": "Errors and Warnings",
+          "type": null,
+          "default": null,
+          "description": "This section lists core errors and warnings that may occur in DevExtreme applications."
+        },
+        {
+          "name": "W0000",
+          "type": null,
+          "default": null,
+          "description": "Appears when a deprecated component is detected in an application."
+        },
+        {
+          "name": "W0001",
+          "type": null,
+          "default": null,
+          "description": "Appears when a deprecated property is detected in an application."
+        },
+        {
+          "name": "W0002",
+          "type": null,
+          "default": null,
+          "description": "Appears when a deprecated method is detected in an application."
+        },
+        {
+          "name": "W0003",
+          "type": null,
+          "default": null,
+          "description": "Appears when a deprecated field is detected in an application."
+        },
+        {
+          "name": "W0004",
+          "type": null,
+          "default": null,
+          "description": "Appears when the timeout that was set to load a theme is over."
+        },
+        {
+          "name": "W0005",
+          "type": null,
+          "default": null,
+          "description": "Appears when a deprecated event is detected in an application."
+        },
+        {
+          "name": "W0006",
+          "type": null,
+          "default": null,
+          "description": "Appears when a <a href=\"http://tools.ietf.org/html/rfc2445#section-4.3.10\" target=\"_blank\">recurrence rule</a> is invalid."
+        },
+        {
+          "name": "W0007",
+          "type": null,
+          "default": null,
+          "description": "Appears when the <a href=\"https://cdnjs.com/libraries/globalize/0.1.1\" target=\"_blank\">Globalize culture</a> script is not referenced on the application page."
+        },
+        {
+          "name": "W0008",
+          "type": null,
+          "default": null,
+          "description": "Appears if an array passed to the [views] property of the [Scheduler] UI component contains an invalid view type."
+        },
+        {
+          "name": "W0009",
+          "type": null,
+          "default": null,
+          "description": "Occurs if the [timeZone] property of the [Scheduler] UI component holds an invalid value."
+        },
+        {
+          "name": "W0010",
+          "type": null,
+          "default": null,
+          "description": "Occurs if the application uses a deprecated theme."
+        },
+        {
+          "name": "W0011",
+          "type": null,
+          "default": null,
+          "description": "Occurs if number parsing is invoked without a defined parser."
+        },
+        {
+          "name": "W0012",
+          "type": null,
+          "default": null,
+          "description": "Occurs if date parsing is invoked without a defined parser."
+        },
+        {
+          "name": "W0013",
+          "type": null,
+          "default": null,
+          "description": "Occurs if one of the deprecated files (dx.web.de.js, dx.mobile.de.js, dx.all.de.js, etc.) is used. Use the dx.messages.xx.js file instead."
+        },
+        {
+          "name": "W0014",
+          "type": null,
+          "default": null,
+          "description": "Occurs if a property is set to a deprecated value type. Set the property to the type of value suggested in the warning message."
+        },
+        {
+          "name": "W0015",
+          "type": null,
+          "default": null,
+          "description": "Occurs if a function returns a value instead of assigning it to the parameter field."
+        },
+        {
+          "name": "W0016",
+          "type": null,
+          "default": null,
+          "description": "Occurs if a deprecated value is assigned to a property."
+        },
+        {
+          "name": "W0017",
+          "type": null,
+          "default": null,
+          "description": "Occurs if a component's **width**, **height**, or similar properties have a value of the `function` type."
+        },
+        {
+          "name": "W0018",
+          "type": null,
+          "default": null,
+          "description": "Occurs if a component's **position** property has a value of the `function` type."
+        },
+        {
+          "name": "W0019",
+          "type": null,
+          "default": null,
+          "description": "Appears when a valid DevExtreme license key cannot be found."
+        },
+        {
+          "name": "W0020",
+          "type": null,
+          "default": null,
+          "description": "Appears when a DevExtreme license key does not match the version of DevExtreme used within a project."
+        },
+        {
+          "name": "W0021",
+          "type": null,
+          "default": null,
+          "description": "Appears when the license key verification fails."
+        },
+        {
+          "name": "W0022",
+          "type": null,
+          "default": null,
+          "description": "Appears if the version of DevExtreme used within a project is marked as pre-release software (pre-release software is not suitable for production use as it may contain deficiencies/bugs)."
+        },
+        {
+          "name": "W0023",
+          "type": null,
+          "default": null,
+          "description": "Appears if the `devextreme` package version does not match other DevExpress product versions used in the application."
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "Event",
+      "type": "function(source, config)",
+      "default": null,
+      "description": "##### return: event"
+    },
+    {
+      "name": "off(element)",
+      "type": null,
+      "default": null,
+      "description": "Detaches all handlers from the specified elements."
+    },
+    {
+      "name": "off(element_eventName)",
+      "type": null,
+      "default": null,
+      "description": "Detaches all handlers of the specified event from the specified elements."
+    },
+    {
+      "name": "off(element_eventName_handler)",
+      "type": null,
+      "default": null,
+      "description": "Detaches an event handler from the specified elements."
+    },
+    {
+      "name": "off(element_eventName_selector)",
+      "type": null,
+      "default": null,
+      "description": "Detaches all event handlers of the specified type attached using the [on(element, eventName, selector, data, handler)].md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_data_handler') or [on(element, eventName, selector, handler)].md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_handler') method."
+    },
+    {
+      "name": "off(element_eventName_selector_handler)",
+      "type": null,
+      "default": null,
+      "description": "Detaches the specified event handler attached using the [on(element, eventName, selector, data, handler)].md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_data_handler') or [on(element, eventName, selector, handler)].md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_handler') method."
+    },
+    {
+      "name": "on(element_eventName_data_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler to the specified elements. Allows you to pass custom data to the handler."
+    },
+    {
+      "name": "on(element_eventName_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler to the specified elements."
+    },
+    {
+      "name": "on(element_eventName_selector_data_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler to the specified elements' descendants. Allows you to pass custom data to the handler."
+    },
+    {
+      "name": "on(element_eventName_selector_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler to the specified elements' descendants."
+    },
+    {
+      "name": "one(element_eventName_data_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler that is executed only once to the specified elements. Allows you to pass custom data to the handler."
+    },
+    {
+      "name": "one(element_eventName_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler that is executed only once to the specified elements."
+    },
+    {
+      "name": "one(element_eventName_selector_data_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler that is executed only once to the specified elements' descendants. Allows you to pass custom data to the handler."
+    },
+    {
+      "name": "one(element_eventName_selector_handler)",
+      "type": null,
+      "default": null,
+      "description": "Attaches an event handler that is executed only once to the specified elements' descendants."
+    },
+    {
+      "name": "trigger(element_event)",
+      "type": null,
+      "default": null,
+      "description": "Triggers an event for the specified elements."
+    },
+    {
+      "name": "trigger(element_event_extraParameters)",
+      "type": null,
+      "default": null,
+      "description": "Triggers an event for the specified elements. Allows you to pass custom parameters to event handlers."
+    },
+    {
+      "name": "triggerHandler(element_event)",
+      "type": null,
+      "default": null,
+      "description": "##### param(element): Element | Array<Element>"
+    },
+    {
+      "name": "triggerHandler(element_event_extraParameters)",
+      "type": null,
+      "default": null,
+      "description": "##### param(element): Element | Array<Element>"
+    }
+  ],
+  "Types": []
+}

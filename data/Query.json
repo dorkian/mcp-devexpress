@@ -1,0 +1,146 @@
+{
+  "properties": [
+    {
+      "name": "Query",
+      "type": "Object",
+      "default": null,
+      "description": "The **Query** is an object that provides a chainable interface for making data queries."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "aggregate(seed_step_finalize)",
+      "type": null,
+      "default": null,
+      "description": "Calculates a custom summary for all data items."
+    },
+    {
+      "name": "aggregate(step)",
+      "type": null,
+      "default": null,
+      "description": "Calculates a custom summary for all data items."
+    },
+    {
+      "name": "avg()",
+      "type": null,
+      "default": null,
+      "description": "Calculates the average of all values. Applies only to numeric arrays."
+    },
+    {
+      "name": "avg(getter)",
+      "type": null,
+      "default": null,
+      "description": "Calculates the average of all values found using a [getter]."
+    },
+    {
+      "name": "count()",
+      "type": null,
+      "default": null,
+      "description": "Calculates the number of data items."
+    },
+    {
+      "name": "enumerate()",
+      "type": null,
+      "default": null,
+      "description": "Executes the **Query**. This is an asynchronous alternative to the [toArray()].md '/Documentation/ApiReference/Data_Layer/Query/Methods/#toArray') method."
+    },
+    {
+      "name": "filter(criteria)",
+      "type": null,
+      "default": null,
+      "description": "Filters data items using a filter expression."
+    },
+    {
+      "name": "filter(predicate)",
+      "type": null,
+      "default": null,
+      "description": "Filters data items using a custom function."
+    },
+    {
+      "name": "groupBy(getter)",
+      "type": null,
+      "default": null,
+      "description": "Groups data items by the specified [getter]."
+    },
+    {
+      "name": "max()",
+      "type": null,
+      "default": null,
+      "description": "Calculates the maximum value. Applies only to numeric arrays."
+    },
+    {
+      "name": "max(getter)",
+      "type": null,
+      "default": null,
+      "description": "Calculates the maximum of all values found using a [getter]."
+    },
+    {
+      "name": "min()",
+      "type": null,
+      "default": null,
+      "description": "Calculates the minimum value. Applies only to numeric arrays."
+    },
+    {
+      "name": "min(getter)",
+      "type": null,
+      "default": null,
+      "description": "Calculates the minumum of all values found using a [getter]."
+    },
+    {
+      "name": "select(getter)",
+      "type": null,
+      "default": null,
+      "description": "Selects individual fields from data objects."
+    },
+    {
+      "name": "slice(skip_take)",
+      "type": null,
+      "default": null,
+      "description": "Gets a specified number of data items starting from a given index."
+    },
+    {
+      "name": "sortBy(getter)",
+      "type": null,
+      "default": null,
+      "description": "Sorts data items by the specified [getter] in ascending order."
+    },
+    {
+      "name": "sortBy(getter_desc)",
+      "type": null,
+      "default": null,
+      "description": "Sorts data items by the specified [getter] in the specified sorting order."
+    },
+    {
+      "name": "sum()",
+      "type": null,
+      "default": null,
+      "description": "Calculates the sum of all values."
+    },
+    {
+      "name": "sum(getter)",
+      "type": null,
+      "default": null,
+      "description": "Calculates the sum of all values found using a [getter]."
+    },
+    {
+      "name": "thenBy(getter)",
+      "type": null,
+      "default": null,
+      "description": "Sorts data items by one more [getter] in ascending order."
+    },
+    {
+      "name": "thenBy(getter_desc)",
+      "type": null,
+      "default": null,
+      "description": "Sorts data items by one more [getter] in the specified sorting order."
+    },
+    {
+      "name": "toArray()",
+      "type": null,
+      "default": null,
+      "description": "Gets data items associated with the **Query**. This is a synchronous alternative to the [enumerate()].md '/Documentation/ApiReference/Data_Layer/Query/Methods/#enumerate') method."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

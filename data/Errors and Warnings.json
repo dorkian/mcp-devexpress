@@ -1,0 +1,613 @@
+{
+  "properties": [
+    {
+      "name": "E1001",
+      "type": null,
+      "default": null,
+      "description": "A [DataGrid] internal error."
+    },
+    {
+      "name": "E1002",
+      "type": null,
+      "default": null,
+      "description": "A [DataGrid] internal error."
+    },
+    {
+      "name": "E1003",
+      "type": null,
+      "default": null,
+      "description": "A [DataGrid] internal error."
+    },
+    {
+      "name": "E1004",
+      "type": null,
+      "default": null,
+      "description": "A [DataGrid] internal error."
+    },
+    {
+      "name": "E1005",
+      "type": null,
+      "default": null,
+      "description": "Occurs if a public method is already registered."
+    },
+    {
+      "name": "E1006",
+      "type": null,
+      "default": null,
+      "description": "A [DataGrid] internal error."
+    },
+    {
+      "name": "E1007",
+      "type": null,
+      "default": null,
+      "description": "Occurs in [DataGrid] if the browser does not support local storage or session storage."
+    },
+    {
+      "name": "E1010",
+      "type": null,
+      "default": null,
+      "description": "Occurs if a custom template for the text field of an editor UI component misses the [TextBox]."
+    },
+    {
+      "name": "E1011",
+      "type": null,
+      "default": null,
+      "description": "Occurs if an item of the [List] UI component is deleted, while the [remove(key)].md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#removekey') method of the [CustomStore] used to access data is not implemented."
+    },
+    {
+      "name": "E1012",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [List] UI component if the specified value of the [itemDeleteMode] or [menuMode] property is not supported."
+    },
+    {
+      "name": "E1016",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [DataGrid] UI component if the data source specified for a lookup column is not valid."
+    },
+    {
+      "name": "E1018",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [DataGrid] UI component if the [collapseAll(groupIndex)].md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#collapseAllgroupIndex') method is called, provided that the UI component uses a remote data source."
+    },
+    {
+      "name": "E1019",
+      "type": null,
+      "default": null,
+      "description": "Occurs if a **searchMode** property holds an invalid value."
+    },
+    {
+      "name": "E1020",
+      "type": null,
+      "default": null,
+      "description": "A [DateBox] internal error."
+    },
+    {
+      "name": "E1021",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [Map] UI component if you try to remove a route or marker that does not exist."
+    },
+    {
+      "name": "E1022",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [Map] UI component if an object passed to the [markers] property is not an array."
+    },
+    {
+      "name": "E1023",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [Map] UI component if an object passed to the [routes] property is not an array."
+    },
+    {
+      "name": "E1025",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [ResponsiveBox] UI component if the specified layout cannot be divided into rows and columns."
+    },
+    {
+      "name": "E1026",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [DataGrid] UI component if the **summaryType** field of an item is set to \"custom\", provided that the [calculateCustomSummary] property value is not defined."
+    },
+    {
+      "name": "E1031",
+      "type": null,
+      "default": null,
+      "description": "A [Scheduler] internal error."
+    },
+    {
+      "name": "E1032",
+      "type": null,
+      "default": null,
+      "description": "Occurs when an unspecified or an unknown start date is detected in an appointment object of the [Scheduler] UI component."
+    },
+    {
+      "name": "E1033",
+      "type": null,
+      "default": null,
+      "description": "A [Scheduler] internal error."
+    },
+    {
+      "name": "E1034",
+      "type": null,
+      "default": null,
+      "description": "The current browser does not implement an API required for saving files."
+    },
+    {
+      "name": "E1035",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the editor cannot be created for a [Form] item because of an internal error."
+    },
+    {
+      "name": "E1037",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the server returns grouped data that does not match the required format."
+    },
+    {
+      "name": "E1038",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the DataGrid UI component loads or saves a state if the browser does not support local storages for locally opened web pages."
+    },
+    {
+      "name": "E1039",
+      "type": null,
+      "default": null,
+      "description": "A [Scheduler] internal error."
+    },
+    {
+      "name": "E1040",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [TreeView] UI component when the key field value is not unique within the data array."
+    },
+    {
+      "name": "E1041",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the script specified in the error message is referenced after the DevExtreme scripts or is not referenced at all."
+    },
+    {
+      "name": "E1042",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the DataGrid or TreeList UI component if the key field is not set."
+    },
+    {
+      "name": "E1043",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the **key** property of the [Store] has an incorrect value."
+    },
+    {
+      "name": "E1044",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the TreeList UI component when the key field specified in the [keyExpr] property differs from the one specified in the [Store]."
+    },
+    {
+      "name": "E1045",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the TreeList UI component if editing takes place without the **key** property specified in the [Store]."
+    },
+    {
+      "name": "E1046",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the DataGrid, TreeList, and Gantt UI components if the key field is not found in at least one data object."
+    },
+    {
+      "name": "E1047",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the FilterBuilder UI component if the [filter expression] contains a data field that is not defined in the [fields] array."
+    },
+    {
+      "name": "E1048",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the FilterBuilder UI component if a condition in the [filter expression] contains an operation unavailable for the used field."
+    },
+    {
+      "name": "E1049",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the TreeList or DataGrid when [filterSyncEnabled] is **true** and the **columns[]**.[dataField] or **columns[]**.[name] property is not specified in at least one column that allows filter operations."
+    },
+    {
+      "name": "E1050",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the DataGrid or TreeList when trying to check the [validationRules] of a column that has a third-party editor in its [editCellTemplate]."
+    },
+    {
+      "name": "E1052",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the **dataSource** property is not specified in the UI component."
+    },
+    {
+      "name": "E1053",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a text editor when its [buttons[]](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/buttons/) property is set to an invalid value."
+    },
+    {
+      "name": "E1054",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a text editor when at least one of its [buttons] does not have a [name]."
+    },
+    {
+      "name": "E1055",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a text editor when at least one of its [buttons] has an invalid or non-unique value assigned to the [name] property."
+    },
+    {
+      "name": "E1056",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a text editor when it does not support the button type that you included in the **buttons[]** array."
+    },
+    {
+      "name": "E1058",
+      "type": null,
+      "default": null,
+      "description": "Occurs in [Scheduler] when [startDayHour] is set to a time that is later than [endDayHour] or at least one of these property values is not an integer."
+    },
+    {
+      "name": "E1059",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a DataGrid or TreeList when at least one of its columns has a non-unique value assigned to the [name] property."
+    },
+    {
+      "name": "E1060",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a DataGrid or TreeList when at least one of its editable columns does not have a [name]."
+    },
+    {
+      "name": "E1061",
+      "type": null,
+      "default": null,
+      "description": "Occurs in [Scheduler] when [offset] is set to invalid value."
+    },
+    {
+      "name": "E1062",
+      "type": null,
+      "default": null,
+      "description": "Occurs in [Scheduler] when [cellDuration] is set to invalid value."
+    },
+    {
+      "name": "E2001",
+      "type": null,
+      "default": null,
+      "description": "Occurs when data of an unsupported type was provided to a UI component."
+    },
+    {
+      "name": "E2002",
+      "type": null,
+      "default": null,
+      "description": "Occurs when axis type and data type are incompatible."
+    },
+    {
+      "name": "E2003",
+      "type": null,
+      "default": null,
+      "description": "Occurs when one of the data source fields has an unsupported type."
+    },
+    {
+      "name": "E2004",
+      "type": null,
+      "default": null,
+      "description": "Occurs when values in a data source field have different types that cannot be cast to one type."
+    },
+    {
+      "name": "E2005",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the Funnel UI component when the specified value field is absent in the data source or all its values are negative."
+    },
+    {
+      "name": "E2006",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the Sankey UI component when data objects are looped."
+    },
+    {
+      "name": "E2007",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the Sankey UI component if any of the required fields are not found in at least one data object."
+    },
+    {
+      "name": "E2008",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the Sankey UI component if the **source** or **target** field has an incorrect data type in at least one data object."
+    },
+    {
+      "name": "E2009",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the Sankey UI component if the **weight** field has an incorrect data type or value in at least one data object."
+    },
+    {
+      "name": "E2101",
+      "type": null,
+      "default": null,
+      "description": "Occurs when **series**.**type** property of Chart or PieChart has an unknown value."
+    },
+    {
+      "name": "E2102",
+      "type": null,
+      "default": null,
+      "description": "Occurs in Chart when two or more value axes on a single pane have the same name."
+    },
+    {
+      "name": "E2103",
+      "type": null,
+      "default": null,
+      "description": "Occurs if an incorrect value was assigned to a property that accepts callback functions only."
+    },
+    {
+      "name": "E2104",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the **logarithmBase** property of Chart or RangeSelector was set to an invalid value."
+    },
+    {
+      "name": "E2105",
+      "type": null,
+      "default": null,
+      "description": "Occurs if an invalid value was specified for a strip or constant line."
+    },
+    {
+      "name": "E2202",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the [startValue] or [endValue] property of the RangeSelector's scale is not valid."
+    },
+    {
+      "name": "E2203",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [RangeSelector] UI component when the selected range is invalid."
+    },
+    {
+      "name": "Errors and Warnings",
+      "type": null,
+      "default": null,
+      "description": "This section lists errors and warnings that may occur in UI components."
+    },
+    {
+      "name": "W1001",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [Map] UI component if the [apiKey] property value is changed after the UI component is created."
+    },
+    {
+      "name": "W1002",
+      "type": null,
+      "default": null,
+      "description": "Occurs when you are trying to access an item that does not exist."
+    },
+    {
+      "name": "W1003",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [List] UI component if you try to select an item relating to a group that does not exist."
+    },
+    {
+      "name": "W1004",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [List] UI component if you try to select an item that does not exist within the specified group."
+    },
+    {
+      "name": "W1005",
+      "type": null,
+      "default": null,
+      "description": "Occurs when data is loaded twice when applying initial filter settings."
+    },
+    {
+      "name": "W1006",
+      "type": null,
+      "default": null,
+      "description": "An error occurred while communicating with the map service. See the map service documentation."
+    },
+    {
+      "name": "W1007",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [TreeView] if a node refers to a parent node that does not exist."
+    },
+    {
+      "name": "W1008",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [Scheduler] UI component if you try to scroll to a date outside the current view."
+    },
+    {
+      "name": "W1009",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the List UI component when you try to search through data specified using the [items] property."
+    },
+    {
+      "name": "W1010",
+      "type": null,
+      "default": null,
+      "description": "Occurs when trying to select all the items in a grouped [List] with the [selectAllMode] set to *\"allPages\"*."
+    },
+    {
+      "name": "W1011",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the DataGrid UI component if the [keyExpr] property is specified and the data is not a JavaScript array."
+    },
+    {
+      "name": "W1013",
+      "type": null,
+      "default": null,
+      "description": "Occurs if you specify the deprecated **message** field in the object passed to the [custom(options)].md '/Documentation/ApiReference/Common/utils/ui/dialog/#customoptions') method."
+    },
+    {
+      "name": "W1014",
+      "type": null,
+      "default": null,
+      "description": "Occurs when a page contains more [SpeedDialAction] UI components than specified in the [maxSpeedDialActionCount] property."
+    },
+    {
+      "name": "W1016",
+      "type": null,
+      "default": null,
+      "description": "Occurs if you specify the deprecated **formatName** and **formatValues** properties in the [items] array within the [HTML Editor]'s [toolbar] property."
+    },
+    {
+      "name": "W1017",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the DataGrid and TreeList UI components when the **key** property is not specified for a lookup column's [dataSource]."
+    },
+    {
+      "name": "W1018",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the DataGrid when infinite scrolling is used and **selection**.[allowSelectAll] is set to **true**."
+    },
+    {
+      "name": "W1019",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the maximum filter query length exceeds the value specified in the [maxFilterQueryLength] property of the [TagBox]."
+    },
+    {
+      "name": "W1020",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the [shading] property is **true** and a [hideEvent] is specified."
+    },
+    {
+      "name": "W1021",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [Popup], [Popover], [Tooltip], and [LoadPanel] if the [container] property is set to an invalid value or DOM element that does not exist."
+    },
+    {
+      "name": "W1022",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the UI component if you try to parse incorrect JSON data."
+    },
+    {
+      "name": "W1023",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the Agenda view of the Scheduler component if you specify appointments without keys."
+    },
+    {
+      "name": "W1024",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the [client-side export] is enabled but the [onExporting] function is not implemented."
+    },
+    {
+      "name": "W1025",
+      "type": null,
+      "default": null,
+      "description": "Occurs if you use virtual or infinite [scrolling mode] and do not specify the component's [height]."
+    },
+    {
+      "name": "W1026",
+      "type": null,
+      "default": null,
+      "description": "Occurs when `'ai'` is added to HTML Editor toolbar items, but the [aiIntegration] property is not specified."
+    },
+    {
+      "name": "W1027",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the HTML Editor when a custom AI [command] is used but no [prompt] is defined."
+    },
+    {
+      "name": "W2002",
+      "type": null,
+      "default": null,
+      "description": "Appears when none of the data source objects contain a valid argument or value field."
+    },
+    {
+      "name": "W2003",
+      "type": null,
+      "default": null,
+      "description": "Appears when the specified tick intervals lead Chart or RangeSelector to generating an excessive number of ticks."
+    },
+    {
+      "name": "W2101",
+      "type": null,
+      "default": null,
+      "description": "Appears if the [pane] specified by the [defaultPane] property does not exist."
+    },
+    {
+      "name": "W2102",
+      "type": null,
+      "default": null,
+      "description": "Appears if a value axis specified for a series does not exist."
+    },
+    {
+      "name": "W2103",
+      "type": null,
+      "default": null,
+      "description": "Appears when a chart hides its title due to the layout being adapted."
+    },
+    {
+      "name": "W2104",
+      "type": null,
+      "default": null,
+      "description": "Appears when a chart hides its legend due to the layout being adapted."
+    },
+    {
+      "name": "W2105",
+      "type": null,
+      "default": null,
+      "description": "Appears when a chart hides one of its axis titles due to the layout being adapted."
+    },
+    {
+      "name": "W2106",
+      "type": null,
+      "default": null,
+      "description": "Appears when a chart hides labels of one of the axes due to the layout being adapted."
+    },
+    {
+      "name": "W2107",
+      "type": null,
+      "default": null,
+      "description": "Appears if the export menu was hidden due to the container's size being too small."
+    },
+    {
+      "name": "W2108",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the browser does not support exporting images to the specified format."
+    },
+    {
+      "name": "W2301",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the distance between the start and end scale values in a gauge equals zero."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

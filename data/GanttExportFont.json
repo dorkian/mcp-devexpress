@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "GanttExportFont",
+      "type": "Object",
+      "default": null,
+      "description": "Configures a custom font used for the Gantt data export."
+    },
+    {
+      "name": "fontObject",
+      "type": "Object | undefined",
+      "default": "undefined",
+      "description": "A custom font object."
+    },
+    {
+      "name": "name",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "The font name."
+    },
+    {
+      "name": "style",
+      "type": "String",
+      "default": "'normal'",
+      "description": "The font style."
+    },
+    {
+      "name": "weight",
+      "type": "String | Number | undefined",
+      "default": "undefined",
+      "description": "The font weight."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,198 @@
+{
+  "properties": [
+    {
+      "name": "13 events",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "AsyncCancelable",
+      "subMembers": [
+        {
+          "name": "AsyncCancelable",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Cancelable",
+      "subMembers": [
+        {
+          "name": "Cancelable",
+          "type": "Object",
+          "default": null,
+          "description": "A type used in events. Specifies whether the event is cancelable."
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether the event is cancelable."
+        }
+      ]
+    },
+    {
+      "name": "ChangedOptionInfo",
+      "subMembers": [
+        {
+          "name": "ChangedOptionInfo",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies arguments of `optionChanged` event."
+        },
+        {
+          "name": "fullName",
+          "type": "String",
+          "default": null,
+          "description": "The path to the modified property that includes all parent properties."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": "The modified property if it belongs to the first level. Otherwise, the first-level property into which it is nested."
+        },
+        {
+          "name": "previousValue",
+          "type": "any",
+          "default": null,
+          "description": "The UI component's previous value."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": "The modified property's new value."
+        }
+      ]
+    },
+    {
+      "name": "EventInfo",
+      "subMembers": [
+        {
+          "name": "EventInfo",
+          "type": "Object",
+          "default": null,
+          "description": "A type that contains fields common for all events (`component`, `element`, `model`)."
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": "The UI component's instance."
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": "The UI component's container."
+        },
+        {
+          "name": "model",
+          "type": "any",
+          "default": null,
+          "description": "Model data. Available only if you use Knockout."
+        }
+      ]
+    },
+    {
+      "name": "InitializedEventInfo",
+      "subMembers": [
+        {
+          "name": "InitializedEventInfo",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies arguments of `initialized` event."
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": "The UI component's instance."
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": "The UI component's container."
+        }
+      ]
+    },
+    {
+      "name": "ItemInfo",
+      "subMembers": [
+        {
+          "name": "ItemInfo",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies item information used in events related to a component's items."
+        },
+        {
+          "name": "itemData",
+          "type": "Object",
+          "default": null,
+          "description": "The item's data."
+        },
+        {
+          "name": "itemElement",
+          "type": "DxElement",
+          "default": null,
+          "description": "The item's container."
+        },
+        {
+          "name": "itemIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The item's index."
+        }
+      ]
+    },
+    {
+      "name": "NativeEventInfo",
+      "subMembers": [
+        {
+          "name": "NativeEventInfo",
+          "type": "Object",
+          "default": null,
+          "description": "A type that contains fields common for all events (`component`, `element`, `model`) and the `event` field."
+        },
+        {
+          "name": "component",
+          "type": "{WidgetName}",
+          "default": null,
+          "description": "The UI component's instance."
+        },
+        {
+          "name": "element",
+          "type": "DxElement",
+          "default": null,
+          "description": "The UI component's container."
+        },
+        {
+          "name": "event",
+          "type": "event",
+          "default": null,
+          "description": "A native browser event with additional fields from `EventObject`."
+        },
+        {
+          "name": "model",
+          "type": "any",
+          "default": null,
+          "description": "Model data. Available only if you use Knockout."
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "PagerBase",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "displayMode",
+      "type": "Enums.DisplayMode",
+      "default": "'adaptive'",
+      "description": "Specifies the pager's display mode."
+    },
+    {
+      "name": "infoText",
+      "type": "String",
+      "default": "'Page {0} of {1} ({2} items)'",
+      "description": "Specifies the page information text."
+    },
+    {
+      "name": "label",
+      "type": "String",
+      "default": "'Page Navigation'",
+      "description": "Specifies an [aria-label] attribute for the pager."
+    },
+    {
+      "name": "showInfo",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to show the [page information]."
+    },
+    {
+      "name": "showNavigationButtons",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to show navigation buttons."
+    },
+    {
+      "name": "showPageSizeSelector",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to show the page size selector."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

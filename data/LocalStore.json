@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the **LocalStore**."
+        },
+        {
+          "name": "flushInterval",
+          "type": "Number",
+          "default": "10000",
+          "description": "Specifies a delay in milliseconds between when data changes and the moment these changes are saved in the local storage. Applies only if [immediate] is **false**."
+        },
+        {
+          "name": "immediate",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the **LocalStore** saves changes in the local storage immediately."
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the name under which data should be saved in the local storage. The `dx-data-localStore-` prefix will be added to the name."
+        }
+      ]
+    },
+    {
+      "name": "LocalStore",
+      "type": "\"local\",",
+      "default": null,
+      "description": "The **LocalStore** is a store that provides an interface for loading and editing data from HTML Web Storage (also known as <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage\" target=\"_blank\">window.localStorage</a>) and handling related events."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "clear()",
+      "type": null,
+      "default": null,
+      "description": "Removes data from the local storage."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

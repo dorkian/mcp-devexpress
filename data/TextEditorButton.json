@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "TextEditorButton",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "location",
+      "type": "Enums.TextEditorButtonLocation",
+      "default": "'after'",
+      "description": "Specifies whether to place the button before or after the input text field."
+    },
+    {
+      "name": "name",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the button's name."
+    },
+    {
+      "name": "options",
+      "type": "dxButton_Options | undefined",
+      "default": "undefined",
+      "description": "Configures the [Button] UI component used as the action button."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

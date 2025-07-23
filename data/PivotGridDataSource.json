@@ -1,0 +1,550 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the **PivotGridDataSource**."
+        },
+        {
+          "name": "fields",
+          "subMembers": [
+            {
+              "name": "allowCrossGroupCalculation",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to take neighboring groups' summary values into account when calculating a [running total] and [absolute or percent variation]."
+            },
+            {
+              "name": "allowExpandAll",
+              "type": "Boolean",
+              "default": "false",
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "allowFiltering",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user can filter the field's values."
+            },
+            {
+              "name": "allowSorting",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether a user can change the field's sorting."
+            },
+            {
+              "name": "allowSortingBySummary",
+              "type": "Boolean",
+              "default": "false",
+              "description": "<!-- %shortDescription% -->"
+            },
+            {
+              "name": "area",
+              "type": "Enums.PivotGridArea",
+              "default": "undefined",
+              "description": "Specifies the field's area."
+            },
+            {
+              "name": "areaIndex",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the field's order among the other fields in the same area. Corresponds to the field's order in the **fields** array by default."
+            },
+            {
+              "name": "calculateCustomSummary",
+              "type": "function(options)",
+              "default": null,
+              "description": "Specifies a custom aggregate function. Applies only if the [summaryType] is *\"custom\"* and the [remoteOperations] is **false**. Cannot be used with an [XmlaStore]."
+            },
+            {
+              "name": "calculateSummaryValue",
+              "type": "function(e)",
+              "default": "undefined",
+              "description": "Specifies a custom post-processing function for summary values."
+            },
+            {
+              "name": "caption",
+              "type": "String",
+              "default": "undefined",
+              "description": "Specifies the field's caption to be displayed in the [field chooser] and on the [field panel]."
+            },
+            {
+              "name": "customizeText",
+              "type": "function(cellInfo)",
+              "default": null,
+              "description": "Customizes the text displayed in summary cells."
+            },
+            {
+              "name": "dataField",
+              "type": "String",
+              "default": "undefined",
+              "description": "Specifies which data source field provides data for the pivot grid field."
+            },
+            {
+              "name": "dataType",
+              "type": "Enums.PivotGridDataType",
+              "default": "undefined",
+              "description": "Casts field values to a specific data type."
+            },
+            {
+              "name": "displayFolder",
+              "type": "String",
+              "default": "undefined",
+              "description": "Specifies the name of the directory in which the field is located when displayed in the field chooser."
+            },
+            {
+              "name": "expanded",
+              "type": "Boolean",
+              "default": "false",
+              "description": "Specifies whether to expand all items within the field's header level."
+            },
+            {
+              "name": "fields",
+              "type": "Array<Object>",
+              "default": "undefined",
+              "description": "Configures pivot grid fields."
+            },
+            {
+              "name": "filterType",
+              "type": "Enums.FilterType",
+              "default": "'include'",
+              "description": "Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values."
+            },
+            {
+              "name": "filterValues",
+              "type": "Array<any>",
+              "default": "undefined",
+              "description": "Specifies the values by which the field is filtered."
+            },
+            {
+              "name": "format",
+              "type": "Format",
+              "default": "''",
+              "description": "Formats field values before they are displayed."
+            },
+            {
+              "name": "groupIndex",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the field's index within its group."
+            },
+            {
+              "name": "groupInterval",
+              "type": "Enums.PivotGridGroupInterval | Number",
+              "default": "undefined",
+              "description": "Specifies how the field's values are combined into groups for the [headers]. Cannot be used with an [XmlaStore]."
+            },
+            {
+              "name": "groupName",
+              "type": "String",
+              "default": "undefined",
+              "description": "Specifies the name of the field's group."
+            },
+            {
+              "name": "headerFilter",
+              "subMembers": [
+                {
+                  "name": "allowSearch",
+                  "type": "Boolean",
+                  "default": "undefined",
+                  "description": "Specifies whether searching is enabled in the header filter."
+                },
+                {
+                  "name": "allowSelectAll",
+                  "type": "Boolean",
+                  "default": "true",
+                  "description": "Specifies whether a \"Select All\" option is available to users."
+                },
+                {
+                  "name": "headerFilter",
+                  "type": "Object",
+                  "default": null,
+                  "description": "Configures the field's header filter."
+                },
+                {
+                  "name": "height",
+                  "type": "Number",
+                  "default": "undefined",
+                  "description": "Specifies the height of the popup menu containing filtering values."
+                },
+                {
+                  "name": "search",
+                  "subMembers": [
+                    {
+                      "name": "editorOptions",
+                      "type": null,
+                      "default": null,
+                      "description": null
+                    },
+                    {
+                      "name": "search",
+                      "type": "HeaderFilterSearchConfig",
+                      "default": null,
+                      "description": "Configures the header filter's search functionality."
+                    }
+                  ]
+                },
+                {
+                  "name": "width",
+                  "type": "Number",
+                  "default": "undefined",
+                  "description": "Specifies the width of the popup menu containing filtering values."
+                }
+              ]
+            },
+            {
+              "name": "index",
+              "type": "Number",
+              "default": "undefined",
+              "description": "-"
+            },
+            {
+              "name": "isMeasure",
+              "type": "Boolean",
+              "default": "undefined",
+              "description": "Specifies whether the field should be treated as a measure (a field providing data for calculation)."
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "default": "undefined",
+              "description": "Specifies the field's unique identifier."
+            },
+            {
+              "name": "runningTotal",
+              "type": "Enums.PivotGridRunningTotalMode",
+              "default": "undefined",
+              "description": "Specifies whether to calculate the running total by rows or by columns."
+            },
+            {
+              "name": "selector",
+              "type": "function()",
+              "default": "undefined",
+              "description": "Specifies a function that combines field values into groups."
+            },
+            {
+              "name": "showGrandTotals",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to display the field's [grand totals]. Applies only if the field is in the data [area]."
+            },
+            {
+              "name": "showTotals",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether to display the field's [totals]."
+            },
+            {
+              "name": "showValues",
+              "type": "Boolean",
+              "default": "undefined",
+              "description": "Specifies whether to display the field's summary values. Applies only if the field is in the data [area]. Inherits the [showTotals]' value by default."
+            },
+            {
+              "name": "sortBy",
+              "type": "Enums.PivotGridSortBy",
+              "default": "undefined",
+              "description": "Specifies how the field's values in the [headers] should be sorted."
+            },
+            {
+              "name": "sortBySummaryField",
+              "type": "String",
+              "default": "undefined",
+              "description": "Sorts the field's values in the [headers] by the specified measure's summary values. Accepts the measure's [name], [caption], [dataField], or index in the [fields] array."
+            },
+            {
+              "name": "sortBySummaryPath",
+              "type": "Array<Number, String>",
+              "default": "undefined",
+              "description": "Specifies a path to the column or row whose summary values should be used to sort the field's values in the [headers]."
+            },
+            {
+              "name": "sortOrder",
+              "type": "Enums.SortOrder",
+              "default": "'asc'",
+              "description": "Specifies the field values' sorting order."
+            },
+            {
+              "name": "sortingMethod",
+              "type": "function(a, b)",
+              "default": "undefined",
+              "description": "Specifies a custom comparison function that sorts the field's values in the [headers]."
+            },
+            {
+              "name": "summaryDisplayMode",
+              "type": "Enums.PivotGridSummaryDisplayMode",
+              "default": "undefined",
+              "description": "Specifies a predefined post-processing function. Does not apply when the [calculateSummaryValue] property is set."
+            },
+            {
+              "name": "summaryType",
+              "type": "Enums.SummaryType | String",
+              "default": "'count'",
+              "description": "Specifies how to aggregate the field's data. Cannot be used with an [XmlaStore]."
+            },
+            {
+              "name": "visible",
+              "type": "Boolean",
+              "default": "true",
+              "description": "Specifies whether the field is visible in the pivot grid and [field chooser]."
+            },
+            {
+              "name": "width",
+              "type": "Number",
+              "default": "undefined",
+              "description": "Specifies the field's width in pixels when the field is displayed in the pivot grid."
+            },
+            {
+              "name": "wordWrapEnabled",
+              "type": "Boolean",
+              "default": "undefined",
+              "description": "Specifies whether text that does not fit into a [header item] should be wrapped."
+            }
+          ]
+        },
+        {
+          "name": "filter",
+          "type": "Filter expression",
+          "default": null,
+          "description": "Specifies data filtering conditions. Cannot be used with an [XmlaStore]."
+        },
+        {
+          "name": "paginate",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the **PivotGridDataSource** should load data in portions. Can be used only with an [XmlaStore]."
+        },
+        {
+          "name": "remoteOperations",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the data processing operations (filtering, grouping, summary calculation) should be performed on the server."
+        },
+        {
+          "name": "retrieveFields",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to auto-generate pivot grid fields from the [store]'s data."
+        },
+        {
+          "name": "store",
+          "subMembers": [
+            {
+              "name": "store",
+              "type": "Store | Store_Options | XmlaStore | XmlaStore_Options | Object | Array<Object>",
+              "default": null,
+              "description": "Configures the **DataSource**'s underlying store."
+            },
+            {
+              "name": "type",
+              "type": "Enums.PivotGridStoreType",
+              "default": null,
+              "description": "Specifies the **PivotGridDataSource**'s storage type."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PivotGridDataSource",
+      "type": "\"date\"",
+      "default": null,
+      "description": "The **PivotGridDataSource** is an object that provides an API for processing data from an underlying [store]. This object is used in the [PivotGrid] UI component."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "collapseAll(id)",
+      "type": null,
+      "default": null,
+      "description": "Collapses all header items of a field with the specified identifier."
+    },
+    {
+      "name": "collapseHeaderItem(area_path)",
+      "type": null,
+      "default": null,
+      "description": "Collapses a specific header item."
+    },
+    {
+      "name": "createDrillDownDataSource(options)",
+      "type": null,
+      "default": null,
+      "description": "Provides access to the [facts] that were used to calculate a specific summary value."
+    },
+    {
+      "name": "dispose()",
+      "type": null,
+      "default": null,
+      "description": "Disposes of all the resources allocated to the **PivotGridDataSource** instance."
+    },
+    {
+      "name": "expandAll(id)",
+      "type": null,
+      "default": null,
+      "description": "Expands all the header items of a field with the specified identifier."
+    },
+    {
+      "name": "expandHeaderItem(area_path)",
+      "type": null,
+      "default": null,
+      "description": "Expands a specific header item."
+    },
+    {
+      "name": "field(id)",
+      "type": "\"sum\",",
+      "default": null,
+      "description": "Gets all the properties of a field with the specified identifier."
+    },
+    {
+      "name": "field(id_options)",
+      "type": "\"sum\",",
+      "default": null,
+      "description": "Updates field options' values."
+    },
+    {
+      "name": "fields()",
+      "type": null,
+      "default": null,
+      "description": "Gets all the fields including those [generated automatically]."
+    },
+    {
+      "name": "fields(fields)",
+      "type": "\"date\",",
+      "default": null,
+      "description": "Specifies a new [fields] collection."
+    },
+    {
+      "name": "filter()",
+      "type": null,
+      "default": null,
+      "description": "Gets the [filter] property's value. Does not affect an [XmlaStore]."
+    },
+    {
+      "name": "filter(filterExpr)",
+      "type": null,
+      "default": null,
+      "description": "Sets the [filter] property's value. Does not affect an [XmlaStore]."
+    },
+    {
+      "name": "getAreaFields(area_collectGroups)",
+      "type": null,
+      "default": null,
+      "description": "Gets all the fields within an area."
+    },
+    {
+      "name": "getData()",
+      "type": null,
+      "default": null,
+      "description": "Gets the loaded data. Another data portion is loaded every time a [header item] is expanded."
+    },
+    {
+      "name": "isLoading()",
+      "type": null,
+      "default": null,
+      "description": "Checks whether the **PivotGridDataSource** is loading data."
+    },
+    {
+      "name": "load()",
+      "type": null,
+      "default": null,
+      "description": "Starts loading data."
+    },
+    {
+      "name": "off(eventName)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "off(eventName_eventHandler)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "on(eventName_eventHandler)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "on(events)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "reload()",
+      "type": null,
+      "default": null,
+      "description": "Clears the loaded **PivotGridDataSource** data and calls the [load()].md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method."
+    },
+    {
+      "name": "state()",
+      "type": null,
+      "default": null,
+      "description": "Gets the current **PivotGridDataSource** state. Part of the PivotGrid UI component's [state storing] feature."
+    },
+    {
+      "name": "state(state)",
+      "type": null,
+      "default": null,
+      "description": "Sets the **PivotGridDataSource** state. Part of the PivotGrid UI component's [state storing] feature."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onChanged",
+      "type": "function()",
+      "default": null,
+      "description": "A function that is executed after data is successfully loaded."
+    },
+    {
+      "name": "onFieldsPrepared",
+      "type": "function(fields)",
+      "default": null,
+      "description": "A function that is executed when all fields are loaded from the [store] and they are ready to be displayed in the PivotGrid."
+    },
+    {
+      "name": "onLoadError",
+      "type": "function(error)",
+      "default": null,
+      "description": "A function that is executed when data loading fails."
+    },
+    {
+      "name": "onLoadingChanged",
+      "type": "function(isLoading)",
+      "default": null,
+      "description": "A function that is executed when the data loading status changes."
+    },
+    {
+      "name": "changed",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after data is successfully loaded."
+    },
+    {
+      "name": "fieldsPrepared",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when all fields are loaded from the [store] and they are ready to be displayed in the PivotGrid."
+    },
+    {
+      "name": "loadError",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when data loading fails."
+    },
+    {
+      "name": "loadingChanged",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the data loading status changes."
+    }
+  ],
+  "Types": []
+}

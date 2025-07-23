@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "RequestParams",
+      "type": "Object",
+      "default": null,
+      "description": "An object with request parameters for AI service."
+    },
+    {
+      "name": "prompt",
+      "type": "Prompt",
+      "default": null,
+      "description": "The prompt sent to the AI model."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "VisualRange",
+      "type": "Object",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "endValue",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "The range's end value."
+    },
+    {
+      "name": "length",
+      "type": "Number | Object | Enums.TimeInterval | undefined",
+      "default": "undefined",
+      "description": "The range's length."
+    },
+    {
+      "name": "startValue",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "The range's start value."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,193 @@
+{
+  "properties": [
+    {
+      "name": "CSS Classes",
+      "type": null,
+      "default": null,
+      "description": "This section describes the DevExtreme CSS classes you can use to define the appearance of an element."
+    },
+    {
+      "name": "dx-card",
+      "type": null,
+      "default": null,
+      "description": "This class adds a shadow (in Material and Fluent themes) or a border (in Generic themes) to elements to give them an appearance similar to that of Material Design's <a href=\"https://material.io/design/components/cards.html\" target=\"_blank\">cards</a>."
+    },
+    {
+      "name": "dx-clearfix",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to automatically increase the height of this element if floating child elements overflow the current element box."
+    },
+    {
+      "name": "dx-field-label",
+      "type": null,
+      "default": null,
+      "description": "A class used to display a field name within the [dx-field] element."
+    },
+    {
+      "name": "dx-field-value-static",
+      "type": null,
+      "default": null,
+      "description": "A class used to display a field value containing a static text within the [dx-field] element."
+    },
+    {
+      "name": "dx-field-value",
+      "type": null,
+      "default": null,
+      "description": "A class used to display a field value containing a UI component within the [dx-field] element."
+    },
+    {
+      "name": "dx-field",
+      "type": null,
+      "default": null,
+      "description": "Defines the appearance of an element displaying a field-value pair within a [dx-fieldset] element."
+    },
+    {
+      "name": "dx-fieldset-header",
+      "type": null,
+      "default": null,
+      "description": "A class used to display header of a [dx-fieldset] element."
+    },
+    {
+      "name": "dx-fieldset",
+      "type": null,
+      "default": null,
+      "description": "Defines the appearance of an element displaying a list of field-value pairs."
+    },
+    {
+      "name": "dx-icon-IconName",
+      "type": null,
+      "default": null,
+      "description": "Use this class to add a custom icon to the style sheet used in your application."
+    },
+    {
+      "name": "dx-scheduler-cell-sizes-horizontal",
+      "type": null,
+      "default": null,
+      "description": "Use this class to customize the Scheduler's table cells and the cells above them (in the day scale, All-day panel, etc.). For example, you can change the cell's width and keep all the elements aligned. For the **day**, **week**, **workWeek**, and **month** view types, this class applies only if [crossScrollingEnabled] is **true**."
+    },
+    {
+      "name": "dx-scheduler-cell-sizes-vertical",
+      "type": null,
+      "default": null,
+      "description": "Use this class to customize the Scheduler's table cells and the cells to the left of them (in the time scale). For example, you can change the cell's height and keep all the elements aligned. For timeline view types, this class applies only if [crossScrollingEnabled] is **true**."
+    },
+    {
+      "name": "dx-state-active",
+      "type": null,
+      "default": null,
+      "description": "This class is applied to a UI component or UI component element when it is touched or clicked."
+    },
+    {
+      "name": "dx-state-disabled",
+      "type": null,
+      "default": null,
+      "description": "Set this class to a UI component element to disable the UI component."
+    },
+    {
+      "name": "dx-state-focused",
+      "type": null,
+      "default": null,
+      "description": "This class is applied to a UI component or UI component element when it is focused."
+    },
+    {
+      "name": "dx-state-hover",
+      "type": null,
+      "default": null,
+      "description": "This class is applied to a UI component or UI component element when the mouse pointer is over it."
+    },
+    {
+      "name": "dx-state-invisible",
+      "type": null,
+      "default": null,
+      "description": "Set this class to a UI component element to hide the UI component."
+    },
+    {
+      "name": "dx-theme-accent-as-background-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's background with the current theme's accent color."
+    },
+    {
+      "name": "dx-theme-accent-as-border-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's borders with the current theme's accent color."
+    },
+    {
+      "name": "dx-theme-accent-as-text-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's text with the current theme's accent color."
+    },
+    {
+      "name": "dx-theme-background-color-as-border-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's borders with the current theme's background color."
+    },
+    {
+      "name": "dx-theme-background-color-as-text-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's text with the current theme's background color."
+    },
+    {
+      "name": "dx-theme-background-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to apply the current theme's background color to this element."
+    },
+    {
+      "name": "dx-theme-border-color-as-background-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's background with the current theme's border color."
+    },
+    {
+      "name": "dx-theme-border-color-as-text-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's text with the current theme's border color."
+    },
+    {
+      "name": "dx-theme-border-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to apply the current theme's border color to this element."
+    },
+    {
+      "name": "dx-theme-text-color-as-background-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's background with the current theme's text color."
+    },
+    {
+      "name": "dx-theme-text-color-as-border-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to color the element's borders with the current theme's text color."
+    },
+    {
+      "name": "dx-theme-text-color",
+      "type": null,
+      "default": null,
+      "description": "Set this class to an element to apply the current theme's text color to this element."
+    },
+    {
+      "name": "dx-translate-disabled",
+      "type": null,
+      "default": null,
+      "description": "Set this class to a UI component element to disable translating the UI component text to a local language."
+    },
+    {
+      "name": "dx-user-select",
+      "type": null,
+      "default": null,
+      "description": "Set this class to a &lt;span&gt; element to enable a user to select the text contained in this element."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

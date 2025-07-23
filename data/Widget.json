@@ -1,0 +1,128 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "An object defining common configuration properties for all UI components."
+        },
+        {
+          "name": "accessKey",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the shortcut key that sets focus on the UI component."
+        },
+        {
+          "name": "activeStateEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component changes its visual state as a result of user interaction."
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component responds to user interaction."
+        },
+        {
+          "name": "focusStateEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component can be focused using keyboard navigation."
+        },
+        {
+          "name": "hint",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies text for a hint that appears when a user pauses on the UI component."
+        },
+        {
+          "name": "hoverStateEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component changes its state when a user pauses on it."
+        },
+        {
+          "name": "tabIndex",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the number of the element when the Tab key is used for navigating."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the UI component is visible."
+        }
+      ]
+    },
+    {
+      "name": "Widget",
+      "type": null,
+      "default": null,
+      "description": "The base class for UI components."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "focus()",
+      "type": null,
+      "default": null,
+      "description": "Sets focus on the UI component."
+    },
+    {
+      "name": "registerKeyHandler(key_handler)",
+      "type": null,
+      "default": null,
+      "description": "Registers a handler to be executed when a user presses a specific key."
+    },
+    {
+      "name": "repaint()",
+      "type": null,
+      "default": null,
+      "description": "Renders the component again without reloading data. Use the method to update the component's markup and appearance dynamically."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onContentReady",
+      "type": "function(e)",
+      "default": "null",
+      "description": "A function that is executed when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "onFocusIn",
+      "type": "function(e)",
+      "default": "null",
+      "description": "##### param(e): Object"
+    },
+    {
+      "name": "onFocusOut",
+      "type": "function(e)",
+      "default": "null",
+      "description": "##### param(e): Object"
+    },
+    {
+      "name": "contentReady",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the UI component is rendered and each time the component is repainted."
+    },
+    {
+      "name": "focusIn",
+      "type": "eventType",
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "focusOut",
+      "type": "eventType",
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Types": []
+}

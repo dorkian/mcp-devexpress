@@ -1,0 +1,181 @@
+{
+  "properties": [
+    {
+      "name": "E4000",
+      "type": null,
+      "default": null,
+      "description": "Signals that a data-related error occurred in external code with which the DevExtreme data works."
+    },
+    {
+      "name": "E4001",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the an unknown aggregating function is specified."
+    },
+    {
+      "name": "E4002",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the unsupported OData version in specified for the ODataStore or ODataContext object."
+    },
+    {
+      "name": "E4003",
+      "type": null,
+      "default": null,
+      "description": "Occurs when an unknown filter operation is used."
+    },
+    {
+      "name": "E4004",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the [thenby()].md '/Documentation/ApiReference/Data_Layer/Query/Methods/#thenBygetter') method is called before the [sortby()].md '/Documentation/ApiReference/Data_Layer/Query/Methods/#sortBygetter') method."
+    },
+    {
+      "name": "E4005",
+      "type": null,
+      "default": null,
+      "description": "Occurs when calling a key-dependent method of a store with an unspecified key property."
+    },
+    {
+      "name": "E4006",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the value that is set to the [data] configuration property of the **ArrayStore** object is not an array."
+    },
+    {
+      "name": "E4007",
+      "type": null,
+      "default": null,
+      "description": "Occurs when an auto-generated key is required for a Data Store with a compound key expression."
+    },
+    {
+      "name": "E4008",
+      "type": null,
+      "default": null,
+      "description": "Occurs when items with duplicated keys are inserted."
+    },
+    {
+      "name": "E4009",
+      "type": null,
+      "default": null,
+      "description": "Occurs in a store when its [byKey(key)].md '/Documentation/ApiReference/Data_Layer/ArrayStore/Methods/#byKeykey') function does not return a value."
+    },
+    {
+      "name": "E4010",
+      "type": null,
+      "default": null,
+      "description": "Occurs when creating the [Query] object by using the **createQuery** method of a CustomStore."
+    },
+    {
+      "name": "E4011",
+      "type": null,
+      "default": null,
+      "description": "Occurs when an unimplemented CustomStore method is called."
+    },
+    {
+      "name": "E4012",
+      "type": null,
+      "default": null,
+      "description": "Occurs when a method implemented for a Custom Store returns an unexpected result."
+    },
+    {
+      "name": "E4013",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the [name] property is not specified for a [LocalStore] instance."
+    },
+    {
+      "name": "E4014",
+      "type": null,
+      "default": null,
+      "description": "Occurs when an unknown key type is detected."
+    },
+    {
+      "name": "E4015",
+      "type": null,
+      "default": null,
+      "description": "Occurs when calling the [objectLink(entityAlias, key)].md '/Documentation/ApiReference/Data_Layer/ODataContext/Methods/#objectLinkentityAlias_key') method and passing an entity alias that is not registered for the given [ODataCOntext] object."
+    },
+    {
+      "name": "E4016",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the [compileSetter(expr)].md '/Documentation/ApiReference/Data_Layer/Utils/#compileSetterexpr') method is called with **this** passed as a parameter."
+    },
+    {
+      "name": "E4017",
+      "type": null,
+      "default": null,
+      "description": "Occurs when calling the [update(key,values)] method to modify a key(s)."
+    },
+    {
+      "name": "E4018",
+      "type": null,
+      "default": null,
+      "description": "Occurs when the server returns a non-numeric value after the [totalCount].md '/Documentation/ApiReference/Data_Layer/ODataStore/Methods/#totalCountoptions') method of an ODataStore instance is called."
+    },
+    {
+      "name": "E4019",
+      "type": null,
+      "default": null,
+      "description": "Occurs if a [filter expression] contains different group operators within a single group."
+    },
+    {
+      "name": "E4020",
+      "type": null,
+      "default": null,
+      "description": "Occurs if the [store.type] property of a DataSource instance holds an unknown store type."
+    },
+    {
+      "name": "E4021",
+      "type": null,
+      "default": null,
+      "description": "Occurs if [CustomStore].[load] returns an `undefined` [LoadResultObject].**totalCount**, or if the **CustomStore**.[totalCount] method is not specified."
+    },
+    {
+      "name": "E4022",
+      "type": null,
+      "default": null,
+      "description": "Occurs if [CustomStore].[load] returns an `undefined` [LoadResultObject].**groupCount**."
+    },
+    {
+      "name": "E4023",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [XmlaStore] if the received data cannot be parsed into XML."
+    },
+    {
+      "name": "E4024",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [ODataStore] when a string function (*\"startswith\"*, *\"endswith\"*, *\"contains\"*, *\"notcontains\"*) is used to search or filter a non-string data field."
+    },
+    {
+      "name": "Errors and Warnings",
+      "type": null,
+      "default": null,
+      "description": "This section lists errors and warnings that may occur when using the DevExtreme Data Library."
+    },
+    {
+      "name": "W4000",
+      "type": null,
+      "default": null,
+      "description": "Occurs when data returned from a server has an incorrect structure."
+    },
+    {
+      "name": "W4001",
+      "type": null,
+      "default": null,
+      "description": "Occurs in the [ODataStore] when a single field is assigned both to the [keyType] and [fieldTypes] properties. Remove the field's name from one of the properties."
+    },
+    {
+      "name": "W4002",
+      "type": null,
+      "default": null,
+      "description": "Produced by the [XmlaStore] when an error occurs on loading data for certain cells. For details on the error, refer to the XMLA specification."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,97 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the **ODataContext**'s configuration properties."
+        },
+        {
+          "name": "beforeSend",
+          "type": "function(options)",
+          "default": null,
+          "description": "Specifies a function that customizes the request before it is sent to the server."
+        },
+        {
+          "name": "deserializeDates",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether stores in the **ODataContext** serialize/parse date-time values."
+        },
+        {
+          "name": "entities",
+          "type": "any",
+          "default": null,
+          "description": "Specifies entity collections to be accessed."
+        },
+        {
+          "name": "errorHandler",
+          "type": "function(e)",
+          "default": null,
+          "description": "Specifies a function that is executed when the **ODataContext** throws an error."
+        },
+        {
+          "name": "filterToLower",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: *\"startswith\"*, *\"endswith\"*, *\"contains\"*, and *\"notcontains\"*."
+        },
+        {
+          "name": "jsonp",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether data should be sent using <a href=\"https://www.w3schools.com/js/js_json_jsonp.asp\" target=\"_blank\">JSONP</a>."
+        },
+        {
+          "name": "url",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the URL of an OData service."
+        },
+        {
+          "name": "version",
+          "type": "Number",
+          "default": "4",
+          "description": "Specifies the OData version."
+        },
+        {
+          "name": "withCredentials",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request."
+        }
+      ]
+    },
+    {
+      "name": "ODataContext",
+      "type": "\"Int32\"",
+      "default": null,
+      "description": "The **ODataContext** is an object that provides access to an entire OData service."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "get(operationName_params)",
+      "type": null,
+      "default": null,
+      "description": "Invokes an OData operation that returns a value."
+    },
+    {
+      "name": "invoke(operationName_params_httpMethod)",
+      "type": null,
+      "default": null,
+      "description": "Invokes an OData operation that returns nothing."
+    },
+    {
+      "name": "objectLink(entityAlias_key)",
+      "type": "\"Int32\"",
+      "default": null,
+      "description": "Gets a link to an entity with a specific key."
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

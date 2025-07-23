@@ -1,0 +1,47 @@
+{
+  "properties": [
+    {
+      "name": "Markup Components",
+      "type": null,
+      "default": null,
+      "description": "This section describes components that can be used when defining a UI component markup."
+    },
+    {
+      "name": "dxItem",
+      "type": "any",
+      "default": null,
+      "description": "Specifies markup for a UI component item."
+    },
+    {
+      "name": "dxTemplate",
+      "subMembers": [
+        {
+          "name": "Properties",
+          "subMembers": [
+            {
+              "name": "Configuration",
+              "type": null,
+              "default": null,
+              "description": "This section describes configuration properties used to create a template."
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the name of the template."
+            }
+          ]
+        },
+        {
+          "name": "dxTemplate",
+          "type": "Object",
+          "default": null,
+          "description": "A custom template's markup."
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

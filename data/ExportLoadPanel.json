@@ -1,0 +1,67 @@
+{
+  "properties": [
+    {
+      "name": "ExportLoadPanel",
+      "type": "Object",
+      "default": null,
+      "description": "Configures the load panel."
+    },
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the load panel is enabled."
+    },
+    {
+      "name": "height",
+      "type": "Number",
+      "default": "90",
+      "description": "Specifies the height of the load panel in pixels."
+    },
+    {
+      "name": "indicatorSrc",
+      "type": "String",
+      "default": "''",
+      "description": "Specifies a URL pointing to an image to be used as a loading indicator."
+    },
+    {
+      "name": "shading",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to shade the UI component when the load panel is shown."
+    },
+    {
+      "name": "shadingColor",
+      "type": "String",
+      "default": "''",
+      "description": "Specifies the shading color. Applies only if [shading] is **true**."
+    },
+    {
+      "name": "showIndicator",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether to show the loading indicator."
+    },
+    {
+      "name": "showPane",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether to show the pane of the load panel."
+    },
+    {
+      "name": "text",
+      "type": "String",
+      "default": "'Exporting...'",
+      "description": "Specifies text displayed on the load panel."
+    },
+    {
+      "name": "width",
+      "type": "Number",
+      "default": "200",
+      "description": "Specifies the width of the load panel in pixels."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

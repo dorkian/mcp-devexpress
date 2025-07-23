@@ -1,0 +1,1104 @@
+{
+  "properties": [
+    {
+      "name": "CellRange",
+      "subMembers": [
+        {
+          "name": "CellRange",
+          "type": "Object",
+          "default": null,
+          "description": "The coordinates of the exported DataGrid in the Excel file."
+        },
+        {
+          "name": "from",
+          "type": "CellAddress",
+          "default": null,
+          "description": "Coordinates of the top left cell."
+        },
+        {
+          "name": "to",
+          "type": "CellAddress",
+          "default": null,
+          "description": "Coordinates of the bottom right cell."
+        }
+      ]
+    },
+    {
+      "name": "EventObject",
+      "subMembers": [
+        {
+          "name": "Fields",
+          "subMembers": [
+            {
+              "name": "Fields",
+              "type": null,
+              "default": null,
+              "description": "Fields that provide information about the event."
+            },
+            {
+              "name": "currentTarget",
+              "type": "Element",
+              "default": null,
+              "description": "The DOM element within the current event propagation stage."
+            },
+            {
+              "name": "data",
+              "type": "any",
+              "default": null,
+              "description": "Data passed to the event handler."
+            },
+            {
+              "name": "delegateTarget",
+              "type": "Element",
+              "default": null,
+              "description": "The DOM element to which the currently-called event handler was attached."
+            },
+            {
+              "name": "target",
+              "type": "Element",
+              "default": null,
+              "description": "The DOM element that initiated the event."
+            }
+          ]
+        },
+        {
+          "name": "EventObject",
+          "type": null,
+          "default": null,
+          "description": "Describes **EventObject**, a counterpart of the <a href=\"http://api.jquery.com/category/events/event-object/\" target=\"_blank\">jQuery.Event</a> to be used without jQuery."
+        }
+      ]
+    },
+    {
+      "name": "ExcelDataGridCell",
+      "subMembers": [
+        {
+          "name": "ExcelDataGridCell",
+          "type": "Object",
+          "default": null,
+          "description": "A [DataGrid] cell to be exported to Excel."
+        },
+        {
+          "name": "column",
+          "type": "dxDataGridColumn",
+          "default": null,
+          "description": "The configuration of the cell's column."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": null,
+          "description": "The [data object] of the cell's row."
+        },
+        {
+          "name": "groupIndex",
+          "type": "Number",
+          "default": null,
+          "description": "The [group index] of the cell's row. Available when the [rowType] is *\"group\"*."
+        },
+        {
+          "name": "groupSummaryItems",
+          "subMembers": [
+            {
+              "name": "groupSummaryItems",
+              "type": "Array<Object>",
+              "default": null,
+              "description": "Information about [group summary items] the cell represents."
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "default": null,
+              "description": "The group summary item's [identifier]."
+            },
+            {
+              "name": "value",
+              "type": "any",
+              "default": null,
+              "description": "The group summary item's raw value."
+            }
+          ]
+        },
+        {
+          "name": "rowType",
+          "type": "String",
+          "default": null,
+          "description": "The [type] of the cell's row."
+        },
+        {
+          "name": "totalSummaryItemName",
+          "type": "String",
+          "default": null,
+          "description": "The [identifier] of the total summary item that the cell represents."
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "default": null,
+          "description": "The cell's raw value."
+        }
+      ]
+    },
+    {
+      "name": "ExcelExportDataGridProps",
+      "subMembers": [
+        {
+          "name": "ExcelExportDataGridProps",
+          "type": "Object",
+          "default": null,
+          "description": "Properties that can be passed to the [exportDataGrid(options)].md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') method from the [excelExporter] module."
+        },
+        {
+          "name": "autoFilterEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to enable <a href=\"https://support.office.com/en-us/article/quick-start-filter-data-by-using-an-autofilter-08647e19-11d1-42f6-b376-27b932e186e0\">Excel filtering</a> in the document."
+        },
+        {
+          "name": "component",
+          "type": "dxDataGrid | undefined",
+          "default": "undefined",
+          "description": "A DataGrid instance. This setting is required."
+        },
+        {
+          "name": "customizeCell",
+          "type": "function(options)",
+          "default": null,
+          "description": "Customizes an Excel cell after creation."
+        },
+        {
+          "name": "selectedRowsOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to export only [selected] rows."
+        },
+        {
+          "name": "topLeftCell",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ExcelPivotGridCell",
+      "subMembers": [
+        {
+          "name": "ExcelPivotGridCell",
+          "type": null,
+          "default": null,
+          "description": "A [PivotGrid] cell to be exported to Excel."
+        },
+        {
+          "name": "area",
+          "type": "String",
+          "default": null,
+          "description": "The [area] to which the cell belongs."
+        },
+        {
+          "name": "columnIndex",
+          "type": "Number",
+          "default": null,
+          "description": "A zero-based index that indicates the position of the cell's column."
+        },
+        {
+          "name": "headerType",
+          "type": "String",
+          "default": null,
+          "description": "The header type. Available if the cell belongs to the [field panel]."
+        },
+        {
+          "name": "rowIndex",
+          "type": "Number",
+          "default": null,
+          "description": "A zero-based index that indicates the position of the cell's row."
+        }
+      ]
+    },
+    {
+      "name": "GanttExportOptions",
+      "subMembers": [
+        {
+          "name": "GanttExportOptions",
+          "type": "common/export/pdf:GanttExportOptions",
+          "default": null,
+          "description": "Properties that you can pass as a parameter to the [exportGantt(options)].md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method from the [pdfExporter] module."
+        },
+        {
+          "name": "component",
+          "type": "dxGantt | undefined",
+          "default": "undefined",
+          "description": "A Gantt instance. This setting is required."
+        },
+        {
+          "name": "createDocumentMethod",
+          "type": "function(options)",
+          "default": null,
+          "description": "A function that creates a PDF document."
+        },
+        {
+          "name": "dateRange",
+          "type": "Enums.GanttPdfExportDateRange | Object",
+          "default": null,
+          "description": "Specifies the date range for which to export tasks."
+        },
+        {
+          "name": "exportMode",
+          "type": "Enums.GanttPdfExportMode",
+          "default": "'all'",
+          "description": "Specifies which part of the component to export (chart area, tree list area, or the entire component)."
+        },
+        {
+          "name": "fileName",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the file name."
+        },
+        {
+          "name": "font",
+          "type": "GanttExportFont",
+          "default": null,
+          "description": "Specifies the font."
+        },
+        {
+          "name": "format",
+          "type": "String | Object | undefined",
+          "default": "undefined",
+          "description": "Specifies the document size."
+        },
+        {
+          "name": "jsPDFDocument",
+          "type": "Object | undefined",
+          "default": "undefined",
+          "description": "A <a href=\"https://github.com/MrRio/jsPDF\" target=\"_blank\">jsPDF</a> instance. This setting is required."
+        },
+        {
+          "name": "landscape",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to use horizontal orientation for the document."
+        },
+        {
+          "name": "margins",
+          "type": "Object | undefined",
+          "default": "undefined",
+          "description": "Specifies the outer indents of the exported area."
+        }
+      ]
+    },
+    {
+      "name": "GlobalConfig",
+      "subMembers": [
+        {
+          "name": "GlobalConfig",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies settings that affect all DevExtreme UI components."
+        },
+        {
+          "name": "decimalSeparator",
+          "type": "String",
+          "default": "'.'",
+          "description": "A decimal separator. No longer applies."
+        },
+        {
+          "name": "defaultCurrency",
+          "type": "String",
+          "default": "'USD'",
+          "description": "The default currency. Accepts a 3-letter <a href=\"https://www.currency-iso.org/en/home/tables/table-a1.html\" target=\"_blank\">ISO 4217</a> code."
+        },
+        {
+          "name": "defaultUseCurrencyAccountingStyle",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to apply the accounting style to formatted numbers of the `currency` [type]."
+        },
+        {
+          "name": "editorStylingMode",
+          "type": "Enums.EditorStyle | undefined",
+          "default": "undefined",
+          "description": "Specifies how editors' text fields are styled in your application."
+        },
+        {
+          "name": "floatingActionButtonConfig",
+          "subMembers": [
+            {
+              "name": "closeIcon",
+              "type": "String",
+              "default": "'close'",
+              "description": "Specifies the icon the FAB displays when the speed dial is opened."
+            },
+            {
+              "name": "direction",
+              "type": "Enums.FloatingActionButtonDirection",
+              "default": "'auto'",
+              "description": "Specifies the direction in which to open the speed dial menu."
+            },
+            {
+              "name": "floatingActionButtonConfig",
+              "type": "Object",
+              "default": null,
+              "description": "Configures a Floating Action Button (FAB) that emits a stack of [related actions] (speed dial)."
+            },
+            {
+              "name": "icon",
+              "type": "String",
+              "default": "'add'",
+              "description": "Specifies the icon the FAB displays when the speed dial is closed."
+            },
+            {
+              "name": "label",
+              "type": "String",
+              "default": "''",
+              "description": "Specifies the text label displayed inside the FAB."
+            },
+            {
+              "name": "maxSpeedDialActionCount",
+              "type": "Number",
+              "default": "5",
+              "description": "Limits the number of [speed dial actions]."
+            },
+            {
+              "name": "position",
+              "type": "Enums.PositionAlignment | PositionConfig | function()",
+              "default": "'{ at: \"right bottom\", my: \"right bottom\", offset: \"-16 -16\" }'",
+              "description": "Positions the FAB on the screen."
+            },
+            {
+              "name": "shading",
+              "type": "Boolean",
+              "default": "false",
+              "description": "If **true**, the background should be shaded when the speed dial menu is open."
+            }
+          ]
+        },
+        {
+          "name": "forceIsoDateParsing",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether dates are parsed and serialized according to the ISO 8601 standard in all browsers."
+        },
+        {
+          "name": "licenseKey",
+          "type": "String",
+          "default": null,
+          "description": "A license key."
+        },
+        {
+          "name": "oDataFilterToLower",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to convert string values to lowercase in filter and search requests to OData services. Applies to the following operations: *\"startswith\"*, *\"endswith\"*, *\"contains\"*, and *\"notcontains\"*."
+        },
+        {
+          "name": "rtlEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI components support a right-to-left representation. Available for individual UI components as well."
+        },
+        {
+          "name": "serverDecimalSeparator",
+          "type": "String",
+          "default": "'.'",
+          "description": "The decimal separator that is used when submitting a value to the server."
+        },
+        {
+          "name": "thousandsSeparator",
+          "type": "String",
+          "default": "','",
+          "description": "A group separator. No longer applies."
+        },
+        {
+          "name": "useJQuery",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether DevExtreme UI components use jQuery."
+        }
+      ]
+    },
+    {
+      "name": "Object Structures",
+      "type": null,
+      "default": null,
+      "description": "This section describes the structure of the objects that are used in API multiple times as function parameters or property values."
+    },
+    {
+      "name": "PdfCell",
+      "subMembers": [
+        {
+          "name": "PdfCell",
+          "type": "Object",
+          "default": null,
+          "description": "An object that configures export to PDF settings in a [DataGrid] cell."
+        },
+        {
+          "name": "backgroundColor",
+          "type": "String",
+          "default": "'#FFFFFF'",
+          "description": "Specifies the background color of the cell."
+        },
+        {
+          "name": "borderColor",
+          "type": "String",
+          "default": "'#979797'",
+          "description": "Specifies the color of the cell's outer borders."
+        },
+        {
+          "name": "borderWidth",
+          "type": "Number",
+          "default": "0.5",
+          "description": "Specifies the width of the cell's borders."
+        },
+        {
+          "name": "drawBottomBorder",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to show cell's bottom border."
+        },
+        {
+          "name": "drawLeftBorder",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to show cell's left border."
+        },
+        {
+          "name": "drawRightBorder",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to show cell's right border."
+        },
+        {
+          "name": "drawTopBorder",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to show cell's top border."
+        },
+        {
+          "name": "font",
+          "subMembers": [
+            {
+              "name": "font",
+              "type": "Object",
+              "default": null,
+              "description": "An object that contains information about the font's size, name, and style."
+            },
+            {
+              "name": "name",
+              "type": "String",
+              "default": null,
+              "description": "Specifies the font name."
+            },
+            {
+              "name": "size",
+              "type": "Number",
+              "default": "10",
+              "description": "Specifies the font size."
+            },
+            {
+              "name": "style",
+              "type": "String",
+              "default": "'normal'",
+              "description": "Specifies the font style."
+            }
+          ]
+        },
+        {
+          "name": "horizontalAlign",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the horizontal alignment for the text inside the exported cell."
+        },
+        {
+          "name": "padding",
+          "subMembers": [
+            {
+              "name": "bottom",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the bottom padding of the DataGrid cell."
+            },
+            {
+              "name": "left",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the left padding of the DataGrid cell."
+            },
+            {
+              "name": "padding",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the top, bottom, left, and right paddings of the DataGrid cell."
+            },
+            {
+              "name": "right",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the right padding of the DataGrid cell."
+            },
+            {
+              "name": "top",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the top padding of the DataGrid cell."
+            }
+          ]
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "The cell's text."
+        },
+        {
+          "name": "textColor",
+          "type": "String",
+          "default": "'#000000'",
+          "description": "Specifies the text color for the cell."
+        },
+        {
+          "name": "verticalAlign",
+          "type": "String",
+          "default": "'middle'",
+          "description": "Specifies the vertical alignment for the text inside the exported cell."
+        },
+        {
+          "name": "wordWrapEnabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to enable word wrapping in the resulting PDF file."
+        }
+      ]
+    },
+    {
+      "name": "PdfDataGridCell",
+      "type": null,
+      "default": null,
+      "description": "A [DataGrid] cell to be exported to PDF."
+    },
+    {
+      "name": "PdfExportDataGridProps",
+      "subMembers": [
+        {
+          "name": "PdfExportDataGridProps",
+          "type": "Object",
+          "default": null,
+          "description": "Properties that can be passed as a parameter to the [exportDataGrid(options)].md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method from the [pdfExporter] module."
+        },
+        {
+          "name": "columnWidths",
+          "type": "Array<Number> | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom width for the exported DataGrid columns."
+        },
+        {
+          "name": "component",
+          "type": "dxDataGrid | undefined",
+          "default": "undefined",
+          "description": "A DataGrid instance. This setting is required."
+        },
+        {
+          "name": "customDrawCell",
+          "type": "function(options)",
+          "default": null,
+          "description": "A function that allows you to draw cell content of the exported DataGrid. This function is executed before the cell is exported."
+        },
+        {
+          "name": "customizeCell",
+          "type": "function(options)",
+          "default": null,
+          "description": "Customizes a cell in PDF after creation."
+        },
+        {
+          "name": "indent",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the width of the indent of data rows relative to their group header row."
+        },
+        {
+          "name": "jsPDFDocument",
+          "type": "Object | undefined",
+          "default": "undefined",
+          "description": "A <a href=\"https://github.com/MrRio/jsPDF\" target=\"_blank\">jsPDF</a> instance. This setting is required."
+        },
+        {
+          "name": "loadPanel",
+          "type": "ExportLoadPanel",
+          "default": null,
+          "description": "Configures the load panel."
+        },
+        {
+          "name": "margin",
+          "subMembers": [
+            {
+              "name": "bottom",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the margin at the bottom of the page."
+            },
+            {
+              "name": "left",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the margin at the left side of the page."
+            },
+            {
+              "name": "margin",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the margin for the top, bottom, left, and right sides of the exported Grid."
+            },
+            {
+              "name": "right",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the margin at the right side of the page."
+            },
+            {
+              "name": "top",
+              "type": "Number",
+              "default": null,
+              "description": "Specifies the margin at the top of the page."
+            }
+          ]
+        },
+        {
+          "name": "repeatHeaders",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to repeat the DataGrid column headers on each page."
+        },
+        {
+          "name": "selectedRowsOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not to export only [selected] rows."
+        },
+        {
+          "name": "topLeft",
+          "subMembers": [
+            {
+              "name": "topLeft",
+              "type": "Object",
+              "default": null,
+              "description": "Specifies the top left position of the DataGrid in the exported PDF document. Contains x and y properties. You can locate this position only below the page margins."
+            },
+            {
+              "name": "x",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the horizontal position of the exported DataGrid."
+            },
+            {
+              "name": "y",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies the vertical position of the exported DataGrid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PivotGridExportOptions",
+      "subMembers": [
+        {
+          "name": "PivotGridExportOptions",
+          "type": "common/export/excel:PivotGridExportOptions",
+          "default": null,
+          "description": "Properties that can be passed to the [exportPivotGrid(options)].md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') method from the [excelExporter] module."
+        },
+        {
+          "name": "component",
+          "type": "dxPivotGrid | undefined",
+          "default": "undefined",
+          "description": "A PivotGrid instance. This setting is required."
+        },
+        {
+          "name": "customizeCell",
+          "type": "function(options)",
+          "default": null,
+          "description": "<!-- %shortDescription% -->"
+        },
+        {
+          "name": "exportColumnFieldHeaders",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to export headers of the column fields on the [field panel]."
+        },
+        {
+          "name": "exportDataFieldHeaders",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to export headers of the data fields on the [field panel]."
+        },
+        {
+          "name": "exportFilterFieldHeaders",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to export headers of the filter fields on the [field panel]."
+        },
+        {
+          "name": "exportRowFieldHeaders",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to export headers of the row fields on the [field panel]."
+        },
+        {
+          "name": "mergeColumnFieldValues",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to merge neighbouring cells in the column field if they have the same values."
+        },
+        {
+          "name": "mergeRowFieldValues",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to merge neighbouring cells in the row field if they have the same values."
+        },
+        {
+          "name": "topLeftCell",
+          "type": null,
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "animationConfig",
+      "subMembers": [
+        {
+          "name": "animationConfig",
+          "type": "Object | Number | String",
+          "default": null,
+          "description": "Defines animation properties."
+        },
+        {
+          "name": "complete",
+          "type": "function($element, config)",
+          "default": null,
+          "description": "A function called after animation is completed."
+        },
+        {
+          "name": "delay",
+          "type": "Number",
+          "default": "0",
+          "description": "A number specifying wait time before animation execution."
+        },
+        {
+          "name": "direction",
+          "type": "Enums.Direction | undefined",
+          "default": "undefined",
+          "description": "Specifies the animation direction for the \"slideIn\" and \"slideOut\" animation types."
+        },
+        {
+          "name": "duration",
+          "type": "Number",
+          "default": "400",
+          "description": "A number specifying the time in milliseconds spent on animation."
+        },
+        {
+          "name": "easing",
+          "type": "String",
+          "default": "'ease'",
+          "description": "A string specifying the easing function for animation."
+        },
+        {
+          "name": "from",
+          "type": "AnimationState",
+          "default": "{}",
+          "description": "Specifies an initial animation state. Use the [to] property to specify the final state."
+        },
+        {
+          "name": "staggerDelay",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "A number specifying the time period to wait before the animation of the next stagger item starts."
+        },
+        {
+          "name": "start",
+          "type": "function($element, config)",
+          "default": null,
+          "description": "A function called before animation is started."
+        },
+        {
+          "name": "to",
+          "type": "AnimationState",
+          "default": "{}",
+          "description": "Specifies a final animation state. Use the [from] property to specify an initial state."
+        },
+        {
+          "name": "type",
+          "type": "Enums.AnimationType",
+          "default": "'custom'",
+          "description": "A string value specifying the animation type."
+        }
+      ]
+    },
+    {
+      "name": "device",
+      "subMembers": [
+        {
+          "name": "android",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether or not the device platform is Android."
+        },
+        {
+          "name": "device",
+          "type": "Object",
+          "default": null,
+          "description": "The **device** object defines the device on which the application is running."
+        },
+        {
+          "name": "deviceType",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the type of the device on which the application is running."
+        },
+        {
+          "name": "generic",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether or not the device platform is generic, which means that the application will look and behave according to a generic \"light\" or \"dark\" [theme]."
+        },
+        {
+          "name": "grade",
+          "type": "String",
+          "default": null,
+          "description": "Specifies a performance grade of the current device."
+        },
+        {
+          "name": "ios",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether or not the device platform is iOS."
+        },
+        {
+          "name": "phone",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether or not the device type is 'phone'."
+        },
+        {
+          "name": "platform",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the platform of the device on which the application is running."
+        },
+        {
+          "name": "tablet",
+          "type": "Boolean",
+          "default": null,
+          "description": "Indicates whether or not the device type is 'tablet'."
+        },
+        {
+          "name": "version",
+          "type": "Array<Number>",
+          "default": null,
+          "description": "Specifies an array with the major and minor versions of the device platform."
+        }
+      ]
+    },
+    {
+      "name": "format",
+      "subMembers": [
+        {
+          "name": "currency",
+          "type": "String",
+          "default": null,
+          "description": "Specifies a 3-letter <a href=\"http://www.currency-iso.org/en/home/tables/table-a1.html\" target=\"_blank\">ISO 4217</a> code for currency. Applies only if the [type] is *\"currency\"*."
+        },
+        {
+          "name": "format",
+          "type": "Object | Enums.Format | String | function(value)",
+          "default": "undefined",
+          "description": "Formats values."
+        },
+        {
+          "name": "formatter",
+          "type": "function(value)",
+          "default": null,
+          "description": "A function that converts numeric or date-time values to a string."
+        },
+        {
+          "name": "parser",
+          "type": "function(value)",
+          "default": null,
+          "description": "Parses string values into numeric or date-time values. Should be used with [formatter] or one of the [predefined formats]."
+        },
+        {
+          "name": "precision",
+          "type": "Number",
+          "default": null,
+          "description": "Specifies a precision for values of numeric or currency [format types]."
+        },
+        {
+          "name": "type",
+          "type": "Enums.Format | String",
+          "default": null,
+          "description": "Specifies a predefined format. Does not apply if you have specified the [formatter] function."
+        },
+        {
+          "name": "useCurrencyAccountingStyle",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to apply the accounting style to formatted numbers of the `currency` [type]."
+        }
+      ]
+    },
+    {
+      "name": "positionConfig",
+      "subMembers": [
+        {
+          "name": "at",
+          "subMembers": [
+            {
+              "name": "at",
+              "type": "Enums.PositionAlignment | Object",
+              "default": null,
+              "description": "Specifies the [target element]'s side or corner where the overlay element should be positioned."
+            },
+            {
+              "name": "x",
+              "type": "Enums.HorizontalAlignment",
+              "default": null,
+              "description": "Specifies a position in the horizontal direction (for left, right, or center alignment)."
+            },
+            {
+              "name": "y",
+              "type": "Enums.VerticalAlignment",
+              "default": null,
+              "description": "Specifies a position in the vertical direction (for top, bottom, or center alignment)."
+            }
+          ]
+        },
+        {
+          "name": "boundary",
+          "type": "String | UserDefinedElement | Window",
+          "default": null,
+          "description": "A boundary element in which the overlay element must be positioned."
+        },
+        {
+          "name": "boundaryOffset",
+          "subMembers": [
+            {
+              "name": "boundaryOffset",
+              "type": "String | Object",
+              "default": null,
+              "description": "Specifies the offset of boundaries from the [boundary] element."
+            },
+            {
+              "name": "x",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies a horizontal offset."
+            },
+            {
+              "name": "y",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies a vertical offset."
+            }
+          ]
+        },
+        {
+          "name": "collision",
+          "subMembers": [
+            {
+              "name": "collision",
+              "type": "Enums.CollisionResolutionCombination | Object",
+              "default": null,
+              "description": "Specifies how to resolve collisions - when the overlay element exceeds the [boundary] element."
+            },
+            {
+              "name": "x",
+              "type": "Enums.CollisionResolution",
+              "default": "'none'",
+              "description": "Specifies how to resolve horizontal collisions."
+            },
+            {
+              "name": "y",
+              "type": "Enums.CollisionResolution",
+              "default": "'none'",
+              "description": "Specifies how to resolve vertical collisions."
+            }
+          ]
+        },
+        {
+          "name": "my",
+          "subMembers": [
+            {
+              "name": "my",
+              "type": "Enums.PositionAlignment | Object",
+              "default": null,
+              "description": "Specifies the overlay element's side or corner to align with a [target element]."
+            },
+            {
+              "name": "x",
+              "type": "Enums.HorizontalAlignment",
+              "default": null,
+              "description": "Specifies a position in the horizontal direction (for left, right, or center alignment)."
+            },
+            {
+              "name": "y",
+              "type": "Enums.VerticalAlignment",
+              "default": null,
+              "description": "Specifies a position in the vertical direction (for top, bottom, or center alignment)."
+            }
+          ]
+        },
+        {
+          "name": "of",
+          "type": "String | UserDefinedElement | Window",
+          "default": null,
+          "description": "The target element relative to which the overlay element should be positioned."
+        },
+        {
+          "name": "offset",
+          "subMembers": [
+            {
+              "name": "offset",
+              "type": "String | Object",
+              "default": null,
+              "description": "Specifies the overlay element's offset from a specified position."
+            },
+            {
+              "name": "x",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies a horizontal offset."
+            },
+            {
+              "name": "y",
+              "type": "Number",
+              "default": "0",
+              "description": "Specifies a vertical offset."
+            }
+          ]
+        },
+        {
+          "name": "positionConfig",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the position of an overlay element."
+        }
+      ]
+    },
+    {
+      "name": "template",
+      "type": "String | function() | UserDefinedElement",
+      "default": null,
+      "description": "A template notation used to specify templates for UI component elements."
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onRowExporting",
+      "type": "function(options)",
+      "default": null,
+      "description": "A function that allows you to customize the height of the exported row. This function is executed before the row export."
+    }
+  ],
+  "Types": []
+}

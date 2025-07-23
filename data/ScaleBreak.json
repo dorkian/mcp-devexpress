@@ -1,0 +1,25 @@
+{
+  "properties": [
+    {
+      "name": "ScaleBreak",
+      "type": "Object",
+      "default": null,
+      "description": "A class describing a scale break range. Inherited by scale breaks in the Chart and RangeSelector."
+    },
+    {
+      "name": "endValue",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "Along with the **startValue** property, limits the scale break."
+    },
+    {
+      "name": "startValue",
+      "type": "Number | Date | String | undefined",
+      "default": "undefined",
+      "description": "Along with the **endValue** property, limits the scale break."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

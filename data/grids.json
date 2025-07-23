@@ -1,0 +1,1903 @@
+{
+  "properties": [
+    {
+      "name": "15 grids",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "AdaptiveDetailRowPreparingInfo",
+      "subMembers": [
+        {
+          "name": "AdaptiveDetailRowPreparingInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "formOptions",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ApplyChangesMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies when to apply changes made in the field chooser to the PivotGrid."
+    },
+    {
+      "name": "ApplyFilterMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies when to apply a filter."
+    },
+    {
+      "name": "ColumnChooser",
+      "subMembers": [
+        {
+          "name": "ColumnChooser",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the column chooser."
+        },
+        {
+          "name": "allowSearch",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether searching is enabled in the column chooser."
+        },
+        {
+          "name": "container",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies a container in which the column chooser should be rendered."
+        },
+        {
+          "name": "emptyPanelText",
+          "type": "String",
+          "default": "'Drag a column here to hide it'",
+          "description": "Specifies text displayed by the column chooser when it is empty."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can open the column chooser."
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "260",
+          "description": "Specifies the height of the column chooser."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.ColumnChooserMode",
+          "default": "'dragAndDrop'",
+          "description": "Specifies how a user manages columns using the column chooser."
+        },
+        {
+          "name": "position",
+          "type": "PositionConfig | undefined",
+          "default": "undefined",
+          "description": "Configures the column chooser's position."
+        },
+        {
+          "name": "search",
+          "type": "ColumnChooserSearchConfig",
+          "default": null,
+          "description": "Configures the column chooser's search functionality."
+        },
+        {
+          "name": "searchTimeout",
+          "type": "Number",
+          "default": "500",
+          "description": "Specifies a delay in milliseconds between when a user finishes typing in the column chooser's search panel, and when the search is executed."
+        },
+        {
+          "name": "selection",
+          "type": "ColumnChooserSelectionConfig",
+          "default": null,
+          "description": "Configures column selection functionality within the column chooser."
+        },
+        {
+          "name": "sortOrder",
+          "type": "Enums.SortOrder | undefined",
+          "default": "undefined",
+          "description": "Specifies the sort order of column headers."
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "default": "'Column Chooser'",
+          "description": "Specifies the title of the column chooser."
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "250",
+          "description": "Specifies the width of the column chooser."
+        }
+      ]
+    },
+    {
+      "name": "ColumnChooserMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how a user manages columns using the column chooser."
+    },
+    {
+      "name": "ColumnChooserSearchConfig",
+      "subMembers": [
+        {
+          "name": "ColumnChooserSearchConfig",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the column chooser's search functionality."
+        },
+        {
+          "name": "editorOptions",
+          "type": "any",
+          "default": "{}",
+          "description": "Configures the search box."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether search is enabled in the column chooser."
+        },
+        {
+          "name": "timeout",
+          "type": "Number",
+          "default": "500",
+          "description": "Specifies a timeout, in milliseconds, during which a user may continue to modify the search value without starting the search operation."
+        }
+      ]
+    },
+    {
+      "name": "ColumnChooserSelectionConfig",
+      "subMembers": [
+        {
+          "name": "ColumnChooserSelectionConfig",
+          "type": "Object",
+          "default": null,
+          "description": "Configures column selection functionality within the column chooser."
+        },
+        {
+          "name": "allowSelectAll",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a \"Select All\" option is available to users."
+        },
+        {
+          "name": "recursive",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether selection is recursive."
+        },
+        {
+          "name": "selectByClick",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether an item becomes selected if a user clicks the item's label."
+        }
+      ]
+    },
+    {
+      "name": "ColumnFixing",
+      "subMembers": [
+        {
+          "name": "ColumnFixing",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures column fixing."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Enables column fixing."
+        },
+        {
+          "name": "texts",
+          "type": "Object",
+          "default": null,
+          "description": "Contains properties that specify texts for column fixing commands in the context menu of a column header."
+        }
+      ]
+    },
+    {
+      "name": "ColumnFixingIcons",
+      "subMembers": [
+        {
+          "name": "ColumnFixingIcons",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures column fixing icons."
+        },
+        {
+          "name": "fix",
+          "type": "String",
+          "default": "'fix-column'",
+          "description": "Specifies an icon for the context menu item that fixes a column."
+        },
+        {
+          "name": "leftPosition",
+          "type": "String",
+          "default": "'fix-column-left'",
+          "description": "Specifies an icon for the context menu subitem that fixes a column to the left edge of the UI component."
+        },
+        {
+          "name": "rightPosition",
+          "type": "String",
+          "default": "'fix-column-right'",
+          "description": "Specifies an icon for the context menu subitem that fixes a column to the right edge of the UI component."
+        },
+        {
+          "name": "stickyPosition",
+          "type": "String",
+          "default": "'stick-column'",
+          "description": "Specifies an icon for the context menu subitem that enables sticky column behavior."
+        },
+        {
+          "name": "unfix",
+          "type": "String",
+          "default": "'unfix-column'",
+          "description": "Specifies an icon for the context menu item that unfixes a column."
+        }
+      ]
+    },
+    {
+      "name": "ColumnFixingTexts",
+      "subMembers": [
+        {
+          "name": "ColumnFixingTexts",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Contains properties that specify texts for column fixing commands in the context menu of a column header."
+        },
+        {
+          "name": "fix",
+          "type": "String",
+          "default": "'Fix'",
+          "description": "Specifies text for the context menu item that fixes a column."
+        },
+        {
+          "name": "leftPosition",
+          "type": "String",
+          "default": "'To the left'",
+          "description": "Specifies text for the context menu subitem that fixes a column to the left edge of the UI component."
+        },
+        {
+          "name": "rightPosition",
+          "type": "String",
+          "default": "'To the right'",
+          "description": "Specifies text for the context menu subitem that fixes a column to the right edge of the UI component."
+        },
+        {
+          "name": "stickyPosition",
+          "type": "String",
+          "default": "'Stick in place'",
+          "description": "Specifies text for the context menu subitem that enables sticky column behavior."
+        },
+        {
+          "name": "unfix",
+          "type": "String",
+          "default": "'Unfix'",
+          "description": "Specifies text for the context menu item that unfixes a column."
+        }
+      ]
+    },
+    {
+      "name": "ColumnHeaderFilter",
+      "subMembers": [
+        {
+          "name": "ColumnHeaderFilter",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies data settings for the header filter."
+        },
+        {
+          "name": "allowSearch",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether searching is enabled in the header filter."
+        },
+        {
+          "name": "allowSelectAll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether a \"Select All\" option is available to users."
+        },
+        {
+          "name": "dataSource",
+          "type": "Array<any> | Store | DataSource_Options | function(options) | null | undefined",
+          "default": "undefined",
+          "description": "Specifies the header filter's data source."
+        },
+        {
+          "name": "groupInterval",
+          "type": "Enums.HeaderFilterGroupInterval | Number | undefined",
+          "default": "undefined",
+          "description": "Specifies how the header filter combines values into groups. Does not apply if you [specify a custom header filter data source]."
+        },
+        {
+          "name": "height",
+          "type": "Number | String | undefined",
+          "default": "undefined",
+          "description": "Specifies the height of the popup menu containing filtering values."
+        },
+        {
+          "name": "search",
+          "type": "ColumnHeaderFilterSearchConfig",
+          "default": null,
+          "description": "Configures the header filter's search functionality."
+        },
+        {
+          "name": "searchMode",
+          "type": "Enums.SearchMode",
+          "default": "'contains'",
+          "description": "Specifies a comparison operation used to search header filter values."
+        },
+        {
+          "name": "width",
+          "type": "Number | String | undefined",
+          "default": "undefined",
+          "description": "Specifies the width of the popup menu containing filtering values."
+        }
+      ]
+    },
+    {
+      "name": "ColumnHeaderFilterSearchConfig",
+      "subMembers": [
+        {
+          "name": "ColumnHeaderFilterSearchConfig",
+          "type": "HeaderFilterSearchConfig | Object",
+          "default": null,
+          "description": "Configures the header filter's search."
+        },
+        {
+          "name": "searchExpr",
+          "type": "getter | Array<getter> | undefined",
+          "default": "undefined",
+          "description": "Specifies a data object's field name or an expression whose value is compared to the search string."
+        }
+      ]
+    },
+    {
+      "name": "ColumnResizeMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the UI component resizes columns."
+    },
+    {
+      "name": "DataChangeInfo",
+      "subMembers": [
+        {
+          "name": "DataChangeInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DataChangeType",
+      "type": "Union",
+      "default": null,
+      "description": "Data change type."
+    },
+    {
+      "name": "DataErrorOccurredInfo",
+      "subMembers": [
+        {
+          "name": "DataErrorOccurredInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DataRenderMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the rendering mode for columns and rows."
+    },
+    {
+      "name": "EditingBase",
+      "subMembers": [
+        {
+          "name": "EditingBase",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Overriden."
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": "[]",
+          "description": "An array of pending row changes."
+        },
+        {
+          "name": "confirmDelete",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies if confirmation is required when a user deletes a row."
+        },
+        {
+          "name": "editColumnName",
+          "type": "String",
+          "default": "null",
+          "description": "The [name] of a column being edited. Applies only if **editing**.[mode] is *\"cell\"* or *\"batch\"*."
+        },
+        {
+          "name": "editRowKey",
+          "type": "any",
+          "default": "null",
+          "description": "The key(s) of a row being edited."
+        },
+        {
+          "name": "form",
+          "type": "dxForm_Options",
+          "default": null,
+          "description": "Configures the form. Used only if **editing**.[mode] is *\"form\"* or *\"popup\"*."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.GridsEditMode",
+          "default": "'row'",
+          "description": "Specifies how a user edits data."
+        },
+        {
+          "name": "popup",
+          "type": "dxPopup_Options",
+          "default": null,
+          "description": "Configures the popup. Used only if **editing**.[mode] is *\"popup\"*."
+        },
+        {
+          "name": "refreshMode",
+          "type": "Enums.GridsEditRefreshMode",
+          "default": "'full'",
+          "description": "Specifies operations that are performed after saving changes."
+        },
+        {
+          "name": "selectTextOnEditStart",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to select text in a cell when a user starts editing."
+        },
+        {
+          "name": "startEditAction",
+          "type": "Enums.StartEditAction",
+          "default": "'click'",
+          "description": "Specifies whether a single or double click should switch a cell to the editing state. Applies if **editing**.[mode] is *\"cell\"* or *\"batch\"*."
+        },
+        {
+          "name": "texts",
+          "type": "Object",
+          "default": null,
+          "description": "Contains properties that specify texts for editing-related UI elements."
+        },
+        {
+          "name": "useIcons",
+          "type": "Boolean",
+          "default": "false, true (Fluent, Material)",
+          "description": "Specifies whether the [edit column] uses icons instead of links."
+        }
+      ]
+    },
+    {
+      "name": "EditingTextsBase",
+      "subMembers": [
+        {
+          "name": "EditingTextsBase",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Contains properties that specify texts for editing-related UI elements."
+        },
+        {
+          "name": "addRow",
+          "type": "String",
+          "default": "'Add a row'",
+          "description": "Specifies text for a hint that appears when a user pauses on the global *\"Add\"* button. Applies only if **editing**.[allowAdding] is **true**."
+        },
+        {
+          "name": "cancelAllChanges",
+          "type": "String",
+          "default": "'Discard changes'",
+          "description": "Specifies text for a hint that appears when a user pauses on the *\"Discard\"* button. Applies only if **editing**.[mode] is *\"batch\"*."
+        },
+        {
+          "name": "cancelRowChanges",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "Specifies text for a button that cancels changes in a row. Applies only if **editing**.[allowUpdating] is **true** and **editing**.[mode] is *\"row\"*, *\"popup\"* or *\"form\"*."
+        },
+        {
+          "name": "confirmDeleteMessage",
+          "type": "String",
+          "default": "'Are you sure you want to delete this record?'",
+          "description": "Specifies a message that prompts a user to confirm deletion."
+        },
+        {
+          "name": "confirmDeleteTitle",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a title for the window that asks a user to confirm deletion."
+        },
+        {
+          "name": "deleteRow",
+          "type": "String",
+          "default": "'Delete'",
+          "description": "Specifies text for buttons that delete rows. Applies only if [allowDeleting] is **true**."
+        },
+        {
+          "name": "editRow",
+          "type": "String",
+          "default": "'Edit'",
+          "description": "Specifies text for buttons that switch rows into the editing state. Applies only if [allowUpdating] is **true**."
+        },
+        {
+          "name": "saveAllChanges",
+          "type": "String",
+          "default": "'Save changes'",
+          "description": "Specifies text for a hint that appears when a user pauses on the global *\"Save\"* button. Applies only if **editing**.[mode] is *\"batch\"*."
+        },
+        {
+          "name": "saveRowChanges",
+          "type": "String",
+          "default": "'Save'",
+          "description": "Specifies text for a button that saves changes made in a row. Applies only if  [allowUpdating] is **true** and **editing**.[mode] is *\"row\"*, *\"popup\"* or *\"form\"*."
+        },
+        {
+          "name": "undeleteRow",
+          "type": "String",
+          "default": "'Undelete'",
+          "description": "Specifies text for buttons that recover deleted rows. Applies only if [allowDeleting] is **true** and **editing**.[mode] is *\"batch\"*."
+        },
+        {
+          "name": "validationCancelChanges",
+          "type": "String",
+          "default": "'Cancel changes'",
+          "description": "Specifies text for a hint appearing when a user pauses on the button that cancels changes in a cell. Applies only if **editing**.[mode] is *\"cell\"* and [data validation] is enabled."
+        }
+      ]
+    },
+    {
+      "name": "EnterKeyAction",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether the Enter key switches the cell or row to the edit state or moves focus in the **enterKeyDirection**."
+    },
+    {
+      "name": "EnterKeyDirection",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the direction in which to move focus when a user presses Enter."
+    },
+    {
+      "name": "FilterOperation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies available filter operations."
+    },
+    {
+      "name": "FilterPanel",
+      "subMembers": [
+        {
+          "name": "FilterPanel",
+          "type": null,
+          "default": null,
+          "description": "Configures the filter panel."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(e)",
+          "default": null,
+          "description": "Customizes the [filter expression's] text representation."
+        },
+        {
+          "name": "filterEnabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether the [filter expression] is applied."
+        },
+        {
+          "name": "texts",
+          "type": "FilterPanelTexts",
+          "default": "{}",
+          "description": "Specifies texts for the filter panel's elements."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the filter panel is visible."
+        }
+      ]
+    },
+    {
+      "name": "FilterPanelTexts",
+      "subMembers": [
+        {
+          "name": "FilterPanelTexts",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies texts for the filter panel's elements."
+        },
+        {
+          "name": "clearFilter",
+          "type": "String",
+          "default": "'Clear'",
+          "description": "The text of the *\"Clear\"* link."
+        },
+        {
+          "name": "createFilter",
+          "type": "String",
+          "default": "'Create Filter'",
+          "description": "The text of the *\"Create Filter\"* link."
+        },
+        {
+          "name": "filterEnabledHint",
+          "type": "String",
+          "default": "'Enable the filter'",
+          "description": "The hint of the checkbox that applies the filter."
+        }
+      ]
+    },
+    {
+      "name": "FilterRow",
+      "subMembers": [
+        {
+          "name": "FilterRow",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures the filter row."
+        },
+        {
+          "name": "applyFilter",
+          "type": "Enums.ApplyFilterMode",
+          "default": "'auto'",
+          "description": "Specifies when to apply a filter."
+        },
+        {
+          "name": "applyFilterText",
+          "type": "String",
+          "default": "'Apply filter'",
+          "description": "Specifies text for a hint that appears when a user pauses on a button that applies the filter."
+        },
+        {
+          "name": "betweenEndText",
+          "type": "String",
+          "default": "'End'",
+          "description": "Specifies a placeholder for the editor that specifies the end of a range when a user selects the *\"between\"* filter operation."
+        },
+        {
+          "name": "betweenStartText",
+          "type": "String",
+          "default": "'Start'",
+          "description": "Specifies a placeholder for the editor that specifies the start of a range when a user selects the *\"between\"* filter operation."
+        },
+        {
+          "name": "operationDescriptions",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies descriptions for filter operations on the filter list."
+        },
+        {
+          "name": "resetOperationText",
+          "type": "String",
+          "default": "'Reset'",
+          "description": "Specifies text for the reset operation on the filter list."
+        },
+        {
+          "name": "showAllText",
+          "type": "String",
+          "default": "'(All)'",
+          "description": "Specifies text for the item that clears the applied filter. Used only when a cell of the filter row contains a select box."
+        },
+        {
+          "name": "showOperationChooser",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether icons that open the filter lists are visible."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the filter row is visible."
+        }
+      ]
+    },
+    {
+      "name": "FilterRowOperationDescriptions",
+      "subMembers": [
+        {
+          "name": "FilterRowOperationDescriptions",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Specifies descriptions for filter operations on the filter list."
+        },
+        {
+          "name": "between",
+          "type": "String",
+          "default": "'Between'",
+          "description": "A description for the *\"between\"* operation."
+        },
+        {
+          "name": "contains",
+          "type": "String",
+          "default": "'Contains'",
+          "description": "A description for the *\"contains\"* operation."
+        },
+        {
+          "name": "endsWith",
+          "type": "String",
+          "default": "'Ends with'",
+          "description": "A description for the *\"endswith\"* operation."
+        },
+        {
+          "name": "equal",
+          "type": "String",
+          "default": "'Equals'",
+          "description": "A description for the *\"=\"* operation."
+        },
+        {
+          "name": "greaterThan",
+          "type": "String",
+          "default": "'Greater than'",
+          "description": "A description for the *\">\"* operation."
+        },
+        {
+          "name": "greaterThanOrEqual",
+          "type": "String",
+          "default": "'Greater than or equal to'",
+          "description": "A description for the *\">=\"* operation."
+        },
+        {
+          "name": "lessThan",
+          "type": "String",
+          "default": "'Less than'",
+          "description": "A description for the *\"<\"* operation."
+        },
+        {
+          "name": "lessThanOrEqual",
+          "type": "String",
+          "default": "'Less than or equal to'",
+          "description": "A description for the *\"<=\"* operation."
+        },
+        {
+          "name": "notContains",
+          "type": "String",
+          "default": "'Does not contain'",
+          "description": "A description for the *\"notcontains\"* operation."
+        },
+        {
+          "name": "notEqual",
+          "type": "String",
+          "default": "'Does not equal'",
+          "description": "A description for the *\"<>\"* operation."
+        },
+        {
+          "name": "startsWith",
+          "type": "String",
+          "default": "'Starts with'",
+          "description": "A description for the *\"startswith\"* operation."
+        }
+      ]
+    },
+    {
+      "name": "FilterType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values."
+    },
+    {
+      "name": "FixedPosition",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a position type for fixed columns."
+    },
+    {
+      "name": "GridsContextMenuTarget",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a target for triggering context menu."
+    },
+    {
+      "name": "GridsEditMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how a user edits data."
+    },
+    {
+      "name": "GridsEditRefreshMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies operations that are performed after saving changes."
+    },
+    {
+      "name": "GroupExpandMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the event on which a group will be expanded/collapsed."
+    },
+    {
+      "name": "HeaderFilter",
+      "subMembers": [
+        {
+          "name": "HeaderFilter",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the header filter feature."
+        },
+        {
+          "name": "allowSearch",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether searching is enabled in the header filter."
+        },
+        {
+          "name": "allowSelectAll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether a \"Select All\" option is available to users."
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "325, 315 (Fluent, Material)",
+          "description": "Specifies the height of the popup menu that contains values for filtering."
+        },
+        {
+          "name": "search",
+          "type": "HeaderFilterSearchConfig",
+          "default": null,
+          "description": "Configures the header filter's search box."
+        },
+        {
+          "name": "searchTimeout",
+          "type": "Number",
+          "default": "500",
+          "description": "Specifies a delay in milliseconds between when a user finishes typing in the header filter's search panel, and when the search is executed."
+        },
+        {
+          "name": "texts",
+          "type": "HeaderFilterTexts",
+          "default": null,
+          "description": "Contains properties that specify text for various elements of the popup menu."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether header filter icons are visible."
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "252",
+          "description": "Specifies the width of the popup menu that contains values for filtering."
+        }
+      ]
+    },
+    {
+      "name": "HeaderFilterGroupInterval",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how the header filter combines values into groups."
+    },
+    {
+      "name": "HeaderFilterSearchConfig",
+      "subMembers": [
+        {
+          "name": "HeaderFilterSearchConfig",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the header filter's search functionality."
+        },
+        {
+          "name": "editorOptions",
+          "type": "any",
+          "default": "{}",
+          "description": "Configures the search box."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether search UI is enabled in the header filter."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.SearchMode",
+          "default": "'contains'",
+          "description": "Specifies a comparison operation used to search header filter values."
+        },
+        {
+          "name": "timeout",
+          "type": "Number",
+          "default": "500",
+          "description": "Specifies a timeout, in milliseconds, during which a user may continue to modify the search value without starting the search operation."
+        }
+      ]
+    },
+    {
+      "name": "HeaderFilterTexts",
+      "subMembers": [
+        {
+          "name": "HeaderFilterTexts",
+          "type": "Object",
+          "default": null,
+          "description": "Contains properties that specify text for various elements of the popup menu."
+        },
+        {
+          "name": "cancel",
+          "type": "String",
+          "default": "'Cancel'",
+          "description": "Specifies text for the button that closes the popup menu without applying a filter."
+        },
+        {
+          "name": "emptyValue",
+          "type": "String",
+          "default": "'(Blanks)'",
+          "description": "Specifies a name for the item that represents empty values in the popup menu."
+        },
+        {
+          "name": "ok",
+          "type": "String",
+          "default": "'Ok'",
+          "description": "Specifies text for the button that applies the specified filter."
+        }
+      ]
+    },
+    {
+      "name": "KeyDownInfo",
+      "subMembers": [
+        {
+          "name": "KeyDownInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "handled",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "KeyboardNavigation",
+      "subMembers": [
+        {
+          "name": "KeyboardNavigation",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures keyboard navigation."
+        },
+        {
+          "name": "editOnKeyPress",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether users can enter a new cell value on a key press. Applies if **editing**.[mode] is *\"cell\"* or *\"batch\"*."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Enables keyboard navigation."
+        },
+        {
+          "name": "enterKeyAction",
+          "type": "Enums.EnterKeyAction",
+          "default": "'startEdit'",
+          "description": "Specifies whether the Enter key switches the cell or row to the edit state or moves focus in the [enterKeyDirection]. Applies for all [edit modes], except *\"popup\"*."
+        },
+        {
+          "name": "enterKeyDirection",
+          "type": "Enums.EnterKeyDirection",
+          "default": "'none'",
+          "description": "Specifies the direction in which to move focus when a user presses Enter. Applies if **editing**.[mode] is *\"cell\"* or *\"batch\"*."
+        }
+      ]
+    },
+    {
+      "name": "LoadPanel",
+      "subMembers": [
+        {
+          "name": "LoadPanel",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures the load panel."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean | Enums.Mode",
+          "default": "'auto'",
+          "description": "Enables displaying the load panel automatically."
+        },
+        {
+          "name": "height",
+          "type": "Number | String",
+          "default": "90",
+          "description": "Specifies the height of the load panel in pixels."
+        },
+        {
+          "name": "indicatorSrc",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a URL pointing to an image to be used as a loading indicator."
+        },
+        {
+          "name": "shading",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to shade the UI component when the load panel is shown."
+        },
+        {
+          "name": "shadingColor",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the shading color. Applies only if [shading] is **true**."
+        },
+        {
+          "name": "showIndicator",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show the loading indicator."
+        },
+        {
+          "name": "showPane",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to show the pane of the load panel."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": "'Loading...'",
+          "description": "Specifies text displayed on the load panel."
+        },
+        {
+          "name": "width",
+          "type": "Number | String",
+          "default": "200",
+          "description": "Specifies the width of the load panel in pixels."
+        }
+      ]
+    },
+    {
+      "name": "NewRowInfo",
+      "subMembers": [
+        {
+          "name": "NewRowInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "promise",
+          "type": "Promise<void>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "NewRowPosition",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a position for a new row."
+    },
+    {
+      "name": "Pager",
+      "subMembers": [
+        {
+          "name": "Pager",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures the pager."
+        },
+        {
+          "name": "allowedPageSizes",
+          "type": "Array<Number, Enums.PagerPageSize> | Enums.Mode",
+          "default": "'auto'",
+          "description": "Specifies the available page sizes in the page size selector."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean | Enums.Mode",
+          "default": "'auto'",
+          "description": "Specifies whether the pager is visible."
+        }
+      ]
+    },
+    {
+      "name": "PagerPageSize",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the available page sizes in the page size selector."
+    },
+    {
+      "name": "PagingBase",
+      "subMembers": [
+        {
+          "name": "PagingBase",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures paging."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Enables paging."
+        },
+        {
+          "name": "pageIndex",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the page to be displayed using a zero-based index."
+        },
+        {
+          "name": "pageSize",
+          "type": "Number",
+          "default": "20",
+          "description": "Specifies the page size."
+        }
+      ]
+    },
+    {
+      "name": "RowDragging",
+      "subMembers": [
+        {
+          "name": "RowDragging",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures row reordering using drag and drop gestures."
+        },
+        {
+          "name": "allowDropInsideItem",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows users to drop a row inside another row."
+        },
+        {
+          "name": "allowReordering",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Allows row reordering using drag and drop gestures."
+        },
+        {
+          "name": "autoScroll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Enables automatic scrolling while dragging a row beyond the viewport."
+        },
+        {
+          "name": "boundary",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies a DOM element that limits the dragging area."
+        },
+        {
+          "name": "container",
+          "type": "String | UserDefinedElement | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom container in which the draggable row should be rendered."
+        },
+        {
+          "name": "data",
+          "type": "any | undefined",
+          "default": "undefined",
+          "description": "A container for custom data."
+        },
+        {
+          "name": "dragDirection",
+          "type": "Enums.DragDirection",
+          "default": "'both'",
+          "description": "Specifies the directions in which a row can be dragged."
+        },
+        {
+          "name": "dragTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies custom markup to be shown instead of the item being dragged."
+        },
+        {
+          "name": "dropFeedbackMode",
+          "type": "Enums.DragHighlight",
+          "default": "'indicate'",
+          "description": "Specifies how to highlight the row's drop position."
+        },
+        {
+          "name": "filter",
+          "type": "String",
+          "default": "'> *'",
+          "description": "Specifies a CSS selector for draggable rows."
+        },
+        {
+          "name": "group",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Allows you to group several UI components so that users can drag and drop rows between them."
+        },
+        {
+          "name": "handle",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies a CSS selector (ID or class) for the element(s) that should act as the drag handle(s)."
+        },
+        {
+          "name": "scrollSensitivity",
+          "type": "Number",
+          "default": "60",
+          "description": "Specifies the distance in pixels from the edge of viewport at which scrolling should start. Applies only if [autoScroll] is **true**."
+        },
+        {
+          "name": "scrollSpeed",
+          "type": "Number",
+          "default": "30",
+          "description": "Specifies the scrolling speed when dragging a row beyond the viewport. Applies only if [autoScroll] is **true**."
+        },
+        {
+          "name": "showDragIcons",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Shows or hides row dragging icons."
+        }
+      ]
+    },
+    {
+      "name": "RowInsertedInfo",
+      "subMembers": [
+        {
+          "name": "RowInsertedInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowInsertingInfo",
+      "subMembers": [
+        {
+          "name": "RowInsertingInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean> | Promise<void>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowKeyInfo",
+      "subMembers": [
+        {
+          "name": "RowKeyInfo",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowRemovedInfo",
+      "subMembers": [
+        {
+          "name": "RowRemovedInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowRemovingInfo",
+      "subMembers": [
+        {
+          "name": "RowRemovingInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean> | Promise<void>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowUpdatedInfo",
+      "subMembers": [
+        {
+          "name": "RowUpdatedInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "data",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "error",
+          "type": "Error",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowUpdatingInfo",
+      "subMembers": [
+        {
+          "name": "RowUpdatingInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean | Promise<Boolean> | Promise<void>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "oldData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RowValidatingInfo",
+      "subMembers": [
+        {
+          "name": "RowValidatingInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "brokenRules",
+          "type": "Array<ValidationRule>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "errorText",
+          "type": "String",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "isValid",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "key",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "newData",
+          "type": "Object",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "oldData",
+          "type": "any",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "promise",
+          "type": "Promise<void>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SavingInfo",
+      "subMembers": [
+        {
+          "name": "SavingInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "cancel",
+          "type": "Boolean",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "changes",
+          "type": "Array<DataChange>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "promise",
+          "type": "Promise<void>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ScrollingBase",
+      "subMembers": [
+        {
+          "name": "ScrollingBase",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "<!-- Overridden -->"
+        },
+        {
+          "name": "columnRenderingMode",
+          "type": "Enums.DataRenderMode",
+          "default": "'standard'",
+          "description": "Specifies the rendering mode for columns. Applies when columns are left outside the viewport. Requires the [columnWidth], [columnAutoWidth], or [width] (for all columns) property specified."
+        },
+        {
+          "name": "preloadEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component should load adjacent pages. Applies only if **scrolling**.[mode] is *\"virtual\"* or *\"infinite\"*."
+        },
+        {
+          "name": "renderAsync",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether to render rows after a user stops scrolling or at the same time as the user scrolls the {WidgetName}."
+        },
+        {
+          "name": "rowRenderingMode",
+          "type": "Enums.DataRenderMode",
+          "default": "'standard'",
+          "description": "Specifies the rendering mode for loaded rows."
+        },
+        {
+          "name": "scrollByContent",
+          "type": "Boolean",
+          "default": "true, false (non-touch_devices)",
+          "description": "Specifies whether a user can scroll the content with a swipe gesture. Applies only if [useNative] is **false**."
+        },
+        {
+          "name": "scrollByThumb",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether a user can scroll the content with the scrollbar. Applies only if [useNative] is **false**."
+        },
+        {
+          "name": "showScrollbar",
+          "type": "Enums.ScrollbarMode",
+          "default": "'onScroll', 'onHover' (desktop)",
+          "description": "Specifies when to show scrollbars. Applies only if [useNative] is **false**."
+        },
+        {
+          "name": "useNative",
+          "type": "Boolean | Enums.Mode",
+          "default": "'auto'",
+          "description": "Specifies whether the {WidgetName} should use native or simulated scrolling."
+        }
+      ]
+    },
+    {
+      "name": "SearchPanel",
+      "subMembers": [
+        {
+          "name": "SearchPanel",
+          "type": "Object",
+          "default": null,
+          "description": "Configures the search panel."
+        },
+        {
+          "name": "highlightCaseSensitive",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Notifies the UI component whether search is case-sensitive to ensure that search results are highlighted correctly. Applies only if [highlightSearchText] is **true**."
+        },
+        {
+          "name": "highlightSearchText",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether found substrings should be highlighted."
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "default": "'Search...'",
+          "description": "Specifies a placeholder for the search panel."
+        },
+        {
+          "name": "searchVisibleColumnsOnly",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the UI component should search against all columns or only visible ones."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": "''",
+          "description": "Sets a search string for the search panel."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the search panel is visible or not."
+        },
+        {
+          "name": "width",
+          "type": "String | Number",
+          "default": "160",
+          "description": "Specifies the width of the search panel in pixels."
+        }
+      ]
+    },
+    {
+      "name": "SelectedFilterOperation",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies a filter operation that applies when users use the [filter row] to filter the column."
+    },
+    {
+      "name": "SelectionBase",
+      "subMembers": [
+        {
+          "name": "SelectionBase",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "<!-- Overridden -->"
+        },
+        {
+          "name": "allowSelectAll",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Allows users to simultaneously select all or current page rows (depending on the [selectAllMode])."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.SingleMultipleOrNone",
+          "default": "'none'",
+          "description": "Specifies the selection mode."
+        }
+      ]
+    },
+    {
+      "name": "SelectionChangedInfo",
+      "subMembers": [
+        {
+          "name": "SelectionChangedInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "currentDeselectedRowKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "currentSelectedRowKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedRowKeys",
+          "type": "Array<any>",
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "selectedRowsData",
+          "type": "Array<Object>",
+          "default": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectionColumnDisplayMode",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies when to display the selection column and row selection checkboxes."
+    },
+    {
+      "name": "Sorting",
+      "subMembers": [
+        {
+          "name": "Sorting",
+          "type": "Object",
+          "default": null,
+          "description": "Configures runtime sorting."
+        },
+        {
+          "name": "ascendingText",
+          "type": "String",
+          "default": "'Sort Ascending'",
+          "description": "Specifies text for the context menu item that sets an ascending sort order in a column."
+        },
+        {
+          "name": "clearText",
+          "type": "String",
+          "default": "'Clear Sorting'",
+          "description": "Specifies text for the context menu item that clears sorting settings for a column."
+        },
+        {
+          "name": "descendingText",
+          "type": "String",
+          "default": "'Sort Descending'",
+          "description": "Specifies text for the context menu item that sets a descending sort order in a column."
+        },
+        {
+          "name": "mode",
+          "type": "Enums.SingleMultipleOrNone",
+          "default": "'single'",
+          "description": "Specifies the sorting mode."
+        },
+        {
+          "name": "showSortIndexes",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether to display [sort indexes] in column headers. Applies only when **sorting**.[mode] is *\"multiple\"* and data is sorted by two or more columns."
+        }
+      ]
+    },
+    {
+      "name": "StartEditAction",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies whether a single or double click should switch a cell to the editing state."
+    },
+    {
+      "name": "StateStoreType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies the type of storage where the state is saved."
+    },
+    {
+      "name": "StateStoring",
+      "subMembers": [
+        {
+          "name": "StateStoring",
+          "type": "module: common/grids",
+          "default": null,
+          "description": "Configures state storing."
+        },
+        {
+          "name": "customLoad",
+          "type": "function()",
+          "default": null,
+          "description": "Specifies a function that is executed on state loading. Applies only if the [type] is *'custom'*."
+        },
+        {
+          "name": "customSave",
+          "type": "function(gridState)",
+          "default": null,
+          "description": "Specifies a function that is executed on state change. Applies only if the [type] is *\"custom\"*."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Enables state storing."
+        },
+        {
+          "name": "savingTimeout",
+          "type": "Number",
+          "default": "2000",
+          "description": "Specifies the delay in milliseconds between when a user makes a change and when this change is saved."
+        },
+        {
+          "name": "storageKey",
+          "type": "String",
+          "default": "null",
+          "description": "Specifies the key for storing the UI component state."
+        },
+        {
+          "name": "type",
+          "type": "Enums.StateStoreType",
+          "default": "'localStorage'",
+          "description": "Specifies the type of storage where the state is saved."
+        }
+      ]
+    },
+    {
+      "name": "SummaryType",
+      "type": "Union",
+      "default": null,
+      "description": "Specifies how to aggregate data for the group summary item, total summary item, or the field's data."
+    },
+    {
+      "name": "ToolbarPreparingInfo",
+      "subMembers": [
+        {
+          "name": "ToolbarPreparingInfo",
+          "type": null,
+          "default": null,
+          "description": null
+        },
+        {
+          "name": "toolbarOptions",
+          "type": "dxToolbar_Options",
+          "default": null,
+          "description": null
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [
+    {
+      "name": "onAdd",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when a new row is added."
+    },
+    {
+      "name": "onDragChange",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when the dragged row's position is changed."
+    },
+    {
+      "name": "onDragEnd",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when the drag gesture is finished."
+    },
+    {
+      "name": "onDragMove",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called every time a draggable row is moved."
+    },
+    {
+      "name": "onDragStart",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when the drag gesture is initialized."
+    },
+    {
+      "name": "onRemove",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when a draggable row is removed."
+    },
+    {
+      "name": "onReorder",
+      "type": "function(e)",
+      "default": null,
+      "description": "A function that is called when the draggable rows are reordered."
+    }
+  ],
+  "Types": []
+}

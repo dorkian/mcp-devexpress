@@ -1,0 +1,60 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "Configures searching."
+        },
+        {
+          "name": "searchEditorOptions",
+          "type": "dxTextBox_Options",
+          "default": "{}",
+          "description": "Configures the search panel."
+        },
+        {
+          "name": "searchEnabled",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether the search panel is visible."
+        },
+        {
+          "name": "searchExpr",
+          "type": "getter | Array<getter>",
+          "default": "null",
+          "description": "Specifies a data object's field name or an expression whose value is compared to the search string."
+        },
+        {
+          "name": "searchMode",
+          "type": "Enums.SearchMode",
+          "default": "'contains'",
+          "description": "Specifies a comparison operation used to search UI component items."
+        },
+        {
+          "name": "searchTimeout",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies a delay in milliseconds between when a user finishes typing, and the search is executed."
+        },
+        {
+          "name": "searchValue",
+          "type": "String",
+          "default": "''",
+          "description": "Specifies the current search string."
+        }
+      ]
+    },
+    {
+      "name": "SearchBoxMixin",
+      "type": null,
+      "default": null,
+      "description": "-"
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

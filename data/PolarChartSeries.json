@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "PolarChartSeries",
+      "type": "Object",
+      "default": null,
+      "description": "Specifies properties for PolarChart UI component series."
+    },
+    {
+      "name": "name",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the name that identifies the series."
+    },
+    {
+      "name": "tag",
+      "type": "any | undefined",
+      "default": "undefined",
+      "description": "Specifies data about a series."
+    },
+    {
+      "name": "type",
+      "type": "Enums.PolarChartSeriesType",
+      "default": "'scatter'",
+      "description": "Sets the series type."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

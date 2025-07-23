@@ -1,0 +1,383 @@
+{
+  "properties": [
+    {
+      "name": "GridBaseColumn",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "alignment",
+      "type": "Enums.HorizontalAlignment | undefined",
+      "default": "undefined",
+      "description": "Aligns the content of the column."
+    },
+    {
+      "name": "allowEditing",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether a user can edit values in the column at runtime. By default, inherits the value of the **editing**.[allowUpdating] property."
+    },
+    {
+      "name": "allowFiltering",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether data can be filtered by this column. Applies only if [filterRow].**visible** is **true**."
+    },
+    {
+      "name": "allowFixing",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether a user can fix the column at runtime. Applies only if **columnFixing**.[enabled] is **true**."
+    },
+    {
+      "name": "allowHeaderFiltering",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the header filter can be used to filter data by this column. Applies only if [headerFilter].**visible** is **true**. By default, inherits the value of the [allowFiltering] property."
+    },
+    {
+      "name": "allowHiding",
+      "type": "Boolean",
+      "default": "true, false (command column)",
+      "description": "Specifies whether a user can hide the column using the column chooser at runtime. Applies only if **columnChooser**.[enabled] is **true**."
+    },
+    {
+      "name": "allowReordering",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether users can reorder this column. Overrides the [allowColumnReordering] property value."
+    },
+    {
+      "name": "allowResizing",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether a user can resize the column at runtime. Applies only if [allowColumnResizing] is **true**."
+    },
+    {
+      "name": "allowSearch",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether this column can be searched. Applies only if [searchPanel].**visible** is **true**. Inherits the value of the [allowFiltering] property by default."
+    },
+    {
+      "name": "allowSorting",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether a user can sort rows by this column at runtime. Applies only if **sorting**.[mode] differs from *\"none\"*."
+    },
+    {
+      "name": "buttons",
+      "subMembers": [
+        {
+          "name": "buttons",
+          "type": "Object",
+          "default": null,
+          "description": "Allows you to customize buttons in the edit column or create a custom [command column]. Applies only if the column's [type] is *\"buttons\"*."
+        },
+        {
+          "name": "cssClass",
+          "type": "String",
+          "default": null,
+          "description": "Specifies a CSS class to be applied to the button."
+        },
+        {
+          "name": "hint",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the text for the hint that appears when the button is hovered over or long-pressed."
+        },
+        {
+          "name": "icon",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the button's icon."
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the button's text. Applies only if the button's [icon] is not specified."
+        }
+      ]
+    },
+    {
+      "name": "calculateCellValue",
+      "type": "function(rowData)",
+      "default": null,
+      "description": "Calculates custom cell values. Use this function to create an unbound data column."
+    },
+    {
+      "name": "calculateDisplayValue",
+      "type": "String | function(rowData)",
+      "default": null,
+      "description": "Calculates custom display values for column cells. Requires specifying the [dataField] or [calculateCellValue] property. Used in [lookup optimization]."
+    },
+    {
+      "name": "calculateFilterExpression",
+      "type": "function(filterValue, selectedFilterOperation, target)",
+      "default": null,
+      "description": "Specifies the column's custom rules to filter data."
+    },
+    {
+      "name": "calculateSortValue",
+      "type": "String | function(rowData)",
+      "default": null,
+      "description": "Calculates custom values used to sort this column."
+    },
+    {
+      "name": "caption",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies a caption for the column."
+    },
+    {
+      "name": "columns",
+      "type": "array",
+      "default": "undefined",
+      "description": "Columns banded by the current column."
+    },
+    {
+      "name": "cssClass",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies a <a href=\"http://www.w3schools.com/cssref/sel_class.asp\" target=\"_blank\">CSS class</a> to be applied to the column."
+    },
+    {
+      "name": "customizeText",
+      "type": "function(cellInfo)",
+      "default": null,
+      "description": "Customizes the text displayed in column cells."
+    },
+    {
+      "name": "dataField",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Binds the column to a field of the [dataSource]."
+    },
+    {
+      "name": "dataType",
+      "type": "Enums.DataType | undefined",
+      "default": "undefined",
+      "description": "Casts column values to a specific data type."
+    },
+    {
+      "name": "editorOptions",
+      "type": "any",
+      "default": null,
+      "description": "Configures the default UI component used for [editing] and filtering in the [filter row]."
+    },
+    {
+      "name": "encodeHtml",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether HTML tags are displayed as plain text or applied to the values of the column."
+    },
+    {
+      "name": "falseText",
+      "type": "String",
+      "default": "'false'",
+      "description": "In a [boolean] column, replaces all **false** items with a specified text. Applies only if [showEditorAlways] property is **false**."
+    },
+    {
+      "name": "filterOperations",
+      "type": "Array<Enums.FilterOperation, String>",
+      "default": "undefined",
+      "description": "Specifies available filter operations. Applies if [allowFiltering] is **true** and the [filterRow] and/or [filterPanel] are visible."
+    },
+    {
+      "name": "filterType",
+      "type": "Enums.FilterType",
+      "default": "'include'",
+      "description": "Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values. Applies only if [headerFilter].**visible** and [allowHeaderFiltering] are **true**."
+    },
+    {
+      "name": "filterValue",
+      "type": "any | undefined",
+      "default": "undefined",
+      "description": "Specifies the value to display in the [filter row]."
+    },
+    {
+      "name": "filterValues",
+      "type": "Array<any>",
+      "default": "undefined",
+      "description": "Sets the values in the [header filter]."
+    },
+    {
+      "name": "fixed",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Fixes the column."
+    },
+    {
+      "name": "fixedPosition",
+      "type": "Enums.FixedPosition | undefined",
+      "default": "undefined",
+      "description": "Specifies the column position. Applies only if **columns[]**.[fixed] is **true**."
+    },
+    {
+      "name": "formItem",
+      "type": "dxFormSimpleItem",
+      "default": null,
+      "description": "Configures the form item that the column produces in the editing state. Applies only if **editing**.[mode] is *\"form\"* or *\"popup\"*."
+    },
+    {
+      "name": "format",
+      "type": "Format",
+      "default": "''",
+      "description": "Formats a value before it is displayed in a column cell."
+    },
+    {
+      "name": "headerFilter",
+      "type": "ColumnHeaderFilter | undefined",
+      "default": "undefined",
+      "description": "Specifies data settings for the header filter."
+    },
+    {
+      "name": "hidingPriority",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the order in which columns are hidden when the UI component adapts to the screen or container size. Ignored if [allowColumnResizing] is `true` and [columnResizingMode] is *\"widget\"*."
+    },
+    {
+      "name": "isBand",
+      "type": "Boolean | undefined",
+      "default": "undefined",
+      "description": "Specifies whether the column organizes other columns into bands."
+    },
+    {
+      "name": "lookup",
+      "subMembers": [
+        {
+          "name": "allowClearing",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to display the Clear button in lookup column cells while they are being edited."
+        },
+        {
+          "name": "dataSource",
+          "type": "Array<any> | Store | DataSource_Options | function(options) | null | undefined",
+          "default": "undefined",
+          "description": "Specifies the data source for the lookup column."
+        },
+        {
+          "name": "displayExpr",
+          "type": "String | function(data) | undefined",
+          "default": "undefined",
+          "description": "Specifies the data source field whose values must be displayed."
+        },
+        {
+          "name": "lookup",
+          "type": "Object",
+          "default": "undefined",
+          "description": "Specifies properties of a lookup column."
+        },
+        {
+          "name": "valueExpr",
+          "type": "String | undefined",
+          "default": "undefined",
+          "description": "Specifies the data field whose values should be replaced with values from the [displayExpr] field."
+        }
+      ]
+    },
+    {
+      "name": "minWidth",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the minimum width of the column."
+    },
+    {
+      "name": "name",
+      "type": "String | undefined",
+      "default": "undefined",
+      "description": "Specifies the column's unique identifier. If not set in code, this value is inherited from the [dataField]."
+    },
+    {
+      "name": "ownerBand",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the band column that owns the current column. Accepts the index of the band column in the **columns** array."
+    },
+    {
+      "name": "renderAsync",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether to render the column after other columns and elements. Use if column cells have a complex [template]. Requires the [width] property specified."
+    },
+    {
+      "name": "selectedFilterOperation",
+      "type": "Enums.SelectedFilterOperation | undefined",
+      "default": "undefined",
+      "description": "Specifies a filter operation that applies when users use the [filter row] to filter the column."
+    },
+    {
+      "name": "setCellValue",
+      "type": "function(newData, value, currentRowData)",
+      "default": null,
+      "description": "Specifies a function to be invoked after the user has edited a cell value, but before it is saved in the data source."
+    },
+    {
+      "name": "showEditorAlways",
+      "type": "Boolean",
+      "default": "false",
+      "description": "Specifies whether the column displays its values in editors."
+    },
+    {
+      "name": "showInColumnChooser",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the [column chooser] can contain the column header."
+    },
+    {
+      "name": "sortIndex",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the index according to which columns participate in sorting."
+    },
+    {
+      "name": "sortOrder",
+      "type": "Enums.SortOrder | undefined",
+      "default": "undefined",
+      "description": "Specifies the sort order of column values."
+    },
+    {
+      "name": "sortingMethod",
+      "type": "function(value1, value2) | undefined",
+      "default": "undefined",
+      "description": "Specifies a custom comparison function for sorting. Applies only when sorting is performed on the client."
+    },
+    {
+      "name": "trueText",
+      "type": "String",
+      "default": "'true'",
+      "description": "In a [boolean] column, replaces all **true** items with a specified text. Applies only if [showEditorAlways] property is **false**."
+    },
+    {
+      "name": "validationRules",
+      "type": "Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>",
+      "default": null,
+      "description": "Specifies [validation rules] to be checked when cell values are updated."
+    },
+    {
+      "name": "visible",
+      "type": "Boolean",
+      "default": "true",
+      "description": "Specifies whether the column is visible, that is, occupies space in the table."
+    },
+    {
+      "name": "visibleIndex",
+      "type": "Number | undefined",
+      "default": "undefined",
+      "description": "Specifies the position of the column regarding other columns in the resulting UI component."
+    },
+    {
+      "name": "width",
+      "type": "Number | String | undefined",
+      "default": "undefined",
+      "description": "Specifies the column's width in pixels or as a percentage. Ignored if it is less than [minWidth]."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "VectorMapProjectionConfig",
+      "type": "Object",
+      "default": null,
+      "description": null
+    },
+    {
+      "name": "aspectRatio",
+      "type": "Number",
+      "default": "1",
+      "description": "Specifies the projection's ratio of the width to the height."
+    },
+    {
+      "name": "from",
+      "type": "function(coordinates)",
+      "default": null,
+      "description": "Converts coordinates from [x, y] to [lon, lat]."
+    },
+    {
+      "name": "to",
+      "type": "function(coordinates)",
+      "default": null,
+      "description": "Converts coordinates from [lon, lat] to [x, y]."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

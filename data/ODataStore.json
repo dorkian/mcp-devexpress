@@ -1,0 +1,103 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the **ODataStore**'s configuration properties."
+        },
+        {
+          "name": "beforeSend",
+          "type": "function(options)",
+          "default": null,
+          "description": "Specifies a function that customizes the request before it is sent to the server."
+        },
+        {
+          "name": "deserializeDates",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether the store serializes/parses date-time values."
+        },
+        {
+          "name": "errorHandler",
+          "type": "function(e)",
+          "default": null,
+          "description": "Specifies a function that is executed when the **ODataStore** throws an error."
+        },
+        {
+          "name": "fieldTypes",
+          "type": "any",
+          "default": "{}",
+          "description": "Specifies the data field types. Accepts the following types: *\"String\"*, *\"Int32\"*, *\"Int64\"*, *\"Boolean\"*, *\"Single\"*, \"*Decimal\"* and *\"[Guid]\"*."
+        },
+        {
+          "name": "filterToLower",
+          "type": "Boolean",
+          "default": null,
+          "description": "Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: *\"startswith\"*, *\"endswith\"*, *\"contains\"*, and *\"notcontains\"*."
+        },
+        {
+          "name": "jsonp",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether data should be sent using <a href=\"https://www.w3schools.com/js/js_json_jsonp.asp\" target=\"_blank\">JSONP</a>."
+        },
+        {
+          "name": "keyType",
+          "type": "String | Object",
+          "default": null,
+          "description": "Specifies the type of the key property or properties."
+        },
+        {
+          "name": "url",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the URL of an OData entity collection."
+        },
+        {
+          "name": "version",
+          "type": "Number",
+          "default": "4",
+          "description": "Specifies the OData version."
+        },
+        {
+          "name": "withCredentials",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request."
+        }
+      ]
+    },
+    {
+      "name": "ODataStore",
+      "type": "\"Int32\",",
+      "default": null,
+      "description": "The **ODataStore** is a store that provides an interface for loading and editing data from an individual OData entity collection and handling related events."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "byKey(key_extraOptions)",
+      "type": null,
+      "default": null,
+      "description": "Gets an entity with a specific key."
+    },
+    {
+      "name": "createQuery(loadOptions)",
+      "type": null,
+      "default": null,
+      "description": "Creates a **Query** for the OData endpoint."
+    },
+    {
+      "name": "insert(values)",
+      "type": null,
+      "default": null,
+      "description": "##### return: Promise<any>"
+    }
+  ],
+  "Events": [],
+  "Types": []
+}

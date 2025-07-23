@@ -1,0 +1,229 @@
+{
+  "properties": [
+    {
+      "name": "UI Events",
+      "type": null,
+      "default": null,
+      "description": "The events used to handle user interaction with UI elements."
+    },
+    {
+      "name": "dxclick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the element is clicked."
+    },
+    {
+      "name": "dxcontextmenu",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the right mouse button is clicked on the element or when the element is held during a specified time period."
+    },
+    {
+      "name": "dxdblclick",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user has performed a double click on the element."
+    },
+    {
+      "name": "dxdrag",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the drag gesture has been performed."
+    },
+    {
+      "name": "dxdragend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the drag gesture has been completed."
+    },
+    {
+      "name": "dxdragenter",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user moves the pointer into the element, provided that the drag gesture is being performed."
+    },
+    {
+      "name": "dxdragleave",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a user moves the pointer out of the element, provided that the drag gesture is being performed."
+    },
+    {
+      "name": "dxdragstart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the drag gesture has been started."
+    },
+    {
+      "name": "dxdrop",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when dragged data has been dropped on the element."
+    },
+    {
+      "name": "dxhold",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the element is being held during a specified time."
+    },
+    {
+      "name": "dxhoverend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the mouse pointer leaves the element."
+    },
+    {
+      "name": "dxhoverstart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the mouse pointer appears over the element."
+    },
+    {
+      "name": "dxpinch",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the pinch gesture has been performed."
+    },
+    {
+      "name": "dxpinchend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the pinch gesture has been completed."
+    },
+    {
+      "name": "dxpinchstart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the pinch gesture has been started."
+    },
+    {
+      "name": "dxpointercancel",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the browser decides that the pointer is unlikely to produce any more events."
+    },
+    {
+      "name": "dxpointerdown",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the pointer takes on the active buttons state."
+    },
+    {
+      "name": "dxpointerenter",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a pointer is moved to either the hit test area of an element or one of its descendants."
+    },
+    {
+      "name": "dxpointerleave",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a pointer is moved from either the hit test area of an element or one of its descendants."
+    },
+    {
+      "name": "dxpointermove",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when any pointer parameter has been changed. (Position, tilt, pressure, button state, or contact geometry)."
+    },
+    {
+      "name": "dxpointerout",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a pointer is moved from either the hit test area of an element or one of its descendants."
+    },
+    {
+      "name": "dxpointerover",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a pointer is moved to the hit test area of an element or one of its descendants."
+    },
+    {
+      "name": "dxpointerup",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the pointer loses the active buttons state."
+    },
+    {
+      "name": "dxremove",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when a UI component associated with an element is being removed from the DOM."
+    },
+    {
+      "name": "dxrotate",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the rotate gesture has been performed."
+    },
+    {
+      "name": "dxrotateend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the rotate gesture has been completed."
+    },
+    {
+      "name": "dxrotatestart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the rotate gesture has been started."
+    },
+    {
+      "name": "dxswipe",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the swipe gesture has been performed."
+    },
+    {
+      "name": "dxswipeend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the swipe gesture is finished."
+    },
+    {
+      "name": "dxswipestart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the swipe gesture is started."
+    },
+    {
+      "name": "dxtransform",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the transform gesture has been performed."
+    },
+    {
+      "name": "dxtransformend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the transform gesture has been completed."
+    },
+    {
+      "name": "dxtransformstart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the transform gesture has been started."
+    },
+    {
+      "name": "dxtranslate",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the translate gesture has been performed."
+    },
+    {
+      "name": "dxtranslateend",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the translate gesture has been completed."
+    },
+    {
+      "name": "dxtranslatestart",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised when the translate gesture has been started."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

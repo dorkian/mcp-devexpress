@@ -1,0 +1,229 @@
+{
+  "properties": [
+    {
+      "name": "14 gauges",
+      "type": null,
+      "default": null,
+      "description": "-"
+    },
+    {
+      "name": "BaseGaugeAnimation",
+      "subMembers": [
+        {
+          "name": "BaseGaugeAnimation",
+          "type": "module: viz/gauges/base_gauge",
+          "default": null,
+          "description": "Specifies animation properties."
+        },
+        {
+          "name": "duration",
+          "type": "Number",
+          "default": "1000",
+          "description": "Determines how long animation runs."
+        },
+        {
+          "name": "easing",
+          "type": "Enums.AnimationEaseMode",
+          "default": "'easeOutCubic'",
+          "description": "Specifies the animation easing mode."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Indicates whether or not animation is enabled."
+        }
+      ]
+    },
+    {
+      "name": "BaseGaugeLoadingIndicator",
+      "subMembers": [
+        {
+          "name": "BaseGaugeLoadingIndicator",
+          "type": "module: viz/gauges/base_gauge",
+          "default": null,
+          "description": "Configures the loading indicator."
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "default": null,
+          "description": "-"
+        }
+      ]
+    },
+    {
+      "name": "BaseGaugeRangeContainer",
+      "subMembers": [
+        {
+          "name": "BaseGaugeRangeContainer",
+          "type": "module: viz/gauges/base_gauge",
+          "default": null,
+          "description": "Specifies properties of the gauge's range container."
+        },
+        {
+          "name": "backgroundColor",
+          "type": "String | ChartsColor",
+          "default": "'#808080'",
+          "description": "Specifies a range container's background color."
+        },
+        {
+          "name": "offset",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the offset of the range container from an invisible scale line in pixels."
+        },
+        {
+          "name": "palette",
+          "type": "Array<String> | Enums.Palette",
+          "default": "'Material'",
+          "description": "Specifies the palette to be used for colorizing ranges in the range container."
+        },
+        {
+          "name": "paletteExtensionMode",
+          "type": "Enums.PaletteExtensionMode",
+          "default": "'blend'",
+          "description": "Specifies what to do with colors in the [palette] when their number is less than the number of ranges in the range container."
+        }
+      ]
+    },
+    {
+      "name": "BaseGaugeScale",
+      "subMembers": [
+        {
+          "name": "BaseGaugeScale",
+          "type": "module: viz/gauges/base_gauge",
+          "default": null,
+          "description": "Specifies properties of the gauge's scale."
+        },
+        {
+          "name": "allowDecimals",
+          "type": "Boolean | undefined",
+          "default": "undefined",
+          "description": "Specifies whether to allow decimal values on the scale. When **false**, the scale contains integer values only."
+        },
+        {
+          "name": "customMinorTicks",
+          "type": "Array<Number>",
+          "default": "undefined",
+          "description": "Specifies an array of custom minor ticks."
+        },
+        {
+          "name": "customTicks",
+          "type": "Array<Number>",
+          "default": "undefined",
+          "description": "Specifies an array of custom major ticks."
+        },
+        {
+          "name": "endValue",
+          "type": "Number",
+          "default": "100",
+          "description": "Specifies the end value for the scale of the gauge."
+        },
+        {
+          "name": "label",
+          "type": "Object",
+          "default": null,
+          "description": "Specifies common properties for scale labels."
+        },
+        {
+          "name": "minorTickInterval",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies an interval between minor ticks."
+        },
+        {
+          "name": "scaleDivisionFactor",
+          "type": "Number",
+          "default": "17",
+          "description": "Specifies the minimum distance between two neighboring [major ticks] in pixels."
+        },
+        {
+          "name": "startValue",
+          "type": "Number",
+          "default": "0",
+          "description": "Specifies the start value for the scale of the gauge."
+        },
+        {
+          "name": "tickInterval",
+          "type": "Number | undefined",
+          "default": "undefined",
+          "description": "Specifies an interval between major ticks."
+        }
+      ]
+    },
+    {
+      "name": "BaseGaugeScaleLabel",
+      "subMembers": [
+        {
+          "name": "BaseGaugeScaleLabel",
+          "type": "module: viz/gauges/base_gauge",
+          "default": null,
+          "description": "Specifies common properties for scale labels."
+        },
+        {
+          "name": "customizeText",
+          "type": "function(scaleValue)",
+          "default": null,
+          "description": "Specifies a callback function that returns the text to be displayed in scale labels."
+        },
+        {
+          "name": "format",
+          "type": "Format | undefined",
+          "default": "undefined",
+          "description": "Formats a value before it is displayed in a scale label. Accepts only numeric formats."
+        },
+        {
+          "name": "overlappingBehavior",
+          "type": "Enums.LabelOverlap",
+          "default": "'hide'",
+          "description": "Decides how to arrange scale labels when there is not enough space to keep all of them."
+        },
+        {
+          "name": "useRangeColors",
+          "type": "Boolean",
+          "default": "false",
+          "description": "Specifies whether or not scale labels should be colored similarly to their corresponding ranges in the [range container]."
+        },
+        {
+          "name": "visible",
+          "type": "Boolean",
+          "default": "true",
+          "description": "Specifies whether or not scale labels are visible on the gauge."
+        }
+      ]
+    },
+    {
+      "name": "BaseGaugeTooltip",
+      "subMembers": [
+        {
+          "name": "BaseGaugeTooltip",
+          "type": "module: viz/gauges/base_gauge",
+          "default": null,
+          "description": "Configures tooltips."
+        },
+        {
+          "name": "contentTemplate",
+          "type": "template | undefined",
+          "default": "undefined",
+          "description": "Specifies a custom template for a tooltip."
+        },
+        {
+          "name": "customizeTooltip",
+          "type": "function(scaleValue) | undefined",
+          "default": "undefined",
+          "description": "Allows you to change the appearance of specified tooltips."
+        },
+        {
+          "name": "interactive",
+          "type": "Boolean",
+          "default": "false",
+          "description": "<!-- %shortDescription% -->"
+        }
+      ]
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}

@@ -1,0 +1,248 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes the {WidgetName}'s configuration properties."
+        },
+        {
+          "name": "errorHandler",
+          "type": "function()",
+          "default": null,
+          "description": "Specifies the function that is executed when the store throws an error."
+        },
+        {
+          "name": "key",
+          "type": "String | Array<String>",
+          "default": null,
+          "description": "Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique."
+        }
+      ]
+    },
+    {
+      "name": "Store",
+      "type": null,
+      "default": null,
+      "description": "The base class for all Stores."
+    }
+  ],
+  "Methods": [
+    {
+      "name": "insert(values)",
+      "type": null,
+      "default": null,
+      "description": "Adds a data item to the store."
+    },
+    {
+      "name": "key()",
+      "type": null,
+      "default": null,
+      "description": "Gets the key property (or properties) as specified in the [key] property."
+    },
+    {
+      "name": "keyOf(obj)",
+      "type": null,
+      "default": null,
+      "description": "Gets a data item's key value."
+    },
+    {
+      "name": "load()",
+      "type": null,
+      "default": null,
+      "description": "Starts loading data."
+    },
+    {
+      "name": "load(options)",
+      "type": null,
+      "default": null,
+      "description": "Starts loading data."
+    },
+    {
+      "name": "off(eventName)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "off(eventName_eventHandler)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "on(eventName_eventHandler)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "on(events)",
+      "type": null,
+      "default": null,
+      "description": "<!-- %shortDescription% -->"
+    },
+    {
+      "name": "push(changes)",
+      "type": "*\"insert\"*, *\"update\"*, or *\"remove\"*.",
+      "default": null,
+      "description": "Pushes data changes to the store and notifies the [DataSource]."
+    },
+    {
+      "name": "remove(key)",
+      "type": null,
+      "default": null,
+      "description": "Removes a data item with a specific key from the store."
+    },
+    {
+      "name": "totalCount(options)",
+      "type": null,
+      "default": null,
+      "description": "Gets the total count of items the [load()].md '{basewidgetpath}/Methods/#load') function returns."
+    },
+    {
+      "name": "update(key_values)",
+      "type": null,
+      "default": null,
+      "description": "Updates a data item with a specific key."
+    }
+  ],
+  "Events": [
+    {
+      "name": "onInserted",
+      "type": "function(values, key)",
+      "default": null,
+      "description": "A function that is executed after a data item is added to the store."
+    },
+    {
+      "name": "onInserting",
+      "type": "function(values)",
+      "default": null,
+      "description": "A function that is executed before a data item is added to the store."
+    },
+    {
+      "name": "onLoaded",
+      "type": "function(result, loadOptions)",
+      "default": null,
+      "description": "A function that is executed after data is loaded to the store."
+    },
+    {
+      "name": "onLoading",
+      "type": "function(loadOptions)",
+      "default": null,
+      "description": "A function that is executed before data is loaded to the store."
+    },
+    {
+      "name": "onModified",
+      "type": "function()",
+      "default": null,
+      "description": "A function that is executed after a data item is added, updated, or removed from the store."
+    },
+    {
+      "name": "onModifying",
+      "type": "function()",
+      "default": null,
+      "description": "A function that is executed before a data item is added, updated, or removed from the store."
+    },
+    {
+      "name": "onPush",
+      "type": "function(changes)",
+      "default": null,
+      "description": "The function executed before changes are pushed to the store."
+    },
+    {
+      "name": "onRemoved",
+      "type": "function(key)",
+      "default": null,
+      "description": "A function that is executed after a data item is removed from the store."
+    },
+    {
+      "name": "onRemoving",
+      "type": "function(key)",
+      "default": null,
+      "description": "A function that is executed before a data item is removed from the store."
+    },
+    {
+      "name": "onUpdated",
+      "type": "function(key, values)",
+      "default": null,
+      "description": "A function that is executed after a data item is updated in the store."
+    },
+    {
+      "name": "onUpdating",
+      "type": "function(key, values)",
+      "default": null,
+      "description": "A function that is executed before a data item is updated in the store."
+    },
+    {
+      "name": "inserted",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a data item is added to the store."
+    },
+    {
+      "name": "inserting",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a data item is added to the store."
+    },
+    {
+      "name": "loaded",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after data is loaded to the store."
+    },
+    {
+      "name": "loading",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before data is loaded to the store."
+    },
+    {
+      "name": "modified",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a data item is added, updated, or removed from the store."
+    },
+    {
+      "name": "modifying",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a data item is added, updated, or removed from the store."
+    },
+    {
+      "name": "push",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before changes are pushed to the store."
+    },
+    {
+      "name": "removed",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a data item is removed from the store."
+    },
+    {
+      "name": "removing",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a data item is removed from the store."
+    },
+    {
+      "name": "updated",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised after a data item is updated in the store."
+    },
+    {
+      "name": "updating",
+      "type": "eventType",
+      "default": null,
+      "description": "Raised before a data item is updated in the store."
+    }
+  ],
+  "Types": []
+}

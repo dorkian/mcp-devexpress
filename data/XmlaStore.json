@@ -1,0 +1,48 @@
+{
+  "properties": [
+    {
+      "name": "Properties",
+      "subMembers": [
+        {
+          "name": "Configuration",
+          "type": null,
+          "default": null,
+          "description": "This section describes properties that configure the **XmlaStore**."
+        },
+        {
+          "name": "beforeSend",
+          "type": "function(options)",
+          "default": null,
+          "description": "Specifies a function that customizes the request before it is sent to the server."
+        },
+        {
+          "name": "catalog",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the database (or initial catalog) that contains the OLAP cube to use."
+        },
+        {
+          "name": "cube",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the name of the OLAP cube to use from the [catalog]."
+        },
+        {
+          "name": "url",
+          "type": "String",
+          "default": null,
+          "description": "Specifies the OLAP server's URL."
+        }
+      ]
+    },
+    {
+      "name": "XmlaStore",
+      "type": "\"xmla\",",
+      "default": null,
+      "description": "The **XmlaStore** is a store that provides an interface for accessing an OLAP cube according to the XMLA standard."
+    }
+  ],
+  "Methods": [],
+  "Events": [],
+  "Types": []
+}
